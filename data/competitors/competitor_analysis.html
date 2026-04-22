@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Repatriation: Competitor Analysis</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface2: #1c2333;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --green: #3fb950;
+            --yellow: #d29922;
+            --red: #f85149;
+            --orange: #db6d28;
+            --purple: #bc8cff;
+            --teal: #39d2c0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; color: var(--accent); }
+        h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.15rem; margin: 1.5rem 0 0.8rem; color: var(--accent); }
+        h4 { font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--purple); }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+        .meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem; }
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; }
+        .b-green { background: rgba(63,185,80,0.15); color: var(--green); }
+        .b-yellow { background: rgba(210,153,34,0.15); color: var(--yellow); }
+        .b-red { background: rgba(248,81,73,0.15); color: var(--red); }
+        .b-blue { background: rgba(88,166,255,0.15); color: var(--accent); }
+        .b-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
+        .b-teal { background: rgba(57,210,192,0.15); color: var(--teal); }
+
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: 0.9rem; }
+        th { background: var(--surface2); color: var(--accent); padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 600; }
+        td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+        tr:hover td { background: var(--surface2); }
+
+        .verdict { border-radius: 8px; padding: 1rem 1.5rem; margin: 1rem 0; }
+        .verdict-opportunity { background: rgba(63,185,80,0.08); border: 1px solid rgba(63,185,80,0.3); }
+        .verdict-caution { background: rgba(210,153,34,0.08); border: 1px solid rgba(210,153,34,0.3); }
+        .verdict-threat { background: rgba(248,81,73,0.08); border: 1px solid rgba(248,81,73,0.3); }
+
+        .exec-summary { background: linear-gradient(135deg, #1a2332, #162030); border: 1px solid var(--accent); border-radius: 12px; padding: 2rem; margin: 2rem 0; }
+        .exec-summary p { color: var(--text); }
+
+        ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+        li { margin-bottom: 0.3rem; color: var(--text-muted); }
+        li strong { color: var(--text); }
+
+        .pro::before { content: "+ "; color: var(--green); font-weight: 700; }
+        .con::before { content: "- "; color: var(--red); font-weight: 700; }
+
+        .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem 2rem; margin: 2rem 0; }
+        .toc a { color: var(--accent); text-decoration: none; display: block; padding: 3px 0; font-size: 0.95rem; }
+        .toc a:hover { text-decoration: underline; }
+
+        .gap-row-good { border-left: 3px solid var(--green); }
+        .gap-row-warn { border-left: 3px solid var(--yellow); }
+        .gap-row-bad { border-left: 3px solid var(--red); }
+
+        .price-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 1rem 0; }
+        .price-item { background: var(--surface2); border-radius: 6px; padding: 0.6rem 1rem; display: flex; justify-content: space-between; }
+        .price-item .country { color: var(--text); }
+        .price-item .price { color: var(--green); font-weight: 600; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Competitor Analysis: Funeral Repatriation SEO</h1>
+    <p class="meta">Chunk 0D | Researched 15 April 2026 | Data sources: live site scraping (Rowland Brothers International), GOV.UK death abroad guidance, industry knowledge</p>
+
+    <div class="exec-summary">
+        <h3 style="color:var(--accent); margin-top:0;">Executive Summary</h3>
+        <p>The funeral repatriation market online is dominated by <strong>Rowland Brothers International</strong> (est. 1873, repatriation since 1971). They have 150+ country pages, but every single one is thin: one sentence, a starting price, and a contact form. No process guides, no document checklists, no embassy contacts, no cultural guidance, no FAQs. This is the single biggest SEO opportunity in this vertical. Their brand authority is strong. Their content is weak. We beat them with depth, not with history.</p>
+        <p>Three other planned competitors (Kenyon International, Repatriation UK, DFS Memorials) either operate in a different market segment (Kenyon: disaster response/B2B) or were not accessible for analysis. The competitive landscape is narrow. A content-led SEO entrant with 800-1,200 word country pages, guide content, and proper schema markup can outrank pages that contain 30 words of unique content.</p>
+    </div>
+
+    <div class="toc">
+        <strong>Contents</strong>
+        <a href="#c1">1. Competitor #1: Rowland Brothers International (deep analysis)</a>
+        <a href="#c2">2. Competitor #2: Kenyon International (industry profile)</a>
+        <a href="#c3">3. Competitor #3: Other UK Repatriation Providers (landscape)</a>
+        <a href="#gov">4. Government Guidance: GOV.UK and US State Department</a>
+        <a href="#gap">5. Content Gap Analysis</a>
+        <a href="#price">6. Pricing Intelligence</a>
+        <a href="#seo">7. SEO Vulnerability Assessment</a>
+        <a href="#strat">8. Strategic Implications for Our Build</a>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="c1">1. Rowland Brothers International</h2>
+
+    <div class="card">
+        <h4>Company Profile</h4>
+        <table>
+            <tr><td style="width:200px;"><strong>Founded</strong></td><td>1873 (funeral directors); international repatriation since 1971</td></tr>
+            <tr><td><strong>Domain</strong></td><td>rowlandbrothersinternational.com</td></tr>
+            <tr><td><strong>Platform</strong></td><td>WordPress (wp-content visible in source)</td></tr>
+            <tr><td><strong>Location</strong></td><td>297 Whitehorse Road, Croydon, Greater London CR0 2HR</td></tr>
+            <tr><td><strong>Company No.</strong></td><td>6883111 (England and Wales). VAT: GB181921013</td></tr>
+            <tr><td><strong>Phone</strong></td><td>UK: 0800 917 3585 | International: +44(0)20 8684 2324</td></tr>
+            <tr><td><strong>Email</strong></td><td>info@rowlandbrothersinternational.com</td></tr>
+            <tr><td><strong>Part of</strong></td><td>Rowland Brothers Group (rowlandbrothers.com, rbexhumations.com, rowlandbrothersshop.com)</td></tr>
+            <tr><td><strong>Accreditations</strong></td><td>FIAT-IFTA, BSI ISO 9001, Independent Funeral Standards Organisation, Order of the Golden Rule, Armed Forces Covenant</td></tr>
+            <tr><td><strong>Social</strong></td><td>Facebook, X/Twitter, LinkedIn, Instagram (all active)</td></tr>
+            <tr><td><strong>Blog</strong></td><td>Active. Latest posts March 2026.</td></tr>
+        </table>
+    </div>
+
+    <h3>Site Architecture</h3>
+    <div class="card">
+        <h4>URL Structure</h4>
+        <table>
+            <tr><th>Page Type</th><th>URL Pattern</th><th>Example</th><th>Est. Pages</th></tr>
+            <tr><td>Homepage</td><td>/</td><td>rowlandbrothersinternational.com/</td><td>1</td></tr>
+            <tr><td>Death Abroad (incoming)</td><td>/families/death-abroad/</td><td>Main funnel page for families abroad</td><td>1</td></tr>
+            <tr><td>Death in UK (outgoing)</td><td>/families/death-in-the-uk/</td><td>Main funnel page for UK-based families</td><td>1</td></tr>
+            <tr><td>Country pages</td><td>/death-abroad/locations/repatriation-to-[country]/</td><td>/death-abroad/locations/repatriation-to-spain/</td><td>150+</td></tr>
+            <tr><td>Locations hub</td><td>/death-abroad/locations/</td><td>All countries listed by region</td><td>1</td></tr>
+            <tr><td>About / Why Us</td><td>/why-rbi/</td><td>History and testimonials</td><td>1</td></tr>
+            <tr><td>Preparation</td><td>/preparation-of-the-deceased/</td><td>Embalming, cremation, ritual washing</td><td>1</td></tr>
+            <tr><td>Family Support</td><td>/family-support/</td><td>Bereavement counselling signposting</td><td>1</td></tr>
+            <tr><td>For Funeral Directors</td><td>/funeral-directors/</td><td>B2B pages</td><td>2-3</td></tr>
+            <tr><td>For Corporates</td><td>/corporates/</td><td>Assistance companies, corporate clients</td><td>2-3</td></tr>
+            <tr><td>For Diplomats</td><td>/diplomats/</td><td>Diplomatic services</td><td>1</td></tr>
+            <tr><td>Blog</td><td>/blogs-guidance/</td><td>Thought leadership articles</td><td>20-30 est.</td></tr>
+            <tr><td>Coffins/Shop</td><td>Separate domain: rowlandbrothersshop.com</td><td>Product pages</td><td>External</td></tr>
+        </table>
+        <p><strong>Total estimated indexable pages:</strong> ~190-200</p>
+    </div>
+
+    <h3>Country Page Analysis (Critical Finding)</h3>
+    <div class="verdict verdict-opportunity">
+        <p style="color: var(--green); font-weight: 600; margin-bottom: 0.5rem;">MAJOR OPPORTUNITY: Country pages are extremely thin content</p>
+        <p style="color: var(--text);">Every single country page on Rowland Brothers follows the same template. The unique content per page is approximately 30-40 words. The rest is a shared contact form and a list of other countries in the region. That's it. No process guide, no documents checklist, no embassy contacts, no timeline, no cost breakdown, no cultural practices, no FAQ.</p>
+    </div>
+
+    <div class="card">
+        <h4>Typical Country Page Structure (e.g. /repatriation-to-spain/)</h4>
+        <ol>
+            <li><strong>Hero image:</strong> Generic stock photo (same across multiple countries)</li>
+            <li><strong>H1:</strong> "Repatriation to Spain"</li>
+            <li><strong>Body content (entire unique text):</strong> "Our complete repatriation service from UK to Spain starts from GBP 1,900. Rowland Brothers International offers families a complete repatriation service from the UK to Spain, Spain to UK, from any country to Spain. Our experienced team is committed to working with you to deliver a smooth, professional and stress-free repatriation service."</li>
+            <li><strong>Contact Us CTA button</strong></li>
+            <li><strong>Sidebar/below:</strong> List of all other countries in the same region (Europe) with links</li>
+            <li><strong>Contact form:</strong> Name, email, phone, message, Send button</li>
+            <li><strong>Footer:</strong> Standard site footer</li>
+        </ol>
+        <p><strong>Word count of unique content: approximately 50 words.</strong></p>
+        <p>No FAQPage schema. No FuneralHome schema. No BreadcrumbList visible. No structured data found.</p>
+    </div>
+
+    <h3>What They Do Well</h3>
+    <div class="card">
+        <ul>
+            <li class="pro"><strong>Brand authority:</strong> 55 years in international repatriation. Genuine pioneer status.</li>
+            <li class="pro"><strong>Coverage:</strong> 150+ country pages. Covers more countries than any competitor.</li>
+            <li class="pro"><strong>Multi-audience:</strong> Serves families, funeral directors, corporates, assistance companies, diplomats. Multiple revenue streams.</li>
+            <li class="pro"><strong>Accreditations:</strong> ISO 9001, FIAT-IFTA, Armed Forces Covenant. Trust signals are strong.</li>
+            <li class="pro"><strong>Pricing transparency:</strong> They show starting prices on country pages and the "Death in UK" page. Unusual in this industry.</li>
+            <li class="pro"><strong>Active blog:</strong> Recent content (March 2026) on relevant topics. Shows Google the site is maintained.</li>
+            <li class="pro"><strong>Freephone number:</strong> 0800 number is a strong trust signal for UK families.</li>
+            <li class="pro"><strong>Bereavement support:</strong> Foundation for bereavement, education days. Shows genuine care beyond commercial interest.</li>
+            <li class="pro"><strong>Multi-denomination:</strong> Experience with all religious denominations. Ritual washing, specific ceremonies.</li>
+            <li class="pro"><strong>Coffin/casket sales:</strong> Separate e-commerce channel (rowlandbrothersshop.com). Additional revenue.</li>
+        </ul>
+    </div>
+
+    <h3>Where They Are Weak</h3>
+    <div class="card">
+        <ul>
+            <li class="con"><strong>Country pages are thin:</strong> 50 words of unique content per page. Google's Helpful Content Update penalises this. An 800+ word page with genuine guidance will outperform.</li>
+            <li class="con"><strong>No process information:</strong> A grieving family visiting their Spain page learns nothing about the actual repatriation process from Spain. No steps, no documents, no timeline.</li>
+            <li class="con"><strong>No embassy contacts:</strong> No mention of British Embassy or consulate in any country page. A family searching "what to do if someone dies in Spain" gets no practical help.</li>
+            <li class="con"><strong>No FAQ content:</strong> Zero FAQ sections. No FAQPage schema. Misses "People Also Ask" entirely.</li>
+            <li class="con"><strong>No structured data:</strong> No FuneralHome schema, no FAQPage, no visible BreadcrumbList JSON-LD. Misses rich results.</li>
+            <li class="con"><strong>No guide/informational content:</strong> No "What to do if someone dies in [Country]" guide pages. These are the highest-volume informational queries.</li>
+            <li class="con"><strong>No cremation transfer / ashes transport separation:</strong> Everything is under "repatriation." No separate content targeting "cremation transfer" or "shipping ashes from" queries.</li>
+            <li class="con"><strong>No cultural/religious guidance:</strong> Despite serving all denominations, country pages contain zero cultural information. Families must call to find out.</li>
+            <li class="con"><strong>Diluted focus:</strong> B2B pages (funeral directors, assistance companies, corporates, diplomats) sit alongside family-facing content. Navigation is split. Not clear if the site is for families or for industry professionals.</li>
+            <li class="con"><strong>No cost breakdowns:</strong> Just "starting from GBP X,XXX." No explanation of what drives cost, what's included, what's additional.</li>
+            <li class="con"><strong>Same stock imagery:</strong> Multiple country pages appear to use the same generic images.</li>
+            <li class="con"><strong>WordPress performance:</strong> WordPress with multiple plugins. Likely slower than a static site build.</li>
+        </ul>
+    </div>
+
+    <h3>Audience Segmentation</h3>
+    <div class="card">
+        <p>Rowland Brothers serves 5 distinct audiences from one site:</p>
+        <table>
+            <tr><th>Audience</th><th>Section</th><th>Entry Point</th></tr>
+            <tr><td>Families (death abroad)</td><td>/families/death-abroad/</td><td>Incoming repatriation to UK</td></tr>
+            <tr><td>Families (death in UK)</td><td>/families/death-in-the-uk/</td><td>Outgoing repatriation from UK</td></tr>
+            <tr><td>UK Funeral Directors</td><td>/funeral-directors/uk-funeral-directors/</td><td>Trade partnerships</td></tr>
+            <tr><td>Overseas Funeral Directors</td><td>/funeral-directors/overseas-funeral-directors/</td><td>International trade network</td></tr>
+            <tr><td>Assistance Companies</td><td>/corporates/assistance-companies/</td><td>Insurance/assistance companies B2B</td></tr>
+            <tr><td>Corporates</td><td>/corporates/corporate/</td><td>Employee death abroad support</td></tr>
+            <tr><td>Diplomats</td><td>/diplomats/</td><td>Embassy/consulate coordination</td></tr>
+        </table>
+        <p><strong>Our advantage:</strong> Our site will be 100% family-focused. Every page, every word, every design decision is for the grieving family. This focus will result in better content quality, better user experience, and better EEAT signals for the family-oriented queries that represent the bulk of search volume.</p>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="c2">2. Kenyon International</h2>
+
+    <div class="card">
+        <h4>Company Profile</h4>
+        <table>
+            <tr><td style="width:200px"><strong>Domain</strong></td><td>kenyoninternational.com (site blocked scraping; analysis based on industry knowledge)</td></tr>
+            <tr><td><strong>Headquarters</strong></td><td>Houston, Texas, USA</td></tr>
+            <tr><td><strong>Primary Market</strong></td><td>Disaster response, mass casualty management, aviation incidents</td></tr>
+            <tr><td><strong>Clients</strong></td><td>Governments, airlines, multinational corporations, military</td></tr>
+            <tr><td><strong>Founded</strong></td><td>1906 (originally funeral directors)</td></tr>
+        </table>
+
+        <p><strong>Assessment:</strong> Kenyon International is not a direct SEO competitor for individual family repatriation queries. They operate in the B2B/government disaster response space. A family Googling "repatriation from Thailand" will not find Kenyon targeting that query. Their website is corporate/institutional, not consumer-facing.</p>
+        <p><strong>However:</strong> Their expertise and brand name carry weight. If they ever pivoted to consumer SEO, they would be a serious threat due to domain authority and genuine E-E-A-T credentials. For now, they are a non-factor for our target keywords.</p>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="c3">3. Other UK Repatriation Providers</h2>
+
+    <div class="card">
+        <p>Three additional competitor categories exist but could not be fully scraped. All sites either blocked automated access or returned errors.</p>
+
+        <h4>Category A: Specialist Repatriation Firms</h4>
+        <ul>
+            <li><strong>Repatriation UK</strong> (multiple URL patterns tested, site not accessible). May have rebranded or ceased trading. If active, likely a smaller operator without significant SEO presence.</li>
+            <li><strong>DFS Memorials</strong> (multiple URL patterns tested, site not accessible). Similar: unable to confirm active web presence.</li>
+            <li><strong>EIR Services</strong> (eirservices.co.uk, not accessible). Another UK-based repatriation service.</li>
+        </ul>
+
+        <h4>Category B: Major UK Funeral Chains with Repatriation Pages</h4>
+        <ul>
+            <li><strong>Dignity Funerals</strong> (dignityfunerals.co.uk/arranging-a-funeral/types-of-funeral/repatriation/). Large chain. Repatriation is a minor sub-page, not a dedicated operation. Content likely thin.</li>
+            <li><strong>Co-op Funeralcare:</strong> Similar. Has a repatriation mention somewhere in their site, but it's a footnote in their business, not a focus.</li>
+        </ul>
+
+        <h4>Category C: Local Funeral Directors with Repatriation Capability</h4>
+        <ul>
+            <li>Hundreds of local funeral directors across the UK list "repatriation" as a service. None have dedicated country-level SEO content. They typically have a single page saying "we can arrange repatriation, call us."</li>
+        </ul>
+
+        <div class="verdict verdict-opportunity">
+            <p style="color: var(--green); font-weight: 600; margin-bottom: 0.5rem;">OPPORTUNITY: Market is a near-monopoly with one dominant player and minimal SEO competition</p>
+            <p style="color: var(--text);">Rowland Brothers is effectively the only player with country-level pages. And those pages are thin. No other provider has invested in country-specific content. The barrier to entry for content is low (anyone can write better than 50 words), but the barrier to trust is high (accreditations, years of service, testimonials). Our strategy of deep content + proper EEAT signals addresses both.</p>
+        </div>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="gov">4. Government Guidance (GOV.UK)</h2>
+
+    <div class="card">
+        <h4>GOV.UK: "What to do if someone dies abroad"</h4>
+        <p>URL: gov.uk/after-a-death/death-abroad</p>
+        <p>This is the top-ranking informational page for many "death abroad" queries. It outranks all commercial providers for informational intent. Key content:</p>
+
+        <h4>Bringing the body home (from GOV.UK)</h4>
+        <ol>
+            <li>Register the death with local authorities in the country where the person died</li>
+            <li>Get a certified English translation of the death certificate</li>
+            <li>Get permission to remove the body, issued by a coroner (or equivalent) in the country of death</li>
+            <li>Tell a coroner in England or Wales if the cause of death was unknown, violent or unnatural</li>
+            <li>Country-specific bereavement packs available at gov.uk</li>
+            <li>Once home: take death certificate to register office, get "certificate of no liability to register"</li>
+        </ol>
+
+        <h4>Bringing ashes home (from GOV.UK)</h4>
+        <ul>
+            <li>Need: death certificate + certificate of cremation</li>
+            <li>Each country has its own rules about departing with human ashes</li>
+            <li>Contact airline about hand luggage vs checked luggage for ashes</li>
+            <li>Non-metallic container may be required for x-ray</li>
+            <li>Do not cremate abroad if you want a UK coroner to conduct an inquest</li>
+        </ul>
+
+        <h4>Tell Us Once Service</h4>
+        <p>GOV.UK's "Tell Us Once" service lets families report a death to most government organisations in one go. Available if the person normally lived in England, Scotland or Wales and was abroad temporarily.</p>
+
+        <div class="verdict verdict-caution">
+            <p style="color: var(--yellow); font-weight: 600; margin-bottom: 0.5rem;">NOTE: GOV.UK content is Open Government Licence v3.0</p>
+            <p style="color: var(--text);">We cannot copy GOV.UK text, but we can (and should) link to it as an authoritative source. Our guide pages should complement GOV.UK by adding: country-specific detail GOV.UK doesn't cover, embassy contact details, practical next-step guidance, emotional support signposting, and links to our repatriation service. We are "the human help that fills the gap between the government guidance and getting your loved one home."</p>
+        </div>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="gap">5. Content Gap Analysis</h2>
+
+    <p>Comparison of content elements across the competitive landscape. Green = present, Yellow = partial, Red = absent.</p>
+
+    <table>
+        <tr>
+            <th>Content Element</th>
+            <th>Rowland Brothers</th>
+            <th>Other Providers</th>
+            <th>GOV.UK</th>
+            <th>Our Plan</th>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Country-specific repatriation process</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-yellow">Generic</span></td>
+            <td><span class="badge b-green">13-section guide</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Document checklist per country</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-yellow">Generic</span></td>
+            <td><span class="badge b-green">Full checklist</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Embassy/consulate contacts per country</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-yellow">Links to packs</span></td>
+            <td><span class="badge b-green">Full details + hours</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Timeline estimates per country</td>
+            <td><span class="badge b-yellow">Generic "5-10 days"</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">Country-specific</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Cost breakdown / guidance</td>
+            <td><span class="badge b-yellow">"Starting from GBP X"</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">Detailed breakdown</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Cultural/religious practices per country</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">Dedicated section</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>FAQ section with schema</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">6-8 FAQs per page</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>"Death Abroad" guide pages</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">One generic page</span></td>
+            <td><span class="badge b-green">Per country</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Cremation transfer as separate silo</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-yellow">Brief mention</span></td>
+            <td><span class="badge b-green">Full silo</span></td>
+        </tr>
+        <tr class="gap-row-bad">
+            <td>Ashes transport as separate silo</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-yellow">Brief guidance</span></td>
+            <td><span class="badge b-green">Full silo</span></td>
+        </tr>
+        <tr>
+            <td>FuneralHome / Service schema</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td>N/A</td>
+            <td><span class="badge b-green">Every page</span></td>
+        </tr>
+        <tr>
+            <td>Pricing transparency</td>
+            <td><span class="badge b-green">Starting prices shown</span></td>
+            <td><span class="badge b-red">Call for quote</span></td>
+            <td>N/A</td>
+            <td><span class="badge b-yellow">Guidance ranges</span></td>
+        </tr>
+        <tr>
+            <td>Multi-denomination support</td>
+            <td><span class="badge b-green">Mentioned</span></td>
+            <td><span class="badge b-yellow">Some mention</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">Per country</span></td>
+        </tr>
+        <tr>
+            <td>City-level pages</td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-red">Absent</span></td>
+            <td><span class="badge b-green">Major cities</span></td>
+        </tr>
+    </table>
+
+    <div class="verdict verdict-opportunity">
+        <p style="color: var(--green); font-weight: 600; margin-bottom: 0.5rem;">14 of 14 content elements: we have a clear advantage in our plan vs the existing market</p>
+        <p style="color: var(--text);">No competitor has country-specific process guides, document checklists, embassy contacts, cultural practices, FAQ schemas, separate cremation/ashes silos, or city-level pages. This is a wide-open field for informational content that bridges to commercial intent.</p>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="price">6. Pricing Intelligence</h2>
+
+    <div class="card">
+        <h4>Rowland Brothers International: Published Starting Prices (from UK outbound)</h4>
+        <p>Scraped from their "Death in the UK" page and individual country pages, April 2026:</p>
+
+        <div class="price-compare">
+            <div class="price-item"><span class="country">Ireland</span><span class="price">GBP 1,800</span></div>
+            <div class="price-item"><span class="country">Spain</span><span class="price">GBP 1,900</span></div>
+            <div class="price-item"><span class="country">Romania</span><span class="price">GBP 2,050</span></div>
+            <div class="price-item"><span class="country">India</span><span class="price">GBP 2,300</span></div>
+            <div class="price-item"><span class="country">Zimbabwe</span><span class="price">GBP 2,300</span></div>
+            <div class="price-item"><span class="country">USA</span><span class="price">GBP 2,400</span></div>
+            <div class="price-item"><span class="country">Italy</span><span class="price">GBP 2,650</span></div>
+            <div class="price-item"><span class="country">Nepal</span><span class="price">GBP 2,700</span></div>
+            <div class="price-item"><span class="country">Thailand</span><span class="price">GBP 2,700</span></div>
+            <div class="price-item"><span class="country">Jamaica</span><span class="price">GBP 2,800</span></div>
+            <div class="price-item"><span class="country">Nigeria</span><span class="price">GBP 2,800</span></div>
+        </div>
+
+        <p><strong>Pricing pattern:</strong> Short-haul European countries around GBP 1,800-2,100. Long-haul (Asia, Americas, Africa) around GBP 2,300-2,800. Prices are "starting from" which means the actual cost is higher once specific requirements are factored in. No breakdown of what's included.</p>
+
+        <h4>What this tells us</h4>
+        <ul>
+            <li>Average repatriation value: GBP 2,000-3,000 per case (higher with extras: chapel of rest, dressing, memorial service)</li>
+            <li>Even at GBP 2,000, a single organic lead converts to high revenue</li>
+            <li>Cost-per-lead via SEO would be negligible compared to the case value</li>
+            <li>Our content strategy should include cost guidance sections that explain what drives the price (distance, local regulations, time of year, religious requirements) without quoting specific numbers until the business model is set</li>
+        </ul>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="seo">7. SEO Vulnerability Assessment</h2>
+
+    <div class="card">
+        <h4>Rowland Brothers' SEO Weaknesses (ranked by exploitability)</h4>
+
+        <table>
+            <tr><th>#</th><th>Vulnerability</th><th>Severity</th><th>How We Exploit It</th></tr>
+            <tr>
+                <td>1</td>
+                <td><strong>Thin content on country pages</strong><br>50 words of unique content per page. Google's Helpful Content System targets exactly this.</td>
+                <td><span class="badge b-red">Critical</span></td>
+                <td>800-1,200 word pages with 13 sections of genuinely helpful, country-specific content.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>No informational content layer</strong><br>Zero guide pages. No "what to do if someone dies in [country]" content. Misses informational queries entirely.</td>
+                <td><span class="badge b-red">Critical</span></td>
+                <td>Full /guides/ silo with death-abroad guides and embassy contact pages per country.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>No FAQ schema</strong><br>No FAQPage markup anywhere. Misses People Also Ask and rich results.</td>
+                <td><span class="badge b-red">High</span></td>
+                <td>6-8 FAQs per page with FAQPage schema. Target PAA boxes.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong>No structured data</strong><br>No FuneralHome, no Service, no BreadcrumbList JSON-LD.</td>
+                <td><span class="badge b-red">High</span></td>
+                <td>FuneralHome schema, FAQPage, BreadcrumbList on every page.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><strong>Single silo for all repatriation</strong><br>No separation of body repatriation, cremation transfer, and ashes transport.</td>
+                <td><span class="badge b-yellow">Medium</span></td>
+                <td>Three distinct silos targeting different query clusters.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><strong>No city-level pages</strong><br>"Repatriation from Bangkok" gets zero results from Rowland Brothers.</td>
+                <td><span class="badge b-yellow">Medium</span></td>
+                <td>City pages for major tourist destinations and expat cities in P1/P2 countries.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><strong>WordPress performance</strong><br>Multiple plugins, likely larger page weight than a static site.</td>
+                <td><span class="badge b-yellow">Low</span></td>
+                <td>Static HTML generation. Sub-2s load times. 90+ Lighthouse.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><strong>Diluted audience focus</strong><br>B2B and B2C content mixed. Navigation tries to serve 7 audiences.</td>
+                <td><span class="badge b-yellow">Low</span></td>
+                <td>100% family-focused. Every word is for the grieving family.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="strat">8. Strategic Implications for Our Build</h2>
+
+    <div class="card-grid">
+        <div class="card">
+            <h4 style="color: var(--green);">Do Different</h4>
+            <ul>
+                <li><strong>Deep content, not wide.</strong> RBI has 150 thin pages. We start with 26 countries but each page has 800-1,200 words of genuine, helpful, country-specific content.</li>
+                <li><strong>Three silos, not one.</strong> Repatriation + cremation transfer + ashes transport. Three times the keyword surface area.</li>
+                <li><strong>Guide layer.</strong> "What to do if someone dies in [country]" pages are informational magnets that feed into our service pages. RBI has nothing here.</li>
+                <li><strong>FAQ-first strategy.</strong> Every page gets 6-8 FAQs targeting People Also Ask. With schema. RBI has zero.</li>
+                <li><strong>City pages.</strong> Bangkok, Malaga, Phuket, Tenerife. Where people actually die abroad. RBI has zero city-level content.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4 style="color: var(--yellow);">Respect Their Strengths</h4>
+            <ul>
+                <li><strong>Don't compete on brand authority (yet).</strong> 55 years vs day 1. We compete on content quality and page-level relevance, not domain authority.</li>
+                <li><strong>Don't display pricing initially.</strong> RBI shows prices. We can't match their specificity without a pricing model. Better to show cost guidance ranges and factors that drive price.</li>
+                <li><strong>Don't fragment the audience.</strong> RBI tries to serve 7 audiences. We serve one: the family. Everything flows from that decision.</li>
+                <li><strong>Accreditations matter.</strong> Plan to acquire relevant certifications as soon as the business is operational. SAIF membership, for example.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4 style="color: var(--teal);">Build Over Time</h4>
+            <ul>
+                <li><strong>Phase 1-2:</strong> Content quality wins. Outrank thin pages with depth.</li>
+                <li><strong>Phase 3-4:</strong> Coverage wins. Match and exceed their 150 countries.</li>
+                <li><strong>Phase 5+:</strong> Authority wins. Backlinks, press coverage, testimonials, accreditations build domain authority to compete head-to-head even on brand queries.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4 style="color: var(--purple);">Monitor</h4>
+            <ul>
+                <li><strong>Watch for RBI content update.</strong> If they hire a content team and bulk-update their 150 country pages, the window narrows. Track their sitemap for changes.</li>
+                <li><strong>Track new entrants.</strong> If another SEO-savvy operator launches a content-rich repatriation site, we need to know immediately.</li>
+                <li><strong>GOV.UK changes.</strong> If GOV.UK expands their "death abroad" content with country-specific pages, it shifts the informational landscape. They rank #1 for generic queries already.</li>
+                <li><strong>Major funeral chains.</strong> If Dignity or Co-op invest in repatriation SEO, they bring significant domain authority. Low probability but high impact.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid var(--border); margin: 3rem 0;">
+
+    <div class="card" style="border-color: var(--accent);">
+        <h3 style="margin-top: 0;">Bottom Line</h3>
+        <p style="color: var(--text); font-size: 1.05rem;">The market leader has 150 country pages with 50 words each. No guides, no FAQs, no schema, no city pages, no separate silos for cremation/ashes. Their brand is strong but their content is weak. Every piece of our build plan directly targets a gap they left open. The competitive environment has rarely been more favourable for a content-led market entry.</p>
+    </div>
+
+    <p class="meta" style="margin-top: 2rem;">
+        <strong>Research limitations:</strong> 3 of 4 originally targeted competitors (Kenyon International, Repatriation UK, DFS Memorials) could not be scraped. Kenyon operates in a different segment (B2B disaster response). The other two may not have active web presences. Additional competitors may exist that were not identified in this initial research. Recommend a manual audit using Ahrefs/SEMrush for "funeral repatriation" SERPs to identify any competitors ranking for target keywords.
+    </p>
+
+</div>
+</body>
+</html>

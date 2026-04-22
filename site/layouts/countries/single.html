@@ -1,0 +1,371 @@
+{{ define "title" }}Repatriation from {{ .Params.city_name }}, {{ .Params.country_name }} | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+{{ $countryKey := .Params.country_key }}
+{{ $cityName := .Params.city_name }}
+{{ $countryData := index hugo.Data.cities_p1.countries $countryKey }}
+{{ if not $countryData }}{{ $countryData = index hugo.Data.cities_p2.countries $countryKey }}{{ end }}
+{{ $c := index hugo.Data.countries_repatriation.countries $countryKey }}
+{{ if and $countryData $c }}
+{{ $city := false }}
+{{ range $countryData.cities }}{{ if eq .name $cityName }}{{ $city = . }}{{ end }}{{ end }}
+{{ if $city }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.BaseURL }}" },
+        { "@type": "ListItem", "position": 2, "name": "{{ $c.name }}", "item": "{{ site.BaseURL }}repatriation-from-{{ $c.slug }}/" },
+        { "@type": "ListItem", "position": 3, "name": "Repatriation from {{ $city.name }}", "item": "{{ .Permalink }}" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Funeral Repatriation from {{ $city.name }}, {{ $c.name }}",
+      "description": "{{ .Description }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Repatriate Service",
+        "telephone": "{{ site.Params.emergencyPhone }}",
+        "url": "{{ site.BaseURL }}"
+      },
+      "areaServed": "{{ $city.name }}, {{ $c.name }}",
+      "serviceType": "Funeral Repatriation"
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $countryKey := .Params.country_key }}
+{{ $cityName := .Params.city_name }}
+{{ $countryData := index hugo.Data.cities_p1.countries $countryKey }}
+{{ if not $countryData }}{{ $countryData = index hugo.Data.cities_p2.countries $countryKey }}{{ end }}
+{{ $c := index hugo.Data.countries_repatriation.countries $countryKey }}
+
+{{ if and $countryData $c }}
+{{ $city := false }}
+{{ range $countryData.cities }}{{ if eq .name $cityName }}{{ $city = . }}{{ end }}{{ end }}
+
+{{ if $city }}
+
+{{/* ============================================================
+     CITY HERO
+     ============================================================ */}}
+<section class="city-hero">
+    <div class="section-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/repatriation-from-{{ $c.slug }}/">{{ $c.name }}</a></li>
+                <li aria-current="page">{{ $city.name }}</li>
+            </ol>
+        </nav>
+        <div class="city-hero-inner">
+            <div class="city-hero-text">
+                <p class="label-sm">City repatriation guide</p>
+                <h1>Repatriation from <em>{{ $city.name }}</em>, {{ $c.name }}</h1>
+                <p class="city-lead">Specific guidance for arranging repatriation from {{ $city.name }}. Local hospitals, airport cargo routes, documentation contacts, and the typical process for cases originating in this area.</p>
+                <div class="city-hero-actions">
+                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us 24/7</a>
+                    <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline">Full {{ $c.name }} guide</a>
+                </div>
+            </div>
+            <div class="city-quick-facts">
+                <div class="city-fact">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <p class="cf-label">Typical timeline</p>
+                        <p class="cf-val">{{ $c.typical_timeline.average_case }}</p>
+                    </div>
+                </div>
+                <div class="city-fact">
+                    <i class="fa-solid fa-sterling-sign"></i>
+                    <div>
+                        <p class="cf-label">Typical cost</p>
+                        <p class="cf-val">{{ $c.cost_guide.total_typical_range_gbp }}</p>
+                    </div>
+                </div>
+                <div class="city-fact">
+                    <i class="fa-solid fa-plane"></i>
+                    <div>
+                        <p class="cf-label">Airport</p>
+                        <p class="cf-val">{{ $city.international_airport.code }} - {{ $city.international_airport.name }}</p>
+                    </div>
+                </div>
+                {{ if $city.type }}
+                <div class="city-fact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <p class="cf-label">Location type</p>
+                        <p class="cf-val">{{ $city.type | title }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     HELPLINE STRIP
+     ============================================================ */}}
+<div class="helpline-strip">
+    <div class="section-inner">
+        <div class="helpline-strip-inner">
+            <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="helpline-text">
+                <p class="helpline-label">24/7 emergency helpline</p>
+                <a href="tel:{{ site.Params.emergencyPhone }}" class="helpline-number">{{ site.Params.emergencyPhone }}</a>
+            </div>
+            <p class="helpline-message">If your loved one has passed away in {{ $city.name }}, call us now. We coordinate repatriations from this area regularly and will guide you through every step.</p>
+            <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta helpline-btn">Call now</a>
+        </div>
+    </div>
+</div>
+
+{{/* ============================================================
+     LOCAL CONTEXT
+     ============================================================ */}}
+<section class="section city-context-section">
+    <div class="section-inner">
+        <div class="city-context-grid">
+            <div class="city-context-main reveal">
+                <p class="label-sm">Local context</p>
+                <h2>British deaths in {{ $city.name }}</h2>
+                {{ with $city.relevance }}<p>{{ . }}</p>{{ end }}
+                {{ with $city.british_presence }}<p>{{ . }}</p>{{ end }}
+
+                {{ if $city.common_death_scenarios }}
+                <h3>Common circumstances</h3>
+                <ul class="scenario-list">
+                    {{ range $city.common_death_scenarios }}
+                    <li><i class="fa-solid fa-angle-right"></i> {{ . }}</li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+            <div class="city-context-sidebar reveal">
+                {{ with $city.international_airport }}
+                <div class="city-info-card">
+                    <h3><i class="fa-solid fa-plane-departure"></i> Airport cargo</h3>
+                    <p><strong>{{ .name }}</strong> ({{ .code }})</p>
+                    {{ if .cargo_capable }}
+                    <p class="city-info-note"><i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Cargo-capable for human remains</p>
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with $city.transport_to_hub }}
+                <div class="city-info-card" style="margin-top:1rem;">
+                    <h3><i class="fa-solid fa-route"></i> Transport to UK</h3>
+                    <p>{{ . }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     LOCAL CHALLENGES
+     ============================================================ */}}
+{{ if $city.local_challenges }}
+<section class="section-alt city-challenges-section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">What to expect</p>
+            <h2>Local considerations in {{ $city.name }}</h2>
+            <p>Every location has specific factors that can affect how a repatriation proceeds. For {{ $city.name }}, families should be aware of the following.</p>
+        </div>
+        <div class="challenges-grid stagger-children">
+            {{ range $city.local_challenges }}
+            <div class="challenge-card reveal">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>{{ . }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     HOSPITALS + MORTUARIES
+     ============================================================ */}}
+{{ if or $city.hospitals $city.mortuaries_forensic }}
+<section class="section city-medical-section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Local facilities</p>
+            <h2>Hospitals and forensic services in {{ $city.name }}</h2>
+            <p>The following facilities are relevant to deaths in {{ $city.name }}. Hospital names should be verified as these change over time. Your funeral director will be familiar with the local system.</p>
+        </div>
+        <div class="medical-grid">
+            {{ if $city.hospitals }}
+            <div class="medical-col reveal">
+                <h3><i class="fa-solid fa-hospital"></i> Hospitals</h3>
+                <div class="medical-cards">
+                    {{ range $city.hospitals }}
+                    <div class="medical-card">
+                        <p class="medical-name">{{ .name }}</p>
+                        <div class="medical-tags">
+                            {{ if eq .type "private_international" }}<span class="medical-tag medical-tag--private">Private / International</span>{{ end }}
+                            {{ if eq .type "public" }}<span class="medical-tag medical-tag--public">Public</span>{{ end }}
+                            {{ if .english_speaking }}<span class="medical-tag medical-tag--english">English spoken</span>{{ end }}
+                        </div>
+                        {{ with .notes }}<p class="medical-note">{{ . }}</p>{{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            {{ if $city.mortuaries_forensic }}
+            <div class="medical-col reveal">
+                <h3><i class="fa-solid fa-building"></i> Forensic mortuary</h3>
+                <div class="medical-cards">
+                    {{ range $city.mortuaries_forensic }}
+                    <div class="medical-card">
+                        <p class="medical-name">{{ .name }}</p>
+                        {{ with .notes }}<p class="medical-note">{{ . }}</p>{{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ with $city.local_funeral_directors }}
+                <div class="medical-card" style="margin-top:1rem;">
+                    <p class="medical-name"><i class="fa-solid fa-people-carry-box"></i> Local funeral directors</p>
+                    <p class="medical-note">{{ . }}</p>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     PROCESS SUMMARY (brief, links to country page)
+     ============================================================ */}}
+<section class="section-alt city-process-section">
+    <div class="section-inner">
+        <div class="city-process-grid">
+            <div class="city-process-text reveal">
+                <p class="label-sm">The process</p>
+                <h2>Repatriation from {{ $city.name }}: how it works</h2>
+                <p>The process for repatriation from {{ $city.name }} follows the standard {{ $c.name }} procedure. A local funeral director handles embalming, documentation, and the zinc-lined coffin requirement. Cargo flies from {{ $city.international_airport.code }} to the UK. Typical timeline is {{ $c.typical_timeline.average_case }}, cost {{ $c.cost_guide.total_typical_range_gbp }}.</p>
+                {{ with $city.content_angle }}<p>{{ . }}</p>{{ end }}
+                <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline" style="margin-top:1rem;">Full {{ $c.name }} repatriation guide</a>
+            </div>
+            <div class="city-process-costs reveal">
+                <div class="city-cost-card">
+                    <p class="label-sm">Cost guide</p>
+                    <div class="city-cost-total">
+                        <span>Typical cost from {{ $city.name }}</span>
+                        <strong>{{ $c.cost_guide.total_typical_range_gbp }}</strong>
+                    </div>
+                    {{ with $c.cost_guide.breakdown }}
+                    <table class="city-cost-table">
+                        {{ with .local_funeral_director_fees }}<tr><td>Local funeral director</td><td>{{ . }}</td></tr>{{ end }}
+                        {{ with .air_freight }}<tr><td>Air freight (from {{ $city.international_airport.code }})</td><td>{{ . }}</td></tr>{{ end }}
+                        {{ with .uk_reception_and_transfer }}<tr><td>UK reception</td><td>{{ . }}</td></tr>{{ end }}
+                    </table>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     EMBASSY REMINDER
+     ============================================================ */}}
+<section class="section city-embassy-section">
+    <div class="section-inner">
+        <div class="info-card info-card--blue reveal">
+            <div class="info-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+                <h3>British Embassy contact</h3>
+                {{ with $c.embassy_contacts.british_embassy }}
+                <p>The British Embassy in {{ .city }} handles consular cases from {{ $city.name }}. Contact them as early as possible to register the death with UK consular services.</p>
+                {{ with .phone }}<p><i class="fa-solid fa-phone"></i> <a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
+                {{ end }}
+                <p><i class="fa-solid fa-phone-volume"></i> FCDO 24hr: <a href="tel:+442070085000">+44 (0)20 7008 5000</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     BOTTOM CTA
+     ============================================================ */}}
+<section class="quote-section" id="enquiry-form">
+    <div class="section-inner">
+        <h2 class="reveal">We are here to help, any time</h2>
+        <p class="quote-subtitle reveal">If your loved one has passed away in {{ $city.name }}, call us now or send an enquiry. We will take care of the arrangements.</p>
+
+        <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
+            <input type="hidden" name="country" value="{{ $c.name }}">
+            <input type="hidden" name="city" value="{{ $city.name }}">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="cf-name">Your name <span class="required">*</span></label>
+                    <input type="text" id="cf-name" name="name" placeholder="Full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">Email <span class="required">*</span></label>
+                    <input type="email" id="cf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="cf-phone">Phone</label>
+                    <input type="tel" id="cf-phone" name="phone" placeholder="+44..." autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="cf-service">Service needed</label>
+                    <select id="cf-service" name="service">
+                        <option value="">Select</option>
+                        <option value="full_repatriation">Full body repatriation</option>
+                        <option value="ashes_transport">Ashes transport</option>
+                        <option value="cremation_abroad">Cremation abroad</option>
+                        <option value="guidance_only">Guidance only</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-full">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+                </div>
+            </div>
+            <div style="display:none;" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+            <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+        </form>
+        <div class="quote-success" hidden>
+            <p>Thank you. We have received your enquiry and will be in touch as soon as possible, usually within a few hours.</p>
+        </div>
+    </div>
+</section>
+
+{{ else }}
+<section class="section">
+    <div class="section-inner">
+        <p>City guide for {{ $cityName }} is being prepared. Please <a href="/repatriation-from-{{ $countryKey }}/">view the full {{ .Params.country_name }} guide</a> or <a href="/contact/">contact our team</a> for immediate assistance.</p>
+    </div>
+</section>
+{{ end }}
+
+{{ else }}
+<section class="section">
+    <div class="section-inner">
+        <p>This guide is being prepared. Please <a href="/contact/">contact our team</a> for immediate assistance.</p>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

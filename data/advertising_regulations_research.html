@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Advertising Regulations Research - Multi-Jurisdiction</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface-2: #232736;
+            --border: #2d3143;
+            --text: #e0e0e6;
+            --text-muted: #8b8fa3;
+            --accent: #5b8def;
+            --accent-2: #4ecdc4;
+            --warning: #f4a261;
+            --danger: #e76f51;
+            --success: #2a9d8f;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.75rem;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--accent-2);
+            margin: 1.5rem 0 0.75rem;
+        }
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin: 1rem 0 0.5rem;
+        }
+        p { margin-bottom: 0.75rem; }
+        .jurisdiction {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .jurisdiction-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .flag { font-size: 1.5rem; }
+        .reg-body {
+            background: var(--surface-2);
+            border-left: 3px solid var(--accent);
+            padding: 0.75rem 1rem;
+            margin: 0.75rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .reg-body .name {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .reg-body .role {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        ul { margin: 0.5rem 0 0.75rem 1.5rem; }
+        li { margin-bottom: 0.4rem; }
+        .source {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.5rem 0.75rem;
+            margin: 0.3rem 0;
+            font-size: 0.85rem;
+        }
+        .source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .source a:hover { text-decoration: underline; }
+        .source .date { color: var(--text-muted); }
+        .warning-box {
+            background: rgba(244, 162, 97, 0.1);
+            border: 1px solid var(--warning);
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .warning-box .label {
+            font-weight: 600;
+            color: var(--warning);
+            margin-bottom: 0.3rem;
+        }
+        .danger-box {
+            background: rgba(231, 111, 81, 0.1);
+            border: 1px solid var(--danger);
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .danger-box .label {
+            font-weight: 600;
+            color: var(--danger);
+            margin-bottom: 0.3rem;
+        }
+        .success-box {
+            background: rgba(42, 157, 143, 0.1);
+            border: 1px solid var(--success);
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .success-box .label {
+            font-weight: 600;
+            color: var(--success);
+            margin-bottom: 0.3rem;
+        }
+        .unverified {
+            background: rgba(231, 111, 81, 0.08);
+            border: 1px dashed var(--danger);
+            border-radius: 4px;
+            padding: 0.5rem 0.75rem;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--danger);
+        }
+        .verified {
+            color: var(--success);
+            font-size: 0.85rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 0.6rem 0.75rem;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+        th {
+            background: var(--surface-2);
+            color: var(--accent);
+            font-weight: 600;
+        }
+        td { background: var(--surface); }
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge-verified { background: var(--success); color: #fff; }
+        .badge-partial { background: var(--warning); color: #000; }
+        .badge-unverified { background: var(--danger); color: #fff; }
+        .badge-clear { background: var(--accent); color: #fff; }
+        .toc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .toc h3 { margin-top: 0; }
+        .toc ul { list-style: none; margin-left: 0; }
+        .toc li { margin-bottom: 0.3rem; }
+        .toc a { color: var(--accent); text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .summary-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .summary-card h4 {
+            color: var(--accent-2);
+            margin-top: 0;
+        }
+        code {
+            background: var(--surface-2);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            color: var(--warning);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<h1>Funeral Advertising Regulations Research</h1>
+<p class="subtitle">Multi-jurisdiction analysis for funeral repatriation services | Research date: 16 April 2026</p>
+
+<div class="danger-box">
+    <div class="label">RESEARCH INTEGRITY NOTICE</div>
+    <p>This document contains a mix of verified findings (from accessed source documents) and knowledge-based claims that require independent verification before relying on them for compliance. Every section is marked with verification status. Where I could not confirm a specific regulation exists, I say so. Do NOT treat this as legal advice. Obtain qualified legal review in each jurisdiction before advertising.</p>
+</div>
+
+<div class="toc">
+    <h3>Contents</h3>
+    <ul>
+        <li><a href="#executive-summary">Executive Summary: Can We Run Ads?</a></li>
+        <li><a href="#uk">1. United Kingdom</a></li>
+        <li><a href="#us">2. United States</a></li>
+        <li><a href="#australia">3. Australia</a></li>
+        <li><a href="#eu">4. European Union (+ Spain, France, Italy, Germany)</a></li>
+        <li><a href="#google-ads">5. Google Ads Policy</a></li>
+        <li><a href="#meta-ads">6. Facebook / Meta Ads Policy</a></li>
+        <li><a href="#seo-ymyl">7. SEO: YMYL and E-E-A-T Considerations</a></li>
+        <li><a href="#repatriation-specific">8. Repatriation-Specific Restrictions</a></li>
+        <li><a href="#action-items">9. Action Items and Compliance Checklist</a></li>
+        <li><a href="#sources">10. All Sources</a></li>
+    </ul>
+</div>
+
+<!-- ========== EXECUTIVE SUMMARY ========== -->
+<h2 id="executive-summary">Executive Summary: Can We Run Ads?</h2>
+
+<div class="success-box">
+    <div class="label">SHORT ANSWER: YES, with conditions</div>
+    <p>Funeral repatriation services are NOT a prohibited advertising category on any major platform. Google Ads, Meta/Facebook Ads, and Microsoft Ads all permit funeral service advertising. However, the content must comply with general advertising standards (no exploitation of grief, no misleading claims, no shocking imagery) and jurisdiction-specific rules. The main risk areas are: France (strict funeral advertising restrictions), Spain (possible advertising limitations), and the UK (FCA regulation of pre-paid plans, ASA scrutiny of misleading claims).</p>
+</div>
+
+<div class="summary-grid">
+    <div class="summary-card">
+        <h4>Google Ads</h4>
+        <p><span class="badge badge-clear">PERMITTED</span></p>
+        <p>Not listed as restricted or prohibited. No special certification required. Must comply with general policies (no shocking content, no exploitation of sensitive events, no misleading claims).</p>
+    </div>
+    <div class="summary-card">
+        <h4>Meta / Facebook Ads</h4>
+        <p><span class="badge badge-clear">PERMITTED</span></p>
+        <p>Not a restricted category. Must avoid: exploiting crises for commercial gain, asserting personal attributes, shocking imagery. "Commercial Exploitation of Crises" policy requires care in ad copy.</p>
+    </div>
+    <div class="summary-card">
+        <h4>UK</h4>
+        <p><span class="badge badge-partial">PERMITTED WITH CARE</span></p>
+        <p>ASA/CAP Code applies. FCA regulates pre-paid funeral PLANS (not repatriation services). Key risk: misleading claims about service scope or independence.</p>
+    </div>
+    <div class="summary-card">
+        <h4>US</h4>
+        <p><span class="badge badge-clear">PERMITTED</span></p>
+        <p>FTC Funeral Rule applies to funeral HOMES, not third-party service providers. Repatriation services likely fall outside Funeral Rule scope. State-level rules vary.</p>
+    </div>
+    <div class="summary-card">
+        <h4>Australia</h4>
+        <p><span class="badge badge-clear">PERMITTED</span></p>
+        <p>General Australian Consumer Law applies. No funeral-specific advertising ban found. State funeral industry acts regulate funeral directors, not advertising broadly.</p>
+    </div>
+    <div class="summary-card">
+        <h4>EU</h4>
+        <p><span class="badge badge-partial">VARIES BY MEMBER STATE</span></p>
+        <p>France has specific advertising restrictions on funeral services. Spain may restrict. Germany and Italy regulate the funeral industry but advertising restrictions require further legal verification.</p>
+    </div>
+</div>
+
+<!-- ========== UK ========== -->
+<h2 id="uk">1. United Kingdom</h2>
+
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1EC;&#x1F1E7;</span>
+        <h3 style="margin:0">United Kingdom</h3>
+    </div>
+
+    <h4>1.1 Primary Regulators</h4>
+
+    <div class="reg-body">
+        <div class="name">Advertising Standards Authority (ASA)</div>
+        <div class="role">Self-regulatory body for advertising across all media in the UK. Enforces the CAP and BCAP Codes.</div>
+    </div>
+    <div class="source"><a href="https://www.asa.org.uk/" target="_blank">asa.org.uk</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">Committee of Advertising Practice (CAP)</div>
+        <div class="role">Writes and maintains the UK Code of Non-broadcast Advertising and Direct & Promotional Marketing (the "CAP Code"). This covers online advertising including websites, social media ads, and paid search.</div>
+    </div>
+    <div class="source"><a href="https://www.asa.org.uk/codes-and-rulings/advertising-codes.html" target="_blank">CAP Code</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">Financial Conduct Authority (FCA)</div>
+        <div class="role">Since 29 July 2022, the FCA regulates most pre-paid funeral PLANS as financial products. This does NOT cover funeral repatriation services or funeral directing, only the financial product of a pre-paid funeral plan.</div>
+    </div>
+    <div class="source"><a href="https://www.fca.org.uk/consumers/funeral-plans" target="_blank">fca.org.uk/consumers/funeral-plans</a> <span class="date">| Last updated 06 Mar 2026, accessed 16 Apr 2026</span></div>
+
+    <h4>1.2 Key Rules and Restrictions</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> from ASA AdviceOnline: "Funeral services" (published 04 Aug 2022):</p>
+    <ul>
+        <li><strong>Misleading claims prohibited.</strong> The ASA has upheld complaints against funeral services for: false "independent" or "family-owned" claims, misleading environmental claims ("green funerals", "no carbon footprint"), implying they offer comparison services when they only provide one quote, and claiming masonry services they don't directly operate.</li>
+        <li><strong>"Independent" claims scrutinised.</strong> The ASA draws a clear distinction between "family-run" (day-to-day management) and "family-owned" (ownership structure). Multiple rulings have upheld complaints where firms part of larger groups claimed independence.</li>
+        <li><strong>Environmental claims.</strong> Must be substantiated. The ASA expects evidence covering the entire funeral process (burial/cremation, hearse, body storage, travel) not just one element. Claims like "environmentally friendly" and "no carbon footprint" have been ruled as misleading (Greenfield Creations Ltd, 13 Jun 2012; JC Atkinson & Son Ltd, 12 Nov 2008).</li>
+        <li><strong>Lead generation transparency.</strong> If a website functions as lead generation rather than a genuine comparison service, this must be clear. Misleading "compare quotes" claims when only one quote is offered have been upheld (Adiko Advertising Ltd t/a FindGreatQuotes.com, 23 May 2018).</li>
+        <li><strong>Vulnerability context.</strong> The ASA acknowledges that funeral advertising reaches consumers "at a time many of whom will be relatively vulnerable following bereavement." This heightens scrutiny of all claims.</li>
+    </ul>
+    <div class="source"><a href="https://www.asa.org.uk/advice-online/funeral-services.html" target="_blank">ASA AdviceOnline: Funeral services</a> <span class="date">| 04 Aug 2022, accessed 16 Apr 2026</span></div>
+
+    <h4>1.3 FCA Regulation: Scope and Limits</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> The FCA regulates pre-paid funeral PLANS. Key points:</p>
+    <ul>
+        <li>Funeral plan providers must be FCA-authorised and have the correct permissions.</li>
+        <li>The CAP Code continues to apply to "non-technical" aspects of FCA-regulated marketing (offence, social responsibility, truthfulness of non-financial claims).</li>
+        <li>Technical financial promotion rules for FCA-regulated plans require separate legal advice.</li>
+        <li><strong>Repatriation services are NOT pre-paid funeral plans.</strong> A service that arranges international transport of remains is a logistical/professional service, not a regulated financial product. FCA regulation does not apply unless you sell a pre-paid plan that covers future repatriation costs.</li>
+    </ul>
+
+    <h4>1.4 Online Advertising Restrictions</h4>
+    <ul>
+        <li>The CAP Code applies to ALL online advertising including: websites, paid search ads, social media ads, email marketing, and in-app advertising.</li>
+        <li>No specific prohibition on funeral services advertising online.</li>
+        <li>General CAP Code rules apply: ads must be legal, decent, honest, and truthful (Rule 1.1); must not mislead (Section 3); must not cause harm or serious/widespread offence (Section 4); must hold evidence for claims (Rule 3.7).</li>
+        <li>The ASA's "Harm and Offence: Death" advice notes that the ASA "tends to be more sympathetic if the depiction of death is relevant to the product (such as funeral homes)." This means factual, non-sensational references to death in funeral service advertising are generally acceptable.</li>
+    </ul>
+    <div class="source"><a href="https://www.asa.org.uk/advice-online/offence-death.html" target="_blank">ASA AdviceOnline: Harm and Offence: Death</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <h4>1.5 Repatriation-Specific Considerations</h4>
+    <ul>
+        <li>No specific UK regulation found governing the advertising of repatriation services.</li>
+        <li>The service likely falls under general consumer services regulated by the Consumer Rights Act 2015 and CAP Code.</li>
+        <li>Key compliance points: transparent pricing, clear scope of service (what is/isn't included), no misleading claims about speed of repatriation or guaranteed timelines.</li>
+        <li>If marketing to specific diaspora communities, avoid stereotyping or targeting that could be seen as exploitative of cultural/ethnic groups.</li>
+    </ul>
+
+    <div class="warning-box">
+        <div class="label">UK COMPLIANCE SUMMARY FOR REPATRIATION</div>
+        <ul>
+            <li>Comply with CAP Code (truthful, not misleading, substantiated claims)</li>
+            <li>Do NOT sell pre-paid repatriation plans without FCA authorisation consideration</li>
+            <li>Be transparent about pricing, included/excluded services</li>
+            <li>Avoid exploiting grief or vulnerability in ad copy</li>
+            <li>Ensure "independent" or similar trust claims are supportable</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ========== US ========== -->
+<h2 id="us">2. United States</h2>
+
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1FA;&#x1F1F8;</span>
+        <h3 style="margin:0">United States</h3>
+    </div>
+
+    <h4>2.1 Primary Regulators</h4>
+
+    <div class="reg-body">
+        <div class="name">Federal Trade Commission (FTC)</div>
+        <div class="role">Enforces the Funeral Rule (16 CFR Part 453, "Funeral Industry Practices"). Applies to funeral providers/homes. Also enforces general advertising law under the FTC Act (Section 5: unfair or deceptive acts).</div>
+    </div>
+    <div class="source"><a href="https://consumer.ftc.gov/articles/ftc-funeral-rule" target="_blank">FTC: The FTC Funeral Rule</a> <span class="date">| July 2012 (current as of Apr 2026), accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">State Funeral Boards / State Attorneys General</div>
+        <div class="role">Each US state has its own funeral industry regulation, often through a State Board of Funeral Directors and Embalmers. Advertising requirements vary by state.</div>
+    </div>
+
+    <h4>2.2 FTC Funeral Rule: Key Requirements</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> from FTC consumer guidance page:</p>
+    <ul>
+        <li><strong>Scope:</strong> The Funeral Rule applies to "funeral providers" (persons/entities that sell or offer funeral goods and services to the public). It does NOT apply to third-party sellers (casket dealers, monument dealers) or cemeteries without on-site funeral homes.</li>
+        <li><strong>General Price List (GPL):</strong> Funeral homes must provide a written, itemized price list to anyone who visits. Must disclose all goods and services with individual prices.</li>
+        <li><strong>Telephone price disclosure:</strong> Funeral directors must give price information over the phone if asked. Consumers don't have to provide their name first.</li>
+        <li><strong>Itemized statement:</strong> Before payment, consumers must receive a written statement showing every item selected and its cost.</li>
+        <li><strong>No tying:</strong> Consumers have the right to buy only the goods/services they want. Cannot be required to buy packages. Cannot be refused or charged a fee for using a casket/urn purchased elsewhere.</li>
+        <li><strong>Embalming:</strong> Cannot be required without specific state law mandate or consumer consent.</li>
+    </ul>
+
+    <h4>2.3 Does the Funeral Rule Apply to Repatriation Services?</h4>
+    <div class="success-box">
+        <div class="label">LIKELY DOES NOT APPLY DIRECTLY</div>
+        <p>The Funeral Rule targets "funeral providers" who sell funeral goods/services. A repatriation coordination service that arranges international transport of remains is not a funeral home. The FTC explicitly states the Rule "does not apply to third-party sellers." However, if the repatriation service also provides funeral goods or directs/arranges funerals at the destination, the Rule could partially apply. <strong>This requires legal confirmation on a state-by-state basis.</strong></p>
+    </div>
+
+    <h4>2.4 General FTC Advertising Requirements</h4>
+    <ul>
+        <li>Section 5 of the FTC Act prohibits "unfair or deceptive acts or practices." This applies to ALL advertising including online.</li>
+        <li>Endorsement/testimonial guidelines (16 CFR Part 255) apply if using reviews or testimonials.</li>
+        <li>No specific prohibition on online advertising of funeral or repatriation services at the federal level.</li>
+    </ul>
+
+    <h4>2.5 State-Level Considerations</h4>
+    <div class="unverified">REQUIRES STATE-BY-STATE LEGAL REVIEW. The following are general observations, not verified for each state:</div>
+    <ul>
+        <li>Some states require funeral directors to include specific disclosures in advertising (licence numbers, pricing disclosures).</li>
+        <li>Some states regulate who can use the title "funeral director" or "mortician" in advertising.</li>
+        <li>State consumer protection laws (Little FTC Acts) generally prohibit deceptive advertising.</li>
+        <li>For a repatriation service targeting the US market, federal FTC Act compliance plus the consumer protection law of the state(s) you advertise in should be reviewed.</li>
+    </ul>
+
+    <h4>2.6 Repatriation-Specific</h4>
+    <ul>
+        <li>International transport of human remains involves coordination with: airlines (IATA regulations), the US State Department, destination country consulates, and local funeral homes at both ends.</li>
+        <li>Advertising a repatriation service should clearly state what is and isn't included (e.g., embalming, consular paperwork, airline cargo fees, destination funeral arrangements).</li>
+        <li>No specific federal advertising restriction on repatriation services found.</li>
+    </ul>
+</div>
+
+<!-- ========== AUSTRALIA ========== -->
+<h2 id="australia">3. Australia</h2>
+
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1E6;&#x1F1FA;</span>
+        <h3 style="margin:0">Australia</h3>
+    </div>
+
+    <h4>3.1 Primary Regulators</h4>
+
+    <div class="reg-body">
+        <div class="name">Australian Competition and Consumer Commission (ACCC)</div>
+        <div class="role">Enforces the Australian Consumer Law (ACL), contained in Schedule 2 of the Competition and Consumer Act 2010. Prohibits misleading or deceptive conduct and false representations in advertising.</div>
+    </div>
+    <div class="source"><a href="https://www.accc.gov.au/" target="_blank">accc.gov.au</a></div>
+
+    <div class="reg-body">
+        <div class="name">Ad Standards (formerly Advertising Standards Bureau)</div>
+        <div class="role">Self-regulatory body. Administers the AANA Code of Ethics, the Australian advertising self-regulation code.</div>
+    </div>
+
+    <div class="reg-body">
+        <div class="name">State Fair Trading / Consumer Affairs Bodies</div>
+        <div class="role">Each state/territory regulates funeral industry operators. Key bodies include: NSW Fair Trading, Consumer Affairs Victoria, Office of Fair Trading (QLD).</div>
+    </div>
+
+    <h4>3.2 Key Rules and Restrictions</h4>
+    <div class="unverified">Could not access ACCC or state Fair Trading pages directly. The following is based on knowledge of Australian consumer law framework. Requires verification.</div>
+
+    <ul>
+        <li><strong>Australian Consumer Law (ACL):</strong> Sections 18 (misleading or deceptive conduct) and 29 (false representations) apply to all advertising including funeral services. No specific funeral advertising exemption or prohibition found.</li>
+        <li><strong>AANA Code of Ethics:</strong> General advertising standards. Section 2 covers: discrimination/vilification, exploitation/degradation, violence, sex/sexuality/nudity, language, health and safety, and distinguishable as advertising.</li>
+        <li><strong>State funeral industry regulation:</strong> States like NSW have Funeral Industry Acts that regulate funeral directors' licensing and conduct. These primarily regulate the funeral industry operators rather than imposing advertising-specific restrictions.</li>
+    </ul>
+
+    <h4>3.3 Online Advertising</h4>
+    <ul>
+        <li>No specific prohibition on online advertising of funeral services found at federal or state level.</li>
+        <li>ACL's misleading/deceptive conduct provisions apply to online advertising (websites, social media, search ads).</li>
+        <li>Funeral services are not listed among ACCC's specific industry advertising guidance areas (which tend to focus on: health claims, environmental claims, testimonials, fine print).</li>
+    </ul>
+
+    <h4>3.4 Repatriation-Specific</h4>
+    <ul>
+        <li>No specific Australian regulation found governing the advertising of repatriation services.</li>
+        <li>General ACL compliance applies: don't mislead about scope of service, pricing, or timelines.</li>
+        <li>Australia's geographic isolation means repatriation is a longer, more expensive process. Price transparency is particularly important.</li>
+    </ul>
+
+    <div class="warning-box">
+        <div class="label">AUSTRALIA VERIFICATION NEEDED</div>
+        <p>I could not directly access ACCC funeral industry pages or state funeral industry legislation during this research. The above is based on general knowledge of Australian regulatory framework. Before advertising in Australia, verify: (1) no state-specific funeral advertising rules exist in your target states, (2) check with ACCC for any funeral industry compliance guidance, (3) review AANA codes for funeral-specific guidance.</p>
+    </div>
+</div>
+
+<!-- ========== EU ========== -->
+<h2 id="eu">4. European Union + Key Member States</h2>
+
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1EA;&#x1F1FA;</span>
+        <h3 style="margin:0">EU-Level Framework</h3>
+    </div>
+
+    <h4>4.1 EU-Level Regulators and Directives</h4>
+
+    <div class="reg-body">
+        <div class="name">Unfair Commercial Practices Directive (2005/29/EC)</div>
+        <div class="role">Prohibits misleading and aggressive commercial practices across all EU member states. Applies to all sectors including funeral services. Implemented into national law in each member state.</div>
+    </div>
+
+    <div class="reg-body">
+        <div class="name">Audiovisual Media Services Directive (AVMSD, 2018/1808)</div>
+        <div class="role">Sets rules for audiovisual commercial communications (video ads). Article 9 requirements: must be recognisable as ads, no subliminal techniques, no prejudice to human dignity, no discrimination.</div>
+    </div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/6023676" target="_blank">AVMSD as referenced in Google Ads Legal Requirements</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">EU Digital Services Act (DSA, 2022)</div>
+        <div class="role">Requires transparency in online advertising. Advertisers must identify the beneficiary and payor of each ad. Platforms must make this information available to users.</div>
+    </div>
+
+    <h4>4.2 General EU Position</h4>
+    <ul>
+        <li>No EU-wide directive specifically prohibits or restricts funeral service advertising.</li>
+        <li>The Unfair Commercial Practices Directive's general prohibition on misleading practices applies.</li>
+        <li>Funeral services regulation is largely a member state competence, not harmonised at EU level.</li>
+        <li>The Services Directive (2006/123/EC) covers the freedom to provide services across EU borders but member states can impose requirements for "overriding reasons relating to the public interest," which have been invoked for funeral services.</li>
+    </ul>
+</div>
+
+<!-- FRANCE -->
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1EB;&#x1F1F7;</span>
+        <h3 style="margin:0">France</h3>
+    </div>
+
+    <h4>Regulators</h4>
+    <div class="reg-body">
+        <div class="name">Autorite de Regulation Professionnelle de la Publicite (ARPP)</div>
+        <div class="role">French advertising self-regulatory body. Writes advertising codes and provides pre-clearance advice.</div>
+    </div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">Google Ads: List of advertising codes (references ARPP for France)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">Code General des Collectivites Territoriales (CGCT)</div>
+        <div class="role">Articles L2223-19 to L2223-40 regulate funeral services (services exterieurs des pompes funebres) in France.</div>
+    </div>
+
+    <h4>Key Advertising Restrictions</h4>
+    <div class="danger-box">
+        <div class="label">FRANCE: MOST RESTRICTIVE JURISDICTION</div>
+        <p>France has historically been one of the most restrictive EU countries for funeral service advertising. Key points (require legal verification of current status):</p>
+    </div>
+    <div class="unverified">The following French regulations are stated from knowledge of the French funeral law framework. Could not directly access current legislation text. Requires verification with French legal counsel.</div>
+
+    <ul>
+        <li><strong>CGCT Article L2223-33 (historically):</strong> Has been interpreted to restrict certain forms of funeral advertising, particularly door-to-door solicitation and advertising in or near hospitals, care homes, and mortuaries.</li>
+        <li><strong>Prohibition on solicitation:</strong> France prohibits funeral operators from soliciting business at or near places where deaths occur (hospitals, care homes). This could extend to targeted online advertising.</li>
+        <li><strong>Funeral operator licensing:</strong> "Habilitation" (authorisation) is required from the Prefecture to operate funeral services. Only habilitated operators can provide funeral services.</li>
+        <li><strong>Municipal funeral services:</strong> Communes in France either operate a public funeral service (service public) or authorise private operators. The regulatory framework is local-government-centric.</li>
+        <li><strong>2018 reforms:</strong> France reformed its funeral industry regulations via the CGCT, expanding consumer information requirements. Funeral operators must provide detailed quotes on request.</li>
+    </ul>
+
+    <h4>Repatriation-Specific (France)</h4>
+    <ul>
+        <li>International transport of remains from France requires: authorisation from the Prefecture, zinc-lined coffin for most international transport, consular documentation.</li>
+        <li>Advertising repatriation FROM France or TO France is subject to French funeral advertising rules if the ad targets French consumers.</li>
+        <li><strong>High risk jurisdiction.</strong> Recommend legal review before running any ads targeting France.</li>
+    </ul>
+</div>
+
+<!-- SPAIN -->
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1EA;&#x1F1F8;</span>
+        <h3 style="margin:0">Spain</h3>
+    </div>
+
+    <h4>Regulators</h4>
+    <div class="reg-body">
+        <div class="name">Autocontrol (Asociacion para la Autorregulacion de la Comunicacion Comercial)</div>
+        <div class="role">Spanish advertising self-regulatory body.</div>
+    </div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">Google Ads: List of advertising codes (references Autocontrol for Spain)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <div class="reg-body">
+        <div class="name">Autonomous Community Legislation</div>
+        <div class="role">Funeral services in Spain are regulated at the autonomous community level. Each community (Catalonia, Andalusia, Madrid, etc.) may have its own funeral industry regulations.</div>
+    </div>
+
+    <h4>Key Advertising Restrictions</h4>
+    <div class="unverified">Could not access Spanish funeral legislation directly. The following require verification with Spanish legal counsel.</div>
+    <ul>
+        <li><strong>Funeral services as "essential services":</strong> Spain classifies funeral services as essential public services, which historically carries advertising restrictions in some autonomous communities.</li>
+        <li><strong>Possible advertising restrictions:</strong> Some autonomous communities have reportedly restricted certain forms of funeral advertising, particularly solicitation near hospitals and care homes, similar to France.</li>
+        <li><strong>Google Ads Local Services (Spain):</strong> Note that Google Ads restricts locksmith advertising in Spain entirely (ads cannot run). While this is locksmiths specifically, it demonstrates Spain has a pattern of local service advertising restrictions that Google enforces at the platform level.</li>
+        <li><strong>Consumer protection:</strong> Spain's General Law for the Defence of Consumers and Users (Ley General para la Defensa de los Consumidores y Usuarios) prohibits misleading advertising.</li>
+    </ul>
+
+    <h4>Repatriation-Specific (Spain)</h4>
+    <ul>
+        <li>Spain is a major destination for UK/EU expatriates and tourists. Repatriation from Spain is a significant market.</li>
+        <li>Spanish autonomous community rules on funeral services may apply to the repatriation process originating from their territory.</li>
+        <li><strong>Medium risk jurisdiction.</strong> Legal review recommended, particularly for the specific autonomous communities where you plan to offer services.</li>
+    </ul>
+</div>
+
+<!-- ITALY -->
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1EE;&#x1F1F9;</span>
+        <h3 style="margin:0">Italy</h3>
+    </div>
+
+    <h4>Regulators</h4>
+    <div class="reg-body">
+        <div class="name">Istituto dell'Autodisciplina Pubblicitaria (IAP)</div>
+        <div class="role">Italian advertising self-regulatory body. Administers the Code of Marketing Communication Self-Regulation.</div>
+    </div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">Google Ads: List of advertising codes (references IAP for Italy)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <h4>Key Advertising Restrictions</h4>
+    <div class="unverified">Could not access Italian funeral legislation directly. The following require legal verification.</div>
+    <ul>
+        <li><strong>DPR 285/1990 (Regolamento di polizia mortuaria):</strong> Italy's national funeral/mortuary police regulation. Primarily covers the handling, transport, and burial of remains rather than advertising.</li>
+        <li><strong>Regional regulation:</strong> Like Spain, Italy's funeral industry has significant regional regulation. Regions set their own funeral service rules.</li>
+        <li><strong>No specific advertising ban found:</strong> I could not verify the existence of a specific Italian prohibition on funeral advertising. General consumer protection and unfair commercial practices rules apply (implementing EU Directive 2005/29/EC via Legislative Decree 146/2007).</li>
+    </ul>
+
+    <h4>Repatriation-Specific (Italy)</h4>
+    <ul>
+        <li>Italy is a major tourism destination and has a significant diaspora. Repatriation both from and to Italy is a real market.</li>
+        <li>Transport of remains internationally from Italy requires: authorization from the local commune (Comune), zinc-lined coffin, consular documentation.</li>
+        <li><strong>Lower risk jurisdiction</strong> for advertising restrictions specifically, but verify with Italian legal counsel.</li>
+    </ul>
+</div>
+
+<!-- GERMANY -->
+<div class="jurisdiction">
+    <div class="jurisdiction-header">
+        <span class="flag">&#x1F1E9;&#x1F1EA;</span>
+        <h3 style="margin:0">Germany</h3>
+    </div>
+
+    <h4>Regulators</h4>
+    <div class="reg-body">
+        <div class="name">Deutscher Werberat (German Advertising Standards Council)</div>
+        <div class="role">Self-regulatory body for taste, decency, and social responsibility in advertising.</div>
+    </div>
+    <div class="reg-body">
+        <div class="name">Wettbewerbszentrale</div>
+        <div class="role">Centre for Protection against Unfair Competition. Enforces the Gesetz gegen den unlauteren Wettbewerb (UWG, Act against Unfair Competition).</div>
+    </div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">Google Ads: List of advertising codes (references both for Germany)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <h4>Key Advertising Restrictions</h4>
+    <div class="unverified">Could not access German funeral (Bestattung) legislation directly. The following require legal verification.</div>
+    <ul>
+        <li><strong>Bestattungsgesetze (Burial Laws):</strong> Germany regulates burial at the state (Bundesland) level. Each of the 16 states has its own burial law (Bestattungsgesetz).</li>
+        <li><strong>Historical advertising restrictions:</strong> Germany historically restricted certain professional service advertising more than other countries (similar to how legal profession advertising was restricted). The extent to which this still applies to funeral services requires verification.</li>
+        <li><strong>UWG (Unfair Competition Act):</strong> Prohibits misleading commercial practices and aggressive practices (implementing EU Directive 2005/29/EC). Aggressive solicitation of funeral services would likely be caught.</li>
+        <li><strong>"Friedhofszwang" (burial obligation):</strong> Germany requires burial in a licensed cemetery (with limited exceptions). This doesn't restrict advertising but means the funeral service market is structured differently.</li>
+        <li><strong>Google Ads restriction:</strong> Note that Germany (along with Sweden and Belgium) has Google Ads restrictions on locksmith services. This shows Google actively enforces German consumer protection concerns at the platform level.</li>
+    </ul>
+
+    <h4>Repatriation-Specific (Germany)</h4>
+    <ul>
+        <li>Germany has a large immigrant population (Turkish, Syrian, Eastern European communities) with significant repatriation demand.</li>
+        <li>The Turkish community in Germany has specific repatriation insurance products (e.g., DITIB and similar organizations). Advertising repatriation services to these communities requires cultural sensitivity.</li>
+        <li><strong>Medium risk jurisdiction.</strong> State-level burial laws and UWG compliance need legal review.</li>
+    </ul>
+</div>
+
+<!-- ========== GOOGLE ADS ========== -->
+<h2 id="google-ads">5. Google Ads Policy Analysis</h2>
+
+<div class="jurisdiction">
+    <h4>5.1 Is Funeral/Repatriation Advertising Prohibited?</h4>
+    <div class="success-box">
+        <div class="label">NO. Funeral services are NOT a prohibited or restricted category.</div>
+        <p><span class="badge badge-verified">VERIFIED</span> I reviewed the complete Google Ads policy pages for: Dangerous products/services, Other restricted businesses, Inappropriate content, and Legal requirements. Funeral services are NOT listed anywhere as a prohibited, restricted, or special-certification category.</p>
+    </div>
+
+    <h4>5.2 Relevant Policies That DO Apply</h4>
+    <p>The following general Google Ads policies apply to funeral/repatriation advertising:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Policy</th>
+                <th>Relevance</th>
+                <th>Risk Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Misrepresentation</strong></td>
+                <td>Ads must not mislead about the business, product, or service. Clear pricing and scope required.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+            </tr>
+            <tr>
+                <td><strong>Sensitive Events</strong></td>
+                <td>"Unforeseen event or development" causing significant risk. Individual bereavements are NOT sensitive events under this policy (it covers mass events like disasters). However, if advertising during/after a mass casualty event, this policy activates.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Shocking Content</strong></td>
+                <td>No gruesome imagery, no graphic depictions of death or bodily trauma in ads. Keep imagery professional and dignified.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Local Services Restrictions</strong></td>
+                <td>Some countries restrict certain local services (locksmiths, plumbers). Funeral services are NOT currently listed as a restricted local service in any country on Google's policy page.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Legal Requirements</strong></td>
+                <td>Must comply with local advertising laws in every country targeted. Google's list of advertising codes page links to self-regulatory bodies for each country.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+            </tr>
+            <tr>
+                <td><strong>Consumer Advisories</strong></td>
+                <td>Google may limit ads for businesses where consumer advisories are common. Not currently applied to funeral services but could be invoked if complaints arise.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>AVMSD (EU/UK Video Ads)</strong></td>
+                <td>Video ads targeting EU/UK must be recognisable as ads, no subliminal techniques, no prejudice to human dignity.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/6368711" target="_blank">Google Ads: Other restricted businesses</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/6015406" target="_blank">Google Ads: Inappropriate content (incl. Sensitive events, Shocking content)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/6023676" target="_blank">Google Ads: Legal requirements (incl. AVMSD)</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/13527633" target="_blank">Google Ads: Local services restrictions</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+    <div class="source"><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">Google Ads: List of country advertising codes</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <h4>5.3 Google Ads Best Practices for Funeral/Repatriation</h4>
+    <ul>
+        <li>Use professional, dignified language. No fear-based or exploitation-of-grief copy.</li>
+        <li>Clear ad copy: state what the service is (repatriation coordination), what's included, and geographic scope.</li>
+        <li>Landing pages must match ad claims. If ad mentions pricing, landing page must show pricing.</li>
+        <li>Avoid imagery of coffins, hearses, or grieving people in display ads. Use professional, service-oriented imagery.</li>
+        <li>Geo-target carefully. Don't run ads in countries where you don't actually provide the service.</li>
+        <li>For Google Local Services Ads (LSAs): funeral services are not currently in the LSA program. Use standard Search and Display ads.</li>
+    </ul>
+</div>
+
+<!-- ========== META ADS ========== -->
+<h2 id="meta-ads">6. Facebook / Meta Ads Policy</h2>
+
+<div class="jurisdiction">
+    <h4>6.1 Is Funeral/Repatriation Advertising Prohibited?</h4>
+    <div class="success-box">
+        <div class="label">NO. Funeral services are NOT a prohibited or restricted category on Meta.</div>
+        <p><span class="badge badge-verified">VERIFIED</span> I reviewed the complete Meta Advertising Standards. Funeral services are not listed among prohibited content categories, restricted goods/services, or special-approval categories. Funeral services do NOT require special authorization, unlike categories such as: dating services, online gambling, cryptocurrency, financial services, or political advertising.</p>
+    </div>
+
+    <div class="source"><a href="https://transparency.meta.com/policies/ad-standards/" target="_blank">Meta Advertising Standards: Full Policy</a> <span class="date">| Accessed 16 Apr 2026</span></div>
+
+    <h4>6.2 Relevant Policies That Apply</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Policy</th>
+                <th>Relevance</th>
+                <th>Risk Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Commercial Exploitation of Crises</strong></td>
+                <td>"Ads must not contain content that exploits crises or controversial events for commercial purposes." A repatriation ad that references a specific disaster, conflict, or mass casualty event to drive sales would violate this. Generic repatriation service ads are fine.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+            </tr>
+            <tr>
+                <td><strong>Privacy / Personal Attributes</strong></td>
+                <td>Ads "must not contain content that asserts or implies personal attributes" including: race, ethnicity, religion, health. An ad that says "Are you a Muslim family needing repatriation to Pakistan?" could be flagged for implying religion/ethnicity. Use inclusive, attribute-neutral language.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+            </tr>
+            <tr>
+                <td><strong>Sale of Human Body Parts</strong></td>
+                <td>"Ads must not promote the sale of human body parts or fluids." Repatriation is transport/logistics of remains, not "sale." This should not apply, but avoid any ad copy that could be misinterpreted.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Violent and Graphic Content</strong></td>
+                <td>"Ads must not contain shocking, sensational or excessively violent content." No graphic imagery of death, accidents, or remains.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Unacceptable Business Practices</strong></td>
+                <td>Ads must not promote deceptive/misleading practices. Clear, honest service descriptions required.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>Discriminatory Practices</strong></td>
+                <td>Must not discriminate based on protected characteristics. Targeting specific ethnic diaspora communities is acceptable for relevance, but ad CONTENT must not discriminate.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+            <tr>
+                <td><strong>EU DSA Transparency</strong></td>
+                <td>For ads targeting EU users: must declare the beneficiary (who the ad is for) and payor (who paid for it) in Meta's ad transparency fields.</td>
+                <td><span class="badge badge-clear">LOW</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>6.3 Meta Ads: Special Categories</h4>
+    <p>Funeral services are NOT a Special Ad Category. The Special Ad Categories (which restrict targeting options) are:</p>
+    <ul>
+        <li>Housing</li>
+        <li>Employment</li>
+        <li>Credit/Financial products</li>
+        <li>Social issues, elections, or politics</li>
+    </ul>
+    <p>This means full targeting capabilities are available for funeral/repatriation ads, including demographic, interest, and geographic targeting.</p>
+
+    <h4>6.4 Meta Ads Best Practices for Funeral/Repatriation</h4>
+    <ul>
+        <li>Avoid asserting or implying personal attributes in ad copy. Use: "Families arranging repatriation from Spain" not "Are you a British expat who lost a loved one?"</li>
+        <li>Don't reference specific crises, conflicts, or disasters to drive ad engagement.</li>
+        <li>Use dignified, professional imagery. No graphic content.</li>
+        <li>For diaspora community targeting: use geographic + interest targeting, not ethnicity assertions in ad copy.</li>
+    </ul>
+</div>
+
+<!-- ========== SEO / YMYL ========== -->
+<h2 id="seo-ymyl">7. SEO: YMYL and E-E-A-T Considerations</h2>
+
+<div class="jurisdiction">
+    <h4>7.1 Is Funeral Content YMYL?</h4>
+    <div class="danger-box">
+        <div class="label">YES. Funeral/repatriation content is almost certainly YMYL.</div>
+        <p><span class="badge badge-verified">VERIFIED</span> from Google's own documentation: Google gives "even more weight to content that aligns with strong E-E-A-T for topics that could significantly impact the health, financial stability, or safety of people, or the welfare or well-being of society. We call these 'Your Money or Your Life' topics, or YMYL for short."</p>
+        <p>Funeral repatriation hits multiple YMYL criteria: (1) significant financial decisions made during emotional vulnerability, (2) welfare/well-being impact on grieving families, (3) safety implications of international transport of remains, (4) legal/regulatory implications across jurisdictions.</p>
+    </div>
+    <div class="source"><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank">Google: Creating helpful, reliable, people-first content</a> <span class="date">| Last updated 10 Dec 2025, accessed 16 Apr 2026</span></div>
+
+    <h4>7.2 E-E-A-T Requirements</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> Google explicitly states E-E-A-T stands for: <strong>Experience, Expertise, Authoritativeness, Trustworthiness.</strong> Trust is the most important factor.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>E-E-A-T Factor</th>
+                <th>What Google Looks For</th>
+                <th>What We Need</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Experience</strong></td>
+                <td>"First-hand expertise and a depth of knowledge (for example, expertise that comes from having actually used a product or service)"</td>
+                <td>Content written/reviewed by people with actual repatriation industry experience. Case studies (anonymised). Descriptions of real processes.</td>
+            </tr>
+            <tr>
+                <td><strong>Expertise</strong></td>
+                <td>"Written or reviewed by an expert or enthusiast who demonstrably knows the topic well"</td>
+                <td>Named author(s) with verifiable funeral industry credentials. Author bios linking to professional profiles. Industry certifications/memberships cited.</td>
+            </tr>
+            <tr>
+                <td><strong>Authoritativeness</strong></td>
+                <td>"Well-trusted or widely-recognized as an authority on its topic"</td>
+                <td>Citations from government sources (FCDO, State Dept, consulates). Links to/from regulatory bodies. Industry body memberships. Press mentions.</td>
+            </tr>
+            <tr>
+                <td><strong>Trustworthiness</strong></td>
+                <td>"Clear sourcing, evidence of the expertise involved, background about the author or the site"</td>
+                <td>About page with company details. Physical address. Regulatory body registrations. Clear pricing. Privacy policy. SSL. Professional design.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>7.3 Google's Content Quality Signals</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> from Google's documentation. Content must:</p>
+    <ul>
+        <li>Provide "original information, reporting, research, or analysis"</li>
+        <li>Be "the sort of page you'd want to bookmark, share with a friend, or recommend"</li>
+        <li>Not have "easily-verified factual errors"</li>
+        <li>Make clear "who created it" with bylines leading to author background</li>
+        <li>Disclose if AI-generated content is used</li>
+        <li>Be created primarily to help people, not to manipulate search rankings</li>
+    </ul>
+
+    <h4>7.4 Google Search Quality Rater Guidelines (SQRG)</h4>
+    <p>Google links to its Search Quality Rater Guidelines PDF. While the SQRG doesn't specifically mention "funeral" by name in the YMYL examples seen in public documentation, the categories covered include:</p>
+    <ul>
+        <li><strong>"Health or safety"</strong> topics (transport of remains involves health/safety regulations)</li>
+        <li><strong>"Financial stability"</strong> topics (funeral costs are significant financial decisions)</li>
+        <li><strong>"Welfare or well-being of society"</strong> (bereavement support falls here)</li>
+    </ul>
+    <div class="source"><a href="https://services.google.com/fh/files/misc/hsw-sqrg.pdf" target="_blank">Google Search Quality Rater Guidelines (PDF)</a> <span class="date">| Referenced by Google Search Central</span></div>
+
+    <h4>7.5 Practical SEO Implications</h4>
+    <ul>
+        <li><strong>Author attribution is mandatory.</strong> Every page needs a named author with verifiable credentials.</li>
+        <li><strong>Source citations required.</strong> Every regulation, price, or process claim needs a named, dated source.</li>
+        <li><strong>About page must demonstrate expertise.</strong> Company history, team credentials, industry memberships, physical address.</li>
+        <li><strong>Thin content will not rank.</strong> Each country/service page needs substantial, unique, expert-level content.</li>
+        <li><strong>No AI content without attribution.</strong> If content is AI-assisted, consider disclosure per Google's guidance.</li>
+        <li><strong>Trust signals everywhere.</strong> SSL, privacy policy, terms, contact information, physical address, regulatory registrations.</li>
+    </ul>
+</div>
+
+<!-- ========== REPATRIATION SPECIFIC ========== -->
+<h2 id="repatriation-specific">8. Repatriation-Specific Restrictions</h2>
+
+<div class="jurisdiction">
+    <h4>8.1 International Body Transport: What's Regulated</h4>
+    <p>Repatriation of human remains involves multiple layers of regulation that affect what can be claimed in advertising:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Regulatory Layer</th>
+                <th>Body</th>
+                <th>Key Requirement</th>
+                <th>Advertising Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aviation</td>
+                <td>IATA (International Air Transport Association)</td>
+                <td>Dangerous Goods Regulations apply to embalmed remains (formaldehyde). Airlines set individual cargo policies for human remains.</td>
+                <td>Cannot guarantee specific airlines or flight times in advertising. Cargo capacity varies.</td>
+            </tr>
+            <tr>
+                <td>Origin Country</td>
+                <td>Local health/civil authorities</td>
+                <td>Death certificate, embalming certificate, freedom from infection certificate (varies by country), zinc-lined coffin (most of EU)</td>
+                <td>Cannot guarantee repatriation timelines. Process depends on local bureaucracy.</td>
+            </tr>
+            <tr>
+                <td>Destination Country</td>
+                <td>Consulate of destination country in origin country</td>
+                <td>Consular mortuary certificate. Some countries require authenticated documents.</td>
+                <td>Service scope claims must account for consular processing times (uncontrollable).</td>
+            </tr>
+            <tr>
+                <td>UK Imports</td>
+                <td>Local authority environmental health</td>
+                <td>Notification required before importing remains into England/Wales. Out-of-England certificate or equivalent required.</td>
+                <td>If advertising "repatriation to the UK," must not imply this is a simple or instant process.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>8.2 Advertising Claims to Avoid</h4>
+    <div class="danger-box">
+        <div class="label">DO NOT MAKE THESE CLAIMS</div>
+        <ul>
+            <li>"Guaranteed 48-hour repatriation" (timelines depend on consulates, airlines, local authorities)</li>
+            <li>"Cheapest repatriation service" (requires substantiation across all competitors in every market)</li>
+            <li>"Complete repatriation from just [price]" (unless the fixed price genuinely covers ALL costs including embalming, coffin, consular fees, cargo, destination collection)</li>
+            <li>"We handle everything" (unless you genuinely handle every step including destination funeral arrangements)</li>
+            <li>Specific country expertise claims without actually having operated in those countries</li>
+        </ul>
+    </div>
+
+    <h4>8.3 Advertising Claims That Are Appropriate</h4>
+    <div class="success-box">
+        <div class="label">ACCEPTABLE CLAIMS (if true and supportable)</div>
+        <ul>
+            <li>"Coordinating repatriation from [X] countries" (if you have genuine partnerships/processes in those countries)</li>
+            <li>"Helping families navigate consular and airline requirements"</li>
+            <li>"Transparent pricing with itemised quotes"</li>
+            <li>"[X] years of experience in international repatriation"</li>
+            <li>"Available 24/7 for urgent repatriation enquiries"</li>
+            <li>"Working with licensed funeral directors in [countries]"</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ========== ACTION ITEMS ========== -->
+<h2 id="action-items">9. Action Items and Compliance Checklist</h2>
+
+<div class="jurisdiction">
+    <h4>9.1 Before Running Any Paid Ads</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Action</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><strong>France: Get legal opinion</strong> on whether repatriation service advertising targeting French consumers complies with CGCT funeral advertising provisions.</td>
+                <td><span class="badge badge-danger" style="background:var(--danger);color:#fff">HIGH</span></td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>Spain: Get legal opinion</strong> on autonomous community funeral advertising restrictions in key regions (Catalonia, Andalusia, Canary Islands, Balearic Islands).</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>Germany: Get legal opinion</strong> on state-level Bestattungsgesetz advertising provisions in key Lander.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong>UK: Confirm FCA non-applicability.</strong> Ensure service structure does not constitute a "funeral plan" under FCA definition. If offering any form of pre-payment or financial plan, FCA authorisation may be required.</td>
+                <td><span class="badge badge-danger" style="background:var(--danger);color:#fff">HIGH</span></td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><strong>US: Confirm Funeral Rule non-applicability.</strong> Ensure service structure does not constitute being a "funeral provider" under FTC definition.</td>
+                <td><span class="badge badge-partial">MEDIUM</span></td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><strong>All ad copy: Compliance review.</strong> Check all ad copy against: no timeline guarantees, no unsubstantiated price claims, no exploitation of grief, no personal attribute assertions (Meta), no shocking imagery.</td>
+                <td><span class="badge badge-danger" style="background:var(--danger);color:#fff">HIGH</span></td>
+                <td>TODO</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>9.2 Website Compliance for SEO</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Requirement</th>
+                <th>YMYL Importance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Named author(s) with verifiable funeral industry credentials on all content pages</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>About page: company history, team bios, industry memberships, physical address</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Every factual claim sourced to a named, dated, verifiable source</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Clear pricing structure (even if "from" prices with itemised quote option)</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Privacy policy, terms of service, complaints procedure</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SSL certificate (HTTPS)</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Contact information: phone, email, physical address</td>
+                <td>Critical</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Schema.org structured data (Organization, LocalBusiness, FAQPage)</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Google Business Profile (if applicable)</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Testimonials/reviews with named sources (with consent)</td>
+                <td>High</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ========== ALL SOURCES ========== -->
+<h2 id="sources">10. All Named Sources</h2>
+
+<div class="jurisdiction">
+    <h4>10.1 Verified Sources (Directly Accessed and Content Confirmed)</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>URL</th>
+                <th>Date Accessed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ASA AdviceOnline: Funeral services</td>
+                <td><a href="https://www.asa.org.uk/advice-online/funeral-services.html" target="_blank">asa.org.uk/advice-online/funeral-services.html</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>ASA search results for "funeral"</td>
+                <td><a href="https://www.asa.org.uk/search.html?q=funeral" target="_blank">asa.org.uk/search.html?q=funeral</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>FCA: Funeral plans - check your provider is authorised</td>
+                <td><a href="https://www.fca.org.uk/consumers/funeral-plans" target="_blank">fca.org.uk/consumers/funeral-plans</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>FTC: The FTC Funeral Rule (consumer guidance)</td>
+                <td><a href="https://consumer.ftc.gov/articles/ftc-funeral-rule" target="_blank">consumer.ftc.gov/articles/ftc-funeral-rule</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: Other restricted businesses</td>
+                <td><a href="https://support.google.com/adspolicy/answer/6368711" target="_blank">support.google.com/adspolicy/answer/6368711</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: Inappropriate content</td>
+                <td><a href="https://support.google.com/adspolicy/answer/6015406" target="_blank">support.google.com/adspolicy/answer/6015406</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: Legal requirements</td>
+                <td><a href="https://support.google.com/adspolicy/answer/6023676" target="_blank">support.google.com/adspolicy/answer/6023676</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: Dangerous products or services</td>
+                <td><a href="https://support.google.com/adspolicy/answer/6014299" target="_blank">support.google.com/adspolicy/answer/6014299</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: Local services restrictions</td>
+                <td><a href="https://support.google.com/adspolicy/answer/13527633" target="_blank">support.google.com/adspolicy/answer/13527633</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Ads: List of advertising codes (by country)</td>
+                <td><a href="https://support.google.com/adspolicy/answer/11108174" target="_blank">support.google.com/adspolicy/answer/11108174</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Meta Advertising Standards (full policy)</td>
+                <td><a href="https://transparency.meta.com/policies/ad-standards/" target="_blank">transparency.meta.com/policies/ad-standards/</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+            <tr>
+                <td>Google Search Central: Creating helpful, reliable, people-first content</td>
+                <td><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank">developers.google.com/search/docs/.../creating-helpful-content</a></td>
+                <td>16 Apr 2026</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>10.2 Referenced But Not Directly Accessed (Require Independent Verification)</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>URL (if known)</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UK CAP Code (full text)</td>
+                <td><a href="https://www.asa.org.uk/codes-and-rulings/advertising-codes.html" target="_blank">asa.org.uk/codes-and-rulings/advertising-codes.html</a></td>
+                <td><span class="badge badge-partial">Page accessed, full code not parsed</span></td>
+            </tr>
+            <tr>
+                <td>FTC Funeral Rule (full regulation text, 16 CFR Part 453)</td>
+                <td><a href="https://www.ftc.gov/legal-library/browse/rules/funeral-industry-practices-rule-702" target="_blank">ftc.gov/.../funeral-industry-practices-rule-702</a></td>
+                <td><span class="badge badge-partial">Page failed to load</span></td>
+            </tr>
+            <tr>
+                <td>France: Code General des Collectivites Territoriales (Articles L2223-19 to L2223-40)</td>
+                <td><a href="https://www.legifrance.gouv.fr/" target="_blank">legifrance.gouv.fr</a></td>
+                <td><span class="badge badge-unverified">Not accessed</span></td>
+            </tr>
+            <tr>
+                <td>Spain: Autonomous community funeral legislation</td>
+                <td>Varies by community</td>
+                <td><span class="badge badge-unverified">Not accessed</span></td>
+            </tr>
+            <tr>
+                <td>Italy: DPR 285/1990 (Regolamento di polizia mortuaria)</td>
+                <td><a href="https://www.normattiva.it/" target="_blank">normattiva.it</a></td>
+                <td><span class="badge badge-unverified">Not accessed</span></td>
+            </tr>
+            <tr>
+                <td>Germany: State Bestattungsgesetze</td>
+                <td>Varies by Bundesland</td>
+                <td><span class="badge badge-unverified">Not accessed</span></td>
+            </tr>
+            <tr>
+                <td>Australia: ACCC funeral industry guidance</td>
+                <td><a href="https://www.accc.gov.au/" target="_blank">accc.gov.au</a></td>
+                <td><span class="badge badge-unverified">Page failed to load</span></td>
+            </tr>
+            <tr>
+                <td>Australia: State funeral industry acts (NSW, VIC, QLD)</td>
+                <td>Varies by state</td>
+                <td><span class="badge badge-unverified">Not accessed</span></td>
+            </tr>
+            <tr>
+                <td>Google Search Quality Rater Guidelines (PDF)</td>
+                <td><a href="https://services.google.com/fh/files/misc/hsw-sqrg.pdf" target="_blank">Google SQRG PDF</a></td>
+                <td><span class="badge badge-partial">Referenced by Google, not directly read</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>10.3 Self-Regulatory Bodies (Per Google's Country List)</h4>
+    <p><span class="badge badge-verified">VERIFIED</span> from Google Ads List of advertising codes page:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Self-Regulatory Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Australia</td><td>Australian Ad Standards</td></tr>
+            <tr><td>France</td><td>Autorite de Regulation Professionnelle de la Publicite (ARPP)</td></tr>
+            <tr><td>Germany</td><td>Deutscher Werberat (taste/decency) + Wettbewerbszentrale (unfair competition)</td></tr>
+            <tr><td>Italy</td><td>Istituto dell'Autodisciplina Pubblicitaria (IAP)</td></tr>
+            <tr><td>Spain</td><td>Autocontrol</td></tr>
+            <tr><td>United Kingdom</td><td>Committee of Advertising Practice (CAP)</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem;">
+    <p><strong>Research compiled:</strong> 16 April 2026</p>
+    <p><strong>Methodology:</strong> Direct access to regulatory body websites, Google Ads policy pages, Meta Advertising Standards, and Google Search Central documentation. Where pages could not be accessed or content could not be verified, this is explicitly noted.</p>
+    <p><strong>Disclaimer:</strong> This is research output, not legal advice. Obtain qualified legal counsel in each jurisdiction before advertising funeral or repatriation services. Regulations may have changed since this research was conducted.</p>
+</div>
+
+</div>
+</body>
+</html>

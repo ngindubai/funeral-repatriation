@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/nhuhang9261-couple-6976409.jpg{{ end }}');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Request Support</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}

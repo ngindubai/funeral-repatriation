@@ -1,0 +1,539 @@
+{
+  "_metadata": {
+    "created": "2026-04-21",
+    "purpose": "City-level data extension for countries added after the initial cities_p1 dataset",
+    "total_cities": 22,
+    "total_countries": 11,
+    "confidence_note": "Operational patterns are reliable. Hospital and mortuary names should be verified periodically."
+  },
+  "countries": {
+    "mexico": {
+      "cities": [
+        {
+          "name": "Mexico City",
+          "country_slug": "mexico",
+          "type": "capital",
+          "population_approx": 9200000,
+          "relevance": "Capital and key documentation hub for repatriation cases in Mexico.",
+          "british_presence": "High tourist and business presence with regular consular cases.",
+          "hospitals": [
+            {"name": "Centro Medico ABC", "type": "private_international", "english_speaking": true, "notes": "Major private international hospital. VERIFY"},
+            {"name": "Hospital General de Mexico", "type": "public", "english_speaking": false, "notes": "Large public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto de Servicios Periciales (CDMX)", "notes": "Forensic authority for non-natural deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "International funeral directors are available in Mexico City. English-speaking support can be arranged. VERIFY providers.",
+          "international_airport": {"code": "MEX", "name": "Benito Juarez International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Spanish-language documentation", "Variable public office timings", "Additional checks in non-natural deaths"],
+          "transport_to_hub": "Mexico City is the primary cargo hub for UK-bound repatriation from Mexico.",
+          "content_angle": "Main federal processing city with broad cargo options.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Cancun",
+          "country_slug": "mexico",
+          "type": "resort",
+          "population_approx": 900000,
+          "relevance": "High-volume tourist corridor with frequent UK family support needs.",
+          "british_presence": "Very high seasonal tourist flow from the UK.",
+          "hospitals": [
+            {"name": "Hospiten Cancun", "type": "private_international", "english_speaking": true, "notes": "Common private provider for international visitors. VERIFY"},
+            {"name": "Hospital General Jesus Kumate Rodriguez", "type": "public", "english_speaking": false, "notes": "Public secondary care facility. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Servicio Medico Forense (Quintana Roo)", "notes": "Regional forensic service. VERIFY"}
+          ],
+          "local_funeral_directors": "Tourism-focused operators can coordinate with Mexico City cargo handlers for repatriation. VERIFY providers.",
+          "international_airport": {"code": "CUN", "name": "Cancun International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Drowning incidents", "Road accidents"],
+          "local_challenges": ["Tourist zone case volumes", "Weekend/holiday slowdowns", "Coordination between local and federal offices"],
+          "transport_to_hub": "Many cases can depart from CUN directly; some route via Mexico City depending on airline cargo availability.",
+          "content_angle": "Tourist-case logistics and fast family communication are central in Cancun cases.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "kenya": {
+      "cities": [
+        {
+          "name": "Nairobi",
+          "country_slug": "kenya",
+          "type": "capital",
+          "population_approx": 4400000,
+          "relevance": "National administrative and cargo centre for repatriation cases in Kenya.",
+          "british_presence": "Strong diplomatic, NGO, business, and transit presence.",
+          "hospitals": [
+            {"name": "The Nairobi Hospital", "type": "private_international", "english_speaking": true, "notes": "Major private facility with international patient handling. VERIFY"},
+            {"name": "Kenyatta National Hospital", "type": "public", "english_speaking": true, "notes": "Largest public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "City Mortuary Nairobi", "notes": "Common forensic holding point for investigations. VERIFY"}
+          ],
+          "local_funeral_directors": "Repatriation-capable funeral directors operate in Nairobi with UK coordination options. VERIFY providers.",
+          "international_airport": {"code": "NBO", "name": "Jomo Kenyatta International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road traffic collisions", "Medical emergencies"],
+          "local_challenges": ["Police reporting requirements in sudden deaths", "Document legalization steps", "Traffic delays for local coordination"],
+          "transport_to_hub": "Nairobi is the core export point for UK repatriation from Kenya.",
+          "content_angle": "Most Kenya cases operationally converge on Nairobi documentation and cargo routing.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Mombasa",
+          "country_slug": "kenya",
+          "type": "coastal_city",
+          "population_approx": 1200000,
+          "relevance": "Coastal city with tourism and port-linked case mix.",
+          "british_presence": "Moderate tourist and resident presence with periodic consular incidents.",
+          "hospitals": [
+            {"name": "Aga Khan Hospital Mombasa", "type": "private_international", "english_speaking": true, "notes": "Private facility serving international patients. VERIFY"},
+            {"name": "Coast General Teaching and Referral Hospital", "type": "public", "english_speaking": true, "notes": "Main public hospital in Mombasa. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Coast General Mortuary", "notes": "Regional mortuary service. VERIFY"}
+          ],
+          "local_funeral_directors": "Local operators typically coordinate onward movement to Nairobi for final cargo scheduling. VERIFY providers.",
+          "international_airport": {"code": "MBA", "name": "Moi International Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes", "Drowning incidents", "Road accidents"],
+          "local_challenges": ["Limited long-haul cargo options", "Heat-related mortuary management pressures", "Inter-city transfer dependency"],
+          "transport_to_hub": "Cases often transfer to Nairobi for final UK cargo routing.",
+          "content_angle": "Mombasa logistics usually involve a secondary transfer stage before departure.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "philippines": {
+      "cities": [
+        {
+          "name": "Manila",
+          "country_slug": "philippines",
+          "type": "capital",
+          "population_approx": 1850000,
+          "relevance": "Primary consular and document processing point for repatriation from the Philippines.",
+          "british_presence": "Regular business and family-linked travel volume with consular demand.",
+          "hospitals": [
+            {"name": "Makati Medical Center", "type": "private_international", "english_speaking": true, "notes": "Major private tertiary hospital. VERIFY"},
+            {"name": "Philippine General Hospital", "type": "public", "english_speaking": true, "notes": "Main public teaching hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "National Bureau of Investigation Forensic Division", "notes": "Relevant in investigative deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "Internationally experienced funeral operators are active in Metro Manila. VERIFY providers.",
+          "international_airport": {"code": "MNL", "name": "Ninoy Aquino International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Dense urban traffic impacts timelines", "Multiple agency touchpoints", "Public holiday office closures"],
+          "transport_to_hub": "Manila is the primary UK cargo origin point for most Philippine cases.",
+          "content_angle": "Administrative concentration in Metro Manila drives most timelines.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Cebu",
+          "country_slug": "philippines",
+          "type": "regional_hub",
+          "population_approx": 960000,
+          "relevance": "Regional hub with frequent domestic and international transit flows.",
+          "british_presence": "Moderate tourist and expat presence, especially around coastal destinations.",
+          "hospitals": [
+            {"name": "Cebu Doctors' University Hospital", "type": "private_international", "english_speaking": true, "notes": "Large private hospital. VERIFY"},
+            {"name": "Vicente Sotto Memorial Medical Center", "type": "public", "english_speaking": true, "notes": "Major public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Cebu City Forensic Unit", "notes": "Regional forensic authority. VERIFY"}
+          ],
+          "local_funeral_directors": "Cebu operators can manage local preparation, with routing dependent on airline cargo windows. VERIFY providers.",
+          "international_airport": {"code": "CEB", "name": "Mactan Cebu International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Drowning incidents", "Road traffic incidents"],
+          "local_challenges": ["Inter-island case movement for some provinces", "Weather disruption risk", "Cargo scheduling variability"],
+          "transport_to_hub": "Some cases depart from Cebu directly, others are consolidated through Manila.",
+          "content_angle": "Regional island logistics can add a routing decision between Cebu and Manila.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "brazil": {
+      "cities": [
+        {
+          "name": "Sao Paulo",
+          "country_slug": "brazil",
+          "type": "major_city",
+          "population_approx": 12300000,
+          "relevance": "Primary commercial hub with strong cargo connectivity.",
+          "british_presence": "Business and corporate travel volume is high.",
+          "hospitals": [
+            {"name": "Hospital Israelita Albert Einstein", "type": "private_international", "english_speaking": true, "notes": "Major private international hospital. VERIFY"},
+            {"name": "Hospital das Clinicas da FMUSP", "type": "public", "english_speaking": false, "notes": "Large public teaching hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto Medico Legal de Sao Paulo", "notes": "Forensic authority in investigated deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "International repatriation support is available through Sao Paulo providers. VERIFY providers.",
+          "international_airport": {"code": "GRU", "name": "Sao Paulo Guarulhos International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Portuguese-language paperwork", "State and federal process overlap", "Variable release timelines in forensic cases"],
+          "transport_to_hub": "Sao Paulo is a primary departure point for UK-bound cargo.",
+          "content_angle": "Most high-volume Brazilian cases route through Sao Paulo logistics.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Rio de Janeiro",
+          "country_slug": "brazil",
+          "type": "major_city",
+          "population_approx": 6700000,
+          "relevance": "Major tourist and business destination with dedicated international airport.",
+          "british_presence": "Strong tourist season flow and event-based travel.",
+          "hospitals": [
+            {"name": "Hospital Copa Star", "type": "private_international", "english_speaking": true, "notes": "Private hospital with international patient handling. VERIFY"},
+            {"name": "Hospital Municipal Souza Aguiar", "type": "public", "english_speaking": false, "notes": "Large emergency public hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto Medico Legal Afranio Peixoto", "notes": "Regional forensic institute. VERIFY"}
+          ],
+          "local_funeral_directors": "Rio operators can coordinate local preparation and direct or onward cargo routing. VERIFY providers.",
+          "international_airport": {"code": "GIG", "name": "Rio Galeao International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Drowning incidents", "Road incidents"],
+          "local_challenges": ["Peak season service pressure", "Coordination across municipal systems", "Portuguese-only documentation in many offices"],
+          "transport_to_hub": "Direct departure is possible from GIG, with Sao Paulo as fallback.",
+          "content_angle": "Tourist-related cases often involve quick family liaison and clear logistics guidance.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "cambodia": {
+      "cities": [
+        {
+          "name": "Phnom Penh",
+          "country_slug": "cambodia",
+          "type": "capital",
+          "population_approx": 2200000,
+          "relevance": "Capital and primary administrative centre for documentation.",
+          "british_presence": "Diplomatic, NGO, and business community presence.",
+          "hospitals": [
+            {"name": "Royal Phnom Penh Hospital", "type": "private_international", "english_speaking": true, "notes": "International-standard private hospital. VERIFY"},
+            {"name": "Calmette Hospital", "type": "public", "english_speaking": false, "notes": "Major public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Phnom Penh Municipal Forensic Services", "notes": "Forensic pathway for investigated deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "Limited but established providers can coordinate repatriation from Phnom Penh. VERIFY providers.",
+          "international_airport": {"code": "PNH", "name": "Phnom Penh International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical complications"],
+          "local_challenges": ["Consular and local process coordination", "Khmer-language official documents", "Limited specialist capacity in complex cases"],
+          "transport_to_hub": "Phnom Penh is the main routing point for UK departures.",
+          "content_angle": "Document handling is central to timeline control in Cambodian cases.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Siem Reap",
+          "country_slug": "cambodia",
+          "type": "tourist_hub",
+          "population_approx": 250000,
+          "relevance": "Major tourism city with cases tied to visitor activity.",
+          "british_presence": "Steady tourist volume linked to Angkor travel.",
+          "hospitals": [
+            {"name": "Royal Angkor International Hospital", "type": "private_international", "english_speaking": true, "notes": "Private facility with international patient services. VERIFY"},
+            {"name": "Siem Reap Provincial Hospital", "type": "public", "english_speaking": false, "notes": "Main public hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Siem Reap Forensic Unit", "notes": "Regional investigative mortuary workflow. VERIFY"}
+          ],
+          "local_funeral_directors": "Local preparation usually pairs with onward administrative handling in Phnom Penh. VERIFY providers.",
+          "international_airport": {"code": "SAI", "name": "Siem Reap Angkor International Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Accidental injuries"],
+          "local_challenges": ["Limited cargo capacity", "Need for onward routing", "Tourist-case communication urgency"],
+          "transport_to_hub": "Many cases transfer to Phnom Penh for final outbound cargo.",
+          "content_angle": "Tourist geography increases coordination complexity compared with Phnom Penh-origin cases.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "cyprus": {
+      "cities": [
+        {
+          "name": "Nicosia",
+          "country_slug": "cyprus",
+          "type": "capital",
+          "population_approx": 330000,
+          "relevance": "Administrative centre for documentation and consular liaison.",
+          "british_presence": "Strong UK ties with resident and official travel segments.",
+          "hospitals": [
+            {"name": "Nicosia General Hospital", "type": "public", "english_speaking": true, "notes": "Major public hospital. VERIFY"},
+            {"name": "American Medical Center", "type": "private_international", "english_speaking": true, "notes": "Private international facility. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "State Forensic Pathology Service Nicosia", "notes": "Central forensic authority. VERIFY"}
+          ],
+          "local_funeral_directors": "Repatriation-capable funeral providers are available in Nicosia and nearby districts. VERIFY providers.",
+          "international_airport": {"code": "LCA", "name": "Larnaca International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Medical emergencies"],
+          "local_challenges": ["Cross-district coordination", "Public holiday closures", "Mixed Greek and English paperwork"],
+          "transport_to_hub": "Larnaca is the principal cargo gateway for Cyprus cases.",
+          "content_angle": "Administrative handling in Nicosia and airport routing via Larnaca is a common pattern.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Paphos",
+          "country_slug": "cyprus",
+          "type": "resort",
+          "population_approx": 70000,
+          "relevance": "Major UK tourist and retiree destination with recurrent consular cases.",
+          "british_presence": "High long-stay and holiday presence.",
+          "hospitals": [
+            {"name": "Paphos General Hospital", "type": "public", "english_speaking": true, "notes": "Main local public hospital. VERIFY"},
+            {"name": "Blue Cross Medical Center", "type": "private_international", "english_speaking": true, "notes": "Private clinic network. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Paphos District Mortuary Services", "notes": "District-level mortuary pathway. VERIFY"}
+          ],
+          "local_funeral_directors": "Local providers can coordinate immediate steps, with cargo routing through Larnaca in many cases. VERIFY providers.",
+          "international_airport": {"code": "PFO", "name": "Paphos International Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes", "Heat-related illness", "Road accidents"],
+          "local_challenges": ["Limited cargo options", "Peak season service pressure", "Transfer planning to Larnaca"],
+          "transport_to_hub": "Most cases transfer to Larnaca for long-haul cargo.",
+          "content_angle": "Paphos cases often need extra routing steps despite short geographic distances.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "dominican-republic": {
+      "cities": [
+        {
+          "name": "Santo Domingo",
+          "country_slug": "dominican-republic",
+          "type": "capital",
+          "population_approx": 3300000,
+          "relevance": "Main administrative and documentation hub.",
+          "british_presence": "Tourism and business travel generate regular UK-linked cases.",
+          "hospitals": [
+            {"name": "Hospital General Plaza de la Salud", "type": "private_international", "english_speaking": true, "notes": "Large private hospital. VERIFY"},
+            {"name": "Hospital Dr. Dario Contreras", "type": "public", "english_speaking": false, "notes": "Major public emergency hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto Nacional de Ciencias Forenses", "notes": "National forensic institute. VERIFY"}
+          ],
+          "local_funeral_directors": "Repatriation-capable providers are concentrated in Santo Domingo. VERIFY providers.",
+          "international_airport": {"code": "SDQ", "name": "Las Americas International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Spanish-only legal documents", "Variable local authority timelines", "Weekend processing delays"],
+          "transport_to_hub": "Santo Domingo is a primary cargo origin point.",
+          "content_angle": "Centralized administrative handling makes Santo Domingo key to case pacing.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Punta Cana",
+          "country_slug": "dominican-republic",
+          "type": "resort",
+          "population_approx": 140000,
+          "relevance": "High-volume resort corridor with frequent tourist incidents.",
+          "british_presence": "Strong package-holiday and seasonal UK visitor demand.",
+          "hospitals": [
+            {"name": "Hospital IMG Punta Cana", "type": "private_international", "english_speaking": true, "notes": "Private hospital serving international visitors. VERIFY"},
+            {"name": "Centro Medico Punta Cana", "type": "private_international", "english_speaking": true, "notes": "Private regional medical centre. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "La Altagracia Forensic Services", "notes": "Regional forensic support. VERIFY"}
+          ],
+          "local_funeral_directors": "Local operators support urgent first steps and coordinate with capital-based documentation workflows. VERIFY providers.",
+          "international_airport": {"code": "PUJ", "name": "Punta Cana International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Drowning incidents", "Road accidents"],
+          "local_challenges": ["Resort-zone urgency", "Coordination with insurers and tour operators", "Evidence and report collection across providers"],
+          "transport_to_hub": "Direct routing may be available from PUJ; some cases consolidate via Santo Domingo.",
+          "content_angle": "Resort-focused cases require fast family and travel partner coordination.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "indonesia": {
+      "cities": [
+        {
+          "name": "Jakarta",
+          "country_slug": "indonesia",
+          "type": "capital",
+          "population_approx": 10600000,
+          "relevance": "Primary administrative and cargo hub for national repatriation routing.",
+          "british_presence": "Business and diplomatic travel concentration.",
+          "hospitals": [
+            {"name": "Siloam Hospitals Lippo Village", "type": "private_international", "english_speaking": true, "notes": "Private network with international handling. VERIFY"},
+            {"name": "Cipto Mangunkusumo Hospital", "type": "public", "english_speaking": false, "notes": "Major national referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Jakarta Police Forensic Laboratory", "notes": "Investigative pathway for non-natural deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "Experienced Jakarta providers can coordinate embassy and cargo processes. VERIFY providers.",
+          "international_airport": {"code": "CGK", "name": "Soekarno-Hatta International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Medical emergencies"],
+          "local_challenges": ["Heavy traffic impacts collection and liaison", "Multi-agency approval steps", "Language translation requirements"],
+          "transport_to_hub": "Jakarta is the main outbound route for UK repatriation from Indonesia.",
+          "content_angle": "Most timelines depend on efficient administrative sequencing in Jakarta.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Bali (Denpasar)",
+          "country_slug": "indonesia",
+          "type": "resort",
+          "population_approx": 730000,
+          "relevance": "High tourism exposure with frequent international case handling.",
+          "british_presence": "High holiday and long-stay visitor flow.",
+          "hospitals": [
+            {"name": "BIMC Hospital Kuta", "type": "private_international", "english_speaking": true, "notes": "Well-known private hospital for international tourists. VERIFY"},
+            {"name": "Sanglah General Hospital", "type": "public", "english_speaking": false, "notes": "Main public referral hospital in Denpasar. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Denpasar Forensic Services", "notes": "Regional investigative service. VERIFY"}
+          ],
+          "local_funeral_directors": "Bali operators support urgent local arrangements, with routing options through DPS or Jakarta. VERIFY providers.",
+          "international_airport": {"code": "DPS", "name": "Ngurah Rai International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road scooter accidents", "Drowning incidents"],
+          "local_challenges": ["Tourism volume spikes", "Cross-border insurer coordination", "Police report dependencies in accidental deaths"],
+          "transport_to_hub": "Some cases depart via DPS; others route via Jakarta based on cargo schedules.",
+          "content_angle": "Tourism-driven urgency and insurer liaison shape Bali case workflows.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "morocco": {
+      "cities": [
+        {
+          "name": "Casablanca",
+          "country_slug": "morocco",
+          "type": "major_city",
+          "population_approx": 3400000,
+          "relevance": "Largest commercial city and principal cargo gateway.",
+          "british_presence": "Business and transit traveller flow.",
+          "hospitals": [
+            {"name": "Cheikh Khalifa International University Hospital", "type": "private_international", "english_speaking": true, "notes": "Private tertiary facility. VERIFY"},
+            {"name": "CHU Ibn Rochd", "type": "public", "english_speaking": false, "notes": "Major public hospital network. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Casablanca Forensic Medicine Service", "notes": "Regional forensic pathway. VERIFY"}
+          ],
+          "local_funeral_directors": "Casablanca providers are commonly used for UK repatriation logistics. VERIFY providers.",
+          "international_airport": {"code": "CMN", "name": "Mohammed V International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Medical emergencies"],
+          "local_challenges": ["Arabic and French documentation", "Public office timing constraints", "Legal release checks in sudden deaths"],
+          "transport_to_hub": "Casablanca is the most common long-haul departure route.",
+          "content_angle": "Casablanca functions as the operational backbone for many Morocco-origin cases.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Marrakech",
+          "country_slug": "morocco",
+          "type": "tourist_hub",
+          "population_approx": 1000000,
+          "relevance": "Major tourism city with recurring UK visitor incidents.",
+          "british_presence": "Strong short-stay tourism presence year-round.",
+          "hospitals": [
+            {"name": "Clinique Internationale de Marrakech", "type": "private_international", "english_speaking": true, "notes": "Private international-facing hospital. VERIFY"},
+            {"name": "CHU Mohammed VI Marrakech", "type": "public", "english_speaking": false, "notes": "Main public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Marrakech Forensic Unit", "notes": "Regional forensic support. VERIFY"}
+          ],
+          "local_funeral_directors": "Local services can manage immediate workflow before final cargo routing. VERIFY providers.",
+          "international_airport": {"code": "RAK", "name": "Marrakech Menara Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Excursion-related incidents"],
+          "local_challenges": ["Tourism surge periods", "Limited long-haul cargo options", "Need for onward transfer in some cases"],
+          "transport_to_hub": "Many cases route onward to Casablanca for final UK cargo movement.",
+          "content_angle": "Tourism-case communication and transfer planning are the key differentiators in Marrakech.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "sri-lanka": {
+      "cities": [
+        {
+          "name": "Colombo",
+          "country_slug": "sri-lanka",
+          "type": "capital",
+          "population_approx": 750000,
+          "relevance": "Primary administrative centre and nearest route to the national international airport.",
+          "british_presence": "Business and official travel concentration with regular UK-linked movement.",
+          "hospitals": [
+            {"name": "Nawaloka Hospital", "type": "private_international", "english_speaking": true, "notes": "Major private hospital. VERIFY"},
+            {"name": "National Hospital of Sri Lanka", "type": "public", "english_speaking": true, "notes": "Largest public tertiary hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Colombo Judicial Medical Office", "notes": "Core forensic pathway for investigated deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "Colombo-based operators typically manage national repatriation paperwork. VERIFY providers.",
+          "international_airport": {"code": "CMB", "name": "Bandaranaike International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Multi-step document legalization", "Public holiday slowdowns", "Inter-agency coordination"],
+          "transport_to_hub": "Most UK departures route through CMB near Colombo.",
+          "content_angle": "Administrative sequencing in Colombo is usually the timeline driver.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Kandy",
+          "country_slug": "sri-lanka",
+          "type": "regional_city",
+          "population_approx": 125000,
+          "relevance": "Regional inland centre with tourism and resident case mix.",
+          "british_presence": "Moderate tourism flow tied to central highlands routes.",
+          "hospitals": [
+            {"name": "Teaching Hospital Kandy", "type": "public", "english_speaking": true, "notes": "Major regional public hospital. VERIFY"},
+            {"name": "Asiri Hospital Kandy", "type": "private_international", "english_speaking": true, "notes": "Private facility. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Kandy Forensic Medical Services", "notes": "Regional forensic route. VERIFY"}
+          ],
+          "local_funeral_directors": "Local arrangements are commonly followed by transfer to Colombo corridor for final departure. VERIFY providers.",
+          "international_airport": {"code": "CMB", "name": "Bandaranaike International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Excursion-related incidents"],
+          "local_challenges": ["Ground transfer dependencies", "Weather and road delays", "Regional paperwork handoff"],
+          "transport_to_hub": "Cases generally transfer to Colombo for export documentation and cargo.",
+          "content_angle": "Regional cases add transfer time compared with Colombo-origin workflows.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "vietnam": {
+      "cities": [
+        {
+          "name": "Ho Chi Minh City",
+          "country_slug": "vietnam",
+          "type": "major_city",
+          "population_approx": 9000000,
+          "relevance": "Primary southern commercial centre with strong international connectivity.",
+          "british_presence": "Business, education, and tourism travel volume is high.",
+          "hospitals": [
+            {"name": "FV Hospital", "type": "private_international", "english_speaking": true, "notes": "Private international hospital. VERIFY"},
+            {"name": "Cho Ray Hospital", "type": "public", "english_speaking": false, "notes": "Large public referral hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Ho Chi Minh City Forensic Center", "notes": "Regional forensic authority. VERIFY"}
+          ],
+          "local_funeral_directors": "Internationally experienced operators are available in Ho Chi Minh City. VERIFY providers.",
+          "international_airport": {"code": "SGN", "name": "Tan Son Nhat International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road scooter accidents", "Medical emergencies"],
+          "local_challenges": ["Vietnamese-language legal documents", "Agency sequencing requirements", "Traffic-related delays"],
+          "transport_to_hub": "SGN is a common long-haul departure route.",
+          "content_angle": "Most southern Vietnam timelines hinge on documentation flow speed.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Hanoi",
+          "country_slug": "vietnam",
+          "type": "capital",
+          "population_approx": 8400000,
+          "relevance": "National capital and major administrative centre for northern-region cases.",
+          "british_presence": "Business and diplomatic presence with regular consular interaction.",
+          "hospitals": [
+            {"name": "Vinmec Times City International Hospital", "type": "private_international", "english_speaking": true, "notes": "Private international facility. VERIFY"},
+            {"name": "Bach Mai Hospital", "type": "public", "english_speaking": false, "notes": "Major public tertiary hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Hanoi Forensic Medicine Institute", "notes": "Forensic pathway in investigated deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "Hanoi providers can coordinate direct departures or cross-country routing where required. VERIFY providers.",
+          "international_airport": {"code": "HAN", "name": "Noi Bai International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road incidents", "Medical emergencies"],
+          "local_challenges": ["Administrative complexity in legal cases", "Translation and legalization steps", "Seasonal weather disruption"],
+          "transport_to_hub": "Direct routing is often available from HAN, with SGN as alternate path.",
+          "content_angle": "Hanoi-origin cases often depend on legal document sequencing before release.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  }
+}

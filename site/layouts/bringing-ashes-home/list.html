@@ -1,0 +1,71 @@
+{{ define "title" }}Bringing Ashes Home to the UK | Country Guides | Repatriate Service{{ end }}
+
+{{ define "main" }}
+<section class="page-hero" style="background-image: url('/images/hero.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>Bringing ashes home to the UK</h1>
+        <p>Country-specific guidance on the documents, airline rules, and practical steps for transporting ashes from abroad to the United Kingdom.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Ask a question</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Ashes transport guides</p>
+            <h2>Select the country the ashes are in</h2>
+            <p>Each guide covers the documents required to export ashes, airline hand-luggage rules, costs, and what to do once you are back in the UK.</p>
+        </div>
+
+        <div class="info-card info-card--blue reveal" style="margin-bottom:2rem;">
+            <div class="info-card-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div>
+                <h3>UK import rules</h3>
+                <p>The UK does not restrict the import of human ashes. There is no customs declaration required. The documentation requirements are on the departure side, and vary by country.</p>
+            </div>
+        </div>
+
+        <div class="country-list-grid stagger-children">
+            {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="country-list-card reveal">
+                <div class="country-list-text">
+                    <h3>{{ .Params.country_name }}</h3>
+                    <p>{{ .Description }}</p>
+                </div>
+                <i class="fa-solid fa-angle-right country-list-arrow"></i>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section-alt">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">General guidance</p>
+            <h2>What applies to all countries</h2>
+        </div>
+        <div class="three-col-grid stagger-children">
+            <div class="info-block reveal">
+                <i class="fa-solid fa-file-certificate"></i>
+                <h3>Cremation certificate</h3>
+                <p>Always required. Issued by the crematorium where the cremation took place. Keep it with the ashes at all times during travel. Most airlines will ask to see it at check-in.</p>
+            </div>
+            <div class="info-block reveal">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Airline confirmation</h3>
+                <p>Contact your airline at least 48 hours before travel. Rules vary. Metal urns cannot be X-rayed and may be refused as hand luggage. Use a wooden or biodegradable travel urn for the journey.</p>
+            </div>
+            <div class="info-block reveal">
+                <i class="fa-solid fa-house"></i>
+                <h3>On arrival in the UK</h3>
+                <p>No import declaration is required. Walk through with your ashes and cremation certificate. You will not be stopped at customs for ashes, but having the certificate avoids any confusion.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

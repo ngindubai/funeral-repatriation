@@ -1,0 +1,13 @@
+query,expected_url,expected_page_type,expected_title,intent_cluster,recommended_fix_if_missed,chatgpt_score,perplexity_score,gemini_score,chatgpt_cited,perplexity_cited,gemini_cited,best_cited_url,notes
+how to bring a body home from thailand,/repatriation-from-thailand/,country_hub,Repatriation from Thailand,transactional_country,Strengthen intro and process summary for body-home phrasing,,,,,,,,
+repatriation cost from spain to uk,/repatriation-from-spain/,country_hub,Repatriation from Spain,transactional_cost,Increase cost-table prominence and cost-specific headings,,,,,,,,
+what happens when someone dies abroad,/blog/what-happens-when-someone-dies-abroad/,blog,What Happens When Someone Dies Abroad,informational_process,Tighten definition paragraph and add direct answer block above fold,,,,,,,,
+documents needed to repatriate a body to the uk,/blog/documents-needed-to-repatriate-body-to-uk/,blog,Documents Needed To Repatriate A Body To UK,informational_documents,Expand document checklist formatting and schema-friendly ordering,,,,,,,,
+how long does repatriation from mexico take,/repatriation-from-mexico/,country_hub,Repatriation from Mexico,transactional_timeline,Strengthen timeline headings and repeat average-case answer earlier,,,,,,,,
+who pays for repatriation after a death abroad,/faq/repatriation-costs-who-pays/,faq,Who Pays Repatriation Costs,faq_costs,Expand FAQ answer with direct payer scenarios and summary bullets,,,,,,,,
+can i bring ashes in hand luggage uk,/faq/can-i-bring-ashes-in-hand-luggage/,faq,Can I Bring Ashes In Hand Luggage,faq_ashes,Add airline-proof wording and top-of-page yes-but conditions summary,,,,,,,,
+repatriation from kenya to uk process,/repatriation-from-kenya/,country_hub,Repatriation from Kenya,transactional_country,Increase process-step specificity and UK-return wording in subheads,,,,,,,,
+repatriation from philippines to uk timeline,/repatriation-from-philippines/,country_hub,Repatriation from Philippines,transactional_timeline,Promote timeline table and shorten answer distance from H1,,,,,,,,
+british embassy role when someone dies abroad,/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/,faq,What Does The British Embassy Do When Someone Dies Abroad,faq_embassy,Add direct scope/limits answer block and responsibilities list,,,,,,,,
+repatriation from brazil to uk cost,/repatriation-from-brazil/,country_hub,Repatriation from Brazil,transactional_cost,Add stronger cost-led excerpt and reinforce table labels,,,,,,,,
+repatriation from vietnam to uk requirements,/repatriation-from-vietnam/,country_hub,Repatriation from Vietnam,transactional_requirements,Promote required-documents table and add requirements answer summary near top,,,,,,,,

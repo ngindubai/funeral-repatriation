@@ -1,0 +1,41 @@
+{{ define "title" }}Guidance and Articles | Repatriate Service{{ end }}
+
+{{ define "main" }}
+<section class="guide-hero">
+    <div class="section-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li aria-current="page">Guidance</li>
+            </ol>
+        </nav>
+        <div class="guide-hero-inner">
+            <div class="guide-hero-text">
+                <p class="label-sm">Practical guidance</p>
+                <h1>Repatriation and bereavement abroad: guidance articles</h1>
+                <p>Practical information written by people with direct experience of body repatriation. Written for families, not for search engines.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="blog-list stagger-children">
+            {{ range .Pages.ByDate.Reverse }}
+            <a href="{{ .RelPermalink }}" class="blog-list-item reveal">
+                <div class="bli-text">
+                    <div class="bli-meta">
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+                        {{ with .Params.read_time }}<span class="read-time"><i class="fa-regular fa-clock"></i> {{ . }} min read</span>{{ end }}
+                    </div>
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Description }}</p>
+                </div>
+                <span class="bli-arrow"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

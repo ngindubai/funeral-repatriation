@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envato Elements: Asset Shopping List - Funeral Repatriation</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface-2: #1c2333;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading: #f0f6fc;
+            --accent: #d5a021;
+            --green: #3fb950;
+            --red: #f85149;
+            --orange: #d29922;
+            --purple: #bc8cff;
+            --pink: #f778ba;
+            --cyan: #39d2c0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .hero { background: linear-gradient(135deg, #0d1117 0%, #05131f 50%, #1e1a12 100%); border-bottom: 1px solid var(--border); padding: 60px 40px 50px; text-align: center; }
+        .hero h1 { font-size: 2.2rem; color: var(--heading); margin-bottom: 10px; }
+        .hero .subtitle { font-size: 1.05rem; color: var(--text-muted); max-width: 760px; margin: 0 auto 20px; }
+        .hero .stats { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        .hero .stat { background: var(--surface); padding: 12px 20px; border-radius: 10px; border: 1px solid var(--border); min-width: 140px; }
+        .hero .stat .num { font-size: 1.5rem; font-weight: 700; color: var(--heading); }
+        .hero .stat .lbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+
+        .sticky-nav { position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.95); border-bottom: 1px solid var(--border); padding: 10px 20px; overflow-x: auto; white-space: nowrap; }
+        .sticky-nav a { color: var(--accent); text-decoration: none; font-size: 0.82rem; padding: 6px 14px; border-radius: 6px; display: inline-block; }
+        .sticky-nav a:hover { background: var(--surface); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+        h2 { color: var(--heading); font-size: 1.6rem; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--heading); font-size: 1.15rem; margin: 20px 0 10px; }
+        p { margin-bottom: 12px; }
+        ul { margin: 8px 0 14px 24px; }
+        li { margin-bottom: 4px; }
+        .divider { height: 1px; background: var(--border); margin: 44px 0; }
+
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 14px; }
+        .red-left { border-left: 4px solid var(--red); }
+        .orange-left { border-left: 4px solid var(--orange); }
+        .pink-left { border-left: 4px solid var(--pink); }
+        .purple-left { border-left: 4px solid var(--purple); }
+        .cyan-left { border-left: 4px solid var(--cyan); }
+        .green-left { border-left: 4px solid var(--green); }
+
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
+        th { background: var(--surface-2); color: var(--heading); text-align: left; padding: 10px 12px; border: 1px solid var(--border); }
+        td { padding: 8px 12px; border: 1px solid var(--border); vertical-align: top; }
+
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+        .b-red { background: rgba(248,81,73,0.15); color: var(--red); }
+        .b-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
+        .b-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
+        .b-cyan { background: rgba(57,210,192,0.15); color: var(--cyan); }
+        .b-green { background: rgba(63,185,80,0.15); color: var(--green); }
+
+        .search-phrase { background: var(--surface-2); padding: 3px 10px; border-radius: 6px; font-family: "Courier New", monospace; font-size: 0.84rem; color: var(--cyan); border: 1px solid var(--border); display: inline-block; }
+        .spec-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; }
+        .spec { background: var(--surface-2); padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; border: 1px solid var(--border); }
+        .spec strong { color: var(--heading); }
+
+        @media (max-width: 900px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero .stats { flex-direction: column; align-items: center; }
+            table { font-size: 0.8rem; }
+            td, th { padding: 6px 8px; }
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <h1>Envato Elements: Asset Shopping List</h1>
+    <p class="subtitle">Image, video, and icon requirements for the Virtuary-style redesign of the funeral repatriation Hugo site. This list is ordered by implementation priority.</p>
+    <div class="stats">
+        <div class="stat"><div class="num">9</div><div class="lbl">Priority groups</div></div>
+        <div class="stat"><div class="num">38-52</div><div class="lbl">Assets needed</div></div>
+        <div class="stat"><div class="num">5</div><div class="lbl">Current images kept</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Formats (JPG, PNG, MP4)</div></div>
+    </div>
+</div>
+
+<nav class="sticky-nav">
+    <a href="#problem">The Gap</a>
+    <a href="#p1">P1 Logo</a>
+    <a href="#p2">P2 Hero Slideshow</a>
+    <a href="#p3">P3 Service Photos</a>
+    <a href="#p4">P4 Country Heroes</a>
+    <a href="#p5">P5 About and Team</a>
+    <a href="#p6">P6 Testimonials</a>
+    <a href="#p7">P7 Icons</a>
+    <a href="#p8">P8 Blog Images</a>
+    <a href="#p9">P9 Video</a>
+</nav>
+
+<div class="container">
+    <section id="problem">
+        <div class="card red-left">
+            <h3>Current Gap</h3>
+            <p>The site now has the Virtuary structure and color language, but visual coverage is still thin for sections that should rotate fresh photography (hero, services, testimonials, and informational pages). We kept the existing hero and grief-focused images as requested, then identified missing assets that will make the design feel complete and intentional.</p>
+            <p><strong>Critical point:</strong> The site should avoid generic hospital stock photos. Favor dignified, respectful funeral logistics and family-support visuals.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p1">
+        <h2><span class="badge b-red">Priority 1</span> Brand Logo Set (3-5 assets)</h2>
+        <div class="spec-row">
+            <div class="spec"><strong>Format:</strong> SVG + PNG</div>
+            <div class="spec"><strong>Variants:</strong> Light, dark, icon mark</div>
+            <div class="spec"><strong>Usage:</strong> Header, footer, favicon, social cards</div>
+        </div>
+        <table>
+            <tr><th>Asset</th><th>Search phrase</th><th>Notes</th></tr>
+            <tr><td>Main logo (light)</td><td><span class="search-phrase">funeral service logo elegant minimal</span></td><td>Readable on dark navy backgrounds</td></tr>
+            <tr><td>Main logo (dark)</td><td><span class="search-phrase">funeral brand logo dark version</span></td><td>Readable on white/light cards</td></tr>
+            <tr><td>Favicon source mark</td><td><span class="search-phrase">minimal crest icon funeral care</span></td><td>Simple silhouette for 16x16 and 32x32</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p2">
+        <h2><span class="badge b-orange">Priority 2</span> Hero Slideshow Support (4-6 assets)</h2>
+        <div class="card orange-left">
+            <p>The existing hero image remains primary. Add secondary hero slides for future rotation and campaign variants while preserving the lead capture form.</p>
+        </div>
+        <table>
+            <tr><th>Slot</th><th>Search phrase</th><th>Minimum spec</th></tr>
+            <tr><td>Hero alt 1</td><td><span class="search-phrase">professional hearse service dusk city</span></td><td>1920x1080 JPG</td></tr>
+            <tr><td>Hero alt 2</td><td><span class="search-phrase">funeral director assisting family respectfully</span></td><td>1920x1080 JPG</td></tr>
+            <tr><td>Hero alt 3</td><td><span class="search-phrase">airport cargo logistics respectful repatriation</span></td><td>1920x1080 JPG</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p3">
+        <h2><span class="badge b-purple">Priority 3</span> Service Section Photos (8-12 assets)</h2>
+        <table>
+            <tr><th>Service</th><th>Search phrase</th><th>Count</th></tr>
+            <tr><td>Body repatriation</td><td><span class="search-phrase">international repatriation funeral logistics</span></td><td>3</td></tr>
+            <tr><td>Ashes transport</td><td><span class="search-phrase">urn transport airport document check</span></td><td>2</td></tr>
+            <tr><td>Cremation abroad</td><td><span class="search-phrase">cremation arrangement consultation office</span></td><td>2</td></tr>
+            <tr><td>Embassy documentation</td><td><span class="search-phrase">consular paperwork desk legal forms</span></td><td>2</td></tr>
+            <tr><td>Family support calls</td><td><span class="search-phrase">support advisor phone consultation bereavement</span></td><td>2</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p4">
+        <h2><span class="badge b-cyan">Priority 4</span> Country Guide Hero Library (10-15 assets)</h2>
+        <p>Country pages should have visual distinction by region. This improves scanability and prevents repeated-card fatigue.</p>
+        <table>
+            <tr><th>Region</th><th>Search phrase</th><th>Count</th></tr>
+            <tr><td>Southern Europe</td><td><span class="search-phrase">mediterranean city skyline respectful mood</span></td><td>3</td></tr>
+            <tr><td>North America</td><td><span class="search-phrase">airport terminal exterior evening professional</span></td><td>2</td></tr>
+            <tr><td>Asia</td><td><span class="search-phrase">international airport cargo terminal night</span></td><td>3</td></tr>
+            <tr><td>Africa / Middle East</td><td><span class="search-phrase">city skyline dusk travel logistics</span></td><td>3</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p5">
+        <h2><span class="badge b-pink">Priority 5</span> About, Team, and Authority Visuals (6-8 assets)</h2>
+        <table>
+            <tr><th>Asset</th><th>Search phrase</th><th>Notes</th></tr>
+            <tr><td>Team portrait</td><td><span class="search-phrase">funeral care team professional portrait</span></td><td>Diverse and formal</td></tr>
+            <tr><td>Consultation room</td><td><span class="search-phrase">private consultation office calm interior</span></td><td>Warm light, no clinical feel</td></tr>
+            <tr><td>Process briefing</td><td><span class="search-phrase">advisor explaining documents to family</span></td><td>Use in process section</td></tr>
+            <tr><td>Airport coordination</td><td><span class="search-phrase">logistics coordinator airport paperwork</span></td><td>Use in trust section</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p6">
+        <h2><span class="badge b-green">Priority 6</span> Testimonial Portraits (4-6 assets)</h2>
+        <div class="card green-left">
+            <p>Use portraits that look candid and sincere. Avoid heavily staged smiling corporate stock.</p>
+        </div>
+        <table>
+            <tr><th>Type</th><th>Search phrase</th><th>Count</th></tr>
+            <tr><td>Single portrait</td><td><span class="search-phrase">mature person natural portrait neutral background</span></td><td>3</td></tr>
+            <tr><td>Couple portrait</td><td><span class="search-phrase">middle aged couple portrait natural light</span></td><td>2</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p7">
+        <h2><span class="badge b-orange">Priority 7</span> Icon Pack (1 set)</h2>
+        <table>
+            <tr><th>Need</th><th>Search phrase</th><th>Expected output</th></tr>
+            <tr><td>Funeral and logistics icon set</td><td><span class="search-phrase">line icons funeral service logistics</span></td><td>SVG pack with at least 40 icons</td></tr>
+            <tr><td>Emergency and support icons</td><td><span class="search-phrase">customer support emergency icon set</span></td><td>Monoline style, gold-friendly stroke</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p8">
+        <h2><span class="badge b-purple">Priority 8</span> Blog and Guide Feature Images (6-10 assets)</h2>
+        <table>
+            <tr><th>Category</th><th>Search phrase</th><th>Count</th></tr>
+            <tr><td>Guide explainers</td><td><span class="search-phrase">official document checklist desk</span></td><td>3</td></tr>
+            <tr><td>Travel logistics</td><td><span class="search-phrase">airport customs paperwork passport stamp</span></td><td>3</td></tr>
+            <tr><td>Family support</td><td><span class="search-phrase">support conversation compassionate professional</span></td><td>2</td></tr>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="p9">
+        <h2><span class="badge b-cyan">Priority 9</span> Optional Video Backgrounds (2-3 assets)</h2>
+        <div class="card cyan-left">
+            <p>Only use if load-performance budget allows. Keep silent and subtle with no intrusive motion.</p>
+        </div>
+        <table>
+            <tr><th>Slot</th><th>Search phrase</th><th>Spec</th></tr>
+            <tr><td>Hero background loop</td><td><span class="search-phrase">cinematic airport exterior timelapse respectful</span></td><td>MP4, 8-12s, 1080p</td></tr>
+            <tr><td>Section interlude loop</td><td><span class="search-phrase">city skyline dusk slow pan</span></td><td>MP4, 6-10s, 1080p</td></tr>
+        </table>
+    </section>
+</div>
+</body>
+</html>

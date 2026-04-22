@@ -1,0 +1,343 @@
+{{ define "title" }}{{ .Title }} | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.BaseURL }}" },
+        { "@type": "ListItem", "position": 2, "name": "Cremation abroad", "item": "{{ site.BaseURL }}cremation-transfer/" },
+        { "@type": "ListItem", "position": 3, "name": "Cremation in {{ .Params.country_name }}", "item": "{{ .Permalink }}" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Cremation in {{ .Params.country_name }} and Ashes Transport to the UK",
+      "description": "{{ .Description }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Repatriate Service",
+        "telephone": "{{ site.Params.emergencyPhone }}",
+        "url": "{{ site.BaseURL }}"
+      },
+      "serviceType": "Cremation Abroad and Ashes Transport",
+      "areaServed": "{{ .Params.country_name }}"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I bring ashes home from {{ .Params.country_name }} on a plane?",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{ with $c.ashes_transport }}{{ .can_carry_on_plane }}{{ end }}" }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does cremation in {{ .Params.country_name }} cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{ with $c.ashes_transport }}Cremation in {{ $.Params.country_name }} typically costs {{ .typical_cost_cremation_gbp }}. Bringing ashes home costs {{ .typical_cost_ashes_return_gbp }}.{{ end }}" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $at := $c.ashes_transport }}
+
+{{ if $c }}
+
+{{/* ============================================================
+     HERO
+     ============================================================ */}}
+<section class="ct-hero">
+    <div class="section-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cremation-transfer/">Cremation abroad</a></li>
+                <li aria-current="page">{{ .Params.country_name }}</li>
+            </ol>
+        </nav>
+        <div class="ct-hero-inner">
+            <div class="ct-hero-text">
+                <p class="label-sm">Cremation and ashes transport</p>
+                <h1>Cremation in <em>{{ .Params.country_name }}</em> and bringing ashes home</h1>
+                <p class="ct-lead">For some families, arranging cremation locally and carrying ashes home is the right choice. It can be quicker, less costly, and feel more in keeping with your loved one's wishes. This guide explains how it works from {{ .Params.country_name }}, and what you need to arrange it.</p>
+                <div class="ct-hero-actions">
+                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us 24/7</a>
+                    <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline">Full repatriation guide for {{ .Params.country_name }}</a>
+                </div>
+            </div>
+            <div class="ct-hero-facts">
+                {{ with $at.typical_cost_cremation_gbp }}
+                <div class="ct-fact">
+                    <i class="fa-solid fa-fire"></i>
+                    <div>
+                        <p class="cf-label">Cremation cost</p>
+                        <p class="cf-val">{{ . }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ with $at.typical_cost_ashes_return_gbp }}
+                <div class="ct-fact">
+                    <i class="fa-solid fa-plane"></i>
+                    <div>
+                        <p class="cf-label">Bringing ashes home</p>
+                        <p class="cf-val">{{ . }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ with $at.cremation_legal }}
+                <div class="ct-fact">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <p class="cf-label">Cremation available</p>
+                        <p class="cf-val">{{ if . }}Yes, legally available{{ else }}Not available or restricted{{ end }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     CRITICAL WARNING
+     ============================================================ */}}
+{{ with $at.critical_warning }}
+<section class="ct-warning-section">
+    <div class="section-inner">
+        <div class="warning-card reveal">
+            <div class="warning-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div>
+                <h3>Important: read this before making any decisions</h3>
+                <p>{{ . }}</p>
+                <p>If there is any possibility a UK coroner may be involved, speak to us first. Do not instruct a funeral director to proceed with cremation until you have confirmed the position with the coroner's office.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     IS CREMATION RIGHT FOR YOUR FAMILY?
+     ============================================================ */}}
+<section class="section ct-decision-section">
+    <div class="section-inner">
+        <div class="ct-decision-grid">
+            <div class="ct-decision-main reveal">
+                <p class="label-sm">Making the right decision</p>
+                <h2>Is cremation abroad the right choice?</h2>
+                <p>There is no single right answer. Full repatriation brings your loved one home intact, which matters deeply to many families. Cremation abroad can be quicker and considerably less costly, and for families whose loved one expressed a wish to be cremated, it is often the natural choice.</p>
+                <p>The main factors to consider are: your loved one's religious or personal wishes; whether the UK coroner may need to be involved; the cost difference; and the time available before religious observance requires action.</p>
+                <div class="ct-decision-table">
+                    <div class="ct-dt-row ct-dt-header">
+                        <span>Cremation abroad</span>
+                        <span>Full repatriation</span>
+                    </div>
+                    <div class="ct-dt-row">
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> Lower cost</div>
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> Body repatriated intact</div>
+                    </div>
+                    <div class="ct-dt-row">
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> Often quicker</div>
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> UK funeral as normal</div>
+                    </div>
+                    <div class="ct-dt-row">
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> Can carry ashes on return flight</div>
+                        <div class="ct-dt-cell"><i class="fa-solid fa-check"></i> No airline ashes restrictions</div>
+                    </div>
+                    <div class="ct-dt-row">
+                        <div class="ct-dt-cell"><i class="fa-solid fa-xmark"></i> Not suitable if coroner involved</div>
+                        <div class="ct-dt-cell"><i class="fa-solid fa-xmark"></i> Higher cost</div>
+                    </div>
+                    <div class="ct-dt-row">
+                        <div class="ct-dt-cell"><i class="fa-solid fa-xmark"></i> Not all religions permit cremation</div>
+                        <div class="ct-dt-cell"><i class="fa-solid fa-xmark"></i> Longer timeline</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ct-decision-aside reveal">
+                <div class="ct-info-card">
+                    <h3><i class="fa-solid fa-book-open"></i> Cremation in {{ .Params.country_name }}</h3>
+                    {{ with $at.cremation_facilities }}<p>{{ . }}</p>{{ end }}
+                </div>
+                {{ with $c.cultural_considerations.religious_customs }}
+                <div class="ct-info-card" style="margin-top:1rem;">
+                    <h3><i class="fa-solid fa-hands-praying"></i> Religious context</h3>
+                    <p>{{ . }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     DOCUMENTS REQUIRED
+     ============================================================ */}}
+{{ if $at.ashes_transport_requirements }}
+<section class="section-alt ct-docs-section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Documents you will need</p>
+            <h2>Documentation for bringing ashes from {{ .Params.country_name }} to the UK</h2>
+            <p>You will need these documents in order when carrying ashes through airport security and UK customs.</p>
+        </div>
+        <div class="ct-docs-grid stagger-children">
+            {{ range $at.ashes_transport_requirements }}
+            <div class="ct-doc-card reveal">
+                <i class="fa-solid fa-file-lines"></i>
+                <p>{{ . }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     CARRYING ASHES ON A PLANE
+     ============================================================ */}}
+<section class="section ct-airline-section">
+    <div class="section-inner">
+        <div class="ct-airline-grid">
+            <div class="reveal">
+                <p class="label-sm">Airline guidance</p>
+                <h2>Carrying ashes on the flight home</h2>
+                {{ with $at.can_carry_on_plane }}<p>{{ . }}</p>{{ end }}
+                {{ with $at.airline_policies_note }}<p>{{ . }}</p>{{ end }}
+                <div class="ct-airline-tips">
+                    <h3>Practical tips</h3>
+                    <ul>
+                        <li>Call the airline directly before travel to confirm their current policy, not the website.</li>
+                        <li>Carry all documents in the same bag as the urn, not in checked luggage.</li>
+                        <li>Non-metallic urns or temporary containers are much easier at security screening.</li>
+                        <li>Allow extra time at check-in. Explain the situation calmly to staff at the desk.</li>
+                        <li>UK customs does not generally restrict ashes brought in from abroad, but documentation will be checked.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reveal">
+                {{ with $at.can_ship_by_post }}
+                <div class="ct-info-card">
+                    <h3><i class="fa-solid fa-box"></i> Shipping ashes by post or courier</h3>
+                    <p>{{ . }}</p>
+                    <p class="ct-info-note">Shipping is generally a last resort. Carrying ashes personally gives you full control. If shipping is necessary, use a specialist funeral courier, not a general parcel service.</p>
+                </div>
+                {{ end }}
+                <div class="ct-info-card" style="margin-top:1rem;">
+                    <h3><i class="fa-solid fa-sterling-sign"></i> Cost summary</h3>
+                    {{ with $at.typical_cost_cremation_gbp }}<p><strong>Cremation in {{ $.Params.country_name }}:</strong> {{ . }}</p>{{ end }}
+                    {{ with $at.typical_cost_ashes_return_gbp }}<p><strong>Bringing ashes home:</strong> {{ . }}</p>{{ end }}
+                    <p class="ct-info-note">Source: {{ with $at.source }}{{ . }}{{ else }}FCDO guidance and funeral industry data{{ end }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     FULL REPATRIATION ALTERNATIVE
+     ============================================================ */}}
+<section class="section-alt ct-alt-section">
+    <div class="section-inner">
+        <div class="info-card info-card--blue reveal">
+            <div class="info-card-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div>
+                <h3>Considering full repatriation instead?</h3>
+                <p>Some families decide, after looking at the process and costs, that they want their loved one brought home intact. Full body repatriation from {{ .Params.country_name }} is something we handle regularly. The costs and timelines are set out in the full country guide.</p>
+                <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline" style="margin-top:0.75rem; display:inline-flex;">Full repatriation guide for {{ .Params.country_name }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     GUIDE CROSSLINK
+     ============================================================ */}}
+{{ $guideSlug := printf "death-abroad-%s" $key }}
+{{ $guide := .Site.GetPage (printf "/guides/%s" $guideSlug) }}
+{{ if $guide }}
+<section class="section ct-guide-section">
+    <div class="section-inner">
+        <a href="{{ $guide.RelPermalink }}" class="guide-crosslink-card reveal">
+            <div class="guide-crosslink-icon"><i class="fa-solid fa-list-check"></i></div>
+            <div>
+                <p class="label-sm">First steps guide</p>
+                <h3>What to do if someone dies in {{ .Params.country_name }}</h3>
+                <p>Need immediate guidance on what to do right now? The step-by-step first response guide covers emergency contacts, the first 24 hours, and what needs to happen before you can make any decisions about repatriation or cremation.</p>
+            </div>
+            <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+        </a>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     CTA FORM
+     ============================================================ */}}
+<section class="quote-section" id="enquiry-form">
+    <div class="section-inner">
+        <h2 class="reveal">Talk to us about cremation in {{ .Params.country_name }}</h2>
+        <p class="quote-subtitle reveal">We can advise on whether cremation abroad is the right choice for your family, and coordinate all arrangements if you decide to proceed.</p>
+
+        <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width:720px; margin:0 auto;">
+            <input type="hidden" name="country" value="{{ .Params.country_name }}">
+            <input type="hidden" name="service" value="cremation-transfer">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="cf-name">Your name <span class="required">*</span></label>
+                    <input type="text" id="cf-name" name="name" placeholder="Full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">Email <span class="required">*</span></label>
+                    <input type="email" id="cf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="cf-phone">Phone</label>
+                    <input type="tel" id="cf-phone" name="phone" placeholder="+44..." autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="cf-query">Your question</label>
+                    <select id="cf-query" name="query_type">
+                        <option value="">Select</option>
+                        <option value="cremation_costs">Cremation costs and process</option>
+                        <option value="ashes_transport">Carrying ashes home</option>
+                        <option value="coroner_question">Coroner or inquest question</option>
+                        <option value="full_repatriation">Actually prefer full repatriation</option>
+                        <option value="unsure">Not sure what to do yet</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-full">
+                    <label for="cf-message">Tell us the situation</label>
+                    <textarea id="cf-message" name="message" rows="4" placeholder="Anything that will help us give you accurate guidance"></textarea>
+                </div>
+            </div>
+            <div style="display:none;" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+            <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+            <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+        </form>
+    </div>
+</section>
+
+{{ else }}
+<section class="section">
+    <div class="section-inner">
+        <p>Please <a href="/contact/">contact our team</a> for guidance on cremation and ashes transport.</p>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

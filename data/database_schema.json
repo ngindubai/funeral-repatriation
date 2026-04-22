@@ -1,0 +1,605 @@
+{
+  "_metadata": {
+    "purpose": "Database schema for the funeral-repatriation site: (1) Country Repatriation Profiles, (2) City Data, (3) Content Registry",
+    "version": "1.0",
+    "designed": "2026-04-16",
+    "designed_by": "The Librarian (data architecture)",
+    "notes": [
+      "Schema designed around existing data structures in countries_repatriation.json and cities_p1.json",
+      "JSON-first approach: flat files for Phase 1 static site, upgradable to database if dynamic features needed later",
+      "Every field maps to a specific content section in the page templates",
+      "YMYL site: accuracy fields (confidence, source, last_verified) are mandatory, not optional",
+      "All cost data flagged VERIFY BEFORE PUBLISHING"
+    ]
+  },
+
+  "schema_1_country_repatriation_profiles": {
+    "description": "Master country database. Feeds country repatriation pages, guide pages, FAQ generation, and comparison tables.",
+    "file_pattern": "data/countries/{country_slug}.json",
+    "master_file": "data/countries_repatriation.json",
+    "update_cadence": "Quarterly minimum. After any regulation change, embassy contact change, or airline route change.",
+
+    "record": {
+      "name": {
+        "type": "string",
+        "description": "Display name (e.g. 'Spain', 'Thailand')",
+        "required": true
+      },
+      "slug": {
+        "type": "string",
+        "description": "URL-safe lowercase slug (e.g. 'spain', 'dominican-republic')",
+        "required": true,
+        "indexed": true,
+        "unique": true,
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "priority": {
+        "type": "enum",
+        "values": ["P1", "P2", "P3", "P4"],
+        "description": "P1 = 10 launch countries, P2 = 16 expansion, P3 = 50+ medium-volume, P4 = remaining",
+        "required": true,
+        "indexed": true
+      },
+      "death_volume_rank": {
+        "type": "integer",
+        "description": "Rank by estimated British deaths abroad (1 = most deaths)",
+        "required": true
+      },
+      "british_deaths_per_year_est": {
+        "type": "string",
+        "description": "Estimated annual British deaths. Format: '~100-150'. Source must be cited.",
+        "required": true
+      },
+      "british_deaths_source": {
+        "type": "string",
+        "description": "Named source for death estimate (e.g. 'FCO consular data 2024')",
+        "required": true
+      },
+      "repatriation_process": {
+        "type": "object",
+        "description": "8-step standard repatriation process for this country",
+        "required": true,
+        "properties": {
+          "step_1_immediate": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string", "required": true},
+              "details": {"type": "string", "required": true},
+              "local_emergency_number": {"type": "string", "required": true},
+              "who_to_contact_first": {"type": "string", "required": true}
+            }
+          },
+          "step_2_death_certificate": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "processing_time": {"type": "string"},
+              "cost_est": {"type": "string"},
+              "documents_needed": {"type": "array", "items": "string"},
+              "local_term": {"type": "string", "description": "Local language term for death certificate"},
+              "confidence": {"type": "enum", "values": ["high", "medium", "low", "unverified"]}
+            }
+          },
+          "step_3_embassy_notification": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "embassy_phone": {"type": "string"},
+              "consulate_locations": {"type": "array", "items": "string"},
+              "embassy_can_do": {"type": "array", "items": "string"},
+              "embassy_cannot_do": {"type": "array", "items": "string"}
+            }
+          },
+          "step_4_embalming": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "required_for_repatriation": {"type": "boolean"},
+              "typical_cost_local_currency": {"type": "string"},
+              "typical_cost_gbp": {"type": "string"},
+              "notes": {"type": "string"},
+              "confidence": {"type": "enum", "values": ["high", "medium", "low", "unverified"]}
+            }
+          },
+          "step_5_coffin": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "zinc_lined_required": {"type": "boolean"},
+              "typical_cost_gbp": {"type": "string"},
+              "confidence": {"type": "enum", "values": ["high", "medium", "low", "unverified"]}
+            }
+          },
+          "step_6_documentation": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "documents_needed": {"type": "array", "items": "string"},
+              "processing_time": {"type": "string"},
+              "notes": {"type": "string"},
+              "confidence": {"type": "enum", "values": ["high", "medium", "low", "unverified"]}
+            }
+          },
+          "step_7_transport": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "main_airlines": {"type": "array", "items": "string"},
+              "cargo_airlines": {"type": "array", "items": "string"},
+              "main_routes_to_uk": {"type": "array", "items": "string"},
+              "typical_freight_cost_gbp": {"type": "string"},
+              "flight_time": {"type": "string"},
+              "confidence": {"type": "enum", "values": ["high", "medium", "low", "unverified"]}
+            }
+          },
+          "step_8_uk_reception": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "title": {"type": "string"},
+              "details": {"type": "string"},
+              "uk_airport_reception": {"type": "array", "items": "string"},
+              "customs_process": {"type": "string"}
+            }
+          }
+        }
+      },
+      "typical_timeline": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "fastest_case": {"type": "string", "description": "Best-case timeline (e.g. '5-7 days')"},
+          "average_case": {"type": "string", "description": "Typical timeline"},
+          "complex_case": {"type": "string", "description": "Worst-case timeline"},
+          "complexity_factors": {"type": "array", "items": "string"},
+          "confidence": {"type": "enum", "values": ["high", "medium", "low"]}
+        }
+      },
+      "cost_guide": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "total_typical_range_gbp": {"type": "string", "description": "Total range (e.g. 'GBP 3,000-8,000')"},
+          "breakdown": {
+            "type": "object",
+            "description": "Cost breakdown by category. Keys vary by country but typically: local_funeral_director, embalming, zinc_coffin, documentation, air_freight, uk_reception"
+          },
+          "cost_notes": {"type": "string"},
+          "insurance_note": {"type": "string"},
+          "confidence": {"type": "enum", "values": ["high", "medium", "low"]}
+        },
+        "notes": "ALL cost data must be tagged VERIFY BEFORE PUBLISHING. Costs are estimates based on industry sources and competitor pricing."
+      },
+      "embassy_contacts": {
+        "type": "object",
+        "required": true,
+        "description": "British embassy/consulate/high commission contacts. Include US and AU where available in enrichment pass.",
+        "properties": {
+          "british_embassy": {
+            "type": "object",
+            "properties": {
+              "city": {"type": "string"},
+              "phone": {"type": "string"},
+              "emergency_phone": {"type": "string", "description": "After-hours, usually +44 20 7008 5000"},
+              "website": {"type": "string"}
+            }
+          },
+          "consulates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "city": {"type": "string"},
+                "phone": {"type": "string"}
+              }
+            }
+          }
+        }
+      },
+      "cultural_practices": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "dominant_religion": {"type": "string"},
+          "burial_vs_cremation": {"type": "string"},
+          "funeral_timing": {"type": "string", "description": "How fast local funerals happen (Islamic 24h, Buddhist 3-7d, etc.)"},
+          "local_customs": {"type": "array", "items": "string"},
+          "notes": {"type": "string", "description": "Sensitivity notes, reverse repatriation context, etc."}
+        }
+      },
+      "practical_information": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "language": {"type": "string"},
+          "english_widely_spoken": {"type": "string"},
+          "police_contact": {"type": "string"},
+          "common_death_causes_abroad": {"type": "array", "items": "string"},
+          "high_risk_areas": {"type": "array", "items": "string"}
+        }
+      },
+      "ashes_transport": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "cremation_available": {"type": "boolean"},
+          "ashes_transport_requirements": {"type": "array", "items": "string"},
+          "can_carry_on_plane": {"type": "string"},
+          "typical_cost_cremation_gbp": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      },
+      "content_angles": {
+        "type": "object",
+        "required": true,
+        "description": "SEO and content strategy data. Feeds The Wordsmith and The Scout.",
+        "properties": {
+          "primary_angle": {"type": "string", "description": "Main editorial angle for this country's content"},
+          "seo_keywords": {"type": "array", "items": "string"},
+          "unique_complications": {"type": "array", "items": "string"}
+        }
+      }
+    }
+  },
+
+  "schema_2_city_data": {
+    "description": "City-level data for P1 countries. Feeds city-specific pages, 'death in [city]' guide pages, and internal linking.",
+    "file_pattern": "data/cities/{country_slug}/{city_slug}.json",
+    "master_file": "data/cities_p1.json",
+    "update_cadence": "Biannually. After any major hospital closure, airport change, or significant event.",
+
+    "record": {
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "country_slug": {
+        "type": "string",
+        "required": true,
+        "foreign_key": "schema_1.slug"
+      },
+      "type": {
+        "type": "enum",
+        "values": ["capital", "major_city", "resort", "tourist_hub"],
+        "required": true,
+        "indexed": true
+      },
+      "population_approx": {
+        "type": "integer",
+        "required": false
+      },
+      "relevance": {
+        "type": "string",
+        "required": true,
+        "description": "Why this city matters for repatriation: tourist volume, expat community, transit hub"
+      },
+      "british_presence": {
+        "type": "string",
+        "required": true,
+        "description": "Estimated British tourist/expat context"
+      },
+      "hospitals": {
+        "type": "array",
+        "required": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "type": {"type": "enum", "values": ["public", "private_international", "private_local"]},
+            "english_speaking": {"type": "boolean"},
+            "notes": {"type": "string"}
+          }
+        }
+      },
+      "mortuaries_forensic": {
+        "type": "array",
+        "required": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "notes": {"type": "string"}
+          }
+        }
+      },
+      "local_funeral_directors": {
+        "type": "string",
+        "required": true,
+        "description": "General note on availability and English-speaking capacity"
+      },
+      "international_airport": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "code": {"type": "string", "description": "IATA code"},
+          "name": {"type": "string"},
+          "cargo_capable": {"type": "boolean", "description": "Can this airport handle international remains cargo?"}
+        }
+      },
+      "common_death_scenarios": {
+        "type": "array",
+        "items": "string",
+        "required": true
+      },
+      "local_challenges": {
+        "type": "array",
+        "items": "string",
+        "required": true
+      },
+      "transport_to_hub": {
+        "type": "string",
+        "required": true,
+        "description": "If not a cargo hub, how to get remains to the nearest international cargo airport"
+      },
+      "content_angle": {
+        "type": "string",
+        "required": true,
+        "description": "Unique editorial angle for this city's SEO content"
+      },
+      "confidence": {
+        "type": "enum",
+        "values": ["high", "medium", "low"],
+        "required": true
+      }
+    }
+  },
+
+  "schema_3_content_registry": {
+    "description": "Tracks all generated pages, their status, SEO data, and content quality scores. The spine of the site build.",
+    "file_pattern": "data/content/registry.json",
+    "update_cadence": "On every page generation, review, or publication.",
+
+    "record": {
+      "page_id": {
+        "type": "string",
+        "description": "Unique page identifier (e.g. 'country/spain', 'guide/death-in-phuket', 'faq/spain')",
+        "required": true,
+        "unique": true,
+        "indexed": true
+      },
+      "page_type": {
+        "type": "enum",
+        "values": [
+          "country_repatriation",
+          "death_abroad_guide",
+          "city_guide",
+          "faq",
+          "service_page",
+          "comparison",
+          "blog",
+          "core_page"
+        ],
+        "required": true,
+        "indexed": true
+      },
+      "url_path": {
+        "type": "string",
+        "description": "Final URL path (e.g. '/repatriation-from-spain/')",
+        "required": true,
+        "unique": true
+      },
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "meta_description": {
+        "type": "string",
+        "required": true,
+        "max_length": 160
+      },
+      "h1": {
+        "type": "string",
+        "required": true
+      },
+      "target_keywords": {
+        "type": "array",
+        "items": "string",
+        "required": true
+      },
+      "word_count": {
+        "type": "integer",
+        "required": false
+      },
+      "country_slug": {
+        "type": "string",
+        "required": false,
+        "foreign_key": "schema_1.slug"
+      },
+      "city_name": {
+        "type": "string",
+        "required": false
+      },
+      "status": {
+        "type": "enum",
+        "values": ["planned", "drafted", "reviewed", "humanised", "seo_optimised", "published"],
+        "required": true,
+        "indexed": true
+      },
+      "quality_scores": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "chameleon_pass": {"type": "boolean", "description": "Passed humaniser anti-AI check"},
+          "auditor_pass": {"type": "boolean", "description": "Passed legal/accuracy audit"},
+          "optimiser_pass": {"type": "boolean", "description": "Passed SEO check"},
+          "burstiness_score": {"type": "number", "description": "0-1, target >0.5"},
+          "ttr_score": {"type": "number", "description": "Type-token ratio, target 0.5-0.7"}
+        }
+      },
+      "internal_links": {
+        "type": "object",
+        "properties": {
+          "links_to": {"type": "array", "items": "string", "description": "page_ids this page links to"},
+          "linked_from": {"type": "array", "items": "string", "description": "page_ids linking to this page"}
+        }
+      },
+      "schema_markup": {
+        "type": "object",
+        "description": "JSON-LD schema types applied to this page",
+        "properties": {
+          "types": {"type": "array", "items": "string", "description": "e.g. ['FAQPage', 'Service', 'BreadcrumbList']"}
+        }
+      },
+      "created": {"type": "string", "format": "date"},
+      "last_updated": {"type": "string", "format": "date"},
+      "author_attribution": {
+        "type": "string",
+        "description": "E-E-A-T author name for byline. YMYL requirement."
+      }
+    }
+  },
+
+  "schema_4_keyword_registry": {
+    "description": "Tracks keyword targeting to prevent cannibalization. Maps keywords to pages.",
+    "file_pattern": "data/seo/keyword_registry.json",
+    "update_cadence": "On every page creation.",
+
+    "record": {
+      "keyword": {
+        "type": "string",
+        "required": true,
+        "unique": true,
+        "indexed": true
+      },
+      "assigned_page_id": {
+        "type": "string",
+        "required": true,
+        "foreign_key": "schema_3.page_id"
+      },
+      "estimated_volume": {
+        "type": "integer",
+        "required": false
+      },
+      "intent": {
+        "type": "enum",
+        "values": ["informational", "transactional", "navigational", "commercial"],
+        "required": true
+      },
+      "competition": {
+        "type": "enum",
+        "values": ["low", "medium", "high"],
+        "required": false
+      },
+      "current_rank": {
+        "type": "integer",
+        "required": false,
+        "description": "Current SERP position if tracked"
+      }
+    }
+  },
+
+  "relationships": {
+    "country_to_cities": {
+      "type": "one_to_many",
+      "from": "schema_1.slug",
+      "to": "schema_2.country_slug"
+    },
+    "country_to_content": {
+      "type": "one_to_many",
+      "from": "schema_1.slug",
+      "to": "schema_3.country_slug"
+    },
+    "content_to_keywords": {
+      "type": "one_to_many",
+      "from": "schema_3.page_id",
+      "to": "schema_4.assigned_page_id"
+    },
+    "content_to_content": {
+      "type": "many_to_many",
+      "through": "schema_3.internal_links",
+      "description": "Internal linking graph. The Connector manages this."
+    }
+  },
+
+  "data_quality_rules": {
+    "confidence_levels": {
+      "high": "Source is named, dated, and verifiable (UK gov, embassy website, airline policy document)",
+      "medium": "Source is credible but not directly verifiable (industry estimate, cross-referenced from multiple sources)",
+      "low": "Estimate based on pattern matching from similar countries. Needs verification before publishing.",
+      "unverified": "Placeholder data. DO NOT publish without verification."
+    },
+    "mandatory_verification_fields": [
+      "cost_guide.total_typical_range_gbp",
+      "embassy_contacts.*.phone",
+      "typical_timeline.*",
+      "hospitals[].name"
+    ],
+    "pre_publish_checklist": [
+      "All 'VERIFY' tags resolved or acknowledged",
+      "All phone numbers confirmed against official embassy websites",
+      "All cost ranges cross-referenced with at least one competitor or industry source",
+      "All emergency numbers confirmed against local government sources",
+      "No unverified data published without confidence disclaimer",
+      "No YMYL safety guarantees ('reduce risk' not 'guarantee safety')"
+    ]
+  },
+
+  "url_structure": {
+    "country_repatriation": "/repatriation-from-{country_slug}/",
+    "death_abroad_guide": "/death-abroad/{country_slug}/",
+    "city_guide": "/death-in-{city_slug}-{country_slug}/",
+    "country_faq": "/faq/repatriation-from-{country_slug}/",
+    "ashes_transport": "/ashes-transport-from-{country_slug}/",
+    "service_page": "/{service_slug}/",
+    "comparison": "/compare/{country_a}-vs-{country_b}/",
+    "blog": "/blog/{post_slug}/"
+  },
+
+  "template_mapping": {
+    "country_repatriation": {
+      "template": "templates/country_repatriation.html",
+      "data_sources": ["schema_1", "schema_2"],
+      "sections": [
+        "hero_with_country_context",
+        "immediate_steps_callout",
+        "repatriation_process_8_steps",
+        "timeline_and_cost_overview",
+        "embassy_contacts_sidebar",
+        "cultural_practices_note",
+        "ashes_transport_section",
+        "faq_schema_markup",
+        "cta_contact_form",
+        "internal_links_related_countries",
+        "trust_signals_footer"
+      ]
+    },
+    "death_abroad_guide": {
+      "template": "templates/death_abroad_guide.html",
+      "data_sources": ["schema_1", "schema_2"],
+      "sections": [
+        "what_to_do_immediately",
+        "local_emergency_contacts",
+        "embassy_how_they_help",
+        "documents_youll_need",
+        "local_customs_awareness",
+        "bringing_your_loved_one_home",
+        "cost_expectations",
+        "faq_section"
+      ]
+    },
+    "city_guide": {
+      "template": "templates/city_guide.html",
+      "data_sources": ["schema_2", "schema_1"],
+      "sections": [
+        "city_context",
+        "hospitals_and_medical",
+        "local_authorities",
+        "transport_logistics",
+        "common_scenarios",
+        "practical_information"
+      ]
+    }
+  }
+}

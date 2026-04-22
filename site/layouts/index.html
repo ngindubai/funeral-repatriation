@@ -1,0 +1,327 @@
+{{ define "title" }}{{ .Site.Params.brand }} | Bringing your loved ones home{{ end }}
+
+{{ define "main" }}
+
+{{/* ===== HERO ===== */}}
+<section class="hero">
+    <div class="hero-bg">
+        <img src="/images/hero.jpg" alt="Funeral cortege" width="1920" height="1080">
+    </div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="label-sm">Funeral repatriation guidance</p>
+            <h1>Bringing your <em>loved ones</em> home</h1>
+            <p>When someone dies abroad, the process of bringing them home can feel impossible. We provide clear, country-specific guidance for every step, from death registration to arrival in the UK.</p>
+
+            <div class="hero-actions">
+                <a href="/contact/" class="btn btn-cta">Request Guidance</a>
+                <a href="/services/" class="btn btn-outline">View Services</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <p class="hero-stat-number">26</p>
+                    <p class="hero-stat-label">Country guides</p>
+                </div>
+                <div class="hero-stat">
+                    <p class="hero-stat-number">24/7</p>
+                    <p class="hero-stat-label">Support</p>
+                </div>
+                <div class="hero-stat">
+                    <p class="hero-stat-number">UK</p>
+                    <p class="hero-stat-label">Focused</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-form">
+            <h3>Need help now?</h3>
+            <p class="form-subtitle">Tell us where and we will guide you through the process</p>
+            <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate>
+                <div class="form-group">
+                    <label for="hf-country">Country where death occurred <span class="required">*</span></label>
+                    <select id="hf-country" name="country" required>
+                        <option value="">Select country</option>
+                        <option value="spain">Spain</option>
+                        <option value="france">France</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="usa">United States</option>
+                        <option value="greece">Greece</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italy">Italy</option>
+                        <option value="india">India</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="australia">Australia</option>
+                        <option value="germany">Germany</option>
+                        <option value="cyprus">Cyprus</option>
+                        <option value="uae">UAE</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="south_africa">South Africa</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="canada">Canada</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hf-urgency">When did the death occur?</label>
+                    <select id="hf-urgency" name="urgency">
+                        <option value="">Select</option>
+                        <option value="just_happened">Within the last 24 hours</option>
+                        <option value="this_week">Within the last week</option>
+                        <option value="planning">Planning ahead</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hf-name">Your name <span class="required">*</span></label>
+                    <input type="text" id="hf-name" name="name" placeholder="Full name" required autocomplete="name">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hf-email">Email <span class="required">*</span></label>
+                        <input type="email" id="hf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="hf-phone">Phone</label>
+                        <input type="tel" id="hf-phone" name="phone" placeholder="+44..." autocomplete="tel">
+                    </div>
+                </div>
+                {{/* Honeypot */}}
+                <div style="display:none;" aria-hidden="true">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <button type="submit" class="btn-submit">Get guidance</button>
+                <p class="form-note">No obligation. Your details are kept private.</p>
+            </form>
+            <div class="quote-success" hidden>
+                <p>We have received your enquiry. A member of our team will be in touch, typically within a few hours.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== TRUST BAR ===== */}}
+<section class="trust-bar">
+    <div class="trust-bar-inner">
+        <div class="trust-item reveal">
+            <div class="trust-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <p class="trust-number">24/7</p>
+            <p class="trust-label">Emergency support</p>
+        </div>
+        <div class="trust-item reveal">
+            <div class="trust-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <p class="trust-number">26</p>
+            <p class="trust-label">Country guides</p>
+        </div>
+        <div class="trust-item reveal">
+            <div class="trust-icon"><i class="fa-solid fa-file-shield"></i></div>
+            <p class="trust-number">Gov</p>
+            <p class="trust-label">Verified sources</p>
+        </div>
+        <div class="trust-item reveal">
+            <div class="trust-icon"><i class="fa-solid fa-flag"></i></div>
+            <p class="trust-number">UK</p>
+            <p class="trust-label">Focused service</p>
+        </div>
+    </div>
+</section>
+
+{{/* ===== HOW IT WORKS ===== */}}
+<section class="how-it-works">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">How it works</p>
+            <h2>Three steps to bringing them home</h2>
+            <p>Every country has different rules. We break the process down so you know exactly what to do and when.</p>
+        </div>
+        <div class="how-steps stagger-children">
+            <div class="how-step reveal">
+                <div class="how-step-number"><img src="/icons/death-certificate.svg" alt="" width="48" height="48" aria-hidden="true"></div>
+                <h3>Tell us where</h3>
+                <p>Select the country where the death occurred. We will show you the exact process, documents needed, and local contacts.</p>
+            </div>
+            <div class="how-step reveal">
+                <div class="how-step-number"><img src="/icons/repatriation.svg" alt="" width="48" height="48" aria-hidden="true"></div>
+                <h3>Follow the guide</h3>
+                <p>Step-by-step instructions for death registration, embalming, consular paperwork, and arranging transport back to the UK.</p>
+            </div>
+            <div class="how-step reveal">
+                <div class="how-step-number"><img src="/icons/transport.svg" alt="" width="48" height="48" aria-hidden="true"></div>
+                <h3>We coordinate</h3>
+                <p>If you need hands-on help, our team works with local funeral directors, embassies, and airlines to handle everything.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== PARALLAX INTERLUDE ===== */}}
+<section class="parallax-interlude">
+    <div class="parallax-interlude-bg">
+        <img src="/images/repatriation-logistics.jpg" alt="International funeral repatriation logistics" width="1920" height="1080" loading="lazy">
+    </div>
+    <div class="parallax-interlude-text">
+        <p>Every family deserves to bring their loved one home with dignity.</p>
+    </div>
+</section>
+
+{{/* ===== COUNTRY GUIDES ===== */}}
+<section class="section reveal">
+    <div class="section-inner">
+        <div class="section-header">
+            <p class="label-sm">Country guides</p>
+            <h2>Repatriation guides by country</h2>
+            <p>Each guide covers the full process: what to do first, documents needed, costs, timelines, and embassy contacts.</p>
+        </div>
+        <div class="country-grid stagger-children">
+            {{ $images := slice "/images/airport-cargo.jpg" "/images/mediterranean.jpg" "/images/airport-terminal.jpg" "/images/cargo-terminal-night.jpg" "/images/city-dusk.jpg" }}
+            {{ range $i, $c := hugo.Data.countries }}
+            {{ $img := index $images (mod $i (len $images)) }}
+            <a href="/repatriation-from-{{ $c.slug }}/" class="country-card reveal">
+                <img class="card-bg-img" src="{{ $img }}" alt="" width="400" height="260" loading="lazy">
+                <div class="card-text">
+                    <p class="country-card-flag">{{ $c.flag }}</p>
+                    <p class="country-card-name">{{ $c.name }}</p>
+                    <p class="country-card-desc">{{ $c.short_desc }}</p>
+                    <div class="country-card-meta">
+                        <span>{{ $c.priority }}</span>
+                        <span>{{ $c.timeline }}</span>
+                    </div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{/* ===== FAQ ===== */}}
+<section class="faq-section section-alt">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Common questions</p>
+            <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="reveal">
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1">
+                    How long does repatriation take?
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="faq-1" class="faq-answer" hidden>
+                    <p>It depends on the country. In the EU, repatriation typically takes 5 to 10 working days. Countries with more complex bureaucracy, like India or Thailand, can take 2 to 4 weeks. We provide country-specific timelines in each guide.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2">
+                    How much does it cost to repatriate someone to the UK?
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="faq-2" class="faq-answer" hidden>
+                    <p>Costs vary widely. Repatriation from Europe typically costs between 3,000 and 6,000 GBP. From further afield, costs can reach 8,000 to 15,000 GBP or more. The main cost drivers are embalming, zinc-lined coffin, air freight, and local funeral director fees. Each country guide includes detailed cost breakdowns.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3">
+                    Does travel insurance cover repatriation?
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="faq-3" class="faq-answer" hidden>
+                    <p>Some policies do, but many do not cover funeral repatriation by default. Check the policy wording carefully. Look for "repatriation of mortal remains" as a specific line item. If the policy covers it, contact the insurer before arranging anything, as they will have a preferred funeral director and airline.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4">
+                    Can I bring ashes back to the UK instead?
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="faq-4" class="faq-answer" hidden>
+                    <p>Yes. Cremation abroad followed by ashes transport is often simpler and less expensive than full body repatriation. You will still need a death certificate, cremation certificate, and sometimes a consular letter. Ashes can usually be carried as hand luggage or shipped by courier. Rules vary by country and airline.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5">
+                    What does the British Embassy do when someone dies abroad?
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="faq-5" class="faq-answer" hidden>
+                    <p>The British Embassy or Consulate can help with registering the death, providing a list of local English-speaking funeral directors, and issuing consular documents. They cannot pay for funeral or repatriation costs, but they can help navigate local bureaucracy. Contact them as early as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ===== CTA ===== */}}
+<section class="quote-section" id="quote-form">
+    <div class="section-inner">
+        <h2 class="reveal">Need help with repatriation?</h2>
+        <p class="quote-subtitle reveal">Our team can coordinate the entire process on your behalf</p>
+
+        <form class="quote-form reveal" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="qf-name">Name <span class="required">*</span></label>
+                    <input type="text" id="qf-name" name="name" placeholder="Full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="qf-email">Email <span class="required">*</span></label>
+                    <input type="email" id="qf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="qf-phone">Phone</label>
+                    <input type="tel" id="qf-phone" name="phone" placeholder="+44..." autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="qf-country">Country</label>
+                    <select id="qf-country" name="country">
+                        <option value="">Where did the death occur?</option>
+                        <option value="spain">Spain</option>
+                        <option value="france">France</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="greece">Greece</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="qf-urgency">Urgency</label>
+                    <select id="qf-urgency" name="urgency">
+                        <option value="">When did this happen?</option>
+                        <option value="just_happened">Within 24 hours</option>
+                        <option value="this_week">Within the past week</option>
+                        <option value="planning">Planning ahead</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="qf-service">Service needed</label>
+                    <select id="qf-service" name="service">
+                        <option value="">Select</option>
+                        <option value="full_repatriation">Full body repatriation</option>
+                        <option value="ashes_transport">Ashes transport</option>
+                        <option value="cremation_abroad">Cremation abroad</option>
+                        <option value="guidance_only">Guidance only</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-full">
+                    <label for="qf-message">Message</label>
+                    <textarea id="qf-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+                </div>
+            </div>
+            <div style="display:none;" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-cta">Send enquiry</button>
+            <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+        </form>
+
+        <div class="quote-success" hidden>
+            <p>Thank you. We have received your enquiry and will respond as soon as possible.</p>
+        </div>
+    </div>
+</section>
+
+{{ end }}

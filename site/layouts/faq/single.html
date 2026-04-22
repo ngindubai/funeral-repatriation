@@ -1,0 +1,115 @@
+{{ define "title" }}{{ .Title }} | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.BaseURL }}" },
+        { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "{{ site.BaseURL }}faq/" },
+        { "@type": "ListItem", "position": 3, "name": "{{ .Title }}", "item": "{{ .Permalink }}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{{ .Title }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ .Params.short_answer }}"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="blog-hero">
+    <div class="section-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/faq/">Frequently asked questions</a></li>
+                <li aria-current="page">{{ .Title }}</li>
+            </ol>
+        </nav>
+        <div class="blog-hero-inner">
+            <div class="blog-meta">
+                <span class="blog-category faq-badge">FAQ</span>
+            </div>
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.short_answer }}
+            <div class="faq-short-answer">
+                <p>{{ . }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="blog-two-col">
+            <div class="blog-main-col">
+                <div class="blog-prose prose">
+                    {{ .Content }}
+                </div>
+
+                {{/* Related country links */}}
+                {{ with .Params.related_countries }}
+                <div class="related-countries-block">
+                    <h3>Country-specific guides</h3>
+                    <div class="guide-links-grid">
+                        {{ range . }}
+                        <a href="/repatriation-from-{{ .slug }}/" class="guide-link-card">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <div>
+                                <h4>{{ .name }}</h4>
+                                <p>Full repatriation guide</p>
+                            </div>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            <div class="blog-side-col">
+                <div class="side-cta-card">
+                    <p class="label-sm">Need help?</p>
+                    <h3>Speak to a specialist</h3>
+                    <p>We provide 24/7 guidance for families dealing with a death abroad.</p>
+                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta" style="width:100%; justify-content:center; margin-bottom:0.5rem;"><i class="fa-solid fa-phone"></i> Call 24/7</a>
+                    <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center;">Send enquiry</a>
+                </div>
+
+                <div class="side-nav-block" style="margin-top:1.5rem;">
+                    <p class="label-sm">Other questions</p>
+                    <ul class="side-nav-list">
+                        <li><a href="/faq/how-much-does-repatriation-cost/">How much does repatriation cost?</a></li>
+                        <li><a href="/faq/does-travel-insurance-cover-repatriation/">Does travel insurance cover repatriation?</a></li>
+                        <li><a href="/faq/how-long-does-repatriation-take/">How long does repatriation take?</a></li>
+                        <li><a href="/faq/what-is-a-burial-transit-permit/">What is a burial transit permit?</a></li>
+                        <li><a href="/faq/does-a-body-need-embalming-for-repatriation/">Does a body need embalming for repatriation?</a></li>
+                        <li><a href="/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/">What does the British Embassy do?</a></li>
+                        <li><a href="/faq/how-is-a-body-transported-on-a-plane/">How is a body transported on a plane?</a></li>
+                        <li><a href="/faq/what-happens-if-no-travel-insurance/">What happens with no travel insurance?</a></li>
+                        <li><a href="/faq/uk-coroner-deaths-abroad/">UK coroner and deaths abroad</a></li>
+                        <li><a href="/faq/repatriation-costs-who-pays/">Who pays for repatriation?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

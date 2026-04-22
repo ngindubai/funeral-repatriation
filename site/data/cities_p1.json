@@ -1,0 +1,1342 @@
+{
+  "_metadata": {
+    "created": "2026-04-16",
+    "purpose": "City-level data for 10 P1 countries - hospitals, mortuaries, airports, death scenarios, repatriation logistics",
+    "total_cities": 44,
+    "total_countries": 10,
+    "confidence_note": "Hospital and mortuary names should be VERIFIED before publishing. Patterns and logistics are reliable. All phone numbers marked VERIFY."
+  },
+  "countries": {
+    "spain": {
+      "cities": [
+        {
+          "name": "Madrid",
+          "country_slug": "spain",
+          "type": "capital",
+          "population_approx": 3300000,
+          "relevance": "Capital and main hub for document processing. British Embassy location. Major international airport with full cargo.",
+          "british_presence": "Large British business traveller and tourist population. Less dominant than coastal resorts.",
+          "hospitals": [
+            {"name": "Hospital Universitario La Paz", "type": "public", "english_speaking": false, "notes": "Major public hospital. Interpreter services available. VERIFY"},
+            {"name": "Hospital Universitario 12 de Octubre", "type": "public", "english_speaking": false, "notes": "Major trauma centre. VERIFY"},
+            {"name": "Hospital Quironsalud Madrid", "type": "private_international", "english_speaking": true, "notes": "Private. English-speaking staff. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto Anatómico Forense de Madrid", "notes": "Main forensic facility. Handles non-natural deaths, autopsies. VERIFY"}
+          ],
+          "local_funeral_directors": "Several international funeral directors in Madrid handle repatriation cases. English-speaking services available. VERIFY specific firms.",
+          "international_airport": {"code": "MAD", "name": "Adolfo Suárez Madrid-Barajas", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly visitors)", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Spanish bureaucracy can be slow", "Many offices close 14:00-17:00", "August reduced hours"],
+          "transport_to_hub": "Madrid IS the main hub. Direct international cargo flights.",
+          "content_angle": "Embassy city. Document processing hub. British business traveller deaths.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Barcelona",
+          "country_slug": "spain",
+          "type": "major_city",
+          "population_approx": 1600000,
+          "relevance": "Second city, major tourist destination. International airport with cargo. High British tourist volume.",
+          "british_presence": "High. Stag/hen parties, city breaks, cruise port. Younger demographic than coastal resorts.",
+          "hospitals": [
+            {"name": "Hospital Clinic de Barcelona", "type": "public", "english_speaking": false, "notes": "Major university hospital. VERIFY"},
+            {"name": "Hospital de la Santa Creu i Sant Pau", "type": "public", "english_speaking": false, "notes": "UNESCO site, major hospital. VERIFY"},
+            {"name": "Centro Medico Teknon", "type": "private_international", "english_speaking": true, "notes": "Private. English common. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut de Medicina Legal i Ciències Forenses de Catalunya", "notes": "Regional forensic institute. VERIFY"}
+          ],
+          "local_funeral_directors": "International repatriation services available in Barcelona. English-speaking firms exist. VERIFY.",
+          "international_airport": {"code": "BCN", "name": "Barcelona-El Prat", "cargo_capable": true},
+          "common_death_scenarios": ["Alcohol-related incidents (nightlife/stag parties)", "Balcony falls (balconing)", "Road accidents", "Natural causes"],
+          "local_challenges": ["Catalan bureaucracy (some differences from rest of Spain)", "Nightlife-related deaths attract media attention", "Petty crime can complicate documents (stolen passports)"],
+          "transport_to_hub": "Barcelona has its own international cargo. No transfer needed.",
+          "content_angle": "Balcony falls and nightlife deaths. Younger British demographic. High emotional impact cases for families.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Malaga (Costa del Sol)",
+          "country_slug": "spain",
+          "type": "resort",
+          "population_approx": 580000,
+          "relevance": "Gateway to Costa del Sol. Enormous British expat and retiree population. Highest concentration of British repatriation cases in Spain.",
+          "british_presence": "Very high. Estimated 300,000+ British residents along Costa del Sol. Large elderly retiree population. Most British deaths in Spain originate here.",
+          "hospitals": [
+            {"name": "Hospital Regional Universitario de Malaga", "type": "public", "english_speaking": false, "notes": "Main public hospital. Limited English. VERIFY"},
+            {"name": "Hospital Quironsalud Malaga", "type": "private_international", "english_speaking": true, "notes": "Private. English-speaking. Popular with expats. VERIFY"},
+            {"name": "Hospital Vithas Xanit Internacional (Benalmadena)", "type": "private_international", "english_speaking": true, "notes": "International hospital nearby. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto de Medicina Legal de Malaga", "notes": "Forensic facility for Malaga province. VERIFY"}
+          ],
+          "local_funeral_directors": "Multiple English-speaking funeral directors serving British community. Well-established repatriation corridor to UK. VERIFY specific firms.",
+          "international_airport": {"code": "AGP", "name": "Malaga-Costa del Sol", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly retiree population - heart attacks, strokes, cancer)", "Falls (elderly)", "Drowning (pool and sea)", "Road accidents"],
+          "local_challenges": ["Volume of cases means experienced local infrastructure", "August heat increases cardiac events", "Elderly population means complex medical histories"],
+          "transport_to_hub": "Malaga airport has direct UK cargo flights. Well-established repatriation corridor.",
+          "content_angle": "THE main British repatriation origin in Spain. Elderly retiree deaths dominate. Well-worn path means faster processing but families still need guidance. High volume = experienced local providers.",
+          "confidence": "high"
+        },
+        {
+          "name": "Alicante (Costa Blanca)",
+          "country_slug": "spain",
+          "type": "resort",
+          "population_approx": 330000,
+          "relevance": "Second major British expat hub on Spanish coast. Large retiree community in surrounding towns (Benidorm, Torrevieja, Javea).",
+          "british_presence": "Very high. Benidorm alone has massive British presence. Retiree and long-stay community. Second to Costa del Sol for British deaths.",
+          "hospitals": [
+            {"name": "Hospital General Universitario de Alicante", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Hospital Quironsalud Torrevieja", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Vithas Medimar Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto de Medicina Legal de Alicante", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "English-speaking funeral directors available, especially in Benidorm and Torrevieja. VERIFY.",
+          "international_airport": {"code": "ALC", "name": "Alicante-Elche Miguel Hernández", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly)", "Falls", "Drowning", "Road accidents"],
+          "local_challenges": ["Spread-out expat communities along coast", "Some inland towns less accessible", "Similar challenges to Costa del Sol"],
+          "transport_to_hub": "Alicante airport handles UK cargo. No transfer needed.",
+          "content_angle": "Benidorm and Costa Blanca retiree deaths. Second corridor after Malaga. Similar profile.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Tenerife (Canary Islands)",
+          "country_slug": "spain",
+          "type": "resort",
+          "population_approx": 920000,
+          "relevance": "Major British holiday destination. Year-round tourism. Different logistics from mainland Spain.",
+          "british_presence": "High. Popular winter sun destination. Mix of tourists and long-stay residents.",
+          "hospitals": [
+            {"name": "Hospital Universitario de Canarias (HUC)", "type": "public", "english_speaking": false, "notes": "Main hospital. La Laguna. VERIFY"},
+            {"name": "Hospital Universitario Nuestra Señora de Candelaria", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Hospiten Rambla (Santa Cruz)", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto de Medicina Legal de Santa Cruz de Tenerife", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "English-speaking services available in tourist areas. Repatriation experience with UK corridor. VERIFY.",
+          "international_airport": {"code": "TFS", "name": "Tenerife South (Reina Sofia)", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly winter visitors)", "Drowning (ocean currents)", "Falls (volcanic terrain hiking)", "Road accidents"],
+          "local_challenges": ["Island logistics (limited cargo flight frequency vs mainland)", "Different Canarian administrative processes", "Remote areas of island"],
+          "transport_to_hub": "Tenerife South airport has UK flights with cargo capacity. No mainland transfer needed usually.",
+          "content_angle": "Island logistics add a layer. Canary Islands have slightly different administrative processes from mainland Spain. Year-round British deaths (winter sun visitors).",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "france": {
+      "cities": [
+        {
+          "name": "Paris",
+          "country_slug": "france",
+          "type": "capital",
+          "population_approx": 2100000,
+          "relevance": "Capital and main hub. British Embassy location. Busiest airports in France. High tourist volume.",
+          "british_presence": "Very high tourist volume. Business travellers. Proximity to UK makes this a major corridor.",
+          "hospitals": [
+            {"name": "Hôpital Européen Georges-Pompidou (HEGP)", "type": "public", "english_speaking": false, "notes": "Major hospital. Some English. VERIFY"},
+            {"name": "Hôpital Pitié-Salpêtrière", "type": "public", "english_speaking": false, "notes": "Largest hospital in France. VERIFY"},
+            {"name": "American Hospital of Paris (Neuilly-sur-Seine)", "type": "private_international", "english_speaking": true, "notes": "English-speaking. International patients. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut Médico-Légal de Paris", "notes": "Main forensic facility. Seine riverbank. VERIFY"}
+          ],
+          "local_funeral_directors": "Pompes Funèbres Générales (PFG) is the largest chain. International repatriation firms available. VERIFY.",
+          "international_airport": {"code": "CDG", "name": "Charles de Gaulle", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Terrorism (historical)", "Medical emergencies"],
+          "local_challenges": ["French bureaucracy is notoriously slow", "Procureur de la République controls release of body in non-natural deaths", "Language barrier in administration", "Sunday/public holiday closures"],
+          "transport_to_hub": "Paris CDG is the main hub. Direct cargo to UK.",
+          "content_angle": "Proximity to UK makes France seem simple, but French legal requirements (Procureur control) can delay repatriation. Families assume it will be quick because it's close. Often it isn't.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Nice (Côte d'Azur)",
+          "country_slug": "france",
+          "type": "resort",
+          "population_approx": 340000,
+          "relevance": "Gateway to French Riviera. Significant British tourist and expat population. International airport.",
+          "british_presence": "High. Riviera attracts wealthier British tourists and retirees. Monaco proximity.",
+          "hospitals": [
+            {"name": "CHU de Nice - Hôpital Pasteur 2", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Clinique Saint-George", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut Médico-Légal de Nice", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Repatriation services available. English-speaking firms in Riviera area. VERIFY.",
+          "international_airport": {"code": "NCE", "name": "Nice Côte d'Azur", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly retirees)", "Drowning", "Road accidents (coastal roads)", "Heart attacks (heat)"],
+          "local_challenges": ["Same French legal framework as Paris", "Summer heat increases cardiac events", "Tourist season overloads local services"],
+          "transport_to_hub": "Nice airport has direct UK flights with cargo. No transfer needed.",
+          "content_angle": "Riviera deaths. Wealthier demographic. Monaco deaths may route through Nice. Close to Italy border (jurisdictional considerations).",
+          "confidence": "medium"
+        },
+        {
+          "name": "Lyon",
+          "country_slug": "france",
+          "type": "major_city",
+          "population_approx": 520000,
+          "relevance": "Third largest city. Business travel hub. Interior France transit point.",
+          "british_presence": "Moderate. Business travellers and cultural tourists.",
+          "hospitals": [
+            {"name": "Hospices Civils de Lyon (HCL)", "type": "public", "english_speaking": false, "notes": "Major hospital network. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut Médico-Légal de Lyon", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available but less international experience than Paris or Riviera. VERIFY.",
+          "international_airport": {"code": "LYS", "name": "Lyon-Saint Exupéry", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Skiing deaths (gateway to Alps)"],
+          "local_challenges": ["Less English spoken than Paris or Riviera", "Gateway to Alps - ski deaths may present here"],
+          "transport_to_hub": "Lyon airport has some UK flights. Transfer to Paris CDG for full cargo options.",
+          "content_angle": "Alps gateway. Ski season deaths may pass through Lyon. Business travellers.",
+          "confidence": "low"
+        },
+        {
+          "name": "Marseille",
+          "country_slug": "france",
+          "type": "major_city",
+          "population_approx": 870000,
+          "relevance": "Second largest city. Major port. Mediterranean coast.",
+          "british_presence": "Moderate. Cruise port. Some tourist traffic.",
+          "hospitals": [
+            {"name": "Hôpital de la Timone (AP-HM)", "type": "public", "english_speaking": false, "notes": "Largest hospital in Marseille. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut Médico-Légal de Marseille", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Less international experience. VERIFY.",
+          "international_airport": {"code": "MRS", "name": "Marseille Provence", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Drowning (calanques)", "Road accidents", "Violence (some areas)"],
+          "local_challenges": ["Parts of Marseille have high crime", "Less tourist infrastructure than Riviera"],
+          "transport_to_hub": "Marseille airport has some UK cargo options. Paris CDG is backup.",
+          "content_angle": "Cruise port deaths. Mediterranean coast. Less established repatriation corridor than Paris or Nice.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "thailand": {
+      "cities": [
+        {
+          "name": "Bangkok",
+          "country_slug": "thailand",
+          "type": "capital",
+          "population_approx": 10700000,
+          "relevance": "Capital and main international airport hub. ALL repatriation cases transit through Bangkok for international cargo. Embassy location.",
+          "british_presence": "High. Business travellers, tourists, expats. Major stopover city.",
+          "hospitals": [
+            {"name": "Bumrungrad International Hospital", "type": "private_international", "english_speaking": true, "notes": "World-class. English standard. Medical tourism hub. VERIFY"},
+            {"name": "Bangkok Hospital", "type": "private_international", "english_speaking": true, "notes": "Major private chain. VERIFY"},
+            {"name": "Siriraj Hospital", "type": "public", "english_speaking": false, "notes": "Oldest and largest public hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Forensic Medicine, Police General Hospital", "notes": "Handles unnatural deaths. Police cases. VERIFY"},
+            {"name": "Siriraj Forensic Medicine", "notes": "University forensic facility. VERIFY"}
+          ],
+          "local_funeral_directors": "Several experienced international repatriation firms. Thai funeral directors used to handling foreign cases. VERIFY specific firms.",
+          "international_airport": {"code": "BKK", "name": "Suvarnabhumi International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents (motorbike)", "Natural causes (expat community)", "Medical emergencies", "Nightlife-related"],
+          "local_challenges": ["Bangkok traffic delays document collection", "Multiple government offices in different locations", "Thai language documentation"],
+          "transport_to_hub": "Bangkok IS the hub. BKK is the main international cargo airport.",
+          "content_angle": "Embassy city and document hub. Most repatriation paperwork processed here even if death occurred elsewhere in Thailand.",
+          "confidence": "high"
+        },
+        {
+          "name": "Phuket",
+          "country_slug": "thailand",
+          "type": "resort",
+          "population_approx": 400000,
+          "relevance": "Thailand's biggest beach resort island. High volume of British tourist deaths. Has international airport but limited cargo.",
+          "british_presence": "Very high. Package holidays, backpackers, long-stay tourists. Significant death volume.",
+          "hospitals": [
+            {"name": "Bangkok Hospital Phuket", "type": "private_international", "english_speaking": true, "notes": "Best option. English good. VERIFY"},
+            {"name": "Vachira Phuket Hospital", "type": "public", "english_speaking": false, "notes": "Main public hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Vachira Phuket Hospital Mortuary", "notes": "Handles most forensic cases. Also dealt with 2004 tsunami DVI. VERIFY"}
+          ],
+          "local_funeral_directors": "Several firms experienced with British repatriation. Island has well-established corridor. VERIFY.",
+          "international_airport": {"code": "HKT", "name": "Phuket International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning (rip currents, monsoon season)", "Motorbike accidents (very common)", "Alcohol-related", "Diving accidents"],
+          "local_challenges": ["Monsoon season increases drowning risk", "Motorbike rental deaths very common", "Island infrastructure occasionally disrupted by weather"],
+          "transport_to_hub": "Phuket airport has some international cargo direct. Many cases transfer via Bangkok BKK for wider airline options.",
+          "content_angle": "Drowning and motorbike deaths dominate. Families often on holiday when the call comes. High emotional impact. Well-worn repatriation path.",
+          "confidence": "high"
+        },
+        {
+          "name": "Chiang Mai",
+          "country_slug": "thailand",
+          "type": "tourist_hub",
+          "population_approx": 130000,
+          "relevance": "Northern Thailand hub. Popular with digital nomads, retirees, cultural tourists.",
+          "british_presence": "Moderate to high. Growing expat and long-stay community. Older demographic.",
+          "hospitals": [
+            {"name": "Chiang Mai Ram Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Maharaj Nakorn Chiang Mai Hospital", "type": "public", "english_speaking": false, "notes": "University hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Maharaj Nakorn Chiang Mai Hospital Mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available but less international experience than Bangkok or Phuket. VERIFY.",
+          "international_airport": {"code": "CNX", "name": "Chiang Mai International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly expats)", "Motorbike accidents", "Trekking incidents", "Air quality issues (burning season)"],
+          "local_challenges": ["Less repatriation experience than Bangkok/Phuket", "Burning season (Feb-Apr) air quality crisis"],
+          "transport_to_hub": "Chiang Mai has limited international cargo. Most cases transfer to Bangkok BKK.",
+          "content_angle": "Expat and digital nomad deaths. Trekking accidents. Growing retiree community.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Pattaya",
+          "country_slug": "thailand",
+          "type": "resort",
+          "population_approx": 120000,
+          "relevance": "Major resort city near Bangkok. High British tourist volume. Notorious for nightlife-related incidents.",
+          "british_presence": "Very high. Package holidays, long-stay visitors, retirees, nightlife tourism.",
+          "hospitals": [
+            {"name": "Bangkok Hospital Pattaya", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Pattaya Memorial Hospital", "type": "private_local", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "Complex cases transferred to Bangkok. VERIFY"}
+          ],
+          "local_funeral_directors": "Available. English-speaking. VERIFY.",
+          "international_airport": {"code": "UTP", "name": "U-Tapao (limited)", "cargo_capable": false},
+          "common_death_scenarios": ["Drowning (including Jomtien area)", "Alcohol-related", "Motorbike accidents", "Natural causes (elderly visitors)", "Balcony falls"],
+          "local_challenges": ["Proximity to Bangkok helps logistics", "Nightlife deaths can involve complex police investigation", "Some cases involve substance abuse"],
+          "transport_to_hub": "2 hours drive to Bangkok BKK. Easy transfer.",
+          "content_angle": "Close to Bangkok means faster logistics than island deaths. But nightlife context means potentially complex police involvement.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Koh Samui",
+          "country_slug": "thailand",
+          "type": "resort",
+          "population_approx": 70000,
+          "relevance": "Island resort. Significant British tourist presence. Remote island logistics.",
+          "british_presence": "High tourist season. Full Moon Party on nearby Koh Phangan attracts younger British tourists.",
+          "hospitals": [
+            {"name": "Bangkok Hospital Samui", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Koh Samui Hospital", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Koh Samui Hospital Mortuary", "notes": "Limited facility. VERIFY"}
+          ],
+          "local_funeral_directors": "Limited. Most serious cases coordinated with Bangkok firms. VERIFY.",
+          "international_airport": {"code": "USM", "name": "Samui International Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Drowning", "Motorbike accidents", "Full Moon Party related (nearby Koh Phangan)", "Diving accidents"],
+          "local_challenges": ["Island airport is privately owned (Bangkok Airways) - limited cargo", "Ferry + domestic flight needed to get remains to Bangkok", "Remote location adds days to timeline"],
+          "transport_to_hub": "Samui airport has NO international cargo. Body must be transported to Bangkok via domestic flight or ferry+road. Adds 1-3 days.",
+          "content_angle": "Island isolation makes this one of the more complex Thai repatriations. Full Moon Party context (Koh Phangan deaths process through Samui).",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "usa": {
+      "cities": [
+        {
+          "name": "New York City",
+          "country_slug": "usa",
+          "type": "major_city",
+          "population_approx": 8300000,
+          "relevance": "Largest US city. Major British visitor destination. Multiple international airports. British Consulate General.",
+          "british_presence": "Extremely high tourist and business volume. Large British expat community.",
+          "hospitals": [
+            {"name": "NewYork-Presbyterian Hospital", "type": "private_international", "english_speaking": true, "notes": "Top-ranked. VERIFY"},
+            {"name": "Mount Sinai Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Bellevue Hospital Center", "type": "public", "english_speaking": true, "notes": "Oldest public hospital in US. NYC OCME attached. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Office of Chief Medical Examiner (OCME) NYC", "notes": "Handles all unnatural deaths in NYC. Well-resourced. VERIFY"}
+          ],
+          "local_funeral_directors": "Numerous. International repatriation firms readily available. English is not a barrier.",
+          "international_airport": {"code": "JFK", "name": "John F. Kennedy International", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies", "Workplace accidents"],
+          "local_challenges": ["US medical costs are astronomical (not relevant post-death but context)", "NYC OCME efficient but can hold bodies for investigation", "State-specific regulations (New York)"],
+          "transport_to_hub": "JFK has extensive international cargo. Direct London flights with BA, Virgin, etc.",
+          "content_angle": "Straightforward logistics but US costs are high. Insurance coverage critical. NYC OCME is efficient but thorough.",
+          "confidence": "high"
+        },
+        {
+          "name": "Los Angeles",
+          "country_slug": "usa",
+          "type": "major_city",
+          "population_approx": 3900000,
+          "relevance": "Second largest US city. Major tourist destination. LAX is a major cargo hub.",
+          "british_presence": "High tourist volume. Entertainment industry connections.",
+          "hospitals": [
+            {"name": "Cedars-Sinai Medical Center", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "UCLA Medical Center", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "LA County Department of Medical Examiner-Coroner", "notes": "Handles unnatural deaths. Large operation. VERIFY"}
+          ],
+          "local_funeral_directors": "Numerous. International repatriation services available.",
+          "international_airport": {"code": "LAX", "name": "Los Angeles International", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents (car culture)", "Natural causes", "Hiking/outdoor accidents"],
+          "local_challenges": ["LA County is geographically vast", "Traffic delays", "California regulations"],
+          "transport_to_hub": "LAX has direct London cargo. No transfer needed.",
+          "content_angle": "Car accident deaths common due to driving culture. Vast geographic spread of LA County.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Miami",
+          "country_slug": "usa",
+          "type": "tourist_hub",
+          "population_approx": 440000,
+          "relevance": "Major tourist destination. Cruise port. Gateway to Caribbean. High British visitor numbers.",
+          "british_presence": "High. Beach holidays, cruises, Florida Keys.",
+          "hospitals": [
+            {"name": "Jackson Memorial Hospital", "type": "public", "english_speaking": true, "notes": "Major trauma centre. VERIFY"},
+            {"name": "Baptist Hospital of Miami", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Miami-Dade County Medical Examiner", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Numerous. International repatriation well-established.",
+          "international_airport": {"code": "MIA", "name": "Miami International", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Road accidents", "Natural causes (elderly Florida residents)", "Hurricane-related"],
+          "local_challenges": ["Florida heat", "Cruise ship deaths may have maritime jurisdiction complications", "Snowbird elderly population"],
+          "transport_to_hub": "MIA has direct London cargo.",
+          "content_angle": "Cruise deaths and beach tourism. Florida Keys remoteness. Elderly British visitors in Florida.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Las Vegas",
+          "country_slug": "usa",
+          "type": "tourist_hub",
+          "population_approx": 640000,
+          "relevance": "Major British tourist destination. Unique circumstances around deaths.",
+          "british_presence": "High. Holiday destination. Stag/hen parties. Conventions.",
+          "hospitals": [
+            {"name": "University Medical Center of Southern Nevada", "type": "public", "english_speaking": true, "notes": "Only Level 1 trauma centre in state. VERIFY"},
+            {"name": "Sunrise Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Clark County Office of the Coroner/Medical Examiner", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. International repatriation firms exist.",
+          "international_airport": {"code": "LAS", "name": "Harry Reid International", "cargo_capable": true},
+          "common_death_scenarios": ["Alcohol-related", "Drug overdose", "Heat exhaustion (desert)", "Natural causes", "Pool drowning"],
+          "local_challenges": ["Extreme desert heat", "Clark County coroner can be slow", "Alcohol/substance context complicates investigations"],
+          "transport_to_hub": "LAS has some direct UK flights. Cargo may route via LAX or JFK.",
+          "content_angle": "Party destination deaths. Alcohol and heat combination. Desert context unique.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Orlando",
+          "country_slug": "usa",
+          "type": "tourist_hub",
+          "population_approx": 310000,
+          "relevance": "Disney World and theme parks. Very popular British family holiday destination.",
+          "british_presence": "Very high. Family holidays dominate. Theme parks, villa rentals.",
+          "hospitals": [
+            {"name": "Orlando Health - Orlando Regional Medical Center", "type": "public", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "AdventHealth Orlando", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Orange County Medical Examiner's Office", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. British tourist deaths well-understood locally.",
+          "international_airport": {"code": "MCO", "name": "Orlando International", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (heart attacks at parks)", "Drowning (villa pools, water parks)", "Road accidents (hire cars)", "Heat-related"],
+          "local_challenges": ["Family holiday deaths are emotionally devastating", "Children present adds complexity", "Villa pool drownings a recurring pattern"],
+          "transport_to_hub": "MCO has direct UK flights (Virgin, BA). Cargo available.",
+          "content_angle": "Family holiday deaths. Villa pool drownings are tragically common. Theme park medical emergencies. Emotionally hardest scenario for families.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "greece": {
+      "cities": [
+        {
+          "name": "Athens",
+          "country_slug": "greece",
+          "type": "capital",
+          "population_approx": 660000,
+          "relevance": "Capital. British Embassy location. Main international cargo airport. Document processing hub.",
+          "british_presence": "High. City break destination. Transit to islands.",
+          "hospitals": [
+            {"name": "Evangelismos General Hospital", "type": "public", "english_speaking": false, "notes": "Main public hospital. VERIFY"},
+            {"name": "Athens Medical Center", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Athens Forensic Medical Service", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Repatriation firms available. English-speaking. VERIFY.",
+          "international_airport": {"code": "ATH", "name": "Athens International (Eleftherios Venizelos)", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Heat-related"],
+          "local_challenges": ["Greek bureaucracy notoriously slow", "Strike action can close government offices", "August closures"],
+          "transport_to_hub": "Athens IS the main cargo hub.",
+          "content_angle": "Document processing hub for all Greek island deaths that need international cargo. Greek bureaucracy is the main challenge.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Crete (Heraklion)",
+          "country_slug": "greece",
+          "type": "resort",
+          "population_approx": 175000,
+          "relevance": "Largest Greek island. Major British holiday destination. Has international airport.",
+          "british_presence": "Very high. Package holidays. All-inclusive resorts. Elderly tourists.",
+          "hospitals": [
+            {"name": "Venizeleio General Hospital Heraklion", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "University Hospital of Heraklion (PAGNI)", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Hospital mortuary Heraklion", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available in Heraklion. English-speaking for tourist areas. VERIFY.",
+          "international_airport": {"code": "HER", "name": "Heraklion Nikos Kazantzakis", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Road accidents (mountain roads)", "Natural causes (elderly tourists)", "Quad bike accidents"],
+          "local_challenges": ["Island logistics", "Mountain road accidents in remote areas", "Gorge hiking incidents (Samaria Gorge)"],
+          "transport_to_hub": "Heraklion has direct UK flights with cargo capacity seasonally. Off-season routing via Athens.",
+          "content_angle": "Largest island. Samaria Gorge hiking deaths. Quad bike and road accidents on mountain roads. Elderly all-inclusive tourist deaths.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Rhodes",
+          "country_slug": "greece",
+          "type": "resort",
+          "population_approx": 50000,
+          "relevance": "Major British package holiday island. Significant tourist death volume.",
+          "british_presence": "Very high in summer. Package holidays dominate.",
+          "hospitals": [
+            {"name": "Rhodes General Hospital", "type": "public", "english_speaking": false, "notes": "Only hospital on island. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Rhodes General Hospital mortuary", "notes": "Limited. VERIFY"}
+          ],
+          "local_funeral_directors": "Limited. May need coordination with Athens firms. VERIFY.",
+          "international_airport": {"code": "RHO", "name": "Rhodes Diagoras", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Quad bike/ATV accidents", "Alcohol-related", "Natural causes"],
+          "local_challenges": ["Single hospital on island", "Limited local capacity for complex cases", "Seasonal infrastructure"],
+          "transport_to_hub": "Rhodes airport has seasonal UK flights. Off-season transfer to Athens required.",
+          "content_angle": "Island with single hospital. Young tourist deaths (quad bikes, alcohol, drowning). Seasonal logistics challenge.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Corfu",
+          "country_slug": "greece",
+          "type": "resort",
+          "population_approx": 32000,
+          "relevance": "Popular British holiday island. Package tours and villa holidays.",
+          "british_presence": "High in summer. Family holidays and couples.",
+          "hospitals": [
+            {"name": "Corfu General Hospital", "type": "public", "english_speaking": false, "notes": "Only hospital on island. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Corfu General Hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Limited local capacity. VERIFY.",
+          "international_airport": {"code": "CFU", "name": "Corfu Ioannis Kapodistrias", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Road accidents", "Natural causes", "Boat-related incidents"],
+          "local_challenges": ["Small island infrastructure", "Seasonal-only direct UK flights", "Limited medical facilities"],
+          "transport_to_hub": "Corfu has seasonal direct UK charter flights. Off-season transfer to Athens via short domestic flight.",
+          "content_angle": "Small island, limited infrastructure. Boat and water-related deaths. Family holiday context.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "turkey": {
+      "cities": [
+        {
+          "name": "Istanbul",
+          "country_slug": "turkey",
+          "type": "major_city",
+          "population_approx": 15500000,
+          "relevance": "Largest city. Major tourist destination. New Istanbul Airport is a mega cargo hub. British Consulate.",
+          "british_presence": "High. City breaks, cultural tourism, business. Growing.",
+          "hospitals": [
+            {"name": "Istanbul University Cerrahpaşa Medical Faculty", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "American Hospital Istanbul (Amerikan Hastanesi)", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Acıbadem Healthcare Group", "type": "private_international", "english_speaking": true, "notes": "Major private chain. Multiple locations. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Istanbul Forensic Medicine Institute (Adli Tıp Kurumu)", "notes": "Main forensic facility. VERIFY"}
+          ],
+          "local_funeral_directors": "Several experienced firms. Turkish Airlines cargo is excellent. VERIFY.",
+          "international_airport": {"code": "IST", "name": "Istanbul Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Medical emergencies", "Workplace accidents"],
+          "local_challenges": ["Turkish bureaucracy", "Islamic customs may differ from family expectations", "Language barrier outside tourist zones"],
+          "transport_to_hub": "Istanbul Airport is a global cargo hub. Turkish Airlines Cargo has excellent network. Direct London flights.",
+          "content_angle": "Turkish Airlines is actually an advantage: one of the best cargo networks globally. Istanbul Airport modern and efficient.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Antalya",
+          "country_slug": "turkey",
+          "type": "resort",
+          "population_approx": 2500000,
+          "relevance": "Turkey's main beach resort coast. Enormous British tourist volume. International airport with UK cargo.",
+          "british_presence": "Very high. Package holidays dominate. All-inclusive resorts. Mix of ages.",
+          "hospitals": [
+            {"name": "Antalya Training and Research Hospital", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Medical Park Antalya Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Anadolu Hospital Antalya", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Antalya Forensic Medicine Branch", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Experienced with British repatriations given tourist volume. VERIFY.",
+          "international_airport": {"code": "AYT", "name": "Antalya Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning (pools and sea)", "Heat-related (elderly)", "Quad bike/excursion accidents", "Natural causes", "All-inclusive alcohol-related"],
+          "local_challenges": ["Resort area infrastructure is good", "Excursion accident deaths (rafting, quad bikes, boat trips)", "Heat and alcohol combination"],
+          "transport_to_hub": "Antalya airport has direct UK flights with cargo. Peak season good frequency. Off-season may route via Istanbul.",
+          "content_angle": "THE main British resort death origin in Turkey. All-inclusive hotel deaths. Excursion accidents. Heat and elderly visitors.",
+          "confidence": "high"
+        },
+        {
+          "name": "Bodrum",
+          "country_slug": "turkey",
+          "type": "resort",
+          "population_approx": 170000,
+          "relevance": "Upmarket Turkish resort. Growing British tourist market.",
+          "british_presence": "Moderate to high. Wealthier demographic than Antalya. Yacht tourism.",
+          "hospitals": [
+            {"name": "Bodrum Devlet Hastanesi (State Hospital)", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Acıbadem Bodrum Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Less volume than Antalya. VERIFY.",
+          "international_airport": {"code": "BJV", "name": "Milas-Bodrum Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Boat/yacht incidents", "Natural causes", "Road accidents"],
+          "local_challenges": ["Smaller infrastructure than Antalya", "Yacht deaths may involve coastguard/maritime issues"],
+          "transport_to_hub": "Bodrum airport has seasonal UK flights. Transfer via Istanbul for off-season.",
+          "content_angle": "Upmarket Turkish destination. Yacht and boat deaths. Smaller infrastructure.",
+          "confidence": "low"
+        },
+        {
+          "name": "Dalaman",
+          "country_slug": "turkey",
+          "type": "resort",
+          "population_approx": 30000,
+          "relevance": "Gateway airport for Fethiye, Marmaris, Oludeniz. Popular British resort coast.",
+          "british_presence": "High. Package holiday gateway. Fethiye and Oludeniz very popular with British tourists.",
+          "hospitals": [
+            {"name": "Fethiye Devlet Hastanesi", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Private hospitals in Fethiye", "type": "private_local", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuaries", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available in Fethiye. VERIFY.",
+          "international_airport": {"code": "DLM", "name": "Dalaman Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Paragliding accidents (Oludeniz is global paragliding centre)", "Drowning", "Road accidents", "Boat trips"],
+          "local_challenges": ["Paragliding death capital of Turkey", "Scattered resort towns need internal transport to Dalaman"],
+          "transport_to_hub": "Dalaman airport has seasonal UK charter flights with cargo. Off-season via Istanbul.",
+          "content_angle": "Paragliding deaths in Oludeniz are a recurring story. Fethiye/Marmaris resort deaths. Lycian Way hiking incidents.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "portugal": {
+      "cities": [
+        {
+          "name": "Lisbon",
+          "country_slug": "portugal",
+          "type": "capital",
+          "population_approx": 550000,
+          "relevance": "Capital. British Embassy location. International cargo airport. Growing British tourist market.",
+          "british_presence": "High and growing. City breaks booming. Business travel.",
+          "hospitals": [
+            {"name": "Hospital de Santa Maria", "type": "public", "english_speaking": false, "notes": "Largest hospital. VERIFY"},
+            {"name": "CUF Descobertas Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Instituto Nacional de Medicina Legal (INML) - Lisbon", "notes": "National forensic institute. VERIFY"}
+          ],
+          "local_funeral_directors": "Available. International repatriation firms. VERIFY.",
+          "international_airport": {"code": "LIS", "name": "Humberto Delgado Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Tram/transport accidents"],
+          "local_challenges": ["Portuguese bureaucracy moderate", "Embassy coordination straightforward"],
+          "transport_to_hub": "Lisbon IS the main hub.",
+          "content_angle": "Growing tourist destination. Embassy city. Document processing centre for Algarve deaths.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Algarve (Faro)",
+          "country_slug": "portugal",
+          "type": "resort",
+          "population_approx": 65000,
+          "relevance": "THE main British holiday region in Portugal. Elderly retiree community. Most British deaths in Portugal originate here.",
+          "british_presence": "Very high. Large British retiree and expat community. Package holidays. Golf tourism.",
+          "hospitals": [
+            {"name": "Hospital de Faro", "type": "public", "english_speaking": false, "notes": "Main Algarve hospital. VERIFY"},
+            {"name": "Hospital Particular do Algarve", "type": "private_international", "english_speaking": true, "notes": "Private. Popular with expats. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "INML - Algarve delegation", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "English-speaking firms available. Experienced with British repatriations. VERIFY.",
+          "international_airport": {"code": "FAO", "name": "Faro Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly retirees)", "Drowning (beaches, pools)", "Road accidents", "Golf course cardiac events"],
+          "local_challenges": ["Similar to Spanish costas: elderly population, natural causes dominate", "Good English-speaking infrastructure due to expat community"],
+          "transport_to_hub": "Faro airport has direct UK flights with cargo. Well-established corridor.",
+          "content_angle": "Mirror image of Costa del Sol. Elderly British retirees. Natural causes dominate. Well-worn repatriation path. Golf tourism cardiac deaths.",
+          "confidence": "high"
+        },
+        {
+          "name": "Porto",
+          "country_slug": "portugal",
+          "type": "major_city",
+          "population_approx": 230000,
+          "relevance": "Second city. Growing British city break destination. Douro Valley gateway.",
+          "british_presence": "Growing. City breaks, port wine tourism, Douro Valley cruises.",
+          "hospitals": [
+            {"name": "Hospital de São João", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "INML - Porto delegation", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Less international experience than Algarve. VERIFY.",
+          "international_airport": {"code": "OPO", "name": "Francisco Sá Carneiro Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "River cruise-related"],
+          "local_challenges": ["Less established British infrastructure than Algarve", "Douro Valley is remote"],
+          "transport_to_hub": "Porto airport has UK flights with cargo.",
+          "content_angle": "Growing market. Douro Valley cruise deaths. Port wine tourism. Less established than Algarve.",
+          "confidence": "low"
+        },
+        {
+          "name": "Madeira (Funchal)",
+          "country_slug": "portugal",
+          "type": "resort",
+          "population_approx": 110000,
+          "relevance": "Island destination popular with British tourists. Elderly demographic.",
+          "british_presence": "Moderate. Older demographic. Year-round mild climate attracts retirees.",
+          "hospitals": [
+            {"name": "Hospital Dr. Nélio Mendonça", "type": "public", "english_speaking": false, "notes": "Main hospital on island. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Limited. VERIFY.",
+          "international_airport": {"code": "FNC", "name": "Cristiano Ronaldo Madeira International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly visitors)", "Hiking/levada walk accidents", "Road accidents (mountain roads)"],
+          "local_challenges": ["Island logistics (limited flight frequency vs mainland)", "Mountain terrain for hiking deaths", "Levada walk accidents in remote areas"],
+          "transport_to_hub": "Funchal airport has some UK flights. Transfer via Lisbon for more options.",
+          "content_angle": "Island with unique levada hiking deaths. Elderly British market. Mountain road accidents.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "italy": {
+      "cities": [
+        {
+          "name": "Rome",
+          "country_slug": "italy",
+          "type": "capital",
+          "population_approx": 2870000,
+          "relevance": "Capital. British Embassy location. Major international airport with full cargo.",
+          "british_presence": "Very high tourist volume. Cultural tourism. Business travel.",
+          "hospitals": [
+            {"name": "Policlinico Umberto I", "type": "public", "english_speaking": false, "notes": "Major university hospital. VERIFY"},
+            {"name": "Ospedale Bambino Gesù", "type": "public", "english_speaking": false, "notes": "Paediatric. VERIFY"},
+            {"name": "Rome American Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Istituto di Medicina Legale, Sapienza University", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "International repatriation firms available. VERIFY.",
+          "international_airport": {"code": "FCO", "name": "Leonardo da Vinci-Fiumicino", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents (Romans drive aggressively)", "Heat-related (summer)", "Medical emergencies"],
+          "local_challenges": ["Italian bureaucracy is slow", "Comune (local council) varies in efficiency", "August shutdown affects everything"],
+          "transport_to_hub": "Rome Fiumicino has direct London cargo.",
+          "content_angle": "Embassy city. Document processing hub. Italian bureaucracy is the main challenge. August shutdown warning.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Milan",
+          "country_slug": "italy",
+          "type": "major_city",
+          "population_approx": 1400000,
+          "relevance": "Business capital. Major airport hub. Northern Italy gateway.",
+          "british_presence": "High business travel. Fashion and design tourists.",
+          "hospitals": [
+            {"name": "Ospedale Maggiore Policlinico", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Istituto Clinico Humanitas", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Istituto di Medicina Legale di Milano", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Northern Italy more efficient than south. VERIFY.",
+          "international_airport": {"code": "MXP", "name": "Milan Malpensa", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Business travel emergencies"],
+          "local_challenges": ["Northern Italy generally faster bureaucracy than south", "Malpensa is far from city centre"],
+          "transport_to_hub": "Malpensa has direct London cargo.",
+          "content_angle": "Business travel deaths. Northern Italy efficiency advantage. Lake Como/Alps nearby for tourist deaths.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Florence",
+          "country_slug": "italy",
+          "type": "tourist_hub",
+          "population_approx": 380000,
+          "relevance": "Major cultural tourism destination. Study abroad students. British tourists.",
+          "british_presence": "High tourist volume. Art and cultural tourism. Study abroad.",
+          "hospitals": [
+            {"name": "Ospedale di Santa Maria Nuova", "type": "public", "english_speaking": false, "notes": "City centre. VERIFY"},
+            {"name": "Ospedale Careggi", "type": "public", "english_speaking": false, "notes": "University hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Tourist city has some international capacity. VERIFY.",
+          "international_airport": {"code": "FLR", "name": "Florence Peretola (Amerigo Vespucci)", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes", "Heat-related (summer)", "Road accidents (Tuscan roads)"],
+          "local_challenges": ["Small airport with limited cargo", "Transfer to Pisa or Rome for cargo flights"],
+          "transport_to_hub": "Florence airport has NO significant cargo capacity. Transfer to Pisa (PSA, ~1hr) or Rome (FCO) for international cargo.",
+          "content_angle": "Cultural tourism deaths. Transfer needed to Pisa or Rome for cargo. Tuscany road accidents.",
+          "confidence": "low"
+        },
+        {
+          "name": "Naples",
+          "country_slug": "italy",
+          "type": "major_city",
+          "population_approx": 960000,
+          "relevance": "Gateway to Amalfi Coast, Pompeii, Capri. Growing British tourist market.",
+          "british_presence": "Growing. Amalfi Coast, Sorrento, Capri are very popular.",
+          "hospitals": [
+            {"name": "Ospedale Cardarelli", "type": "public", "english_speaking": false, "notes": "Major hospital, can be chaotic. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital and forensic facilities", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available but southern Italy can be less efficient. VERIFY.",
+          "international_airport": {"code": "NAP", "name": "Naples International (Capodichino)", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents (Amalfi Coast roads are treacherous)", "Drowning", "Natural causes", "Vesuvius/hiking incidents"],
+          "local_challenges": ["Southern Italian bureaucracy slower", "Amalfi Coast road deaths in remote areas", "Capri is an island - additional transport layer"],
+          "transport_to_hub": "Naples airport has some international cargo. Complex cases may route via Rome.",
+          "content_angle": "Amalfi Coast road deaths are a recurring pattern. Capri and island access complications. Southern Italy bureaucracy.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Venice",
+          "country_slug": "italy",
+          "type": "tourist_hub",
+          "population_approx": 260000,
+          "relevance": "Major British tourist destination. Unique water-based logistics.",
+          "british_presence": "High. City breaks, cruise port.",
+          "hospitals": [
+            {"name": "Ospedale Civile Santi Giovanni e Paolo", "type": "public", "english_speaking": false, "notes": "Main hospital in Venice. Water ambulance access. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Limited due to island nature. Transfers to mainland (Mestre) common. VERIFY.",
+          "international_airport": {"code": "VCE", "name": "Venice Marco Polo", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning (canals, lagoon)", "Natural causes (elderly tourists)", "Cruise port medical emergencies"],
+          "local_challenges": ["Water-based city: ambulance by boat, body transport by boat", "Flooding (acqua alta) can disrupt everything", "Island infrastructure limits"],
+          "transport_to_hub": "Marco Polo airport on mainland has cargo. Body must be transported from Venice island by water then road.",
+          "content_angle": "Only city where body transport is by water ambulance. Canal drowning unique scenario. Cruise port deaths.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "india": {
+      "cities": [
+        {
+          "name": "Delhi (New Delhi)",
+          "country_slug": "india",
+          "type": "capital",
+          "population_approx": 32000000,
+          "relevance": "Capital and main administrative hub. British High Commission location. Major international airport. Most document processing happens here or Mumbai.",
+          "british_presence": "High. Business travel, cultural tourism, Golden Triangle. Large British Indian diaspora connections.",
+          "hospitals": [
+            {"name": "All India Institute of Medical Sciences (AIIMS)", "type": "public", "english_speaking": true, "notes": "Premier national hospital. English standard. VERIFY"},
+            {"name": "Max Super Speciality Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Apollo Hospital Delhi", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "AIIMS Department of Forensic Medicine", "notes": "National reference centre. VERIFY"},
+            {"name": "Lady Hardinge Medical College Mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Multiple firms handle international repatriation. English widely spoken. VERIFY specific firms.",
+          "international_airport": {"code": "DEL", "name": "Indira Gandhi International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents (Delhi traffic is extreme)", "Air pollution-related cardiac/respiratory events", "Natural causes", "Food poisoning/GI illness"],
+          "local_challenges": ["Indian bureaucracy is legendary (4-6 weeks average for repatriation)", "Multiple government departments involved", "Pollution can cause health emergencies", "Police investigation mandatory for all non-hospital deaths"],
+          "transport_to_hub": "Delhi IS a main hub. Direct London flights with cargo (AI, BA, Virgin).",
+          "content_angle": "Administrative hub but Indian bureaucracy makes this one of the slowest repatriation origins globally. British Indian diaspora reverse repatriation is a major market.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Mumbai",
+          "country_slug": "india",
+          "type": "major_city",
+          "population_approx": 21000000,
+          "relevance": "Financial capital. Major international airport. British Consulate. Second busiest for British repatriations from India.",
+          "british_presence": "High. Business travel. British Indian diaspora connections. Bollywood tourism.",
+          "hospitals": [
+            {"name": "Kokilaben Dhirubhai Ambani Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Lilavati Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "KEM Hospital", "type": "public", "english_speaking": true, "notes": "Major public hospital. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "JJ Hospital Forensic Medicine Department", "notes": "VERIFY"},
+            {"name": "Cooper Hospital Mortuary", "notes": "Handles many international cases. VERIFY"}
+          ],
+          "local_funeral_directors": "Several firms specializing in international repatriation. English standard. VERIFY.",
+          "international_airport": {"code": "BOM", "name": "Chhatrapati Shivaji Maharaj International", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents", "Natural causes", "Monsoon-related (flooding, building collapse)", "Train accidents (local trains)"],
+          "local_challenges": ["Same bureaucratic delays as Delhi", "Monsoon season (Jun-Sep) causes additional transport disruption", "Train deaths are common and police investigation mandatory"],
+          "transport_to_hub": "Mumbai BOM has direct London flights with cargo.",
+          "content_angle": "Financial hub. Monsoon disruption adds seasonal challenge. Train-related deaths a unique Mumbai pattern.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Goa",
+          "country_slug": "india",
+          "type": "resort",
+          "population_approx": 600000,
+          "relevance": "Major British tourist destination in India. Beach holidays. Backpacker scene. Significant death volume.",
+          "british_presence": "High. Package holidays, backpackers, yoga retreats, long-stay visitors.",
+          "hospitals": [
+            {"name": "Goa Medical College and Hospital", "type": "public", "english_speaking": true, "notes": "Main hospital. VERIFY"},
+            {"name": "Manipal Hospital Goa", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Goa Medical College Mortuary", "notes": "Handles all forensic cases in Goa. VERIFY"}
+          ],
+          "local_funeral_directors": "Available. Some experience with British cases given tourist volume. VERIFY.",
+          "international_airport": {"code": "GOI", "name": "Goa International Airport (Dabolim)", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning (beach, rip currents)", "Motorbike/scooter accidents", "Drug-related", "Natural causes (elderly tourists)", "Food poisoning"],
+          "local_challenges": ["Less infrastructure than Delhi/Mumbai", "Drug-related deaths involve complex police investigation", "Backpacker scene means some deaths involve young people in risky situations"],
+          "transport_to_hub": "Goa has limited international cargo. Most cases transfer to Mumbai for international flights. Adds 1-2 days.",
+          "content_angle": "Tourist beach deaths. Drug scene deaths (Scarlett Keeling case established pattern). Younger demographic than other Indian cities. Transfer to Mumbai for cargo.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Chennai",
+          "country_slug": "india",
+          "type": "major_city",
+          "population_approx": 11000000,
+          "relevance": "Southern India hub. British Indian diaspora connections to Tamil Nadu. IT industry.",
+          "british_presence": "Moderate. British Tamil community connections. Some business travel (IT sector).",
+          "hospitals": [
+            {"name": "Apollo Hospitals Chennai", "type": "private_international", "english_speaking": true, "notes": "Premier private hospital. VERIFY"},
+            {"name": "Government General Hospital Chennai", "type": "public", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Government General Hospital Mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. VERIFY.",
+          "international_airport": {"code": "MAA", "name": "Chennai International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Monsoon/cyclone-related"],
+          "local_challenges": ["Southern Indian bureaucracy", "Cyclone season disruption", "Tamil Nadu specific regulations"],
+          "transport_to_hub": "Chennai has direct UK flights (SriLankan, Singapore Airlines connecting). Some direct cargo options.",
+          "content_angle": "Diaspora reverse repatriation. Tamil community connections. Southern India hub.",
+          "confidence": "low"
+        },
+        {
+          "name": "Kolkata",
+          "country_slug": "india",
+          "type": "major_city",
+          "population_approx": 15000000,
+          "relevance": "Eastern India hub. British colonial history. Bengali diaspora connections.",
+          "british_presence": "Moderate. British Bengali community connections. Cultural/historical tourism.",
+          "hospitals": [
+            {"name": "SSKM Hospital", "type": "public", "english_speaking": true, "notes": "Main government hospital. VERIFY"},
+            {"name": "Apollo Gleneagles Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "SSKM Hospital Mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Available. VERIFY.",
+          "international_airport": {"code": "CCU", "name": "Netaji Subhas Chandra Bose International", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Heat-related (extreme summer heat)", "Flooding"],
+          "local_challenges": ["Eastern India infrastructure less developed", "Limited direct UK flights", "Extreme heat in summer months"],
+          "transport_to_hub": "Kolkata has limited direct international cargo to UK. Transfer via Delhi or connecting flights.",
+          "content_angle": "Bengali diaspora connections. Eastern India hub. Less established repatriation corridor.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "egypt": {
+      "cities": [
+        {
+          "name": "Cairo",
+          "country_slug": "egypt",
+          "type": "capital",
+          "population_approx": 21000000,
+          "relevance": "Capital. British Embassy location. Main international airport. Document processing hub.",
+          "british_presence": "Moderate. Cultural tourism (Pyramids, Egyptian Museum). Business travel.",
+          "hospitals": [
+            {"name": "Ain Shams University Hospital", "type": "public", "english_speaking": false, "notes": "Major university hospital. VERIFY"},
+            {"name": "As-Salam International Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Dar Al Fouad Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Zeinhom Morgue (Cairo Morgue)", "notes": "Main forensic facility. VERIFY"}
+          ],
+          "local_funeral_directors": "Available. International repatriation firms exist. VERIFY.",
+          "international_airport": {"code": "CAI", "name": "Cairo International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Road accidents (Egyptian traffic is chaotic)", "Natural causes", "Terrorist incidents (historical)"],
+          "local_challenges": ["Egyptian bureaucracy", "Arabic-only documentation", "Procurator General controls body release in non-natural deaths", "Friday/Saturday weekend closures"],
+          "transport_to_hub": "Cairo IS the main hub. Direct London flights with cargo (EgyptAir, BA).",
+          "content_angle": "Embassy and document hub. All Red Sea resort deaths need paperwork processed through Cairo.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Sharm el-Sheikh",
+          "country_slug": "egypt",
+          "type": "resort",
+          "population_approx": 73000,
+          "relevance": "Main British resort destination in Egypt. Red Sea diving. Package holidays.",
+          "british_presence": "High. Package holidays dominate. Diving tourism. All-inclusive resorts.",
+          "hospitals": [
+            {"name": "Sharm International Hospital", "type": "private_international", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Sharm el-Sheikh General Hospital", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "Limited facility. Complex cases transfer to Cairo. VERIFY"}
+          ],
+          "local_funeral_directors": "Limited. Coordination with Cairo firms standard. VERIFY.",
+          "international_airport": {"code": "SSH", "name": "Sharm el-Sheikh International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Diving accidents (decompression, oxygen toxicity, shark attacks rare)", "Drowning", "Natural causes", "Coach crash (Sinai roads)", "Food poisoning (resort)"],
+          "local_challenges": ["Sinai Peninsula security context", "Limited local mortuary facilities", "Diving deaths need specialist forensic examination", "Distance from Cairo for paperwork"],
+          "transport_to_hub": "Sharm has direct UK flights with some cargo. Complex cases transfer to Cairo.",
+          "content_angle": "THE diving death destination. Decompression sickness, diving accidents dominate the serious cases. Red Sea resort package holiday deaths.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Hurghada",
+          "country_slug": "egypt",
+          "type": "resort",
+          "population_approx": 260000,
+          "relevance": "Second main Red Sea resort. Growing British tourist market.",
+          "british_presence": "High and growing. Package holidays, diving, water sports.",
+          "hospitals": [
+            {"name": "Hurghada General Hospital", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "El Gouna Hospital", "type": "private_international", "english_speaking": true, "notes": "El Gouna resort area. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Limited. Cairo coordination. VERIFY.",
+          "international_airport": {"code": "HRG", "name": "Hurghada International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Drowning", "Diving incidents", "Natural causes", "Shark attacks (rare but documented, 2022-2023 incidents)"],
+          "local_challenges": ["Similar to Sharm logistics", "Shark attack deaths get massive media attention", "Distance from Cairo"],
+          "transport_to_hub": "Hurghada has direct UK flights. Cargo capacity available.",
+          "content_angle": "Second Red Sea resort. Similar profile to Sharm. Shark attack cases (rare but high-profile). El Gouna resort area.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Luxor",
+          "country_slug": "egypt",
+          "type": "tourist_hub",
+          "population_approx": 510000,
+          "relevance": "Nile cruise hub. Ancient temple tourism. Elderly tourist demographic.",
+          "british_presence": "Moderate. Nile cruise tourists. Cultural tourism. Older demographic.",
+          "hospitals": [
+            {"name": "Luxor International Hospital", "type": "private_local", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Luxor General Hospital", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Local hospital mortuary", "notes": "VERIFY"}
+          ],
+          "local_funeral_directors": "Very limited. Cairo coordination essential. VERIFY.",
+          "international_airport": {"code": "LXR", "name": "Luxor International Airport", "cargo_capable": false},
+          "common_death_scenarios": ["Natural causes (elderly cruise passengers)", "Heat-related (extreme summer temperatures, 45C+)", "Road accidents"],
+          "local_challenges": ["Remote from Cairo", "Limited local infrastructure", "Extreme heat", "Nile cruise deaths may occur mid-river (jurisdiction)"],
+          "transport_to_hub": "Luxor airport has limited cargo. Most cases transfer to Cairo by road or domestic flight.",
+          "content_angle": "Nile cruise deaths. Elderly tourists. Extreme heat. Body must be transferred to Cairo for international cargo.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "australia": {
+      "cities": [
+        {
+          "name": "Sydney",
+          "country_slug": "australia",
+          "type": "major_city",
+          "population_approx": 5300000,
+          "relevance": "Largest city. Main British expat hub. International airport with direct cargo routes to UK.",
+          "british_presence": "Large. Significant British expat and backpacker population. Working holiday visa holders. Elderly British retirees visiting family.",
+          "hospitals": [
+            {"name": "Royal Prince Alfred Hospital", "type": "public", "english_speaking": true, "notes": "Major public teaching hospital. VERIFY"},
+            {"name": "St Vincent's Hospital Sydney", "type": "public", "english_speaking": true, "notes": "Central location. Strong emergency department. VERIFY"},
+            {"name": "Sydney Private Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "NSW Forensic & Analytical Science Service (FASS)", "notes": "Handles coronial post-mortems for NSW. VERIFY"}
+          ],
+          "local_funeral_directors": "English-speaking. Multiple firms with international repatriation experience. VERIFY specific firms.",
+          "international_airport": {"code": "SYD", "name": "Sydney Kingsford Smith Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly visitors)", "Road accidents", "Water-related incidents (beaches)", "Backpacker accidents (outback, sport)"],
+          "local_challenges": ["NSW Coroner's Court required for unnatural deaths", "Post-mortem can add 1-2 weeks", "Long-haul flight to UK adds cost", "Time difference complicates communication"],
+          "transport_to_hub": "SYD is the main hub. Direct cargo to Heathrow via multiple carriers.",
+          "content_angle": "Largest British diaspora hub in Australia. Working holiday deaths are common. Long flight = higher repatriation cost.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Melbourne",
+          "country_slug": "australia",
+          "type": "major_city",
+          "population_approx": 5100000,
+          "relevance": "Second city. Large British community. International airport.",
+          "british_presence": "High. Established British expat community. Australian Open and sports events attract visitors.",
+          "hospitals": [
+            {"name": "The Alfred Hospital", "type": "public", "english_speaking": true, "notes": "Major trauma centre. VERIFY"},
+            {"name": "Royal Melbourne Hospital", "type": "public", "english_speaking": true, "notes": "Large public hospital. VERIFY"},
+            {"name": "Epworth Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Victorian Institute of Forensic Medicine (VIFM)", "notes": "Handles Victorian coronial cases. Well-resourced. VERIFY"}
+          ],
+          "local_funeral_directors": "Multiple firms with international repatriation experience. English is the working language. VERIFY.",
+          "international_airport": {"code": "MEL", "name": "Melbourne Airport (Tullamarine)", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Sports injuries", "Workplace accidents"],
+          "local_challenges": ["Victorian coronial system adds timeline", "Cargo options slightly less than Sydney", "Significant British sports tourism"],
+          "transport_to_hub": "Direct international cargo from MEL. Some cases route via SYD.",
+          "content_angle": "Second-largest British population in Australia. Coronial process important to explain. VIFM is well-regarded.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Gold Coast",
+          "country_slug": "australia",
+          "type": "resort",
+          "population_approx": 660000,
+          "relevance": "Major tourist and expat destination. Surfing, theme parks, beach lifestyle attract British visitors and younger backpackers.",
+          "british_presence": "High tourist volume. Working holiday visa holders. British retirees.",
+          "hospitals": [
+            {"name": "Gold Coast University Hospital", "type": "public", "english_speaking": true, "notes": "Major public hospital for region. VERIFY"},
+            {"name": "Gold Coast Private Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Queensland Forensic and Scientific Services", "notes": "Handles Queensland coronial post-mortems. VERIFY"}
+          ],
+          "local_funeral_directors": "Fewer options than Sydney/Melbourne but international repatriation is handled. VERIFY.",
+          "international_airport": {"code": "OOL", "name": "Gold Coast Airport (Coolangatta)", "cargo_capable": false},
+          "common_death_scenarios": ["Water-related incidents (surfing, ocean)", "Alcohol-related (nightlife)", "Adventure sports accidents", "Road accidents"],
+          "local_challenges": ["OOL airport does not handle cargo. Transfer to Brisbane required.", "Queensland coronial process", "Surfing deaths attract media attention"],
+          "transport_to_hub": "Body must transfer to Brisbane Airport (BNE) for international cargo. Adds 1-2 days.",
+          "content_angle": "Adventure and beach tourism deaths. Surf and water incidents common. Cargo transfer adds complication.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "canada": {
+      "cities": [
+        {
+          "name": "Toronto",
+          "country_slug": "canada",
+          "type": "major_city",
+          "population_approx": 2900000,
+          "relevance": "Largest city. Main British entry point. Direct flights to UK. Large South Asian and British-origin diaspora.",
+          "british_presence": "Large. Business travellers, tourists, visiting family (large UK-origin diaspora). Significant Pakistani and Indian-origin British nationals visiting family.",
+          "hospitals": [
+            {"name": "Toronto General Hospital (UHN)", "type": "public", "english_speaking": true, "notes": "Top-ranked. VERIFY"},
+            {"name": "St. Michael's Hospital", "type": "public", "english_speaking": true, "notes": "VERIFY"},
+            {"name": "Mount Sinai Hospital Toronto", "type": "public", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Ontario Forensic Pathology Service (OFPS)", "notes": "Handles Ontario coronial cases. VERIFY"}
+          ],
+          "local_funeral_directors": "Multiple firms with international repatriation experience. English is the working language. VERIFY.",
+          "international_airport": {"code": "YYZ", "name": "Toronto Pearson International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (visiting elderly parents/grandparents)", "Road accidents", "Medical emergencies"],
+          "local_challenges": ["Ontario coronial process", "Winter weather causes access delays (Dec-Mar)", "Time difference (5hrs behind UK)"],
+          "transport_to_hub": "YYZ has direct cargo to Heathrow. Well-established corridor.",
+          "content_angle": "Main British entry point. Family visit deaths common. Visiting diaspora population returns here. Straightforward logistics.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Vancouver",
+          "country_slug": "canada",
+          "type": "major_city",
+          "population_approx": 2500000,
+          "relevance": "West coast hub. Outdoor activities attract British visitors. Ski resorts (Whistler) nearby. Gateway to western Canada.",
+          "british_presence": "Medium-high. Outdoor and adventure tourists. British expat community. Hong Kong-origin British nationals.",
+          "hospitals": [
+            {"name": "Vancouver General Hospital (VGH)", "type": "public", "english_speaking": true, "notes": "Major trauma centre. VERIFY"},
+            {"name": "St. Paul's Hospital Vancouver", "type": "public", "english_speaking": true, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "BC Coroners Service", "notes": "Handles British Columbia coronial investigations. VERIFY"}
+          ],
+          "local_funeral_directors": "Available with international repatriation capability. VERIFY.",
+          "international_airport": {"code": "YVR", "name": "Vancouver International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Ski and snowboard accidents (Whistler)", "Outdoor adventure accidents", "Natural causes"],
+          "local_challenges": ["BC Coroners Service involved for unnatural deaths", "Mountain rescue and remote access for some deaths", "8hr time difference from UK"],
+          "transport_to_hub": "YVR has international cargo. Longer flight time than Toronto adds cost.",
+          "content_angle": "Ski and adventure deaths. Whistler corridor. British outdoor tourists.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "uae": {
+      "cities": [
+        {
+          "name": "Dubai",
+          "country_slug": "uae",
+          "type": "major_city",
+          "population_approx": 3500000,
+          "relevance": "Most visited city in UAE by British nationals. Tourism, business, expat hub. Al Maktoum international airport adds capacity.",
+          "british_presence": "Very high. Large British expat community (estimated 120,000+ in Dubai). Major business travel hub. Strong tourism (beaches, shopping, events).",
+          "hospitals": [
+            {"name": "Rashid Hospital Dubai", "type": "public", "english_speaking": true, "notes": "Main public hospital. Government run. VERIFY"},
+            {"name": "Dubai Hospital (DHA)", "type": "public", "english_speaking": true, "notes": "Large government hospital. VERIFY"},
+            {"name": "Mediclinic City Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. English widely spoken. Common for expats. VERIFY"},
+            {"name": "American Hospital Dubai", "type": "private_international", "english_speaking": true, "notes": "Private. US-style. English. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Dubai Forensic Medicine Centre (under DHA)", "notes": "Handles forensic cases in Dubai Emirate. Post-mortems required for unnatural deaths. VERIFY"}
+          ],
+          "local_funeral_directors": "UAE funeral process handled by licensed companies. British Consulate maintains list. Non-Muslim repatriation well-established. VERIFY specific firms.",
+          "international_airport": {"code": "DXB", "name": "Dubai International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (expat residents, older visitors)", "Road accidents (Dubai traffic, Road safety issue)", "Workplace accidents (construction workers)", "Drowning (pool, beach)"],
+          "local_challenges": ["Non-Muslim cremation limited (confirm availability at time of death)", "Islamic law context affects some processes", "Heat-related deaths in summer (40C+)", "Alcohol-related deaths require careful handling (UAE law)"],
+          "transport_to_hub": "DXB has direct cargo to Heathrow. Emirates cargo is primary carrier. Short timeline once paperwork is done.",
+          "content_angle": "Largest British population in Middle East. Expat deaths common. Non-Muslim repatriation well-established but unique legal context.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Abu Dhabi",
+          "country_slug": "uae",
+          "type": "major_city",
+          "population_approx": 1500000,
+          "relevance": "UAE capital. British Embassy located here. Growing tourism (Louvre, Ferrari World, Grand Prix). Business hub.",
+          "british_presence": "Medium-high. Growing. British Embassy staff and community. Formula 1 Grand Prix visitors.",
+          "hospitals": [
+            {"name": "Sheikh Khalifa Medical City (SKMC)", "type": "public", "english_speaking": true, "notes": "Major government hospital. VERIFY"},
+            {"name": "Cleveland Clinic Abu Dhabi", "type": "private_international", "english_speaking": true, "notes": "US-affiliated private hospital. High standard. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Abu Dhabi Forensic Evidence Authority (ADFE)", "notes": "Abu Dhabi emirate forensic authority. VERIFY"}
+          ],
+          "local_funeral_directors": "Licensed UAE funeral service providers. British Embassy in Abu Dhabi can provide list. VERIFY.",
+          "international_airport": {"code": "AUH", "name": "Abu Dhabi International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Workplace incidents"],
+          "local_challenges": ["Emirate-specific authority (separate from Dubai)", "British Embassy is here (not Dubai Consulate)", "Processing slightly slower than Dubai"],
+          "transport_to_hub": "AUH has international cargo. Etihad cargo primary. Or transfer to DXB if needed.",
+          "content_angle": "UAE capital. British Embassy base. Grand Prix and tourism deaths. Emirate system separate from Dubai.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "south-africa": {
+      "cities": [
+        {
+          "name": "Cape Town",
+          "country_slug": "south-africa",
+          "type": "major_city",
+          "population_approx": 4600000,
+          "relevance": "Major tourism destination. Wine country, Table Mountain, beach. Large British visitor volume especially Dec-Jan (summer).",
+          "british_presence": "High tourist volume. British expat community. Some British retirees in Western Cape.",
+          "hospitals": [
+            {"name": "Groote Schuur Hospital", "type": "public", "english_speaking": true, "notes": "Major public teaching hospital. Historic (first heart transplant). VERIFY"},
+            {"name": "Mediclinic Cape Town", "type": "private_international", "english_speaking": true, "notes": "Private. English widely spoken. VERIFY"},
+            {"name": "Christiaan Barnard Memorial Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. City Bowl. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Salt River Forensic Pathology Service", "notes": "Western Cape forensic mortuary. Heavy caseload. Post-mortem delays possible. VERIFY"}
+          ],
+          "local_funeral_directors": "Several firms handle international repatriation. English is the working language in Cape Town. VERIFY specific firms.",
+          "international_airport": {"code": "CPT", "name": "Cape Town International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (elderly tourists)", "Road accidents", "Violent crime (tourism areas less affected but risk exists)", "Adventure activities (shark diving, mountain hiking)"],
+          "local_challenges": ["Salt River mortuary has high caseload - post-mortem delays", "Crime-related deaths involve SAPS investigation", "Summer peak season (Dec-Jan) adds volume"],
+          "transport_to_hub": "CPT has direct UK cargo. British Airways, Virgin operate routes. Some cases route via JNB.",
+          "content_angle": "Peak summer season (Dec-Jan) = high British death volume. Mortuary delays key concern. Adventure and crime context.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Johannesburg",
+          "country_slug": "south-africa",
+          "type": "capital",
+          "population_approx": 5600000,
+          "relevance": "Economic capital. OR Tambo International is the main cargo hub for all of southern Africa. Business travel. Safari gateway.",
+          "british_presence": "Business travellers. Safari tourists transiting. Some expats.",
+          "hospitals": [
+            {"name": "Charlotte Maxeke Johannesburg Academic Hospital", "type": "public", "english_speaking": true, "notes": "Major government hospital. VERIFY"},
+            {"name": "Milpark Hospital", "type": "private_international", "english_speaking": true, "notes": "Private. VERIFY"},
+            {"name": "Morningside Mediclinic", "type": "private_international", "english_speaking": true, "notes": "Private. North Johannesburg. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Johannesburg Forensic Pathology Service", "notes": "Handles Gauteng province cases. Busiest forensic service in South Africa. VERIFY"}
+          ],
+          "local_funeral_directors": "Multiple firms with international experience. English working language. VERIFY.",
+          "international_airport": {"code": "JNB", "name": "OR Tambo International Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (business travellers)", "Road accidents", "Crime-related (risk higher than Cape Town)"],
+          "local_challenges": ["Johannesburg forensic service is high-volume - delays possible", "Security environment different from Cape Town", "JNB cargo is the main hub for all SA cases"],
+          "transport_to_hub": "JNB is the primary hub. Direct cargo to UK. Most Cape Town and Durban cases also route via JNB.",
+          "content_angle": "Main SA cargo hub. All South African repatriations effectively route through here. Business and safari transit deaths.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "germany": {
+      "cities": [
+        {
+          "name": "Berlin",
+          "country_slug": "germany",
+          "type": "capital",
+          "population_approx": 3700000,
+          "relevance": "Capital. British Embassy. Growing tourism and expat community. Berlin Brandenburg Airport (BER) handles international cargo.",
+          "british_presence": "Growing expat community post-Brexit (some professionals moved here). Tourism - history, culture, nightlife. Younger demographic.",
+          "hospitals": [
+            {"name": "Charite Universitatsmedizin Berlin", "type": "public", "english_speaking": false, "notes": "Europe's largest university hospital. English in international departments. VERIFY"},
+            {"name": "DRK Kliniken Berlin", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut fur Rechtsmedizin, Charite Berlin", "notes": "Forensic medicine institute. Handles Berlin coronial cases. VERIFY"}
+          ],
+          "local_funeral_directors": "Available but fewer English-speaking firms than some countries. Your UK coordinator will work with a local partner. VERIFY.",
+          "international_airport": {"code": "BER", "name": "Berlin Brandenburg Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes", "Road accidents", "Nightlife-related incidents (techno tourism)"],
+          "local_challenges": ["German bureaucracy methodical - documents must be precise", "Less English than Munich in official contexts", "BER is newer - cargo well-established"],
+          "transport_to_hub": "BER has international cargo. Direct UK routes available.",
+          "content_angle": "Capital with British Embassy. Growing expat base. German bureaucracy is thorough but predictable.",
+          "confidence": "low"
+        },
+        {
+          "name": "Munich",
+          "country_slug": "germany",
+          "type": "major_city",
+          "population_approx": 1500000,
+          "relevance": "Bavaria. Oktoberfest. Business hub. British Consulate General. Well-connected cargo routes.",
+          "british_presence": "Oktoberfest visitors (October). Business travellers. Ski season (Alpine gateway). British Consulate General based here.",
+          "hospitals": [
+            {"name": "Klinikum der Universitat Munchen (LMU)", "type": "public", "english_speaking": false, "notes": "Major university hospital. VERIFY"},
+            {"name": "Rechts der Isar Hospital (TUM)", "type": "public", "english_speaking": false, "notes": "VERIFY"},
+            {"name": "Klinik Augustinum Munich", "type": "private_international", "english_speaking": false, "notes": "Private. VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut fur Rechtsmedizin Munchen (LMU)", "notes": "Forensic medicine institute for Munich and Bavaria. VERIFY"}
+          ],
+          "local_funeral_directors": "Munich has several international repatriation firms. British Consulate General can advise. VERIFY.",
+          "international_airport": {"code": "MUC", "name": "Munich Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (business travellers)", "Oktoberfest alcohol-related incidents", "Alpine ski accidents (Bavaria)", "Road accidents"],
+          "local_challenges": ["Oktoberfest period (Oct) increases case volume", "Alpine deaths may involve mountain rescue jurisdiction", "German-language documentation"],
+          "transport_to_hub": "MUC has direct UK cargo routes. Lufthansa cargo primary carrier.",
+          "content_angle": "Oktoberfest deaths. Alpine ski accidents. British Consulate General location. German precision in bureaucracy.",
+          "confidence": "medium"
+        },
+        {
+          "name": "Frankfurt",
+          "country_slug": "germany",
+          "type": "major_city",
+          "population_approx": 760000,
+          "relevance": "Financial capital. Largest cargo airport in Germany (FRA). Main European hub. Business travellers dominate.",
+          "british_presence": "High business traveller volume. Financial sector. FRA is a common transit hub so some deaths involve transit passengers.",
+          "hospitals": [
+            {"name": "Universitatsklinikum Frankfurt", "type": "public", "english_speaking": false, "notes": "Major university hospital. English in some departments. VERIFY"},
+            {"name": "Markus Hospital Frankfurt", "type": "public", "english_speaking": false, "notes": "VERIFY"}
+          ],
+          "mortuaries_forensic": [
+            {"name": "Institut fur Rechtsmedizin Frankfurt", "notes": "Handles Hesse province forensic cases. VERIFY"}
+          ],
+          "local_funeral_directors": "International repatriation handled. FRA cargo experience means firms are familiar with process. VERIFY.",
+          "international_airport": {"code": "FRA", "name": "Frankfurt Airport", "cargo_capable": true},
+          "common_death_scenarios": ["Natural causes (business travellers)", "In-transit deaths (airport)", "Road accidents"],
+          "local_challenges": ["Business travel deaths - typically insured and straightforward", "German documentation requirements", "FRA is the main cargo hub so process is well-worn"],
+          "transport_to_hub": "FRA IS the main German hub. Best-connected for UK cargo. Fastest German repatriation route.",
+          "content_angle": "Business traveller deaths. FRA is the best German cargo hub. Fast and established route.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  }
+}

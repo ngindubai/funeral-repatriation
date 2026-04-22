@@ -1,0 +1,36 @@
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="logo" aria-label="{{ .Site.Params.brand }}: Home">
+            <span class="logo-icon">RS</span>
+            <span class="logo-text">Repatriate <span>Service</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="/" {{ if .IsHome }}aria-current="page"{{ end }}>Home</a></li>
+                <li><a href="/about/" {{ if eq .RelPermalink "/about/" }}aria-current="page"{{ end }}>About Us</a></li>
+                <li><a href="/countries/" {{ if eq .Section "countries" }}aria-current="page"{{ end }}>Country Guides</a></li>
+                <li><a href="/guides/" {{ if eq .Section "guides" }}aria-current="page"{{ end }}>What to do</a></li>
+                <li><a href="/cremation-transfer/" {{ if eq .Section "cremation-transfer" }}aria-current="page"{{ end }}>Cremation abroad</a></li>
+                <li><a href="/embassy-contacts/" {{ if eq .Section "embassy-contacts" }}aria-current="page"{{ end }}>Embassy contacts</a></li>
+                <li><a href="/bringing-ashes-home/" {{ if eq .Section "bringing-ashes-home" }}aria-current="page"{{ end }}>Bringing ashes home</a></li>
+                <li><a href="/blog/" {{ if eq .Section "blog" }}aria-current="page"{{ end }}>Guidance</a></li>
+                <li><a href="/services/" {{ if eq .RelPermalink "/services/" }}aria-current="page"{{ end }}>Services</a></li>
+                <li><a href="/contact/" {{ if eq .RelPermalink "/contact/" }}aria-current="page"{{ end }}>Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="tel:{{ .Site.Params.emergencyPhone }}" class="header-phone" aria-label="Call emergency support">
+            <i class="fa-solid fa-phone"></i>
+            <span>{{ .Site.Params.emergencyPhone }}</span>
+        </a>
+
+        <a href="/contact/" class="header-cta">Get Help Now</a>
+
+        <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+    </div>
+</header>

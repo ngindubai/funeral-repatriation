@@ -1,0 +1,98 @@
+<footer class="site-footer">
+    <div class="footer-contact-strip">
+        <div class="footer-contact-grid">
+            <div class="contact-chip">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <p>Give us a call</p>
+                    <strong>{{ .Site.Params.emergencyPhone }}</strong>
+                </div>
+            </div>
+            <div class="contact-chip">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <p>Send us a message</p>
+                    <strong>support@repatriateservice.com</strong>
+                </div>
+            </div>
+            <div class="contact-chip">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <p>Office location</p>
+                    <strong>London, United Kingdom</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-inner">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="footer-brand">Repatriate <span>Service</span></p>
+                <p class="footer-tagline">{{ .Site.Params.tagline }}</p>
+                <p class="footer-desc">Country-specific guidance for bringing a loved one home to the United Kingdom. Every guide is built from verified government sources, embassy contacts, and professional experience.</p>
+                <div class="footer-social" aria-label="Social links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Popular guides</h4>
+                <ul>
+                    <li><a href="/repatriation-from-spain/">Spain</a></li>
+                    <li><a href="/repatriation-from-france/">France</a></li>
+                    <li><a href="/repatriation-from-thailand/">Thailand</a></li>
+                    <li><a href="/repatriation-from-turkey/">Turkey</a></li>
+                    <li><a href="/repatriation-from-greece/">Greece</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>What to do guides</h4>
+                <ul>
+                    <li><a href="/guides/death-abroad-spain/">Spain</a></li>
+                    <li><a href="/guides/death-abroad-thailand/">Thailand</a></li>
+                    <li><a href="/guides/death-abroad-india/">India</a></li>
+                    <li><a href="/guides/death-abroad-turkey/">Turkey</a></li>
+                    <li><a href="/guides/">All guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/">Repatriation</a></li>
+                    <li><a href="/cremation-transfer/">Cremation abroad</a></li>
+                    <li><a href="/embassy-contacts/">Embassy contacts</a></li>
+                    <li><a href="/bringing-ashes-home/">Bringing ashes home</a></li>
+                    <li><a href="/guides/">First response guides</a></li>
+                    <li><a href="/faq/">Frequently asked questions</a></li>
+                    <li><a href="/blog/">Guidance articles</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Work hours</h4>
+                <ul>
+                    <li>8:00 AM to 5:00 PM</li>
+                    <li>Monday to Saturday</li>
+                    <li>Emergency support 24/7</li>
+                </ul>
+                <h4 style="margin-top:1.25rem;">Support</h4>
+                <ul>
+                    <li><a href="/contact/">Contact us</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/privacy/">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Params.brand }}. All rights reserved.</p>
+            <p class="footer-disclaimer">Information on this site is for guidance only. Regulations and processes change. Always verify current requirements with the relevant embassy or consulate. This site does not provide legal advice.</p>
+        </div>
+    </div>
+</footer>

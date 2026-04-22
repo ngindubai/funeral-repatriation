@@ -1,0 +1,28 @@
+{{ define "title" }}Frequently Asked Questions | Repatriate Service{{ end }}
+
+{{ define "main" }}
+<section class="page-hero" style="background-image: url('/images/hero.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>Frequently asked questions</h1>
+        <p>Direct answers to the questions families ask most often when dealing with a death abroad.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="faq-list-grid stagger-children">
+            {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="faq-list-card reveal">
+                <i class="fa-solid fa-circle-question"></i>
+                <div>
+                    <h2>{{ .Title }}</h2>
+                    {{ with .Params.short_answer }}<p>{{ . }}</p>{{ end }}
+                </div>
+                <i class="fa-solid fa-angle-right country-list-arrow"></i>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

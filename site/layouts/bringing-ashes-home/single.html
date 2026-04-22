@@ -1,0 +1,281 @@
+{{ define "title" }}{{ .Title }} | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+{{ $at := $c.ashes_transport }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.BaseURL }}" },
+        { "@type": "ListItem", "position": 2, "name": "Bringing ashes home", "item": "{{ site.BaseURL }}bringing-ashes-home/" },
+        { "@type": "ListItem", "position": 3, "name": "Ashes from {{ .Params.country_name }}", "item": "{{ .Permalink }}" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Transporting Ashes from {{ .Params.country_name }} to the UK",
+      "description": "{{ .Description }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Repatriate Service",
+        "telephone": "{{ site.Params.emergencyPhone }}",
+        "url": "{{ site.BaseURL }}"
+      },
+      "serviceType": "Ashes Transport",
+      "areaServed": "{{ .Params.country_name }}"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I carry ashes from {{ .Params.country_name }} on a plane to the UK?",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{ with $at }}{{ .can_carry_on_plane }}{{ end }}" }
+        },
+        {
+          "@type": "Question",
+          "name": "What documents do I need to bring ashes from {{ .Params.country_name }} to the UK?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You need a cremation certificate issued by the {{ .Params.country_name }} crematorium, plus any export permits required by {{ .Params.country_name }} authorities. UK customs does not restrict import of human ashes." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any airline restrictions on carrying ashes from {{ .Params.country_name }}?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most major airlines allow ashes in hand luggage in a sealed container. You must carry the cremation certificate. X-ray-transparent urns are recommended. Confirm requirements with your specific airline before travel." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+
+{{ if $c }}
+{{ $at := $c.ashes_transport }}
+
+{{/* HERO */}}
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/hero.jpg{{ end }}');">
+    <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/bringing-ashes-home/">Bringing ashes home</a></li>
+                <li aria-current="page">From {{ $c.name }}</li>
+            </ol>
+        </nav>
+        <p class="label-sm">Ashes transport guide</p>
+        <h1>Bringing ashes home from <em>{{ $c.name }}</em></h1>
+        <p class="page-hero-desc">You have ashes in {{ $c.name }} and need to bring them to the UK. This guide covers the documents, airline rules, and practical steps.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call 24/7</a>
+            <a href="/contact/" class="btn btn-outline">Send enquiry</a>
+        </div>
+    </div>
+</section>
+
+{{/* QUICK FACTS STRIP */}}
+<div class="helpline-strip">
+    <div class="section-inner">
+        <div class="helpline-strip-inner">
+            <div class="helpline-icon"><i class="fa-solid fa-urn-trowel"></i></div>
+            <div class="helpline-text">
+                <p class="helpline-label">Quick reference</p>
+                <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top:0.4rem;">
+                    {{ with $at }}
+                    {{ if .can_carry_on_plane }}<div><span class="label-sm">Hand luggage</span><p style="margin:0; font-weight:600; font-size:0.9rem;">{{ .can_carry_on_plane }}</p></div>{{ end }}
+                    {{ if .typical_cost_ashes_return_gbp }}<div><span class="label-sm">Typical cost</span><p style="margin:0; font-weight:600; font-size:0.9rem;">{{ .typical_cost_ashes_return_gbp }}</p></div>{{ end }}
+                    {{ end }}
+                    {{ with $c.typical_timeline }}<div><span class="label-sm">Allow</span><p style="margin:0; font-weight:600; font-size:0.9rem;">{{ .ashes_transport_days_estimate | default "3-10 days to arrange" }}</p></div>{{ end }}
+                </div>
+            </div>
+            <a href="/contact/" class="btn btn-cta helpline-btn">Ask a question</a>
+        </div>
+    </div>
+</div>
+
+{{/* MAIN CONTENT GRID */}}
+<section class="section">
+    <div class="section-inner">
+        <div class="two-col-layout">
+            <div class="main-col">
+
+                <h2>What you need to carry ashes from {{ $c.name }}</h2>
+                <p>If the cremation has already taken place in {{ $c.name }}, bringing the ashes home to the UK is a straightforward process. There is no UK import restriction on human ashes. The challenge is the departure side: each country has its own documentation requirements and some require export permits.</p>
+
+                {{ if $at.ashes_transport_requirements }}
+                <div class="docs-checklist-block reveal">
+                    <h3><i class="fa-solid fa-clipboard-check"></i> Documents you need</h3>
+                    <ul class="docs-checklist">
+                        {{ range $at.ashes_transport_requirements }}
+                        <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                <h2 style="margin-top:2rem;">Airline rules</h2>
+                {{ if $at.can_carry_on_plane }}
+                <div class="info-card info-card--blue reveal">
+                    <div class="info-card-icon"><i class="fa-solid fa-plane"></i></div>
+                    <div>
+                        <h3>Hand luggage guidance</h3>
+                        <p>{{ $at.can_carry_on_plane }}</p>
+                    </div>
+                </div>
+                {{ end }}
+
+                <div class="prose">
+                    <p>Most major airlines permit ashes in hand luggage in a sealed container. Rules vary by airline and the type of urn. Key points:</p>
+                    <ul>
+                        <li>Carry the cremation certificate at all times during travel — airport security may ask for it.</li>
+                        <li>Metal urns cannot be screened by X-ray and may be refused as hand luggage on some airlines. Bring a wooden or biodegradable travel urn instead, then transfer to a permanent urn at home.</li>
+                        <li>Some airlines require advance notification. Contact your airline at least 48 hours before travel.</li>
+                        <li>Checked luggage is an option for some airlines, though most families prefer hand luggage for obvious reasons.</li>
+                        <li>If you are connecting through a third country, that country's rules also apply. Check separately.</li>
+                    </ul>
+                    <p>Confirm requirements with your specific airline. Rules change and vary by route.</p>
+                </div>
+
+                <h2 style="margin-top:2rem;">Export requirements from {{ $c.name }}</h2>
+                <div class="prose">
+                    {{ with $c.cultural_practices }}
+                    {{ with .cremation_common }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                    {{ end }}
+                    {{ if $at.cremation_available }}
+                    <p>Cremation is available in {{ $c.name }}. Crematoriums will issue a cremation certificate, which is the core document for export. In some countries, additional certificates from health or foreign affairs authorities are required. The funeral director who handled the cremation will guide you on this.</p>
+                    {{ else }}
+                    <div class="info-card info-card--orange reveal">
+                        <div class="info-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div>
+                            <h3>Cremation availability</h3>
+                            <p>Cremation may be restricted or unavailable in {{ $c.name }} due to religious or legal reasons. If you are dealing with ashes from a previous cremation held elsewhere, the export rules may differ. Contact us for guidance specific to your situation.</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <h2 style="margin-top:2rem;">Costs</h2>
+                <div class="cost-table-block reveal">
+                    <table class="cost-table">
+                        <thead>
+                            <tr><th>Item</th><th>Typical cost</th></tr>
+                        </thead>
+                        <tbody>
+                            {{ with $at.typical_cost_ashes_return_gbp }}<tr><td>Returning ashes to the UK</td><td>{{ . }}</td></tr>{{ end }}
+                            {{ with $at.typical_cost_cremation_gbp }}<tr><td>Cremation in {{ $c.name }} (if not done)</td><td>{{ . }}</td></tr>{{ end }}
+                            <tr><td>Travel urn (optional)</td><td>£20-80</td></tr>
+                            <tr><td>UK urn or memorial</td><td>Varies</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="docs-note"><i class="fa-solid fa-circle-info"></i> Costs are estimates. Get a quote for your specific situation.</p>
+                </div>
+
+                <h2 style="margin-top:2rem;">Once back in the UK</h2>
+                <div class="prose">
+                    <p>UK customs does not require declaration of human ashes. There is no import paperwork required on the UK side. Simply carry the ashes and your cremation certificate through customs.</p>
+                    <p>What you do with the ashes once home is your choice. Scattering, interment, and keeping ashes at home are all legal. See our <a href="/blog/what-to-do-with-ashes-uk/">complete guide to ashes options in the UK</a>.</p>
+                </div>
+
+            </div>{{/* end main-col */}}
+
+            <div class="side-col">
+                {{/* Country crosslink */}}
+                <a href="/repatriation-from-{{ $c.slug }}/" class="guide-crosslink-card">
+                    <div class="guide-crosslink-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                    <div>
+                        <p class="label-sm">Full repatriation guide</p>
+                        <p style="margin:0; font-size:0.9rem;">Complete guide: repatriation from {{ $c.name }}</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+                </a>
+
+                {{/* Cremation crosslink */}}
+                {{ if $at.cremation_available }}
+                <a href="/cremation-transfer/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
+                    <div class="guide-crosslink-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div>
+                        <p class="label-sm">Deciding on cremation?</p>
+                        <p style="margin:0; font-size:0.9rem;">Cremation in {{ $c.name }}: full guide including costs and what to expect</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+                </a>
+                {{ end }}
+
+                {{/* Embassy crosslink */}}
+                <a href="/embassy-contacts/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
+                    <div class="guide-crosslink-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div>
+                        <p class="label-sm">Official support</p>
+                        <p style="margin:0; font-size:0.9rem;">British Embassy in {{ $c.name }}: contacts and what consular staff can do</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+                </a>
+
+                {{/* CTA card */}}
+                <div class="side-cta-card" style="margin-top:1.25rem;">
+                    <p class="label-sm">Need guidance?</p>
+                    <h3>We can help with ashes transport</h3>
+                    <p>If you are unsure about the paperwork, airline requirements, or anything else, call us or send an enquiry.</p>
+                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta" style="width:100%; justify-content:center; margin-bottom:0.5rem;"><i class="fa-solid fa-phone"></i> Call 24/7</a>
+                    <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center;">Send enquiry</a>
+                </div>
+
+            </div>{{/* end side-col */}}
+        </div>
+    </div>
+</section>
+
+{{/* ASHES BLOG LINK */}}
+<section class="section-alt">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Further guidance</p>
+            <h2>More on ashes and cremation abroad</h2>
+        </div>
+        <div class="guide-links-grid stagger-children">
+            <a href="/blog/what-to-do-with-ashes-uk/" class="guide-link-card reveal">
+                <i class="fa-solid fa-house"></i>
+                <div>
+                    <h3>What to do with ashes in the UK</h3>
+                    <p>Scattering rules, burial, keeping ashes at home, and memorial options.</p>
+                </div>
+            </a>
+            <a href="/blog/repatriation-vs-cremation-abroad/" class="guide-link-card reveal">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <div>
+                    <h3>Repatriation vs cremation abroad</h3>
+                    <p>How to decide which option is right for your family and situation.</p>
+                </div>
+            </a>
+            <a href="/blog/tracing-travel-insurance-after-death/" class="guide-link-card reveal">
+                <i class="fa-solid fa-file-shield"></i>
+                <div>
+                    <h3>Travel insurance after a death</h3>
+                    <p>How to trace a policy and what happens when there is no cover.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+{{ else }}
+<section class="section">
+    <div class="section-inner">
+        <p>Country data not available. <a href="/bringing-ashes-home/">See all ashes transport guides.</a></p>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

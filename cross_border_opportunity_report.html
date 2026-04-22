@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Border SEO Lead-Gen Opportunity Report</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface2: #1c2333;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --green: #3fb950;
+            --yellow: #d29922;
+            --red: #f85149;
+            --orange: #db6d28;
+            --purple: #bc8cff;
+            --teal: #39d2c0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--accent); }
+        h2 { font-size: 1.6rem; margin: 2.5rem 0 1rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.2rem; margin: 1.5rem 0 0.8rem; color: var(--accent); }
+        h4 { font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--purple); }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; }
+        .meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem; }
+
+        .executive-summary {
+            background: linear-gradient(135deg, #1a2332, #162030);
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .executive-summary p { color: var(--text); }
+
+        .key-insight {
+            background: linear-gradient(135deg, #1a2a1e, #162518);
+            border: 1px solid var(--green);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+        }
+        .key-insight p { color: var(--text); }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .card-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 2rem;
+            font-size: 0.9rem;
+        }
+        th {
+            background: var(--surface2);
+            color: var(--accent);
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+        tr:hover td { background: var(--surface2); }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+        .badge-green { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+        .badge-yellow { background: rgba(210, 153, 34, 0.15); color: var(--yellow); }
+        .badge-red { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+        .badge-orange { background: rgba(219, 109, 40, 0.15); color: var(--orange); }
+        .badge-purple { background: rgba(188, 140, 255, 0.15); color: var(--purple); }
+        .badge-blue { background: rgba(88, 166, 255, 0.15); color: var(--accent); }
+        .badge-teal { background: rgba(57, 210, 192, 0.15); color: var(--teal); }
+
+        .rank-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        .rank-1 { background: rgba(63, 185, 80, 0.2); color: var(--green); }
+        .rank-2 { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+        .rank-3 { background: rgba(210, 153, 34, 0.15); color: var(--yellow); }
+        .rank-4 { background: rgba(188, 140, 255, 0.1); color: var(--purple); }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .pro-item, .con-item { font-size: 0.85rem; padding: 4px 0; color: var(--text-muted); }
+        .pro-item::before { content: "+  "; color: var(--green); font-weight: 700; }
+        .con-item::before { content: "-  "; color: var(--red); font-weight: 700; }
+
+        .verdict-box {
+            background: rgba(63, 185, 80, 0.08);
+            border: 1px solid rgba(63, 185, 80, 0.3);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+        }
+        .verdict-box.caution {
+            background: rgba(210, 153, 34, 0.08);
+            border-color: rgba(210, 153, 34, 0.3);
+        }
+        .verdict-box.avoid {
+            background: rgba(248, 81, 73, 0.08);
+            border-color: rgba(248, 81, 73, 0.3);
+        }
+
+        .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem 2rem; margin: 2rem 0; }
+        .toc a { color: var(--accent); text-decoration: none; display: block; padding: 4px 0; font-size: 0.95rem; }
+        .toc a:hover { text-decoration: underline; }
+
+        ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+        li { margin-bottom: 0.3rem; color: var(--text-muted); }
+
+        .highlight { color: var(--accent); font-weight: 600; }
+        .text-green { color: var(--green); }
+        .text-yellow { color: var(--yellow); }
+        .text-red { color: var(--red); }
+        .text-teal { color: var(--teal); }
+
+        .section-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+        .flow-step {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            min-width: 150px;
+        }
+        .flow-step .step-label { font-size: 0.7rem; color: var(--teal); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; }
+        .flow-step .step-title { font-size: 0.9rem; color: var(--text); font-weight: 600; margin-top: 4px; }
+        .flow-step .step-detail { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+        .flow-arrow { color: var(--accent); font-size: 1.5rem; }
+
+        .margin-calc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .margin-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .margin-row:last-child { border-bottom: none; }
+        .margin-label { color: var(--text-muted); }
+        .margin-value { color: var(--text); font-weight: 600; }
+        .margin-profit { color: var(--green); font-weight: 700; font-size: 1.1rem; }
+
+        .search-data-note {
+            background: rgba(88, 166, 255, 0.08);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .cross-border-flow {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .cb-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .cb-flag { font-size: 1.5rem; margin-bottom: 0.3rem; }
+        .cb-label { font-size: 0.8rem; color: var(--text-muted); }
+        .cb-action { font-size: 0.85rem; color: var(--text); font-weight: 600; }
+        .cb-arrow { color: var(--accent); font-size: 1.3rem; }
+
+        pre {
+            background: var(--surface2);
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            overflow-x: auto;
+            color: var(--text-muted);
+            margin: 0.5rem 0 1rem;
+        }
+
+        .warning-box {
+            background: rgba(210, 153, 34, 0.08);
+            border: 1px solid rgba(210, 153, 34, 0.3);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .card-grid, .card-grid-3 { grid-template-columns: 1fr; }
+            .pros-cons { grid-template-columns: 1fr; }
+            .cross-border-flow { grid-template-columns: 1fr; }
+            .flow-diagram { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Cross-Border SEO Lead-Gen: The Margin Opportunity</h1>
+    <p class="subtitle">Finding industries where a foreign buyer searching for a local service in another country will pay upfront, and where information asymmetry creates natural margin.</p>
+    <p class="meta">Date: 14 April 2026 | Classification: Internal Research | Companion to: global_seo_opportunity_report.html</p>
+
+    <div class="toc">
+        <h3 style="margin-top:0">Contents</h3>
+        <a href="#thesis">1. The Cross-Border Thesis</a>
+        <a href="#why">2. Why Cross-Border Commands Higher Margin</a>
+        <a href="#criteria">3. Evaluation Criteria (Updated for Cross-Border)</a>
+        <a href="#search">4. Search Volume Analysis: Cross-Border Query Patterns</a>
+        <a href="#master">5. Master Ranking (20 Cross-Border Niches)</a>
+        <a href="#tier1">6. Tier 1: Top 5 Opportunities (Deep Dives)</a>
+        <a href="#tier2">7. Tier 2: Strong Contenders (Next 5)</a>
+        <a href="#avoid">8. Niches to Avoid</a>
+        <a href="#competition">9. Competition Deep-Dive: Existing Cross-Border Players</a>
+        <a href="#economics">10. Unit Economics: The Cross-Border Margin Model</a>
+        <a href="#execution">11. Recommended Execution Plan</a>
+        <a href="#next">12. Next Steps</a>
+    </div>
+
+    <!-- THESIS -->
+    <h2 id="thesis">1. The Cross-Border Thesis</h2>
+    <div class="executive-summary">
+        <p>The first report ranked niches by overall SEO opportunity. This report applies a tighter filter: <strong>which services are inherently cross-border?</strong></p>
+        <p style="margin-top:1rem">The OsaBus model works not just because of SEO dominance, but because of a fundamental economic principle: <strong>information asymmetry</strong>. A French tour operator booking a bus in China doesn't know that the bus costs $400 locally. OsaBus charges $650, takes $250 margin, and the customer is happy because they had no way to find or trust a local operator themselves.</p>
+        <p style="margin-top:1rem"><strong>Three hard requirements for this report:</strong></p>
+        <ol style="margin-top:0.5rem">
+            <li style="color:var(--text)"><strong>Cross-border by nature:</strong> The buyer is in Country A, the service is in Country B. Not just "global" ... the customer MUST be foreign.</li>
+            <li style="color:var(--text)"><strong>Upfront payment:</strong> Customer pays in full before the service is delivered. No credit, no post-service invoicing, no "pay on the day."</li>
+            <li style="color:var(--text)"><strong>Information asymmetry creates margin:</strong> The foreign buyer doesn't know local pricing, can't easily find local operators, and is willing to pay a premium for certainty.</li>
+        </ol>
+        <p style="margin-top:1rem"><strong>Key finding:</strong> This filter eliminates most construction/equipment hire niches from the first report (those are local searches, not cross-border). The strongest cross-border opportunities cluster around <span class="text-teal" style="font-weight:700">travel, events, and B2B services needed in foreign countries</span>.</p>
+    </div>
+
+    <!-- WHY CROSS-BORDER -->
+    <h2 id="why">2. Why Cross-Border Commands Higher Margin</h2>
+
+    <div class="cross-border-flow">
+        <div class="cb-box">
+            <div class="cb-flag">&#127467;&#127479;</div>
+            <div class="cb-action">French buyer</div>
+            <div class="cb-label">Searches in English/French</div>
+        </div>
+        <div class="cb-arrow">&rarr;</div>
+        <div class="cb-box" style="border-color: var(--accent);">
+            <div class="cb-flag">&#127760;</div>
+            <div class="cb-action">YOUR SITE</div>
+            <div class="cb-label">English site with global pages</div>
+        </div>
+        <div class="cb-arrow">&rarr;</div>
+        <div class="cb-box">
+            <div class="cb-flag">&#127464;&#127475;</div>
+            <div class="cb-action">Chinese operator</div>
+            <div class="cb-label">Delivers the service locally</div>
+        </div>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h4>The Information Gap</h4>
+            <p style="color:var(--text)">A French buyer can't read Chinese websites. They can't verify Chinese bus companies. They can't negotiate in Mandarin. They can't know that a 50-seat coach in Beijing costs 2,800 CNY/day (~$385). You quote them EUR 580 (~$630), and they have zero frame of reference to question it. That's a 64% markup, and the customer considers it fair because you handled everything.</p>
+        </div>
+        <div class="card">
+            <h4>The Trust Premium</h4>
+            <p style="color:var(--text)">Cross-border buyers pay a premium for trust. They're spending money in a country they don't understand, often for a one-time event (wedding, conference, group tour). The cost of getting it wrong is catastrophic (imagine a no-show bus for a wedding party of 80). They'll gladly pay 30-60% more for a professional English-speaking intermediary with reviews and guarantees.</p>
+        </div>
+        <div class="card">
+            <h4>Why Upfront Payment Works</h4>
+            <p style="color:var(--text)">Cross-border services naturally command upfront payment because: (1) The customer is abroad and can't pay on-site easily. (2) They're booking weeks/months in advance. (3) They expect to pay a deposit or full amount when booking travel-related services. (4) You can't chase unpaid invoices across international borders. OsaBus charges in full at booking. TakeAChef charges upfront. Every airport transfer service charges upfront. This is the norm.</p>
+        </div>
+        <div class="card">
+            <h4>The OsaBus Proof Point</h4>
+            <p style="color:var(--text)">OsaBus has operated on this exact model since 2012 across 77 countries. A tiny team in Riga, Latvia operates a global bus hire business. They don't own a single bus. They take payment upfront, find a local operator, pay the operator a lower amount, and keep the difference. Their competitors (Volubus, GetTransfer) haven't replicated the SEO dominance. The model is proven.</p>
+        </div>
+    </div>
+
+    <!-- EVALUATION CRITERIA -->
+    <h2 id="criteria">3. Evaluation Criteria (Updated for Cross-Border)</h2>
+    <p>Criteria from the first report have been restructured. Three new dimensions replace "Operational Simplicity" and "Global Demand" to reflect the cross-border thesis.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Criterion</th>
+                <th>Weight</th>
+                <th>What It Measures</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cross-Border Demand</strong> <span class="badge badge-teal">NEW</span></td>
+                <td>25%</td>
+                <td>Is this service INHERENTLY cross-border? Does a person in Country A search for this in Country B? Is the buyer almost always foreign?</td>
+            </tr>
+            <tr>
+                <td><strong>Information Asymmetry / Margin</strong> <span class="badge badge-teal">NEW</span></td>
+                <td>20%</td>
+                <td>Can you charge a 30-60%+ markup because the buyer has no visibility into local pricing? How opaque is the local market?</td>
+            </tr>
+            <tr>
+                <td><strong>Upfront Payment Norm</strong> <span class="badge badge-teal">NEW</span></td>
+                <td>15%</td>
+                <td>Does the customer naturally pay in full before service delivery? Is this an industry norm? Score 10 = always upfront, 1 = post-service billing.</td>
+            </tr>
+            <tr>
+                <td><strong>Competition Vacuum</strong></td>
+                <td>20%</td>
+                <td>Is there NO existing dominant global SEO player? Higher score = less competition.</td>
+            </tr>
+            <tr>
+                <td><strong>Booking Value</strong></td>
+                <td>10%</td>
+                <td>Average order value and commission potential. Higher bookings = more revenue per lead.</td>
+            </tr>
+            <tr>
+                <td><strong>Search Volume Indicator</strong></td>
+                <td>10%</td>
+                <td>Relative search volume for "[service] in [foreign country/city]" queries. Based on Google Trends data where available, otherwise estimated from market size indicators.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SEARCH VOLUME ANALYSIS -->
+    <h2 id="search">4. Search Volume Analysis: Cross-Border Query Patterns</h2>
+
+    <div class="search-data-note">
+        <strong>Data sources and limitations:</strong> Google Trends data was pulled for multiple cross-border query comparisons. Google Keyword Planner, Ahrefs, and SEMrush require paid accounts for exact volume figures. The data below comes from: (1) Google Trends relative interest (worldwide, past 12 months), (2) competitor site traffic estimates from publicly available data, (3) market size reports. Exact monthly search volumes should be validated with Ahrefs/SEMrush before building any site. This is directional, not absolute.
+    </div>
+
+    <h3>The Cross-Border Search Pattern</h3>
+    <p>Cross-border queries follow predictable patterns. The searcher uses English (the lingua franca of travel/business) regardless of their native language:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Query Pattern</th>
+                <th>Example</th>
+                <th>Buyer Location</th>
+                <th>Service Location</th>
+                <th>Relative Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>"[service] in [country]"</td>
+                <td>"bus hire in Spain"</td>
+                <td>UK, US, Germany, etc.</td>
+                <td>Spain</td>
+                <td><span class="badge badge-green">High</span></td>
+            </tr>
+            <tr>
+                <td>"[service] [city]"</td>
+                <td>"airport transfer Rome"</td>
+                <td>Any non-Italian country</td>
+                <td>Italy</td>
+                <td><span class="badge badge-green">Very High</span></td>
+            </tr>
+            <tr>
+                <td>"book [service] [country]"</td>
+                <td>"book private driver Bali"</td>
+                <td>Australia, UK, US</td>
+                <td>Indonesia</td>
+                <td><span class="badge badge-yellow">Medium</span></td>
+            </tr>
+            <tr>
+                <td>"hire [service] in [city]"</td>
+                <td>"hire tour guide in Tokyo"</td>
+                <td>US, UK, Australia</td>
+                <td>Japan</td>
+                <td><span class="badge badge-yellow">Medium</span></td>
+            </tr>
+            <tr>
+                <td>"[service] from [country A] to [country B]"</td>
+                <td>"ship pet from USA to UK"</td>
+                <td>USA</td>
+                <td>UK</td>
+                <td><span class="badge badge-yellow">Medium</span></td>
+            </tr>
+            <tr>
+                <td>"[event] abroad" / "[event] overseas"</td>
+                <td>"destination wedding Italy"</td>
+                <td>US, UK, Australia</td>
+                <td>Italy</td>
+                <td><span class="badge badge-green">High</span></td>
+            </tr>
+            <tr>
+                <td>"exhibition stand [trade fair name]"</td>
+                <td>"exhibition stand builder CES"</td>
+                <td>Any country exhibiting at CES</td>
+                <td>USA (Las Vegas)</td>
+                <td><span class="badge badge-orange">Medium-Low</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Google Trends: "bus rental europe" from US</h3>
+    <div class="card">
+        <p style="color:var(--text)">Google Trends shows "bus rental europe" searched from the US has intermittent spikes (100 index in late Nov 2025, 78 in Jan 2026) with long periods of zero interest. This confirms that cross-border queries are <strong>low volume but high intent</strong>. Each search represents a genuine buyer planning a trip, not casual browsing. A site that captures even 50% of these searches globally across dozens of country combinations generates significant revenue due to high booking values.</p>
+        <p>Key insight: "airport transfer [city]" queries dwarf all other cross-border service queries. This is the highest-volume cross-border search pattern in existence. However, it is also the most competitive.</p>
+    </div>
+
+    <h3>Cross-Border Query Volume Tiers (Estimated)</h3>
+    <table>
+        <thead>
+            <tr><th>Service</th><th>Est. Global Monthly Volume</th><th>Avg. Booking Value</th><th>Revenue Potential per 1K Searches</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Airport transfer [city]</td><td>5M-10M+</td><td>$30-$150</td><td>$15K-$75K</td></tr>
+            <tr><td>Destination wedding [country]</td><td>500K-1M</td><td>$5K-$50K</td><td>$2.5M-$25M</td></tr>
+            <tr><td>Bus/coach hire [country]</td><td>200K-500K</td><td>$500-$5K</td><td>$250K-$2.5M</td></tr>
+            <tr><td>Private driver/chauffeur [city]</td><td>200K-500K</td><td>$100-$500</td><td>$50K-$250K</td></tr>
+            <tr><td>Yacht/boat charter [destination]</td><td>200K-500K</td><td>$1K-$20K</td><td>$500K-$10M</td></tr>
+            <tr><td>Tour guide [city]</td><td>100K-300K</td><td>$50-$300</td><td>$25K-$150K</td></tr>
+            <tr><td>Exhibition stand [trade fair/city]</td><td>50K-150K</td><td>$5K-$100K</td><td>$2.5M-$50M</td></tr>
+            <tr><td>Pet transport international</td><td>50K-100K</td><td>$2K-$10K</td><td>$1M-$5M</td></tr>
+            <tr><td>Funeral repatriation [country]</td><td>20K-50K</td><td>$5K-$20K</td><td>$2.5M-$10M</td></tr>
+            <tr><td>Private security abroad</td><td>10K-30K</td><td>$1K-$10K</td><td>$500K-$5M</td></tr>
+        </tbody>
+    </table>
+    <p style="font-size:0.8rem;">*Revenue Potential per 1K Searches assumes 5% conversion rate and the midpoint booking value. These are rough indicators for prioritisation, not projections. Validate with Ahrefs/SEMrush before committing.</p>
+
+    <hr class="section-divider">
+
+    <!-- MASTER RANKING -->
+    <h2 id="master">5. Master Ranking (20 Cross-Border Niches)</h2>
+    <p>Every niche scored against the 6 cross-border criteria. Sorted by weighted score. Only niches that pass the cross-border filter are included (local-only services like skip hire, scaffolding, and portable toilets from the first report are excluded).</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Niche</th>
+                <th>Cross-Border</th>
+                <th>Info Asym.</th>
+                <th>Upfront Pay</th>
+                <th>Competition</th>
+                <th>Booking Val</th>
+                <th>Search Vol</th>
+                <th>Weighted</th>
+                <th>Tier</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="rank-number rank-1">1</span></td>
+                <td><strong>Exhibition Stand / Trade Show Booth Hire</strong></td>
+                <td>10</td><td>10</td><td>9</td><td>9</td><td>10</td><td>5</td>
+                <td><strong class="text-green">9.1</strong></td>
+                <td><span class="badge badge-green">T1</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-1">2</span></td>
+                <td><strong>Destination Wedding Services Abroad</strong></td>
+                <td>10</td><td>9</td><td>8</td><td>7</td><td>10</td><td>8</td>
+                <td><strong class="text-green">8.7</strong></td>
+                <td><span class="badge badge-green">T1</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-1">3</span></td>
+                <td><strong>International Pet Transport</strong></td>
+                <td>10</td><td>9</td><td>9</td><td>6</td><td>9</td><td>6</td>
+                <td><strong class="text-green">8.5</strong></td>
+                <td><span class="badge badge-green">T1</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-1">4</span></td>
+                <td><strong>Funeral Repatriation Services</strong></td>
+                <td>10</td><td>10</td><td>10</td><td>9</td><td>10</td><td>3</td>
+                <td><strong class="text-green">8.5</strong></td>
+                <td><span class="badge badge-green">T1</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-1">5</span></td>
+                <td><strong>Corporate Event AV/Equipment Hire Abroad</strong></td>
+                <td>9</td><td>9</td><td>9</td><td>8</td><td>9</td><td>5</td>
+                <td><strong class="text-green">8.4</strong></td>
+                <td><span class="badge badge-green">T1</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-2">6</span></td>
+                <td><strong>Private Driver / Chauffeur Abroad</strong></td>
+                <td>9</td><td>8</td><td>9</td><td>5</td><td>7</td><td>8</td>
+                <td><strong class="text-yellow">7.6</strong></td>
+                <td><span class="badge badge-yellow">T2</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-2">7</span></td>
+                <td><strong>Coach/Bus Hire Abroad (OsaBus Clone)</strong></td>
+                <td>9</td><td>9</td><td>9</td><td>3</td><td>8</td><td>7</td>
+                <td><strong class="text-yellow">7.4</strong></td>
+                <td><span class="badge badge-yellow">T2</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-2">8</span></td>
+                <td><strong>Private Security / Bodyguard Hire Abroad</strong></td>
+                <td>9</td><td>10</td><td>9</td><td>8</td><td>10</td><td>2</td>
+                <td><strong class="text-yellow">7.4</strong></td>
+                <td><span class="badge badge-yellow">T2</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-2">9</span></td>
+                <td><strong>International Vehicle Shipping</strong></td>
+                <td>10</td><td>8</td><td>8</td><td>6</td><td>9</td><td>5</td>
+                <td><strong class="text-yellow">7.3</strong></td>
+                <td><span class="badge badge-yellow">T2</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-2">10</span></td>
+                <td><strong>Interpreter / Business Translator Hire Abroad</strong></td>
+                <td>10</td><td>7</td><td>8</td><td>7</td><td>6</td><td>5</td>
+                <td><strong class="text-yellow">7.2</strong></td>
+                <td><span class="badge badge-yellow">T2</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-3">11</span></td>
+                <td>Medical Tourism Facilitator</td>
+                <td>10</td><td>9</td><td>8</td><td>5</td><td>10</td><td>6</td>
+                <td><strong>7.1</strong></td>
+                <td><span class="badge badge-orange">T3</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-3">12</span></td>
+                <td>International Relocation / Moving</td>
+                <td>10</td><td>7</td><td>7</td><td>4</td><td>9</td><td>7</td>
+                <td><strong>6.8</strong></td>
+                <td><span class="badge badge-orange">T3</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-3">13</span></td>
+                <td>Helicopter / Private Jet Charter</td>
+                <td>8</td><td>9</td><td>9</td><td>4</td><td>10</td><td>5</td>
+                <td><strong>6.7</strong></td>
+                <td><span class="badge badge-orange">T3</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-3">14</span></td>
+                <td>Film/Production Crew Hire Abroad</td>
+                <td>9</td><td>9</td><td>8</td><td>8</td><td>9</td><td>2</td>
+                <td><strong>6.6</strong></td>
+                <td><span class="badge badge-orange">T3</span></td>
+            </tr>
+            <tr>
+                <td><span class="rank-number rank-3">15</span></td>
+                <td>Ski Equipment Rental (Pre-Book)</td>
+                <td>7</td><td>5</td><td>8</td><td>4</td><td>4</td><td>7</td>
+                <td><strong>5.9</strong></td>
+                <td><span class="badge badge-orange">T3</span></td>
+            </tr>
+            <tr style="opacity:0.6;">
+                <td>16</td><td>Airport Transfer</td>
+                <td>10</td><td>5</td><td>10</td><td>1</td><td>3</td><td>10</td>
+                <td><strong>5.4</strong></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+            <tr style="opacity:0.6;">
+                <td>17</td><td>Vacation Photographer</td>
+                <td>9</td><td>5</td><td>9</td><td>2</td><td>4</td><td>7</td>
+                <td><strong>5.1</strong></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+            <tr style="opacity:0.6;">
+                <td>18</td><td>Private Chef at Destination</td>
+                <td>8</td><td>6</td><td>8</td><td>1</td><td>6</td><td>6</td>
+                <td><strong>4.8</strong></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+            <tr style="opacity:0.6;">
+                <td>19</td><td>Tour Guide Hire</td>
+                <td>9</td><td>4</td><td>8</td><td>1</td><td>3</td><td>8</td>
+                <td><strong>4.5</strong></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+            <tr style="opacity:0.6;">
+                <td>20</td><td>Luggage Storage Abroad</td>
+                <td>8</td><td>2</td><td>9</td><td>1</td><td>1</td><td>7</td>
+                <td><strong>3.6</strong></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <!-- TIER 1 DEEP DIVES -->
+    <h2 id="tier1">6. Tier 1: Top 5 Opportunities (Deep Dives)</h2>
+
+    <!-- #1 Exhibition Stand -->
+    <div class="card">
+        <h3><span class="rank-number rank-1">1</span> Exhibition Stand / Trade Show Booth Hire</h3>
+        <p style="color:var(--text)"><strong>Score: 9.1/10</strong> | The #1 cross-border opportunity. A German company exhibiting at a trade fair in Shanghai, Dubai, or Las Vegas needs a booth built. They search in English. They pay upfront. They have zero idea what it costs locally. The margins are extraordinary.</p>
+
+        <h4>Why This Is #1</h4>
+        <div class="key-insight">
+            <p><strong>The Perfect Cross-Border Service.</strong> Exhibition stands are ALWAYS cross-border. Companies exhibit at trade fairs in foreign countries. They need a local company to design, build, install, and dismantle their stand. They can't fly their own contractors around the world. They MUST find a local builder. And they have absolutely no idea what local rates are.</p>
+        </div>
+
+        <h4>The Cross-Border Flow</h4>
+        <div class="flow-diagram">
+            <div class="flow-step">
+                <div class="step-label">Buyer</div>
+                <div class="step-title">German manufacturer</div>
+                <div class="step-detail">Exhibiting at Canton Fair, Guangzhou, China</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+                <div class="step-label">Search</div>
+                <div class="step-title">"exhibition stand builder Guangzhou"</div>
+                <div class="step-detail">English search from Germany</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step" style="border-color: var(--green);">
+                <div class="step-label">Your Site</div>
+                <div class="step-title">Quotes EUR 18,000</div>
+                <div class="step-detail">Based on 36sqm custom stand</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+                <div class="step-label">Local Builder</div>
+                <div class="step-title">Chinese contractor: CNY 55,000</div>
+                <div class="step-detail">= approx EUR 7,100</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step" style="border-color: var(--green);">
+                <div class="step-label">YOUR MARGIN</div>
+                <div class="step-title" style="color:var(--green)">EUR 10,900</div>
+                <div class="step-detail">60% gross margin</div>
+            </div>
+        </div>
+
+        <h4>Margin Model</h4>
+        <div class="margin-calc">
+            <div class="margin-row"><span class="margin-label">Average exhibition stand (36sqm, custom build)</span><span class="margin-value"></span></div>
+            <div class="margin-row"><span class="margin-label">Customer quote (European buyer)</span><span class="margin-value">EUR 15,000-25,000</span></div>
+            <div class="margin-row"><span class="margin-label">Local builder cost (China)</span><span class="margin-value">EUR 5,000-10,000</span></div>
+            <div class="margin-row"><span class="margin-label">Local builder cost (Germany)</span><span class="margin-value">EUR 10,000-18,000</span></div>
+            <div class="margin-row"><span class="margin-label">Local builder cost (UAE)</span><span class="margin-value">EUR 6,000-12,000</span></div>
+            <div class="margin-row"><span class="margin-label"><strong>Gross margin (selling at European rates, building in Asia/MENA)</strong></span><span class="margin-profit">40-65%</span></div>
+        </div>
+
+        <h4>Search Patterns</h4>
+        <table>
+            <tr><th>Query</th><th>Pattern</th><th>Who Searches</th></tr>
+            <tr><td>"exhibition stand builder [city]"</td><td>Primary</td><td>Companies exhibiting at foreign trade fairs</td></tr>
+            <tr><td>"trade show booth rental [city]"</td><td>US variant</td><td>US companies exhibiting abroad</td></tr>
+            <tr><td>"messestand [city]"</td><td>German variant</td><td>German companies (largest exhibitor market in world)</td></tr>
+            <tr><td>"exhibition stand [trade fair name]"</td><td>Event-specific</td><td>Anyone exhibiting at a named event</td></tr>
+            <tr><td>"stand builder [city]"</td><td>Short variant</td><td>Global</td></tr>
+            <tr><td>"exhibition design [country]"</td><td>Design-focused</td><td>Agencies looking for local subcontractors</td></tr>
+        </table>
+
+        <h4>Existing Competition</h4>
+        <p style="color:var(--text)">This is where it gets interesting. There ARE companies doing this, but <strong>none have built OsaBus-style programmatic SEO at scale</strong>. Competition research found:</p>
+        <ul>
+            <li><strong>ExpoStandService, StandsBay, Triumfo, MeSSEMasters:</strong> All have websites, but scraping attempts returned empty results (JS-rendered, no server-side HTML). This means their SEO is likely poor for crawlers.</li>
+            <li><strong>No single dominant global player:</strong> The market is fragmented among hundreds of local stand builders. No one site ranks globally for "exhibition stand builder [city]" across 50+ cities.</li>
+            <li><strong>Germany is the world's largest trade fair market.</strong> Hannover Messe, MEDICA, Automechanika, Bauma, drupa. German companies are the biggest cross-border exhibitors, spending billions annually on overseas stands.</li>
+        </ul>
+
+        <h4>URL Architecture</h4>
+        <pre>
+/exhibition-stand-builder/[country]/                    -> Country hub
+/exhibition-stand-builder/[country]/[city]/             -> City page
+/exhibition-stand-builder/[trade-fair-name]/            -> Event-specific page
+/trade-show-booth-rental/[country]/[city]/              -> US terminology
+/messestand/[country]/[city]/                           -> German terminology</pre>
+
+        <h4>Why Upfront Payment Works Here</h4>
+        <p style="color:var(--text)">Standard practice: exhibitors pay 50% deposit at contract signing, 50% balance before the trade fair (often 2-4 weeks before). Full upfront payment is normal for overseas clients because the builder needs to purchase materials, fabricate the stand, and arrange logistics. Nobody builds a $15K stand without getting paid first.</p>
+
+        <div class="pros-cons">
+            <div>
+                <div class="pro-item">Highest margin of any niche (40-65% on overseas builds)</div>
+                <div class="pro-item">100% cross-border by nature</div>
+                <div class="pro-item">Huge booking values ($5K-$100K+ per stand)</div>
+                <div class="pro-item">No dominant global SEO player found</div>
+                <div class="pro-item">Recurring: companies exhibit annually, often at multiple fairs</div>
+                <div class="pro-item">B2B means professional clients, corporate budgets</div>
+                <div class="pro-item">Event-specific pages create thousands of long-tail targets</div>
+            </div>
+            <div>
+                <div class="con-item">Lower search volume than consumer travel queries</div>
+                <div class="con-item">Requires understanding of stand design/build process</div>
+                <div class="con-item">Longer sales cycle (weeks, not minutes)</div>
+                <div class="con-item">Each project is custom, harder to standardise quotes</div>
+                <div class="con-item">Quality control harder when subcontracting globally</div>
+            </div>
+        </div>
+
+        <div class="verdict-box">
+            <strong class="text-green">VERDICT: BUILD THIS.</strong> The highest-margin cross-border opportunity we found. One lead is worth EUR 5,000-50,000+ in gross profit. Even 10 leads per month at EUR 5K margin = EUR 600K/year. The trade fair calendar is public, the exhibitor lists are public, and the search queries are predictable. Build the site, rank for "[exhibition stand builder] + [every major trade fair city in the world]", and connect with local builders in each market.
+        </div>
+    </div>
+
+    <!-- #2 Destination Wedding -->
+    <div class="card">
+        <h3><span class="rank-number rank-1">2</span> Destination Wedding Services Abroad</h3>
+        <p style="color:var(--text)"><strong>Score: 8.7/10</strong> | 350,000+ destination weddings per year from the US alone. Average spend $30K-$50K. The buyer is ALWAYS in a different country from the wedding. Upfront payments are the norm.</p>
+
+        <h4>Why It Scores High</h4>
+        <div class="key-insight">
+            <p><strong>The most emotional cross-border purchase.</strong> A couple in London planning their wedding in Tuscany will pay almost anything for certainty. They can't visit vendors easily, they don't speak Italian, and if the florist or photographer doesn't show up, it's the worst day of their lives. They will pay a 40-50% premium for an English-speaking intermediary who guarantees everything works.</p>
+        </div>
+
+        <h4>The Market</h4>
+        <ul>
+            <li>DestinationWeddings.com claims 30,000+ celebrations planned. Focused on US couples going to Caribbean/Mexico resorts. <strong>NOT global programmatic SEO.</strong></li>
+            <li>Most "destination wedding planner" sites focus on a single country (Italy, Greece, Mexico). Nobody has built a global site covering "destination wedding [city]" across 100+ cities in 50+ countries.</li>
+            <li>The market is expected to grow as remote work enables couples to marry anywhere.</li>
+        </ul>
+
+        <h4>Not Just "Wedding Planner"</h4>
+        <p style="color:var(--text)">The opportunity isn't to be a wedding planner. It's to be the lead-gen middleman for ALL destination wedding services:</p>
+        <table>
+            <tr><th>Service</th><th>Avg. Cost</th><th>Your Margin</th></tr>
+            <tr><td>Full wedding coordination</td><td>$5K-$15K</td><td>30-50% (you subcontract to local planner)</td></tr>
+            <tr><td>Venue booking</td><td>$3K-$30K</td><td>10-20% referral fee from venue</td></tr>
+            <tr><td>Photography/video</td><td>$2K-$8K</td><td>25-40% (connect to local photographer)</td></tr>
+            <tr><td>Flowers and decor</td><td>$1K-$5K</td><td>30-50%</td></tr>
+            <tr><td>Guest transport (buses, transfers)</td><td>$1K-$5K</td><td>40-60% (OsaBus-style margin)</td></tr>
+            <tr><td>Hair/makeup for bridal party</td><td>$500-$2K</td><td>25-40%</td></tr>
+        </table>
+        <p style="color:var(--text)">A single destination wedding can generate $5K-$20K in commissions across all services. And couples book 6-18 months in advance, paying deposits upfront.</p>
+
+        <h4>URL Architecture</h4>
+        <pre>
+/destination-wedding/[country]/                         -> Country hub
+/destination-wedding/[country]/[city]/                  -> City page
+/wedding-photographer/[country]/[city]/                 -> Service-specific
+/wedding-venue/[country]/[city]/                        -> Venue leads
+/wedding-planner/[country]/[city]/                      -> Planner matching</pre>
+
+        <div class="verdict-box">
+            <strong class="text-green">VERDICT: STRONG BUILD.</strong> The booking values are enormous. The cross-border angle is guaranteed. Nobody owns the global SEO for "destination wedding [city]" across hundreds of cities. DestinationWeddings.com is US-centric and resort-focused. The gap is in European, Asian, and global destinations.
+        </div>
+    </div>
+
+    <!-- #3 International Pet Transport -->
+    <div class="card">
+        <h3><span class="rank-number rank-1">3</span> International Pet Transport</h3>
+        <p style="color:var(--text)"><strong>Score: 8.5/10</strong> | People relocating internationally need to ship their pets. 100% cross-border. High emotional value (people spend anything for their pet). Average booking $2K-$10K. Always paid upfront.</p>
+
+        <h4>The Market</h4>
+        <ul>
+            <li><strong>PetRelocation.com</strong> is the current leader: 20 years old, 40K+ pets moved, 150+ country destination pages, 20 staff. US-centric. Google-verified 4.7 stars.</li>
+            <li><strong>CitizenShipper:</strong> Marketplace model, more US domestic focused.</li>
+            <li><strong>IPATA:</strong> Industry trade association, not a consumer booking site.</li>
+            <li>The gap: PetRelocation has country pages but NOT city-level programmatic pages. Their pages are information-focused (requirements to bring a pet to Germany), not commercial lead-gen pages optimised for "[pet transport] + [city]".</li>
+        </ul>
+
+        <h4>The Cross-Border Angle</h4>
+        <p style="color:var(--text)">International pet transport is cross-border by definition. A British family moving to Australia needs to ship their dog. They search "pet transport to Australia" from the UK. They have no idea what it costs, what the quarantine rules are, or which airlines accept pets. They will pay $3K-$8K for someone to handle everything. The local pickup, vet paperwork, customs clearance, airline booking, and delivery at the destination. All paid upfront before the pet travels.</p>
+
+        <h4>Differentiation from PetRelocation</h4>
+        <ul>
+            <li>Build <strong>city-level pages</strong> that PetRelocation doesn't have: "pet transport London to Sydney", "pet transport New York to Dubai", "pet shipping Berlin to Tokyo"</li>
+            <li><strong>Route-based pages:</strong> /pet-transport/[origin-country]/to/[destination-country]/ creates thousands of page combinations</li>
+            <li><strong>Transparent pricing:</strong> PetRelocation doesn't show prices. A price estimator tool would convert better.</li>
+            <li><strong>Multi-language:</strong> PetRelocation is English-only. WPML with French, German, Spanish, Portuguese, Arabic, Chinese versions captures non-English searchers who are relocating.</li>
+        </ul>
+
+        <div class="verdict-box">
+            <strong class="text-green">VERDICT: BUILD, BUT DIFFERENTIATE.</strong> PetRelocation exists but is beatable with city-level programmatic SEO, route-based pages, transparent pricing, and multi-language support. The emotional attachment to pets means price sensitivity is low. Average booking value is excellent.
+        </div>
+    </div>
+
+    <!-- #4 Funeral Repatriation -->
+    <div class="card">
+        <h3><span class="rank-number rank-1">4</span> Funeral Repatriation Services</h3>
+        <p style="color:var(--text)"><strong>Score: 8.5/10</strong> | When a person dies abroad, the family needs to bring the body home. This is 100% cross-border, always urgent, always paid upfront, always high-value ($5K-$20K+), and there is NO global SEO player. The information asymmetry is total.</p>
+
+        <h4>Why This Scores So High Despite Low Volume</h4>
+        <div class="key-insight">
+            <p><strong>The Margin Opportunity is the Highest of Any Niche.</strong> When a loved one dies in a foreign country, the family is in crisis. They don't know local laws, they can't communicate with local authorities, and they have never navigated international mortuary logistics. They will pay whatever it costs. This is not price-sensitive. The family just wants their person home. The information asymmetry is absolute because nobody researches this in advance.</p>
+        </div>
+
+        <h4>The Numbers</h4>
+        <ul>
+            <li>Estimated 25,000-50,000 international repatriation cases per year from English-speaking countries alone</li>
+            <li>Average cost: $5K-$20K depending on origin/destination (higher for remote countries)</li>
+            <li>Local funeral director cost: often 30-50% of what you can charge the foreign family</li>
+            <li>Embassy waiting times: 2-6 weeks in some countries. Families desperate for help.</li>
+        </ul>
+
+        <h4>Search Patterns</h4>
+        <table>
+            <tr><th>Query</th><th>Context</th></tr>
+            <tr><td>"funeral repatriation from [country]"</td><td>Family in UK/US, death occurred in [country]</td></tr>
+            <tr><td>"bring body home from [country]"</td><td>Desperate, urgent search</td></tr>
+            <tr><td>"repatriation of remains from [country]"</td><td>More formal variant</td></tr>
+            <tr><td>"death abroad what to do [country]"</td><td>Informational, converts to lead</td></tr>
+            <tr><td>"international funeral services [country]"</td><td>Commercial intent</td></tr>
+        </table>
+
+        <h4>Existing Competition</h4>
+        <p style="color:var(--text)"><strong>Virtually none at scale.</strong> There are a few small UK-based repatriation services, some funeral directors who handle international cases, and government guidance pages. Nobody has built programmatic SEO pages for "repatriation from [every country in the world]". This is wide open.</p>
+
+        <div class="verdict-box">
+            <strong class="text-green">VERDICT: HIGH-VALUE NICHE BUILD.</strong> Sensitive topic that requires respectful handling, but the economics are remarkable. Low volume, very high value per lead, zero competition. One repatriation case per week at $5K margin = $260K/year. Build country-by-country guides with lead-gen forms, partner with local funeral directors globally.
+        </div>
+
+        <div class="warning-box">
+            <strong class="text-yellow">SENSITIVITY WARNING:</strong> This niche requires careful execution. Content must be respectful, accurate regarding legal requirements, and never exploitative. The brand must convey empathy and professionalism. Get legal advice on advertising regulations around funeral services in each country before launch. This is a niche where trust is everything, and one bad review could be devastating.
+        </div>
+    </div>
+
+    <!-- #5 Corporate Event Equipment -->
+    <div class="card">
+        <h3><span class="rank-number rank-1">5</span> Corporate Event AV/Equipment Hire Abroad</h3>
+        <p style="color:var(--text)"><strong>Score: 8.4/10</strong> | International conferences, product launches, and corporate events need AV equipment, staging, lighting, and technical crew in foreign cities. The event organiser is always in a different country. Paid upfront. High booking values.</p>
+
+        <h4>The Cross-Border Angle</h4>
+        <p style="color:var(--text)">A US tech company hosting a product launch in London. A German automotive brand doing a dealer conference in Dubai. A Japanese firm presenting at CES in Las Vegas. They all need local AV equipment, staging, screens, sound systems, and technical crew. They search in English. They pay upfront (invoiced and paid before setup). They have no idea what local rates are.</p>
+
+        <h4>How This Differs from Exhibition Stands</h4>
+        <ul>
+            <li>Exhibition stands are for <strong>trade fairs</strong> (exhibitor booths in halls)</li>
+            <li>Corporate event AV is for <strong>private events</strong> (conferences, launches, galas in hotels/venues)</li>
+            <li>Both are cross-border B2B. Both have high margins. But different search queries and different supplier networks.</li>
+            <li>Can be combined on a single site or kept separate.</li>
+        </ul>
+
+        <h4>Search Patterns</h4>
+        <table>
+            <tr><th>Query</th><th>Who Searches</th></tr>
+            <tr><td>"AV hire [city]"</td><td>Event planners, corporate organisers</td></tr>
+            <tr><td>"event production company [city]"</td><td>Agencies managing international events</td></tr>
+            <tr><td>"conference equipment rental [city]"</td><td>Companies hosting conferences abroad</td></tr>
+            <tr><td>"stage and lighting hire [city]"</td><td>Concert producers, event companies</td></tr>
+            <tr><td>"LED screen rental [city]"</td><td>Specific equipment needs</td></tr>
+        </table>
+
+        <div class="verdict-box">
+            <strong class="text-green">VERDICT: BUILD ALONGSIDE EXHIBITION STANDS.</strong> The same supplier network often covers both exhibition stands and corporate event equipment. A combined "Global Event Solutions" site covering both trade show booths and corporate AV is a massive play.
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- TIER 2 -->
+    <h2 id="tier2">7. Tier 2: Strong Contenders (Next 5)</h2>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3><span class="rank-number rank-2">6</span> Private Driver / Chauffeur Abroad</h3>
+            <p><strong>Score: 7.6</strong></p>
+            <p>Tourists and business travellers wanting a private driver for a day/week in a foreign city. High cross-border intent. Booking value $100-$500/day. Upfront payment is standard.</p>
+            <h4>Competition issue:</h4>
+            <p>WelcomePickups (375 destinations), GetTransfer, Blacklane all operate here. The space is crowded but none have the OsaBus-style programmatic city page approach. Most are marketplace/app-based.</p>
+            <h4>Margin:</h4>
+            <p>30-50% margins possible on private drivers in SE Asia, South America, Africa when selling to Europeans/Americans. A driver in Bali costs $30-50/day locally but tourists gladly pay $80-120 via a booking platform.</p>
+        </div>
+
+        <div class="card">
+            <h3><span class="rank-number rank-2">7</span> Coach/Bus Hire Abroad (Compete with OsaBus)</h3>
+            <p><strong>Score: 7.4</strong></p>
+            <p>The proven model. OsaBus does this. The question is whether a competitor can take market share.</p>
+            <h4>Assessment:</h4>
+            <p>OsaBus has 15-20K pages across 77 countries. Displacing them on "[bus hire] + [country]" queries is a multi-year battle. But: they don't cover every city (especially in Africa, South America, Central Asia). Building where OsaBus is weak is a viable flanking strategy. Their technology is WordPress from 2012. A modern build with better UX could outperform.</p>
+        </div>
+
+        <div class="card">
+            <h3><span class="rank-number rank-2">8</span> Private Security / Bodyguard Hire Abroad</h3>
+            <p><strong>Score: 7.4</strong></p>
+            <p>VIPs, executives, journalists, and NGO workers traveling to high-risk countries. Very high booking values ($1K-$10K/day). Extreme information asymmetry: the buyer knows NOTHING about security providers in Lagos or Bogota. Always paid upfront.</p>
+            <h4>Challenge:</h4>
+            <p>Vetting is critical. You can't connect a CEO with an unvetted security contractor. Requires building a verified operator network with background checks. Lower volume but extraordinary per-lead value.</p>
+        </div>
+
+        <div class="card">
+            <h3><span class="rank-number rank-2">9</span> International Vehicle Shipping</h3>
+            <p><strong>Score: 7.3</strong></p>
+            <p>People relocating internationally need to ship their car. Also: car collectors buying vehicles from abroad. Expats returning home. Military personnel. Always cross-border, always upfront payment ($1K-$5K per vehicle).</p>
+            <h4>Market:</h4>
+            <p>Some players exist (International AutoSource, A1 Auto Transport) but no global programmatic SEO covering [ship car from X to Y] across every country pair. Route-based pages create thousands of combinations.</p>
+        </div>
+
+        <div class="card">
+            <h3><span class="rank-number rank-2">10</span> Interpreter / Business Translator Hire Abroad</h3>
+            <p><strong>Score: 7.2</strong></p>
+            <p>Companies sending executives to meetings in foreign countries need a professional interpreter. Law firms need court interpreters abroad. Government agencies need interpreters at embassies. All cross-border, all upfront.</p>
+            <h4>AI Threat:</h4>
+            <p>Real-time AI translation is improving rapidly. Within 3-5 years, human interpreters may be displaced for routine business meetings. This niche has a ticking clock. Build fast if you build here. High-stakes contexts (legal, medical, diplomatic) will still need humans longer.</p>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- AVOID -->
+    <h2 id="avoid">8. Niches to Avoid (Cross-Border Angle Dominated)</h2>
+
+    <div class="card-grid">
+        <div class="card" style="border-color: var(--red);">
+            <h3 class="text-red">Airport Transfers</h3>
+            <p><strong>Dominated by: WelcomePickups (375 destinations), KiwiTaxi, GetTransfer, Booking.com, Rome2Rio, dozens more</strong></p>
+            <p>The highest-volume cross-border query, but also the most competitive. WelcomePickups alone has 375 destinations, 1,000+ drivers, partnerships with 1,500+ hotels, and has been featured in major media. The margins are thin ($5-$30 per transfer). You'd need massive volume to compete. Multi-billion dollar companies (Booking.com, Uber) are pushing into this space.</p>
+            <div class="verdict-box avoid">Too competitive, too low margin. The opposite of what we want.</div>
+        </div>
+
+        <div class="card" style="border-color: var(--red);">
+            <h3 class="text-red">Tour Guide Hire</h3>
+            <p><strong>Dominated by: GetYourGuide, Viator (TripAdvisor), ToursByLocals</strong></p>
+            <p>GetYourGuide is a Berlin-based unicorn with hundreds of thousands of tours, activities, and guides across every city on earth. Viator (owned by TripAdvisor) is similarly massive. ToursByLocals focuses specifically on private guides. These companies have billions in funding, millions of reviews, and deep SEO footprints. Competing here is like trying to outrank Booking.com for hotels.</p>
+            <div class="verdict-box avoid">Multiple well-funded unicorns own this space.</div>
+        </div>
+
+        <div class="card" style="border-color: var(--red);">
+            <h3 class="text-red">Private Chef at Destination</h3>
+            <p><strong>Dominated by: TakeAChef (100+ countries, 40K+ chefs)</strong></p>
+            <p>Covered in the first report. TakeAChef IS the OsaBus of private chefs. They have programmatic city pages, thousands of indexed URLs, partnerships with Airbnb and American Express, and a 14-year head start.</p>
+            <div class="verdict-box avoid">TakeAChef is a fortress. Do not enter.</div>
+        </div>
+
+        <div class="card" style="border-color: var(--red);">
+            <h3 class="text-red">Luggage Storage</h3>
+            <p><strong>Dominated by: Stasher (10,100+ locations, funded by TechCrunch), NannyBag, LuggageHero, Bounce</strong></p>
+            <p>Stasher has programmatic city pages covering London (630 stashpoints), Paris (306), Barcelona (216), New York (135), etc. They have partnerships with Booking.com, Airbnb, Eurail, Expedia, and Accor. Plus, the booking values are tiny ($3-$10 per bag). This is dominated AND low margin.</p>
+            <div class="verdict-box avoid">Dominated and low booking value. Worst of both worlds.</div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- COMPETITION DEEP DIVE -->
+    <h2 id="competition">9. Competition Deep-Dive: Existing Cross-Border Players</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Niche</th>
+                <th>Dominant Player</th>
+                <th>Their Scale</th>
+                <th>Programmatic SEO?</th>
+                <th>Beatable?</th>
+                <th>Our Opportunity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(63,185,80,0.05);">
+                <td><strong>Exhibition Stands</strong></td>
+                <td><strong>NONE found at scale</strong></td>
+                <td>Fragmented locals</td>
+                <td><span class="badge badge-green">No</span></td>
+                <td><span class="badge badge-green">Yes</span></td>
+                <td><span class="badge badge-green">WIDE OPEN</span></td>
+            </tr>
+            <tr style="background: rgba(63,185,80,0.05);">
+                <td><strong>Destination Weddings (Global)</strong></td>
+                <td>DestinationWeddings.com (US/Caribbean only)</td>
+                <td>30K celebrations but regional</td>
+                <td><span class="badge badge-yellow">Partial</span></td>
+                <td><span class="badge badge-green">Yes (globally)</span></td>
+                <td><span class="badge badge-green">OPEN for Europe/Asia/global</span></td>
+            </tr>
+            <tr style="background: rgba(63,185,80,0.05);">
+                <td><strong>Funeral Repatriation</strong></td>
+                <td><strong>NONE found at scale</strong></td>
+                <td>Small local firms</td>
+                <td><span class="badge badge-green">No</span></td>
+                <td><span class="badge badge-green">Yes</span></td>
+                <td><span class="badge badge-green">WIDE OPEN</span></td>
+            </tr>
+            <tr style="background: rgba(63,185,80,0.05);">
+                <td><strong>Corporate Event AV Abroad</strong></td>
+                <td><strong>NONE found at scale</strong></td>
+                <td>Local AV companies</td>
+                <td><span class="badge badge-green">No</span></td>
+                <td><span class="badge badge-green">Yes</span></td>
+                <td><span class="badge badge-green">WIDE OPEN</span></td>
+            </tr>
+            <tr>
+                <td>Pet Transport Int'l</td>
+                <td>PetRelocation</td>
+                <td>150+ countries, 40K pets</td>
+                <td><span class="badge badge-yellow">Country-level only</span></td>
+                <td><span class="badge badge-yellow">Partially</span></td>
+                <td><span class="badge badge-yellow">Gap at city/route level</span></td>
+            </tr>
+            <tr>
+                <td>Private Driver Abroad</td>
+                <td>WelcomePickups, Blacklane</td>
+                <td>375+ destinations</td>
+                <td><span class="badge badge-orange">Moderate</span></td>
+                <td><span class="badge badge-orange">Hard</span></td>
+                <td><span class="badge badge-orange">Crowded</span></td>
+            </tr>
+            <tr>
+                <td>Bus Hire (Cross-Border)</td>
+                <td>OsaBus</td>
+                <td>77 countries, 15-20K pages</td>
+                <td><span class="badge badge-red">Yes, massive</span></td>
+                <td><span class="badge badge-orange">Hard</span></td>
+                <td><span class="badge badge-orange">Flanking strategy only</span></td>
+            </tr>
+            <tr>
+                <td>Airport Transfers</td>
+                <td>WelcomePickups, KiwiTaxi, Booking.com</td>
+                <td>Hundreds of destinations</td>
+                <td><span class="badge badge-red">Yes</span></td>
+                <td><span class="badge badge-red">No</span></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+            <tr>
+                <td>Tour Guides</td>
+                <td>GetYourGuide, Viator, ToursByLocals</td>
+                <td>Millions of listings</td>
+                <td><span class="badge badge-red">Yes</span></td>
+                <td><span class="badge badge-red">No</span></td>
+                <td><span class="badge badge-red">Avoid</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <!-- ECONOMICS -->
+    <h2 id="economics">10. Unit Economics: The Cross-Border Margin Model</h2>
+
+    <h3>Exhibition Stand Hire: Single Deal Example</h3>
+    <div class="margin-calc">
+        <div class="margin-row"><span class="margin-label">Customer: German manufacturer exhibiting at Gulfood 2027 (Dubai)</span><span class="margin-value"></span></div>
+        <div class="margin-row"><span class="margin-label">Stand size: 36sqm custom island stand</span><span class="margin-value"></span></div>
+        <div class="margin-row"><span class="margin-label">Customer quote</span><span class="margin-value">EUR 22,000</span></div>
+        <div class="margin-row"><span class="margin-label">Local Dubai stand builder cost</span><span class="margin-value">EUR 9,500</span></div>
+        <div class="margin-row"><span class="margin-label">Project management overhead</span><span class="margin-value">EUR 1,500</span></div>
+        <div class="margin-row"><span class="margin-label"><strong>Net profit per deal</strong></span><span class="margin-profit">EUR 11,000 (50%)</span></div>
+    </div>
+
+    <h3>Destination Wedding: Single Lead Example</h3>
+    <div class="margin-calc">
+        <div class="margin-row"><span class="margin-label">Customer: US couple marrying in Lake Como, Italy</span><span class="margin-value"></span></div>
+        <div class="margin-row"><span class="margin-label">Total wedding spend through your platform</span><span class="margin-value">$35,000</span></div>
+        <div class="margin-row"><span class="margin-label">Your cut: planner referral (10%), photographer match (25%), transport (40%), catering (15%), decor (20%)</span><span class="margin-value"></span></div>
+        <div class="margin-row"><span class="margin-label">Weighted blended margin on total spend</span><span class="margin-value">~20%</span></div>
+        <div class="margin-row"><span class="margin-label"><strong>Net revenue per wedding</strong></span><span class="margin-profit">$7,000</span></div>
+    </div>
+
+    <h3>Funeral Repatriation: Single Case Example</h3>
+    <div class="margin-calc">
+        <div class="margin-row"><span class="margin-label">Case: British citizen dies in Thailand, family wants repatriation to UK</span><span class="margin-value"></span></div>
+        <div class="margin-row"><span class="margin-label">Customer charge (all-inclusive)</span><span class="margin-value">GBP 8,500</span></div>
+        <div class="margin-row"><span class="margin-label">Local funeral director (Thailand)</span><span class="margin-value">GBP 1,800</span></div>
+        <div class="margin-row"><span class="margin-label">Airline cargo (zinc-lined coffin)</span><span class="margin-value">GBP 2,200</span></div>
+        <div class="margin-row"><span class="margin-label">Documentation/consular fees</span><span class="margin-value">GBP 600</span></div>
+        <div class="margin-row"><span class="margin-label"><strong>Net profit per case</strong></span><span class="margin-profit">GBP 3,900 (46%)</span></div>
+    </div>
+
+    <h3>Revenue Projections: Conservative Scenario</h3>
+    <table>
+        <thead>
+            <tr><th>Niche</th><th>Leads/Month (Year 1)</th><th>Avg. Margin/Lead</th><th>Monthly Revenue</th><th>Annual Revenue</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Exhibition stands</td><td>5</td><td>EUR 8,000</td><td>EUR 40,000</td><td><strong class="text-green">EUR 480,000</strong></td>
+            </tr>
+            <tr>
+                <td>Destination weddings</td><td>10</td><td>$5,000</td><td>$50,000</td><td><strong class="text-green">$600,000</strong></td>
+            </tr>
+            <tr>
+                <td>Funeral repatriation</td><td>4</td><td>GBP 3,500</td><td>GBP 14,000</td><td><strong class="text-green">GBP 168,000</strong></td>
+            </tr>
+            <tr>
+                <td>Pet transport</td><td>8</td><td>$1,500</td><td>$12,000</td><td><strong class="text-green">$144,000</strong></td>
+            </tr>
+            <tr>
+                <td>Corporate event AV</td><td>3</td><td>EUR 6,000</td><td>EUR 18,000</td><td><strong class="text-green">EUR 216,000</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size:0.85rem;">*These are conservative year-1 estimates assuming basic SEO traction. Year 2-3 volumes could be 3-5x higher as pages index and gain authority.</p>
+
+    <hr class="section-divider">
+
+    <!-- EXECUTION -->
+    <h2 id="execution">11. Recommended Execution Plan</h2>
+
+    <h3>Strategy: The "Global Events" Super-Site</h3>
+    <div class="key-insight">
+        <p><strong>Recommended approach:</strong> Build a single brand covering Exhibition Stands + Corporate Event AV + Destination Weddings. These three share a common thread (events in foreign countries) and the same lead-gen model. A unified site with three service verticals, each with programmatic country/city pages, creates a massive SEO footprint while sharing one domain's authority.</p>
+        <p style="margin-top:0.5rem">Run Funeral Repatriation and Pet Transport as separate standalone sites due to brand mismatch (you don't want "Happy Events Global" also handling funerals).</p>
+    </div>
+
+    <h3>Phase 1: Exhibition Stands (Months 1-3)</h3>
+    <div class="card">
+        <ol>
+            <li><strong>Domain and brand:</strong> Acquire a domain suggesting global exhibition services. Something like globalstandbuilders.com, exhibitglobal.com, or standlink.com.</li>
+            <li><strong>Build 2,000 programmatic pages:</strong>
+                <ul>
+                    <li>Top 50 trade fair cities worldwide (Dubai, Shanghai, Munich, Las Vegas, Tokyo, Paris, Milan, Barcelona, Singapore, Hong Kong, etc.)</li>
+                    <li>Top 200 trade fairs by name (CES, Gulfood, Bauma, MEDICA, MWC, Canton Fair, Hannover Messe, etc.)</li>
+                    <li>Country hub pages for 50+ countries</li>
+                    <li>Service variation pages (custom stands, modular stands, portable displays) per city</li>
+                </ul>
+            </li>
+            <li><strong>Build operator network:</strong> Contact stand builders in each major trade fair city. Get pricing sheets from at least 2-3 builders per city.</li>
+            <li><strong>CMS:</strong> WordPress + WPML for multi-language. Server-rendered. FAQ schema on every page. Pricing tables. Lead capture form.</li>
+            <li><strong>Content:</strong> Each page needs 1,500+ words of unique, city-specific content. Trade fair calendars, venue details, local logistics info, previous exhibitor testimonials. Use The Geographer bot adapted for trade fair data.</li>
+        </ol>
+    </div>
+
+    <h3>Phase 2: Add Destination Weddings (Months 3-6)</h3>
+    <div class="card">
+        <ol start="6">
+            <li><strong>Either expand the existing site or launch a separate wedding-focused domain</strong> (globalweddingabroad.com or similar).</li>
+            <li><strong>Build 3,000+ pages:</strong> Country hubs + city pages for top 100 wedding destinations. Service-specific pages (photographer, venue, planner, flowers, transport) per city.</li>
+            <li><strong>Build vendor network:</strong> Contact wedding photographers, planners, and venues in each destination city.</li>
+            <li><strong>Content strategy:</strong> Real wedding stories, venue tours, seasonal guides, cost breakdowns by destination. This niche rewards rich content.</li>
+        </ol>
+    </div>
+
+    <h3>Phase 3: Launch Standalone Sites (Months 4-8)</h3>
+    <div class="card">
+        <ol start="10">
+            <li><strong>Funeral repatriation site:</strong> 200+ country pages covering requirements, costs, process, and lead-gen form. Sensitive branding. Professional design. Strong trust signals (accreditations, testimonials from grateful families). Helpline number prominent.</li>
+            <li><strong>Pet transport site:</strong> Route-based pages (/ship-pet/[from-country]/to/[to-country]/) creating 10,000+ page combinations. Pricing calculator. Breed-specific advice. Airline pet policies database.</li>
+        </ol>
+    </div>
+
+    <h3>Tooling: Adapted Worker Bots</h3>
+    <div class="card">
+        <p style="color:var(--text)">The worker bots from global-bus-hire (already copied to this repo) need adapting for cross-border research:</p>
+        <table>
+            <tr><th>Bot</th><th>Original Role</th><th>Adapted For</th></tr>
+            <tr><td>The Spider</td><td>Scrape bus hire competitors</td><td>Scrape exhibition stand companies, wedding vendor sites, repatriation services per country</td></tr>
+            <tr><td>The Scout</td><td>Bus hire keyword research</td><td>Cross-border keyword research: "[exhibition stand builder] + [200 cities]", "[destination wedding] + [100 cities]"</td></tr>
+            <tr><td>The Geographer</td><td>Country/city location data</td><td>Trade fair venue databases, wedding destination data, embassy/consulate locations for repatriation</td></tr>
+            <tr><td>The Analyst</td><td>Ranking tracking for bus hire</td><td>Track rankings for cross-border keywords across all niches</td></tr>
+            <tr><td>The Optimiser</td><td>On-page SEO for bus pages</td><td>Schema markup for events, local business, FAQ. Multi-language meta data.</td></tr>
+        </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- NEXT STEPS -->
+    <h2 id="next">12. Next Steps</h2>
+
+    <div class="card">
+        <h4>Priority 1: Validate Search Volumes (This Week)</h4>
+        <ol>
+            <li><strong>Ahrefs/SEMrush deep dive:</strong> Pull exact monthly search volumes for "exhibition stand builder" + top 50 trade fair cities. Compare English vs German vs Chinese query volumes. This is the single most important data point to confirm before building.</li>
+            <li><strong>Trade fair calendar analysis:</strong> Pull the UFI (Union of International Fairs) database. Identify the top 500 trade fairs globally by exhibitor count. These become your target page list.</li>
+            <li><strong>Destination wedding volumes:</strong> Pull search volumes for "destination wedding [country]" and "wedding in [city]" for the top 50 wedding destinations worldwide.</li>
+        </ol>
+
+        <h4>Priority 2: Domain and Tech Setup (Week 2)</h4>
+        <ol start="4">
+            <li>Secure domains for each planned site. Check for expired domains with existing authority (ExpoStandService etc.).</li>
+            <li>WordPress + WPML setup. Custom page templates for each service type.</li>
+            <li>CRM/lead management system for capturing and routing enquiries.</li>
+        </ol>
+
+        <h4>Priority 3: Build First 500 Pages (Weeks 3-6)</h4>
+        <ol start="7">
+            <li>Exhibition stand pages for top 30 trade fair cities.</li>
+            <li>Event-specific pages for the top 100 trade fairs by name.</li>
+            <li>Country hub pages for 50+ countries.</li>
+            <li>Submit sitemap to Google, begin monitoring indexation.</li>
+        </ol>
+
+        <h4>Priority 4: Start Building Supplier Network (Ongoing)</h4>
+        <ol start="11">
+            <li>Contact 3-5 stand builders in each major trade fair city. Get pricing.</li>
+            <li>Build a pricing calculator based on stand size, type, and city.</li>
+            <li>Create supplier agreements covering quality standards and delivery timelines.</li>
+        </ol>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- COMPARISON WITH FIRST REPORT -->
+    <div class="card" style="border-color: var(--accent);">
+        <h3 style="margin-top:0">How This Report Differs from Report 1</h3>
+        <table>
+            <tr><th></th><th>Report 1 (General SEO Opportunity)</th><th>This Report (Cross-Border Focus)</th></tr>
+            <tr>
+                <td><strong>#1 Pick</strong></td>
+                <td>Portable Toilet Hire</td>
+                <td>Exhibition Stand / Trade Show Booth Hire</td>
+            </tr>
+            <tr>
+                <td><strong>Key filter</strong></td>
+                <td>"Is there a global SEO vacuum?"</td>
+                <td>"Is the buyer in a different country from the service?"</td>
+            </tr>
+            <tr>
+                <td><strong>Margin source</strong></td>
+                <td>Volume (many leads, moderate margin)</td>
+                <td>Information asymmetry (fewer leads, very high margin)</td>
+            </tr>
+            <tr>
+                <td><strong>Payment model</strong></td>
+                <td>Not filtered for upfront</td>
+                <td>Upfront payment required</td>
+            </tr>
+            <tr>
+                <td><strong>Best niches from Report 1 that survive here</strong></td>
+                <td colspan="2">Marquee hire (for destination weddings), Stage/Sound (for corporate events abroad), DJ hire (for destination events). These are sub-services within Report 2's broader categories.</td>
+            </tr>
+            <tr>
+                <td><strong>Report 1 niches eliminated here</strong></td>
+                <td colspan="2">Portable toilets, skip hire, scaffolding, crane hire, forklift hire, generator rental. These are all LOCAL searches. A construction site in Berlin doesn't have a French person googling "skip hire Berlin." Cross-border demand is near zero for these.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card" style="border-color: var(--teal);">
+        <h3 style="margin-top:0">The Combined Strategy</h3>
+        <p style="color:var(--text)">Reports 1 and 2 are complementary, not competing. The ideal portfolio approach:</p>
+        <ol>
+            <li style="color:var(--text)"><strong>Site 1: Global Exhibition &amp; Event Services</strong> (from this report). Exhibition stands + corporate AV abroad. Highest margin per lead. B2B.</li>
+            <li style="color:var(--text)"><strong>Site 2: Destination Wedding Hub</strong> (from this report). All wedding services abroad. High emotional value, high booking values.</li>
+            <li style="color:var(--text)"><strong>Site 3: Global Event Hire</strong> (from Report 1). Marquees, toilets, bars, stage/sound for LOCAL events. Higher volume, moderate margins. Different buyer (local event planner, not foreign buyer).</li>
+            <li style="color:var(--text)"><strong>Site 4: Funeral Repatriation</strong> (from this report). Standalone sensitive brand. Low volume, very high value.</li>
+            <li style="color:var(--text)"><strong>Site 5: International Pet Transport</strong> (from this report). Route-based pages. Moderate volume, good margins.</li>
+        </ol>
+        <p style="color:var(--text);margin-top:1rem">Five sites. Five revenue streams. All running on the same OsaBus playbook: programmatic pages, global coverage, lead-gen forms, local operator matching. The same WordPress+WPML tech stack. The same worker bot toolkit. Different niches, same execution model.</p>
+    </div>
+
+    <p style="text-align:center;color:var(--text-muted);margin-top:3rem;font-size:0.85rem">
+        Report generated 14 April 2026 | Companion to: global_seo_opportunity_report.html | Research workspace: c:\Users\garet\Desktop\Research\global_seo_opportunities
+    </p>
+
+</div>
+</body>
+</html>

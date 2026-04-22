@@ -1,0 +1,385 @@
+{{ define "title" }}What to do if someone dies in {{ .Params.country_name }} | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.BaseURL }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "{{ site.BaseURL }}guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What to do if someone dies in {{ $c.name }}",
+          "item": "{{ .Permalink }}"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "What to do if someone dies in {{ $c.name }}",
+      "description": "{{ .Description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Repatriate Service",
+        "url": "{{ site.BaseURL }}"
+      },
+      "mainEntityOfPage": "{{ .Permalink }}"
+    }
+    {{ with $c.content_angles.faq_angles }},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {{ range $i, $q := . }}{{ if $i }},{{ end }}
+        {
+          "@type": "Question",
+          "name": {{ $q | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ if eq $i 0 }}{{ printf "Repatriation from %s typically takes %s in a straightforward case." $c.name $c.typical_timeline.average_case | jsonify }}{{ else if eq $i 1 }}{{ printf "The typical cost for repatriation from %s is %s, covering funeral director fees, embalming, zinc-lined coffin, documentation, air freight, and UK reception." $c.name $c.cost_guide.total_typical_range_gbp | jsonify }}{{ else }}{{ printf "Please contact our team for specific guidance on this question. We are available 24 hours a day on %s." site.Params.emergencyPhone | jsonify }}{{ end }}
+          }
+        }
+        {{ end }}
+      ]
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+
+{{/* ============================================================
+     GUIDE HERO
+     ============================================================ */}}
+<section class="guide-hero">
+    <div class="section-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/guides/">Guides</a></li>
+                <li aria-current="page">What to do if someone dies in {{ if $c }}{{ $c.name }}{{ else }}{{ .Params.country_name }}{{ end }}</li>
+            </ol>
+        </nav>
+        <div class="guide-hero-inner">
+            <div class="guide-hero-text">
+                <p class="label-sm">Practical guidance</p>
+                <h1>What to do if someone dies in {{ if $c }}{{ $c.name }}{{ else }}{{ .Params.country_name }}{{ end }}</h1>
+                <p class="guide-lead">This guide explains what happens after a death in {{ if $c }}{{ $c.name }}{{ end }}, who to contact, and how to arrange for your loved one to be brought home to the UK. The information comes from FCDO and government sources. Every situation is different, and if you need someone to guide you through it, our team is available any time.</p>
+                <div class="guide-hero-cta">
+                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us. We are here 24/7.</a>
+                    <a href="/repatriation-from-{{ if $c }}{{ $c.slug }}{{ else }}{{ .Params.country_key }}{{ end }}/" class="btn btn-outline">Full repatriation guide</a>
+                </div>
+            </div>
+            {{ if $c }}
+            <div class="guide-hero-facts">
+                <div class="guide-fact">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <p class="gf-label">Typical timeline</p>
+                        <p class="gf-val">{{ $c.typical_timeline.average_case }}</p>
+                    </div>
+                </div>
+                <div class="guide-fact">
+                    <i class="fa-solid fa-sterling-sign"></i>
+                    <div>
+                        <p class="gf-label">Typical cost</p>
+                        <p class="gf-val">{{ $c.cost_guide.total_typical_range_gbp }}</p>
+                    </div>
+                </div>
+                <div class="guide-fact">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p class="gf-label">FCDO 24hr helpline</p>
+                        <p class="gf-val">+44 (0)20 7008 5000</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ if $c }}
+
+{{/* ============================================================
+     IMMEDIATE STEPS
+     ============================================================ */}}
+<section class="section guide-steps-section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">First things first</p>
+            <h2>What to do in the first 24 hours</h2>
+            <p>The immediate period after a death abroad is disorienting. Here are the steps in the order they normally need to happen.</p>
+        </div>
+
+        <div class="guide-steps stagger-children">
+
+            <div class="guide-step reveal">
+                <div class="guide-step-num">1</div>
+                <div class="guide-step-body">
+                    <h3>Contact local emergency services</h3>
+                    {{ with $c.repatriation_process.step_1_immediate }}
+                    <p>{{ .details }}</p>
+                    {{ with .local_emergency_number }}<p class="step-callout"><i class="fa-solid fa-phone"></i> Local emergency number: <strong>{{ . }}</strong></p>{{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="guide-step reveal">
+                <div class="guide-step-num">2</div>
+                <div class="guide-step-body">
+                    <h3>Contact the British Embassy or consulate</h3>
+                    {{ with $c.embassy_contacts.british_embassy }}
+                    <p>Notify the British Embassy in {{ .city }} as soon as possible. They can give you a list of local English-speaking funeral directors and explain what the local authorities will need.</p>
+                    {{ with .phone }}<p class="step-callout"><i class="fa-solid fa-phone"></i> Embassy: <a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
+                    {{ end }}
+                    <p class="step-callout"><i class="fa-solid fa-phone-volume"></i> FCDO 24hr: <a href="tel:+442070085000">+44 (0)20 7008 5000</a></p>
+                </div>
+            </div>
+
+            <div class="guide-step reveal">
+                <div class="guide-step-num">3</div>
+                <div class="guide-step-body">
+                    <h3>Appoint a local funeral director</h3>
+                    <p>A local funeral director in {{ $c.name }} will take care of the body, arrange embalming, obtain the necessary documents, and coordinate with airlines. The embassy can recommend accredited directors. You can also contact a specialist UK repatriation company, who will coordinate with a local partner on your behalf.</p>
+                </div>
+            </div>
+
+            <div class="guide-step reveal">
+                <div class="guide-step-num">4</div>
+                <div class="guide-step-body">
+                    <h3>Contact your travel insurer</h3>
+                    <p>If your loved one had travel insurance with repatriation cover, contact the insurer immediately. They will often have an emergency assistance line and may appoint their own funeral director. They may cover the full cost of repatriation, which can be {{ $c.cost_guide.total_typical_range_gbp }}.</p>
+                    {{ with $c.cost_guide.insurance_note }}<p>{{ . }}</p>{{ end }}
+                </div>
+            </div>
+
+            <div class="guide-step reveal">
+                <div class="guide-step-num">5</div>
+                <div class="guide-step-body">
+                    <h3>Gather the required documents</h3>
+                    <p>Repatriation from {{ $c.name }} requires specific paperwork before a body can be transported. Your local funeral director will handle most of this.</p>
+                    {{ with $c.repatriation_process.step_6_documentation }}
+                    <ul class="guide-docs-list">
+                        {{ range .documents_needed }}
+                        <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ if .processing_time }}<p>Documentation typically takes <strong>{{ .processing_time }}</strong> to complete.</p>{{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     EMBASSY INFO CALLOUT
+     ============================================================ */}}
+<section class="section-alt guide-embassy-section">
+    <div class="section-inner">
+        <div class="guide-embassy-grid reveal">
+            {{ with $c.embassy_contacts.british_embassy }}
+            <div class="guide-embassy-main">
+                <p class="label-sm">Official support</p>
+                <h2>British Embassy in {{ .city }}</h2>
+                <p>The embassy can provide information and a list of local funeral directors, but they cannot arrange or pay for repatriation. Contact them early to register the death with consular services.</p>
+                {{ with .address }}<p class="embassy-detail"><i class="fa-solid fa-location-dot"></i> {{ . }}</p>{{ end }}
+                {{ with .phone }}<p class="embassy-detail"><i class="fa-solid fa-phone"></i> <a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
+                {{ with .website }}<p class="embassy-detail"><i class="fa-solid fa-arrow-up-right-from-square"></i> <a href="{{ . }}" target="_blank" rel="noopener">Official embassy website</a></p>{{ end }}
+            </div>
+            {{ end }}
+            <div class="guide-embassy-limits">
+                {{ with $c.embassy_contacts }}
+                <div class="embassy-can">
+                    <h3><i class="fa-solid fa-circle-check"></i> What the embassy can do</h3>
+                    <ul>
+                        {{ range .embassy_can_do }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="embassy-cannot">
+                    <h3><i class="fa-solid fa-circle-xmark"></i> What the embassy cannot do</h3>
+                    <ul>
+                        {{ range .embassy_cannot_do }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     TIMELINE + COSTS
+     ============================================================ */}}
+<section class="section guide-logistics-section">
+    <div class="section-inner">
+        <div class="guide-logistics-grid">
+            <div class="guide-logistics-col reveal">
+                <p class="label-sm">What to expect</p>
+                <h2>How long does it take?</h2>
+                {{ with $c.typical_timeline }}
+                <div class="guide-timeline-blocks">
+                    <div class="gtb gtb--fast">
+                        <span class="gtb-label">Best case</span>
+                        <span class="gtb-val">{{ .fastest_case }}</span>
+                    </div>
+                    <div class="gtb gtb--avg">
+                        <span class="gtb-label">Typical</span>
+                        <span class="gtb-val">{{ .average_case }}</span>
+                    </div>
+                    <div class="gtb gtb--slow">
+                        <span class="gtb-label">Complex cases</span>
+                        <span class="gtb-val">{{ .complex_case }}</span>
+                    </div>
+                </div>
+                {{ if .complexity_factors }}
+                <h3>Factors that can extend the timeline</h3>
+                <ul class="guide-factors">
+                    {{ range .complexity_factors }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+                {{ end }}
+            </div>
+            <div class="guide-logistics-col reveal">
+                <p class="label-sm">Cost guide</p>
+                <h2>How much does it cost?</h2>
+                {{ with $c.cost_guide }}
+                <div class="guide-cost-total">
+                    <span>Typical total</span>
+                    <strong>{{ .total_typical_range_gbp }}</strong>
+                </div>
+                <table class="guide-cost-table">
+                    {{ with .breakdown.local_funeral_director_fees }}<tr><td>Local funeral director</td><td>{{ . }}</td></tr>{{ end }}
+                    {{ with .breakdown.embalming }}<tr><td>Embalming</td><td>{{ . }}</td></tr>{{ end }}
+                    {{ with .breakdown.zinc_lined_coffin }}<tr><td>Zinc-lined coffin</td><td>{{ . }}</td></tr>{{ end }}
+                    {{ with .breakdown.documentation_and_certificates }}<tr><td>Documentation</td><td>{{ . }}</td></tr>{{ end }}
+                    {{ with .breakdown.air_freight }}<tr><td>Air freight to UK</td><td>{{ . }}</td></tr>{{ end }}
+                    {{ with .breakdown.uk_reception_and_transfer }}<tr><td>UK reception</td><td>{{ . }}</td></tr>{{ end }}
+                </table>
+                {{ with .cost_notes }}<p class="guide-cost-note">{{ . }}</p>{{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* ============================================================
+     POST-MORTEM NOTE
+     ============================================================ */}}
+{{ with $c.post_mortem }}
+<section class="section-alt guide-pm-section">
+    <div class="section-inner">
+        <div class="info-card info-card--warning reveal">
+            <div class="info-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div>
+                <h3>If a post-mortem is required</h3>
+                <p>{{ .when_required }}. {{ .impact_on_timeline }}</p>
+                {{ with .conducted_by }}<p>Post-mortems in {{ $c.name }} are conducted by {{ . }}.</p>{{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     FAQ
+     ============================================================ */}}
+{{ with $c.content_angles.faq_angles }}
+<section class="faq-section section">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <p class="label-sm">Common questions</p>
+            <h2>Questions families ask about deaths in {{ $c.name }}</h2>
+        </div>
+        <div class="reveal">
+            {{ range $i, $q := . }}
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="guide-faq-{{ $i }}">
+                    {{ $q }}
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="guide-faq-{{ $i }}" class="faq-answer" hidden>
+                    {{ if eq $i 0 }}
+                        <p>Repatriation from {{ $c.name }} typically takes <strong>{{ $c.typical_timeline.average_case }}</strong>. The fastest is {{ $c.typical_timeline.fastest_case }} with no complications. Complex cases involving a post-mortem or police investigation can take {{ $c.typical_timeline.complex_case }}.</p>
+                    {{ else if eq $i 1 }}
+                        <p>The typical cost is <strong>{{ $c.cost_guide.total_typical_range_gbp }}</strong>. This covers local funeral director fees, embalming, a zinc-lined coffin, documentation, air freight to the UK, and reception at a UK funeral home. The main variable is air freight, which depends on the destination airport and flight frequency.</p>
+                    {{ else if eq $i 2 }}
+                        <p>Your local funeral director in {{ $c.name }} will gather most documents on your behalf. The core documents required are: a local death certificate, an embalming certificate, a freedom from infection certificate, and airline cargo documentation. The full documentation process typically takes {{ $c.repatriation_process.step_6_documentation.processing_time }}.</p>
+                    {{ else if eq $i 3 }}
+                        {{ with $c.ashes_transport }}
+                        <p>{{ if .cremation_available }}Cremation in {{ $c.name }} is available.{{ end }} If your loved one is cremated abroad, returning ashes to the UK typically costs {{ .typical_cost_ashes_return_gbp }}. {{ .critical_warning }}</p>
+                        {{ else }}
+                        <p>Please contact our team for guidance on this. We are available 24 hours a day.</p>
+                        {{ end }}
+                    {{ else }}
+                        <p>Please <a href="/contact/">contact our team</a> for guidance on this question. We are available 24 hours a day on <a href="tel:{{ site.Params.emergencyPhone }}">{{ site.Params.emergencyPhone }}</a>.</p>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{/* ============================================================
+     LINK TO FULL COUNTRY PAGE + CTA
+     ============================================================ */}}
+<section class="section-alt guide-cta-section">
+    <div class="section-inner">
+        <div class="guide-cta-grid">
+            <div class="guide-cta-card reveal">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Full repatriation guide for {{ $c.name }}</h3>
+                <p>Detailed information on the full repatriation process, embassy contacts, cost breakdown, cultural considerations, and more.</p>
+                <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline">View full guide</a>
+            </div>
+            {{ with $c.ashes_transport }}{{ if .cremation_available }}
+            <div class="guide-cta-card reveal">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Cremation in {{ $c.name }}</h3>
+                <p>If local cremation is the right choice for your family, our country guide covers the documentation, airline rules, and costs.</p>
+                <a href="/cremation-transfer/{{ $c.slug }}/" class="btn btn-outline">Cremation guide</a>
+            </div>
+            {{ end }}{{ end }}
+            <div class="guide-cta-card reveal">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Speak to our team</h3>
+                <p>We coordinate repatriations from {{ $c.name }} every week. If you need someone to take over the arrangements, call us now.</p>
+                <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> {{ site.Params.emergencyPhone }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}{{/* end if $c */}}
+{{ end }}

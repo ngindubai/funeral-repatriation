@@ -1,0 +1,291 @@
+{{ define "title" }}British Embassy in {{ .Params.country_name }}: Contacts for Death Abroad | Repatriate Service{{ end }}
+
+{{ define "schema" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.BaseURL }}" },
+        { "@type": "ListItem", "position": 2, "name": "Embassy contacts", "item": "{{ site.BaseURL }}embassy-contacts/" },
+        { "@type": "ListItem", "position": 3, "name": "British Embassy in {{ .Params.country_name }}", "item": "{{ .Permalink }}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does the British Embassy in {{ .Params.country_name }} do when someone dies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The British Embassy can register the death, provide a list of approved local funeral directors, help trace next of kin, and offer consular assistance. They do not fund or coordinate repatriation." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the emergency phone number for the British Embassy in {{ .Params.country_name }}?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The FCDO 24-hour consular assistance line is +44 (0)20 7008 5000. This line handles all emergencies for British nationals abroad." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $emb := $c.embassy_contacts }}
+
+{{ if $c }}
+
+<section class="embassy-hero">
+  <div class="section-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/embassy-contacts/">Embassy contacts</a></li>
+        <li aria-current="page">{{ .Params.country_name }}</li>
+      </ol>
+    </nav>
+    <div class="embassy-hero-inner">
+      <div class="embassy-hero-text">
+        <p class="label-sm">Consular assistance</p>
+        <h1>British Embassy contacts for {{ .Params.country_name }}: when someone dies abroad</h1>
+        <p class="embassy-lead">If a British national dies in {{ .Params.country_name }}, the Embassy is usually the first official body to contact. This page lists the main and emergency numbers, explains what consular staff can and cannot do, and links to the resources you need.</p>
+        <div class="embassy-hero-cta">
+          <a href="tel:+4402070085000" class="btn btn-cta"><i class="fa-solid fa-phone"></i> FCDO 24/7 line: +44 (0)20 7008 5000</a>
+        </div>
+      </div>
+      <div class="embassy-hero-aside">
+        <div class="embassy-urgent-card">
+          <p class="label-sm" style="color:var(--warning,#f59e0b);">Emergency numbers</p>
+          <div class="embassy-phone-row">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p class="ep-label">FCDO 24-hour line (from UK)</p>
+              <a href="tel:+4402070085000" class="ep-number">+44 (0)20 7008 5000</a>
+            </div>
+          </div>
+          {{ with $emb.british_embassy }}
+          {{ with .phone }}
+          <div class="embassy-phone-row">
+            <i class="fa-solid fa-building-columns"></i>
+            <div>
+              <p class="ep-label">British Embassy in {{ $c.name }}</p>
+              <a href="tel:{{ . | replaceRE `\s+` `` }}" class="ep-number">{{ . }}</a>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ============================================================
+     VERIFY NOTICE
+     ============================================================ */}}
+<section class="embassy-verify-section">
+  <div class="section-inner">
+    <div class="warning-card">
+      <div class="warning-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <div>
+        <h3>Always verify numbers before calling</h3>
+        <p>Embassy phone numbers change. Confirm current details at <a href="https://www.gov.uk/foreign-travel-advice/{{ $c.slug }}" target="_blank" rel="noopener noreferrer">gov.uk/foreign-travel-advice/{{ $c.slug }}</a> before a trip. The FCDO 24-hour line (+44 (0)20 7008 5000) is the most reliable point of contact in an emergency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ============================================================
+     EMBASSY CONTACTS GRID
+     ============================================================ */}}
+<section class="section embassy-contacts-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="label-sm">Contact details</p>
+      <h2>British Embassy and consulates in {{ .Params.country_name }}</h2>
+    </div>
+    <div class="embassy-cards-grid stagger-children">
+
+      {{/* Main Embassy */}}
+      {{ with $emb.british_embassy }}
+      <div class="embassy-card embassy-card--main reveal">
+        <div class="embassy-card-header">
+          <i class="fa-solid fa-flag"></i>
+          <div>
+            <p class="embassy-card-type">British Embassy</p>
+            <p class="embassy-card-city">{{ .city }}</p>
+          </div>
+        </div>
+        {{ with .address }}<p class="embassy-card-address"><i class="fa-solid fa-location-dot"></i> {{ . }}</p>{{ end }}
+        {{ with .phone }}<a href="tel:{{ . | replaceRE `\s+` `` }}" class="embassy-card-phone"><i class="fa-solid fa-phone"></i> {{ . }}</a>{{ end }}
+        {{ with .website }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="embassy-card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official website</a>{{ end }}
+      </div>
+      {{ end }}
+
+      {{/* High Commission (Commonwealth countries) */}}
+      {{ with $emb.british_high_commission }}
+      <div class="embassy-card embassy-card--main reveal">
+        <div class="embassy-card-header">
+          <i class="fa-solid fa-flag"></i>
+          <div>
+            <p class="embassy-card-type">British High Commission</p>
+            <p class="embassy-card-city">{{ .city }}</p>
+          </div>
+        </div>
+        {{ with .address }}<p class="embassy-card-address"><i class="fa-solid fa-location-dot"></i> {{ . }}</p>{{ end }}
+        {{ with .phone }}<a href="tel:{{ . | replaceRE `\s+` `` }}" class="embassy-card-phone"><i class="fa-solid fa-phone"></i> {{ . }}</a>{{ end }}
+        {{ with .website }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="embassy-card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official website</a>{{ end }}
+      </div>
+      {{ end }}
+
+      {{/* Consulates */}}
+      {{ range $emb.consulates }}
+      <div class="embassy-card reveal">
+        <div class="embassy-card-header">
+          <i class="fa-solid fa-building-columns"></i>
+          <div>
+            <p class="embassy-card-type">Consulate</p>
+            <p class="embassy-card-city">{{ .city }}</p>
+          </div>
+        </div>
+        {{ with .phone }}<a href="tel:{{ . | replaceRE `\s+` `` }}" class="embassy-card-phone"><i class="fa-solid fa-phone"></i> {{ . }}</a>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with $emb.consulate_note }}
+    <p class="embassy-note"><i class="fa-solid fa-circle-info"></i> {{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ============================================================
+     WHAT THE EMBASSY DOES (AND DOESN'T DO)
+     ============================================================ */}}
+<section class="section-alt embassy-roles-section">
+  <div class="section-inner">
+    <div class="embassy-roles-grid">
+      <div class="reveal">
+        <p class="label-sm">What you need to know</p>
+        <h2>What the British Embassy in {{ .Params.country_name }} can do</h2>
+        <ul class="embassy-can-list">
+          <li><i class="fa-solid fa-check"></i> Register the death of a British national under the Consular Deaths Act</li>
+          <li><i class="fa-solid fa-check"></i> Provide a list of local funeral directors who handle international repatriation</li>
+          <li><i class="fa-solid fa-check"></i> Help trace and notify next of kin</li>
+          <li><i class="fa-solid fa-check"></i> Issue emergency travel documents if a family member needs to travel</li>
+          <li><i class="fa-solid fa-check"></i> Liaise with local police, hospitals, or authorities if language is a barrier</li>
+          <li><i class="fa-solid fa-check"></i> Advise on the local death certificate process in {{ .Params.country_name }}</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <p class="label-sm">Important limits</p>
+        <h2>What the Embassy cannot do</h2>
+        <ul class="embassy-cannot-list">
+          <li><i class="fa-solid fa-xmark"></i> Fund or pay for repatriation (that is the family's or insurer's responsibility)</li>
+          <li><i class="fa-solid fa-xmark"></i> Arrange or coordinate the repatriation itself</li>
+          <li><i class="fa-solid fa-xmark"></i> Release the body from a hospital or morgue</li>
+          <li><i class="fa-solid fa-xmark"></i> Override local death certificate processing timelines</li>
+          <li><i class="fa-solid fa-xmark"></i> Provide legal advice on liability or criminal matters</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ============================================================
+     LOCAL PROCESS CONTEXT
+     ============================================================ */}}
+<section class="section embassy-process-section">
+  <div class="section-inner">
+    <div class="embassy-process-grid">
+      <div class="ep-card reveal">
+        <i class="fa-solid fa-file-lines"></i>
+        <h3>Death registration in {{ .Params.country_name }}</h3>
+        {{ with $c.repatriation_process }}
+        {{ with .step_6_documentation }}<p>{{ .description }}</p>{{ end }}
+        {{ end }}
+        <p>The Embassy can register the death separately under UK law. This is optional and does not replace the local certificate, but some families find the UK death certificate useful for administrative purposes.</p>
+      </div>
+      <div class="ep-card reveal">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Typical timeline from {{ .Params.country_name }}</h3>
+        {{ with $c.typical_timeline }}
+        <div class="timeline-mini">
+          {{ with .average_case }}<div class="tm-row"><span>Average case</span><strong>{{ . }}</strong></div>{{ end }}
+          {{ with .fastest_case }}<div class="tm-row"><span>No complications</span><strong>{{ . }}</strong></div>{{ end }}
+          {{ with .complex_case }}<div class="tm-row"><span>With post-mortem</span><strong>{{ . }}</strong></div>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="ep-card reveal">
+        <i class="fa-solid fa-sterling-sign"></i>
+        <h3>Repatriation costs from {{ .Params.country_name }}</h3>
+        {{ with $c.cost_guide }}
+        {{ with .total_typical_range_gbp }}<p><strong>Typical range:</strong> {{ . }}</p>{{ end }}
+        {{ with .total_budget_range_gbp }}<p><strong>Budget estimate:</strong> {{ . }}</p>{{ end }}
+        {{ end }}
+        <a href="/repatriation-from-{{ $c.slug }}/" class="ep-link">Full cost breakdown <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ============================================================
+     CROSSLINKS
+     ============================================================ */}}
+<section class="section-alt embassy-links-section">
+  <div class="section-inner">
+    <h2 class="reveal" style="margin-bottom:1.5rem;">Guides for {{ .Params.country_name }}</h2>
+    <div class="guides-grid stagger-children" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      <a href="/repatriation-from-{{ $c.slug }}/" class="guide-card reveal">
+        <p class="guide-card-title">Full repatriation guide</p>
+        <p class="guide-card-desc">Complete process, costs, documentation, and airport details</p>
+        <span class="guide-card-cta">Read guide <i class="fa-solid fa-angle-right"></i></span>
+      </a>
+      {{ $guideSlug := printf "/guides/death-abroad-%s" $c.slug }}
+      {{ $guide := .Site.GetPage $guideSlug }}
+      {{ if $guide }}
+      <a href="{{ $guide.RelPermalink }}" class="guide-card reveal">
+        <p class="guide-card-title">First response guide</p>
+        <p class="guide-card-desc">Step-by-step actions for the first 24-48 hours</p>
+        <span class="guide-card-cta">Read guide <i class="fa-solid fa-angle-right"></i></span>
+      </a>
+      {{ end }}
+      {{ with $c.ashes_transport }}{{ if .cremation_available }}
+      <a href="/cremation-transfer/{{ $c.slug }}/" class="guide-card reveal">
+        <p class="guide-card-title">Cremation abroad</p>
+        <p class="guide-card-desc">Arranging cremation in {{ $.Params.country_name }} and bringing ashes home</p>
+        <span class="guide-card-cta">Read guide <i class="fa-solid fa-angle-right"></i></span>
+      </a>
+      {{ end }}{{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ============================================================
+     CTA
+     ============================================================ */}}
+<section class="quote-section" id="contact">
+  <div class="section-inner">
+    <h2 class="reveal">Need help coordinating repatriation from {{ .Params.country_name }}?</h2>
+    <p class="quote-subtitle reveal">We can take over the arrangements from wherever you are in the process. Call us or leave your details and we will call you back.</p>
+    <div class="cta-button-row reveal">
+      <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta btn-lg"><i class="fa-solid fa-phone"></i> Call 24/7: {{ site.Params.emergencyPhone }}</a>
+      <a href="/free-advice/" class="btn btn-outline btn-lg">Request a callback</a>
+    </div>
+  </div>
+</section>
+
+{{ else }}
+<section class="section"><div class="section-inner"><p>Please <a href="/contact/">contact our team</a> for embassy contact information.</p></div></section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,39 @@
+baseURL = "https://repatriateservice.com/"
+languageCode = "en-gb"
+title = "Repatriate Service"
+
+[params]
+  brand = "Repatriate Service"
+  tagline = "Bringing your loved ones home"
+  description = "Country-specific guides for repatriating a loved one to the United Kingdom. Step-by-step processes, costs, embassy contacts, and professional coordination."
+  quoteFormEndpoint = "https://formspree.io/f/placeholder"
+  emergencyPhone = "+44 (0) 000 000 0000"
+  plausibleDomain = "repatriateservice.com"
+
+[permalinks]
+  [permalinks.page]
+    countries = "/repatriation-from-:sections[last]/:slug/"
+    guides = "/guides/:slug/"
+    blog = "/blog/:slug/"
+    "embassy-contacts" = "/embassy-contacts/:slug/"
+    "bringing-ashes-home" = "/bringing-ashes-home/:slug/"
+    faq = "/faq/:slug/"
+  [permalinks.section]
+    countries = "/repatriation-from-:slug/"
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[taxonomies]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  page = ["HTML"]

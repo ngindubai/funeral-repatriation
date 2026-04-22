@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Guidance Database: Death Abroad (10 P1 Countries)</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --surface2: #334155;
+            --border: #475569;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --green: #4ade80;
+            --amber: #fbbf24;
+            --red: #f87171;
+            --rose: #fb7185;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .header {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--surface), var(--surface2));
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .header .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .meta-bar {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .meta-item strong { color: var(--accent2); }
+
+        .toc {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+            padding: 1.5rem;
+            background: var(--surface);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+        .toc-grid a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            background: var(--surface2);
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .toc-grid a:hover {
+            background: var(--border);
+            color: var(--accent);
+        }
+
+        .country-section {
+            max-width: 1400px;
+            margin: 0 auto 2.5rem;
+            background: var(--surface);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .country-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .country-header h2 {
+            font-size: 1.4rem;
+            color: var(--accent);
+        }
+        .country-header .source-badge {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            background: var(--surface2);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+        .country-header .source-badge a {
+            color: var(--accent2);
+            text-decoration: none;
+        }
+        .country-body { padding: 1.5rem 2rem; }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 1.5rem;
+        }
+        .info-card {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+        }
+        .info-card h3 {
+            font-size: 0.95rem;
+            color: var(--amber);
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .info-card h3 .icon { font-size: 1.1rem; }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-card li {
+            padding: 0.3rem 0;
+            padding-left: 1rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        .info-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65rem;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        .info-card p {
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .alert-box {
+            margin-top: 1.5rem;
+            padding: 1rem 1.2rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .alert-box.critical {
+            background: rgba(248, 113, 113, 0.1);
+            border: 1px solid var(--red);
+            color: var(--red);
+        }
+        .alert-box.warning {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--amber);
+            color: var(--amber);
+        }
+        .alert-box.info {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+        .alert-box strong { display: block; margin-bottom: 0.3rem; }
+
+        .contact-bar {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: var(--surface2);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+        }
+        .contact-bar .label { color: var(--text-muted); }
+        .contact-bar .value { color: var(--green); font-weight: 600; }
+
+        .comparison-table {
+            max-width: 1400px;
+            margin: 0 auto 2.5rem;
+            overflow-x: auto;
+        }
+        .comparison-table h2 {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.8rem;
+        }
+        th {
+            background: var(--surface2);
+            color: var(--accent);
+            padding: 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            white-space: nowrap;
+            border-bottom: 2px solid var(--border);
+        }
+        td {
+            padding: 0.7rem 0.8rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        tr:hover td { background: rgba(56, 189, 248, 0.03); }
+        .yes { color: var(--green); font-weight: 600; }
+        .no { color: var(--red); font-weight: 600; }
+        .partial { color: var(--amber); font-weight: 600; }
+
+        @media (max-width: 900px) {
+            .info-grid { grid-template-columns: 1fr; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Government Guidance Database: Death Abroad</h1>
+    <p class="subtitle">Official GOV.UK (FCDO) bereavement guidance for 10 Priority 1 countries. Extracted and structured for content production. All data sourced from published government pages under Open Government Licence v3.0.</p>
+    <div class="meta-bar">
+        <div class="meta-item"><strong>Source:</strong> GOV.UK FCDO Bereavement Packs</div>
+        <div class="meta-item"><strong>Countries:</strong> 10 P1</div>
+        <div class="meta-item"><strong>Compiled:</strong> April 2026</div>
+        <div class="meta-item"><strong>Confidence:</strong> HIGH (official government source)</div>
+    </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+    <h2>Countries</h2>
+    <div class="toc-grid">
+        <a href="#spain">Spain</a>
+        <a href="#france">France</a>
+        <a href="#portugal">Portugal</a>
+        <a href="#italy">Italy</a>
+        <a href="#greece">Greece</a>
+        <a href="#turkey">Turkey</a>
+        <a href="#thailand">Thailand</a>
+        <a href="#usa">United States</a>
+        <a href="#india">India</a>
+        <a href="#egypt">Egypt</a>
+    </div>
+</div>
+
+<!-- CROSS-COUNTRY COMPARISON TABLE -->
+<div class="comparison-table">
+    <h2>Cross-Country Comparison: Key Differences at a Glance</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Factor</th>
+                <th>Spain</th>
+                <th>France</th>
+                <th>Portugal</th>
+                <th>Italy</th>
+                <th>Greece</th>
+                <th>Turkey</th>
+                <th>Thailand</th>
+                <th>USA</th>
+                <th>India</th>
+                <th>Egypt</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Death cert shows cause?</strong></td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No (ISTAT cert does)</td>
+                <td class="yes">Usually yes</td>
+                <td class="no">No (Formul C)</td>
+                <td class="no">No</td>
+                <td class="yes">Yes</td>
+                <td class="no">Not normally</td>
+                <td class="no">Arabic only cert</td>
+            </tr>
+            <tr>
+                <td><strong>Cremation legal/available?</strong></td>
+                <td class="yes">Yes</td>
+                <td class="yes">Yes</td>
+                <td class="partial">Yes (may need prosecutor permission)</td>
+                <td class="partial">Yes (need proof of wish)</td>
+                <td class="yes">Yes</td>
+                <td class="no">NO. Illegal.</td>
+                <td class="yes">Yes</td>
+                <td class="yes">Yes</td>
+                <td class="yes">Yes (widely available)</td>
+                <td class="no">Technically yes, practically no (1 unofficial crematorium)</td>
+            </tr>
+            <tr>
+                <td><strong>Registration by?</strong></td>
+                <td>Civil Registry (funeral dir.)</td>
+                <td>Mairie (town hall)</td>
+                <td>Registry office (funeral dir.)</td>
+                <td>Comune (hospital auto)</td>
+                <td>Dimos (municipality)</td>
+                <td>Hospital/prosecutor</td>
+                <td>Amphur (district office)</td>
+                <td>Funeral home/medical prof.</td>
+                <td>Local authority (2-step)</td>
+                <td>District health office</td>
+            </tr>
+            <tr>
+                <td><strong>Post-mortem report timeline</strong></td>
+                <td>Varies</td>
+                <td>Months</td>
+                <td>Up to 12 months</td>
+                <td>Months</td>
+                <td>Months to 1yr+</td>
+                <td>Via court only</td>
+                <td>~45 business days</td>
+                <td>Varies by state</td>
+                <td>6 months to years</td>
+                <td>Without consent</td>
+            </tr>
+            <tr>
+                <td><strong>Multilingual cert available?</strong></td>
+                <td class="yes">Yes (plurilingue)</td>
+                <td class="partial">Translation possible</td>
+                <td class="yes">Yes (Internacional)</td>
+                <td class="yes">Yes (multilingual)</td>
+                <td class="no">Greek only</td>
+                <td class="partial">Formul C (TR/EN bilingual)</td>
+                <td class="no">Thai only (needs MFA cert)</td>
+                <td class="yes">English</td>
+                <td class="no">Local language</td>
+                <td class="no">Arabic only</td>
+            </tr>
+            <tr>
+                <td><strong>Pauper's burial risk?</strong></td>
+                <td class="no">Not mentioned</td>
+                <td class="no">Not mentioned</td>
+                <td class="partial">Yes (no claimant)</td>
+                <td class="no">Not mentioned</td>
+                <td class="partial">Remains exhumed after 3yr</td>
+                <td class="no">Not mentioned</td>
+                <td class="no">Yes (30 days)</td>
+                <td class="partial">County arranges if family can't pay</td>
+                <td class="no">Not mentioned</td>
+                <td class="no">Not mentioned</td>
+            </tr>
+            <tr>
+                <td><strong>Typical formalities timeline</strong></td>
+                <td>Days</td>
+                <td>Days</td>
+                <td>Within 72hrs (funeral)</td>
+                <td>3-10 days (repatriation)</td>
+                <td>8-10 days</td>
+                <td>Days</td>
+                <td>Varies (30-day limit)</td>
+                <td>Days (varies by state)</td>
+                <td>~2 weeks (repatriation)</td>
+                <td>Days</td>
+            </tr>
+            <tr>
+                <td><strong>Embassy letter needed?</strong></td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">Yes (to release body)</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">Yes (burial AND repatriation)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ==================== SPAIN ==================== -->
+<div class="country-section" id="spain">
+    <div class="country-header">
+        <h2>Spain</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-spain">GOV.UK FCDO</a> | Updated: 21 Aug 2025</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death must be registered at the local civil registry (Registro Civil)</li>
+                    <li>Funeral director normally handles registration on the family's behalf</li>
+                    <li>Documents needed: birth certificate or details, passport, spouse details if married</li>
+                    <li>Marriage certificate, divorce papers if applicable</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>International death certificate available: "certificado plurilingue" (multilingual)</li>
+                    <li>Spanish death certificates do NOT show cause of death</li>
+                    <li>3 free copies provided initially</li>
+                    <li>Digital certificates available from Ministry of Justice website</li>
+                    <li>Further copies available from any Civil Registry or online</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem ordered if cause of death is unknown or unnatural</li>
+                    <li>Conducted by forensic authorities</li>
+                    <li>Reports may take time to be released to next of kin</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Funeral director arranges all documentation for body transfer</li>
+                    <li>Need death certificate and embalming certificate</li>
+                    <li>Funeral director coordinates transport with UK funeral director</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Cremation and Ashes</h3>
+                <ul>
+                    <li>Cremation is legal and available in Spain</li>
+                    <li>To transport ashes out of Spain: need death certificate, cremation certificate, and local authority permission certificate</li>
+                    <li>Airlines must be notified in advance</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Local Burial</h3>
+                <ul>
+                    <li>Burial is available through local funeral director</li>
+                    <li>Funeral director handles all local arrangements</li>
+                    <li>Do not cremate abroad if a coroner in England/Wales may need to hold an inquest</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== FRANCE ==================== -->
+<div class="country-section" id="france">
+    <div class="country-header">
+        <h2>France</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-france">GOV.UK FCDO</a> | Updated: 28 Jan 2021</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death must be registered at the local mairie (town hall)</li>
+                    <li>Registration must happen within 24 hours</li>
+                    <li>Need: identity document (passport), proof of residence, witness details</li>
+                    <li>Hospital or medical professional usually initiates the process</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Acte de deces issued by the mairie</li>
+                    <li>Multilingual translation possible on request</li>
+                    <li>French death certificates do NOT show cause of death</li>
+                    <li>Multiple copies can be requested at any time from the mairie</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem conducted at Institut Medico Legal (IML) if required</li>
+                    <li>Ordered in cases of violent, sudden, or unexplained death</li>
+                    <li>Tissue samples and organs may be retained for testing</li>
+                    <li>Reports can take months to be released</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Need: death certificate, embalming certificate, permission to transfer</li>
+                    <li>French funeral director coordinates with UK funeral director</li>
+                    <li>Embalming is required for international transport of remains</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Cremation and Ashes</h3>
+                <ul>
+                    <li>Cremation is legal and available in France</li>
+                    <li>To transport ashes out of France: need local authority certificate</li>
+                    <li>Airlines must be informed in advance</li>
+                    <li>Do not cremate if a coroner inquest may follow in England/Wales</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Support Network</h3>
+                <ul>
+                    <li>Bereavement Support Network (BSN) based in France helps English speakers</li>
+                    <li>Voluntary organisation offering practical and emotional support</li>
+                    <li>Can assist with navigating French bureaucracy in English</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">British Embassy Paris (Emergency):</span> <span class="value">+33 (0)1 44 51 31 00</span></div>
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== PORTUGAL ==================== -->
+<div class="country-section" id="portugal">
+    <div class="country-header">
+        <h2>Portugal</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/when-someone-dies-in-portugal">GOV.UK FCDO</a> | Published: 21 Mar 2025</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death must be registered at the Portuguese registry office (Conservatoria do Registo Civil)</li>
+                    <li>Funeral director can normally handle registration on family's behalf</li>
+                    <li>Documents needed: birth details, parents' names, civil status, passport</li>
+                    <li>Spouse details, marriage certificate, divorce papers if applicable</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Assento de Obito issued after registration</li>
+                    <li>International version available: Certidao de Obito Internacional (multilingual/English translation)</li>
+                    <li>Portuguese death certificates do NOT show cause of death</li>
+                    <li>Extra copies recommended as you will need them later</li>
+                    <li>Further copies from any Civil Registration Office in Portugal or Portuguese Consulate</li>
+                    <li>Online viewing available with 6-month check code via GOV.UK step-by-step guide</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Required if cause of death is unknown, unnatural, sudden, or violent</li>
+                    <li>Compulsory inquiry conducted by public prosecutor for suspicious deaths, accidents (including road traffic)</li>
+                    <li>Post mortem normally within 3-4 working days of death</li>
+                    <li>Cultural/religious sensitivities may NOT be considered</li>
+                    <li>Tissue samples and organs may be removed without permission (normally returned before body release)</li>
+                    <li>PM reports not given to next of kin automatically. Email prosecutor with passport copy to request.</li>
+                    <li>Prosecutor releases report only when inquiry closed. Can take up to 12 months.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Obtaining Cause of Death</h3>
+                <ul>
+                    <li>Death after long illness (no legal PM): apply to hospital administration for declaration or medical records</li>
+                    <li>Sudden death (legal PM): apply to Public Prosecutor for PM report and court conclusion</li>
+                    <li>Enquiry takes several months. Report not released until Prosecutor concludes.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Burial and Cremation</h3>
+                <ul>
+                    <li>Local funeral director required for burial or cremation</li>
+                    <li>Can instruct funeral director remotely (form + passport copy needed)</li>
+                    <li>Funerals normally within 72 hours of death, or 48 hours after post mortem</li>
+                    <li>May need permission from public prosecutor for cremation</li>
+                    <li>Do NOT cremate abroad if you want a coroner inquest in England/Wales</li>
+                    <li>If nobody takes responsibility, local authorities arrange a pauper's burial</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Repatriation and Ashes</h3>
+                <ul>
+                    <li>Funeral director arranges bringing body to UK</li>
+                    <li>Ashes: need death certificate, cremation certificate, follow Portuguese regs</li>
+                    <li>Tell airline in advance if carrying ashes</li>
+                    <li>Ashes can also be shipped by air freight (expensive). Check customs duty on UK arrival.</li>
+                    <li>Personal belongings may be kept as evidence during inquiry</li>
+                    <li>Consulate cannot collect, store, or forward belongings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box info">
+            <strong>Online Certificates</strong>
+            GOV.UK publishes a step-by-step guide for ordering Portuguese certificates online, including a 6-month check code for digital verification.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+            <div><span class="label">Embassy Lisbon:</span> <span class="value">Rua de Sao Bernardo 33, 1249-082 Lisbon</span></div>
+            <div><span class="label">Vice Consulate:</span> <span class="value">Portimao (Algarve)</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== ITALY ==================== -->
+<div class="country-section" id="italy">
+    <div class="country-header">
+        <h2>Italy</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/government/publications/bereavement-information-for-italy">GOV.UK FCDO</a> | Updated: 18 Oct 2024</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death registered at the Comune (town hall/municipality)</li>
+                    <li>Hospital deaths: hospital usually handles auto-registration with the Comune</li>
+                    <li>Deaths outside hospital: police or family report to the Comune</li>
+                    <li>Next of kin priority: spouse, children, parents, then siblings</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Standard death certificate does NOT show cause of death</li>
+                    <li>ISTAT certificate (for statistical purposes) does show cause</li>
+                    <li>Multilingual death certificate available on request</li>
+                    <li>Copies available from the Comune where death was registered</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Ordered by prosecutor (Procura della Repubblica) if death is suspicious or unexplained</li>
+                    <li>24-hour mandatory wait before body preparation can begin</li>
+                    <li>Tissue samples and organs may be retained</li>
+                    <li>Reports can take months to be released</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Nulla Osta (transfer certificate) required for repatriation</li>
+                    <li>Repatriation typically takes 3-10 days to arrange</li>
+                    <li>Basic preservative treatment required (full embalming optional)</li>
+                    <li>Zinc-lined coffin required for international transport</li>
+                    <li>Funeral director coordinates documentation and logistics</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Burial in Italy</h3>
+                <ul>
+                    <li>Burial commonly in above-ground niches (tumulazione) rather than below-ground</li>
+                    <li>Burial rights typically 20-30 years (must be renewed or remains moved)</li>
+                    <li>Costs and availability vary by region and municipality</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Cremation</h3>
+                <ul>
+                    <li>Cremation increasingly common in Italy</li>
+                    <li>Crematoriums not available in every region</li>
+                    <li>Most crematoriums lack ceremony facilities</li>
+                    <li>Cremation authorisation requires proof it was deceased's expressed wish (written statement, will, or family declaration)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box info">
+            <strong>Healthcare Costs</strong>
+            GHIC/EHIC card may cover hospital costs incurred before death. Legal aid available in Italy if income is below EUR 12,838.01/year.
+        </div>
+        <div class="alert-box warning">
+            <strong>24-Hour Wait Rule</strong>
+            Italian law requires a 24-hour waiting period after death before any body preparation (embalming, dressing) can begin.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== GREECE ==================== -->
+<div class="country-section" id="greece">
+    <div class="country-header">
+        <h2>Greece</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-greece">GOV.UK FCDO</a> | Updated: 30 Jan 2026</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death registered at the local dimos (municipality)</li>
+                    <li>Must be registered within 30 days</li>
+                    <li>Hospital or doctor provides medical certificate of death</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Certificate issued in Greek: lixiarxiki praxi thanatou</li>
+                    <li>No multilingual version. Translation must be arranged separately.</li>
+                    <li>Usually DOES show cause of death (unlike most EU countries)</li>
+                    <li>Copies available from the dimos</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem ordered by prosecutor if death is sudden, unexplained, or suspicious</li>
+                    <li>Post mortem reports can take months to over a year to be released</li>
+                    <li>Significant delays are common in the Greek system</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Local formalities typically take 8-10 days</li>
+                    <li>Documents required: death certificate, coroner permission, passport, embalming certificate</li>
+                    <li>Funeral director coordinates with Greek and UK authorities</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Burial in Greece</h3>
+                <ul>
+                    <li>Local burial available through Greek funeral director</li>
+                    <li>In some cemeteries, remains are EXHUMED after 3 years and moved to an ossuary</li>
+                    <li>This is standard Greek practice, not optional in many areas</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Cremation</h3>
+                <ul>
+                    <li>Cremation is now legal in Greece</li>
+                    <li>Availability may be limited. Athens has a crematorium.</li>
+                    <li>Ashes transport requires death certificate and cremation certificate</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box critical">
+            <strong>Exhumation After 3 Years</strong>
+            In many Greek cemeteries, burial is temporary. Remains are exhumed after approximately 3 years and placed in an ossuary. Families need to be aware of this before choosing local burial.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== TURKEY ==================== -->
+<div class="country-section" id="turkey">
+    <div class="country-header">
+        <h2>Turkey</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-turkey">GOV.UK FCDO</a> | Updated: 5 Oct 2023</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Hospital deaths: hospital records the death</li>
+                    <li>Non-hospital deaths: forensic institute or prosecutor handles initial recording</li>
+                    <li>Death report (Olum Belgesi) sent to registry office (Nufus Dairesi)</li>
+                    <li>Registry office issues the official death certificate</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Formul C death certificate is bilingual: Turkish and English</li>
+                    <li>Formul C does NOT show cause of death</li>
+                    <li>This is the document needed for repatriation and UK processes</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem ordered by prosecutor if death is unexplained or suspicious</li>
+                    <li>Post mortem reports are NOT given to next of kin</li>
+                    <li>To obtain: must apply through the Turkish court system</li>
+                    <li>Can be a lengthy and complex process</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Documents required: Formul C death certificate, embalming certificate, permission to transfer</li>
+                    <li>Funeral director coordinates all paperwork</li>
+                    <li>Embalming required for international transport</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box critical">
+            <strong>CREMATION IS NOT LEGAL IN TURKEY</strong>
+            There are no cremation facilities in Turkey. The body must either be repatriated or buried locally. This is a strict legal prohibition, not a practical limitation.
+        </div>
+        <div class="alert-box warning">
+            <strong>Post Mortem Reports</strong>
+            Unlike most countries, Turkish authorities do not release post mortem reports to the family. Access requires a formal application through the court system.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== THAILAND ==================== -->
+<div class="country-section" id="thailand">
+    <div class="country-header">
+        <h2>Thailand</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-thailand">GOV.UK FCDO</a> | Updated: 20 Nov 2024</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Deaths outside hospital: report to police first</li>
+                    <li>Register at local district office (amphur)</li>
+                    <li>Only ONE original death certificate issued per registration</li>
+                    <li>Certificate requires Ministry of Foreign Affairs certification for use outside Thailand</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Issued in Thai. No English version available from authorities.</li>
+                    <li>Does NOT show cause of death</li>
+                    <li>Only one original copy. Guard it carefully.</li>
+                    <li>Needs MFA certification before it is valid for UK processes</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem normally required for non-Thai nationals</li>
+                    <li>Post mortem report takes approximately 45 business days</li>
+                    <li>Conducted by police forensic surgeon</li>
+                    <li>Significant delays are normal</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Embassy letter needed to release body from Thai authorities (online application)</li>
+                    <li>Embalming required for international transport</li>
+                    <li>Funeral director coordinates all documents and logistics</li>
+                    <li>Ashes do NOT need an Embassy letter (only the body does)</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Local Burial</h3>
+                <ul>
+                    <li>Local burial is rare, expensive, and typically restricted to religious grounds</li>
+                    <li>Most foreigners choose repatriation or cremation</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Cremation</h3>
+                <ul>
+                    <li>Cremation is widely available in Thailand</li>
+                    <li>Common choice for families who prefer not to repatriate remains</li>
+                    <li>Ashes can be brought to UK without Embassy letter</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box critical">
+            <strong>30-Day Deadline</strong>
+            If no arrangements are made within 30 days, Thai authorities may proceed with a pauper's mass funeral. Families must act promptly.
+        </div>
+        <div class="alert-box warning">
+            <strong>One Original Certificate Only</strong>
+            Thailand issues only ONE original death certificate. Unlike most countries there is no way to get additional originals. Keep it secure and use certified copies.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">British Embassy Bangkok (Emergency):</span> <span class="value">+66 (0)2 305 8333</span></div>
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== USA ==================== -->
+<div class="country-section" id="usa">
+    <div class="country-header">
+        <h2>United States</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/guidance/when-someone-dies-in-the-usa">GOV.UK FCDO</a> | Updated: 13 Mar 2026</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Funeral home or medical professional registers the death</li>
+                    <li>Medical examiner handles sudden, unexpected, or suspicious deaths</li>
+                    <li>Process varies by state. Each state has its own vital records office.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>US death certificates DO show cause of death (unlike most other countries)</li>
+                    <li>Issued in English</li>
+                    <li>Multiple certified copies available from state vital records office</li>
+                    <li>May need apostille for international use</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem / Autopsy</h3>
+                <ul>
+                    <li>Autopsy ordered by medical examiner if cause of death is unknown</li>
+                    <li>Family may have access to autopsy reports (varies by state law)</li>
+                    <li>Some states allow family to request an independent autopsy</li>
+                    <li>Coroner/medical examiner system varies by county/state</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Documents needed: death certificate, embalming certificate, cremation certificate (if applicable)</li>
+                    <li>US funeral director coordinates with UK funeral director</li>
+                    <li>Embalming required for international transport</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Cremation and Ashes</h3>
+                <ul>
+                    <li>Cremation widely available across the US</li>
+                    <li>Ashes: use non-metallic container (so it can pass through airport x-ray)</li>
+                    <li>Tell airline in advance if carrying ashes</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Financial</h3>
+                <ul>
+                    <li>County or state may arrange burial if family cannot pay</li>
+                    <li>US healthcare costs before death can be extremely high</li>
+                    <li>Travel insurance is critical. Without it, costs fall to the family.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box warning">
+            <strong>State-by-State Variation</strong>
+            The US has no single national process. Laws, timelines, costs, and procedures vary by state. Families need state-specific guidance, not just "USA" information.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== INDIA ==================== -->
+<div class="country-section" id="india">
+    <div class="country-header">
+        <h2>India</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/government/publications/bereavement-information-pack-india">GOV.UK FCDO</a> | Updated: 23 Dec 2024</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Two-step process: (1) medical cause of death certificate from doctor/hospital, (2) register with local municipal authority</li>
+                    <li>Death certificate issued in 10-15 working days after registration</li>
+                    <li>Death certificate does NOT normally show cause of death</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Issued in local language (Hindi or state language)</li>
+                    <li>Does not normally show cause of death</li>
+                    <li>10-15 working day turnaround</li>
+                    <li>Translation may be needed for UK processes</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem conducted by police forensic surgeon</li>
+                    <li>Retained organs are NOT returned to the family</li>
+                    <li>Forensic test results can take 6 months to several years</li>
+                    <li>Extremely long delays are considered normal</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Embalming required for international transport</li>
+                    <li>Repatriation process takes approximately 2 weeks</li>
+                    <li>Limited mortuary space. Pressure to make prompt decisions.</li>
+                    <li>Funeral director handles documentation and logistics</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Cremation</h3>
+                <ul>
+                    <li>Cremation widely available (wooden pyre or electric crematorium)</li>
+                    <li>Religious and traditional cremation on open pyre is common</li>
+                    <li>Ashes must be sent to UK by air freight only (cannot carry on person)</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Legal Considerations</h3>
+                <ul>
+                    <li>Indian law does NOT recognise same-sex partners for next-of-kin purposes</li>
+                    <li>This may affect who can authorise decisions about the body</li>
+                    <li>Legal advice recommended for unmarried or same-sex partners</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box critical">
+            <strong>Retained Organs Not Returned</strong>
+            If a post mortem is conducted in India, any organs or tissue samples retained for testing are NOT returned to the family. This is a fixed policy, not negotiable.
+        </div>
+        <div class="alert-box warning">
+            <strong>Limited Mortuary Space</strong>
+            Morgue facilities in India are limited. Authorities will push for a quick decision on cremation, burial, or repatriation. Families need to be prepared to decide quickly.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== EGYPT ==================== -->
+<div class="country-section" id="egypt">
+    <div class="country-header">
+        <h2>Egypt</h2>
+        <span class="source-badge">Source: <a href="https://www.gov.uk/government/publications/egypt-bereavement-information-pack">GOV.UK FCDO</a> | Updated: 18 Oct 2024</span>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><span class="icon">1.</span> Registration</h3>
+                <ul>
+                    <li>Death registered at the district health office</li>
+                    <li>Death certificate issued in Arabic only</li>
+                    <li>Professional translation required for UK use</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">2.</span> Death Certificate</h3>
+                <ul>
+                    <li>Issued in Arabic only. No multilingual version.</li>
+                    <li>Does not show cause of death in a format useful to UK authorities</li>
+                    <li>Translation and possible apostille/legalisation needed</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">3.</span> Post Mortem</h3>
+                <ul>
+                    <li>Post mortem can be conducted WITHOUT the family's consent</li>
+                    <li>Organs may be retained for testing</li>
+                    <li>Families have limited control over this process</li>
+                    <li>Mortuary facilities are variable in quality across Egypt</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">4.</span> Repatriation</h3>
+                <ul>
+                    <li>Embassy permission letter required for BOTH burial and repatriation</li>
+                    <li>Embalming required for international transport</li>
+                    <li>Funeral director handles coordination with Egyptian and UK authorities</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">5.</span> Cremation</h3>
+                <ul>
+                    <li>Cremation is technically legal but practically unavailable</li>
+                    <li>Only one unofficial crematorium exists (in Alexandria)</li>
+                    <li>Repatriation or local burial are the realistic options</li>
+                    <li>Egypt is a Muslim-majority country where cremation is not culturally practised</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><span class="icon">6.</span> Local Burial</h3>
+                <ul>
+                    <li>Christian cemeteries available in Cairo: Latin Cemetery, Protestant Cemetery</li>
+                    <li>Embassy permission letter required even for local burial</li>
+                    <li>Muslim burial also available if family requests</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert-box critical">
+            <strong>Embassy Permission Required for Everything</strong>
+            Unlike most countries, Egypt requires a British Embassy permission letter for both repatriation AND local burial. Nothing proceeds without it.
+        </div>
+        <div class="alert-box warning">
+            <strong>Cremation Practically Unavailable</strong>
+            Despite being technically legal, cremation is not a realistic option in Egypt. The only crematorium is unofficial and in Alexandria. Plan for repatriation or local burial.
+        </div>
+        <div class="contact-bar">
+            <div><span class="label">FCDO Emergency (Cairo):</span> <span class="value">+44 (0)20 7008 1500</span></div>
+            <div><span class="label">FCDO General:</span> <span class="value">+44 (0)20 7008 5000</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENT PRODUCTION NOTES -->
+<div class="country-section">
+    <div class="country-header">
+        <h2>Content Production Notes</h2>
+    </div>
+    <div class="country-body">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Key Content Gaps to Exploit</h3>
+                <ul>
+                    <li>Competitors give 50-word summaries. We have 500+ words of verified, structured detail per country.</li>
+                    <li>No competitor provides the cross-country comparison table above.</li>
+                    <li>Cremation restrictions (Turkey, Egypt) are rarely mentioned in competitor content.</li>
+                    <li>Exhumation practices (Greece) are almost never disclosed to families before they choose local burial.</li>
+                    <li>Same-sex partner recognition issues (India) are ignored by every competitor.</li>
+                    <li>The 30-day pauper's funeral deadline in Thailand is buried in GOV.UK text. We surface it prominently.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Source Notes</h3>
+                <ul>
+                    <li>All data from GOV.UK FCDO published bereavement packs (Open Government Licence v3.0)</li>
+                    <li>Portugal page was published March 2025 but not yet indexed in the GOV.UK collections page. Found via British Embassy Lisbon page.</li>
+                    <li>US State Department consular pages were unreachable during scraping (DNS resolution failure). GOV.UK data used instead.</li>
+                    <li>Each country page has a "last updated" date in the source badge. Verify before publication if more than 6 months old.</li>
+                    <li>Confidence level: HIGH for all 10 countries. This is official government data.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Country-Specific Sensitivity Flags</h3>
+                <ul>
+                    <li>Turkey: Cremation ban is a sensitive topic. State factually, do not editorialize.</li>
+                    <li>India: Same-sex partner issue needs careful, factual handling. No opinion, just legal reality.</li>
+                    <li>Egypt: Post mortem without consent is distressing. Present as information, not complaint.</li>
+                    <li>Thailand: 30-day deadline creates urgency. Present firmly but without pressure tactics.</li>
+                    <li>Greece: Exhumation practice can be shocking. Explain context (land scarcity) neutrally.</li>
+                    <li>India: "Retained organs not returned" is deeply distressing. Present clearly, once, without repetition.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Next Steps for Content Team</h3>
+                <ul>
+                    <li>Each country section here feeds directly into country pages (Chunks 1B-1D)</li>
+                    <li>The comparison table becomes a standalone "Which countries allow cremation?" guide</li>
+                    <li>Source URLs in each section should be linked from our pages as authority signals</li>
+                    <li>P2 countries (16) will follow the same structure in a separate database file</li>
+                    <li>US data needs state-by-state expansion (50 states = 50 sub-pages of content)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

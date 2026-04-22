@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/mrwashingt0n-ai-generated-9048740.jpg{{ end }}');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Get Help Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header reveal" style="margin-bottom: 3rem;">
+            <p class="label-sm">All destinations</p>
+            <h2>Repatriation guides by country</h2>
+            <p>Select the country where your loved one passed away for a full guide covering the process, costs, timelines, and embassy contacts specific to that destination.</p>
+        </div>
+
+        <div class="countries-grid stagger-children">
+            {{ range sort .Pages "Title" }}
+            {{ $key := .Params.country_key }}
+            {{ $c := index hugo.Data.countries_repatriation.countries $key }}
+            <a href="{{ .RelPermalink }}" class="country-card reveal">
+                <div class="country-card-body">
+                    {{ if $c }}
+                    <span class="country-card-priority">{{ $c.priority }}</span>
+                    <h3>{{ .Title }}</h3>
+                    {{ with $c.british_deaths_per_year_est }}
+                    <p class="country-card-deaths"><i class="fa-solid fa-users" style="color:var(--gold); margin-right:0.3rem; font-size:0.7rem;"></i>~{{ . }} British deaths/yr</p>
+                    {{ end }}
+                    <div class="country-card-stats">
+                        <div class="ccs-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>{{ $c.typical_timeline.average_case }}</span>
+                        </div>
+                        <div class="ccs-item">
+                            <i class="fa-solid fa-sterling-sign"></i>
+                            <span>{{ $c.cost_guide.total_typical_range_gbp }}</span>
+                        </div>
+                    </div>
+                    {{ else }}
+                    <h3>{{ .Title }}</h3>
+                    {{ end }}
+                    <p class="country-card-cta">View full guide <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+
+        <div class="countries-cta-strip reveal">
+            <div class="countries-cta-inner">
+                <div>
+                    <p class="label-sm">Can't find your country?</p>
+                    <h3>We work in over 100 countries worldwide</h3>
+                    <p>If your destination is not listed above, contact our team directly. We have experience coordinating repatriation from almost any location.</p>
+                </div>
+                <a href="/contact/" class="btn btn-cta">Speak to our team</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
