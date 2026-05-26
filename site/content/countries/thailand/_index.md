@@ -1,4 +1,5 @@
-﻿---
+---
+template_variant: "B"
 layout: country-hub
 title: "Thailand"
 description: "Step-by-step guidance for repatriating a loved one from Thailand to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."

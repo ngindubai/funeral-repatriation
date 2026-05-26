@@ -2,7 +2,7 @@
 title: "What happens if there is no travel insurance when someone dies abroad?"
 description: "No travel insurance means the family bears the full cost of repatriation. Here is what options exist, what the FCDO can do, and how to decide between repatriation and local burial."
 slug: what-happens-if-no-travel-insurance
-short_answer: "If there is no travel insurance, the family is responsible for the full cost of repatriation, which can be £3,000-15,000 depending on the country. The FCDO can provide emergency loans in genuine distress. Local burial in the country of death is a legal alternative."
+short_answer: "If there is no travel insurance, the family is responsible for the full cost of repatriation. The FCDO can provide emergency loans in genuine distress. Local burial in the country of death is a legal alternative."
 date: 2025-04-19
 ---
 
@@ -10,7 +10,7 @@ The absence of travel insurance is one of the most difficult situations families
 
 ## What the costs look like
 
-Repatriation from Europe costs roughly £3,000-6,000. From long-haul destinations, £5,000-15,000 is a realistic range. These costs include the local funeral director, embalming, the repatriation case, airline cargo fees, and the UK funeral director's collection charge. They do not include the subsequent UK funeral.
+Repatriation from Europe is significantly less expensive than from long-haul destinations. These costs include the local funeral director, embalming, the repatriation case, airline cargo fees, and the UK funeral director's collection charge. They do not include the subsequent UK funeral.
 
 These costs must be paid upfront or on credit. The country of death will not release the body without payment for local services. Airlines do not carry cargo on credit.
 
@@ -40,13 +40,13 @@ The FCDO will also provide information about the options available, including lo
 
 ## Step 3: Consider the options honestly
 
-**Crowdfunding.** Many families have raised repatriation costs through platforms like GoFundMe. This is accepted practice. Response is often fast when the situation is clearly explained. A target of £5,000-10,000 for a long-haul repatriation is achievable in some cases.
+**Crowdfunding.** Many families have raised repatriation costs through platforms like GoFundMe. This is accepted practice. Response is often fast when the situation is clearly explained. A target for a long-haul repatriation is achievable in some cases.
 
 **Charitable assistance.** Some organisations assist with repatriation costs for specific communities. The British Red Cross, religious community charities, and some diaspora organisations have emergency assistance programmes. Research is needed for your specific situation.
 
 **Local burial.** This is the alternative that most families are reluctant to consider, but it is a real option. The deceased is buried in the country of death. The family may or may not be able to attend the funeral, depending on finances and visa requirements. A grave abroad is more difficult to visit, but it is a legitimate choice — not a failure.
 
-**Cremation and ashes.** If the deceased did not have religious or personal objections to cremation, cremation in the country of death and return of ashes is far cheaper than full body repatriation. Cremation and ashes return from most countries costs £1,000-3,000 rather than £5,000-15,000.
+**Cremation and ashes.** If the deceased did not have religious or personal objections to cremation, cremation in the country of death and return of ashes is far cheaper than full body repatriation.
 
 ## What happens to the body while decisions are made
 

@@ -1,20 +1,13 @@
 {{ define "title" }}Cremation Abroad and Ashes Transport to the UK | Repatriate Service{{ end }}
 
 {{ define "main" }}
-<section class="guide-hero">
-    <div class="section-inner">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li aria-current="page">Cremation abroad</li>
-            </ol>
-        </nav>
-        <div class="guide-hero-inner">
-            <div class="guide-hero-text">
-                <p class="label-sm">Country guides</p>
-                <h1>Cremation abroad and ashes transport to the UK</h1>
-                <p>For some families, having their loved one cremated in the country where they died, and carrying the ashes home personally, is the right choice. It is often simpler and less costly than full body repatriation. These guides cover the process, documentation, and airline rules for each country.</p>
-            </div>
+<section class="page-hero" style="background-image: url('/images/airport-cargo.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>Cremation abroad and ashes transport to the UK</h1>
+        <p>For families considering cremation in the country where their loved one died, and carrying the ashes home personally. These country guides cover the process, documentation, and airline rules.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Get Help Now</a>
         </div>
     </div>
 </section>
@@ -25,19 +18,21 @@
             <div class="warning-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
             <div>
                 <h3>Before you decide: speak to us first</h3>
-                <p>If there is any possibility a UK coroner may need to hold an inquest, cremation abroad is not an option. Cremation is irreversible and destroys evidence that a post-mortem examination would require. If you are unsure, call our 24/7 line on <a href="tel:{{ site.Params.emergencyPhone }}">{{ site.Params.emergencyPhone }}</a> before proceeding.</p>
+                <p>If there is any possibility a UK coroner may need to hold an inquest, cremation abroad is not an option. Cremation is irreversible and destroys evidence that a post-mortem examination would require. If you are unsure, contact us via our <a href="/contact/">enquiry form</a> or <a href="https://wa.me/{{ site.Params.whatsappNumber }}" target="_blank" rel="noopener">WhatsApp</a> before proceeding.</p>
             </div>
         </div>
         <div class="section-header">
             <p class="label-sm">Available country guides</p>
             <h2>Select a country</h2>
         </div>
-        <div class="guides-grid stagger-children">
+        <div class="countries-grid stagger-children">
             {{ range .Pages }}
-            <a href="{{ .RelPermalink }}" class="guide-card reveal">
-                <p class="guide-card-title">{{ .Params.country_name }}</p>
-                <p class="guide-card-desc">Cremation and ashes transport</p>
-                <span class="guide-card-cta">Read guide <i class="fa-solid fa-angle-right"></i></span>
+            <a href="{{ .RelPermalink }}" class="country-card reveal">
+                <div class="country-card-body">
+                    <h3>{{ .Params.country_name }}</h3>
+                    <p>Cremation and ashes transport guide</p>
+                    <p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
             </a>
             {{ end }}
         </div>

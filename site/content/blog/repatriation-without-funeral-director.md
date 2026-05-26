@@ -1,5 +1,5 @@
----
-title: "Can I bring a body back to the UK without a funeral director?"
+﻿---
+title: "Bringing a Body Home Without a Funeral Director"
 description: "Yes, in theory. In practice, the documentation, airline requirements, and logistics make it extremely difficult. Here is what is actually required."
 date: 2025-04-12
 slug: repatriation-without-funeral-director
@@ -60,7 +60,7 @@ None of this is impossible to replicate. All of it takes time, local knowledge, 
 
 ## The cost question
 
-The main reason families consider doing this without a funeral director is cost. Repatriation costs range from £3,000 to £15,000 depending on the country and circumstances. That is a real consideration.
+The main reason families consider doing this without a funeral director is cost. Repatriation is expensive depending on the country and circumstances. That is a real consideration.
 
 Before going it alone to save money, check:
 

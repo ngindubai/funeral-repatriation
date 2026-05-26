@@ -79,3 +79,99 @@ Do not rename existing content files, reorganise directory structure, change per
 ## Output Directory
 
 `site/public/` is generated output. Never edit files there directly. Always rebuild after content changes.
+
+---
+
+## Design System — Locked Conventions (April 2026)
+
+These patterns were established during the Phase 3 design review and must be followed on all new and modified pages.
+
+### Hero Pattern — Listing / Hub Pages
+
+All section listing pages (`list.html`) use the `page-hero` pattern — NOT `guide-hero`. This gives a full-width dark image hero consistent with the Countries page.
+
+```html
+<section class="page-hero" style="background-image: url('/images/[image].jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>[Page H1]</h1>
+        <p>[Intro sentence]</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Get Help Now</a>
+        </div>
+    </div>
+</section>
+```
+
+**`guide-hero` (dark slate, two-column with facts sidebar) is ONLY for individual guide/country single pages**, not listing pages.
+
+### Card Grid Pattern — Country/Guide Listing Pages
+
+All listing pages that show a grid of country or topic cards use the `countries-grid` + `country-card` pattern. Do NOT use `guides-grid` / `guide-card` on listing pages — these are deprecated for listing use.
+
+```html
+<div class="countries-grid stagger-children">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="country-card reveal">
+        <div class="country-card-body">
+            <h3>{{ .Params.country_name }}</h3>
+            <p>[short description]</p>
+            <p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </a>
+    {{ end }}
+</div>
+```
+
+### CTA Link Style in Cards
+
+Use `country-card-cta` for the link label inside `country-card-body`. Do NOT use `country-card-link` — that class is superseded.
+
+```html
+<p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
+```
+
+### Available Hero Images (site/static/images/)
+
+| Image file | Best used for |
+|---|---|
+| `mrwashingt0n-ai-generated-9048740.jpg` | Countries listing (default hero) |
+| `hero.jpg` | Homepage / generic |
+| `documents-desk.jpg` | Guides / What to do abroad |
+| `support-conversation.jpg` | Blog / Guidance articles |
+| `airport-cargo.jpg` | Cremation abroad |
+| `passport-stamp.jpg` | Embassy contacts |
+| `airport-terminal.jpg` | General repatriation |
+| `cargo-terminal-night.jpg` | Logistics / repatriation |
+| `consultation-office.jpg` | Services / About |
+| `document-checklist.jpg` | FAQs / legal guides |
+
+### Nav Dropdown Icon Requirements
+
+The Resources dropdown in `header.html` requires a Font Awesome icon before every item label. Use **only icons that exist in FA6 Free** (solid set). Current assignments:
+
+| Item | Icon class |
+|---|---|
+| What to do abroad | `fa-solid fa-circle-info` |
+| Cremation abroad | `fa-solid fa-fire` |
+| Embassy contacts | `fa-solid fa-building-columns` |
+| Bringing ashes home | `fa-solid fa-jar` |
+| Guidance articles | `fa-solid fa-book-open` |
+
+Do NOT use `fa-urn-trowel` — it does not exist in FA6 Free and renders as a broken icon.
+
+### CSS Variables Available (defined in :root)
+
+```css
+--gold, --charcoal, --slate (#16222E), --white, --muted, --light
+--surface (= --white), --surface-2 (#F5F4F2)
+--border (#E9E9E9), --border-light
+--accent (= --gold = #D5A021)
+--text (= --charcoal = #050D15), --text-primary, --text-muted (#7A7A7A), --text-secondary
+--bg-card (#FFFFFF), --bg-alt (#F8F6F3), --blue-mid (= --gold)
+--warm-white, --radius, --transition
+```
+
+### Nav Vertical Alignment
+
+`.nav-list li` has `display: flex; align-items: center;` — this keeps the Resources `<span>` toggle vertically aligned with `<a>` items. Do not remove this rule.

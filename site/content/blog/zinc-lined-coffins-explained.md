@@ -1,5 +1,5 @@
----
-title: "Zinc-lined coffins: what they are and why they are required"
+﻿---
+title: "Zinc-Lined Coffins: What They Are and Why Required"
 description: "Why international repatriation requires a zinc-lined coffin, how the sealing process works, what it costs, and what it means for the funeral in the UK."
 date: 2025-03-05
 read_time: 5
@@ -51,7 +51,7 @@ For burial, the zinc liner remains in place. It is buried with the body.
 
 The zinc-lined coffin and sealing is included in most repatriation quotes as a line item or bundled into the "departure country preparation" fee. It is not separately negotiable, since it is a regulatory requirement.
 
-The cost of the zinc liner and soldering is roughly £300 to £700, depending on the country and the funeral director. It is a small part of the overall repatriation cost.
+The zinc liner and soldering is included in most repatriation quotes as a line item. It is a small part of the overall repatriation cost.
 
 ## One practical note
 

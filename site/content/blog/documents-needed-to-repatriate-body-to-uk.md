@@ -1,5 +1,5 @@
----
-title: "What documents do you need to repatriate a body to the UK?"
+﻿---
+title: "Documents Needed to Repatriate a Body to the UK"
 description: "A complete checklist of documents required to repatriate a body from abroad to the United Kingdom, with notes on where each one comes from."
 date: 2025-04-11
 slug: documents-needed-to-repatriate-body-to-uk

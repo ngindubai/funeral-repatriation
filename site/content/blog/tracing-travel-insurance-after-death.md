@@ -1,5 +1,5 @@
----
-title: "How to tell if someone died abroad had travel insurance — and what to do if they didn't"
+﻿---
+title: "Finding Travel Insurance After a Death Abroad"
 description: "A practical guide to tracing travel insurance after a death abroad, including how to check bank statements, email, and insurer databases, and your options when no cover exists."
 date: 2025-03-19
 read_time: 6
@@ -50,11 +50,9 @@ Even when insurance exists, claims can be rejected. The most common grounds:
 
 You are responsible for funding the repatriation directly. This is not uncommon and the process is the same — you simply need to arrange payment with the funeral directors involved.
 
-The typical total cost depends on the country. Spain or Portugal: roughly £3,000 to £5,500. Thailand or India: £5,000 to £9,000. These are paid to the coordinating funeral director.
-
 A few practical options:
 
-**Credit card.** For costs above £100 paid on credit card, Section 75 of the Consumer Credit Act gives you the right to claim against the card issuer if the service is not delivered. This matters if a funeral director abroad fails to deliver.
+**Credit card.** For purchases paid on credit card, Section 75 of the Consumer Credit Act gives you the right to claim against the card issuer if the service is not delivered. This matters if a funeral director abroad fails to deliver.
 
 **Bereavement financial support.** Some charities assist with repatriation costs in specific circumstances. The FCDO's website lists organisations that may be able to help in cases of particular hardship.
 

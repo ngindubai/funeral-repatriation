@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}</title>
 
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.svg">
+
+    {{ block "page-meta" . }}{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
 
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:url" content="{{ .Permalink }}">{{ end }}
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 
     {{ block "schema" . }}{{ end }}
@@ -26,8 +29,20 @@
     {{ with site.Params.plausibleDomain }}
     <script defer data-domain="{{ . }}" src="https://plausible.io/js/script.js"></script>
     {{ end }}
+
+    {{ with site.Params.googleAnalyticsID }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ . }}', {
+            'anonymize_ip': true
+        });
+    </script>
+    {{ end }}
 </head>
-<body>
+<body{{ if or .IsHome (and .Params.hero_image (not .IsSection)) }} class="has-hero"{{ end }}>
     {{ partial "header.html" . }}
 
     <main id="main-content">
@@ -38,5 +53,11 @@
 
     {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" defer></script>
+
+    {{/* ===== FLOATING WHATSAPP BUTTON ===== */}}
+    <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span class="whatsapp-float-label">24/7 Global Emergency WhatsApp</span>
+    </a>
 </body>
 </html>

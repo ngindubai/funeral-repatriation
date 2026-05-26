@@ -1,0 +1,298 @@
+{{/*
+  CH-C: Cost and Timeline Forward
+  Stat strip hero (typical days, post-mortem likelihood, embassy support level — NO GBP figures),
+  sticky timeline sidebar, timeline ladder at the top of content.
+  Schema emphasis: Service.
+*/}}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $cname := or $c.country_name $c.name }}
+
+<div class="tpl-ch-c">
+
+{{ if $c }}
+
+{{/* STAT STRIP HERO */}}
+<section class="country-hero-stats-strip">
+  <div class="section-inner">
+    <div class="chc-hero-inner">
+      <div class="chc-hero-text">
+        <p class="label-sm">Funeral repatriation guidance</p>
+        <h1>Repatriation from {{ $cname }} to the UK</h1>
+        <p>Timeline, process, and documentation for bringing a loved one home from {{ $cname }}.</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us 24/7</a>
+      </div>
+      <div class="chc-hero-stats">
+        {{ with $c.typical_timeline }}
+        <div class="chc-stat">
+          <span class="chc-stat-icon"><i class="fa-solid fa-clock"></i></span>
+          <span class="chc-stat-val">{{ .average_case }}</span>
+          <span class="chc-stat-label">Typical timeline</span>
+        </div>
+        <div class="chc-stat">
+          <span class="chc-stat-icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="chc-stat-val">{{ .fastest_case }}</span>
+          <span class="chc-stat-label">Best case</span>
+        </div>
+        {{ end }}
+        {{ with $c.post_mortem }}
+        <div class="chc-stat">
+          <span class="chc-stat-icon"><i class="fa-solid fa-microscope"></i></span>
+          <span class="chc-stat-val">{{ with .likelihood }}{{ . }}{{ else }}Case-dependent{{ end }}</span>
+          <span class="chc-stat-label">Post-mortem likelihood</span>
+        </div>
+        {{ end }}
+        {{ with $c.embassy_contacts.british_embassy }}
+        <div class="chc-stat">
+          <span class="chc-stat-icon"><i class="fa-solid fa-building-columns"></i></span>
+          <span class="chc-stat-val">{{ .city }}</span>
+          <span class="chc-stat-label">British Embassy location</span>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* HELPLINE STRIP */}}
+<div class="helpline-strip">
+  <div class="section-inner">
+    <div class="helpline-strip-inner">
+      <div class="helpline-icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <div class="helpline-text">
+        <p class="helpline-label">WhatsApp — available 24/7</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">+44 7703 577246</a>
+      </div>
+      <p class="helpline-message">Available around the clock for families dealing with a death in {{ $cname }}.</p>
+      <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</div>
+
+{{/* TWO-COLUMN: main content + sticky timeline sidebar */}}
+<div class="section-inner" style="display:grid; grid-template-columns:1fr 280px; gap:2.5rem; align-items:start; padding-top:2.5rem; padding-bottom:2.5rem;">
+
+  <div>
+
+    {{/* TIMELINE LADDER */}}
+    {{ with $c.typical_timeline }}
+    <div class="reveal" style="margin-bottom:2.5rem;">
+      <p class="label-sm">Expected timelines</p>
+      <h2>How long does repatriation from {{ $cname }} take?</h2>
+      <p>Timelines depend on circumstances. Here is an honest guide to what to expect.</p>
+      <div class="chc-timeline-ladder">
+        <div class="chc-ladder-row chc-ladder-best">
+          <div class="chc-ladder-label">Best case</div>
+          <div class="chc-ladder-val">{{ .fastest_case }}</div>
+          <div class="chc-ladder-desc">Natural death, documentation issued without delay, no post-mortem required.</div>
+        </div>
+        <div class="chc-ladder-row chc-ladder-typical">
+          <div class="chc-ladder-label">Typical case</div>
+          <div class="chc-ladder-val">{{ .average_case }}</div>
+          <div class="chc-ladder-desc">Standard repatriation from {{ $cname }}. Most families experience this timeline.</div>
+        </div>
+        <div class="chc-ladder-row chc-ladder-complex">
+          <div class="chc-ladder-label">Complex case</div>
+          <div class="chc-ladder-val">{{ .complex_case }}</div>
+          <div class="chc-ladder-desc">Post-mortem, inquest, criminal investigation, or logistically difficult location.</div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    {{/* FACTORS THAT EXTEND TIMELINE */}}
+    {{ with $c.typical_timeline.complexity_factors }}
+    <div class="reveal" style="margin-bottom:2rem;">
+      <h2>Factors that can extend the timeline</h2>
+      <ul class="factors-list">
+        {{ range . }}
+        <li><i class="fa-solid fa-angle-right"></i> {{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{/* POST-MORTEM */}}
+    {{ with $c.post_mortem }}
+    <div class="info-card info-card--warning reveal" style="margin-bottom:2rem;">
+      <div class="info-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <div>
+        <h3>Post-mortem in {{ $cname }}: what you need to know</h3>
+        <p>{{ .when_required }}. {{ .impact_on_timeline }}</p>
+      </div>
+    </div>
+    {{ end }}
+
+    {{/* DOCUMENTS */}}
+    <div class="reveal" style="margin-bottom:2rem;">
+      <p class="label-sm">Documentation</p>
+      <h2>Documents required for repatriation from {{ $cname }}</h2>
+      <p>All of these must be obtained before air transport can take place.</p>
+      {{ with $c.repatriation_process.step_6_documentation }}
+      <ul class="docs-checklist">
+        {{ range .documents_needed }}
+        <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ if .processing_time }}<p class="docs-note"><i class="fa-regular fa-clock"></i> Documentation typically takes <strong>{{ .processing_time }}</strong> to complete.</p>{{ end }}
+      {{ end }}
+    </div>
+
+    {{/* PROCESS SUMMARY (compact) */}}
+    <div class="reveal" style="margin-bottom:2rem;">
+      <p class="label-sm">The process</p>
+      <h2>Overview of the repatriation process from {{ $cname }}</h2>
+      <div class="chc-process-compact">
+        {{ range $i, $step := slice
+            $c.repatriation_process.step_1_immediate
+            $c.repatriation_process.step_2_death_certificate
+            $c.repatriation_process.step_3_embassy_notification
+            $c.repatriation_process.step_4_embalming
+            $c.repatriation_process.step_5_coffin
+            $c.repatriation_process.step_6_documentation
+            $c.repatriation_process.step_7_transport
+            $c.repatriation_process.step_8_uk_reception
+        }}
+        {{ if $step }}
+        <div class="chc-compact-step">
+          <span class="chc-compact-num">{{ add $i 1 }}</span>
+          <span class="chc-compact-title">{{ $step.title }}</span>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    {{/* FAQ */}}
+    {{ with $c.content_angles.faq_angles }}
+    <div class="reveal" style="margin-bottom:2rem;">
+      <p class="label-sm">Common questions</p>
+      <h2>Frequently asked questions</h2>
+      {{ range $i, $q := . }}
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="chc-faq-{{ $i }}">
+          {{ $q }}
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="chc-faq-{{ $i }}" class="faq-answer" hidden>
+          {{ if eq $i 0 }}
+            <p>Repatriation from {{ $cname }} typically takes <strong>{{ $c.typical_timeline.average_case }}</strong>. Complex cases can take {{ $c.typical_timeline.complex_case }} or longer.</p>
+          {{ else if eq $i 2 }}
+            <p>The key documents are: local death certificate, embalming certificate, freedom from infection certificate, and airline cargo documentation.</p>
+          {{ else }}
+            <p>Please <a href="/contact/">contact our team</a> for specific guidance. We are available 24 hours a day via our <a href="/contact/">enquiry form</a> or <a href="https://wa.me/{{ site.Params.whatsappNumber }}" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>{{/* end main col */}}
+
+  {{/* STICKY TIMELINE SIDEBAR */}}
+  <aside>
+    <div class="sidebar-sticky">
+      <div class="sidebar-helpline-card">
+        <p class="label-sm">24/7 emergency helpline</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+        <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:0.5rem;">Contact form</a>
+        <a href="#enquiry-form" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:0.5rem;">Send enquiry</a>
+      </div>
+      {{ with $c.typical_timeline }}
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">Timeline summary</p>
+        <div style="margin-top:0.75rem;">
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Best case</span>
+            <strong style="font-size:0.85rem;">{{ .fastest_case }}</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Typical</span>
+            <strong style="font-size:0.85rem;">{{ .average_case }}</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0;">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Complex</span>
+            <strong style="font-size:0.85rem;">{{ .complex_case }}</strong>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">Useful links</p>
+        <ul style="list-style:none; padding:0; margin:0.75rem 0 0;">
+          <li style="padding:0.3rem 0;"><a href="/embassy-contacts/{{ $c.slug }}/" style="font-size:0.9rem;">Embassy contacts: {{ $cname }}</a></li>
+          <li style="padding:0.3rem 0;"><a href="/bringing-ashes-home/{{ $c.slug }}/" style="font-size:0.9rem;">Bringing ashes from {{ $cname }}</a></li>
+          <li style="padding:0.3rem 0;"><a href="/faq/" style="font-size:0.9rem;">All repatriation FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+</div>{{/* end two-col */}}
+
+{{/* CONTACT FORM */}}
+<section class="quote-section" id="enquiry-form">
+  <div class="section-inner">
+    <h2 class="reveal">We are here to help, any time of day or night</h2>
+    <p class="quote-subtitle reveal">If your loved one has passed away in {{ $cname }}, please do not face this alone.</p>
+    <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
+      <input type="hidden" name="country" value="{{ $cname }}">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="chc-name">Your name <span class="required">*</span></label>
+          <input type="text" id="chc-name" name="name" placeholder="Full name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="chc-email">Email <span class="required">*</span></label>
+          <input type="email" id="chc-email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="chc-phone">Phone</label>
+          <input type="tel" id="chc-phone" name="phone" placeholder="+44..." autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="chc-service">Service needed</label>
+          <select id="chc-service" name="service">
+            <option value="">Select</option>
+            <option value="full_repatriation">Full body repatriation</option>
+            <option value="ashes_transport">Ashes transport</option>
+            <option value="cremation_abroad">Cremation abroad</option>
+            <option value="guidance_only">Guidance only</option>
+          </select>
+        </div>
+        <div class="form-group form-group-full">
+          <label for="chc-message">Message</label>
+          <textarea id="chc-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+        </div>
+      </div>
+      <div style="display:none;" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+      <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt editorial-credit-section">
+  <div class="section-inner">
+    <div class="editorial-credit">
+      <i class="fa-solid fa-circle-check"></i>
+      <div>
+        <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/embassy-contacts/{{ $c.slug }}/">Embassy contacts: {{ $cname }}</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ else }}
+<section class="section">
+  <div class="section-inner">
+    <p>Repatriation guidance for {{ .Title }} is being prepared. Please <a href="/contact/">contact our team</a> for immediate assistance.</p>
+  </div>
+</section>
+{{ end }}
+
+</div>{{/* end .tpl-ch-c */}}

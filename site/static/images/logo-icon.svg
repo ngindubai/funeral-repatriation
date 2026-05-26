@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <!-- Background -->
+  <rect width="160" height="160" rx="16" fill="#D5A021"/>
+  <!-- Globe -->
+  <circle cx="80" cy="96" r="52" stroke="white" stroke-width="7" fill="none"/>
+  <!-- Equator curve -->
+  <path d="M28 96 Q54 82 80 96 Q106 110 132 96" stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <!-- Vertical meridian -->
+  <path d="M80 44 Q66 70 80 96 Q94 122 80 148" stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <!-- Flight arc above globe (journey home) -->
+  <path d="M34 62 Q80 20 126 62" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Destination point -->
+  <circle cx="124" cy="63" r="9" fill="white"/>
+</svg>

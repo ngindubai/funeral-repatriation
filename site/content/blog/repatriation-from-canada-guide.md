@@ -1,5 +1,5 @@
----
-title: "Repatriation from Canada: what UK families need to know"
+﻿---
+title: "Repatriation from Canada to the UK"
 description: "A practical guide to repatriating a loved one from Canada to the UK, including provincial paperwork differences, timeline, costs, and airport logistics."
 date: 2026-04-21
 slug: repatriation-from-canada-guide

@@ -1,0 +1,680 @@
+{
+  "france": {
+    "name": "France",
+    "slug": "france",
+    "death_volume_rank": 2,
+    "british_deaths_per_year_est": "~500-700",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 2,500-7,000",
+    "content_angles_primary_angle": "France is the second most common country for British deaths abroad, driven by a large expat community in rural southern France and high tourist volume. Proximity to the UK and multiple transport options (air, road, rail, ferry) make repatriation logistically simpler, but the Napoleonic legal system and strict timelines create paperwork challenges.",
+    "content_angles_unique_selling_points": [
+      "Multiple transport options: air, road (ferry/Eurotunnel), rail (Eurostar)",
+      "Very short distance: 1-hour flight, or day-trip by road",
+      "Professional, regulated funeral industry with mandatory price transparency"
+    ],
+    "content_angles_common_complications": [
+      "Post-mortem reports at Institut Medico Legal can take months",
+      "Tissue/organ samples may be retained without consent during investigation",
+      "Napoleonic legal system processes differ significantly from UK common law expectations",
+      "6-day burial/cremation deadline creates time pressure",
+      "August holiday closures affect all French offices and services"
+    ],
+    "step_1_immediate_details": "Contact emergency services (15 for SAMU medical emergency, 17 for police, 18 for fire service, or 112 pan-European). A doctor must certify the death and issue a certificat de deces. The hospital or medical professional usually initiates the registration process. Contact the British Embassy in Paris or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": false,
+      "multilingual_available": true,
+      "only_one_original": null,
+      "local_term": "Acte de Deces",
+      "processing_time": "1-2 days (registration must happen within 24 hours)"
+    },
+    "step_5_coffin_notes": "IATA requirement, not France-specific. French coffin standards are high.",
+    "step_6_documentation_notes": "French paperwork is thorough but well-organised. The 24-hour registration deadline means the initial certificate is usually obtained quickly. Permission to transfer (autorisation de transport) must be obtained from the mairie or prefectures.",
+    "post_mortem_when_required": "Post mortem conducted at Institut Medico Legal (IML) if ordered. Required for cases of violent, sudden, or unexplained death.",
+    "post_mortem_impact_on_timeline": "Can delay repatriation significantly. Reports sometimes take months.",
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "greece": {
+    "name": "Greece",
+    "slug": "greece",
+    "death_volume_rank": 5,
+    "british_deaths_per_year_est": "~200-300",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 3,000-8,000",
+    "content_angles_primary_angle": "Greece's island geography is the defining challenge. Most British deaths happen on islands (Crete, Corfu, Rhodes, Zakynthos, Santorini, Kos), and every island death requires a transfer to Athens before international repatriation. This adds time, cost, and logistical complexity. The rapid Orthodox funeral tradition (24-48 hours) and the 3-year exhumation practice are the other key differentiators.",
+    "content_angles_unique_selling_points": [
+      "Expert knowledge of island-to-Athens logistics",
+      "Understanding of Greek Orthodox customs and their impact on timing",
+      "Awareness of the exhumation tradition for families considering local burial"
+    ],
+    "content_angles_common_complications": [
+      "Island deaths require transfer to Athens before international flight (major logistical step)",
+      "No multilingual death certificate: translation must be arranged separately",
+      "Post-mortem reports can take months or over a year",
+      "Tourist season (June-September) creates processing backlogs",
+      "Smaller islands have very basic funeral facilities"
+    ],
+    "step_1_immediate_details": "Contact emergency services (112 or 166 for ambulance, 100 for police). A doctor certifies the death and issues a medical certificate. Contact the British Embassy in Athens or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": false,
+      "only_one_original": null,
+      "local_term": "Lixiarxiki Praxi Thanatou",
+      "processing_time": "2-5 days"
+    },
+    "step_5_coffin_notes": "IATA requirement. Coffin availability on smaller islands may be limited for IATA-spec zinc-lined coffins.",
+    "step_6_documentation_notes": "Greek bureaucracy can be slow, particularly during tourist season and on islands. The lack of a multilingual death certificate means translation adds time and cost. Need prosecutor permission if post-mortem was conducted.",
+    "post_mortem_when_required": "Post mortem ordered by the prosecutor if death is sudden, unexplained, or suspicious.",
+    "post_mortem_impact_on_timeline": "Can delay repatriation significantly. Prosecutor must give permission to release the body.",
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "portugal": {
+    "name": "Portugal",
+    "slug": "portugal",
+    "death_volume_rank": 7,
+    "british_deaths_per_year_est": "~100-200",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 2,500-6,500",
+    "content_angles_primary_angle": "Portugal is one of the most straightforward European repatriations for British families. The large established British community in the Algarve means English-speaking funeral directors, well-worn processes, and good UK flight connections. It is very similar to Spain in process but with a smaller, more concentrated British population. The Algarve expat community angle is the key differentiator.",
+    "content_angles_unique_selling_points": [
+      "Well-established British community with support networks in the Algarve",
+      "English-speaking funeral directors experienced with British repatriations",
+      "Good UK flight connectivity from Faro to multiple regional airports"
+    ],
+    "content_angles_common_complications": [
+      "Post-mortem investigation by public prosecutor can delay release",
+      "Madeira and Azores deaths add an internal transport leg",
+      "August holiday season reduces staffing",
+      "Rural inland areas may have limited English-speaking services",
+      "Post-Brexit: some procedures may have changed for non-EU nationals"
+    ],
+    "step_1_immediate_details": "Contact emergency services (112 for all emergencies). A doctor must certify the death and issue a certificate of death (certificado de obito). If death occurs outside a hospital, contact the local PSP (Policia de Seguranca Publica) in urban areas or GNR (Guarda Nacional Republicana) in rural areas. Contact the British Embassy in Lisbon.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": false,
+      "multilingual_available": true,
+      "only_one_original": null,
+      "local_term": "Certidao de Obito (Death Certificate)",
+      "processing_time": "1-3 days"
+    },
+    "step_5_coffin_notes": "IATA requirement. Portuguese funeral directors are familiar with international transport specifications.",
+    "step_6_documentation_notes": "Portuguese bureaucracy is generally efficient for repatriation, similar to Spain. The availability of multilingual death certificates simplifies the process. Algarve funeral directors experienced with British repatriations can often expedite paperwork.",
+    "post_mortem_when_required": "Post mortem ordered by the public prosecutor (Ministerio Publico) if death is sudden, violent, suspicious, or cause of death is unknown.",
+    "post_mortem_impact_on_timeline": "Can delay repatriation by 1-4 weeks. Prosecutor must authorise release of the body.",
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "italy": {
+    "name": "Italy",
+    "slug": "italy",
+    "death_volume_rank": 8,
+    "british_deaths_per_year_est": "~150-250",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 3,000-8,000",
+    "content_angles_primary_angle": "Italy's comuni system creates the defining challenge: over 7,900 municipalities each handle death registration independently, so process and timing vary by location. Italian bureaucracy is professional but operates at its own pace. The spread of tourist destinations (Rome, Florence, Venice, ski resorts, lakes, Amalfi Coast, Sardinia, Sicily) means repatriation logistics differ by region. The nulla osta document is a key bottleneck unique to the Italian system.",
+    "content_angles_unique_selling_points": [
+      "Navigation of the comuni system and regional bureaucratic variation",
+      "Understanding of the nulla osta process and how to avoid delays",
+      "Knowledge of ski resort death logistics (Dolomites)"
+    ],
+    "content_angles_common_complications": [
+      "Comuni system means paperwork varies by location",
+      "Nulla osta can be a bottleneck, particularly with prosecutor involvement",
+      "Italian bureaucracy can be slow: Ferragosto (mid-August), local feast days, and weekends all cause closures",
+      "Sardinia and Sicily add internal transport steps",
+      "Dolomites ski resort deaths involve mountain rescue and accessibility challenges"
+    ],
+    "step_1_immediate_details": "Contact emergency services (112 for all emergencies, or 113 for police, 118 for ambulance). A doctor must certify the death. If death occurs outside a hospital, the Carabinieri (112) or Polizia di Stato (113) will attend. Contact the British Embassy in Rome or the nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": false,
+      "multilingual_available": true,
+      "only_one_original": null,
+      "local_term": "Certificato di Morte or Estratto di Morte",
+      "processing_time": "2-7 days (varies by comune. Major cities may be faster. Small comuni may be slower.)"
+    },
+    "step_5_coffin_notes": "IATA requirement. Italian coffin standards are high. Italy has a strong tradition of ornate coffins, so IATA-spec transport coffins are a separate product.",
+    "step_6_documentation_notes": "Italian bureaucracy is notoriously slow. The comuni system means each municipality operates semi-independently. Nulla osta (clearance certificate) can sometimes be the bottleneck, particularly if post-mortem is involved. Tourist-area funeral directors experienced with foreign nationals can help navigate. Weekend and public holiday closures (Italy has many patron saint feast days that are local holidays) can add delays.",
+    "post_mortem_when_required": "Post mortem ordered by the procuratore della Repubblica (public prosecutor) if death is sudden, violent, suspicious, or cause unknown.",
+    "post_mortem_impact_on_timeline": "Can delay repatriation by 2-6 weeks. Prosecutor must issue nulla osta (clearance) to release the body.",
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "egypt": {
+    "name": "Egypt",
+    "slug": "egypt",
+    "death_volume_rank": 10,
+    "british_deaths_per_year_est": "~50-120",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 3,000-8,000",
+    "content_angles_primary_angle": "Egypt is defined by the Red Sea resort corridor: Hurghada and Sharm el-Sheikh account for the vast majority of British deaths. These tourist-focused areas have funeral directors experienced with foreign nationals, but there is no British consulate in the region (handled from Cairo). The complete absence of cremation facilities, the Arabic-only documentation, and the variable embalming quality outside Cairo are the key challenges. Political instability is an ever-present background factor.",
+    "content_angles_unique_selling_points": [
+      "Red Sea resort death expertise (Hurghada, Sharm el-Sheikh)",
+      "Understanding of Egyptian bureaucracy and Arabic documentation requirements",
+      "Knowledge of embalming quality variation and when to transport body to Cairo for preparation"
+    ],
+    "content_angles_common_complications": [
+      "No cremation available in Egypt: full body repatriation only",
+      "Embalming quality outside Cairo may not meet European standards",
+      "All documentation in Arabic: translation adds time and cost",
+      "Ministry of Foreign Affairs stamping required for international validity",
+      "No British consulate in Red Sea resort areas (handled from Cairo, adds delays)"
+    ],
+    "step_1_immediate_details": "Contact local emergency services (122 for police, 123 for ambulance). If death occurs in a hotel or resort, the hotel management will typically contact police and a doctor. A doctor must certify the death. Police will attend for all deaths of foreign nationals. Contact the British Embassy in Cairo.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Shahadat Wafaa (Death Certificate)",
+      "processing_time": "3-7 days in tourist areas. Potentially longer elsewhere."
+    },
+    "step_5_coffin_notes": "IATA requirement. IATA-spec zinc-lined coffins are available in Cairo. Availability in Hurghada, Sharm el-Sheikh, and Luxor may be limited, potentially requiring sourcing from Cairo.",
+    "step_6_documentation_notes": "Egyptian bureaucracy requires multiple office visits and stamps. All documentation is in Arabic and requires translation. The Ministry of Foreign Affairs stamp is essential for international validity. Red Sea tourist areas have local officials experienced with foreign national deaths who can streamline the process. Outside tourist areas, the process is slower and less predictable. Political instability can affect government office operations intermittently.",
+    "post_mortem_when_required": "Post mortem ordered by Egyptian public prosecutor (niyaba) for all unnatural, sudden, violent, or suspicious deaths. Routinely ordered for foreign national deaths in tourist areas.",
+    "post_mortem_impact_on_timeline": "Can delay repatriation by 2-6 weeks. Prosecutor must authorise release of the body.",
+    "ashes_transport_cremation_available": false,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "mexico": {
+    "name": "Mexico",
+    "slug": "mexico",
+    "death_volume_rank": 10,
+    "british_deaths_per_year_est": "~150-250",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "Resort deaths (Cancun, Riviera Maya) are the main scenario. Drug violence areas add a completely different complexity for families whose loved ones died in those regions.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact emergency services (911). If at a resort, hotel management will assist. Contact British Embassy in Mexico City.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Acta de Defuncion",
+      "processing_time": "2-5 days (longer if SEMEFO involved)"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": null,
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "australia": {
+    "name": "Australia",
+    "slug": "australia",
+    "death_volume_rank": 11,
+    "british_deaths_per_year_est": "~80-150",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 6,000-15,000",
+    "content_angles_primary_angle": "Australia's extreme distance from the UK makes this one of the most expensive repatriation routes. The 22-24 hour flight time and high freight costs dominate. However, the shared language, professional funeral industry, and familiar bureaucratic systems make the process itself relatively straightforward compared to non-English-speaking destinations. The large British emigrant community means many deaths are elderly natural causes among long-term residents, not tourists.",
+    "content_angles_unique_selling_points": [
+      "English-speaking destination: no language or translation barriers",
+      "Professional, UK-comparable funeral industry standards",
+      "Qantas Perth-London direct route simplifies Western Australian repatriations"
+    ],
+    "content_angles_common_complications": [
+      "Extreme distance drives very high freight costs (GBP 4,000-9,000)",
+      "State-by-state coronial variation (6 states, 2 territories)",
+      "Remote or outback deaths involve significant internal transport logistics",
+      "Time zone difference (8-11 hours) slows real-time communication with family in UK",
+      "High local funeral industry costs (comparable to UK, not cheaper like Asia)"
+    ],
+    "step_1_immediate_details": "Call 000 (triple zero) for emergency services. If death occurs in hospital, hospital staff handle initial procedures. If death is unexpected, police and the state/territory coroner may be involved. Contact the British High Commission in Canberra or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "3-10 days (varies by state)"
+    },
+    "step_5_coffin_notes": "IATA requirement. Australian coffin costs are comparable to UK prices. Widely available in all capital cities.",
+    "step_6_documentation_notes": "Australian documentation processes are generally efficient and English-language. State-by-state variation exists but all systems are well-organised. No translation needed.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "indonesia": {
+    "name": "Indonesia",
+    "slug": "indonesia",
+    "death_volume_rank": 11,
+    "british_deaths_per_year_est": "~100-200",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 5,000-12,000",
+    "content_angles_primary_angle": "Bali dominates (~90% of British deaths in Indonesia). The Hindu-Bali vs Muslim-Java cultural split is unique. Volcanic disruption is a real logistical threat. Inter-island transport for deaths outside Bali is complex.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact police (110) or ambulance (118/119). In Bali, contact British Consulate Bali directly. For other islands, contact British Embassy Jakarta.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Surat Kematian",
+      "processing_time": "3-7 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": null,
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "germany": {
+    "name": "Germany",
+    "slug": "germany",
+    "death_volume_rank": 12,
+    "british_deaths_per_year_est": "~80-150",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 2,500-6,000",
+    "content_angles_primary_angle": "Germany offers one of the most efficient European repatriation processes. The Totenschein/Leichenpass system is thorough but well-organised. Excellent cargo infrastructure via Lufthansa and multiple direct UK flights make logistics simple. The main content angle is efficiency and professionalism rather than difficulty.",
+    "content_angles_unique_selling_points": [
+      "Efficient, well-organised bureaucracy (by European standards)",
+      "Leichenpass system is thorough but predictable",
+      "Excellent aviation infrastructure: Lufthansa Cargo, multiple daily UK flights"
+    ],
+    "content_angles_common_complications": [
+      "Leichenpass (corpse passport) is an additional document not required in some countries",
+      "State-by-state (Bundesland) variation in funeral laws",
+      "German-language documentation requires translation unless multilingual version obtained",
+      "Bavarian Alps ski resort deaths may involve mountain rescue delays",
+      "Eastern Germany may have slightly slower processing"
+    ],
+    "step_1_immediate_details": "Call 112 for emergency services. A doctor must certify the death and issue a Totenschein (death certificate/doctor's certificate of death). If death occurs outside hospital, police may attend. Contact the British Embassy in Berlin or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": false,
+      "multilingual_available": true,
+      "only_one_original": null,
+      "local_term": "Sterbeurkunde (civil registry certificate) / Totenschein (medical certificate)",
+      "processing_time": "1-3 days"
+    },
+    "step_5_coffin_notes": "IATA requirement. German coffin standards are among the highest in Europe.",
+    "step_6_documentation_notes": "German bureaucracy is efficient and well-organised. The Leichenpass (corpse passport) is a distinctive German requirement. Documentation processes are thorough but predictable. Funeral directors handle most paperwork.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "brazil": {
+    "name": "Brazil",
+    "slug": "brazil",
+    "death_volume_rank": 12,
+    "british_deaths_per_year_est": "~100-150",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 5,000-12,000",
+    "content_angles_primary_angle": "Brazilian bureaucracy is the main challenge. IML involvement, apostille requirements, and holiday closures (especially Carnival) can extend timelines significantly.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact local emergency services (SAMU 192 or police 190). If death occurs in hospital, staff will initiate procedures. Contact British Embassy or Consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Certidao de Obito",
+      "processing_time": "3-7 days (IML post-mortem can add 1-3 weeks)"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": "Brazilian bureaucracy is notoriously slow. Apostille requirement adds time. ANVISA (health authority) clearance needed.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "cyprus": {
+    "name": "Cyprus",
+    "slug": "cyprus",
+    "death_volume_rank": 13,
+    "british_deaths_per_year_est": "~60-120",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 2,500-6,000",
+    "content_angles_primary_angle": "Cyprus is one of the simplest repatriation destinations for British families. The large, established British community means English-speaking funeral directors, bilingual documentation, and familiar support networks. The small island size eliminates complex internal logistics. The main complication is deaths in Northern Cyprus, which involves a divided political situation.",
+    "content_angles_unique_selling_points": [
+      "Large established British community with support networks",
+      "English widely spoken, bilingual documentation",
+      "Small island: no complex internal transport logistics"
+    ],
+    "content_angles_common_complications": [
+      "Death in Northern Cyprus creates significant political and logistical complications",
+      "British Sovereign Base Areas involve additional military authority processes",
+      "Very limited cremation facilities",
+      "Greek Orthodox Easter and summer holidays can slow processing",
+      "Split island political situation remains complex"
+    ],
+    "step_1_immediate_details": "Call 112 or 199 for ambulance, 199 for police. A doctor must certify the death. If death occurs outside hospital, police will attend. Contact the British High Commission in Nicosia. For deaths in the British Sovereign Base Areas (Akrotiri and Dhekelia), British military authorities may be involved.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "2-5 days"
+    },
+    "step_5_coffin_notes": "IATA requirement. Available across the Republic of Cyprus.",
+    "step_6_documentation_notes": "Cypriot documentation is relatively straightforward. Bilingual certificates reduce translation needs. Small island size means fewer logistical complications. Funeral directors in Paphos and Limassol handle British repatriations routinely.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest.",
+    "unique_fields": {
+      "split_island_note": "Cyprus is a divided island. The Republic of Cyprus (south) is internationally recognised. Northern Cyprus (Turkish Republic of Northern Cyprus, TRNC) is recognised only by Turkey. British nationals dying in Northern Cyprus face additional complications as UK consular services operate differently there."
+    }
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "slug": "vietnam",
+    "death_volume_rank": 13,
+    "british_deaths_per_year_est": "~50-100",
+    "typical_timeline_average_case": "14-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "Growing tourism destination with motorbike accidents as the leading cause of tourist deaths. Vietnam Airlines direct flights are a positive for repatriation logistics.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact police (113) or ambulance (115). Contact British Embassy Hanoi or Consulate Ho Chi Minh City.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Giay Chung Tu",
+      "processing_time": "3-10 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": "Vietnamese government bureaucracy can be slow. Embassy assistance recommended.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "uae": {
+    "name": "United Arab Emirates",
+    "slug": "uae",
+    "death_volume_rank": 14,
+    "british_deaths_per_year_est": "~80-150",
+    "typical_timeline_average_case": "7-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 3,000-8,000",
+    "content_angles_primary_angle": "The UAE combines modern, efficient infrastructure with Islamic legal frameworks. British families benefit from excellent cargo links (Emirates SkyCargo operates one of the world's largest cargo networks), widespread English, and professional funeral services experienced with high volumes of international repatriations. The strict police investigation process and MOFA attestation requirements add steps, but the system works efficiently by Middle Eastern standards.",
+    "content_angles_unique_selling_points": [
+      "Excellent cargo infrastructure: Emirates SkyCargo, Etihad Cargo, multiple daily UK flights",
+      "English widely spoken: minimal language barriers",
+      "System experienced with very high volumes of international repatriations"
+    ],
+    "content_angles_common_complications": [
+      "Mandatory police investigation for all deaths: clearance must be obtained",
+      "MOFA attestation adds a processing step",
+      "Islamic law (Sharia) considerations for Muslim deceased",
+      "Ramadan and Eid holidays reduce government office hours",
+      "UAE zero-tolerance drug policy: drug-related death investigations can be prolonged"
+    ],
+    "step_1_immediate_details": "Call 999 for police or 998 for ambulance. In Dubai, call Dubai Police (901). A doctor must certify the death. All deaths must be reported to the police, who issue a police report. This police report is essential for all subsequent steps. Contact the British Embassy in Abu Dhabi or the British Consulate in Dubai.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "2-5 days"
+    },
+    "step_5_coffin_notes": "IATA requirement. UAE funeral services suppliers are well-stocked due to high repatriation volume.",
+    "step_6_documentation_notes": "UAE bureaucracy is efficient by regional standards but requires multiple steps. The police clearance/NOC is essential and can be delayed if any investigation is pending. Islamic weekend (Friday-Saturday in some emirates, though many shifted to Saturday-Sunday) affects office hours. MOFA attestation is a required step for international validity.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest. Cremation destroys evidence.",
+    "unique_fields": null
+  },
+  "morocco": {
+    "name": "Morocco",
+    "slug": "morocco",
+    "death_volume_rank": 14,
+    "british_deaths_per_year_est": "~50-100",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 2,000-5,000",
+    "content_angles_primary_angle": "Dual market: British tourists dying in Morocco AND British Moroccan diaspora wanting Islamic repatriation TO Morocco. The reverse repatriation angle is significant.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact police (15) or ambulance (150). Hospital or doctor certifies death. Contact British Embassy Rabat.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Acte de Deces",
+      "processing_time": "1-3 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": null,
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": false,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "philippines": {
+    "name": "Philippines",
+    "slug": "philippines",
+    "death_volume_rank": 15,
+    "british_deaths_per_year_est": "~40-80",
+    "typical_timeline_average_case": "3-6 weeks",
+    "cost_guide_total_typical_range_gbp": "GBP 5,000-12,000",
+    "content_angles_primary_angle": "The Philippines is one of the slowest and most complex repatriation destinations. The 3-6 week average timeline is driven by dual PSA/DFA authentication, Bureau of Quarantine clearance, and island geography requiring internal transport to Manila. No direct UK flights mean all cargo routes require connections. The reverse repatriation angle (Filipino diaspora in the UK) is a significant content opportunity.",
+    "content_angles_unique_selling_points": [
+      "Expert navigation of PSA/DFA dual authentication process",
+      "Understanding of island logistics (Cebu, Boracay, Palawan, Mindanao to Manila)",
+      "Cremation as major cost and time-saving alternative"
+    ],
+    "content_angles_common_complications": [
+      "3-6 week timeline is the norm due to authentication requirements",
+      "Island geography: provincial/island deaths require transport to Manila",
+      "Typhoon season (June-November) disrupts transport",
+      "No direct UK flights: all routes require connections",
+      "Limited British consular presence (Manila only)"
+    ],
+    "step_1_immediate_details": "Contact local emergency services (911 in Metro Manila, or local police). If death occurs in hospital, the hospital handles initial procedures. If death is unexpected, police must be notified. In provincial areas, the local barangay captain may be involved. Contact the British Embassy in Manila.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "5-14 days (PSA and DFA authentication can take weeks)"
+    },
+    "step_5_coffin_notes": "IATA-spec coffins available in Manila and Cebu. Provincial areas may need coffins sourced from Manila.",
+    "step_6_documentation_notes": "Philippine documentation is complex and slow. The dual PSA and DFA authentication requirements add weeks. Bureau of Quarantine clearance is an additional step. Provincial deaths require documents to be processed in Manila, adding internal logistics. The 3-6 week timeline is the norm, not the exception.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate abroad if a UK coroner may need to hold an inquest.",
+    "unique_fields": null
+  },
+  "dominican-republic": {
+    "name": "Dominican Republic",
+    "slug": "dominican-republic",
+    "death_volume_rank": 15,
+    "british_deaths_per_year_est": "~30-60",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "All-inclusive resort deaths dominate. Families on holiday in Punta Cana. Sudden death at resort. Limited British consular infrastructure makes this harder than Caribbean neighbours.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact emergency services (911). Hotel/resort staff will usually assist. Contact British Embassy (nearest full embassy may be in Washington or regional consular network).",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": "Acta de Defuncion",
+      "processing_time": "3-7 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": null,
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "south-africa": {
+    "name": "South Africa",
+    "slug": "south-africa",
+    "death_volume_rank": 16,
+    "british_deaths_per_year_est": "~60-120",
+    "typical_timeline_average_case": "10-21 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "South Africa presents a unique combination of professional, English-speaking funeral services with the specific challenge of crime-related deaths. Crime is a significant factor in British deaths in South Africa, and crime-related deaths trigger lengthy medico-legal inquests that can delay repatriation by months. Safari deaths in remote national parks add internal transport complexity.",
+    "content_angles_unique_selling_points": [
+      "English-speaking: documentation and communication straightforward",
+      "Professional funeral industry comparable to European standards",
+      "Understanding of crime-related death processes and SAPS investigation timelines"
+    ],
+    "content_angles_common_complications": [
+      "Crime-related deaths trigger medico-legal inquests delaying death certificate by months",
+      "SAPS investigation must provide clearance",
+      "Department of Home Affairs can be slow with documentation",
+      "Safari/national park deaths require internal transport from remote areas",
+      "Load-shedding (scheduled power outages) can affect mortuary refrigeration"
+    ],
+    "step_1_immediate_details": "Call 10111 for police or 10177 for ambulance. If death occurs in hospital, the hospital handles initial procedures. For deaths outside hospital, South African Police Service (SAPS) must attend. Crime-related deaths trigger SAPS investigation. Contact the British High Commission in Pretoria or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "3-14 days for natural deaths. Months for unnatural deaths (awaiting inquest)."
+    },
+    "step_5_coffin_notes": "IATA requirement. Available from professional funeral directors in major cities.",
+    "step_6_documentation_notes": "Documentation is relatively efficient for natural deaths in major cities. Unnatural deaths (crime, accidents) trigger medico-legal investigations that can delay the death certificate by months. The South African Police Service must provide clearance for all repatriations.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate if a UK coroner may need to hold an inquest. ESPECIALLY important for crime-related deaths in South Africa.",
+    "unique_fields": null
+  },
+  "sri-lanka": {
+    "name": "Sri Lanka",
+    "slug": "sri-lanka",
+    "death_volume_rank": 16,
+    "british_deaths_per_year_est": "~20-40",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "Beach and surf tourism deaths. Routing via Middle East hubs. Limited direct cargo capacity. 2004 tsunami memorial context (not to be exploited but acknowledged).",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact police (119) or ambulance (110). Contact British High Commission Colombo.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "3-7 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": null,
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "kenya": {
+    "name": "Kenya",
+    "slug": "kenya",
+    "death_volume_rank": 17,
+    "british_deaths_per_year_est": "~30-60",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-10,000",
+    "content_angles_primary_angle": "Kenya's safari tourism is the defining content angle. Many British deaths in Kenya involve tourists on safari in remote game reserves (Masai Mara, Amboseli, Tsavo), where internal transport to Nairobi is the primary logistical challenge. Light aircraft charters from bush airstrips may be needed. The Mombasa coast also sees tourist deaths. Nairobi is the processing hub for all repatriations.",
+    "content_angles_unique_selling_points": [
+      "Safari death logistics expertise (Masai Mara, bush airstrips, internal transport)",
+      "Understanding of Kenyan police and Port Health clearance processes",
+      "Good direct Nairobi-London connectivity (KQ and BA)"
+    ],
+    "content_angles_common_complications": [
+      "Safari deaths in remote reserves require significant internal transport",
+      "Light aircraft may be needed from bush airstrips (weather dependent)",
+      "Police clearance can be slow",
+      "Death certificate processing varies by district",
+      "Rural/bush area facilities are very basic"
+    ],
+    "step_1_immediate_details": "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend. The police arrange removal to a mortuary. Contact the British High Commission in Nairobi.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "3-14 days (Nairobi). Longer in rural/remote areas."
+    },
+    "step_5_coffin_notes": "IATA-spec coffins available in Nairobi. Limited availability outside the capital.",
+    "step_6_documentation_notes": "Kenyan documentation can be slow, particularly for the death certificate and police clearance. Nairobi processes are faster than provincial offices. Port Health clearance (freedom from infection) is an additional step. Safari deaths in remote areas add significant internal transport time before documentation can even begin.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate if a UK coroner may need to hold an inquest.",
+    "unique_fields": null
+  },
+  "cambodia": {
+    "name": "Cambodia",
+    "slug": "cambodia",
+    "death_volume_rank": 17,
+    "british_deaths_per_year_est": "~15-30",
+    "typical_timeline_average_case": "14-28 days",
+    "cost_guide_total_typical_range_gbp": "GBP 5,000-12,000",
+    "content_angles_primary_angle": "Limited infrastructure is the core challenge. Everything routes via Bangkok or Singapore. This is one of the harder repatriations logistically.",
+    "content_angles_unique_selling_points": [],
+    "content_angles_common_complications": [],
+    "step_1_immediate_details": "Contact local police (117) or ambulance (119). Hospital capacity varies enormously. Contact British Embassy Phnom Penh.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": null,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "5-14 days"
+    },
+    "step_5_coffin_notes": null,
+    "step_6_documentation_notes": "Cambodian bureaucracy is slow. Embassy assistance recommended throughout.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": null,
+    "unique_fields": null
+  },
+  "canada": {
+    "name": "Canada",
+    "slug": "canada",
+    "death_volume_rank": 18,
+    "british_deaths_per_year_est": "~60-120",
+    "typical_timeline_average_case": "7-14 days",
+    "cost_guide_total_typical_range_gbp": "GBP 4,000-12,000",
+    "content_angles_primary_angle": "Canada combines familiar English-speaking systems with the complication of vast geography and provincial regulatory variation. The process itself is straightforward (similar to the USA but with fewer hospital bill complications). The main challenges are internal transport for remote/wilderness/ski resort deaths and the distance-driven freight costs. Provincial variation (10 provinces, 3 territories, each with their own systems) mirrors the USA's state-by-state complexity.",
+    "content_angles_unique_selling_points": [
+      "English-speaking: no language or translation barriers (except Quebec)",
+      "Professional, UK-comparable funeral industry",
+      "Air Canada Cargo provides reliable UK connectivity"
+    ],
+    "content_angles_common_complications": [
+      "Vast geography: internal transport from remote areas can be complex and expensive",
+      "Provincial variation in death investigation systems (coroner vs medical examiner)",
+      "Ski resort deaths (Whistler, Banff) require mountain rescue and internal transport",
+      "Northern territory deaths (Yukon, NWT, Nunavut) involve extremely remote logistics",
+      "Winter weather can delay internal transport"
+    ],
+    "step_1_immediate_details": "Call 911 for emergency services. If death occurs in hospital, the hospital handles initial procedures. Unexpected deaths may trigger coroner or medical examiner involvement (system varies by province). Contact the British High Commission in Ottawa or nearest consulate.",
+    "step_2_death_certificate": {
+      "shows_cause_of_death": true,
+      "multilingual_available": null,
+      "only_one_original": null,
+      "local_term": null,
+      "processing_time": "3-10 days (varies by province)"
+    },
+    "step_5_coffin_notes": "IATA requirement. Widely available. Canadian funeral directors experienced with international transport.",
+    "step_6_documentation_notes": "Canadian documentation is efficient and English-language (French in Quebec, but bilingual options available). Provincial variation exists but all systems are well-organised. No translation required for English provinces.",
+    "post_mortem_when_required": null,
+    "post_mortem_impact_on_timeline": null,
+    "ashes_transport_cremation_available": true,
+    "ashes_transport_critical_warning": "Do NOT cremate if a UK coroner may need to hold an inquest.",
+    "unique_fields": null
+  }
+}

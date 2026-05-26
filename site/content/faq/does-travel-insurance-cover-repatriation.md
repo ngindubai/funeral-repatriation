@@ -1,4 +1,4 @@
----
+﻿---
 title: "Does travel insurance cover repatriation?"
 description: "Most comprehensive travel insurance policies do cover repatriation, but with conditions. Here is what the policy typically says and what to watch for."
 slug: does-travel-insurance-cover-repatriation
@@ -17,7 +17,7 @@ A standard comprehensive travel insurance policy will cover:
 - The cost of an approved repatriation case or zinc-lined coffin
 - Emergency travel for a family member to be present in the country of death (some policies)
 
-Coverage limits vary. Common limits are £10,000-30,000 for repatriation costs. In most cases, this is sufficient for European repatriation and sufficient (but closer to the limit) for long-haul routes.
+Coverage limits vary. Most comprehensive policies provide sufficient cover for European repatriation and sufficient (but closer to the limit) cover for long-haul routes.
 
 ## Conditions that affect claims
 
@@ -43,6 +43,3 @@ If the insurer refuses to pay, the next step is a formal complaint to the insure
 
 Keep all documentation: the original policy, receipts, medical certificates, death certificate, and all correspondence with the insurer.
 
-## Cost without insurance
-
-If there is no policy, or the claim is declined in full, see our guide on what happens when there is no travel insurance.

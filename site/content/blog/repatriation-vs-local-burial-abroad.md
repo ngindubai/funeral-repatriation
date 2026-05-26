@@ -1,5 +1,5 @@
----
-title: "Repatriation vs local burial abroad: a guide for families"
+﻿---
+title: "Repatriation vs Local Burial Abroad: A Guide"
 description: "How to decide between repatriating a loved one to the UK or arranging a local burial abroad. Costs, practical factors, and family considerations."
 date: 2025-04-14
 slug: repatriation-vs-local-burial-abroad
@@ -13,7 +13,7 @@ Most families assume repatriation is the only option. Some discover that local b
 
 Repatriation means transporting the body of the deceased from the country of death to the United Kingdom for a funeral and burial or cremation here. The body travels in a specialist zinc-lined coffin in aircraft cargo, accompanied by documentation that satisfies both the country of departure and UK receiving authorities.
 
-The total process, from death to funeral in the UK, typically takes 2-6 weeks depending on the country and circumstances. The cost ranges from £3,000 to £15,000 or more, depending on distance and complexity.
+The total process, from death to funeral in the UK, typically takes 2-6 weeks depending on the country and circumstances.
 
 ## What local burial involves
 
@@ -21,7 +21,7 @@ Local burial means arranging a funeral and burial in the country of death. Most 
 
 Local burial is legally straightforward in most countries — there is no international permit needed for burial in the country of death. The family may or may not be able to attend the funeral depending on how quickly they can get to the country.
 
-Costs are typically lower than repatriation. A funeral and burial in Thailand costs significantly less than £3,000 in most cases. In Spain, Portugal, or France, costs are more comparable to UK rates. In countries with very different economic conditions, the disparity is larger.
+Costs are typically lower than repatriation. A funeral and burial in Thailand costs less than a UK repatriation in most cases. In Spain, Portugal, or France, costs are more comparable to UK rates. In countries with very different economic conditions, the disparity is larger.
 
 ## The case for repatriation
 
@@ -35,7 +35,7 @@ Costs are typically lower than repatriation. A funeral and burial in Thailand co
 
 ## The case for local burial
 
-**Cost.** This is the most common reason families consider it. Where travel insurance does not cover repatriation, the cost of bringing someone home from Thailand, India, or South America can be £8,000-15,000. If the family is not in a financial position to cover this (or if the insurer disputes the claim), local burial may be the only practical option.
+**Cost.** This is the most common reason families consider it. Where travel insurance does not cover repatriation, bringing someone home from Thailand, India, or South America is expensive. If the family is not in a financial position to cover this (or if the insurer disputes the claim), local burial may be the only practical option.
 
 **Speed.** Some cultures and religions require burial very quickly after death. Muslim practice requires burial within 24-48 hours. Jewish law is similar. In these cases, even if repatriation is the family's preference, the timeline is incompatible. Local burial is not a compromise but a religious obligation.
 
@@ -47,7 +47,7 @@ Costs are typically lower than repatriation. A funeral and burial in Thailand co
 
 Worth considering separately from both options above. The body is cremated in the country of death, and the ashes are returned to the UK.
 
-This significantly reduces cost (often £1,500-3,000 all-in for cremation and return of ashes versus £5,000-15,000 for body repatriation). It allows for a memorial service in the UK where the ashes are present. It sidesteps many of the documentation requirements for international transport of remains.
+This significantly reduces cost. It allows for a memorial service in the UK where the ashes are present. It sidesteps many of the documentation requirements for international transport of remains.
 
 The limitation is that cremation is not available or appropriate in all countries. Muslim-majority countries typically do not permit cremation. Some countries have limited cremation infrastructure. And some families, for religious or personal reasons, cannot accept cremation.
 

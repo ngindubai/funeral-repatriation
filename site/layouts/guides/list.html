@@ -1,12 +1,22 @@
 {{ define "title" }}Death Abroad Guides | Repatriate Service{{ end }}
 
 {{ define "main" }}
-<section class="section" style="padding-top:5rem;">
+<section class="page-hero" style="background-image: url('/images/documents-desk.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>What to do if someone dies abroad</h1>
+        <p>Practical, country-specific guides for families who have lost someone overseas. Each guide covers immediate steps, embassy contacts, required documents, timelines, and costs.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta"><i class="fa-solid fa-envelope"></i> Contact us 24/7</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <div class="section-inner">
-        <div class="section-header">
-            <p class="label-sm">Information</p>
-            <h1>What to do if someone dies abroad</h1>
-            <p>Practical, country-specific guides for families who have lost someone overseas. Each guide covers immediate steps, embassy contacts, required documents, timelines, and costs.</p>
+        <div class="section-header reveal" style="margin-bottom:2rem;">
+            <p class="label-sm">26 country guides</p>
+            <h2>Select a country</h2>
         </div>
         <div class="countries-grid stagger-children">
             {{ range where .Site.RegularPages "Section" "guides" }}
@@ -14,7 +24,7 @@
                 <div class="country-card-body">
                     <h3>{{ .Params.country_name }}</h3>
                     <p>{{ .Description }}</p>
-                    <span class="country-card-link">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
             </a>
             {{ end }}

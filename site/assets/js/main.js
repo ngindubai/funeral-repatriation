@@ -83,6 +83,36 @@
         });
     }
 
+    // ===== NAV DROPDOWN (keyboard + touch) =====
+    var dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(function (dropdown) {
+        var toggleBtn = dropdown.querySelector('.nav-dropdown-toggle');
+        if (!toggleBtn) return;
+
+        // Keyboard support
+        toggleBtn.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+                toggleBtn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
+            }
+        });
+
+        // Touch / click toggle (needed on mobile and touch screens)
+        toggleBtn.addEventListener('click', function () {
+            dropdown.classList.toggle('open');
+            toggleBtn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
     // ===== FAQ ACCORDION =====
     var triggers = document.querySelectorAll('.faq-trigger');
     triggers.forEach(function (trigger) {
@@ -129,16 +159,25 @@
 
             if (!valid) return;
 
-            var data = new FormData(form);
+            // Serialize form fields to JSON for Formsubmit AJAX endpoint
+            var formData = new FormData(form);
+            var payload = {};
+            formData.forEach(function (value, key) { payload[key] = value; });
 
             fetch(form.action, {
                 method: 'POST',
-                body: data,
-                headers: { 'Accept': 'application/json' }
+                body: JSON.stringify(payload),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
             }).then(function (response) {
                 if (response.ok) {
-                    form.style.display = 'none';
-                    successMsg.hidden = false;
+                    // Fire GA4 lead conversion before navigating away
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'generate_lead', { transport_type: 'beacon' });
+                    }
+                    window.location.href = '/thank-you/';
                 }
             }).catch(function () {
                 // Silently handle — form will remain visible

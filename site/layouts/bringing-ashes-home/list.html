@@ -28,14 +28,14 @@
             </div>
         </div>
 
-        <div class="country-list-grid stagger-children">
+        <div class="countries-grid stagger-children">
             {{ range .Pages }}
-            <a href="{{ .RelPermalink }}" class="country-list-card reveal">
-                <div class="country-list-text">
+            <a href="{{ .RelPermalink }}" class="country-card reveal">
+                <div class="country-card-body">
                     <h3>{{ .Params.country_name }}</h3>
                     <p>{{ .Description }}</p>
+                    <p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
-                <i class="fa-solid fa-angle-right country-list-arrow"></i>
             </a>
             {{ end }}
         </div>

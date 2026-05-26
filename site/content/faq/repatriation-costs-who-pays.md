@@ -72,7 +72,7 @@ This is a decision that should be made calmly and deliberately, not under pressu
 
 ## Crowdfunding
 
-Many families have raised repatriation costs through crowdfunding platforms. A clear, honest description of the situation typically generates a good response. Costs of £5,000-10,000 are routinely raised in a few days when the need is clear.
+Many families have raised repatriation costs through crowdfunding platforms. A clear, honest description of the situation typically generates a good response.
 
 ## What families should do first
 

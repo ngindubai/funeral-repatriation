@@ -5,6 +5,8 @@ date: 2025-01-15
 read_time: 8
 short_answer: "When someone dies abroad, the death must be registered locally before any repatriation can begin. A death certificate is issued, the body is prepared to international standards (usually embalming and a zinc-lined coffin), export documentation is arranged, and the remains are transported home as air cargo. The British Embassy provides a list of local funeral directors and consular guidance but does not organise or pay for repatriation. Travel insurance typically covers the full cost when a valid policy exists."
 related_countries: ["spain", "france", "thailand", "greece"]
+aliases:
+  - /guides/what-happens-when-someone-dies-abroad/
 ---
 
 The phone call comes, and you are suddenly in a situation nothing quite prepares you for. Someone you love has died abroad. You may be there with them. You may be at home. Either way, the next several days will involve a series of official processes that run alongside your grief, not after it.
@@ -37,7 +39,7 @@ You need a repatriation coordinator or international funeral director at the dep
 
 Your travel insurance, if you have it, may have a 24-hour assistance line that coordinates repatriation as part of the claim. That does not mean they do everything. They authorise and pay, but the practical work is done by the funeral directors they appoint.
 
-If there is no insurance, you are arranging this directly. Costs vary significantly by country and distance. See our [guide to repatriation costs](/blog/repatriation-cost-guide/) for a breakdown.
+If there is no insurance, you are arranging this directly. Costs vary significantly by country and distance. See our [guide to repatriation costs](/blog/how-much-does-repatriation-cost/) for a breakdown.
 
 ## When there is a UK inquest
 
@@ -61,10 +63,8 @@ These are averages. They can be shorter or longer. The main delays are at the do
 
 It varies. Distance is a factor but not the main one. The biggest drivers are the country-specific bureaucratic requirements, whether embalming is needed, and the cost of the cargo flight.
 
-A repatriation from Spain is typically between £3,000 and £5,000. From Thailand or India, £5,000 to £8,000 is common. Some countries, particularly in sub-Saharan Africa and parts of Central and South America, can exceed this.
-
 If you are in the middle of this process now and need to understand what it involves for your specific situation, call us on the number above. We can give you a clear answer about what to expect.
 
 ## A note on cremation abroad
 
-Some families decide to arrange cremation in the country where their loved one died and carry the ashes home. This is often cheaper and quicker than full body repatriation. It is not the right choice in every case. See our [guide to repatriation vs cremation abroad](/blog/repatriation-vs-cremation-abroad/) for a clear comparison.
+Some families decide to arrange cremation in the country where their loved one died and carry the ashes home. This is often cheaper and quicker than full body repatriation. It is not the right choice in every case. See our [guide to repatriation vs cremation abroad](/blog/repatriation-vs-cremation-abroad-which-is-right/) for a clear comparison.

@@ -1,5 +1,5 @@
----
-title: "How long does repatriation take? Timelines by country and situation"
+﻿---
+title: "How Long Does Repatriation Take? Country Timelines"
 description: "Repatriation is never instant. This guide explains realistic timelines by country, what causes delays, and how to plan around them."
 date: 2025-04-10
 slug: how-long-does-repatriation-take

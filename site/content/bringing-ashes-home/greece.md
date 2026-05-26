@@ -1,6 +1,6 @@
 ﻿---
 title: "Bringing ashes home from Greece"
-description: "Transporting ashes from Greece to the UK: Greek export requirements, airline guidance, and documentation checklist."
+description: "Transporting ashes from Greece to the UK: Greek export requirements, airline guidance, and documentation checklist. Expert guidance from Repatriate Service."
 country_key: "greece"
 country_name: "Greece"
 slug: "greece"

@@ -162,10 +162,60 @@ Short declarative sentence to open. Then expand with specific detail. Then cut t
 - **Never change `[permalinks]` in `hugo.toml` without planning a full redirect strategy.** All existing indexed URLs will break.
 - **Never deploy without verifying the ghost URL check:** `Get-ChildItem public -Directory | Where-Object { $_.Name -like "*repatriation-from-repatriation*" }` should return empty.
 - **Never rearrange JSON data field names** without auditing every layout template that reads those fields.
+- **Never use `guide-hero` for listing pages.** It is dark slate with a facts sidebar — only for single guide/country detail pages. Listing pages (`list.html`) use `page-hero` with a background image.
+- **Never use `guides-grid` / `guide-card` in listing templates.** These classes are deprecated for listing use. All listing grids use `countries-grid` + `country-card`.
+- **Never use `fa-urn-trowel` as a Font Awesome icon.** It does not exist in FA6 Free and renders blank. Use `fa-jar` for ashes/urn context.
+- **Never use `country-card-link` in new pages.** It is superseded by `country-card-cta`.
 
 ---
 
-## 7. Open Questions
+## 7. Design System (Locked — April 2026)
+
+### Hero Pattern for Listing Pages
+
+```html
+<section class="page-hero" style="background-image: url('/images/[image].jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>[H1]</h1>
+        <p>[Intro]</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Get Help Now</a>
+        </div>
+    </div>
+</section>
+```
+
+### Card Grid Pattern for Listing Pages
+
+```html
+<div class="countries-grid stagger-children">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="country-card reveal">
+        <div class="country-card-body">
+            <h3>{{ .Params.country_name }}</h3>
+            <p>[description]</p>
+            <p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </a>
+    {{ end }}
+</div>
+```
+
+### Hero Image Assignments
+
+| Section | Image |
+|---|---|
+| Countries listing | `mrwashingt0n-ai-generated-9048740.jpg` |
+| What to do abroad (guides) | `documents-desk.jpg` |
+| Guidance articles (blog) | `support-conversation.jpg` |
+| Cremation abroad | `airport-cargo.jpg` |
+| Embassy contacts | `passport-stamp.jpg` |
+| Bringing ashes home | `hero.jpg` |
+
+---
+
+## 8. Open Questions
 
 - Live LLM scoring for pass 2 citation upgrades not yet run — Perplexity, ChatGPT, Gemini test queries pending.
 - Phase 4 tasks (link building, schema expansion, conversion optimisation) not yet started — see HTML build plan.
@@ -174,9 +224,10 @@ Short declarative sentence to open. Then expand with specific detail. Then cut t
 
 ---
 
-## 8. Session History
+## 9. Session History
 
 | Date | Session Summary |
 |------|-----------------|
+| April 23, 2026 | Full site design review pass complete. 16 issues fixed across 3 prompts: transparent nav, country card CSS conflict, FAQ spacing, ashes two-col layout, homepage redesign (How it Works badges, parallax CTA, dark guides section), Resources dropdown nav, listing page heroes, blog card grid, guide-card/guides-grid CSS. Follow-up: Resources listing pages standardised (page-hero + countries-grid on all 5 listing pages), nav alignment fixed, fa-jar icon fix. Build 269 pages, deployed. All design patterns locked into code-standards.instructions.md and MEMORY.md. |
 | April 2026 | Phase 3 major work session: Stage A (11 slug fixes, 11 stub deletions), Stage B (Turkey/Egypt/Morocco cremation-transfer pages completing 26/26 silo), Stage C pass 2 (Kenya + Philippines hubs + 5 FAQ/blog pages upgraded with direct-answer content). Rebuilt with --cleanDestinationDir. Deployed. Build plan HTML updated. |
 | April 2026 | Migration session: Created .github/ instruction files, MEMORY.md, BUILD-PLAN.md, AGENTS.md for standalone VS Code instance. Repo copied to Desktop. Fresh git repo initialised. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Does a body need embalming for repatriation?"
 description: "Airlines require embalming for international transport of human remains. Here is what embalming involves, when it is required, and whether alternatives exist."
 slug: does-a-body-need-embalming-for-repatriation
@@ -37,10 +37,6 @@ Without the embalming certificate, none of the above proceed.
 **Repatriation of ashes.** If the decision is made to cremate in the country of death and return ashes to the UK, embalming is not required. Ashes transport is significantly simpler.
 
 **Short overland routes.** For families in Europe, overland transport by specialist vehicle (hearse) is sometimes used for very short routes (e.g., from northern France to the UK via the Channel Tunnel). Regulations for overland transport differ from air transport. Embalming requirements depend on the Bilateral Agreement on the Repatriation of Human Remains applicable between the UK and the relevant country.
-
-## Cost
-
-Embalming in the context of repatriation is usually included in the local funeral director's overall repatriation fee. If quoted separately, expect £300-800 in most European countries. In parts of Asia and Africa, costs can be lower.
 
 ## What to do
 

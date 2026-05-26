@@ -1,20 +1,13 @@
 {{ define "title" }}Guidance and Articles | Repatriate Service{{ end }}
 
 {{ define "main" }}
-<section class="guide-hero">
-    <div class="section-inner">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li aria-current="page">Guidance</li>
-            </ol>
-        </nav>
-        <div class="guide-hero-inner">
-            <div class="guide-hero-text">
-                <p class="label-sm">Practical guidance</p>
-                <h1>Repatriation and bereavement abroad: guidance articles</h1>
-                <p>Practical information written by people with direct experience of body repatriation. Written for families, not for search engines.</p>
-            </div>
+<section class="page-hero" style="background-image: url('/images/support-conversation.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>Repatriation and bereavement abroad: guidance articles</h1>
+        <p>Practical information written by people with direct experience of body repatriation. Written for families, not for search engines.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Get Help Now</a>
         </div>
     </div>
 </section>
@@ -32,7 +25,7 @@
                     <h2>{{ .Title }}</h2>
                     <p>{{ .Description }}</p>
                 </div>
-                <span class="bli-arrow"><i class="fa-solid fa-angle-right"></i></span>
+                <span class="bli-arrow">Read article <i class="fa-solid fa-angle-right"></i></span>
             </a>
             {{ end }}
         </div>

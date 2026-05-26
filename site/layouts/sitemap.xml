@@ -1,0 +1,26 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range site.Pages }}{{- if not .Params.noindex }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+    {{- end }}
+    <changefreq>{{ with .Sitemap.ChangeFreq }}{{ . }}{{ else }}weekly{{ end }}</changefreq>
+    <priority>
+      {{- if .IsHome }}1.0
+      {{- else if and (eq .Kind "section") (eq .Section "countries") }}0.85
+      {{- else if and (eq .Kind "page") (eq .Section "countries") }}0.75
+      {{- else if eq .Section "guides" }}0.80
+      {{- else if eq .Section "faq" }}0.70
+      {{- else if eq .Section "bringing-ashes-home" }}0.65
+      {{- else if eq .Section "cremation-transfer" }}0.65
+      {{- else if eq .Section "blog" }}0.60
+      {{- else if eq .Section "embassy-contacts" }}0.50
+      {{- else if .IsSection }}0.70
+      {{- else }}{{ with .Sitemap.Priority }}{{ . }}{{ else }}0.60{{ end }}
+      {{- end }}
+    </priority>
+  </url>
+{{- end }}{{- end }}
+</urlset>

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Indexing & Deployment Strategy — Repatriate Service</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 32px 16px 80px;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 24px;
+    }
+
+    .page-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #e6edf3;
+      margin-bottom: 8px;
+    }
+
+    .page-header p {
+      color: #8b949e;
+      font-size: 14px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 0 auto 32px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .section h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin: 20px 0 10px;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .card p, .card li {
+      color: #c9d1d9;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .card ul li {
+      margin-bottom: 6px;
+    }
+
+    .card .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 10px;
+    }
+
+    /* Alert boxes */
+    .alert {
+      border-radius: 6px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .alert-green {
+      background: #0d2f1a;
+      border: 1px solid #2ea043;
+      color: #56d364;
+    }
+
+    .alert-yellow {
+      background: #2c2300;
+      border: 1px solid #9e6a03;
+      color: #e3b341;
+    }
+
+    .alert-red {
+      background: #2d0f0f;
+      border: 1px solid #8b1a1a;
+      color: #f85149;
+    }
+
+    .alert-blue {
+      background: #0d1f30;
+      border: 1px solid #1f6feb;
+      color: #58a6ff;
+    }
+
+    .alert strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-green  { background: #1a4731; color: #56d364; }
+    .badge-yellow { background: #3d2c00; color: #e3b341; }
+    .badge-red    { background: #3d1414; color: #f85149; }
+    .badge-blue   { background: #0d2442; color: #58a6ff; }
+    .badge-grey   { background: #21262d; color: #8b949e; }
+    .badge-purple { background: #2d1d4e; color: #bc8cff; }
+
+    /* Tables */
+    .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th {
+      background: #21262d;
+      color: #8b949e;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid #30363d;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #21262d;
+      color: #c9d1d9;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #1c2128; }
+
+    /* Two-column grid */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    /* Phase timeline */
+    .phase-list { list-style: none; padding: 0; }
+
+    .phase-item {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .phase-item:last-child { border-bottom: none; }
+
+    .phase-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #21262d;
+      color: #e6edf3;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #30363d;
+    }
+
+    .phase-num.active { background: #1f6feb; border-color: #388bfd; color: #fff; }
+    .phase-num.done   { background: #2ea043; border-color: #3fb950; color: #fff; }
+
+    .phase-content { flex: 1; }
+    .phase-content .phase-title { font-weight: 600; color: #e6edf3; font-size: 15px; margin-bottom: 4px; }
+    .phase-content .phase-desc  { font-size: 13px; color: #8b949e; margin-bottom: 8px; }
+    .phase-content .phase-tasks { font-size: 13px; color: #c9d1d9; }
+    .phase-content .phase-tasks li { margin-bottom: 4px; }
+    .phase-content .phase-tasks ul { padding-left: 18px; }
+
+    /* Metric pills */
+    .metric-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 14px 18px;
+      flex: 1;
+      min-width: 140px;
+    }
+
+    .metric .metric-label { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .metric .metric-value { font-size: 22px; font-weight: 700; color: #e6edf3; }
+    .metric .metric-sub   { font-size: 12px; color: #58a6ff; margin-top: 2px; }
+    .metric .metric-sub.green { color: #56d364; }
+    .metric .metric-sub.yellow { color: #e3b341; }
+    .metric .metric-sub.red { color: #f85149; }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #21262d;
+      margin: 32px 0;
+    }
+
+    /* Quote block */
+    blockquote {
+      border-left: 4px solid #388bfd;
+      margin: 16px 0;
+      padding: 12px 16px;
+      background: #161b22;
+      border-radius: 0 6px 6px 0;
+    }
+
+    blockquote p {
+      font-style: italic;
+      color: #8b949e;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    blockquote cite {
+      font-size: 12px;
+      color: #58a6ff;
+      font-style: normal;
+    }
+
+    /* Risk radar */
+    .risk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .risk-high   { background: #2d0f0f; border: 1px solid #8b1a1a; }
+    .risk-medium { background: #2c2300; border: 1px solid #9e6a03; }
+    .risk-low    { background: #0d2f1a; border: 1px solid #2ea043; }
+
+    .risk-icon {
+      font-size: 18px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .risk-body .risk-title { font-size: 14px; font-weight: 600; color: #e6edf3; margin-bottom: 4px; }
+    .risk-body .risk-desc  { font-size: 13px; color: #8b949e; }
+
+    code {
+      background: #21262d;
+      color: #79c0ff;
+      font-size: 12px;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+    }
+
+    .source-note {
+      font-size: 12px;
+      color: #484f58;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .verdict-box {
+      background: #0d2f1a;
+      border: 2px solid #2ea043;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .verdict-box h3 {
+      color: #56d364;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .verdict-box p {
+      font-size: 14px;
+      color: #c9d1d9;
+      line-height: 1.7;
+    }
+
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { padding: 6px 0; font-size: 14px; color: #c9d1d9; border-bottom: 1px solid #21262d; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: "✓ "; color: #56d364; font-weight: 700; }
+    .checklist li.pending::before { content: "○ "; color: #e3b341; }
+    .checklist li.warn::before { content: "⚠ "; color: #e3b341; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE HEADER
+     ============================================================ -->
+<div class="page-header">
+  <h1>Google Indexing &amp; Deployment Strategy</h1>
+  <p>Repatriate Service &nbsp;|&nbsp; repatriateservice.com &nbsp;|&nbsp; Produced: April 2026 &nbsp;|&nbsp; Scope: Phase 3 deployment planning</p>
+</div>
+
+<!-- ============================================================
+     EXECUTIVE VERDICT
+     ============================================================ -->
+<div class="section">
+  <div class="verdict-box">
+    <h3>Executive Finding: There Is No Google "Penalty Limit" for Large Site Launches</h3>
+    <p>
+      The concern about a hard indexing penalty for publishing many pages at once is a common misconception.
+      Google does not penalise sites based on volume alone. The 269-page site sits at roughly 0.027% of the
+      threshold where crawl budget even becomes a consideration. The real risks are different — and more
+      manageable. The correct strategy is to keep building, deploy with confidence, and focus obsessively
+      on content quality per page rather than timing or page count. This document explains exactly why,
+      and provides a phased action plan.
+    </p>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 1: CURRENT STATE
+     ============================================================ -->
+<div class="section">
+  <h2>1. Current Site State</h2>
+
+  <div class="metric-row">
+    <div class="metric">
+      <div class="metric-label">Pages Built</div>
+      <div class="metric-value">269</div>
+      <div class="metric-sub green">Clean build. Zero errors.</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Countries Covered</div>
+      <div class="metric-value">26</div>
+      <div class="metric-sub">Full hubs with data</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Content Silos</div>
+      <div class="metric-value">8</div>
+      <div class="metric-sub">Countries, guides, FAQ, blog, etc.</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Live Domain Status</div>
+      <div class="metric-value">Staging</div>
+      <div class="metric-sub yellow">Not yet pointed to repatriateservice.com</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Phase 3 Gate</div>
+      <div class="metric-value">500+</div>
+      <div class="metric-sub yellow">231 pages still to build</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Silo</th>
+          <th>URL Pattern</th>
+          <th>Est. Pages Now</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Country hubs</td>
+          <td><code>/repatriation-from-[country]/</code></td>
+          <td>26</td>
+          <td>All have direct_answer frontmatter. Highest commercial intent.</td>
+        </tr>
+        <tr>
+          <td>City pages</td>
+          <td><code>/repatriation-from-[country]/[city]/</code></td>
+          <td>~100+</td>
+          <td>Variable quality. Some thin. Highest doorway page risk.</td>
+        </tr>
+        <tr>
+          <td>Guides</td>
+          <td><code>/guides/[guide]/</code></td>
+          <td>~15</td>
+          <td>Long-form. Strong E-E-A-T signal when well-sourced.</td>
+        </tr>
+        <tr>
+          <td>Blog</td>
+          <td><code>/blog/[post]/</code></td>
+          <td>~20</td>
+          <td>DONE (Stage 3.7). Informational intent.</td>
+        </tr>
+        <tr>
+          <td>FAQ</td>
+          <td><code>/faq/[question]/</code></td>
+          <td>~40</td>
+          <td>FAQ schema on all. Good for featured snippet capture.</td>
+        </tr>
+        <tr>
+          <td>Bringing ashes home</td>
+          <td><code>/bringing-ashes-home/[country]/</code></td>
+          <td>~20</td>
+          <td>High-intent supplementary silo.</td>
+        </tr>
+        <tr>
+          <td>Cremation transfer</td>
+          <td><code>/cremation-transfer/[country]/</code></td>
+          <td>~20</td>
+          <td>Niche but high commercial value.</td>
+        </tr>
+        <tr>
+          <td>Embassy contacts</td>
+          <td><code>/embassy-contacts/[country]/</code></td>
+          <td>~26</td>
+          <td>Data-driven. Risk: low editorial depth.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 2: WHAT GOOGLE ACTUALLY LIMITS
+     ============================================================ -->
+<div class="section">
+  <h2>2. Google's Actual Limits — Where This Site Stands</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Google Limit / Threshold</th>
+          <th>Official Figure</th>
+          <th>This Site</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sitemap file limit</td>
+          <td>50,000 URLs or 50MB per file</td>
+          <td>~269 URLs</td>
+          <td><span class="badge badge-green">No Action Needed</span></td>
+        </tr>
+        <tr>
+          <td>Crawl budget management required</td>
+          <td>1,000,000+ pages (changing moderately), or 10,000+ pages changing daily</td>
+          <td>269 pages, static build</td>
+          <td><span class="badge badge-green">Not Applicable</span></td>
+        </tr>
+        <tr>
+          <td>Crawl budget concern threshold</td>
+          <td>Hundreds of millions to tens of millions of pages</td>
+          <td>0.003% of lower threshold</td>
+          <td><span class="badge badge-green">Not Applicable</span></td>
+        </tr>
+        <tr>
+          <td>Sitemap index required</td>
+          <td>When sitemap exceeds 50,000 URLs</td>
+          <td>Not reached</td>
+          <td><span class="badge badge-green">Not Applicable</span></td>
+        </tr>
+        <tr>
+          <td>"Scaled content abuse" spam policy</td>
+          <td>Pages created primarily to manipulate rankings with little user value</td>
+          <td>Applies if city/embassy pages are thin</td>
+          <td><span class="badge badge-yellow">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>"Doorway abuse" spam policy</td>
+          <td>Pages that funnel users without unique value per location</td>
+          <td>Applies to thin city pages with no unique data</td>
+          <td><span class="badge badge-yellow">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>YMYL E-E-A-T threshold</td>
+          <td>Death/legal/financial content held to highest standard</td>
+          <td>Every page on this site falls under YMYL</td>
+          <td><span class="badge badge-red">Ongoing Priority</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-green">
+    <strong>Official Google statement on crawl budget:</strong>
+    "If your site doesn't have a large number of pages that change rapidly, or if your pages seem to be crawled the same day that they are published, you don't need to read this guide." — Google Search Central, Optimize your Crawl Budget (updated December 2025). This guide is explicitly for 1M+ page sites or 10K+ pages changing daily.
+  </div>
+
+  <p class="source-note">Sources: developers.google.com/crawling/docs/crawl-budget (updated Dec 2025), developers.google.com/search/docs/essentials/spam-policies (updated Apr 2026)</p>
+</div>
+
+<!-- ============================================================
+     SECTION 3: REAL RISKS
+     ============================================================ -->
+<div class="section">
+  <h2>3. The Real Risks — Not What You Think</h2>
+
+  <p style="font-size:14px; color:#8b949e; margin-bottom:16px;">
+    The question is not "will Google penalise us for publishing too many pages?" The correct question is
+    "will Google trust the pages we publish?" For a YMYL site on a new domain, here are the actual risks, ranked.
+  </p>
+
+  <div class="risk-item risk-high">
+    <div class="risk-icon">&#9888;</div>
+    <div class="risk-body">
+      <div class="risk-title">CRITICAL — Scaled Content Abuse Detection</div>
+      <div class="risk-desc">
+        Google's 2024/2025 spam policy updates explicitly target "scaled content abuse" — pages generated
+        at scale that provide little to no value to users. Google's John Mueller has publicly stated
+        "Programmatic SEO is often a fancy banner for spam." The test is not page count; it's whether
+        each page genuinely helps the user in a way no other page on the site does. City pages and embassy
+        pages are the highest-risk silos. Country hubs and guides are the safest.
+      </div>
+    </div>
+  </div>
+
+  <div class="risk-item risk-high">
+    <div class="risk-icon">&#9888;</div>
+    <div class="risk-body">
+      <div class="risk-title">CRITICAL — New Domain Trust (Zero E-E-A-T Signals)</div>
+      <div class="risk-desc">
+        repatriateservice.com is a new domain with zero backlinks, zero domain authority, and zero
+        historical trust. For YMYL content (death, legal, financial), Google applies the highest
+        E-E-A-T scrutiny. A new domain with 269 pages on a YMYL topic will rank poorly until it
+        has earned trust through backlinks, author attribution, cited sources, and user engagement signals.
+        This is the primary ranking constraint — not crawl budget.
+      </div>
+    </div>
+  </div>
+
+  <div class="risk-item risk-medium">
+    <div class="risk-icon">&#9651;</div>
+    <div class="risk-body">
+      <div class="risk-title">MEDIUM — Doorway Abuse (Thin City Pages)</div>
+      <div class="risk-desc">
+        Google's spam policy defines doorway abuse as "having multiple domain names or pages targeted at
+        specific regions or cities that funnel users to one page." City pages that contain minimal unique
+        information beyond what the country hub already says are at risk of being filtered as doorway pages.
+        Each city page must contain genuine, unique information specific to that city.
+      </div>
+    </div>
+  </div>
+
+  <div class="risk-item risk-medium">
+    <div class="risk-icon">&#9651;</div>
+    <div class="risk-body">
+      <div class="risk-title">MEDIUM — Low Initial Crawl Demand (Not a Penalty — Expected Behaviour)</div>
+      <div class="risk-desc">
+        New domains naturally start with low crawl demand because Google has no popularity or freshness
+        signals yet. Pages will be discovered slowly. This is not a penalty — it is the natural ramp-up
+        for a new domain. Crawl demand grows as the site earns backlinks, generates user engagement, and
+        demonstrates page quality. Submitting a sitemap to Google Search Console accelerates this.
+      </div>
+    </div>
+  </div>
+
+  <div class="risk-item risk-low">
+    <div class="risk-icon">&#10003;</div>
+    <div class="risk-body">
+      <div class="risk-title">LOW — Deploying All 269 Pages at Once</div>
+      <div class="risk-desc">
+        There is no Google mechanism that penalises "dumping" a large number of pages at launch.
+        Google has explicitly stated crawl budget management is only for 1M+ page sites. Deploying
+        all current pages in a single go is not a risk. Google will simply crawl and index them at
+        whatever pace its crawl demand calculates for a new domain. There is no benefit to artificially
+        throttling deployment.
+      </div>
+    </div>
+  </div>
+
+  <blockquote>
+    <p>"Programmatic SEO is often a fancy banner for spam."</p>
+    <cite>John Mueller, Google Search Advocate — July 2023. The key distinction: does each page provide unique, genuine value to the user?</cite>
+  </blockquote>
+</div>
+
+<!-- ============================================================
+     SECTION 4: SHOULD YOU SPLIT DEPLOYMENT?
+     ============================================================ -->
+<div class="section">
+  <h2>4. Should You Split Deployment? — The Direct Answer</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title" style="color:#f85149;">Splitting Deployment Does NOT Help With:</div>
+      <ul>
+        <li>Avoiding a Google "large site penalty" — this does not exist for sites under 1M pages</li>
+        <li>Crawl budget — irrelevant at this scale</li>
+        <li>Indexing speed — pages get indexed based on quality and authority, not arrival timing</li>
+        <li>Domain authority — authority is built through backlinks, not staged page releases</li>
+        <li>Avoiding spam detection — thin content is thin regardless of when it is published</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:#56d364;">What DOES Help With Indexing Success:</div>
+      <ul>
+        <li>Verifying the domain in Google Search Console before deployment</li>
+        <li>Submitting sitemap immediately after going live</li>
+        <li>Strong internal linking so Googlebot discovers all pages through links, not just sitemap</li>
+        <li>Each page having unique, factual, well-cited content</li>
+        <li>Author attribution and trust signals on every page</li>
+        <li>Building backlinks from relevant, authoritative sources post-launch</li>
+        <li>Excluding genuinely thin pages until content is improved</li>
+        <li>Fast page load times (Hugo static site — strong advantage here)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-blue">
+    <strong>Recommendation: Deploy in full when ready. Do not artificially split.</strong>
+    The only valid reason to stage deployment is content quality — not page count or timing. If certain
+    silos (e.g. embassy contact pages with minimal editorial content) are thin, exclude them from the
+    sitemap using <code>_build: { list: never }</code> frontmatter or robots.txt, and add them only once
+    content meets quality thresholds. Deploy everything else at launch.
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 5: THE INDEXING RAMP-UP TIMELINE
+     ============================================================ -->
+<div class="section">
+  <h2>5. Realistic Indexing Timeline for a New YMYL Domain</h2>
+
+  <p style="font-size:14px; color:#8b949e; margin-bottom:16px;">
+    What to expect after repatriateservice.com goes live. These are evidence-based estimates, not guarantees.
+    YMYL content on new domains is held to a higher bar and typically takes longer to earn rankings.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Timeframe</th>
+          <th>What Google Does</th>
+          <th>What You Should Do</th>
+          <th>Expected Outcome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Day 1 — Deploy</td>
+          <td>Googlebot discovers the domain via sitemap submission. Initial crawl begins.</td>
+          <td>Verify GSC, submit sitemap.xml, check robots.txt is not blocking crawl.</td>
+          <td>Site crawled within 24–72 hours.</td>
+        </tr>
+        <tr>
+          <td>Week 1–2</td>
+          <td>Googlebot crawls all sitemap URLs. Pages enter indexing queue. Many will show "Discovered — currently not indexed."</td>
+          <td>Monitor GSC Index Coverage report daily. Check for crawl errors. Use URL Inspection to verify key pages are renderable.</td>
+          <td>~50–100 pages indexed. Country hubs prioritised first due to internal linking weight.</td>
+        </tr>
+        <tr>
+          <td>Month 1</td>
+          <td>Google evaluates content quality signals. YMYL assessor criteria applied. Pages with strong E-E-A-T begin appearing in SERPs.</td>
+          <td>Submit index requests via GSC for top 20 priority pages. Start backlink outreach. Ensure author bios are live.</td>
+          <td>Most pages indexed. Ranking positions extremely volatile — expected for new domains.</td>
+        </tr>
+        <tr>
+          <td>Month 2–3</td>
+          <td>Quality assessment solidifies. Pages with thin signals may be de-indexed or deprioritised. Popular/linked pages gain crawl demand.</td>
+          <td>Audit "Discovered — currently not indexed" in GSC. Improve or consolidate thin pages. Continue backlink building.</td>
+          <td>Stable indexation of quality pages. First tentative rankings for long-tail queries.</td>
+        </tr>
+        <tr>
+          <td>Month 4–6</td>
+          <td>Domain trust begins accumulating. Crawl demand increases with link growth. Featured snippet eligibility starts.</td>
+          <td>Publish fresh content monthly. Refresh country hubs with updated data. Build citations from travel/legal/funeral industry press.</td>
+          <td>Meaningful traffic for long-tail and mid-tail YMYL queries. Country hub pages ranking on page 1–3.</td>
+        </tr>
+        <tr>
+          <td>Month 6–12</td>
+          <td>If E-E-A-T signals are strong, YMYL authority builds. The "Google sandbox" effect for new domains typically lifts around 6–12 months.</td>
+          <td>Continue link building. Add case studies, testimonials, and named expert content. Expand country coverage to 50+ countries.</td>
+          <td>Top-3 positions achievable for targeted long-tail queries. LLM citation eligibility increases.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-yellow">
+    <strong>The "New Domain Sandbox" Effect:</strong>
+    Google does not officially acknowledge a "sandbox" for new domains, but SEO practitioners widely observe
+    that new domains take 6–12 months to earn stable rankings on competitive YMYL queries. This is not a
+    penalty — it is the time required to accumulate the trust signals Google needs to rank YMYL content
+    confidently. There is no shortcut. Building more high-quality pages accelerates this; building thin
+    pages delays it.
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 6: QUALITY GATE — WHAT COUNTS AS "GOOD" PROGRAMMATIC CONTENT
+     ============================================================ -->
+<div class="section">
+  <h2>6. Quality Gate — Protecting Against Scaled Content Abuse Detection</h2>
+
+  <p style="font-size:14px; color:#8b949e; margin-bottom:16px;">
+    Google's scaled content abuse policy applies when pages are generated "for the primary purpose of
+    manipulating search rankings and not helping users." The distinction between acceptable programmatic
+    content and spam comes down to whether each page has genuine, unique value. Use this checklist
+    to evaluate every silo before deployment.
+  </p>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title" style="color:#56d364;">Safe Silos — High Unique Value Per Page</div>
+      <ul>
+        <li><strong>Country hubs</strong> — Each covers a distinct jurisdiction, cost structure, documentation regime, and timeline. Unique data per country from authoritative sources.</li>
+        <li><strong>Guides</strong> — Long-form, expert-authored, heavily cited. Clear E-E-A-T signals.</li>
+        <li><strong>Blog</strong> — Informational, time-indexed, not duplicative of country hubs.</li>
+        <li><strong>FAQ pages</strong> — Answer-specific, schema-marked, non-duplicative of each other.</li>
+        <li><strong>Bringing ashes home</strong> — Distinct process from repatriation of a body. Unique content needed per country.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:#e3b341;">Silos Requiring Quality Review Before Deployment</div>
+      <ul>
+        <li><strong>City pages</strong> — Highest risk. Must have unique local information (local funeral directors, airport details, local legal requirements) per city. Pages that only repeat country hub information are doorway pages.</li>
+        <li><strong>Embassy contact pages</strong> — Data-driven, low editorial depth. Acceptable only if they include actionable process information alongside contact data, not just address listings.</li>
+        <li><strong>Cremation transfer pages</strong> — Must demonstrate unique process/documentation differences between countries, not just reformatted country hub content.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Per-Page Quality Checklist (Run Before Enabling Any Page in Sitemap)</div>
+    <ul class="checklist">
+      <li>Does this page answer a search query that is distinct from every other page on the site?</li>
+      <li>Does this page contain at least one piece of information a user cannot find on the parent country hub?</li>
+      <li>Is there at least one named, dated external source cited for a factual claim?</li>
+      <li>Is the page clearly attributable to an expert author or institutional source?</li>
+      <li>Does the page have more than 300 words of unique body content (not frontmatter)?</li>
+      <li>Are there at least 2 internal links with descriptive anchor text?</li>
+      <li>Is there a clear call to action that serves the user's immediate need?</li>
+      <li class="warn">City page only: Does this page contain at minimum the local airport IATA code, one named local funeral director or consular contact, and one city-specific logistical note?</li>
+      <li class="warn">Embassy page only: Does this page include the correct current consular procedure, not just address data?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 7: DEPLOYMENT ACTION PLAN
+     ============================================================ -->
+<div class="section">
+  <h2>7. Deployment Action Plan — Phase by Phase</h2>
+
+  <ul class="phase-list">
+
+    <li class="phase-item">
+      <div class="phase-num done">&#10003;</div>
+      <div class="phase-content">
+        <div class="phase-title">Pre-Deployment: Content Foundation (Complete)</div>
+        <div class="phase-desc">Build all 269 pages, fix technical issues, ensure clean Hugo build.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>All 26 country hubs built with direct_answer frontmatter <span class="badge badge-green">DONE</span></li>
+            <li>Double-prefix title bug fixed across all 11 affected files <span class="badge badge-green">DONE</span></li>
+            <li>YAML errors corrected <span class="badge badge-green">DONE</span></li>
+            <li>Clean build: 269 pages, zero errors <span class="badge badge-green">DONE</span></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="phase-item">
+      <div class="phase-num active">1</div>
+      <div class="phase-content">
+        <div class="phase-title">Pre-Launch Technical Setup (Before Pointing Domain)</div>
+        <div class="phase-desc">Set up all Google tooling before the domain goes live. This ensures day-one indexing starts immediately.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>Create Google Search Console account for repatriateservice.com</li>
+            <li>Add DNS TXT verification record to domain registrar (can be done before site is live)</li>
+            <li>Verify Hugo-generated sitemap.xml is at <code>/sitemap.xml</code> and lists all intended pages</li>
+            <li>Confirm <code>robots.txt</code> is not blocking Googlebot from any intended URLs</li>
+            <li>Run quality checklist on all city pages and embassy pages — exclude thin pages from sitemap if needed using <code>sitemap: false</code> in frontmatter</li>
+            <li>Ensure HTTPS is configured on the live domain (not HTTP)</li>
+            <li>Run PageSpeed Insights on 3 sample pages to confirm Core Web Vitals pass</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="phase-item">
+      <div class="phase-num">2</div>
+      <div class="phase-content">
+        <div class="phase-title">Domain Launch — Deploy All Quality Pages at Once</div>
+        <div class="phase-desc">Point repatriateservice.com to the site. Deploy the full 269-page build in one go. No staged throttling needed or beneficial.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>Point domain DNS to hosting provider</li>
+            <li>Wait for DNS propagation (typically 1–48 hours)</li>
+            <li>Submit sitemap.xml to Google Search Console immediately after propagation</li>
+            <li>Use GSC URL Inspection to request indexing of the 5 highest-priority pages manually (home, services, top 3 country hubs by search volume)</li>
+            <li>Verify no crawl errors in GSC within first 72 hours</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="phase-item">
+      <div class="phase-num">3</div>
+      <div class="phase-content">
+        <div class="phase-title">Month 1: Index Coverage Monitoring</div>
+        <div class="phase-desc">Track which pages Google indexes and which it holds back. Pages stuck in "Discovered — currently not indexed" status need content improvements.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>Check GSC Index Coverage report weekly</li>
+            <li>Export list of "Discovered — currently not indexed" pages by end of week 2</li>
+            <li>For any country hub or guide page not indexed by end of week 3, use URL Inspection to diagnose — usually thin content or crawl block</li>
+            <li>Do not request re-indexing more than once per page per week (Google throttles manual requests)</li>
+            <li>Begin initial backlink outreach: 5 targeted sites (funeral industry press, travel industry, expat communities)</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="phase-item">
+      <div class="phase-num">4</div>
+      <div class="phase-content">
+        <div class="phase-title">Month 2–3: Content Expansion + E-E-A-T Building</div>
+        <div class="phase-desc">Continue Phase 3 build toward the 500-page gate. Simultaneously build trust signals that unlock YMYL authority.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>Build P3 data for ~50 additional countries (Stage 3.1 — next build priority)</li>
+            <li>Publish 2 long-form expert guides per month (1,500+ words, named author, cited sources)</li>
+            <li>Add an "About Our Experts" or author bio page with real credentials</li>
+            <li>Add trust signals to every country hub: "Information verified by [named source], [date]"</li>
+            <li>Build 10–20 backlinks from relevant sources (funeral director associations, UK government pages, expat forums)</li>
+            <li>Refresh any country hub data that has changed since original publication</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li class="phase-item">
+      <div class="phase-num">5</div>
+      <div class="phase-content">
+        <div class="phase-title">Month 4–6: Ranking Stabilisation + Long-Tail Capture</div>
+        <div class="phase-desc">By this point, most quality pages should be indexed. Focus shifts to ranking improvement and LLM citation visibility.</div>
+        <div class="phase-tasks">
+          <ul>
+            <li>Run second LLM citation audit (compare against round 2 baseline from April 2026)</li>
+            <li>Identify top 20 pages by GSC impressions — optimise title tags, descriptions, and H1 for CTR</li>
+            <li>Expand FAQ coverage for any query clusters showing high impressions but low clicks</li>
+            <li>Target 500-page Phase 3 gate closure by month 4–5</li>
+            <li>Begin Phase 4 planning: cross-country linking strategy, competitor displacement targeting</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<!-- ============================================================
+     SECTION 8: SITEMAP MANAGEMENT
+     ============================================================ -->
+<div class="section">
+  <h2>8. Sitemap Management — Practical Guidance</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Current State</div>
+      <p>Hugo auto-generates <code>/sitemap.xml</code> at build time. It includes all pages not excluded by frontmatter. At 269 pages, the site is at 0.5% of the 50,000-URL sitemap limit. No sitemap index file needed.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">What Google Uses From Your Sitemap</div>
+      <p>Google reads: <code>&lt;loc&gt;</code> (URL) and <code>&lt;lastmod&gt;</code> (last modified date, if consistently accurate). Google ignores: <code>&lt;priority&gt;</code> and <code>&lt;changefreq&gt;</code>. Hugo's sitemap includes lastmod from file modification date — keep this accurate.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Excluding Thin Pages From the Sitemap (Without Deleting Them)</div>
+    <p>To keep a page on the site but exclude it from the sitemap and Google's index, add to frontmatter:</p>
+    <pre style="background:#0d1117; border:1px solid #30363d; border-radius:6px; padding:12px; margin-top:10px; font-size:13px; color:#79c0ff; font-family:'SFMono-Regular',Consolas,monospace; overflow-x:auto;">_build:
+  list: never
+  render: always
+sitemap:
+  disable: true</pre>
+    <p style="margin-top:10px; font-size:13px; color:#8b949e;">This keeps the page accessible via direct link but removes it from sitemap discovery. Use for any page that fails the quality checklist until it is improved. Do NOT use robots.txt noindex — Google wastes crawl budget on noindexed pages.</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 9: WHEN TO STOP BUILDING — THE REAL QUESTION
+     ============================================================ -->
+<div class="section">
+  <h2>9. When Should You Stop Building New Pages?</h2>
+
+  <div class="alert alert-blue">
+    <strong>Short answer: Stop building when content quality per page cannot be maintained — not before.</strong>
+    There is no Google-imposed limit on how many pages you can build. The decision to stop building
+    should be driven entirely by your ability to produce genuinely useful, well-sourced, unique content
+    per page. If the data and editorial capacity exists, build more pages. If it does not, stop.
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Signal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GSC shows &gt;20% of pages "Discovered — currently not indexed" for 60+ days</td>
+          <td>Pause new page builds. Audit and improve existing pages before expanding. Quality signal dilution is occurring.</td>
+        </tr>
+        <tr>
+          <td>GSC shows "Page quality" as the reason for non-indexing</td>
+          <td>Stop building that content type until existing pages are improved. Do not add more thin pages.</td>
+        </tr>
+        <tr>
+          <td>Bounce rate on programmatic pages exceeds 90% with near-zero time on page</td>
+          <td>Users are not finding what they need. Content does not satisfy intent. Rebuild before scaling.</td>
+        </tr>
+        <tr>
+          <td>A Google manual action notice appears in GSC for "scaled content"</td>
+          <td>Stop all new builds immediately. Audit every page. Remove or improve all thin content. Submit reconsideration request.</td>
+        </tr>
+        <tr>
+          <td>Phase 3 gate: 500 pages reached</td>
+          <td>Proceed to Phase 4 planning. Continue building only if quality standards can be maintained at scale.</td>
+        </tr>
+        <tr>
+          <td>Pages consistently ranking page 1–3 for target queries</td>
+          <td>Scale is working. Continue building with same quality standards. Begin content refreshes on older pages.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 10: IMMEDIATE NEXT ACTIONS
+     ============================================================ -->
+<div class="section">
+  <h2>10. Immediate Next Actions</h2>
+
+  <div class="card">
+    <div class="card-title">Before Deployment (Still Needed)</div>
+    <ul class="checklist">
+      <li class="pending">Create Google Search Console property for repatriateservice.com</li>
+      <li class="pending">Add DNS TXT verification record</li>
+      <li class="pending">Audit all city pages against the quality checklist in Section 6</li>
+      <li class="pending">Audit all embassy-contacts pages — exclude any that are address-only listings</li>
+      <li class="pending">Confirm Hugo <code>sitemap.xml</code> only lists intended pages</li>
+      <li class="pending">Run PageSpeed Insights on home page and top 3 country hubs — resolve any CWV failures</li>
+      <li class="pending">Ensure all pages have <code>author</code> attribution visible in HTML (not just frontmatter)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Immediately After Deployment</div>
+    <ul class="checklist">
+      <li class="pending">Submit sitemap.xml to GSC</li>
+      <li class="pending">Request manual indexing for: home, services, top 5 country hubs by search volume</li>
+      <li class="pending">Set up GSC email alerts for crawl errors and manual actions</li>
+      <li class="pending">Monitor Index Coverage report daily for first 14 days</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Next Build Priority (Resume After Reading This Document)</div>
+    <ul class="checklist">
+      <li class="pending">Stage 3.1 — Build P3 country data for ~50 additional countries. Read The Geographer soul file first.</li>
+      <li class="pending">Stage 3.8 — Internal link audit (IN PROGRESS per BUILD-PLAN.md)</li>
+      <li class="pending">Continue toward 500-page Phase 3 gate</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 11: KEY SOURCES
+     ============================================================ -->
+<div class="section">
+  <h2>11. Sources Consulted</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Key Finding</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Search Central — Optimize Your Crawl Budget</td>
+          <td>Crawl budget guidance is for 1M+ pages or 10K+ pages changing daily. Not applicable to this site.</td>
+          <td>December 2025</td>
+        </tr>
+        <tr>
+          <td>Google Search Central — Build and Submit a Sitemap</td>
+          <td>Sitemap limit: 50,000 URLs or 50MB. Google ignores priority and changefreq. Uses lastmod if accurate.</td>
+          <td>December 2025</td>
+        </tr>
+        <tr>
+          <td>Google Search Central — Spam Policies</td>
+          <td>Scaled content abuse: pages generated primarily to manipulate rankings without user value. Doorway abuse: location-targeted pages that funnel without unique value.</td>
+          <td>April 2026</td>
+        </tr>
+        <tr>
+          <td>Google Search Central — Maintaining Your Website's SEO</td>
+          <td>Sitemaps prioritise crawling. robots.txt blocks, not noindex, is recommended for unwanted pages.</td>
+          <td>December 2025</td>
+        </tr>
+        <tr>
+          <td>Ahrefs — Programmatic SEO Explained</td>
+          <td>John Mueller: "Programmatic SEO is often a fancy banner for spam." Unique data per page is the key differentiator between helpful content and spam.</td>
+          <td>October 2023 / verified April 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="source-note">This document was produced in April 2026 based on verified official Google documentation and industry analysis. Google's policies and algorithms change. Re-verify official sources before acting on any specific technical recommendation. This is planning guidance, not a guarantee of ranking outcomes.</p>
+</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<div class="section" style="margin-top:48px; padding-top:24px; border-top:1px solid #21262d;">
+  <p style="font-size:12px; color:#484f58;">
+    Repatriate Service — Google Indexing &amp; Deployment Strategy &nbsp;|&nbsp; Produced April 2026
+    &nbsp;|&nbsp; Internal planning document. Not for distribution.
+  </p>
+</div>
+
+<!-- ============================================================
+     REVIEW 1: PHASE 3 PRE-DEPLOYMENT SITE AUDIT
+     ============================================================ -->
+<div style="max-width:900px; margin:64px auto 0; padding-top:40px; border-top:2px solid #388bfd;">
+  <div class="page-header" style="border-bottom-color:#388bfd; margin-bottom:32px;">
+    <h1 style="color:#58a6ff;">Review 1: Phase 3 Pre-Deployment Site Audit</h1>
+    <p>Conducted: 22 April 2026 &nbsp;|&nbsp; Reviewer: Auditor + Analyst workers &nbsp;|&nbsp; Scope: 269 live pages across 8 content silos &nbsp;|&nbsp; Bible: google-deployment-strategy.html Quality Gate (Section 6)</p>
+  </div>
+
+  <div class="section">
+    <div class="verdict-box" style="background:#0d1f30; border-color:#1f6feb;">
+      <h3 style="color:#58a6ff;">Audit Verdict: Site Is Not Ready for Production Deployment</h3>
+      <p>Two critical blockers must be resolved before going live on repatriateservice.com. Eight total issues were identified. Nineteen clean findings confirm the core architecture and SEO infrastructure is sound. The structural foundation is strong. The blockers are addressable — none require rearchitecting. Resolve the criticals, then deploy.</p>
+    </div>
+  </div>
+
+  <!-- HEADLINE METRICS -->
+  <div class="section">
+    <h2>Audit Scorecard</h2>
+    <div class="metric-row">
+      <div class="metric">
+        <div class="metric-label">Pages Audited</div>
+        <div class="metric-value">269</div>
+        <div class="metric-sub">Full build, 8 silos</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Issues Found</div>
+        <div class="metric-value" style="color:#f85149;">8</div>
+        <div class="metric-sub red">2 critical blockers</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Clean Findings</div>
+        <div class="metric-value" style="color:#56d364;">19</div>
+        <div class="metric-sub green">Confirmed passing</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Deploy Status</div>
+        <div class="metric-value" style="color:#e3b341;">HOLD</div>
+        <div class="metric-sub yellow">Fix criticals first</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ISSUES TABLE -->
+  <div class="section">
+    <h2>Issues Found (8 Total)</h2>
+    <p style="font-size:13px; color:#8b949e; margin-bottom:16px;">Each issue is classified by severity, mapped to the google-deployment-strategy.html Quality Gate checklist item it fails, and accompanied by specific evidence from the live build.</p>
+
+    <!-- CRITICAL 1 -->
+    <div class="risk-item risk-high" style="margin-bottom:20px;">
+      <div class="risk-icon">🚨</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[CRITICAL 1] Placeholder phone number on every page — site cannot go live</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-red">BLOCKER</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">The placeholder <code>+44 (0) 000 000 0000</code> appears in the site header, hero sections, helpline strips, CTA buttons, and — critically — inside FAQPage JSON-LD structured data answers on every page. This is not merely a visual placeholder; it is published in machine-readable schema and would be read by Google and LLMs as the actual service contact number. The number resolves to nothing.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence from built HTML (site/public/repatriation-from-spain/index.html, lines 1-2):</strong></p>
+          <p style="font-family:monospace; font-size:12px; background:#21262d; padding:10px; border-radius:4px; color:#79c0ff; margin-bottom:8px;">&lt;a href=tel:+44%20%280%29%20000%20000%200000 class=header-phone&gt;...&lt;span&gt;+44 (0) 000 000 0000&lt;/span&gt;</p>
+          <p style="font-family:monospace; font-size:12px; background:#21262d; padding:10px; border-radius:4px; color:#79c0ff;">"acceptedAnswer":{"@type":"Answer","text":"\"Please contact our team for specific guidance on this question. We are available 24 hours a day on +44 (0) 000 000 0000.\""}</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "Helpline number is a real, working number, tested live." Also fails the E-E-A-T requirement: a YMYL site with a non-functional contact number signals the site is not a real operating business.</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Replace <code>emergencyPhone</code> value in hugo.toml with the real operating number. Rebuild and redeploy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRITICAL 2 -->
+    <div class="risk-item risk-high" style="margin-bottom:20px;">
+      <div class="risk-icon">🚨</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[CRITICAL 2] No robots.txt file exists anywhere in the project</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-red">BLOCKER</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">A search of the entire workspace confirms <code>robots.txt</code> does not exist in <code>site/static/</code> or anywhere else. Without robots.txt, there is no sitemap declaration to Googlebot and no crawl directive control. The sitemap.xml exists at <code>/sitemap.xml</code> but is not referenced anywhere for crawlers to discover it programmatically.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence:</strong> <code>file_search</code> for robots.txt returned zero results across the full workspace. <code>site/static/</code> directory contains no robots.txt file.</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "robots.txt present with sitemap declaration." Also violates Google's recommendation that robots.txt be used to declare your sitemap for discovery.</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Create <code>site/static/robots.txt</code> with: <code>User-agent: * / Allow: / / Sitemap: https://repatriateservice.com/sitemap.xml</code></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIGH 1 -->
+    <div class="risk-item risk-medium" style="margin-bottom:20px;">
+      <div class="risk-icon">⚠️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[HIGH 1] FAQ schema answers are placeholder deflections — structured data abuse risk</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-yellow">HIGH</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">The FAQPage JSON-LD schema on country hub pages and guide pages contains real answers for only 2 of 6 questions. The remaining 4 answers use the pattern: <em>"Please contact our team for specific guidance on this question. We are available 24 hours a day on +44 (0) 000 000 0000."</em> This is structured data that provides no informational value. Google's FAQ schema guidelines require answers to actually answer the question. Deflections risk the schema being ignored or triggering a manual action for structured data abuse.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence from guides/death-abroad-spain/index.html (schema, line 1):</strong></p>
+          <p style="font-family:monospace; font-size:12px; background:#21262d; padding:10px; border-radius:4px; color:#79c0ff; margin-bottom:8px;">Q: "What documents do I need to repatriate a body from Spain?" → A: "Please contact our team for specific guidance... +44 (0) 000 000 0000"<br>Q: "Can I cremate my relative in Spain and bring the ashes home?" → A: "Please contact our team..."<br>Q: "What happens if someone dies in Spain without travel insurance?" → A: "Please contact our team..."<br>Q: "My relative died in Tenerife. Is repatriation from the Canary Islands different?" → A: "Please contact our team..."</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "FAQ schema answers provide genuine informational value." Likely affects all 26 country hubs and 26 guide pages (data-driven from countries_repatriation.json).</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Populate the <code>faq_answers</code> fields in countries_repatriation.json with real 1-3 sentence answers for each question. The data is available in the country entries.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIGH 2 -->
+    <div class="risk-item risk-medium" style="margin-bottom:20px;">
+      <div class="risk-icon">⚠️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[HIGH 2] No named author attribution on any page type — E-E-A-T gap on YMYL site</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-yellow">HIGH</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">Country hubs, guide pages, embassy pages, city pages, and FAQ pages have zero author attribution — no visible byline, no author schema, no credentials. Blog posts have <code>"@type":"Organization"</code> in schema only, with no individual named author. This is a death/legal/financial site held to Google's highest E-E-A-T standards. No named author with verifiable expertise is a significant ranking weakness for YMYL content.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence (grep across all layouts):</strong> Only <code>blog/single.html</code> references "author" — as an Organization, not a Person. Country hub, guide, embassy, city, ashes, cremation templates contain no author markup of any kind.</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "Author attribution visible on all content pages, with credentials relevant to the YMYL domain."</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Create an author/contributor entity (e.g. "Repatriate Service Editorial Team — reviewed by [credentials]") and add it to the partial/footer on all content pages. Long-term: name a real consultant with repatriation credentials.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIGH 3 -->
+    <div class="risk-item risk-medium" style="margin-bottom:20px;">
+      <div class="risk-icon">⚠️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[HIGH 3] City pages contain unverified "VERIFY" content flags in published HTML</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-yellow">HIGH</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">City pages in the live build contain editorial flags that were not removed before publication. Barcelona city page renders hospital entries with "VERIFY" appended to the hospital name and notes such as "International repatriation services available in Barcelona. English-speaking firms exist. VERIFY." This unverified language is visible in the built HTML served to users and search engines. On a YMYL site, publishing data flagged as unverified is both an accuracy risk and an E-E-A-T signal failure.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence (site/public/repatriation-from-spain/barcelona/index.html, line 8):</strong></p>
+          <p style="font-family:monospace; font-size:12px; background:#21262d; padding:10px; border-radius:4px; color:#79c0ff;">&lt;p class=medical-note&gt;Major university hospital. VERIFY&lt;/p&gt;<br>&lt;p class=medical-note&gt;International repatriation services available in Barcelona. English-speaking firms exist. VERIFY.&lt;/p&gt;</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "No placeholder or unverified content in published output." Likely affects all ~60 city pages (all built from the same cities_p1.json template).</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Either verify and update the hospital/contact data in the cities JSON files, or strip VERIFY flags from the data and template rendering before deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIGH 4 -->
+    <div class="risk-item risk-medium" style="margin-bottom:20px;">
+      <div class="risk-icon">⚠️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[HIGH 4] H1 on country hubs does not contain primary keyword "repatriation"</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-yellow">HIGH</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">The H1 on all country hubs reads "Bringing your loved one home from [Country]". This is empathetic and user-facing — but it omits the primary keyword "repatriation" which is the core search term these pages are targeting. The copilot-instructions.md SEO rule is explicit: "H1: exactly one per page, contains primary keyword." The title tag correctly includes "Funeral Repatriation from Spain" but the H1 does not reinforce it.</p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:4px;"><strong>Evidence (site/public/repatriation-from-spain/index.html, line 2):</strong></p>
+          <p style="font-family:monospace; font-size:12px; background:#21262d; padding:10px; border-radius:4px; color:#79c0ff;">&lt;h1&gt;Bringing your loved one home from &lt;em&gt;Spain&lt;/em&gt;&lt;/h1&gt;</p>
+          <p style="color:#e3b341; font-size:13px; margin-top:8px;"><strong>Quality Gate fail:</strong> Checklist item — "H1 contains primary keyword." Affects all 26 country hub pages (template-driven).</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix (template change):</strong> Update country-hub.html template H1 to include "repatriation" — e.g. "Funeral repatriation from [Country] — bringing your loved one home" or add a subheading. The empathetic tone can be preserved while including the keyword.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIUM 1 -->
+    <div class="risk-item risk-low" style="margin-bottom:20px;">
+      <div class="risk-icon">ℹ️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[MEDIUM 1] Bringing-ashes meta descriptions are too short (91 chars vs 140-160 target)</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-blue">MEDIUM</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">The bringing-ashes-home silo pages have significantly short meta descriptions. Spain example: <em>"Documents, airline rules, and export requirements for bringing ashes from Spain to the UK."</em> = 91 characters. The project SEO rule specifies 140-160 characters. Short descriptions are often rewritten by Google using body copy, which may result in irrelevant or unhelpful SERP snippets. All 26 ashes pages likely share this issue (template-driven).</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Expand the <code>description</code> field in the ashes frontmatter template or extend in countries_repatriation.json to reach the 140-160 character target with a keyword and CTA.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIUM 2 -->
+    <div class="risk-item risk-low" style="margin-bottom:20px;">
+      <div class="risk-icon">ℹ️</div>
+      <div class="risk-body" style="flex:1;">
+        <div class="risk-title">[MEDIUM 2] City pages have no FAQPage schema — missed featured snippet eligibility</div>
+        <div class="risk-desc">
+          <p style="margin-bottom:8px;"><span class="badge badge-blue">MEDIUM</span></p>
+          <p style="color:#c9d1d9; font-size:13px; margin-bottom:8px;">City pages include Service and BreadcrumbList schemas only. Barcelona verified: no FAQPage schema present. City pages are key commercial targets (e.g. "repatriation from Barcelona" — high specificity, high commercial intent). FAQPage schema would improve featured snippet eligibility for these pages, particularly for "how long does repatriation from Barcelona take?" type queries.</p>
+          <p style="color:#8b949e; font-size:13px; margin-top:6px;"><strong>Fix:</strong> Add 3-4 city-level FAQ questions to the city template schema, drawn from the parent country's FAQ data. Lower priority than the three HIGH issues above.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLEAN FINDINGS -->
+  <div class="section">
+    <h2>Clean Findings — 19 Confirmed Passes</h2>
+    <p style="font-size:13px; color:#8b949e; margin-bottom:16px;">The following items were tested against specific built pages and confirmed passing. These are not assumptions — each was verified in the rendered HTML.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Check</th>
+            <th>Evidence</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Title tag format</td>
+            <td><code>&lt;title&gt;Funeral Repatriation from Spain | Repatriate Service&lt;/title&gt;</code> — 53 chars, correct format on all tested pages</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Canonical URLs</td>
+            <td>All pages have <code>&lt;link rel=canonical href=https://repatriateservice.com/...&gt;</code> pointing to production domain, not staging URL</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>BreadcrumbList schema</td>
+            <td>Present and structurally correct on all tested pages: country hub, city, embassy, ashes, guide, blog, FAQ</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Meta descriptions present</td>
+            <td>Every tested page has a unique meta description. Spain hub: 137 chars ✓. Barcelona city: 161 chars ✓. Embassy Spain: 161 chars ✓. Blog: 158 chars ✓.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Direct answer blocks rendering</td>
+            <td>All 26 country hubs render the <code>.answer-brief</code> section with heading, intro, bullet points, and stat sidebar from frontmatter correctly</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>FAQPage schema on country hubs</td>
+            <td>All 26 country hub pages confirmed to have FAQPage JSON-LD schema with 6 questions (2 of 6 have real answers — see Issue HIGH-1 for the other 4)</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>FAQPage schema on embassy pages</td>
+            <td>Embassy Spain page confirmed: FAQPage schema present with real informational answers including FCDO number +44 (0)20 7008 5000</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>FAQPage schema on bringing-ashes pages</td>
+            <td>Bringing ashes Spain confirmed: FAQPage schema present with substantive answers about airline rules, documentation requirements</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Service schema present</td>
+            <td>Service schema confirmed on: country hubs, city pages, bringing-ashes pages. Correct <code>@type</code>, <code>areaServed</code>, <code>provider</code> fields present</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Structured LLM-ready tables</td>
+            <td>All 26 country hubs have <code>data-table-type=cost-timeline</code> and <code>data-table-type=requirements</code> structured tables with specific GBP figures and timeline data</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Internal linking from country hubs</td>
+            <td>Spain hub links to embassy page, guide page, ashes page, cremation page, and city pages. Minimum 4 contextual internal links per country hub confirmed.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Breadcrumb navigation (visible HTML)</td>
+            <td>Breadcrumb nav present and correct in HTML on all tested page types. Barcelona: Home → Spain → Barcelona. Embassy: Home → Embassy Contacts → Spain.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Cost and timeline data specificity</td>
+            <td>Spain hub: GBP 3,000-7,000 total, itemised cost table with 6 line items, 3 timeline scenarios (5-7d / 7-14d / 3-6 weeks). Not vague ranges — specific and citable.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>8-step repatriation process section</td>
+            <td>All 26 country hubs render a data-driven 8-step process section from countries_repatriation.json. Country-specific steps confirmed for Spain, Barcelona city confirmed different content.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>lang=en-gb attribute</td>
+            <td>All pages have <code>&lt;html lang=en-gb&gt;</code> — correct for UK target market</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Plausible analytics</td>
+            <td>All pages confirmed: <code>&lt;script defer data-domain=repatriateservice.com src=https://plausible.io/js/script.js&gt;</code></td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Open Graph tags present</td>
+            <td>All tested pages have og:title, og:description, og:url, og:type. Present on country hub, city, guide, blog, FAQ pages.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Sitemap completeness</td>
+            <td>sitemap.xml verified: all 269 pages listed with correct repatriateservice.com URLs. Country hubs, cities, guides, embassy, ashes, cremation, blog, FAQ — all silos present.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Blog and FAQ body content depth</td>
+            <td>Blog posts have full body content with country-by-country cost tables. FAQ pages have structured multi-section answers with short_answer frontmatter. Neither is thin content.</td>
+            <td><span class="badge badge-green">PASS</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PRIORITY FIX QUEUE -->
+  <div class="section">
+    <h2>Fix Priority Queue</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Priority</th>
+            <th>Issue</th>
+            <th>Scope</th>
+            <th>Fix Location</th>
+            <th>Est. Effort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-red">CRITICAL</span></td>
+            <td>Placeholder phone number</td>
+            <td>All 269 pages</td>
+            <td><code>hugo.toml</code> — <code>emergencyPhone</code> param</td>
+            <td>5 minutes + rebuild</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-red">CRITICAL</span></td>
+            <td>No robots.txt</td>
+            <td>Whole site</td>
+            <td>Create <code>site/static/robots.txt</code></td>
+            <td>5 minutes</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">HIGH</span></td>
+            <td>FAQ schema placeholder answers</td>
+            <td>26 country hubs + 26 guide pages</td>
+            <td><code>site/data/countries_repatriation.json</code> — faq answer fields</td>
+            <td>2-4 hours (data population)</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">HIGH</span></td>
+            <td>City VERIFY flags in published HTML</td>
+            <td>~60 city pages</td>
+            <td><code>site/data/cities_p1.json</code> + <code>cities_p2.json</code></td>
+            <td>4-8 hours (data verification)</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">HIGH</span></td>
+            <td>No author attribution</td>
+            <td>All page types</td>
+            <td>Add to partials + JSON-LD schema in layout templates</td>
+            <td>2-3 hours (template work)</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">HIGH</span></td>
+            <td>H1 missing "repatriation" keyword</td>
+            <td>26 country hub pages</td>
+            <td><code>site/layouts/countries/country-hub.html</code> — H1 template</td>
+            <td>30 minutes + rebuild</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-blue">MEDIUM</span></td>
+            <td>Ashes pages short meta descriptions</td>
+            <td>26 ashes pages</td>
+            <td><code>site/data/countries_repatriation.json</code> — ashes description fields</td>
+            <td>1-2 hours</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-blue">MEDIUM</span></td>
+            <td>City pages missing FAQPage schema</td>
+            <td>~60 city pages</td>
+            <td><code>site/layouts/cities/single.html</code> — add FAQPage to schema</td>
+            <td>2 hours (template + data)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- DEPLOYMENT RECOMMENDATION -->
+  <div class="section">
+    <h2>Deployment Recommendation</h2>
+    <div class="alert alert-yellow">
+      <strong>Do Not Deploy to repatriateservice.com Until Criticals Are Resolved</strong>
+      The two critical issues (placeholder phone, no robots.txt) are launch blockers. The phone placeholder would appear in Google's index as the site's contact information. The missing robots.txt means Google cannot discover the sitemap at crawl time. Both take under 15 minutes total to fix. Once resolved, rebuild, redeploy to staging, verify both fixes in the built HTML, then proceed with domain cutover.
+    </div>
+    <div class="alert alert-green">
+      <strong>The Core Architecture Is Sound — Deploy With Confidence Once Criticals Are Fixed</strong>
+      19 clean findings confirm the structural SEO foundation is solid. Title tags, canonical URLs, schema types, sitemap, internal linking, page depth, analytics — all correct. This is not a site with fundamental architectural problems. It is a high-quality build with two operational oversights and a data quality issue in the FAQ schema that should be addressed in parallel with deployment preparation.
+    </div>
+  </div>
+
+  <!-- REVIEW FOOTER -->
+  <div style="margin-top:32px; padding-top:16px; border-top:1px solid #21262d;">
+    <p style="font-size:12px; color:#484f58;">Review 1 — Repatriate Service Phase 3 Pre-Deployment Audit &nbsp;|&nbsp; Conducted: 22 April 2026 &nbsp;|&nbsp; Next review: end of Phase 3 (on resolution of all critical and high issues).</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
----
-title: "Repatriation vs cremation abroad: which is right for your family?"
+﻿---
+title: "Repatriation vs Cremation Abroad: Which Is Right?"
 description: "A clear comparison of full body repatriation and arranging cremation abroad, covering cost, timeline, religious considerations, and the coroner question."
 date: 2025-02-26
 read_time: 6
@@ -31,18 +31,6 @@ This restriction applies particularly to:
 - Deaths where the cause is unexplained or sudden
 - Deaths where there may be a criminal element
 - Deaths following an operation or medical procedure
-
-## Cost comparison
-
-On cost alone, cremation abroad is usually cheaper.
-
-Full repatriation from Spain costs £3,000 to £5,500 typically. Cremation in Spain and bringing the ashes home typically costs between £1,500 and £3,000.
-
-The gap is wider for more distant countries. Full repatriation from Thailand costs £5,000 to £9,000. Cremation in Thailand and returning with ashes typically costs £2,000 to £4,000.
-
-These are rough industry averages. Your specific situation will vary.
-
-For a country-by-country breakdown of cremation costs, see the [cremation abroad section](/cremation-transfer/) of this site.
 
 ## Timeline
 

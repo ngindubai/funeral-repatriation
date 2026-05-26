@@ -1,5 +1,5 @@
----
-title: "Death on a cruise ship: what happens and how repatriation works"
+﻿---
+title: "Death on a Cruise Ship: Repatriation Explained"
 description: "What happens when a passenger dies on a cruise ship, who takes charge, how the body is stored, and what the repatriation process looks like."
 date: 2025-04-15
 slug: death-on-cruise-ship-repatriation
@@ -47,7 +47,7 @@ Most comprehensive travel insurance policies cover cruise ship deaths for the co
 
 Some cruise lines sell their own insurance through booking. The terms vary significantly. Read the policy and understand what is covered before sailing.
 
-If the deceased did not have travel insurance, the family bears the full cost of repatriation from wherever the ship was when they died. For a death that processes through the Dominican Republic and requires transport back to the UK, costs can reach £10,000-15,000.
+If the deceased did not have travel insurance, the family bears the full cost of repatriation from wherever the ship was when they died.
 
 ## Practical considerations for the family
 

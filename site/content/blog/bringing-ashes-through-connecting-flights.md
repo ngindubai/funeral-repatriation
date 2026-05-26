@@ -1,5 +1,5 @@
----
-title: "Bringing ashes through connecting flights: what to check"
+﻿---
+title: "Bringing Ashes Through Connecting Flights"
 description: "A practical guide to carrying ashes on routes with one or more connections, including transit rules and airline checks."
 date: 2026-04-21
 slug: bringing-ashes-through-connecting-flights

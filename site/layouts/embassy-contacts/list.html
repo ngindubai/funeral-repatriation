@@ -1,25 +1,15 @@
 {{ define "title" }}British Embassy Contacts When Someone Dies Abroad | Repatriate Service{{ end }}
 
 {{ define "main" }}
-<section class="guide-hero">
-  <div class="section-inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li aria-current="page">Embassy contacts</li>
-      </ol>
-    </nav>
-    <div class="guide-hero-inner">
-      <div class="guide-hero-text">
-        <p class="label-sm">Consular assistance</p>
+<section class="page-hero" style="background-image: url('/images/passport-stamp.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
         <h1>British Embassy contacts: when someone dies abroad</h1>
-        <p>Embassy and consulate contact details for British families dealing with a death abroad. Includes the FCDO 24-hour emergency line, main embassy numbers, and what consular staff can and cannot do.</p>
-        <div class="embassy-hero-cta" style="margin-top:1.25rem;">
-          <a href="tel:+4402070085000" class="btn btn-cta"><i class="fa-solid fa-phone"></i> FCDO 24/7: +44 (0)20 7008 5000</a>
+        <p>Embassy and consulate contact details for British families dealing with a death abroad. Includes the FCDO 24-hour emergency line and what consular staff can and cannot do.</p>
+        <div class="hero-actions page-hero-actions">
+            <a href="tel:+4402070085000" class="btn btn-cta"><i class="fa-solid fa-phone"></i> FCDO 24/7: +44 (0)20 7008 5000</a>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="section-alt" style="padding:1.25rem 0;">
@@ -39,12 +29,14 @@
       <p class="label-sm">Select a country</p>
       <h2>Country embassy guides</h2>
     </div>
-    <div class="guides-grid stagger-children">
+    <div class="countries-grid stagger-children">
       {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="guide-card reveal">
-        <p class="guide-card-title">{{ .Params.country_name }}</p>
-        <p class="guide-card-desc">British Embassy contacts and consular guidance</p>
-        <span class="guide-card-cta">View contacts <i class="fa-solid fa-angle-right"></i></span>
+      <a href="{{ .RelPermalink }}" class="country-card reveal">
+        <div class="country-card-body">
+          <h3>{{ .Params.country_name }}</h3>
+          <p>British Embassy contacts and consular guidance</p>
+          <p class="country-card-cta">View contacts <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
       </a>
       {{ end }}
     </div>

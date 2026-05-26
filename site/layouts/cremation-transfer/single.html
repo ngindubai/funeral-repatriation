@@ -23,7 +23,7 @@
       "provider": {
         "@type": "Organization",
         "name": "Repatriate Service",
-        "telephone": "{{ site.Params.emergencyPhone }}",
+        "telephone": "+447703577246",
         "url": "{{ site.BaseURL }}"
       },
       "serviceType": "Cremation Abroad and Ashes Transport",
@@ -75,8 +75,8 @@
                 <h1>Cremation in <em>{{ .Params.country_name }}</em> and bringing ashes home</h1>
                 <p class="ct-lead">For some families, arranging cremation locally and carrying ashes home is the right choice. It can be quicker, less costly, and feel more in keeping with your loved one's wishes. This guide explains how it works from {{ .Params.country_name }}, and what you need to arrange it.</p>
                 <div class="ct-hero-actions">
-                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us 24/7</a>
-                    <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline">Full repatriation guide for {{ .Params.country_name }}</a>
+                    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us 24/7</a>
+                    <a href="/repatriation-from-{{ .Params.country_key }}/" class="btn btn-outline">Full repatriation guide for {{ .Params.country_name }}</a>
                 </div>
             </div>
             <div class="ct-hero-facts">
@@ -258,7 +258,7 @@
             <div>
                 <h3>Considering full repatriation instead?</h3>
                 <p>Some families decide, after looking at the process and costs, that they want their loved one brought home intact. Full body repatriation from {{ .Params.country_name }} is something we handle regularly. The costs and timelines are set out in the full country guide.</p>
-                <a href="/repatriation-from-{{ $c.slug }}/" class="btn btn-outline" style="margin-top:0.75rem; display:inline-flex;">Full repatriation guide for {{ .Params.country_name }}</a>
+                <a href="/repatriation-from-{{ .Params.country_key }}/" class="btn btn-outline" style="margin-top:0.75rem; display:inline-flex;">Full repatriation guide for {{ .Params.country_name }}</a>
             </div>
         </div>
     </div>
@@ -329,6 +329,9 @@
             <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
             <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
         </form>
+        <div class="quote-success" hidden>
+            <p>Thank you. We have received your enquiry and will be in touch as soon as possible, usually within a few hours.</p>
+        </div>
     </div>
 </section>
 

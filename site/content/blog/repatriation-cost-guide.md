@@ -1,5 +1,5 @@
----
-title: "How much does repatriation cost? A country-by-country guide"
+﻿---
+title: "How Much Does Repatriation Cost?"
 description: "A realistic breakdown of body repatriation costs from 15 countries, including what drives prices up, what your travel insurance covers, and how to get a fair quote."
 date: 2025-01-22
 read_time: 7
@@ -56,7 +56,7 @@ The insurance company appoints the funeral director and coordinator. They do not
 
 Key things to check in the policy:
 
-- **Does it cover the full repatriation cost, or only up to a fixed amount?** Some policies cap at £5,000 or £7,500, which may not be enough for repatriation from Australia or Asia.
+- **Does it cover the full repatriation cost, or only up to a fixed amount?** Some policies have a cap which may not be enough for repatriation from Australia or Asia.
 - **Is there a 24/7 assistance number?** This is the line you call immediately. Policies without this are less useful.
 - **Does it cover pre-existing conditions?** Many policies exclude deaths resulting from conditions disclosed at the time of purchase, or exclude them entirely.
 - **What happens if the insurer delays?** In hot climates particularly, delays cost money because the body requires refrigeration.

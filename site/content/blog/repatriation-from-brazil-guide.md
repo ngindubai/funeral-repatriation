@@ -1,5 +1,5 @@
----
-title: "Repatriation from Brazil: timeline, costs, and process"
+﻿---
+title: "Repatriation from Brazil to the UK"
 description: "A practical guide for UK families handling repatriation from Brazil, including key paperwork, timeline expectations, and transport planning."
 date: 2026-04-21
 slug: repatriation-from-brazil-guide

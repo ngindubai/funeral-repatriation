@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<title>Repatriate Service — Template Diversification & Indexation Build Guide</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --bg:#10131a; --panel:#1a1f2a; --panel2:#222937; --line:#2c3344;
+    --ink:#e8ecf2; --mute:#9aa3b2; --acc:#c9a96e; --warn:#e8a04a;
+    --bad:#e26464; --good:#7bc290; --code:#1a1f2a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI','Inter',Roboto,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 32px}
+  h1{font-family:'Playfair Display',Georgia,serif;font-size:36px;letter-spacing:-.5px;margin:0 0 8px;font-weight:600}
+  h2{font-family:'Playfair Display',Georgia,serif;font-size:26px;margin:48px 0 12px;padding-top:24px;border-top:1px solid var(--line);font-weight:600}
+  h3{font-size:18px;margin:28px 0 8px;color:var(--acc)}
+  h4{font-size:14px;margin:20px 0 6px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+  p,li{color:var(--ink)}
+  .lead{color:var(--mute);font-size:17px;max-width:780px;line-height:1.65}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:1fr 1fr 1fr}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h3{margin-top:0}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;background:#272d3a;color:var(--mute);margin-right:6px}
+  .pill.warn{background:#3a2c14;color:var(--warn)}
+  .pill.bad{background:#3a1d1d;color:var(--bad)}
+  .pill.good{background:#1d3a26;color:var(--good)}
+  .pill.acc{background:#3a3217;color:var(--acc)}
+  table{width:100%;border-collapse:collapse;margin:14px 0}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+  th{color:var(--mute);text-transform:uppercase;font-size:11px;letter-spacing:.07em;font-weight:600}
+  code,pre{font-family:'SF Mono',Consolas,Menlo,monospace;font-size:13px}
+  code{background:var(--code);padding:2px 6px;border-radius:4px;color:var(--acc)}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto;color:var(--ink)}
+  pre code{background:none;padding:0;color:inherit}
+  .callout{border-left:3px solid var(--warn);background:#1f1a14;padding:14px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+  .callout.bad{border-color:var(--bad);background:#1f1414}
+  .callout.good{border-color:var(--good);background:#141f17}
+  .callout.acc{border-color:var(--acc);background:#1d1a14}
+  ul,ol{padding-left:22px}
+  hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+  .toc a{color:var(--acc);text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+  .meta{color:var(--mute);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="meta">Repatriate Service · Template Diversification & Indexation Build Guide · v1.0</p>
+<h1>Repatriate Service — Template Diversification & Indexation Build Guide</h1>
+<p class="lead">A YMYL site about funeral repatriation cannot afford soft-deindexation. Right now every country hub renders from one Hugo template, every city page from one template, every guide from one template, every ashes/cremation/embassy page from one template. Same DOM order, same H2 sequence, same hero layout. Google will sample, cluster, and crawl-throttle. This guide instructs the build chat to introduce 5 distinct templates per content silo, 5 paired writing souls, deterministic rotation, and a phased back-fill across the live site.</p>
+
+<div class="callout bad">
+<strong>Sensitivity rule above all.</strong> This is grief content. Diversification must never produce a "fun" or "marketing-flashy" treatment. Every variant remains compassionate, direct, professional. Variation lives in <em>structure</em>, not in tone.
+</div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+  <li><a href="#audit">Current state audit</a></li>
+  <li><a href="#why">Why one template causes deindexation</a></li>
+  <li><a href="#design">Design constraints (sensitivity, brand, YMYL)</a></li>
+  <li><a href="#country-templates">5 country-hub templates</a></li>
+  <li><a href="#city-templates">5 city-page templates</a></li>
+  <li><a href="#guide-templates">5 guide / silo-page templates</a></li>
+  <li><a href="#souls">Content structure souls (5 per silo)</a></li>
+  <li><a href="#rotation">Deterministic rotation algorithm</a></li>
+  <li><a href="#workflow">Per-page workflow the chat must follow</a></li>
+  <li><a href="#hugo">Hugo wiring</a></li>
+  <li><a href="#backfill">Phased back-fill plan</a></li>
+  <li><a href="#qa">QA, fingerprint test, indexation monitoring</a></li>
+  <li><a href="#rules">Hard rules (do not violate)</a></li>
+</ol>
+
+<h2 id="audit">1. Current state audit</h2>
+
+<table>
+  <thead><tr><th>Silo</th><th>Pages</th><th>Templates</th><th>Risk</th></tr></thead>
+  <tbody>
+    <tr><td>Country hubs (<code>/repatriation-from-COUNTRY/</code>)</td><td>26 (P1+P2)</td><td><code>layouts/countries/country-hub.html</code></td><td><span class="pill bad">High</span></td></tr>
+    <tr><td>City pages (<code>/repatriation-from-COUNTRY/CITY/</code>)</td><td>57+</td><td><code>layouts/countries/single.html</code></td><td><span class="pill bad">High</span></td></tr>
+    <tr><td>Guides (<code>/guides/death-abroad-COUNTRY/</code>)</td><td>26</td><td><code>layouts/_default/single.html</code></td><td><span class="pill warn">Medium</span></td></tr>
+    <tr><td>Ashes silo (<code>/bringing-ashes-home/COUNTRY/</code>)</td><td>26</td><td>1 layout</td><td><span class="pill bad">High</span> (most templated)</td></tr>
+    <tr><td>Cremation silo (<code>/cremation-transfer/COUNTRY/</code>)</td><td>23</td><td>1 layout</td><td><span class="pill bad">High</span></td></tr>
+    <tr><td>Embassy contacts (<code>/embassy-contacts/COUNTRY/</code>)</td><td>26</td><td>1 layout</td><td><span class="pill bad">High</span> (essentially a directory template)</td></tr>
+    <tr><td>FAQ (<code>/faq/SLUG/</code>)</td><td>16</td><td>1 layout</td><td><span class="pill warn">Medium</span></td></tr>
+    <tr><td>Blog</td><td>30</td><td>1 layout</td><td><span class="pill">Low</span> (varied prose)</td></tr>
+  </tbody>
+</table>
+
+<h3>Repetition fingerprint (country hubs)</h3>
+<p>Every country hub renders this exact sequence (verified from <code>country-hub.html</code>):</p>
+<ol>
+  <li>Hero with country name + 3 stat tiles (timeline / cost / priority)</li>
+  <li>Helpline strip</li>
+  <li>Direct-answer block (where present)</li>
+  <li>Process section — 8 numbered cards</li>
+  <li>Documents section — checklist + warning cards</li>
+  <li>Timeline section — 3 columns (best / typical / complex)</li>
+  <li>Cost section — total banner + breakdown table</li>
+  <li>Structured extraction tables</li>
+  <li>FAQ accordion</li>
+  <li>Embassy contacts</li>
+  <li>City list</li>
+  <li>Final CTA</li>
+</ol>
+<p>26 hubs, identical 12-section skeleton. Easy cluster.</p>
+
+<h2 id="why">2. Why one template causes deindexation (YMYL angle)</h2>
+<p>Standard near-duplicate detection plus a YMYL twist:</p>
+<ul>
+  <li><strong>YMYL trust scoring.</strong> Funeral / death / repatriation triggers Google's YMYL bar. The algorithm wants visible E-E-A-T signals that aren't templated. Identical schema, identical FAQ block markup, identical author byline placement, page after page, suggests a content farm pattern. That depresses ranking even before deindexation.</li>
+  <li><strong>Boilerplate ratio.</strong> The shared template chrome (helpline strip, repeated CTAs, repeated sidebar text) competes with the unique country-specific text. Pages with thin unique content get sampled out.</li>
+  <li><strong>FAQ schema duplication.</strong> Currently FAQs are generated from the same 6 angles per country. Across 26 hubs that's 156 FAQs, many with near-identical question phrasing. Google merges these clusters and shows one country's snippet as canonical for several queries.</li>
+</ul>
+
+<h2 id="design">3. Design constraints</h2>
+<p>All variants must:</p>
+<ul>
+  <li>Use the existing palette (Playfair Display + Inter; navy / charcoal / gold accent already in <code>main.css</code>).</li>
+  <li>Maintain compassionate tone. No bright accents introduced solely for variety.</li>
+  <li>Keep the 24/7 helpline visible above the fold on every variant.</li>
+  <li>Honour all content hard rules: British English, no banned vocabulary (robust, seamless, comprehensive, crucial, meticulous, leverage, synergy, paramount, multifaceted, cornerstone, empower, catalyst, nestled, realm, tapestry, delve), no em dashes, no safety guarantees.</li>
+  <li>Preserve YMYL signals: source attribution, named author block, last-updated date, citation links to .gov / FCDO / embassy sources.</li>
+  <li>Render the same data fields from <code>data/countries_repatriation.json</code> — nothing dropped.</li>
+</ul>
+
+<p>What changes per variant:</p>
+<ul>
+  <li>Section order.</li>
+  <li>Hero composition (image hero vs typographic hero vs answer-first hero vs map hero vs stat-strip hero).</li>
+  <li>Cost / timeline visualisation (table vs ladder vs split-card vs inline-text vs ledger-style).</li>
+  <li>FAQ placement (mid-page vs end vs interleaved).</li>
+  <li>Sidebar presence and content (sticky helpline rail vs document checklist rail vs none).</li>
+  <li>Schema.org type emphasis (<code>Service</code> vs <code>HowTo</code> vs <code>FAQPage</code> vs <code>Article</code> vs <code>GovernmentService</code>).</li>
+</ul>
+
+<h2 id="country-templates">4. The 5 country-hub templates</h2>
+<p>Files in <code>site/layouts/partials/countries/</code>; the <code>country-hub.html</code> top-level becomes a slim router.</p>
+
+<div class="grid g2">
+  <div class="card">
+    <span class="pill acc">CH-A — The Family Brief</span>
+    <h3><code>country-a-familybrief.html</code></h3>
+    <p><strong>Hero:</strong> Soft typographic hero, no large image. Country name, single sentence "We help families bring loved ones home from {country}." Helpline phone large beneath.</p>
+    <p><strong>Sidebar:</strong> Sticky helpline + "What we'll do for you" 4-bullet card.</p>
+    <p><strong>Section order:</strong> Hero → Direct answer (3 sentences max) → "What happens first" (immediate next steps) → Documents and processing → Cost (single-line range, breakdown collapsed by default) → Timeline as a brief paragraph not a 3-column grid → Local funeral director coordination notes → FAQ at end → Embassy contacts.</p>
+    <p><strong>Visual signature:</strong> Quietest variant. Reads like a letter.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">CH-B — The Step-by-Step</span>
+    <h3><code>country-b-stepbystep.html</code></h3>
+    <p><strong>Hero:</strong> Small banner with country flag, status chip ("Repatriation: established route" / "Repatriation: complex"), single CTA.</p>
+    <p><strong>Sidebar:</strong> Vertical step indicator, scroll-tracking through the 8 process steps.</p>
+    <p><strong>Section order:</strong> Hero → 8 process steps as a single connected vertical journey (one card per step, no grid) → Cost rolled inline at the document step → Timeline shown as a single horizontal bar, not 3 cards → FAQ → Embassy contacts → Cities.</p>
+    <p><strong>Visual signature:</strong> Linear journey. The 8 steps dominate the page.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">CH-C — The Cost & Timeline Forward</span>
+    <h3><code>country-c-costtimeline.html</code></h3>
+    <p><strong>Hero:</strong> Stat strip — typical days, typical cost, post-mortem likelihood, embassy support. No image.</p>
+    <p><strong>Sidebar:</strong> Cost breakdown sticky table.</p>
+    <p><strong>Section order:</strong> Hero stats → Detailed cost breakdown table (top of page, not buried) → Timeline ladder (best/typical/complex shown as a vertical ladder with day counts) → What drives cost up → What shortens timeline → Documents → Process summarised → FAQ at end.</p>
+    <p><strong>Visual signature:</strong> Numerical, transparent. Pricing-first.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">CH-D — The Q&amp;A Hub</span>
+    <h3><code>country-d-qahub.html</code></h3>
+    <p><strong>Hero:</strong> Clean white hero, H1 phrased as a question ("How do you bring a loved one home from {country}?"), 3-line direct answer beneath.</p>
+    <p><strong>Sidebar:</strong> Floating mini-FAQ ToC.</p>
+    <p><strong>Section order:</strong> Hero question + answer → "What do you do in the first 24 hours?" Q+A → "How long will it take?" Q+A with timeline embedded → "What will it cost?" Q+A with cost embedded → "What documents are needed?" Q+A → "What if there's a post-mortem?" Q+A → "Can we cremate locally instead?" Q+A → "Who pays?" Q+A → "What does the embassy actually do?" Q+A → "How do we start?" Q+A with helpline.</p>
+    <p><strong>Visual signature:</strong> No "Process" / "Documents" / "Cost" H2s exist — every section is a question. Eliminates the boilerplate H2 fingerprint.</p>
+  </div>
+  <div class="card">
+    <span class="pill acc">CH-E — The Authority Briefing</span>
+    <h3><code>country-e-briefing.html</code></h3>
+    <p><strong>Hero:</strong> Long-form authoritative intro (200 words), no large image. Author byline (named senior repatriation specialist) + last-updated date front and centre.</p>
+    <p><strong>Sidebar:</strong> Sources and references panel (FCDO link, embassy link, country gov funeral authority link).</p>
+    <p><strong>Section order:</strong> Hero intro → Country overview (jurisdiction, legal framework, religious considerations) → Process narrative (prose, not numbered cards) → Documents listed inline within the narrative → Cost discussion in prose with a small inline table → Timeline discussion in prose → Edge cases (post-mortem, criminal investigation, repatriation of ashes only) → Local context (regional differences within the country) → FAQ at end → Citations list.</p>
+    <p><strong>Visual signature:</strong> Highest-authority variant. Long-form, sourced. Best for YMYL E-E-A-T signals.</p>
+  </div>
+</div>
+
+<h2 id="city-templates">5. The 5 city-page templates</h2>
+<p>Files in <code>site/layouts/partials/cities/</code>.</p>
+
+<table>
+  <thead><tr><th>ID</th><th>File</th><th>Hero</th><th>Section signature</th></tr></thead>
+  <tbody>
+    <tr><td>CT-A</td><td><code>city-a-localbrief.html</code></td><td>City name + parent country breadcrumb</td><td>Local context → How it differs from {country} hub → Local funeral providers → Local hospital release process → Cost variance vs national average → Travel logistics from this city → Link back to country hub</td></tr>
+    <tr><td>CT-B</td><td><code>city-b-airportforward.html</code></td><td>Airport-led hero (city's main outbound airport for repatriation cargo)</td><td>Airport cargo facilities → Airline cargo handling at this city → Documentation timing relative to flight → Cost line items specific to this airport → FAQ → Country hub link</td></tr>
+    <tr><td>CT-C</td><td><code>city-c-medicalsetting.html</code></td><td>Hospital / medical-setting hero</td><td>If death occurred in a city hospital → If in private residence → If during an accident → Local coroner / medical examiner process → Documents released by which authority → Cost notes → FAQ</td></tr>
+    <tr><td>CT-D</td><td><code>city-d-qa.html</code></td><td>Question hero ("Has a loved one died in {city}?")</td><td>All sections as Q&amp;A. Same structure as CH-D but city-scoped.</td></tr>
+    <tr><td>CT-E</td><td><code>city-e-checklist.html</code></td><td>Checklist hero</td><td>First 24 hours checklist → Days 1–3 checklist → Days 3–7 checklist → Documents checklist → Pre-flight checklist → FAQ at end</td></tr>
+  </tbody>
+</table>
+
+<h2 id="guide-templates">6. The 5 guide / silo-page templates</h2>
+<p>Apply the same 5 templates across <code>guides/</code>, <code>bringing-ashes-home/</code>, <code>cremation-transfer/</code>, <code>embassy-contacts/</code>. Files live in <code>site/layouts/partials/silos/</code>:</p>
+<ul>
+  <li><strong>S-A — Process explainer.</strong> Linear narrative, sectioned by stage of grief / stage of process.</li>
+  <li><strong>S-B — Comparison.</strong> Side-by-side: cremation vs repatriation; ashes-by-air vs ashes-by-courier; embassy vs consulate; what's covered vs what isn't.</li>
+  <li><strong>S-C — Cost-led.</strong> Cost is hero. Everything else supports.</li>
+  <li><strong>S-D — Q&amp;A.</strong> Ten questions, ten answers, no other section structure.</li>
+  <li><strong>S-E — Authoritative reference.</strong> Long-form, citation-rich, looks like a published reference document.</li>
+</ul>
+
+<div class="callout">
+<strong>Embassy contacts</strong> deserve special attention. They are the most templated silo (essentially a directory). Use S-E heavily here — wrap each contact list inside an authority-rich narrative about how to actually use embassy services. The current "name + phone + address" grid is a deindexation magnet.
+</div>
+
+<h2 id="souls">7. Content structure souls (5 per silo)</h2>
+<p>Souls live at <code>workforce/content/souls/</code>. The chat must read the relevant soul before drafting any prose. Each soul defines voice, opening pattern, paragraph rhythm, fact-claim style, and banned moves.</p>
+
+<h3>Country-hub souls</h3>
+
+<div class="grid g2">
+  <div class="card">
+    <span class="pill">Soul 1 — The Family Companion</span>
+    <h4>Default partner: CH-A</h4>
+    <p>Voice: a senior repatriation coordinator writing directly to a grieving family. Short sentences. No technical jargon without immediate plain-English gloss. Opens by acknowledging the situation in one sentence, then moves to action.</p>
+    <p>Section openers (rotate): "The first thing to know is", "Most families in your situation", "Before anything else,", "When this happens,".</p>
+    <p>Banned: "we understand", "we're sorry for your loss" (cliché), "rest assured", "peace of mind", any marketing softener. Banned banned-vocabulary list applies (robust, seamless, etc).</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 2 — The Process Guide</span>
+    <h4>Default partner: CH-B</h4>
+    <p>Voice: methodical, step-by-step, calm. Each section is one beat in the timeline. Uses time markers ("Within 24 hours.", "By day 3.", "Around day 7.") as section openers. Never lists processes as bullet dumps; always as connected actions with their owner ("the local funeral director will obtain X").</p>
+    <p>Banned: parallel bullet structures repeated across sections — vary the phrasing within steps.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 3 — The Practical Specifier</span>
+    <h4>Default partner: CH-C</h4>
+    <p>Voice: numbers-first. Every section opens with the relevant number ("Typical total cost from {country} is £4,800–£7,200."). Plain prose around it. Cost factors named explicitly. Does not bury the price.</p>
+    <p>Banned: vague ranges where a precise figure exists; "varies depending on circumstances" without specifying which circumstances.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 4 — The Question Answerer</span>
+    <h4>Default partner: CH-D</h4>
+    <p>Voice: writes in answers. Every section literally a question. Uses second person directly. Answers in 2–4 sentences then a single supporting fact. No long expository paragraphs.</p>
+    <p>Pattern: question → 1-sentence direct answer → 2-sentence elaboration → 1 specific number or document name. Then move on.</p>
+  </div>
+  <div class="card">
+    <span class="pill">Soul 5 — The Authority Specialist</span>
+    <h4>Default partner: CH-E</h4>
+    <p>Voice: senior practitioner addressing readers who want depth. Long-form (1,800–2,500 words). Cites sources inline ("the FCDO's death-abroad guidance, current edition"). Uses local authority names ("the Bangkok Metropolitan Administration's Office of Foreign Affairs handles…"). Names religious or cultural considerations where relevant.</p>
+    <p>Mandatory: at least 4 named external sources, byline, last-updated date, "Reviewed by" line where possible.</p>
+  </div>
+</div>
+
+<h3>City-page souls</h3>
+<p>Use the same 5 souls scoped to city level. City pages must <em>not</em> repeat the country hub's facts; they must add genuine local detail (which hospital systems, which airports handle cargo, regional cost variance, local funeral director directory).</p>
+
+<h3>Silo souls (ashes / cremation / embassy / guides)</h3>
+<ol>
+  <li><strong>The Calm Explainer</strong> — narrative, soft, S-A.</li>
+  <li><strong>The Comparator</strong> — every paragraph contrasts options, S-B.</li>
+  <li><strong>The Cost Specialist</strong> — money first, S-C.</li>
+  <li><strong>The Direct Answerer</strong> — questions only, S-D.</li>
+  <li><strong>The Reference Author</strong> — sourced, long-form, S-E.</li>
+</ol>
+
+<h2 id="rotation">8. Deterministic rotation algorithm</h2>
+<p>Same approach as the pet-transport guide. Each page's variant is fixed by its slug so rebuilds don't churn it.</p>
+
+<h3>Front matter</h3>
+<pre><code>---
+layout: country-hub
+title: "Thailand"
+country_key: "thailand"
+slug: "thailand"
+template_variant: "E"
+content_soul: 5
+---</code></pre>
+
+<h3>Layout router</h3>
+<p>Replace the contents of <code>site/layouts/countries/country-hub.html</code> with a slim router:</p>
+<pre><code>{{ define "main" }}
+  {{ $variant := .Params.template_variant | default "A" }}
+  {{ partial (printf "countries/country-%s.html" (lower $variant)) . }}
+{{ end }}</code></pre>
+
+<h3>Distribution targets</h3>
+<table>
+  <thead><tr><th>Variant</th><th>Country hubs share</th><th>City pages share</th><th>Silo pages share</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>A — Family Brief</td><td>22%</td><td>22%</td><td>20%</td><td>Default for low-complexity countries</td></tr>
+    <tr><td>B — Step-by-Step</td><td>20%</td><td>20%</td><td>20%</td><td>Default for procedurally heavy countries</td></tr>
+    <tr><td>C — Cost &amp; Timeline</td><td>20%</td><td>18%</td><td>20%</td><td>Best for high-cost-search countries</td></tr>
+    <tr><td>D — Q&amp;A</td><td>18%</td><td>20%</td><td>20%</td><td>Best for capturing People Also Ask</td></tr>
+    <tr><td>E — Authority Briefing</td><td>20%</td><td>20%</td><td>20%</td><td>Mandatory for top-priority P1 countries (Thailand, Spain, Mexico, Brazil, Vietnam)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout acc">
+<strong>Override rule.</strong> The 12 priority pages from the LLM Citation Audit Round 2 (Thailand, Spain, Mexico, Brazil, Vietnam, Kenya, Philippines hubs + 5 named blog/FAQ pages) must be assigned variant E (Authority Briefing) regardless of slug-hash result. Authority signals are most valuable on these pages.
+</div>
+
+<h2 id="workflow">9. Per-page workflow the chat must follow</h2>
+
+<ol>
+  <li><strong>Read the front matter.</strong> Note <code>template_variant</code> and <code>content_soul</code>. If absent, compute from slug-hash modulo 5 and write back.</li>
+  <li><strong>Load the soul file</strong> at <code>workforce/content/souls/country-soul-{N}.md</code> (or city-soul / silo-soul). Read in full.</li>
+  <li><strong>Open one nearby existing page</strong> with the same template_variant. Compare opening sentences and FAQ phrasing. The new page must not echo prior structure word-for-word.</li>
+  <li><strong>Apply the existing content rules</strong>: British English, no banned vocabulary, no em dashes, no safety guarantees, source attribution on every factual claim, sensitive grieving-family tone.</li>
+  <li><strong>Write or rewrite the body</strong> following the soul's structure. Wordsmith first, then Chameleon humaniser pass.</li>
+  <li><strong>Verify the H2 set.</strong> No H2 may appear identically on more than 30% of pages within its variant bucket. Paraphrase boilerplate H2s.</li>
+  <li><strong>FAQ uniqueness.</strong> At least 3 of the 6 FAQs must be country-specific (mention country, region, or named local authority). The shared 6-angle FAQ template must be retired.</li>
+  <li><strong>Internal links.</strong> Vary the related-pages block visual style with the variant.</li>
+  <li><strong>Author + last-updated block.</strong> Required on every variant. Variant E requires a "Reviewed by" line.</li>
+  <li><strong>Build + verify</strong>:
+    <pre><code>cd "c:\Users\garet\Desktop\Research\funeral-repatriation\site"
+hugo --gc --minify
+# Verify no double-prefixed URL bug:
+Get-ChildItem public -Name | Where-Object { $_ -like "*repatriation-from-repatriation*" }</code></pre>
+  </li>
+  <li><strong>Mark page done</strong> in <code>data/backfill_register.json</code>.</li>
+</ol>
+
+<h2 id="hugo">10. Hugo wiring</h2>
+
+<h3>File layout to add</h3>
+<pre><code>site/
+  layouts/
+    countries/
+      country-hub.html              # router only (8 lines)
+      single.html                   # router only (8 lines, dispatches by city soul)
+    partials/
+      countries/
+        country-a-familybrief.html
+        country-b-stepbystep.html
+        country-c-costtimeline.html
+        country-d-qahub.html
+        country-e-briefing.html
+      cities/
+        city-a-localbrief.html
+        city-b-airportforward.html
+        city-c-medicalsetting.html
+        city-d-qa.html
+        city-e-checklist.html
+      silos/
+        silo-a-explainer.html
+        silo-b-comparator.html
+        silo-c-cost.html
+        silo-d-qa.html
+        silo-e-reference.html
+      blocks/
+        faq-accordion.html        # variant 1
+        faq-2col.html             # variant 2
+        faq-inline-qa.html        # variant 3
+        faq-expander-grid.html    # variant 4
+        faq-bottom-list.html      # variant 5
+        cost-table-1.html ... 5
+        timeline-1.html ... 5
+        author-byline-1.html ... 5
+  assets/
+    css/
+      variants/
+        country-a.css ... e.css
+        city-a.css ... e.css
+        silo-a.css ... e.css
+workforce/
+  content/
+    souls/
+      country-soul-1.md ... 5.md
+      city-soul-1.md ... 5.md
+      silo-soul-1.md ... 5.md
+data/
+  backfill_register.json</code></pre>
+
+<h3>CSS isolation</h3>
+<p>Each variant CSS scoped under a single root class (<code>.tpl-ch-a</code>, <code>.tpl-ct-c</code>, <code>.tpl-silo-e</code>). Each partial wraps its render in that class.</p>
+
+<h3>Schema diversification (YMYL critical)</h3>
+<table>
+  <thead><tr><th>Variant</th><th>Primary schema</th><th>Secondary</th></tr></thead>
+  <tbody>
+    <tr><td>CH-A Family Brief</td><td><code>Service</code></td><td><code>Organization</code> with named author</td></tr>
+    <tr><td>CH-B Step-by-Step</td><td><code>HowTo</code></td><td><code>Service</code></td></tr>
+    <tr><td>CH-C Cost &amp; Timeline</td><td><code>Service</code> with <code>offers</code></td><td><code>HowTo</code></td></tr>
+    <tr><td>CH-D Q&amp;A</td><td><code>FAQPage</code></td><td><code>Service</code></td></tr>
+    <tr><td>CH-E Authority Briefing</td><td><code>Article</code> with <code>author</code> + <code>reviewedBy</code></td><td><code>Service</code></td></tr>
+  </tbody>
+</table>
+
+<h2 id="backfill">11. Phased back-fill plan</h2>
+
+<table>
+  <thead><tr><th>Phase</th><th>Scope</th><th>Pages</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>P1</td><td>The 12 priority pages from LLM audit Round 2</td><td>12</td><td>Manual rewrite to variant E (Authority Briefing). One page per chat turn.</td></tr>
+    <tr><td>P2</td><td>All 26 country hubs</td><td>26</td><td>Assign variants per distribution table. Rewrite bodies to match assigned soul. Two pages per chat turn maximum.</td></tr>
+    <tr><td>P3</td><td>All 57+ city pages</td><td>57+</td><td>Assign variants. Bodies must add genuine local detail not in country hubs. Three per chat turn.</td></tr>
+    <tr><td>P4</td><td>Embassy contacts (highest-templated silo)</td><td>26</td><td>Assign variants, heavy use of S-E. Wrap directory data in narrative.</td></tr>
+    <tr><td>P5</td><td>Ashes + cremation silos</td><td>49</td><td>Assign variants per distribution.</td></tr>
+    <tr><td>P6</td><td>Guides + FAQ pages</td><td>~26 + 16</td><td>Assign variants. FAQ pages naturally suit S-D but force variety.</td></tr>
+  </tbody>
+</table>
+
+<h3>Back-fill register entry</h3>
+<pre><code>{
+  "thailand": {
+    "type": "country_hub",
+    "template_variant": "E",
+    "content_soul": 5,
+    "rewritten_at": "2026-05-08",
+    "h2_unique_pct": 0.91,
+    "boilerplate_ratio": 0.34,
+    "ymyl_signals": {
+      "named_author": true,
+      "reviewed_by": true,
+      "last_updated": "2026-05-08",
+      "external_sources": 6
+    }
+  }
+}</code></pre>
+
+<h2 id="qa">12. QA, fingerprint test, indexation monitoring</h2>
+
+<h3>Fingerprint test (script: <code>scripts/fingerprint_audit.py</code>)</h3>
+<ol>
+  <li>Crawl <code>public/</code> after each build.</li>
+  <li>For each page extract: H2 sequence, DOM-skeleton hash (class-name sequence), unique vs boilerplate text ratio, schema type used.</li>
+  <li>Cluster by skeleton hash within each silo. <strong>Pass:</strong> no cluster &gt; 25% of silo. <strong>Fail:</strong> any &gt; 40%.</li>
+  <li>Flag H2 strings appearing on &gt;30% of pages within a variant bucket — paraphrase required.</li>
+  <li>Flag pages with boilerplate ratio &gt; 0.45 — body needs expansion.</li>
+</ol>
+
+<h3>YMYL signal audit</h3>
+<p>Beyond the structural fingerprint, weekly check that every YMYL page has:</p>
+<ul>
+  <li>Named author with credentials</li>
+  <li>Last-updated date in current quarter</li>
+  <li>At least 2 external authoritative sources (FCDO, embassy, WHO, country government)</li>
+  <li>Honest disclaimer where appropriate ("Requirements can change. Verify current rules with the embassy before proceeding.")</li>
+</ul>
+
+<h3>Indexation monitoring (GSC)</h3>
+<ul>
+  <li>Track "Discovered, not indexed" + "Crawled, not indexed" weekly.</li>
+  <li>Sample 20 pages per variant via URL Inspection API monthly.</li>
+  <li>Compare indexation rate by variant; the variant outperforming on E-E-A-T pages keeps its share, weaker variants get reduced 5%.</li>
+</ul>
+
+<h3>Build + deploy verification</h3>
+<pre><code>cd "c:\Users\garet\Desktop\Research\funeral-repatriation\site"
+hugo --gc --minify
+python ../scripts/fingerprint_audit.py public/
+# Verify the known double-prefixed URL bug stays fixed:
+Get-ChildItem public -Name -Recurse | Where-Object { $_ -like "*repatriation-from-repatriation*" }
+surge public/ uk-funeral-repatriation.surge.sh</code></pre>
+
+<h2 id="rules">13. Hard rules (do not violate)</h2>
+
+<div class="callout bad">
+<h4 style="margin-top:0">Absolute don'ts</h4>
+<ul>
+  <li>Never compromise sensitivity for visual variety. No bright marketing flair on grief content.</li>
+  <li>Never drop the 24/7 helpline from above the fold on any variant.</li>
+  <li>Never weaken YMYL signals (author, source, date) on any variant.</li>
+  <li>Never collapse two templates because they "feel similar". They are distinct on purpose.</li>
+  <li>Never let any variant's share fall below 15% or rise above 25%.</li>
+  <li>Never reuse the same FAQ block markup across all variants — match the variant.</li>
+  <li>Never skip the soul-load step. The chat must read the soul before drafting prose.</li>
+  <li>Never repeat banned vocabulary (robust, seamless, comprehensive, crucial, meticulous, leverage, synergy, paramount, multifaceted, cornerstone, empower, catalyst, nestled, realm, tapestry, delve).</li>
+  <li>Never use em dashes. Use commas, periods, colons.</li>
+  <li>Never make safety guarantees ("ensure", "guaranteed", "always safe"). Use "reduce risk", "in most cases", "typically".</li>
+  <li>Never back-fill more than 10 pages in a single chat session. Quality dies.</li>
+</ul>
+</div>
+
+<div class="callout good">
+<h4 style="margin-top:0">Absolute musts</h4>
+<ul>
+  <li>Front matter on every country / city / silo page must include <code>template_variant</code> and <code>content_soul</code>.</li>
+  <li>Every page rewrite logs to <code>data/backfill_register.json</code>.</li>
+  <li>Variant E (Authority Briefing) is mandatory for the 12 LLM-audit priority pages.</li>
+  <li>Every variant CSS is scoped under <code>.tpl-{silo}-{x}</code>.</li>
+  <li>The fingerprint audit must run before every Surge deploy.</li>
+  <li>Schema.org primary type varies per variant (see §10).</li>
+  <li>Compassionate, professional tone is preserved across all variants.</li>
+  <li>British English throughout.</li>
+</ul>
+</div>
+
+<hr>
+
+<p class="meta">End of guide. Feed this document into the build chat as the first attached file. Then say "Begin Phase P1: rewrite the 12 priority pages to variant E (Authority Briefing), starting with Thailand."</p>
+
+</div>
+</body>
+</html>

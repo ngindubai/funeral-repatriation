@@ -1,8 +1,9 @@
-{{ define "title" }}What to do if someone dies in {{ .Params.country_name }} | Repatriate Service{{ end }}
+{{ define "title" }}{{ $key := .Params.country_key }}{{ $c := index hugo.Data.countries_repatriation.countries $key }}{{ $t := "" }}{{ if $c }}{{ $t = or $c.name $c.country_name }}{{ end }}{{ if not $t }}{{ $t = .Params.country_name }}{{ end }}What to do if someone dies in {{ $t }} | Repatriate Service{{ end }}
 
 {{ define "schema" }}
 {{ $key := .Params.country_key }}
 {{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $sn := "" }}{{ if $c }}{{ $sn = or $c.name $c.country_name }}{{ end }}{{ if not $sn }}{{ $sn = .Params.country_name }}{{ end }}
 {{ if $c }}
 <script type="application/ld+json">
 {
@@ -26,15 +27,20 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "What to do if someone dies in {{ $c.name }}",
+          "name": "What to do if someone dies in {{ $sn }}",
           "item": "{{ .Permalink }}"
         }
       ]
     },
     {
       "@type": "Article",
-      "headline": "What to do if someone dies in {{ $c.name }}",
+      "headline": "What to do if someone dies in {{ $sn }}",
       "description": "{{ .Description }}",
+      "author": {
+        "@type": "Organization",
+        "name": "Repatriate Service Editorial Team",
+        "url": "{{ site.BaseURL }}"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Repatriate Service",
@@ -52,7 +58,7 @@
           "name": {{ $q | jsonify }},
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": {{ if eq $i 0 }}{{ printf "Repatriation from %s typically takes %s in a straightforward case." $c.name $c.typical_timeline.average_case | jsonify }}{{ else if eq $i 1 }}{{ printf "The typical cost for repatriation from %s is %s, covering funeral director fees, embalming, zinc-lined coffin, documentation, air freight, and UK reception." $c.name $c.cost_guide.total_typical_range_gbp | jsonify }}{{ else }}{{ printf "Please contact our team for specific guidance on this question. We are available 24 hours a day on %s." site.Params.emergencyPhone | jsonify }}{{ end }}
+            "text": {{ if eq $i 0 }}{{ printf "Repatriation from %s typically takes %s in a straightforward case." $c.name $c.typical_timeline.average_case | jsonify }}{{ else if eq $i 1 }}{{ printf "The typical cost for repatriation from %s is %s, covering funeral director fees, embalming, zinc-lined coffin, documentation, air freight, and UK reception." $c.name $c.cost_guide.total_typical_range_gbp | jsonify }}{{ else if eq $i 2 }}{{ printf "The documents required include: local death certificate, embalming certificate, freedom from infection certificate, passport of the deceased, and airline cargo documentation. The local funeral director handles most of this. Documentation typically takes %s." $c.repatriation_process.step_6_documentation.processing_time | jsonify }}{{ else if eq $i 3 }}{{ printf "Yes, cremation in %s is an option. You need a local death certificate, cremation certificate, and any export permits required by %s authorities. Do not choose cremation if a UK coroner may need to hold an inquest. Ashes can usually be carried in hand luggage with full documentation." $c.name $c.name | jsonify }}{{ else if eq $i 4 }}{{ printf "Without travel insurance, the family pays all repatriation costs directly. Typical costs from %s are %s. The British Embassy provides a list of local funeral directors but cannot pay any costs. Contact us to discuss your options." $c.name $c.cost_guide.total_typical_range_gbp | jsonify }}{{ else }}{{ printf "Specific guidance for %s cases is available from our team, who have direct experience with repatriation from %s. We are available 24 hours a day via our enquiry form at repatriateservice.com/contact/" $c.name $c.name | jsonify }}{{ end }}
           }
         }
         {{ end }}
@@ -68,6 +74,7 @@
 {{ define "main" }}
 {{ $key := .Params.country_key }}
 {{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $cname := "" }}{{ if $c }}{{ $cname = or $c.name $c.country_name }}{{ end }}{{ if not $cname }}{{ $cname = .Params.country_name }}{{ end }}
 
 {{/* ============================================================
      GUIDE HERO
@@ -78,16 +85,16 @@
             <ol>
                 <li><a href="/">Home</a></li>
                 <li><a href="/guides/">Guides</a></li>
-                <li aria-current="page">What to do if someone dies in {{ if $c }}{{ $c.name }}{{ else }}{{ .Params.country_name }}{{ end }}</li>
+                <li aria-current="page">What to do if someone dies in {{ $cname }}</li>
             </ol>
         </nav>
         <div class="guide-hero-inner">
             <div class="guide-hero-text">
                 <p class="label-sm">Practical guidance</p>
-                <h1>What to do if someone dies in {{ if $c }}{{ $c.name }}{{ else }}{{ .Params.country_name }}{{ end }}</h1>
-                <p class="guide-lead">This guide explains what happens after a death in {{ if $c }}{{ $c.name }}{{ end }}, who to contact, and how to arrange for your loved one to be brought home to the UK. The information comes from FCDO and government sources. Every situation is different, and if you need someone to guide you through it, our team is available any time.</p>
+                <h1>What to do if someone dies in {{ $cname }}</h1>
+                <p class="guide-lead">This guide explains what happens after a death in {{ $cname }}, who to contact, and how to arrange for your loved one to be brought home to the UK. The information comes from FCDO and government sources. Every situation is different, and if you need someone to guide you through it, our team is available any time.</p>
                 <div class="guide-hero-cta">
-                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us. We are here 24/7.</a>
+                    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us. We are here 24/7.</a>
                     <a href="/repatriation-from-{{ if $c }}{{ $c.slug }}{{ else }}{{ .Params.country_key }}{{ end }}/" class="btn btn-outline">Full repatriation guide</a>
                 </div>
             </div>
@@ -121,6 +128,19 @@
 </section>
 
 {{ if $c }}
+
+{{/* ============================================================
+     COUNTRY CONTEXT — unique markdown body content per country
+     ============================================================ */}}
+{{ if .Content }}
+<section class="section guide-country-context">
+    <div class="section-inner">
+        <div class="guide-prose reveal">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+{{ end }}
 
 {{/* ============================================================
      IMMEDIATE STEPS
@@ -341,7 +361,7 @@
                         <p>Please contact our team for guidance on this. We are available 24 hours a day.</p>
                         {{ end }}
                     {{ else }}
-                        <p>Please <a href="/contact/">contact our team</a> for guidance on this question. We are available 24 hours a day on <a href="tel:{{ site.Params.emergencyPhone }}">{{ site.Params.emergencyPhone }}</a>.</p>
+                        <p>Please <a href="/contact/">contact our team</a> for guidance on this question. We are available 24 hours a day via our <a href="/contact/">enquiry form</a> or <a href="https://wa.me/{{ site.Params.whatsappNumber }}" target="_blank" rel="noopener">WhatsApp</a>.</p>
                     {{ end }}
                 </div>
             </div>
@@ -375,7 +395,19 @@
                 <i class="fa-solid fa-headset"></i>
                 <h3>Speak to our team</h3>
                 <p>We coordinate repatriations from {{ $c.name }} every week. If you need someone to take over the arrangements, call us now.</p>
-                <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> {{ site.Params.emergencyPhone }}</a>
+                <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section editorial-credit-section">
+    <div class="section-inner">
+        <div class="editorial-credit">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+                <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+                <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/repatriation-from-{{ $c.slug }}/">Repatriation from {{ $c.name }}</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
             </div>
         </div>
     </div>

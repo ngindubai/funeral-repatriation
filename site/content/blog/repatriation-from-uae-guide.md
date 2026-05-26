@@ -1,5 +1,5 @@
----
-title: "Repatriation from the UAE: what British families should expect"
+﻿---
+title: "Repatriation from the UAE to the UK"
 description: "A practical UAE repatriation guide for UK families. Covers Dubai and Abu Dhabi process differences, documentation, timing, and costs."
 date: 2026-04-21
 slug: repatriation-from-uae-guide
@@ -22,10 +22,6 @@ Straightforward cases often complete in 7 to 14 days. If post-mortem or police r
 ## Dubai vs Abu Dhabi
 
 Both routes are workable, but process detail can differ between emirates. Local experience in the correct emirate matters more than a generic UAE process checklist.
-
-## Costs
-
-UAE routes can be moderate to high depending on local provider fees, mortuary handling, and flight cargo options.
 
 ## What helps avoid delays
 

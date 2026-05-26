@@ -1,5 +1,5 @@
----
-title: "Repatriation from Mexico: practical guide for UK families"
+﻿---
+title: "Repatriation from Mexico to the UK"
 description: "A practical guide to repatriation from Mexico to the UK, including timeline, documentation steps, and common delay points."
 date: 2026-04-21
 slug: repatriation-from-mexico-guide

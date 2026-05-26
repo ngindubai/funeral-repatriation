@@ -1,5 +1,5 @@
----
-title: "Repatriation from Thailand: what British families need to know"
+﻿---
+title: "Repatriation from Thailand to the UK"
 description: "A detailed guide to repatriating a British national from Thailand, including costs, the post-mortem process, documentation, and how to navigate Thai bureaucracy."
 date: 2025-03-26
 read_time: 9
@@ -40,17 +40,6 @@ This is not meant to alarm. Most repatriations from Thailand are completed succe
 
 **Step 9: UK arrival.** Heathrow Terminal 4 handles most international remains. The UK receiving funeral director collects from the cargo terminal.
 
-## Costs
-
-Full repatriation from Thailand typically costs between £5,000 and £9,000. The main variables are:
-
-- Whether a post-mortem was required (extends timeline, does not always add direct cost but may increase storage fees)
-- Province and distance from Bangkok
-- Flight availability and airline cargo rates
-- Funeral director fees at the departure end
-
-If your travel insurer is coordinating, these costs are their responsibility. If self-funding, expect to pay the Thailand-end funeral director (typically £3,500 to £6,000) plus UK receiving costs (£300 to £600 typically).
-
 ## Timeline
 
 Average case: 2 to 3 weeks from death to UK arrival.
@@ -71,7 +60,7 @@ If the death is suspected to be unnatural, violent, or of unknown cause, a UK co
 
 ## Cremation as an alternative
 
-Thailand has well-established cremation facilities. For families who choose not to arrange full repatriation, local cremation and carrying the ashes home is a practical option. The cost is significantly lower (typically £2,000 to £4,000 total). See the [cremation in Thailand guide](/cremation-transfer/thailand/) for specifics.
+Thailand has well-established cremation facilities. For families who choose not to arrange full repatriation, local cremation and carrying the ashes home is a practical option. The cost is significantly lower than full repatriation. See the [cremation in Thailand guide](/cremation-transfer/thailand/) for specifics.
 
 This is not suitable if a UK coroner may be involved, or if the death is under investigation.
 

@@ -1,5 +1,5 @@
----
-title: "What to do with ashes after repatriation: a practical guide for UK families"
+﻿---
+title: "What to Do with Ashes After Repatriation"
 description: "Options for ashes returned to the UK after cremation abroad — scattering rules, interment, memoriali, and what you do not need to ask permission for."
 date: 2025-04-02
 read_time: 7

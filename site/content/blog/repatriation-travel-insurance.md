@@ -1,5 +1,5 @@
----
-title: "Repatriation and travel insurance: what you actually need to know"
+﻿---
+title: "Repatriation and Travel Insurance: What to Know"
 description: "How travel insurance covers body repatriation, what the policy exclusions really mean, and what to do when the insurance company is not being helpful."
 date: 2025-02-12
 read_time: 7

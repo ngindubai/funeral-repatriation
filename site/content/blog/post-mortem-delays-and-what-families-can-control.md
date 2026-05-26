@@ -1,5 +1,5 @@
----
-title: "Post-mortem delays: what families can control and what they cannot"
+﻿---
+title: "Post-Mortem Delays: What Families Can Control"
 description: "Post-mortem requirements are one of the biggest causes of repatriation delay. This guide explains where delays happen and the actions families can take."
 date: 2026-04-21
 slug: post-mortem-delays-and-what-families-can-control

@@ -2,7 +2,7 @@
 title: "How much does repatriation cost?"
 description: "Repatriation costs vary widely by country and circumstances. This guide explains what drives the cost and what a realistic budget looks like."
 slug: how-much-does-repatriation-cost
-short_answer: "Repatriation to the UK typically costs between £3,000 and £15,000 depending on the country of death, distance, and whether a post-mortem is required. Travel insurance, where it exists, usually covers this."
+short_answer: "Repatriation to the UK varies widely in cost depending on the country of death, distance, and whether a post-mortem is required. Travel insurance, where it exists, usually covers this."
 date: 2025-04-16
 ---
 
@@ -10,19 +10,19 @@ Repatriation costs are driven by four main factors: the country of death, the di
 
 ## Typical cost ranges by region
 
-**Europe (Spain, France, Portugal, Greece, Italy):** £3,000-6,000. European routes are relatively efficient, with established repatriation infrastructure. Documentation is more standardised. Local funeral directors are experienced with British nationals.
+**Europe (Spain, France, Portugal, Greece, Italy):** European routes are relatively efficient, with established repatriation infrastructure. Documentation is more standardised. Local funeral directors are experienced with British nationals.
 
-**Turkey, Egypt, Morocco:** £4,000-7,000. More documentation complexity, particularly around Islamic burial preferences and government paperwork requirements.
+**Turkey, Egypt, Morocco:** More documentation complexity, particularly around Islamic burial preferences and government paperwork requirements.
 
-**USA and Canada:** £4,000-8,000. Well-organised processes but the distance adds cost. State-level documentation variations add administrative effort.
+**USA and Canada:** Well-organised processes but the distance adds cost. State-level documentation variations add administrative effort.
 
-**Thailand, Philippines, India, Indonesia:** £5,000-12,000. More complex documentation, potential post-mortem delays, and longer flight distances all push costs up.
+**Thailand, Philippines, India, Indonesia:** More complex documentation, potential post-mortem delays, and longer flight distances all push costs up.
 
-**Latin America (Brazil, Mexico, Colombia):** £5,000-12,000. Bureaucratic documentation processes in some countries. Variable infrastructure quality outside major cities.
+**Latin America (Brazil, Mexico, Colombia):** Bureaucratic documentation processes in some countries. Variable infrastructure quality outside major cities.
 
-**Africa (Kenya, South Africa, Morocco):** £5,000-10,000. Infrastructure varies. Rural deaths are significantly more complex and expensive than city deaths.
+**Africa (Kenya, South Africa, Morocco):** Infrastructure varies. Rural deaths are significantly more complex and expensive than city deaths.
 
-**Australia and New Zealand:** £7,000-15,000. The distance alone makes this expensive. Add post-mortem or complex documentation and it reaches the top of the range.
+**Australia and New Zealand:** The distance alone makes this expensive. Add post-mortem or complex documentation and it reaches the top of the range.
 
 ## What drives the cost
 
@@ -32,7 +32,7 @@ Repatriation costs are driven by four main factors: the country of death, the di
 
 **Documentation.** Some countries require notarised translations, ministry countersignatures, or consular certificates. Each adds cost and time.
 
-**Post-mortem.** Where a post-mortem is required by local authorities, the body stays in local custody until it is complete. Mortuary storage fees accrue. Post-mortems are typically £500-2,000 in addition to other costs.
+**Post-mortem.** Where a post-mortem is required by local authorities, the body stays in local custody until it is complete. Mortuary storage fees accrue. Post-mortems add significantly to the overall cost.
 
 **Zinc-lined coffin or repatriation case.** Required by most airlines for international transport. Cost is usually included in the funeral director's fee but may be quoted separately.
 
@@ -40,7 +40,7 @@ Repatriation costs are driven by four main factors: the country of death, the di
 
 ## What travel insurance covers
 
-Most comprehensive travel insurance policies cover repatriation costs. The policy will usually specify a maximum amount (often £10,000-30,000) and may require that the repatriation is arranged through an approved provider.
+Most comprehensive travel insurance policies cover repatriation costs. The policy will usually specify a maximum amount and may require that the repatriation is arranged through an approved provider.
 
 If the deceased had travel insurance, contact the insurer on the first day. Do not appoint a repatriation specialist and present the bill afterwards — the insurer may decline to reimburse unapproved costs.
 

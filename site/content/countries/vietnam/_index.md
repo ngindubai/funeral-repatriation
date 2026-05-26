@@ -1,5 +1,6 @@
-﻿---
-title: "Repatriation from Vietnam to the UK"
+---
+template_variant: "D"
+title: "Vietnam"
 description: "Practical guide to repatriating a loved one from Vietnam to the UK, including documents, timeline, costs, embassy support, and first steps."
 country_key: "vietnam"
 slug: "vietnam"

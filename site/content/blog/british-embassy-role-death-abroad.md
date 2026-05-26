@@ -1,5 +1,5 @@
----
-title: "The role of the British Embassy when someone dies abroad"
+﻿---
+title: "British Embassy Role When Someone Dies Abroad"
 description: "What British embassies and consulates actually do when a UK national dies overseas, what they cannot do, and how to get help from them quickly."
 date: 2025-02-19
 read_time: 5

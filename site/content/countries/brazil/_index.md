@@ -1,5 +1,6 @@
-﻿---
-title: "Repatriation from Brazil to the UK"
+---
+template_variant: "D"
+title: "Brazil"
 description: "Practical guide to repatriating a loved one from Brazil to the UK, including documents, timeline, costs, embassy support, and first steps."
 country_key: "brazil"
 slug: "brazil"

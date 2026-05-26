@@ -24,7 +24,7 @@
       "provider": {
         "@type": "Organization",
         "name": "Repatriate Service",
-        "telephone": "{{ site.Params.emergencyPhone }}",
+        "telephone": "+447703577246",
         "url": "{{ site.BaseURL }}"
       },
       "serviceType": "Ashes Transport",
@@ -77,7 +77,7 @@
         <h1>Bringing ashes home from <em>{{ $c.name }}</em></h1>
         <p class="page-hero-desc">You have ashes in {{ $c.name }} and need to bring them to the UK. This guide covers the documents, airline rules, and practical steps.</p>
         <div class="hero-actions page-hero-actions">
-            <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call 24/7</a>
+            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
             <a href="/contact/" class="btn btn-outline">Send enquiry</a>
         </div>
     </div>
@@ -185,14 +185,14 @@
                 <h2 style="margin-top:2rem;">Once back in the UK</h2>
                 <div class="prose">
                     <p>UK customs does not require declaration of human ashes. There is no import paperwork required on the UK side. Simply carry the ashes and your cremation certificate through customs.</p>
-                    <p>What you do with the ashes once home is your choice. Scattering, interment, and keeping ashes at home are all legal. See our <a href="/blog/what-to-do-with-ashes-uk/">complete guide to ashes options in the UK</a>.</p>
+                    <p>What you do with the ashes once home is your choice. Scattering, interment, and keeping ashes at home are all legal. See our <a href="/blog/what-to-do-with-ashes-after-repatriation/">complete guide to ashes options in the UK</a>.</p>
                 </div>
 
             </div>{{/* end main-col */}}
 
             <div class="side-col">
                 {{/* Country crosslink */}}
-                <a href="/repatriation-from-{{ $c.slug }}/" class="guide-crosslink-card">
+                <a href="/repatriation-from-{{ .Params.country_key }}/" class="guide-crosslink-card">
                     <div class="guide-crosslink-icon"><i class="fa-solid fa-plane-departure"></i></div>
                     <div>
                         <p class="label-sm">Full repatriation guide</p>
@@ -203,7 +203,7 @@
 
                 {{/* Cremation crosslink */}}
                 {{ if $at.cremation_available }}
-                <a href="/cremation-transfer/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
+                <a href="/cremation-transfer/{{ .Params.country_key }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
                     <div class="guide-crosslink-icon"><i class="fa-solid fa-fire"></i></div>
                     <div>
                         <p class="label-sm">Deciding on cremation?</p>
@@ -214,7 +214,7 @@
                 {{ end }}
 
                 {{/* Embassy crosslink */}}
-                <a href="/embassy-contacts/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
+                <a href="/embassy-contacts/{{ .Params.country_key }}/" class="guide-crosslink-card" style="margin-top:0.75rem;">
                     <div class="guide-crosslink-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
                         <p class="label-sm">Official support</p>
@@ -228,7 +228,7 @@
                     <p class="label-sm">Need guidance?</p>
                     <h3>We can help with ashes transport</h3>
                     <p>If you are unsure about the paperwork, airline requirements, or anything else, call us or send an enquiry.</p>
-                    <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta" style="width:100%; justify-content:center; margin-bottom:0.5rem;"><i class="fa-solid fa-phone"></i> Call 24/7</a>
+                    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" style="width:100%; justify-content:center; margin-bottom:0.5rem;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
                     <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center;">Send enquiry</a>
                 </div>
 
@@ -245,21 +245,21 @@
             <h2>More on ashes and cremation abroad</h2>
         </div>
         <div class="guide-links-grid stagger-children">
-            <a href="/blog/what-to-do-with-ashes-uk/" class="guide-link-card reveal">
+            <a href="/blog/what-to-do-with-ashes-after-repatriation/" class="guide-link-card reveal">
                 <i class="fa-solid fa-house"></i>
                 <div>
                     <h3>What to do with ashes in the UK</h3>
                     <p>Scattering rules, burial, keeping ashes at home, and memorial options.</p>
                 </div>
             </a>
-            <a href="/blog/repatriation-vs-cremation-abroad/" class="guide-link-card reveal">
+            <a href="/blog/repatriation-vs-cremation-abroad-which-is-right/" class="guide-link-card reveal">
                 <i class="fa-solid fa-scale-balanced"></i>
                 <div>
                     <h3>Repatriation vs cremation abroad</h3>
                     <p>How to decide which option is right for your family and situation.</p>
                 </div>
             </a>
-            <a href="/blog/tracing-travel-insurance-after-death/" class="guide-link-card reveal">
+            <a href="/blog/finding-travel-insurance-after-a-death-abroad/" class="guide-link-card reveal">
                 <i class="fa-solid fa-file-shield"></i>
                 <div>
                     <h3>Travel insurance after a death</h3>

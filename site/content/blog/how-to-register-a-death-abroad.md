@@ -48,7 +48,7 @@ You will need:
 - The deceased's British passport (or other proof of British nationality)
 - Proof of your relationship to the deceased, if you are registering on behalf of the family
 
-There is a fee. As of 2025, the FCDO charges £150 for consular death registration. Check the current FCDO fee schedule as this changes.
+There is a fee. The FCDO charges for consular death registration. Check the current FCDO fee schedule as this changes.
 
 The resulting UK death certificate is a standard format UK document that can be used with UK institutions. Some banks and pension providers, particularly older ones, find it easier to process than a foreign-language document even with a translation.
 

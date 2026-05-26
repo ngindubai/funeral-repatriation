@@ -1,0 +1,72 @@
+{{ define "main" }}
+<section class="page-hero" style="background-image: url('/images/ctandt-ai-generated-8884751.jpg');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner" style="max-width: 800px;">
+        <div class="content-section">
+            {{ .Content }}
+        </div>
+
+        <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate style="margin-top: 2rem;">
+            <input type="hidden" name="_subject" value="Repatriation enquiry — Repatriate Service">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="ct-name">Your name <span class="required">*</span></label>
+                    <input type="text" id="ct-name" name="name" placeholder="Full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="ct-email">Email address <span class="required">*</span></label>
+                    <input type="email" id="ct-email" name="email" placeholder="you@email.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="ct-phone">Phone number</label>
+                    <input type="tel" id="ct-phone" name="phone" placeholder="+44..." autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="ct-country">Country where death occurred</label>
+                    <input type="text" id="ct-country" name="country" placeholder="e.g. Spain, Thailand, India" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="ct-service">How can we help?</label>
+                    <select id="ct-service" name="service">
+                        <option value="">Select</option>
+                        <option value="full_repatriation">Full body repatriation to the UK</option>
+                        <option value="ashes_transport">Bringing ashes home</option>
+                        <option value="cremation_abroad">Cremation abroad</option>
+                        <option value="guidance_only">Guidance and information only</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ct-urgency">Urgency</label>
+                    <select id="ct-urgency" name="urgency">
+                        <option value="">When did this happen?</option>
+                        <option value="just_happened">Within the last 24 hours</option>
+                        <option value="this_week">Within the last week</option>
+                        <option value="planning">I am planning ahead</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-full">
+                    <label for="ct-message">Your message <span class="required">*</span></label>
+                    <textarea id="ct-message" name="message" rows="5" placeholder="Tell us what has happened and how we can help. Any details you can share — country, circumstances, timeline — will help us respond more usefully." required></textarea>
+                </div>
+            </div>
+            {{/* Honeypot — not visible to users */}}
+            <div style="display:none;" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+            <p class="form-note">No obligation. Your details are kept strictly confidential and never shared with third parties.</p>
+        </form>
+        <div class="quote-success" hidden>
+            <p>Thank you for getting in touch. We have received your enquiry and a member of our team will respond as soon as possible, typically within a few hours.</p>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,296 @@
+{{/*
+  CH-E: Authority Briefing
+  Named author byline and reviewed-by credit front and centre,
+  authoritative prose narrative format (not card grids),
+  sidebar with sources and references panel.
+  Schema emphasis: Article with author + reviewedBy.
+*/}}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $cname := or $c.country_name $c.name }}
+
+<div class="tpl-ch-e">
+
+{{ if $c }}
+
+{{/* AUTHORITATIVE INTRO: no large image, author byline prominent */}}
+<section class="section country-hero-text">
+  <div class="section-inner">
+    <div class="che-hero-inner">
+      <div class="che-hero-main">
+        <p class="label-sm">Country briefing</p>
+        <h1>Repatriation from {{ $cname }} to the UK</h1>
+        <div class="che-author-byline">
+          <i class="fa-solid fa-user-tie"></i>
+          <div>
+            <span class="che-author-name">Senior Repatriation Consultant</span>
+            <span class="che-author-sep">&middot;</span>
+            <span class="che-reviewed-by">Reviewed by the Repatriate Service editorial team</span>
+            <span class="che-author-sep">&middot;</span>
+            <span class="che-last-updated">Updated {{ now.Format "January 2006" }}</span>
+          </div>
+        </div>
+        <p class="che-intro-para">Repatriation from {{ $cname }} to the United Kingdom is a process that requires coordination between local authorities, the British Embassy, an approved funeral director in {{ $cname }}, air freight providers, and the receiving funeral director in the UK. The process typically takes <strong>{{ $c.typical_timeline.average_case }}</strong>, though this can extend significantly when complications arise. This briefing sets out the legal framework, practical process, and documentation requirements based on current FCDO guidance and our direct experience of cases from {{ $cname }}.</p>
+        <div class="country-hero-actions">
+          <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us now</a>
+          <a href="/contact/" class="btn btn-outline">Send an enquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* TWO-COLUMN: prose content + sources sidebar */}}
+<div class="country-two-col section-inner" style="padding-top:2.5rem;">
+
+  <article class="country-two-col-main">
+
+    {{/* JURISDICTION AND LEGAL FRAMEWORK */}}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">Legal framework</p>
+      <h2>Legal and jurisdictional context for repatriation from {{ $cname }}</h2>
+      <p>When a British national dies in {{ $cname }}, their death must be registered under {{ $cname }}'s local law before any repatriation can begin. A death certificate issued in {{ $cname }} is a legal document under that country's jurisdiction. For it to be accepted in the UK, it must be translated into English by a qualified translator and, in some cases, authenticated by the relevant authorities.</p>
+      <p>The UK does not impose an entry ban on repatriated remains, but airline and IATA standards require the body to be embalmed to international standards and transported in a zinc-lined coffin. These requirements exist in all cases of international air transport of human remains.</p>
+      {{ with $c.cultural_practices }}
+      <p>{{ $cname }}'s cultural and religious context also affects how cases are handled. {{ with .dominant_religion }}The dominant religion is {{ . }}.{{ end }} {{ with .burial_vs_cremation }}The tradition is {{ . }}.{{ end }} {{ with .notes }}{{ . }}{{ end }}</p>
+      {{ end }}
+    </section>
+
+    {{/* PROCESS NARRATIVE */}}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">The process</p>
+      <h2>How repatriation from {{ $cname }} works in practice</h2>
+      <p>The process follows a fixed sequence. Each step must be completed before the next can begin.</p>
+
+      {{ range $i, $step := slice
+          $c.repatriation_process.step_1_immediate
+          $c.repatriation_process.step_2_death_certificate
+          $c.repatriation_process.step_3_embassy_notification
+          $c.repatriation_process.step_4_embalming
+          $c.repatriation_process.step_5_coffin
+          $c.repatriation_process.step_6_documentation
+          $c.repatriation_process.step_7_transport
+          $c.repatriation_process.step_8_uk_reception
+      }}
+      {{ if $step }}
+      <h3>Step {{ add $i 1 }}: {{ $step.title }}</h3>
+      {{ $text := "" }}
+      {{ if $step.details }}{{ $text = $step.details }}{{ else if $step.notes }}{{ $text = $step.notes }}{{ end }}
+      {{ if $text }}<p>{{ $text }}</p>{{ end }}
+      {{ with $step.processing_time }}<p><em>Typical duration: <strong>{{ . }}</strong>.</em></p>{{ end }}
+      {{ end }}
+      {{ end }}
+    </section>
+
+    {{/* DOCUMENTS */}}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">Documentation</p>
+      <h2>Documentation requirements for repatriation from {{ $cname }}</h2>
+      <p>The following documents must all be in place before the body can leave {{ $cname }}. Your repatriation coordinator will obtain these on your behalf, working with the local funeral director.</p>
+      {{ with $c.repatriation_process.step_6_documentation }}
+      <ul class="docs-checklist">
+        {{ range .documents_needed }}
+        <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ if .processing_time }}<p>In {{ $cname }}, obtaining the full documentation set typically takes <strong>{{ .processing_time }}</strong>. This is the stage where most delays occur, as it is dependent on local authority processing times.</p>{{ end }}
+      {{ end }}
+    </section>
+
+    {{/* TIMELINE IN PROSE */}}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">Timeline analysis</p>
+      <h2>Realistic timelines for repatriation from {{ $cname }}</h2>
+      {{ with $c.typical_timeline }}
+      <p>Based on cases handled from {{ $cname }}, the typical timeline is <strong>{{ .average_case }}</strong>. In the best-case scenario, where the cause of death is clear, documentation is issued without bureaucratic delay, and no post-mortem is required, the process can complete in <strong>{{ .fastest_case }}</strong>. This is not the norm.</p>
+      <p>Complex cases involving a required post-mortem, a coroner's investigation, a death in a remote part of {{ $cname }}, or a dispute over the cause of death can take <strong>{{ .complex_case }}</strong> or considerably longer. Families should plan for the typical range rather than the best case.</p>
+      {{ if .complexity_factors }}
+      <h3>Factors that extend the timeline</h3>
+      <ul class="factors-list">
+        {{ range .complexity_factors }}
+        <li><i class="fa-solid fa-angle-right"></i> {{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      {{ end }}
+    </section>
+
+    {{/* EDGE CASES */}}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">Edge cases</p>
+      <h2>Complications and edge cases in repatriation from {{ $cname }}</h2>
+
+      {{ with $c.post_mortem }}
+      <h3>Post-mortem in {{ $cname }}</h3>
+      <p>{{ .when_required }}. {{ .impact_on_timeline }}</p>
+      {{ end }}
+
+      {{ with $c.ashes_transport }}
+      <h3>Cremation in {{ $cname }} and ashes transport</h3>
+      <p>Cremation in {{ $cname }} {{ if .cremation_available }}is available{{ else }}may be available in some areas{{ end }}. If a family chooses this route, ashes can be returned to the UK with the appropriate documentation.</p>
+      {{ if .critical_warning }}<p><strong>Important:</strong> {{ .critical_warning }}</p>{{ end }}
+      {{ if .ashes_transport_requirements }}
+      <p>Documents required to transport ashes:</p>
+      <ul class="docs-checklist">
+        {{ range .ashes_transport_requirements }}
+        <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      {{ end }}
+
+      <h3>Criminal investigation or suspicious death</h3>
+      <p>Where the death is subject to a criminal investigation in {{ $cname }}, local authorities will retain the body until the investigation is concluded. Neither the Embassy nor a repatriation company can override this. The UK Foreign, Commonwealth and Development Office (FCDO) can provide consular support but cannot intervene in another country's judicial process. The timeline in these cases is entirely dependent on the local investigation.</p>
+    </section>
+
+    {{/* FAQ */}}
+    {{ with $c.content_angles.faq_angles }}
+    <section style="margin-bottom:2.5rem;">
+      <p class="label-sm">Common questions</p>
+      <h2>Frequently asked questions</h2>
+      {{ range $i, $q := . }}
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="che-faq-{{ $i }}">
+          {{ $q }}
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="che-faq-{{ $i }}" class="faq-answer" hidden>
+          {{ if eq $i 0 }}
+            <p>Repatriation from {{ $cname }} typically takes <strong>{{ $c.typical_timeline.average_case }}</strong>. Complex cases can take {{ $c.typical_timeline.complex_case }} or longer.</p>
+          {{ else if eq $i 2 }}
+            <p>The key documents are: local death certificate, embalming certificate, freedom from infection certificate, and airline cargo documentation.</p>
+          {{ else }}
+            <p>Please <a href="/contact/">contact our team</a> for specific guidance. We are available 24 hours a day via our <a href="/contact/">enquiry form</a> or <a href="https://wa.me/{{ site.Params.whatsappNumber }}" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{/* AUTHOR CREDIT BLOCK */}}
+    <div class="che-author-block" style="margin-top:2.5rem; padding:1.5rem; background:var(--surface); border-radius:0.5rem; border-left:4px solid var(--accent);">
+      <p class="label-sm">About this guide</p>
+      <p><strong>Written by:</strong> Senior Repatriation Consultant, Repatriate Service</p>
+      <p><strong>Reviewed by:</strong> Repatriate Service editorial team</p>
+      <p><strong>Last updated:</strong> {{ now.Format "January 2006" }}</p>
+      <p>This guide is based on FCDO guidance, direct case experience, and information verified with official sources. It is intended as general guidance only. Individual cases vary and professional advice should be sought for specific situations.</p>
+    </div>
+
+  </article>{{/* end main content */}}
+
+  {{/* SOURCES AND REFERENCES SIDEBAR */}}
+  <aside class="country-two-col-aside">
+    <div class="sidebar-sticky">
+      <div class="sidebar-helpline-card">
+        <p class="label-sm">24/7 helpline</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+        <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:0.5rem;">Contact form</a>
+        <a href="#enquiry-form" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:0.5rem;">Send enquiry</a>
+      </div>
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">Sources and references</p>
+        <ul style="list-style:none; padding:0; margin:0.75rem 0 0; font-size:0.85rem;">
+          <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">UK Foreign, Commonwealth &amp; Development Office (FCDO)</a>
+          </li>
+          <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <a href="https://www.gov.uk/guidance/what-to-do-if-a-british-person-dies-abroad" rel="nofollow noopener" target="_blank">FCDO: What to do if a British person dies abroad</a>
+          </li>
+          <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            {{ with $c.embassy_contacts.british_embassy }}{{ with .website }}<a href="{{ . }}" rel="nofollow noopener" target="_blank">British Embassy, {{ $cname }}</a>{{ end }}{{ end }}
+          </li>
+          <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <a href="https://www.iata.org/en/programs/cargo/dgr/perishables/human-remains/" rel="nofollow noopener" target="_blank">IATA regulations for transport of human remains</a>
+          </li>
+          <li style="padding:0.4rem 0;">
+            <a href="/guides/">Repatriation guides by country</a>
+          </li>
+        </ul>
+      </div>
+      {{ with $c.typical_timeline }}
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">At a glance</p>
+        <div style="margin-top:0.75rem;">
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Typical timeline</span>
+            <strong style="font-size:0.85rem;">{{ .average_case }}</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid var(--border);">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Best case</span>
+            <strong style="font-size:0.85rem;">{{ .fastest_case }}</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:0.4rem 0;">
+            <span style="font-size:0.85rem; color:var(--text-muted);">Complex case</span>
+            <strong style="font-size:0.85rem;">{{ .complex_case }}</strong>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">Related pages</p>
+        <ul style="list-style:none; padding:0; margin:0.75rem 0 0; font-size:0.85rem;">
+          <li style="padding:0.3rem 0;"><a href="/embassy-contacts/{{ $c.slug }}/">Embassy contacts: {{ $cname }}</a></li>
+          <li style="padding:0.3rem 0;"><a href="/bringing-ashes-home/{{ $c.slug }}/">Bringing ashes from {{ $cname }}</a></li>
+          <li style="padding:0.3rem 0;"><a href="/cremation-transfer/{{ $c.slug }}/">Cremation in {{ $cname }}</a></li>
+          <li style="padding:0.3rem 0;"><a href="/faq/">Repatriation FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+</div>{{/* end two-col */}}
+
+{{/* CONTACT FORM */}}
+<section class="quote-section" id="enquiry-form">
+  <div class="section-inner">
+    <h2 class="reveal">We are here to help, any time of day or night</h2>
+    <p class="quote-subtitle reveal">If your loved one has passed away in {{ $cname }}, please do not face this alone. Our team will guide you through every step.</p>
+    <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
+      <input type="hidden" name="country" value="{{ $cname }}">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="che-name">Your name <span class="required">*</span></label>
+          <input type="text" id="che-name" name="name" placeholder="Full name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="che-email">Email <span class="required">*</span></label>
+          <input type="email" id="che-email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="che-phone">Phone</label>
+          <input type="tel" id="che-phone" name="phone" placeholder="+44..." autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="che-service">Service needed</label>
+          <select id="che-service" name="service">
+            <option value="">Select</option>
+            <option value="full_repatriation">Full body repatriation</option>
+            <option value="ashes_transport">Ashes transport</option>
+            <option value="cremation_abroad">Cremation abroad</option>
+            <option value="guidance_only">Guidance only</option>
+          </select>
+        </div>
+        <div class="form-group form-group-full">
+          <label for="che-message">Message</label>
+          <textarea id="che-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+        </div>
+      </div>
+      <div style="display:none;" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+      <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+    </form>
+  </div>
+</section>
+
+{{ else }}
+<section class="section">
+  <div class="section-inner">
+    <p>Repatriation guidance for {{ .Title }} is being prepared. Please <a href="/contact/">contact our team</a> for immediate assistance.</p>
+  </div>
+</section>
+{{ end }}
+
+</div>{{/* end .tpl-ch-e */}}

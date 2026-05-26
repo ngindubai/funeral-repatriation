@@ -1,0 +1,317 @@
+{{/*
+  CH-D: Q&A Hub
+  Question-format H1, ALL sections phrased as questions,
+  floating mini-FAQ table of contents sidebar.
+  Schema emphasis: FAQPage.
+*/}}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $cname := or $c.country_name $c.name }}
+
+<div class="tpl-ch-d">
+
+{{ if $c }}
+
+{{/* HERO: question H1 + direct answer */}}
+<section class="section country-hero-text">
+  <div class="section-inner">
+    <div class="country-hero-text-inner">
+      <p class="label-sm">Repatriation from {{ $cname }}</p>
+      <h1>How do you bring a loved one home from {{ $cname }}?</h1>
+      <p class="country-hero-subtitle">You appoint a repatriation specialist who coordinates local funeral directors, obtains all required documentation, and arranges air freight. The process typically takes {{ $c.typical_timeline.average_case }}.</p>
+      <div class="country-hero-actions">
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us now</a>
+        <a href="/contact/" class="btn btn-outline">Send an enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* TWO-COLUMN: Q&A content + mini ToC sidebar */}}
+<div class="country-two-col section-inner" style="padding-top:2.5rem;">
+
+  <div class="country-two-col-main">
+
+    {{/* Q1: What happens in the first 24 hours? */}}
+    {{ with $c.repatriation_process.step_1_immediate }}
+    <section style="margin-bottom:2.5rem;" id="chd-q1">
+      <div class="reveal">
+        <p class="label-sm">First 24 hours</p>
+        <h2>What should happen in the first 24 hours after a death in {{ $cname }}?</h2>
+        {{ with .details }}<p>{{ . }}</p>{{ end }}
+        {{ with .notes }}<p>{{ . }}</p>{{ end }}
+        {{ if .immediate_actions }}
+        <ul class="docs-checklist">
+          {{ range .immediate_actions }}
+          <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        <p>The most important step is to contact a specialist repatriation company. They will tell you exactly what to do and begin coordinating with local authorities on your behalf.</p>
+      </div>
+    </section>
+    {{ end }}
+
+    {{/* Q2: How long does it take? */}}
+    <section style="margin-bottom:2.5rem;" id="chd-q2">
+      <div class="reveal">
+        <p class="label-sm">Timeline</p>
+        <h2>How long does repatriation from {{ $cname }} take?</h2>
+        {{ with $c.typical_timeline }}
+        <p>In most cases, repatriation from {{ $cname }} takes <strong>{{ .average_case }}</strong>. The fastest straightforward cases complete in <strong>{{ .fastest_case }}</strong>. Complex cases involving a post-mortem, criminal investigation, or a remote location can extend to <strong>{{ .complex_case }}</strong> or beyond.</p>
+        {{ if .complexity_factors }}
+        <h3>What makes a case complex?</h3>
+        <ul class="factors-list">
+          {{ range .complexity_factors }}
+          <li><i class="fa-solid fa-angle-right"></i> {{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* Q3: What documents are needed? */}}
+    <section style="margin-bottom:2.5rem;" id="chd-q3">
+      <div class="reveal">
+        <p class="label-sm">Documentation</p>
+        <h2>What documents are required to bring a body home from {{ $cname }}?</h2>
+        <p>All of these documents must be in place before air transport can proceed. Your appointed repatriation coordinator will obtain most of them.</p>
+        {{ with $c.repatriation_process.step_6_documentation }}
+        <ul class="docs-checklist">
+          {{ range .documents_needed }}
+          <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ if .processing_time }}<p class="docs-note"><i class="fa-regular fa-clock"></i> Documentation typically takes <strong>{{ .processing_time }}</strong> to complete.</p>{{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* Q4: Will there be a post-mortem? */}}
+    {{ with $c.post_mortem }}
+    <section style="margin-bottom:2.5rem;" id="chd-q4">
+      <div class="reveal">
+        <p class="label-sm">Post-mortem</p>
+        <h2>Will a post-mortem be required in {{ $cname }}?</h2>
+        <p>{{ .when_required }}.</p>
+        <p>{{ .impact_on_timeline }}</p>
+        <div class="info-card info-card--warning" style="margin-top:1rem;">
+          <div class="info-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div>
+            <p>Do not authorise cremation in {{ $cname }} if you think a UK inquest may be required. Once cremation takes place, evidence is destroyed and the coroner cannot proceed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    {{/* Q5: What does the British Embassy do? */}}
+    <section style="margin-bottom:2.5rem;" id="chd-q5">
+      <div class="reveal">
+        <p class="label-sm">British Embassy</p>
+        <h2>What does the British Embassy in {{ $cname }} do when someone dies?</h2>
+        <p>The British Embassy provides consular assistance, which includes giving you a list of local funeral directors, helping you notify relatives, and advising on local procedures. What the Embassy cannot do is pay for repatriation, organise the funeral director, or make arrangements on your behalf.</p>
+        {{ with $c.embassy_contacts }}
+        {{ with .embassy_can_do }}
+        <h3>What the Embassy can do</h3>
+        <ul>
+          {{ range . }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .embassy_cannot_do }}
+        <h3>What the Embassy cannot do</h3>
+        <ul>
+          {{ range . }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ end }}
+        {{ with $c.embassy_contacts.british_embassy }}
+        <a href="/embassy-contacts/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:1.25rem;">
+          <div class="guide-crosslink-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div>
+            <p class="label-sm">Full embassy guide</p>
+            <p style="margin:0; font-size:0.9rem;">All British Embassy contacts in {{ $cname }}</p>
+          </div>
+          <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+        </a>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* Q6: Can ashes be brought home instead? */}}
+    {{ with $c.ashes_transport }}
+    <section style="margin-bottom:2.5rem;" id="chd-q6">
+      <div class="reveal">
+        <p class="label-sm">Alternative option</p>
+        <h2>Can ashes be brought home from {{ $cname }} instead of a full body?</h2>
+        <p>Yes{{ if .cremation_available }}, cremation facilities are available in {{ $cname }}{{ end }}. Transporting ashes to the UK requires specific documents and must comply with airline regulations.</p>
+        {{ if .ashes_transport_requirements }}
+        <h3>Documents needed to transport ashes</h3>
+        <ul class="docs-checklist">
+          {{ range .ashes_transport_requirements }}
+          <li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ if .critical_warning }}
+        <div class="info-card info-card--warning" style="margin-top:1rem;">
+          <div class="info-card-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+          <div><p>{{ .critical_warning }}</p></div>
+        </div>
+        {{ end }}
+        {{ if .can_carry_on_plane }}<p class="docs-note"><i class="fa-solid fa-plane"></i> {{ .can_carry_on_plane }}</p>{{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{/* Q7: How do you start the process? */}}
+    <section style="margin-bottom:2.5rem;" id="chd-q7">
+      <div class="reveal">
+        <p class="label-sm">Getting started</p>
+        <h2>How do you start the repatriation process from {{ $cname }}?</h2>
+        <p>Call a specialist repatriation company. Do not wait until all other steps are complete. A specialist can begin the process immediately, even before the local death certificate has been issued.</p>
+        <p>You will need to provide: the name of the deceased, the location of the body, your contact details, and the name and contact of the local hospital or authority holding the body.</p>
+        <div class="info-card" style="margin-top:1rem;">
+          <div class="info-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <h3>Get in touch now</h3>
+            <p>Available 24 hours a day. We begin working on your case from the first message.</p>
+            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" style="margin-top:0.5rem;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+            <a href="/contact/" class="btn btn-outline" style="margin-top:0.5rem;">Contact form</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* ADDITIONAL FAQ FROM DATA */}}
+    {{ with $c.content_angles.faq_angles }}
+    <section style="margin-bottom:2.5rem;" id="chd-faq">
+      <div class="reveal">
+        <p class="label-sm">More questions</p>
+        <h2>Other frequently asked questions about repatriation from {{ $cname }}</h2>
+        {{ range $i, $q := . }}
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="chd-faq-{{ $i }}">
+            {{ $q }}
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="chd-faq-{{ $i }}" class="faq-answer" hidden>
+            {{ if eq $i 0 }}
+              <p>Repatriation from {{ $cname }} typically takes <strong>{{ $c.typical_timeline.average_case }}</strong>. Complex cases can take {{ $c.typical_timeline.complex_case }} or longer.</p>
+            {{ else if eq $i 2 }}
+              <p>The key documents are: local death certificate, embalming certificate, freedom from infection certificate, and airline cargo documentation.</p>
+            {{ else }}
+              <p>Please <a href="/contact/">contact our team</a> for specific guidance. We are available 24 hours a day via our <a href="/contact/">enquiry form</a> or <a href="https://wa.me/{{ site.Params.whatsappNumber }}" target="_blank" rel="noopener">WhatsApp</a>.</p>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+  </div>{{/* end main col */}}
+
+  {{/* MINI ToC SIDEBAR */}}
+  <aside class="country-two-col-aside">
+    <div class="sidebar-sticky">
+      <div class="sidebar-helpline-card">
+        <p class="label-sm">24/7 helpline</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+        <a href="/contact/" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:0.5rem;">Contact form</a>
+      </div>
+      <nav style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">On this page</p>
+        <ul style="list-style:none; padding:0; margin:0.75rem 0 0;">
+          <li style="padding:0.3rem 0;"><a href="#chd-q1" style="font-size:0.875rem;">First 24 hours</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q2" style="font-size:0.875rem;">How long does it take?</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q3" style="font-size:0.875rem;">Documents required</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q4" style="font-size:0.875rem;">Post-mortem</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q5" style="font-size:0.875rem;">British Embassy</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q6" style="font-size:0.875rem;">Ashes option</a></li>
+          <li style="padding:0.3rem 0;"><a href="#chd-q7" style="font-size:0.875rem;">How to start</a></li>
+          {{ with $c.content_angles.faq_angles }}<li style="padding:0.3rem 0;"><a href="#chd-faq" style="font-size:0.875rem;">More questions</a></li>{{ end }}
+        </ul>
+      </nav>
+      {{ with $c.typical_timeline }}
+      <div style="margin-top:1.25rem; padding:1.25rem; background:var(--surface); border-radius:0.5rem;">
+        <p class="label-sm">Quick timeline</p>
+        <p style="margin:0.5rem 0 0; font-size:1.1rem; font-weight:700;">{{ .average_case }}</p>
+        <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Typical case from {{ $cname }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </aside>
+
+</div>{{/* end two-col */}}
+
+{{/* CONTACT FORM */}}
+<section class="quote-section" id="enquiry-form">
+  <div class="section-inner">
+    <h2 class="reveal">We are here to help, any time of day or night</h2>
+    <p class="quote-subtitle reveal">If your loved one has passed away in {{ $cname }}, please do not face this alone. Our team will guide you through every step.</p>
+    <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
+      <input type="hidden" name="country" value="{{ $cname }}">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="chd-name">Your name <span class="required">*</span></label>
+          <input type="text" id="chd-name" name="name" placeholder="Full name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="chd-email">Email <span class="required">*</span></label>
+          <input type="email" id="chd-email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="chd-phone">Phone</label>
+          <input type="tel" id="chd-phone" name="phone" placeholder="+44..." autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="chd-service">Service needed</label>
+          <select id="chd-service" name="service">
+            <option value="">Select</option>
+            <option value="full_repatriation">Full body repatriation</option>
+            <option value="ashes_transport">Ashes transport</option>
+            <option value="cremation_abroad">Cremation abroad</option>
+            <option value="guidance_only">Guidance only</option>
+          </select>
+        </div>
+        <div class="form-group form-group-full">
+          <label for="chd-message">Message</label>
+          <textarea id="chd-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+        </div>
+      </div>
+      <div style="display:none;" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
+      <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt editorial-credit-section">
+  <div class="section-inner">
+    <div class="editorial-credit">
+      <i class="fa-solid fa-circle-check"></i>
+      <div>
+        <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/embassy-contacts/{{ $c.slug }}/">Embassy contacts: {{ $cname }}</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ else }}
+<section class="section">
+  <div class="section-inner">
+    <p>Repatriation guidance for {{ .Title }} is being prepared. Please <a href="/contact/">contact our team</a> for immediate assistance.</p>
+  </div>
+</section>
+{{ end }}
+
+</div>{{/* end .tpl-ch-d */}}

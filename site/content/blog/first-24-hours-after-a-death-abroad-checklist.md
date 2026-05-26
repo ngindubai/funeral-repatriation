@@ -1,5 +1,5 @@
----
-title: "First 24 hours after a death abroad: practical checklist"
+﻿---
+title: "First 24 Hours After a Death Abroad: Checklist"
 description: "A practical first-day checklist for UK families after a death abroad, covering who to call, what to gather, and what to avoid."
 date: 2026-04-21
 slug: first-24-hours-after-a-death-abroad-checklist

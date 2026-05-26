@@ -1,6 +1,7 @@
 ---
 title: "Contact us"
 description: "Get in touch for help with funeral repatriation to the UK."
+layout: "contact"
 ---
 
 ## Get in touch

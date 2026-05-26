@@ -1,73 +1,77 @@
-{{ define "title" }}Funeral Repatriation from {{ .Title }} | Repatriate Service{{ end }}
+{{/*
+  COUNTRY HUB ROUTER
+  Routes to one of 5 variant partials based on .Params.template_variant.
+  Default: A (Family Brief).
+  Set template_variant: "A"|"B"|"C"|"D"|"E" in page frontmatter.
+*/}}
+
+{{ define "title" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}{{ $cname := or $c.name $c.country_name }}Funeral Repatriation from {{ $cname }} to the UK | Repatriate Service
+{{ else }}{{ .Title }} | Repatriate Service{{ end }}{{ end }}
+
+{{ define "page-meta" }}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+  {{ $cname := or $c.name $c.country_name }}
+  {{ $timeline := "" }}
+  {{ if $c.typical_timeline_days_min }}
+    {{ $timeline = printf "%s–%s days" (lang.FormatNumber 0 $c.typical_timeline_days_min) (lang.FormatNumber 0 $c.typical_timeline_days_max) }}
+  {{ else if $c.typical_timeline }}
+    {{ $timeline = $c.typical_timeline.average_case }}
+  {{ end }}
+  {{ $desc := printf "Repatriation from %s to the UK — typically %s. Expert guidance on documentation, legal requirements and 24/7 support." $cname $timeline }}
+    <meta name="description" content="{{ $desc }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="Funeral Repatriation from {{ $cname }} to the UK">
+    <meta property="og:description" content="{{ $desc }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+{{ else }}
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+{{ end }}
+{{ end }}
 
 {{ define "schema" }}
 {{ $key := .Params.country_key }}
 {{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ $cname := or $c.country_name $c.name }}
 {{ if $c }}
+{{ $variant := .Params.template_variant | default "A" }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "{{ site.BaseURL }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Country Guides",
-          "item": "{{ site.BaseURL }}countries/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Funeral Repatriation from {{ $c.name }}",
-          "item": "{{ .Permalink }}"
-        }
-      ]
-    },
-    {
-      "@type": "Service",
-      "name": "Funeral Repatriation from {{ $c.name }}",
-      "description": "{{ .Description }}",
-      "provider": {
-        "@type": "Organization",
-        "name": "Repatriate Service",
-        "telephone": "{{ site.Params.emergencyPhone }}",
-        "url": "{{ site.BaseURL }}"
-      },
-      "areaServed": "{{ $c.name }}",
-      "serviceType": "Funeral Repatriation"
-    }
-    {{ with $c.content_angles.faq_angles }},
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {{ range $i, $q := . }}{{ if $i }},{{ end }}
-        {
-          "@type": "Question",
-          "name": {{ $q | jsonify }},
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": {{ if eq $i 0 }}{{ printf "Repatriation from %s typically takes %s in a straightforward case. The fastest is %s. Complex cases can take %s or longer." $c.name $c.typical_timeline.average_case $c.typical_timeline.fastest_case $c.typical_timeline.complex_case | jsonify }}{{ else if eq $i 1 }}{{ printf "The typical cost for repatriation from %s is %s, covering local funeral director fees, embalming, a zinc-lined coffin, documentation, air freight, and UK reception." $c.name $c.cost_guide.total_typical_range_gbp | jsonify }}{{ else if eq $i 2 }}{{ printf "The documents required are: local death certificate, embalming certificate, freedom from infection certificate, and airline cargo documentation. Your local funeral director will obtain most of these. Documentation typically takes %s." $c.repatriation_process.step_6_documentation.processing_time | jsonify }}{{ else }}{{ printf "Please contact our team on %s for specific guidance. We are available 24 hours a day." site.Params.emergencyPhone | jsonify }}{{ end }}
-          }
-        }
-        {{ end }}
-      ]
-    }
-    {{ end }}
-  ]
-}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.BaseURL }}"},{"@type":"ListItem","position":2,"name":"Country Guides","item":"{{ site.BaseURL }}countries/"},{"@type":"ListItem","position":3,"name":"Funeral Repatriation from {{ $cname }}","item":"{{ .Permalink }}"}]}
+</script>
+{{ if eq $variant "B" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":{{ printf "How to arrange repatriation from %s to the UK" $cname | jsonify }},"description":{{ printf "Step-by-step process for bringing a loved one home from %s." $cname | jsonify }},"step":[{"@type":"HowToStep","name":"Notify the local authorities","text":"Report the death to local police, hospital, and the British Embassy as soon as possible."},{"@type":"HowToStep","name":"Obtain the local death certificate","text":"A local death certificate, translated and authenticated if required, must be obtained before repatriation can begin."},{"@type":"HowToStep","name":"Appoint a local funeral director","text":"A licensed local funeral director will coordinate embalming, coffin preparation, and documentation."},{"@type":"HowToStep","name":"Arrange embalming and preparation","text":"Embalming to international standards is required for air transport. A zinc-lined coffin is usually mandatory."},{"@type":"HowToStep","name":"Complete export documentation","text":"Gather export permits, freedom from infection certificate, and airline cargo paperwork."},{"@type":"HowToStep","name":"Book air freight","text":"Arrange air freight with an approved repatriation provider."},{"@type":"HowToStep","name":"Notify the UK funeral director","text":"The receiving UK funeral director takes custody on arrival and notifies the local registrar."},{"@type":"HowToStep","name":"Arrange the UK funeral","text":"Once repatriated, your family can proceed with funeral arrangements in the UK."}]}
+</script>
+{{ end }}
+{{ if eq $variant "D" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ with $c.content_angles.faq_angles }}{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ printf "For specific guidance on this question, contact our specialist team. We are available 24 hours a day via our enquiry form at repatriateservice.com/contact/" | jsonify }}}}{{ end }}{{ end }}]}
+</script>
+{{ end }}
+{{ if eq $variant "E" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":{{ printf "Repatriation from %s to the UK: A Complete Guide" $cname | jsonify }},"author":{"@type":"Person","name":"Senior Repatriation Consultant"},"publisher":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"dateModified":"{{ now.Format "2006-01-02" }}","about":{"@type":"Thing","name":"Funeral Repatriation"}}
+</script>
+{{ end }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":{{ printf "Funeral Repatriation from %s to the UK" $cname | jsonify }},"provider":{"@type":"Organization","name":"Repatriate Service","telephone":"+447703577246","url":"{{ site.BaseURL }}"},"areaServed":{{ $cname | jsonify }},"serviceType":"Funeral Repatriation"}
 </script>
 {{ end }}
 {{ end }}
 
 {{ define "main" }}
+{{ $variant := .Params.template_variant | default "" }}
+{{ if and $variant (ne $variant "A") }}
+{{ partial (printf "countries/country-%s.html" (lower $variant)) . }}
+{{ else }}
 {{ $key := .Params.country_key }}
 {{ $c := index hugo.Data.countries_repatriation.countries $key }}
 {{ $citiesData := index hugo.Data.cities_p1.countries $key }}
@@ -80,7 +84,8 @@
     <div class="country-hero-overlay"></div>
     <div class="country-hero-content">
         <p class="label-sm">Funeral repatriation guidance</p>
-        <h1>Bringing your loved one home from <em>{{ if $c }}{{ $c.name }}{{ else }}{{ .Title }}{{ end }}</em></h1>
+        <h1>Repatriation from <em>{{ if $c }}{{ $c.name }}{{ else }}{{ .Title }}{{ end }}</em> to the UK</h1>
+        <p class="country-hero-subtitle">Bringing your loved one home. We are here 24 hours a day.</p>
         {{ if $c }}
         <div class="country-hero-stats">
             <div class="country-hero-stat">
@@ -101,7 +106,7 @@
         </div>
         {{ end }}
         <div class="country-hero-actions">
-            <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta"><i class="fa-solid fa-phone"></i> Call us 24/7</a>
+            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us now</a>
             <a href="#enquiry-form" class="btn btn-outline">Send an enquiry</a>
         </div>
     </div>
@@ -116,10 +121,10 @@
             <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
             <div class="helpline-text">
                 <p class="helpline-label">24/7 emergency helpline</p>
-                <a href="tel:{{ site.Params.emergencyPhone }}" class="helpline-number">{{ site.Params.emergencyPhone }}</a>
+                <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a>
             </div>
             <p class="helpline-message">If your loved one has passed away in {{ if $c }}{{ $c.name }}{{ else }}{{ .Title }}{{ end }}, our team is available around the clock to guide you through every step.</p>
-            <a href="tel:{{ site.Params.emergencyPhone }}" class="btn btn-cta helpline-btn">Call now</a>
+            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
         </div>
     </div>
 </div>
@@ -554,7 +559,7 @@
 {{/* ============================================================
      GUIDE CROSSLINK
      ============================================================ */}}
-{{ $guideSlug := printf "death-abroad-%s" $c.slug }}
+{{ $guideSlug := printf "death-abroad-%s" .Params.slug }}
 {{ $guide := .Site.GetPage (printf "/guides/%s" $guideSlug) }}
 {{ if $guide }}
 <section class="section guide-crosslink-section">
@@ -730,6 +735,18 @@
     </div>
 </section>
 
+<section class="section-alt editorial-credit-section">
+    <div class="section-inner">
+        <div class="editorial-credit">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+                <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+                <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/guides/death-abroad-{{ .Params.slug }}/">Full guide: what to do if someone dies in {{ if $c }}{{ $c.name | default $c.country_name }}{{ end }}</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
 {{ else }}
 {{/* Fallback if no data found for country key */}}
 <section class="section">
@@ -739,4 +756,6 @@
 </section>
 {{ end }}
 
-{{ end }}
+{{ end }}{{/* end variant dispatch else */}}
+
+{{ end }}{{/* end define main */}}

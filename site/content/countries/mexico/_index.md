@@ -1,5 +1,6 @@
-﻿---
-title: "Repatriation from Mexico to the UK"
+---
+template_variant: "E"
+title: "Mexico"
 description: "Practical guide to repatriating a loved one from Mexico to the UK, including documents, timeline, costs, embassy support, and first steps."
 country_key: "mexico"
 slug: "mexico"

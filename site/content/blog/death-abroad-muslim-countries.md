@@ -1,5 +1,5 @@
----
-title: "Death abroad in a Muslim country: what British families need to know"
+﻿---
+title: "Death Abroad in a Muslim Country: UK Family Guide"
 description: "A practical guide to repatriation and burial from Muslim-majority countries including Turkey, Egypt, Morocco, UAE, Indonesia, and Malaysia, covering Islamic requirements, local authority processes, and UK options."
 date: 2025-04-09
 read_time: 8

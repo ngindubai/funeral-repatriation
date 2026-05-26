@@ -1,4 +1,5 @@
-﻿---
+---
+template_variant: "A"
 layout: country-hub
 title: "Spain"
 description: "Step-by-step guidance for repatriating a loved one from Spain to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."

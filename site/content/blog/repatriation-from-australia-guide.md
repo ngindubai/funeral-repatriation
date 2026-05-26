@@ -1,5 +1,5 @@
----
-title: "Repatriation from Australia: what British families need to know"
+﻿---
+title: "Repatriation from Australia to the UK: Guide"
 description: "A practical guide to repatriating a loved one from Australia to the UK. Timelines, costs, state-specific rules, and how to navigate the long-haul logistics."
 date: 2025-04-13
 slug: repatriation-from-australia-guide
@@ -14,8 +14,6 @@ This guide covers the repatriation process from Australia in detail.
 ## The core challenge: distance
 
 A zinc-lined coffin travelling from Sydney to London has to go into a cargo hold for a 24-hour-plus journey, often with a connection. Embalming standards must meet both Australian export requirements and airline standards for the route. The logistics are well-trodden, but the cost and timeline reflect the distance.
-
-Expect to pay between £6,000 and £12,000 for full repatriation from Australia. Travel insurance, if the deceased had it, typically covers this. See our guide on tracing travel insurance after a death.
 
 ## State-by-state variation
 
@@ -53,7 +51,7 @@ The Australian funeral industry is professional and understands international re
 
 ## Cremation as an alternative
 
-Some families choose to have the person cremated in Australia and bring the ashes home. This is significantly cheaper and less complicated. Cremation in Australia typically costs A$1,500-4,000 (roughly £800-2,000). Returning ashes to the UK by air is straightforward. See our bringing ashes home from Australia guide.
+Some families choose to have the person cremated in Australia and bring the ashes home. This is significantly cheaper and less complicated. Returning ashes to the UK by air is straightforward. See our bringing ashes home from Australia guide.
 
 The main consideration is whether the family wants the body returned intact for burial in the UK. For some families, particularly those with burial plots, religious preferences, or cultural traditions, cremation abroad is not appropriate. For others, it is the practical and cost-effective choice.
 

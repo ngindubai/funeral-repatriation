@@ -1,4 +1,4 @@
-baseURL = "https://repatriateservice.com/"
+baseURL = "https://repatriationfuneral.com/"
 languageCode = "en-gb"
 title = "Repatriate Service"
 
@@ -6,9 +6,10 @@ title = "Repatriate Service"
   brand = "Repatriate Service"
   tagline = "Bringing your loved ones home"
   description = "Country-specific guides for repatriating a loved one to the United Kingdom. Step-by-step processes, costs, embassy contacts, and professional coordination."
-  quoteFormEndpoint = "https://formspree.io/f/placeholder"
-  emergencyPhone = "+44 (0) 000 000 0000"
-  plausibleDomain = "repatriateservice.com"
+  quoteFormEndpoint = "https://formsubmit.co/ajax/garethsomers@outlook.com"
+  whatsappNumber = "447703577246"
+  plausibleDomain = "repatriationfuneral.com"
+  googleAnalyticsID = "G-EJEH8YRQS7"
 
 [permalinks]
   [permalinks.page]
@@ -34,6 +35,6 @@ title = "Repatriate Service"
       unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "Sitemap"]
   section = ["HTML"]
   page = ["HTML"]
