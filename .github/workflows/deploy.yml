@@ -1,0 +1,35 @@
+name: Deploy to Hostinger via FTP
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:        # lets you run it manually too
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest code
+        uses: actions/checkout@v4
+
+      - name: Build Hugo site
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+
+      - name: Run Hugo build
+        run: hugo --gc --minify --cleanDestinationDir
+        working-directory: ./site
+
+      - name: Sync files over FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ftp.repatriationfuneral.com
+          port: 21
+          username: u356263466.gitconnect2
+          password: ${{ secrets.FTP_PASSWORD }}  # set this secret in GitHub repo settings
+          protocol: ftp
+          local-dir: ./site/public/
+          server-dir: /home/u356263466/domains/repatriationfuneral.com/public_html/
