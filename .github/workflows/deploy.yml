@@ -26,7 +26,7 @@ jobs:
       - name: Sync files over FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
-          server: ftp.repatriationfuneral.com
+          server: 185.224.138.247
           port: 21
           username: u356263466.gitconnect2
           password: ${{ secrets.FTP_PASSWORD }}  # set this secret in GitHub repo settings
