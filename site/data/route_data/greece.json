@@ -1,0 +1,97 @@
+{
+  "origin": {
+    "key": "greece",
+    "name": "Greece",
+    "slug": "greece",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/greece",
+    "embassy_city": "Athens",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-athens",
+    "consulates": ["Thessaloniki", "Crete", "Rhodes", "Corfu"],
+    "emergency_number": "112 or 166 (ambulance), 100 (police)",
+    "death_registration": "Local dimos (municipality)",
+    "investigating_authority": "Greek prosecutor (eisangelia)",
+    "post_mortem_trigger": "Sudden, unexplained, violent, or suspicious deaths",
+    "death_certificate_language": "Greek only. Certified English translation required.",
+    "death_certificate_name": "Lixiarxiki praxi thanatou",
+    "documentation_time_fcdo": "8-10 days per FCDO guidance for local formalities",
+    "embalming_certificate": true,
+    "cremation_available": false,
+    "cremation_note": "Cremation in Greece is available but limited. Greek Orthodox tradition favours burial. Bringing ashes home is an option where cremation is possible.",
+    "island_transfer_required": true,
+    "island_transfer_note": "Deaths on any Greek island require internal transfer to the mainland, usually Athens, before international repatriation can proceed. Add 1-4 days and additional cost.",
+    "cargo_airports": ["ATH"],
+    "key_document": "Lixiarxiki praxi thanatou (Greek death certificate) with certified English translation",
+    "source": "FCDO Greece travel advice, updated 2025; British Embassy Athens guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "greece-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "8-12 days",
+        "complex": "4-12 weeks"
+      },
+      "doc_processing_time": "8-10 days for local formalities per FCDO guidance",
+      "key_documents": [
+        "Lixiarxiki praxi thanatou (Greek death certificate)",
+        "Certified English translation",
+        "Prosecutor authorisation for release",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "ATH to LHR"},
+        {"name": "easyJet cargo", "routes": "ATH to LGW, MAN"},
+        {"name": "Olympic Air cargo", "routes": "ATH to various UK airports"}
+      ],
+      "special_rules": [
+        "Death certificate is in Greek only. Certified English translation is mandatory.",
+        "All island deaths require mainland transfer to Athens before international cargo. Add 1-4 days.",
+        "Prosecutor must authorise release of body. Standard in unexpected deaths.",
+        "FCDO guidance states 8-10 days for local formalities as a baseline."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Greek documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Athens can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Greece to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Greece. Repatriation to the UK takes 10-21 days. Island transfers, Greek paperwork, and cargo flights all handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "greece-to-ireland",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "8-12 days",
+        "complex": "4-12 weeks"
+      },
+      "doc_processing_time": "8-10 days for local formalities",
+      "key_documents": [
+        "Lixiarxiki praxi thanatou with certified English translation",
+        "Prosecutor authorisation",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "Ryanair cargo", "routes": "ATH to DUB, ORK"},
+        {"name": "Aer Lingus", "routes": "ATH to DUB"}
+      ],
+      "special_rules": [
+        "Island transfer to Athens required before international departure.",
+        "Irish Embassy in Athens handles consular matters for Irish nationals.",
+        "Process identical to UK repatriation. All documents in certified English."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Greek documentation must be in certified English translation. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Athens can register the death and advise.",
+      "seo_title": "Greece to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Greece and needs to come home to Ireland. Repatriation takes 10-21 days. Island transfers and Greek paperwork all handled. Contact us 24/7."
+    }
+  ]
+}

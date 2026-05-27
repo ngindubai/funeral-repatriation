@@ -1,0 +1,92 @@
+{
+  "origin": {
+    "key": "cyprus",
+    "name": "Cyprus",
+    "slug": "cyprus",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/cyprus",
+    "embassy_city": "Nicosia",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-nicosia",
+    "consulates": [],
+    "emergency_number": "112 or 199",
+    "death_registration": "Local district administration office",
+    "investigating_authority": "Cyprus Police",
+    "post_mortem_trigger": "Sudden, unattended, or suspicious deaths",
+    "death_certificate_language": "Bilingual Greek and English",
+    "british_expat_population": "Large British expat and retired community. Local funeral directors very experienced with UK repatriation.",
+    "embalming_certificate": true,
+    "cremation_available": false,
+    "cremation_note": "Cremation in Cyprus is not widely available. Most repatriations are full body.",
+    "cargo_airports": ["LCA"],
+    "key_document": "Cypriot death certificate (bilingual Greek/English)",
+    "source": "FCDO Cyprus travel advice, updated 2025; British High Commission Nicosia guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "cyprus-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Cypriot death certificate (bilingual Greek/English)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased",
+        "Transit permit from Cypriot authorities"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "LCA to LHR"},
+        {"name": "easyJet", "routes": "LCA to LGW, MAN, BRS, EDI"},
+        {"name": "TUI", "routes": "LCA to UK regional airports"}
+      ],
+      "special_rules": [
+        "Death certificate is bilingual - no separate translation required for most purposes.",
+        "Large British expat community means local funeral directors are highly experienced.",
+        "Flights to UK are frequent and multiple routes are available from Larnaca."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Cypriot documentation must be in English (certificate is bilingual). The coroner is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Nicosia can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Cyprus Repatriation to the UK: Every Step Explained",
+      "seo_description": "Someone has died in Cyprus. Repatriation to the UK takes 7-14 days in a straightforward case. Documentation, flights and UK handover all handled for British families."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "cyprus-to-ireland",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Cypriot death certificate (bilingual Greek/English)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Ryanair", "routes": "LCA to DUB"},
+        {"name": "Aer Lingus", "routes": "LCA to DUB (seasonal)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Nicosia handles consular matters.",
+        "Process identical to UK repatriation. Bilingual certificate accepted."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Cypriot documentation is accepted in English (bilingual certificate). The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Nicosia can register the death and advise.",
+      "seo_title": "Cyprus to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Cyprus and needs to come home to Ireland. Repatriation takes 7-14 days. All documentation and cargo flights handled. Contact us 24/7."
+    }
+  ]
+}

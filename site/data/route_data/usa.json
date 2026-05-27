@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "key": "usa",
+    "name": "United States",
+    "slug": "usa",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/usa",
+    "embassy_city": "Washington DC",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-washington",
+    "consulates": ["Atlanta", "Boston", "Chicago", "Houston", "Los Angeles", "Miami", "New York", "San Francisco"],
+    "emergency_number": "911",
+    "death_registration": "State vital records office (each state has its own system)",
+    "investigating_authority": "State medical examiner or county coroner (varies by state)",
+    "post_mortem_trigger": "Unexpected, violent, or unattended deaths. Medical examiner involvement varies by state.",
+    "state_variation_note": "Each of the 50 states has its own death registration system, its own medical examiner or coroner, and its own procedures. New York City and Los Angeles County have high caseloads and longer processing times.",
+    "embalming_certificate": true,
+    "embalming_note": "US funeral homes are experienced with international repatriation. Embalming is standard practice.",
+    "cremation_available": true,
+    "cargo_airports": ["JFK", "LAX", "ORD", "MIA", "BOS", "SFO", "ATL", "IAD"],
+    "key_document": "State death certificate (certified copy)",
+    "transit_permit_required": true,
+    "source": "FCDO USA travel advice, updated 2025; US state vital records guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "usa-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-10 days",
+        "complex": "3-8 weeks"
+      },
+      "doc_processing_time": "5-14 days (varies significantly by state)",
+      "key_documents": [
+        "State death certificate (certified copy)",
+        "Embalming certificate",
+        "Transit permit for human remains",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "JFK, LAX, ORD, MIA, BOS, SFO to LHR"},
+        {"name": "Virgin Atlantic", "routes": "JFK, LAX to LHR"},
+        {"name": "American Airlines", "routes": "JFK, ORD, MIA, DFW to LHR"}
+      ],
+      "special_rules": [
+        "Each US state has different processing times. New York and California are slower than smaller states.",
+        "Medical examiner investigation adds weeks for violent, suspicious, or unexplained deaths.",
+        "US documentation is in English throughout - no translation required.",
+        "Transit permit must be obtained from the state health authority."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Washington and consulates across the US can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "USA to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in the USA. Repatriation to the UK takes 10-21 days. State-by-state rules and cargo flights from major US airports all handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "usa-to-ireland",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-10 days",
+        "complex": "3-8 weeks"
+      },
+      "doc_processing_time": "5-14 days (varies significantly by state)",
+      "key_documents": [
+        "State death certificate (certified copy)",
+        "Embalming certificate",
+        "Transit permit for human remains",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Aer Lingus", "routes": "JFK, BOS to DUB (direct)"},
+        {"name": "American Airlines", "routes": "JFK, ORD to DUB"}
+      ],
+      "special_rules": [
+        "Large Irish-American diaspora means this is a well-established corridor.",
+        "Irish consulates in New York, Boston, Chicago, San Francisco, and Atlanta handle registration.",
+        "State variation in processing times applies identically to Irish repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Consulate in the relevant US city can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "USA to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules and cargo flights from major US airports. Contact us."
+    }
+  ]
+}

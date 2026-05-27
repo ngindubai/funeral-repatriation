@@ -1,0 +1,99 @@
+{
+  "origin": {
+    "key": "philippines",
+    "name": "Philippines",
+    "slug": "philippines",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/philippines",
+    "embassy_city": "Manila",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-manila",
+    "consulates": [],
+    "emergency_number": "911 (Metro Manila)",
+    "death_registration": "Local Civil Registrar",
+    "investigating_authority": "Philippine National Police; NBI for suspicious deaths",
+    "post_mortem_trigger": "Unexpected, violent, or suspicious deaths",
+    "psa_authentication_required": true,
+    "psa_note": "Death certificate must be authenticated by the Philippine Statistics Authority (PSA). This is the primary bottleneck.",
+    "dfa_authentication_required": true,
+    "dfa_note": "After PSA authentication, the DFA (Department of Foreign Affairs) must countersign. This cannot be bypassed.",
+    "boq_clearance_required": true,
+    "boq_note": "Bureau of Quarantine (BOQ) clearance is required for export of human remains.",
+    "embalming_certificate": true,
+    "embalming_note": "Embalming is standard practice in the Philippines. Well-established funeral sector.",
+    "cremation_available": true,
+    "cargo_airports": ["MNL", "CEB"],
+    "key_document": "Philippine death certificate (PSA-authenticated)",
+    "source": "FCDO Philippines travel advice, updated 2025; British Embassy Manila guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "philippines-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "3 weeks",
+        "complex": "8-16 weeks"
+      },
+      "doc_processing_time": "3-6 weeks (PSA and DFA authentication are the main delays)",
+      "key_documents": [
+        "Philippine death certificate (PSA-authenticated)",
+        "DFA authentication",
+        "Embalming certificate",
+        "Bureau of Quarantine (BOQ) clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Philippine Airlines", "routes": "MNL to LHR (direct)"},
+        {"name": "Cathay Pacific", "routes": "MNL to LHR (via HKG)"},
+        {"name": "Emirates", "routes": "MNL to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "PSA authentication is the primary bottleneck. Cannot be expedited.",
+        "DFA countersignature is mandatory after PSA. Two separate authentication steps.",
+        "BOQ clearance required in addition to other documentation.",
+        "Total documentation time is 3-6 weeks in routine cases."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in English (it is throughout). The coroner is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Manila can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Philippines to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in the Philippines. Repatriation to the UK takes 3-6 weeks. PSA and DFA authentication are the main delays. We guide every step. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "philippines-to-ireland",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "3 weeks",
+        "complex": "8-16 weeks"
+      },
+      "doc_processing_time": "3-6 weeks",
+      "key_documents": [
+        "Philippine death certificate (PSA-authenticated)",
+        "DFA authentication",
+        "Embalming certificate",
+        "BOQ clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Philippine Airlines", "routes": "MNL to DUB (via LHR or AMS)"},
+        {"name": "Emirates", "routes": "MNL to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Large Filipino-Irish diaspora. Well-established corridor.",
+        "Irish Embassy in Manila handles consular matters.",
+        "PSA and DFA authentication apply identically to Irish repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Philippine documentation must be in English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Manila can register the death and advise.",
+      "seo_title": "Philippines to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in the Philippines and needs to come home to Ireland. Repatriation takes 3-6 weeks. PSA and DFA authentication explained. Contact us 24/7."
+    }
+  ]
+}

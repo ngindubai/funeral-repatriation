@@ -1,0 +1,95 @@
+{
+  "origin": {
+    "key": "turkey",
+    "name": "Turkey",
+    "slug": "turkey",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/turkey",
+    "embassy_city": "Ankara",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-ankara",
+    "consulates": ["Istanbul"],
+    "emergency_number": "112",
+    "death_registration": "Nufus mudurlugu (civil registry office)",
+    "investigating_authority": "Cumhuriyet savcisi (Turkish public prosecutor)",
+    "post_mortem_trigger": "Sudden, violent, suspicious, or unexplained deaths. Routinely ordered for foreigners.",
+    "death_certificate_language": "Turkish only (olum belgesi). Certified English translation required.",
+    "cremation_available": false,
+    "cremation_note": "There are effectively no cremation facilities in Turkey. All repatriations are full body.",
+    "embalming_note": "Embalming is not standard practice for Turkish nationals. Must be specifically arranged and requested for UK repatriation.",
+    "embalming_certificate": true,
+    "resort_note": "Deaths in Antalya, Bodrum, Marmaris, and other resort areas are handled locally but embalming to international standards may need to be coordinated via Istanbul.",
+    "cargo_airports": ["IST", "SAW", "AYT", "ESB"],
+    "key_document": "Olum belgesi (Turkish death certificate) with certified English translation",
+    "source": "FCDO Turkey travel advice, updated 2025; British Embassy Ankara guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "turkey-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-10 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-10 days for documentation",
+      "key_documents": [
+        "Olum belgesi (Turkish death certificate)",
+        "Certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Turkish Airlines Cargo", "routes": "IST, SAW to LHR, LGW, MAN, BHX, EDI (direct)"},
+        {"name": "British Airways", "routes": "IST to LHR"}
+      ],
+      "special_rules": [
+        "Death certificate is in Turkish only. Certified English translation is mandatory.",
+        "No cremation facilities in Turkey. All repatriations must be full body.",
+        "Embalming must be specifically arranged - it is not standard Turkish practice.",
+        "Public prosecutor involvement adds time for unexpected deaths.",
+        "Resort area deaths (Antalya, Bodrum) handled locally but may need Istanbul coordination for embalming."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Ankara and Consulate General in Istanbul can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Turkey to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Turkey. Repatriation to the UK takes 10-21 days. No cremation in Turkey, olum belgesi process, and Turkish Airlines Cargo routes explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "turkey-to-ireland",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-10 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-10 days for documentation",
+      "key_documents": [
+        "Olum belgesi with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Turkish Airlines", "routes": "IST to DUB (direct)"},
+        {"name": "Ryanair cargo", "routes": "IST to DUB"}
+      ],
+      "special_rules": [
+        "No cremation in Turkey. All repatriations are full body.",
+        "Irish Embassy in Ankara handles consular matters.",
+        "Process identical to UK repatriation. All documents need certified English translation."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Ankara can register the death and advise.",
+      "seo_title": "Turkey to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Turkey and needs to come home to Ireland. Repatriation takes 10-21 days. No cremation available. All documentation handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "origin": {
+    "key": "thailand",
+    "name": "Thailand",
+    "slug": "thailand",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/thailand",
+    "embassy_city": "Bangkok",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-bangkok",
+    "consulates": ["Chiang Mai"],
+    "emergency_number": "191 (police), 1669 (ambulance)",
+    "death_registration": "Local civil registry",
+    "investigating_authority": "Thai police and public prosecutor",
+    "post_mortem_trigger": "Routinely ordered for all non-Thai nationals who die unexpectedly",
+    "post_mortem_report_time": "Up to 45 working days in cases requiring full report",
+    "deadline_warning": "Thai authorities will hold the body for up to 30 days. After 30 days they may proceed with a pauper's burial. Act immediately.",
+    "death_certificate_language": "Thai only. One original issued. MFA certification required for international validity.",
+    "body_release_letter": "British Embassy Bangkok issues a body release letter. Required for all full body repatriations. Apply via gov.uk.",
+    "embalming_certificate": true,
+    "embalming_urgency": "URGENT. Thailand's tropical climate requires immediate embalming.",
+    "cremation_available": false,
+    "cremation_note": "Cremation and return of ashes is available and significantly faster than full body repatriation.",
+    "island_transfer_required": true,
+    "island_transfer_note": "Deaths on Koh Samui, Koh Pha-ngan, Koh Tao, Phuket, and other islands require transfer to Bangkok before international cargo can depart. Add 2-3 days.",
+    "cargo_airports": ["BKK", "DMK"],
+    "key_document": "Bai morn sia (Thai death certificate, MFA certified)",
+    "source": "FCDO Thailand travel advice, updated 2025; British Embassy Bangkok guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "thailand-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-12 weeks or longer"
+      },
+      "doc_processing_time": "7-21 days minimum. Often longer.",
+      "key_documents": [
+        "Bai morn sia (Thai death certificate) with MFA certification",
+        "Certified English translation of death certificate",
+        "British Embassy Bangkok body release letter",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Airline cargo documentation"
+      ],
+      "airlines": [
+        {"name": "Thai Airways", "routes": "BKK to LHR"},
+        {"name": "British Airways", "routes": "BKK to LHR"},
+        {"name": "Emirates", "routes": "BKK via DXB to LHR"}
+      ],
+      "special_rules": [
+        "Thai 30-day deadline: authorities will proceed with pauper's burial after 30 days. Act on the day of death.",
+        "Only one original death certificate issued, in Thai only. MFA certification is mandatory before it has international validity.",
+        "British Embassy body release letter is required. Apply via gov.uk. Cannot be bypassed.",
+        "Post-mortem report takes up to 45 working days in complex cases. Body can be released earlier but final report takes longer.",
+        "Island deaths (Phuket, Koh Samui, Koh Tao, etc.) require Bangkok transfer. Add 2-3 days.",
+        "Embalming must be arranged immediately given tropical climate."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Cases involving a Thai investigation may require coroner review.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bangkok issues the body release letter, which is required for all full body repatriations from Thailand.",
+      "seo_title": "Thailand to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Thailand. Repatriation to the UK takes 2-4 weeks. Strict 30-day deadline, island transfers, and post-mortem process all explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "thailand-to-ireland",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-12 weeks or longer"
+      },
+      "doc_processing_time": "7-21 days minimum. Often longer.",
+      "key_documents": [
+        "Bai morn sia (Thai death certificate) with MFA certification",
+        "Certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Thai Airways", "routes": "BKK to DUB (via LHR or AMS)"},
+        {"name": "Emirates", "routes": "BKK via DXB to DUB"}
+      ],
+      "special_rules": [
+        "Thai 30-day deadline applies identically to Irish repatriations.",
+        "Irish Embassy in Bangkok is the consular contact.",
+        "Body release letter not required for Irish repatriations (UK-specific requirement) - confirm with Irish Embassy.",
+        "Island deaths require Bangkok transfer before international departure."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Bangkok can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Thailand to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Thailand and needs to come home to Ireland. Repatriation takes 2-4 weeks. 30-day deadline and all documentation handled. Contact us."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "origin": {
+    "key": "france",
+    "name": "France",
+    "slug": "france",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/france",
+    "embassy_city": "Paris",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-paris",
+    "consulates": ["Bordeaux", "Lyon", "Marseille"],
+    "emergency_number": "15 (SAMU), 17 (police), 18 (fire), 112",
+    "death_registration": "Local mairie within 24 hours",
+    "investigating_authority": "Institut Medico-Legal (IML) on order of procureur de la republique",
+    "post_mortem_trigger": "Violent, sudden, unexplained deaths",
+    "death_certificate_name": "Acte de deces (from mairie)",
+    "embalming_name": "Thanatopraxie",
+    "road_transport_option": true,
+    "road_transport_note": "Road transport via Eurotunnel or ferry is a genuine alternative to air cargo for deaths in northern France, Paris, and Normandy. Often cheaper and faster.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["CDG", "ORY", "LYS", "MRS", "NCE", "BOD", "TLS"],
+    "key_document": "Acte de deces",
+    "source": "FCDO France travel advice, updated 2025; British Embassy Paris guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "france-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "4-7 days",
+        "complex": "3-8 weeks"
+      },
+      "doc_processing_time": "3-7 days total",
+      "key_documents": [
+        "Acte de deces (death certificate from mairie)",
+        "Embalming certificate (certificat de soins de conservation)",
+        "Autorisation de transport de corps",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Eurostar cargo", "routes": "Paris to London St Pancras"},
+        {"name": "British Airways", "routes": "CDG to LHR"},
+        {"name": "Air France", "routes": "CDG to LHR, LGW"}
+      ],
+      "special_rules": [
+        "Death must be registered at the local mairie within 24 hours. Hospital or doctor normally initiates.",
+        "Road transport via Eurotunnel or ferry is available and often faster for northern France.",
+        "IML post-mortem ordered by procureur for violent, sudden, or unexplained deaths. Adds weeks.",
+        "French funeral industry is professional and regulated (thanatopraxie is a licensed profession)."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal or road crossing. All French documentation must be in certified English. The coroner is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Paris can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "France to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in France. Repatriation to the UK takes 7-14 days. Road via Eurotunnel or air cargo. We guide every step. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "france-to-ireland",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-8 weeks"
+      },
+      "doc_processing_time": "3-7 days total",
+      "key_documents": [
+        "Acte de deces",
+        "Certificat de soins de conservation",
+        "Autorisation de transport de corps",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "Aer Lingus", "routes": "CDG to DUB (direct)"},
+        {"name": "Ryanair cargo", "routes": "CDG, ORY to DUB"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Paris handles consular matters.",
+        "Road transport via ferry from Cherbourg, Roscoff, or Calais to Ireland is a viable option.",
+        "Process identical to UK repatriation. Documents need certified English translation."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal or ferry port. All French documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Paris can register the death and advise.",
+      "seo_title": "France to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in France and needs to come home to Ireland. Repatriation takes 7-14 days. Ferry or air cargo options. All documentation handled. Contact us 24/7."
+    }
+  ]
+}

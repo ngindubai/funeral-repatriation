@@ -1,0 +1,92 @@
+{
+  "origin": {
+    "key": "australia",
+    "name": "Australia",
+    "slug": "australia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/australia",
+    "embassy_city": "Canberra",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-canberra",
+    "consulates": ["Sydney", "Melbourne", "Perth", "Brisbane"],
+    "emergency_number": "000",
+    "death_registration": "State or territory Registry of Births, Deaths and Marriages",
+    "investigating_authority": "State or territory coroner (each state has its own)",
+    "post_mortem_trigger": "Unexpected, unattended, or violent deaths. State coroner involvement varies.",
+    "state_variation_note": "Each Australian state and territory has its own Births Deaths and Marriages registry and its own coroner. Remote deaths (Northern Territory outback, Western Australia outback) add significant time for body retrieval.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["SYD", "MEL", "BNE", "PER"],
+    "key_document": "Australian death certificate (state-issued)",
+    "source": "FCDO Australia travel advice, updated 2025; Australian state registry guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "australia-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "Australian death certificate (state-issued)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased",
+        "Export permit from state health authority"
+      ],
+      "airlines": [
+        {"name": "Qantas", "routes": "SYD, MEL to LHR (direct)"},
+        {"name": "British Airways", "routes": "SYD to LHR (via SIN)"},
+        {"name": "Emirates", "routes": "SYD, MEL, PER to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Each state has its own registry and coroner. Allow extra time for remote area deaths.",
+        "Export permit from state health authority required in addition to death certificate.",
+        "Documentation is in English throughout - no translation required.",
+        "Northern Territory and remote Western Australia deaths can take significantly longer."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Australian documentation must be in English (it is). The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Canberra and consulates in Sydney, Melbourne, Perth, and Brisbane can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Australia to United Kingdom: Repatriation Guidance",
+      "seo_description": "Repatriation from Australia to the UK typically takes 10-21 days. Documentation 5-14 days. We guide British families through every step. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "australia-to-ireland",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "Australian death certificate (state-issued)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Qantas / Aer Lingus codeshare", "routes": "SYD to DUB (via LHR)"},
+        {"name": "Emirates", "routes": "SYD, MEL to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Large Irish-Australian diaspora. Well-established corridor with experienced providers.",
+        "Irish Embassy in Canberra handles consular matters.",
+        "State variation in processing times applies identically to Irish repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Canberra can register the death and advise on documentation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Australia Repatriation to Ireland: Every Step Explained",
+      "seo_description": "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide British families through every step. Contact us 24/7."
+    }
+  ]
+}
