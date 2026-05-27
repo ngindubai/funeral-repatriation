@@ -30,12 +30,10 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
 
-      - name: Verify build
+      - name: Delete stale FTP sync-state on server
+        continue-on-error: true
         run: |
-          echo "HTML pages built:"
-          find site/public -name '*.html' | wc -l
-          echo "Route pages built:"
-          find site/public/routes -name '*.html' 2>/dev/null | wc -l
+          curl -v --ftp-pasv --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" "ftp://${{ secrets.FTP_SERVER }}//public_html/" -Q "DELE .ftp-deploy-sync-state.json"
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
