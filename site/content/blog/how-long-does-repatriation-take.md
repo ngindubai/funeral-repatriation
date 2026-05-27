@@ -1,6 +1,6 @@
-﻿---
-title: "How Long Does Repatriation Take? Country Timelines"
-description: "Repatriation is never instant. This guide explains realistic timelines by country, what causes delays, and how to plan around them."
+---
+title: "How Long Does Repatriation Take? UK Timelines by Country"
+description: "Repatriation from Spain takes 7 to 14 days. From Thailand, 2 to 6 weeks. Understand why timelines vary and what you can do to keep things moving."
 date: 2025-04-10
 slug: how-long-does-repatriation-take
 author: "Senior Repatriation Consultant"
@@ -37,7 +37,7 @@ Repatriation is not a single step. It is a chain of sequential tasks, and each o
 
 **Spain, Portugal, France, Italy, Greece:** 7-14 days is typical when there is no post-mortem. Post-mortem adds 1-2 weeks in most cases.
 
-**Thailand:** 2-6 weeks. Post-mortem is almost always required for foreign nationals who die unexpectedly. Phuket and Koh Samui have less infrastructure than Bangkok — factor in transfer time to a Bangkok mortuary.
+**Thailand:** 2-6 weeks. Post-mortem is almost always required for foreign nationals who die unexpectedly. Phuket and Koh Samui have less infrastructure than Bangkok -- factor in transfer time to a Bangkok mortuary.
 
 **USA:** 7-14 days. Documentation is well-organised but transit permits and state-specific regulations add complexity. Flights are frequent, which helps.
 

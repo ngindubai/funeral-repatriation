@@ -1,6 +1,6 @@
 ---
-title: "What to do if someone dies in Thailand"
-description: "Thailand has one of the most complex repatriation processes for British families. This guide covers what to do, embassy contacts, documentation, timelines, and the cost of bringing someone home from Thailand."
+title: "Death in Thailand: Repatriation Guide for UK Families"
+description: "Someone has died in Thailand. Strict deadlines, a single death certificate, island transfers. We handle every step for British families. Contact us 24/7."
 country_key: "thailand"
 country_name: "Thailand"
 slug: "death-abroad-thailand"

@@ -1,6 +1,6 @@
 ---
-title: "What to Do When Someone Dies in Pakistan: A Step-by-Step Guide"
-description: "Practical steps for UK families when a loved one dies in Pakistan. Union Council death certificate, MLO process, District Health Authority NOC and direct Heathrow flights explained."
+title: "Death in Pakistan: UK Repatriation, Every Step Handled"
+description: "Someone has died in Pakistan. Consular contacts, Islamic burial rules, documentation and repatriation flight to the UK explained for British families."
 country_key: "pakistan"
 slug: "death-abroad-pakistan"
 hero_image: "/images/airport-exterior.jpg"

@@ -1,6 +1,6 @@
 ---
-title: "What to do if someone dies in France"
-description: "France has a large British expat population and strict repatriation rules. This guide covers the first steps, embassy contacts, required documents, timeline, and typical costs."
+title: "Death in France: Repatriation Guidance for British Families"
+description: "Someone has died in France. French paperwork, British Embassy notification, and repatriation home handled step by step. Contact us 24/7."
 country_key: "france"
 country_name: "France"
 slug: "death-abroad-france"
@@ -8,9 +8,9 @@ slug: "death-abroad-france"
 
 ## The 24-Hour Clock Starts Immediately
 
-France requires death registration within 24 hours at the local mairie (town hall). This is not a guideline — it is a legal requirement. The certifying doctor issues a certificat de décès on the spot, and the death must then be registered promptly. That tight window means families have very little time to make decisions before the administrative process is already moving.
+France requires death registration within 24 hours at the local mairie (town hall). This is not a guideline -- it is a legal requirement. The certifying doctor issues a certificat de décès on the spot, and the death must then be registered promptly. That tight window means families have very little time to make decisions before the administrative process is already moving.
 
-The acte de décès (death certificate) issued by the mairie does not show the cause of death. A multilingual version is available, which helps when presenting documents to UK authorities later. You will typically receive multiple certified copies — keep all of them.
+The acte de décès (death certificate) issued by the mairie does not show the cause of death. A multilingual version is available, which helps when presenting documents to UK authorities later. You will typically receive multiple certified copies -- keep all of them.
 
 ## The Laissez-Passer and the Transport Decision
 
@@ -20,7 +20,7 @@ France gives British families something no other repatriation destination offers
 
 ## When the Institut Médico-Légal Is Involved
 
-French law mandates a post-mortem at the Institut Médico-Légal (IML) for sudden, unexplained, or unclear deaths. For British tourists dying of undiagnosed cardiac events or in accidents, IML involvement is common. The examination itself may take a week or two. The written report is a separate matter entirely — it can take months. This rarely blocks repatriation; the body can usually be released once the examination is complete. But families should know the IML report will arrive long after they are home, and may be needed for insurance or inquest purposes.
+French law mandates a post-mortem at the Institut Médico-Légal (IML) for sudden, unexplained, or unclear deaths. For British tourists dying of undiagnosed cardiac events or in accidents, IML involvement is common. The examination itself may take a week or two. The written report is a separate matter entirely -- it can take months. This rarely blocks repatriation; the body can usually be released once the examination is complete. But families should know the IML report will arrive long after they are home, and may be needed for insurance or inquest purposes.
 
 If tissue or organ samples are retained during the examination, French law permits this without prior consent in judicial investigations. Families have the right to be informed, but not always before the fact.
 
@@ -28,6 +28,6 @@ If tissue or organ samples are retained during the examination, French law permi
 
 The fermeture annuelle affects mairies, notaries, many funeral directors, and government offices throughout August. Reduced staffing means paperwork takes longer and callbacks happen less reliably. Expect every step to take 30-50% longer in August than at other times of year. Build this into any timeline you give to employers, insurers, or family members waiting at home.
 
-French law also requires burial or cremation within six days of death unless an exemption is granted. Most families proceed directly with repatriation rather than hold a service in France first — which fits comfortably within six days once permits are in place.
+French law also requires burial or cremation within six days of death unless an exemption is granted. Most families proceed directly with repatriation rather than hold a service in France first -- which fits comfortably within six days once permits are in place.
 
 *Sources: FCDO France guidance (updated September 2025); Ministère de l'Intérieur, Service Public guidance on déclaration de décès; Institut Médico-Légal de Paris procedural notes.*

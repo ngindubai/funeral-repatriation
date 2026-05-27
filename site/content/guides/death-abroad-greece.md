@@ -1,6 +1,6 @@
 ---
-title: "What to do if someone dies in Greece"
-description: "Greece sees a high number of British deaths, particularly during summer. This guide explains immediate steps, the British Embassy in Athens, required documents, timelines, and costs for repatriation to the UK."
+title: "Greece Repatriation Guide for British Families"
+description: "Someone has died in Greece. Greek paperwork, island transfers and repatriation to the UK typically take 7 to 14 days. We guide every step."
 country_key: "greece"
 country_name: "Greece"
 slug: "death-abroad-greece"
@@ -14,7 +14,7 @@ This is not a technicality. It is a full logistics operation in its own right, i
 
 ## The Lixiarxiki Praxi Thanatou and the Translation Requirement
 
-Greece does not issue a multilingual death certificate. The lixiarxiki praxi thanatou (death register entry) is in Greek only. A certified translation into English is required before UK authorities or insurers will accept the document. Arranging translation adds time — typically two to five days — and cost. It is not a step that can be skipped.
+Greece does not issue a multilingual death certificate. The lixiarxiki praxi thanatou (death register entry) is in Greek only. A certified translation into English is required before UK authorities or insurers will accept the document. Arranging translation adds time -- typically two to five days -- and cost. It is not a step that can be skipped.
 
 Unlike Spain or France, the Greek death certificate does show the cause of death. For families dealing with insurance claims or a potential UK inquest, this is useful. For families who simply want to understand what happened, it at least provides clarity.
 
@@ -26,7 +26,7 @@ Repatriation to the UK is absolutely your right. But families should be aware of
 
 ## If a Post-Mortem Is Ordered
 
-In Greece, the public prosecutor (eisangeleas) orders post-mortem examinations for sudden, unexplained, or violent deaths. The post-mortem itself may be completed quickly. The written report is another matter. Greek forensic reports can take months — in complex cases, over a year. The body can usually be released for repatriation once the examination is complete, but the prosecutor must formally authorise release. Do not assume this happens automatically.
+In Greece, the public prosecutor (eisangeleas) orders post-mortem examinations for sudden, unexplained, or violent deaths. The post-mortem itself may be completed quickly. The written report is another matter. Greek forensic reports can take months -- in complex cases, over a year. The body can usually be released for repatriation once the examination is complete, but the prosecutor must formally authorise release. Do not assume this happens automatically.
 
 One further point: if burial in Greece is ever considered, families should know about the exhumation tradition. Greek Orthodox practice involves exhuming remains after approximately three years, cleaning the bones, and placing them in an ossuary. Families who later want to bring their loved one home will face that additional step.
 

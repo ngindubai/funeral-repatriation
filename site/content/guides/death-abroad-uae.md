@@ -1,6 +1,6 @@
-﻿---
-title: "What to do if someone dies in the UAE"
-description: "What to do if someone dies in the UAE. Dubai and Abu Dhabi-specific guidance, the mandatory police report, Islamic burial considerations, and the repatriation process from the Gulf."
+---
+title: "Death in UAE: UK Repatriation Guidance for British Families"
+description: "Someone has died in the UAE. Islamic law, Dubai and Abu Dhabi mortuary processes, documentation and repatriation to the UK fully explained."
 country_key: "uae"
 country_name: "UAE"
 slug: "death-abroad-uae"
@@ -8,9 +8,9 @@ slug: "death-abroad-uae"
 
 ## The Police Report Comes First. Everything Else Waits.
 
-In the UAE, every death — in hospital, at a hotel, on the road, anywhere — must be reported to the police. The police attend, investigate, and issue a No Objection Certificate (NOC) before any subsequent steps can happen. There is no way to begin hospital release, documentation, or funeral arrangements before the police NOC is in hand. This is not bureaucratic friction; it is the legal foundation of the entire process.
+In the UAE, every death -- in hospital, at a hotel, on the road, anywhere -- must be reported to the police. The police attend, investigate, and issue a No Objection Certificate (NOC) before any subsequent steps can happen. There is no way to begin hospital release, documentation, or funeral arrangements before the police NOC is in hand. This is not bureaucratic friction; it is the legal foundation of the entire process.
 
-In straightforward natural deaths, the NOC can be issued within 24-48 hours. In cases involving investigation — accidents, unclear circumstances, or any suspicion of an offence — the process takes longer. Dubai Police, Abu Dhabi Police, and Sharjah Police all operate the same basic framework but with slightly different processes. Know which emirate your loved one died in and ensure you are contacting the right authority.
+In straightforward natural deaths, the NOC can be issued within 24-48 hours. In cases involving investigation -- accidents, unclear circumstances, or any suspicion of an offence -- the process takes longer. Dubai Police, Abu Dhabi Police, and Sharjah Police all operate the same basic framework but with slightly different processes. Know which emirate your loved one died in and ensure you are contacting the right authority.
 
 ## MOFA Attestation: The Additional Step
 
@@ -18,7 +18,7 @@ Once the death certificate is issued, it must be attested by the UAE Ministry of
 
 ## UAE Zero-Tolerance Drug Policy
 
-The UAE applies zero tolerance to any controlled substance. If a death involves drugs — including prescription medications that are restricted under UAE law, or recreational substances — a full police investigation will follow. Investigations of this type can extend the process by weeks. Families should report all facts accurately to their repatriation coordinator at the outset. Withholding information about circumstances rarely shortens the process and can complicate it further.
+The UAE applies zero tolerance to any controlled substance. If a death involves drugs -- including prescription medications that are restricted under UAE law, or recreational substances -- a full police investigation will follow. Investigations of this type can extend the process by weeks. Families should report all facts accurately to their repatriation coordinator at the outset. Withholding information about circumstances rarely shortens the process and can complicate it further.
 
 ## Why the UAE Is Actually Well-Equipped for Repatriation
 

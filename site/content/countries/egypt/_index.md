@@ -1,8 +1,8 @@
 ---
 template_variant: "A"
 layout: country-hub
-title: "Egypt"
-description: "Step-by-step guidance for repatriating a loved one from Egypt to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."
+title: "Egypt Repatriation: British Families Guided 24/7"
+description: "Repatriation from Egypt to the UK typically takes 2 to 4 weeks. We handle documentation, consular contacts and cargo flights home. Contact us now."
 country_key: "egypt"
 slug: "egypt"
 hero_image: "/images/city-dusk.jpg"
@@ -13,4 +13,3 @@ direct_answer_points:
   - "Deaths involving investigation, including accident, drowning, or unexplained causes, can extend the timeline to 6 to 12 weeks. Families should not book UK-end arrangements until release is confirmed."
 direct_answer_note: "The British Embassy in Cairo can provide a list of local funeral directors but cannot expedite Egyptian government processes."
 ---
-

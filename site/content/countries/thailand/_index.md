@@ -1,8 +1,8 @@
 ---
 template_variant: "B"
 layout: country-hub
-title: "Thailand"
-description: "Step-by-step guidance for repatriating a loved one from Thailand to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."
+title: "Thailand Repatriation: British Families Guided 24/7"
+description: "Repatriation from Thailand to the UK typically takes 2 to 4 weeks. We guide British families through every step. Contact us now."
 country_key: "thailand"
 slug: "thailand"
 hero_image: "/images/cargo-terminal-night.jpg"
@@ -14,4 +14,3 @@ direct_answer_points:
   - "If the death happened outside Bangkok, transfer logistics can be the main source of delay."
 direct_answer_note: "The fastest route is usually a Bangkok-led case with complete documents and no post-mortem requirement."
 ---
-
