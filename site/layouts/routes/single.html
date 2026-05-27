@@ -44,7 +44,22 @@
 
 {{ define "main" }}
 
-{{/* HERO */}}
+{{/* ================================================================
+     TEMPLATE VARIANTS A-E
+     Controlled by template_variant: frontmatter field.
+     All variants contain the same content blocks, reordered to create
+     meaningfully different page structures for Google diversity.
+
+     A: Hero > Direct Answer > Overview > Timeline > Destination > FAQ > Crosslinks > Form
+     B: Hero > Helpline > Overview > Direct Answer > Timeline > FAQ > Destination > Crosslinks > Form
+     C: Hero > Direct Answer > Timeline > Overview > FAQ > Destination > Crosslinks > Form
+     D: Hero > Helpline > Direct Answer > Destination > Timeline > FAQ > Crosslinks > Form
+     E: Hero > Overview > Direct Answer > Timeline > Destination > Crosslinks > FAQ > Form
+     ================================================================ */}}
+
+{{ $variant := .Params.template_variant | default "A" }}
+
+{{/* ---- HERO (all variants) ---- */}}
 <section class="country-hero" style="background-image: url('/images/cargo-terminal-night.jpg');">
   <div class="country-hero-overlay"></div>
   <div class="country-hero-content">
@@ -84,22 +99,11 @@
   </div>
 </section>
 
-{{/* HELPLINE STRIP */}}
-<div class="helpline-strip">
-  <div class="section-inner">
-    <div class="helpline-strip-inner">
-      <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
-      <div class="helpline-text">
-        <p class="helpline-label">24/7 emergency helpline</p>
-        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a>
-      </div>
-      <p class="helpline-message">If your loved one has passed away in {{ .Params.origin_name }}, we are here around the clock to guide you through every step of bringing them home to {{ .Params.dest_name }}.</p>
-      <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
-    </div>
-  </div>
-</div>
+{{/* ================================================================
+     VARIANT A: Direct Answer > Overview > Timeline > Destination > FAQ > Crosslinks > Form
+     ================================================================ */}}
+{{ if eq $variant "A" }}
 
-{{/* DIRECT ANSWER */}}
 {{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
 <section class="section answer-brief-section">
   <div class="section-inner">
@@ -115,51 +119,34 @@
         {{ end }}
       </div>
       <div class="answer-brief-side">
-        <div class="answer-brief-stat">
-          <span class="answer-brief-label">Typical timeline</span>
-          <strong>{{ .Params.timeline_avg }}</strong>
-        </div>
-        <div class="answer-brief-stat">
-          <span class="answer-brief-label">Fastest case</span>
-          <strong>{{ .Params.timeline_fast }}</strong>
-        </div>
-        <div class="answer-brief-stat">
-          <span class="answer-brief-label">Complex case</span>
-          <strong>{{ .Params.timeline_complex }}</strong>
-        </div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ .Params.timeline_avg }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Fastest case</span><strong>{{ .Params.timeline_fast }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Complex case</span><strong>{{ .Params.timeline_complex }}</strong></div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
 
-{{/* OVERVIEW */}}
 {{ if .Params.overview_body }}
 <section class="section">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="label-sm">The process</p>
-      <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
-      <p>{{ .Params.overview_body }}</p>
-    </div>
-  </div>
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
 </section>
 {{ end }}
 
-{{/* TIMELINE */}}
 {{ if .Params.timeline_steps }}
 <section class="section-alt">
   <div class="section-inner">
-    <div class="section-header reveal">
-      <p class="label-sm">Step by step</p>
-      <h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2>
-    </div>
+    <div class="section-header reveal"><p class="label-sm">Step by step</p><h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
     <div class="process-steps-grid stagger-children">
       {{ range .Params.timeline_steps }}
       <div class="process-step-card reveal">
         <div class="process-step-num">{{ .step }}</div>
-        <h3>{{ .action }}</h3>
-        <p>{{ .timing }}</p>
+        <h3>{{ .action }}</h3><p>{{ .timing }}</p>
         <p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p>
       </div>
       {{ end }}
@@ -168,82 +155,371 @@
 </section>
 {{ end }}
 
-{{/* DESTINATION SECTION */}}
 {{ if .Params.dest_reception }}
 <section class="section">
   <div class="section-inner">
-    <div class="reveal">
-      <p class="label-sm">In {{ .Params.dest_name }}</p>
-      <h2>When the body arrives in {{ .Params.dest_name }}</h2>
-      <p>{{ .Params.dest_reception }}</p>
-    </div>
-    {{ if .Params.dest_consular }}
-    <div class="info-card info-card--blue reveal" style="margin-top:1.25rem">
-      <div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
-      <div>
-        <h3>Consular support</h3>
-        <p>{{ .Params.dest_consular }}</p>
-      </div>
-    </div>
-    {{ end }}
+    <div class="reveal"><p class="label-sm">In {{ .Params.dest_name }}</p><h2>When the body arrives in {{ .Params.dest_name }}</h2><p>{{ .Params.dest_reception }}</p></div>
+    {{ if .Params.dest_consular }}<div class="info-card info-card--blue reveal" style="margin-top:1.25rem"><div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>Consular support</h3><p>{{ .Params.dest_consular }}</p></div></div>{{ end }}
   </div>
 </section>
 {{ end }}
 
-{{/* FAQ */}}
 {{ if .Params.faqs }}
 <section class="faq-section section">
   <div class="section-inner">
-    <div class="section-header reveal">
-      <p class="label-sm">Common questions</p>
-      <h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2>
-    </div>
-    <div class="reveal">
-      {{ range $i, $faq := .Params.faqs }}
-      <div class="faq-item">
-        <button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">
-          {{ $faq.question }}
-          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div id="route-faq-{{ $i }}" class="faq-answer" hidden>
-          <p>{{ $faq.answer }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
+    <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="reveal">{{ range $i, $faq := .Params.faqs }}<div class="faq-item"><button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">{{ $faq.question }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div id="route-faq-{{ $i }}" class="faq-answer" hidden><p>{{ $faq.answer }}</p></div></div>{{ end }}</div>
   </div>
 </section>
 {{ end }}
 
-{{/* CROSSLINKS */}}
 {{ if .Params.links }}
 <section class="section-alt">
   <div class="section-inner">
-    <div class="section-header reveal">
-      <p class="label-sm">Related guides</p>
-      <h2>More repatriation guidance</h2>
-    </div>
+    <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}
-      <a href="{{ .url }}" class="guide-crosslink-card reveal">
-        <div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div>
-        <div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div>
-        <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
-      </a>
-      {{ end }}
-      {{ range .Params.links.sideways }}
-      <a href="{{ .url }}" class="guide-crosslink-card reveal">
-        <div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
-        <div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div>
-        <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
-      </a>
-      {{ end }}
+      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 
-{{/* ENQUIRY FORM */}}
+{{ end }}{{/* end variant A */}}
+
+{{/* ================================================================
+     VARIANT B: Helpline > Overview > Direct Answer > Timeline > FAQ > Destination > Crosslinks > Form
+     ================================================================ */}}
+{{ if eq $variant "B" }}
+
+<div class="helpline-strip">
+  <div class="section-inner"><div class="helpline-strip-inner">
+    <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
+    <div class="helpline-text"><p class="helpline-label">24/7 emergency helpline</p><a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a></div>
+    <p class="helpline-message">If your loved one has passed away in {{ .Params.origin_name }}, we are here around the clock to guide you through every step of bringing them home to {{ .Params.dest_name }}.</p>
+    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
+  </div></div>
+</div>
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
+</section>
+{{ end }}
+
+{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+<section class="section-alt answer-brief-section">
+  <div class="section-inner">
+    <div class="answer-brief reveal">
+      <div class="answer-brief-main">
+        <p class="label-sm">Key facts</p>
+        <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}What to expect{{ end }}</h2>
+        {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+        {{ with .Params.direct_answer_points }}<ul class="answer-brief-list">{{ range . }}<li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+      <div class="answer-brief-side">
+        <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ .Params.timeline_avg }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Fastest case</span><strong>{{ .Params.timeline_fast }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Complex case</span><strong>{{ .Params.timeline_complex }}</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.timeline_steps }}
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Step by step</p><h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="process-steps-grid stagger-children">
+      {{ range .Params.timeline_steps }}<div class="process-step-card reveal"><div class="process-step-num">{{ .step }}</div><h3>{{ .action }}</h3><p>{{ .timing }}</p><p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p></div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.faqs }}
+<section class="faq-section section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="reveal">{{ range $i, $faq := .Params.faqs }}<div class="faq-item"><button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">{{ $faq.question }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div id="route-faq-{{ $i }}" class="faq-answer" hidden><p>{{ $faq.answer }}</p></div></div>{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.dest_reception }}
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal"><p class="label-sm">In {{ .Params.dest_name }}</p><h2>When the body arrives in {{ .Params.dest_name }}</h2><p>{{ .Params.dest_reception }}</p></div>
+    {{ if .Params.dest_consular }}<div class="info-card info-card--blue reveal" style="margin-top:1.25rem"><div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>Consular support</h3><p>{{ .Params.dest_consular }}</p></div></div>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.links }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
+    <div class="stagger-children">
+      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}{{/* end variant B */}}
+
+{{/* ================================================================
+     VARIANT C: Direct Answer > Timeline > Overview > FAQ > Destination > Crosslinks > Form
+     ================================================================ */}}
+{{ if eq $variant "C" }}
+
+{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+<section class="section answer-brief-section">
+  <div class="section-inner">
+    <div class="answer-brief reveal">
+      <div class="answer-brief-main">
+        <p class="label-sm">Quick answer</p>
+        <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}What to expect{{ end }}</h2>
+        {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+        {{ with .Params.direct_answer_points }}<ul class="answer-brief-list">{{ range . }}<li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+      <div class="answer-brief-side">
+        <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ .Params.timeline_avg }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Fastest case</span><strong>{{ .Params.timeline_fast }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Complex case</span><strong>{{ .Params.timeline_complex }}</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.timeline_steps }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Step by step</p><h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="process-steps-grid stagger-children">
+      {{ range .Params.timeline_steps }}<div class="process-step-card reveal"><div class="process-step-num">{{ .step }}</div><h3>{{ .action }}</h3><p>{{ .timing }}</p><p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p></div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
+</section>
+{{ end }}
+
+{{ if .Params.faqs }}
+<section class="faq-section section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="reveal">{{ range $i, $faq := .Params.faqs }}<div class="faq-item"><button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">{{ $faq.question }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div id="route-faq-{{ $i }}" class="faq-answer" hidden><p>{{ $faq.answer }}</p></div></div>{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.dest_reception }}
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal"><p class="label-sm">In {{ .Params.dest_name }}</p><h2>When the body arrives in {{ .Params.dest_name }}</h2><p>{{ .Params.dest_reception }}</p></div>
+    {{ if .Params.dest_consular }}<div class="info-card info-card--blue reveal" style="margin-top:1.25rem"><div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>Consular support</h3><p>{{ .Params.dest_consular }}</p></div></div>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.links }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
+    <div class="stagger-children">
+      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}{{/* end variant C */}}
+
+{{/* ================================================================
+     VARIANT D: Helpline > Direct Answer > Destination > Timeline > FAQ > Crosslinks > Form
+     ================================================================ */}}
+{{ if eq $variant "D" }}
+
+<div class="helpline-strip">
+  <div class="section-inner"><div class="helpline-strip-inner">
+    <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
+    <div class="helpline-text"><p class="helpline-label">24/7 emergency helpline</p><a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a></div>
+    <p class="helpline-message">If your loved one has passed away in {{ .Params.origin_name }}, we are here around the clock to guide you through every step of bringing them home to {{ .Params.dest_name }}.</p>
+    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
+  </div></div>
+</div>
+
+{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+<section class="section answer-brief-section">
+  <div class="section-inner">
+    <div class="answer-brief reveal">
+      <div class="answer-brief-main">
+        <p class="label-sm">Key facts</p>
+        <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}What to expect{{ end }}</h2>
+        {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+        {{ with .Params.direct_answer_points }}<ul class="answer-brief-list">{{ range . }}<li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+      <div class="answer-brief-side">
+        <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ .Params.timeline_avg }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Fastest case</span><strong>{{ .Params.timeline_fast }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Complex case</span><strong>{{ .Params.timeline_complex }}</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.dest_reception }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="reveal"><p class="label-sm">In {{ .Params.dest_name }}</p><h2>When the body arrives in {{ .Params.dest_name }}</h2><p>{{ .Params.dest_reception }}</p></div>
+    {{ if .Params.dest_consular }}<div class="info-card info-card--blue reveal" style="margin-top:1.25rem"><div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>Consular support</h3><p>{{ .Params.dest_consular }}</p></div></div>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
+</section>
+{{ end }}
+
+{{ if .Params.timeline_steps }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Step by step</p><h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="process-steps-grid stagger-children">
+      {{ range .Params.timeline_steps }}<div class="process-step-card reveal"><div class="process-step-num">{{ .step }}</div><h3>{{ .action }}</h3><p>{{ .timing }}</p><p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p></div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.faqs }}
+<section class="faq-section section">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="reveal">{{ range $i, $faq := .Params.faqs }}<div class="faq-item"><button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">{{ $faq.question }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div id="route-faq-{{ $i }}" class="faq-answer" hidden><p>{{ $faq.answer }}</p></div></div>{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.links }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
+    <div class="stagger-children">
+      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}{{/* end variant D */}}
+
+{{/* ================================================================
+     VARIANT E: Overview > Direct Answer > Timeline > Destination > Crosslinks > FAQ > Form
+     ================================================================ */}}
+{{ if eq $variant "E" }}
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
+</section>
+{{ end }}
+
+{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+<section class="section-alt answer-brief-section">
+  <div class="section-inner">
+    <div class="answer-brief reveal">
+      <div class="answer-brief-main">
+        <p class="label-sm">Key facts</p>
+        <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}What to expect{{ end }}</h2>
+        {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+        {{ with .Params.direct_answer_points }}<ul class="answer-brief-list">{{ range . }}<li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+      <div class="answer-brief-side">
+        <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ .Params.timeline_avg }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Fastest case</span><strong>{{ .Params.timeline_fast }}</strong></div>
+        <div class="answer-brief-stat"><span class="answer-brief-label">Complex case</span><strong>{{ .Params.timeline_complex }}</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.timeline_steps }}
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Step by step</p><h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="process-steps-grid stagger-children">
+      {{ range .Params.timeline_steps }}<div class="process-step-card reveal"><div class="process-step-num">{{ .step }}</div><h3>{{ .action }}</h3><p>{{ .timing }}</p><p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p></div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.dest_reception }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="reveal"><p class="label-sm">In {{ .Params.dest_name }}</p><h2>When the body arrives in {{ .Params.dest_name }}</h2><p>{{ .Params.dest_reception }}</p></div>
+    {{ if .Params.dest_consular }}<div class="info-card info-card--blue reveal" style="margin-top:1.25rem"><div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>Consular support</h3><p>{{ .Params.dest_consular }}</p></div></div>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.links }}
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
+    <div class="stagger-children">
+      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.faqs }}
+<section class="faq-section section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2></div>
+    <div class="reveal">{{ range $i, $faq := .Params.faqs }}<div class="faq-item"><button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">{{ $faq.question }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div id="route-faq-{{ $i }}" class="faq-answer" hidden><p>{{ $faq.answer }}</p></div></div>{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}{{/* end variant E */}}
+
+{{/* ================================================================
+     ENQUIRY FORM (all variants)
+     ================================================================ */}}
 <section class="quote-section" id="enquiry-form">
   <div class="section-inner">
     <h2 class="reveal">We are here to help, any time of day or night</h2>
