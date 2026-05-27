@@ -1,0 +1,34 @@
+name: Build and Publish to live branch
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-and-publish:
+    name: Build Hugo and publish to live
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+      - name: Build Hugo site
+        run: hugo --gc --minify
+        working-directory: ./site
+      - name: Publish built output to live branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/public
+          publish_branch: live
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Publish built site to live'
