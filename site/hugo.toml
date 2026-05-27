@@ -16,11 +16,13 @@ title = "Repatriate Service"
     countries = "/repatriation-from-:sections[last]/:slug/"
     guides = "/guides/:slug/"
     blog = "/blog/:slug/"
+    routes = "/routes/:slug/"
     "embassy-contacts" = "/embassy-contacts/:slug/"
     "bringing-ashes-home" = "/bringing-ashes-home/:slug/"
     faq = "/faq/:slug/"
   [permalinks.section]
     countries = "/repatriation-from-:slug/"
+    routes = "/routes/"
 
 [sitemap]
   changeFreq = "weekly"
