@@ -20,26 +20,28 @@
 
 **Brand:** Repatriate Service | "Bringing your loved ones home"
 
-**Final domain:** repatriateservice.com  
-**Current deployment:** uk-funeral-repatriation.surge.sh  
-**Hugo config baseURL:** `https://repatriateservice.com/`
+**Final domain:** repatriateservice.com
+**Current deployment:** repatriationfuneral.com (Hostinger)
+**Hugo config baseURL:** `https://repatriationfuneral.com/`
 
 **Tech stack:**
 - Static site generator: Hugo v0.160.1 (extended)
 - Content: Markdown with YAML frontmatter
 - Config: TOML (`site/hugo.toml`)
 - Data: JSON (`site/data/`)
-- Deployment: Surge.sh
+- Deployment: GitHub Actions → Hostinger FTP (automatic on push to master)
 - Build: `hugo --gc --minify --cleanDestinationDir` from `site/`
-- Deploy: `surge public/ uk-funeral-repatriation.surge.sh` from `site/`
+- Deploy: push to git. GitHub Actions builds and deploys automatically. No manual step.
+
+**NEVER use Surge.** Surge has been removed from the deployment process entirely. Do not run `surge` commands. Do not reference Surge in any documentation.
 
 ---
 
 ## 2. Build Decisions
 
-**Data-driven architecture:** Country content is driven by `site/data/countries_repatriation.json` (26 countries). Layout templates pull this data via `country_key` frontmatter. Changes to JSON field names cascade to all templates that read them — check layouts before modifying data structure.
+**Data-driven architecture:** Country content is driven by `site/data/countries_repatriation.json` (238 countries). Layout templates pull this data via `country_key` frontmatter. Changes to JSON field names cascade to all templates that read them — check layouts before modifying data structure.
 
-**URL permalink design:** Defined in `hugo.toml` under `[permalinks]`. Country section uses `/repatriation-from-:slug/`. City pages use `/repatriation-from-:sections[last]/:slug/`. This is a live indexed structure — do not change.
+**URL permalink design:** Defined in `hugo.toml` under `[permalinks]`. Country section uses `/repatriation-from-:slug/`. City pages use `/repatriation-from-:sections[last]/:slug/`. Route pages use `/routes/:slug/`. This is a live indexed structure — do not change.
 
 **Slug requirement:** Every country `_index.md` must have an explicit `slug:` field set to just the country key (e.g. `brazil`). Hugo's automatic slug derivation from the long page title creates double-prefix ghost URLs (`/repatriation-from-repatriation-from-brazil-to-the-uk/`). This bug was fixed for 11 countries and 11 stub files deleted.
 
@@ -49,7 +51,7 @@
 
 **YMYL content standards:** This is a death, legal, and financial content site. Every factual claim requires a named, dated source. No safety guarantees. Author attribution on substantive pages. These are non-negotiable SEO and legal liability requirements.
 
-**8 content silos established:**
+**9 content silos established:**
 1. Country hubs (`/repatriation-from-[country]/`)
 2. City pages (`/repatriation-from-[country]/[city]/`)
 3. Guides (`/guides/`)
@@ -58,6 +60,11 @@
 6. Bringing ashes home (`/bringing-ashes-home/`)
 7. Cremation transfer (`/cremation-transfer/`)
 8. Embassy contacts (`/embassy-contacts/`)
+9. Route pairs (`/routes/`) — added May 2026
+
+**Route pair engine (added May 2026):** New silo `/routes/` generates origin x destination pages (e.g. `/routes/spain-to-united-kingdom/`). Generator: `generate_routes.py`. QA gate: `qa_routes.py`. Template: `site/layouts/routes/single.html`. All content is frontmatter-driven — no body Markdown. Batch 1: 25 pages committed. Target: 30,000+ pages total. Run `python generate_routes.py` to add new batches. Run `python qa_routes.py` to audit existing pages.
+
+**FTP deploy is incremental:** `dangerous-clean-slate: false` in `.github/workflows/deploy.yml`. Only changed files are uploaded on each push. Full re-upload is never done. This is intentional — do not change this setting.
 
 **Workforce model:** Worker soul files in `workforce/` define role-specific rules for content creation, QA, and SEO. Engage the relevant worker's soul file before performing tasks in their domain.
 
@@ -65,39 +72,37 @@
 
 ## 3. Pages and Content Completed
 
-**Phase 1:** Foundation — complete. Hugo site setup, data architecture, URL structure, core layouts.
+**Phase 1:** Foundation — complete.
 
-**Phase 2:** Core content — complete. Original P1 country hubs, core guides, initial FAQ pages, embassy contacts.
+**Phase 2:** Core content — complete.
 
-**Phase 3 (IN PROGRESS):** As of April 2026:
+**Phase 3 (IN PROGRESS):** As of May 2026:
 
 | Silo | Status |
 |------|--------|
-| Country hubs | 26/26 published |
-| P1 city pages | Complete — all P1 countries have city depth |
-| P2 city pages | Complete (Stage 3.3 done) |
-| Guides | Published — see HTML build plan for count |
-| Blog | Core posts published |
-| FAQ standalone pages | Published (Stage 3.11 done) |
-| Bringing ashes home | Published (Stage 3.4 done) |
-| Cremation transfer | 26/26 complete (Turkey, Egypt, Morocco added April 2026) |
-| Embassy contacts | All live countries covered (Stage 3.6 done) |
+| Country hubs | 238 countries published |
+| City pages (all chunks) | Complete — C1 through C22 done (220 pages) |
+| Guides | All 26 P1 country guides published |
+| Blog | 150 articles live |
+| FAQ standalone pages | Published |
+| Bringing ashes home | All 238 countries covered |
+| Cremation transfer | All 238 countries covered |
+| Embassy contacts | All 238 countries covered |
+| Route pairs | Batch 1 (25 pages) committed May 2026 |
 
-**URL slug bug fixed (April 2026):** 11 country `_index.md` files had `slug:` field added; 11 conflicting stub `.md` files deleted. Countries fixed: brazil, cambodia, cyprus, dominican-republic, indonesia, kenya, mexico, morocco, philippines, sri-lanka, vietnam.
+**CTR rescue (May 2026):** 25 highest-impression / lowest-CTR pages had title tags and meta descriptions rewritten. 14 country hubs had bare country names as titles — all replaced with descriptive titles. 7 pages had no meta description — all added.
 
-**LLM citation pass 2 (April 2026):** Direct-answer frontmatter blocks added to: Kenya hub, Philippines hub, 3 FAQ pages (costs/who-pays, ashes-in-hand-luggage, what-does-embassy-do), 2 blog pages (what-happens-when-someone-dies-abroad, documents-needed-to-repatriate-body). Payer scenario tables, CAN/CANNOT tables, and conditions tables added.
+**Route engine (May 2026):** `/routes/` silo created. 25 route pages committed. All 25 pass QA: titles ≤60 chars, descriptions ≤155 chars, 6 FAQs, 7 timeline steps, 6 internal links, no em-dashes, no prices, no banned words, 3 schema types (BreadcrumbList + Service + FAQPage + Organisation).
 
 ---
 
 ## 4. Build Plan Navigation
 
-**Primary tracker:** `funeral-repatriation-build-plan.html` — visual HTML with phase/stage definitions, task tables, and badge status (DONE / IN PROGRESS / TODO).
+**Primary tracker:** `funeral-repatriation-build-plan.html`
 
-**Session summary:** `BUILD-PLAN.md` — read at session start for current phase state. Consult the HTML for full task detail.
+**Session summary:** `BUILD-PLAN.md` — read at session start.
 
 **Current phase:** Phase 3 — Content Depth and Optimisation, IN PROGRESS.
-
-**Immediately next:** Check `funeral-repatriation-build-plan.html` for the next IN PROGRESS or TODO item in Phase 3.
 
 ---
 
@@ -108,64 +113,84 @@
 ```yaml
 ---
 title: "Repatriation from [Country] to the UK"
-description: "[keyword + CTA, 140–160 chars]"
+description: "[keyword + CTA, 140-160 chars]"
 country_key: "[key matching countries_repatriation.json]"
 slug: "[country-key — MUST be explicit]"
 hero_image: "/images/[image].jpg"
 layout: "country-hub"
 date: YYYY-MM-DD
-short_answer: "[2–3 sentence direct answer]"
 direct_answer_heading: "[Question matching primary keyword]"
 direct_answer_intro: "[Opening sentence]"
 direct_answer_points:
-  - "[Specific cost range or timeline]"
-  - "[Key document or process step]"
-  - "[Third specific fact]"
+  - "[Specific fact]"
 direct_answer_note: "[Caveat or edge case]"
 ---
 ```
 
-### FAQ Page Frontmatter
+### Route Page Frontmatter
 
 ```yaml
 ---
-title: "[Question]"
-description: "[140–160 chars with keyword and CTA]"
-slug: "[question-in-kebab-case]"
-date: YYYY-MM-DD
-short_answer: "[Direct answer, 2–3 sentences, specific facts only]"
+title: "[Origin] to [Dest] Repatriation: [trust signal]"
+description: "[origin] to [dest] repatriation: [timeline]. [doc note]. [CTA]."
+layout: route
+origin_key: "[json key]"
+dest_key: "uk"
+origin_name: "[display name]"
+dest_name: "United Kingdom"
+origin_slug: "[url slug]"
+dest_slug: "united-kingdom"
+slug: "[origin-slug]-to-[dest-slug]"
+route_complexity: "low|moderate|high"
+timeline_avg: "[X-Y days/weeks]"
+timeline_fast: "[X-Y days]"
+timeline_complex: "[X-Y weeks]"
+embassy_city: "[city]"
+doc_processing_time: "[X-Y days]"
+direct_answer_heading: "..."
+direct_answer_intro: "..."
+direct_answer_points:
+  - "..."
+overview_heading: "..."
+overview_body: "..."
+dest_reception: "..."
+dest_consular: "..."
+timeline_steps:
+  - step: 1
+    action: "..."
+    timing: "..."
+    responsible: "..."
+faqs:
+  - question: "..."
+    answer: "..."
+links:
+  upward:
+    - url: "/repatriation-from-[origin]/"
+      text: "..."
+  sideways:
+    - url: "/routes/[dest]-to-[origin]/"
+      text: "..."
 ---
-```
-
-### Markdown Tables for LLM Extraction
-
-Use for: cost breakdowns, document checklists, payer scenarios, timelines, CAN/CANNOT lists.
-
-```markdown
-| Scenario | Who pays |
-|---|---|
-| Valid travel insurance | Insurer — covers repatriation to UK |
-| No insurance, estate has funds | Estate or family upfront |
 ```
 
 ### Content Voice Pattern
 
-Short declarative sentence to open. Then expand with specific detail. Then cut to the practical consequence.
+Short declarative sentence to open. Expand with specific detail. Cut to practical consequence.
 
 ---
 
 ## 6. Mistakes Avoided
 
-- **Never omit `slug:` from country `_index.md` files.** Hugo will slugify the long title and apply the section prefix twice, creating double-prefix ghost URLs that pass silently through a regular build.
-- **Never run `hugo --gc --minify` without `--cleanDestinationDir` after deleting content files.** Stale `public/` directories persist and get deployed, creating live ghost pages.
-- **Never edit `site/public/` directly.** It is regenerated on every build.
-- **Never change `[permalinks]` in `hugo.toml` without planning a full redirect strategy.** All existing indexed URLs will break.
-- **Never deploy without verifying the ghost URL check:** `Get-ChildItem public -Directory | Where-Object { $_.Name -like "*repatriation-from-repatriation*" }` should return empty.
-- **Never rearrange JSON data field names** without auditing every layout template that reads those fields.
-- **Never use `guide-hero` for listing pages.** It is dark slate with a facts sidebar — only for single guide/country detail pages. Listing pages (`list.html`) use `page-hero` with a background image.
-- **Never use `guides-grid` / `guide-card` in listing templates.** These classes are deprecated for listing use. All listing grids use `countries-grid` + `country-card`.
-- **Never use `fa-urn-trowel` as a Font Awesome icon.** It does not exist in FA6 Free and renders blank. Use `fa-jar` for ashes/urn context.
-- **Never use `country-card-link` in new pages.** It is superseded by `country-card-cta`.
+- **Never omit `slug:` from country `_index.md` files.** Double-prefix ghost URLs.
+- **Never run `hugo --gc --minify` without `--cleanDestinationDir`** after deleting content files.
+- **Never edit `site/public/` directly.** Regenerated on every build.
+- **Never change `[permalinks]` in `hugo.toml`** without planning a full redirect strategy.
+- **Never use `fa-urn-trowel`.** Does not exist in FA6 Free. Use `fa-jar`.
+- **Never use `country-card-link`.** Superseded by `country-card-cta`.
+- **Never use Surge.** Deployment is GitHub Actions → Hostinger FTP only.
+- **Never set `dangerous-clean-slate: true`** in the FTP deploy action. Causes timeout on large sites. Always incremental.
+- **Never hardcode em-dashes in route page content.** The `esc()` function in `generate_routes.py` strips them. If editing frontmatter directly, use commas or colons instead.
+- **Never generate route pages with `dangerous-clean-slate: false` off.** Always run `qa_routes.py` before committing a new batch.
 
 ---
 
@@ -186,22 +211,6 @@ Short declarative sentence to open. Then expand with specific detail. Then cut t
 </section>
 ```
 
-### Card Grid Pattern for Listing Pages
-
-```html
-<div class="countries-grid stagger-children">
-    {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="country-card reveal">
-        <div class="country-card-body">
-            <h3>{{ .Params.country_name }}</h3>
-            <p>[description]</p>
-            <p class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></p>
-        </div>
-    </a>
-    {{ end }}
-</div>
-```
-
 ### Hero Image Assignments
 
 | Section | Image |
@@ -212,15 +221,16 @@ Short declarative sentence to open. Then expand with specific detail. Then cut t
 | Cremation abroad | `airport-cargo.jpg` |
 | Embassy contacts | `passport-stamp.jpg` |
 | Bringing ashes home | `hero.jpg` |
+| Routes | `cargo-terminal-night.jpg` |
 
 ---
 
 ## 8. Open Questions
 
-- Live LLM scoring for pass 2 citation upgrades not yet run — Perplexity, ChatGPT, Gemini test queries pending.
-- Phase 4 tasks (link building, schema expansion, conversion optimisation) not yet started — see HTML build plan.
+- Phase 4 tasks (link building, schema expansion, conversion optimisation) not yet started.
 - `quoteFormEndpoint` in hugo.toml is still a Formspree placeholder — real form endpoint not yet configured.
-- `emergencyPhone` in hugo.toml is still a placeholder — real phone number not yet set.
+- LLM citation audit pass 2 — re-run Perplexity/ChatGPT queries once deploy is confirmed working.
+- Route engine Turn B — next 25 corridors (high-value P2xP2 pairs, Ireland-origin routes).
 
 ---
 
@@ -228,6 +238,8 @@ Short declarative sentence to open. Then expand with specific detail. Then cut t
 
 | Date | Session Summary |
 |------|-----------------|
-| April 23, 2026 | Full site design review pass complete. 16 issues fixed across 3 prompts: transparent nav, country card CSS conflict, FAQ spacing, ashes two-col layout, homepage redesign (How it Works badges, parallax CTA, dark guides section), Resources dropdown nav, listing page heroes, blog card grid, guide-card/guides-grid CSS. Follow-up: Resources listing pages standardised (page-hero + countries-grid on all 5 listing pages), nav alignment fixed, fa-jar icon fix. Build 269 pages, deployed. All design patterns locked into code-standards.instructions.md and MEMORY.md. |
-| April 2026 | Phase 3 major work session: Stage A (11 slug fixes, 11 stub deletions), Stage B (Turkey/Egypt/Morocco cremation-transfer pages completing 26/26 silo), Stage C pass 2 (Kenya + Philippines hubs + 5 FAQ/blog pages upgraded with direct-answer content). Rebuilt with --cleanDestinationDir. Deployed. Build plan HTML updated. |
-| April 2026 | Migration session: Created .github/ instruction files, MEMORY.md, BUILD-PLAN.md, AGENTS.md for standalone VS Code instance. Repo copied to Desktop. Fresh git repo initialised. |
+| April 23, 2026 | Full site design review pass complete. 16 issues fixed. Build 269 pages, deployed. |
+| April 2026 | Phase 3 major work: slug fixes, cremation-transfer silo, LLM citation upgrades. |
+| April 2026 | Migration session: MEMORY.md, BUILD-PLAN.md, AGENTS.md created for VS Code. |
+| 27 May 2026 | CTR Rescue Turn A: 25 pages title/desc rewritten. 14 bare country-name titles fixed. 7 missing meta descriptions added. Stage 3.CTR marked DONE. |
+| 27 May 2026 | Route Engine Turn A: New /routes/ silo. generate_routes.py + qa_routes.py + routes/single.html committed. 25 route pages committed (all QA PASS). hugo.toml updated. Deploy workflow fixed (incremental FTP, security:loose, secrets-based credentials). Surge removed from all docs. MEMORY.md updated. |
