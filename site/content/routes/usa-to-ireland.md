@@ -1,0 +1,85 @@
+---
+title: "USA to Ireland: Funeral Repatriation Guidance"
+description: "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules, cargo flights from major US airports. Contact us."
+layout: route
+origin_key: "usa"
+dest_key: "ie"
+origin_name: "United States"
+dest_name: "Ireland"
+origin_slug: "usa"
+dest_slug: "ireland"
+slug: "usa-to-ireland"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+direct_answer_heading: "Repatriation from the USA to Ireland: what to expect"
+direct_answer_intro: "Repatriation from the USA to Ireland is a significant corridor given the large Irish-American diaspora visiting Ireland and Irish nationals living or working in the US. The US death registration system is state-based, so procedures vary depending on which state the death occurred in."
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. Each state has its own medical examiner system."
+  - "Irish Consulate in the relevant US city registers the death and advises."
+overview_heading: "What happens after a death in the USA"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state has its own death registration system and its own medical examiner or coroner. The death certificate is issued by the state. An embalming certificate is required for international repatriation from the US."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All US documentation must be in certified English (it is already in English). The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Consulate in the relevant US city can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Irish Consulate: via Dept of Foreign Affairs +353 1 408 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. Death certificate issued by state."
+    timing: "State-specific timelines. New York and California take longer than smaller states."
+    responsible: "Local funeral director and state vital records office"
+  - step: 3
+    action: "Irish Consulate in relevant city notified"
+    timing: "Simultaneous with Step 1. Consulate provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "US funeral industry is professional and experienced with international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed"
+    timing: "Allow 5-14 days depending on state. Transit permit required for human remains."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from nearest major US airport to Dublin (DUB)"
+    timing: "Once all documentation complete. Aer Lingus and American Airlines serve JFK-DUB and BOS-DUB direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Irish funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the USA to Ireland take?"
+    answer: "In a straightforward case, repatriation from the USA to Ireland takes 7-10 days. Most cases take 10-21 days once state-specific documentation and transit permit time is factored in. Complex cases involving a medical examiner investigation or death in a remote state can take 3-8 weeks."
+  - question: "Does the Irish Consulate in the USA help with repatriation?"
+    answer: "The Irish Consulate in the relevant US city can register the death with Irish authorities and advise on documentation. They cannot pay for or arrange repatriation. For emergencies, contact the Department of Foreign Affairs 24-hour line: +353 1 408 2000."
+  - question: "What documents are required for repatriation from the USA to Ireland?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does it matter which US state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner system and its own death registration procedures. New York and California tend to have longer processing times than smaller states. The state where the death occurred determines which authorities are involved."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
+  - question: "Can I bring ashes home from the USA to Ireland instead of repatriating the body?"
+    answer: "Yes. Cremation in the USA and bringing ashes home to Ireland is simpler and less costly. The US has a well-developed cremation sector. You will need the death certificate, cremation certificate, and transit permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full USA repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in the USA"
+    - url: "/embassy-contacts/usa/"
+      text: "British Embassy in the USA"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/ireland-to-usa/"
+      text: "Repatriation from Ireland to the USA"
+    - url: "/routes/usa-to-united-kingdom/"
+      text: "Repatriation from the USA to the UK"
+---

@@ -1,0 +1,85 @@
+---
+title: "Vietnam to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Vietnam. Repatriation to the UK takes 14-21 days. Vietnamese documentation, two consulate locations, and cargo flights all explained. Contact us 24/7."
+layout: route
+origin_key: "vietnam"
+dest_key: "uk"
+origin_name: "Vietnam"
+dest_name: "United Kingdom"
+origin_slug: "vietnam"
+dest_slug: "united-kingdom"
+slug: "vietnam-to-united-kingdom"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+direct_answer_heading: "Repatriation from Vietnam to the UK: what to expect"
+direct_answer_intro: "Vietnam has two British consular posts: the Embassy in Hanoi and the Consulate General in Ho Chi Minh City. All documentation is in Vietnamese and requires certified English translation. Road accidents are the leading cause of British tourist deaths in Vietnam, and police involvement adds time."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths, road accidents, and all deaths involving foreign nationals trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only. Certified English translation is required."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Vietnamese documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Hanoi covers the north. The Consulate General in Ho Chi Minh City covers the south. Both can register the death and advise on documentation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "British Embassy Hanoi or Consulate HCMC notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming is required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) direct to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates HAN-LHR and SGN-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to the UK take?"
+    answer: "In a straightforward case, repatriation from Vietnam to the UK takes 10-14 days. Most cases take 14-21 days once Vietnamese documentation and certified translation time is factored in. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam including Hanoi, Ha Long Bay, Hoi An, Da Nang, and Hue. The Consulate General in Ho Chi Minh City covers southern Vietnam including Ho Chi Minh City, Phu Quoc, Nha Trang, and the Mekong Delta. Both offices handle repatriation cases."
+  - question: "Does the British Embassy in Vietnam help with repatriation?"
+    answer: "The British Embassy in Hanoi and Consulate General in Ho Chi Minh City can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Vietnamese documentation must be in certified English translation. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Vietnam Airlines direct flights from Hanoi and Ho Chi Minh City mean ashes can be carried home on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/embassy-contacts/vietnam/"
+      text: "British Embassy in Vietnam"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-vietnam/"
+      text: "Repatriation from the UK to Vietnam"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

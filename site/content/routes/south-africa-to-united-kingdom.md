@@ -1,0 +1,85 @@
+---
+title: "South Africa to UK Repatriation: Guidance for British Families"
+description: "Someone has died in South Africa. Repatriation to the UK takes 10-21 days. Documentation, Johannesburg cargo, and UK handover all handled. Contact us 24/7."
+layout: route
+origin_key: "south-africa"
+dest_key: "uk"
+origin_name: "South Africa"
+dest_name: "United Kingdom"
+origin_slug: "south-africa"
+dest_slug: "united-kingdom"
+slug: "south-africa-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Pretoria"
+doc_processing_time: "5-14 days"
+direct_answer_heading: "Repatriation from South Africa to the UK: what to expect"
+direct_answer_intro: "South Africa has a well-developed funeral sector and good direct flight connections to the UK. Most cases complete in 10-21 days. The British High Commission is in Pretoria with a consulate in Cape Town."
+direct_answer_points:
+  - "Key documents: South African death certificate (Home Affairs registered) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Pretoria registers the death and advises. They cannot fund repatriation."
+overview_heading: "The repatriation process from South Africa"
+overview_body: "Call 10177 for ambulance or 10111 for police. Deaths must be reported to the South African Police Service (SAPS) for unexpected deaths. Death registered with Home Affairs at the local Department of Home Affairs office. A certified BI-1663 form is issued as the death certificate."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All South African documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Home Affairs. BI-1663 death certificate issued."
+    timing: "Funeral director handles registration. Documents in English throughout."
+    responsible: "Local funeral director and Home Affairs"
+  - step: 3
+    action: "British High Commission Pretoria notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "South African funeral industry is professional and experienced with international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Johannesburg (JNB) or Cape Town (CPT)"
+    timing: "Once all documentation complete. British Airways and South African Airways serve JNB-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from South Africa to the UK take?"
+    answer: "In a straightforward case, repatriation from South Africa to the UK takes 10-21 days. The fastest cases complete in 10-14 days. Complex cases involving a post-mortem, SAPS investigation, or death in a remote area such as the Kruger National Park can take 4-8 weeks."
+  - question: "What documents are required for repatriation from South Africa?"
+    answer: "The core documents are: South African death certificate (BI-1663), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British High Commission in South Africa help with repatriation?"
+    answer: "The British High Commission in Pretoria can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What is the first step when someone dies in South Africa?"
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All South African documentation must be in English (it is issued in English). The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from South Africa instead of repatriating the body?"
+    answer: "Yes. Cremation in South Africa and bringing ashes home to the UK is an option. South Africa has well-established crematoria. You will need the BI-1663 death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-south-africa/"
+      text: "Full South Africa repatriation guide"
+    - url: "/guides/death-abroad-south-africa/"
+      text: "What to do if someone dies in South Africa"
+    - url: "/embassy-contacts/south-africa/"
+      text: "British High Commission in South Africa"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-south-africa/"
+      text: "Repatriation from the UK to South Africa"
+    - url: "/routes/south-africa-to-ireland/"
+      text: "Repatriation from South Africa to Ireland"
+---

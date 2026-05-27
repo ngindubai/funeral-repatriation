@@ -1,0 +1,86 @@
+---
+title: "Thailand to Ireland: Funeral Repatriation Guidance"
+description: "Someone has died in Thailand and needs to come home to Ireland. Repatriation takes 2-4 weeks. Island transfers, 30-day deadline, and embassy letter all explained. Contact us."
+layout: route
+origin_key: "thailand"
+dest_key: "ie"
+origin_name: "Thailand"
+dest_name: "Ireland"
+origin_slug: "thailand"
+dest_slug: "ireland"
+slug: "thailand-to-ireland"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-12 weeks or longer"
+embassy_city: "Bangkok"
+doc_processing_time: "7-21 days minimum. Often longer."
+direct_answer_heading: "Repatriation from Thailand to Ireland: what to expect"
+direct_answer_intro: "Repatriation from Thailand to Ireland follows the same process as UK repatriation. The Thai 30-day deadline, single-original-death-certificate rule, and island transfer requirements all apply. Irish consular services operate from the Irish Embassy in Bangkok."
+direct_answer_points:
+  - "Key documents: Thai death certificate (with MFA certification) and British Embassy body release letter"
+  - "Thai authorities will hold a body for up to 30 days. Act immediately."
+  - "Irish Embassy in Bangkok registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem is routinely ordered for non-Thai nationals who die unexpectedly."
+overview_heading: "What happens after a death in Thailand"
+overview_body: "Call 191 for police or 1669 for ambulance. A doctor certifies the death. Thai authorities will hold a body for up to 30 days: after this, they may proceed with a pauper's burial. Thailand issues only one original death certificate (the bai morn sia), in Thai only. MFA certification is required before it has international validity."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Bangkok can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Act immediately. Thai 30-day deadline applies."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Thai death certificate (bai morn sia) obtained. MFA certification arranged."
+    timing: "Certificate in Thai only. MFA certification adds time but cannot be bypassed."
+    responsible: "Local funeral director and Thai MFA"
+  - step: 3
+    action: "Irish Embassy Bangkok notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent given tropical climate) and preparation"
+    timing: "Urgent. Thailand's tropical climate requires immediate embalming."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-21 days minimum. Island deaths add internal transfer time."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bangkok (BKK/DMK) to Dublin (DUB)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Irish funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Thailand to Ireland take?"
+    answer: "In a straightforward Bangkok case, repatriation from Thailand to Ireland takes 10-14 days. Most cases take 2-4 weeks once post-mortem, island transfer, and documentation time is factored in. Cases involving a 45-day post-mortem report or death in a remote island location can take 4-12 weeks or longer."
+  - question: "Does the Irish Embassy in Thailand help with repatriation?"
+    answer: "The Irish Embassy in Bangkok can register the death with Irish authorities and advise on documentation. They cannot pay for or arrange repatriation. For emergencies, contact the Department of Foreign Affairs 24-hour line: +353 1 408 2000."
+  - question: "What is the 30-day deadline in Thailand?"
+    answer: "Thai authorities will hold a body for up to 30 days. If no repatriation or cremation plan is in place within 30 days, they may proceed with a pauper's burial. This is a real constraint that does not exist in European repatriations. Families must act immediately."
+  - question: "What documents are required for repatriation from Thailand to Ireland?"
+    answer: "The core documents are: Thai death certificate (bai morn sia, MFA certified), Certified English translation, Embalming certificate, Freedom from infection certificate, Airline cargo documentation, and Passport of the deceased. Your coordinator handles obtaining these."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
+  - question: "Can I bring ashes home from Thailand to Ireland instead of repatriating the body?"
+    answer: "Yes. Cremation in Thailand and bringing ashes home to Ireland is significantly faster and less costly than full body repatriation. The Thai embassy letter is not required for ashes transport. You will need the bai morn sia (death certificate) and cremation certificate."
+links:
+  upward:
+    - url: "/repatriation-from-thailand/"
+      text: "Full Thailand repatriation guide"
+    - url: "/guides/death-abroad-thailand/"
+      text: "What to do if someone dies in Thailand"
+    - url: "/embassy-contacts/thailand/"
+      text: "British Embassy in Thailand"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/ireland-to-thailand/"
+      text: "Repatriation from Ireland to Thailand"
+    - url: "/routes/thailand-to-united-kingdom/"
+      text: "Repatriation from Thailand to the UK"
+---

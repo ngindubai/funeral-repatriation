@@ -1,0 +1,86 @@
+---
+title: "USA to UK Repatriation: Guidance for British Families"
+description: "Someone has died in the USA. Repatriation to the UK takes 10-21 days. State-by-state rules, USDA endorsement, and cargo flights from major US airports all handled. Contact us 24/7."
+layout: route
+origin_key: "usa"
+dest_key: "uk"
+origin_name: "United States"
+dest_name: "United Kingdom"
+origin_slug: "usa"
+dest_slug: "united-kingdom"
+slug: "usa-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+direct_answer_heading: "Repatriation from the USA to the UK: what to expect"
+direct_answer_intro: "The USA is a large and complex jurisdiction for repatriation because death registration is state-based. Each of the 50 states has its own medical examiner or coroner, its own death certificate format, and its own procedures. Despite this complexity, the USA is generally an efficient repatriation origin once documentation is in place."
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued, certified copy) and Embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. New York and California take longer."
+  - "British Embassy in Washington DC (and consulates across the US) registers the death and advises."
+  - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
+overview_heading: "What happens after a death in the USA"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation from the US. The funeral home handles the transit permit application. USDA or state authority endorsement may be required for the health certificate."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Washington DC and consulates in Atlanta, Boston, Chicago, Houston, Los Angeles, Miami, New York, and San Francisco can register the death and advise on documentation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. State death certificate issued."
+    timing: "State-specific. NY and CA take longer. Medical examiner investigation adds time."
+    responsible: "Local funeral director and state vital records"
+  - step: 3
+    action: "British Embassy or Consulate in relevant US city notified"
+    timing: "Simultaneous with Step 1. Embassy/Consulate registers the death with UK authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "US funeral industry is professional and internationally experienced."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit, health certificate, and all export documentation obtained"
+    timing: "Allow 5-14 days depending on state. State authority endorsement may apply."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to UK from nearest major hub: JFK, LAX, ORD, MIA, BOS, or other"
+    timing: "Once all documentation complete. British Airways, Virgin Atlantic, American Airlines serve routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the USA to the UK take?"
+    answer: "In a straightforward case, repatriation from the USA to the UK takes 7-10 days. Most cases take 10-21 days once state-specific documentation, transit permits, and any medical examiner involvement is factored in. Complex cases involving a county coroner investigation or death in a rural state can take 3-8 weeks."
+  - question: "Does it matter which state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner, its own death certificate format, and its own processing timelines. New York City's Office of Chief Medical Examiner and the Los Angeles County Department of Medical Examiner have high caseloads and longer processing times. Smaller states are generally faster."
+  - question: "What documents are required for repatriation from the USA to the UK?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased. A state authority or USDA endorsement of the health certificate may also be required. Your repatriation coordinator handles obtaining these."
+  - question: "Does the British Embassy in the USA help with repatriation?"
+    answer: "The British Embassy in Washington DC and consulates across the US can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly without certified translation. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from the USA instead of repatriating the body?"
+    answer: "Yes. Cremation in the USA and bringing ashes home to the UK is simpler and less costly. The US has a highly developed cremation sector. You will need the state death certificate and cremation certificate. Ashes can be carried on a passenger flight to the UK."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full USA repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in the USA"
+    - url: "/embassy-contacts/usa/"
+      text: "British Embassy in the USA"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-usa/"
+      text: "Repatriation from the UK to the USA"
+    - url: "/routes/usa-to-ireland/"
+      text: "Repatriation from the USA to Ireland"
+---

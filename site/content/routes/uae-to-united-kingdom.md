@@ -1,0 +1,86 @@
+---
+title: "UAE to UK Repatriation: Guidance for British Families"
+description: "Someone has died in the UAE. Repatriation to the UK typically takes 7-21 days. Police NOC, MOFA attestation, and cargo flights from Dubai all handled. Contact us 24/7."
+layout: route
+origin_key: "uae"
+dest_key: "uk"
+origin_name: "United Arab Emirates"
+dest_name: "United Kingdom"
+origin_slug: "uae"
+dest_slug: "united-kingdom"
+slug: "uae-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "7-21 days"
+timeline_fast: "5-7 days"
+timeline_complex: "4-12 weeks"
+embassy_city: "Abu Dhabi"
+doc_processing_time: "5-14 days"
+direct_answer_heading: "Repatriation from the UAE to the UK: what to expect"
+direct_answer_intro: "The UAE handles a high volume of international repatriations and the logistics are well-established once documentation is in order. The critical first step is that every death must be reported to police before anything else happens. The police NOC is the gate through which everything else must pass."
+direct_answer_points:
+  - "Key documents: UAE death certificate (with MOFA attestation) and Police NOC"
+  - "Police NOC is required before any other step. In natural deaths, issued within 24-48 hours."
+  - "British Embassy in Abu Dhabi registers the death and advises. They cannot fund repatriation."
+  - "Summer temperature embargoes (June to September) may delay airline cargo acceptance."
+overview_heading: "What happens after a death in the UAE"
+overview_body: "Every death in the UAE must be reported to police immediately. The police attend, investigate, and issue a No Objection Certificate before any other step can proceed. The UAE death certificate is issued with MOFA (Ministry of Foreign Affairs) attestation required for international legal validity. Emirates SkyCargo and Etihad Cargo operate multiple daily flights to UK airports."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All UAE documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Abu Dhabi and Consulate General in Dubai can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Notify UAE police immediately. Every death requires police attendance."
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000. Cannot proceed without police NOC."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Police investigation. NOC issued."
+    timing: "Natural deaths: 24-48 hours. Investigation cases: weeks or months."
+    responsible: "UAE police (Dubai Police, Abu Dhabi Police, Sharjah Police)"
+  - step: 3
+    action: "UAE death certificate issued. MOFA attestation completed."
+    timing: "MOFA processing: 1-3 days in normal conditions. Longer during Ramadan and Eid."
+    responsible: "Local funeral director and UAE MOFA"
+  - step: 4
+    action: "British Embassy Abu Dhabi or Consulate Dubai notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 5
+    action: "Embalming and all export permits obtained"
+    timing: "Allow 5-14 days total. Cannot begin until police NOC issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Dubai (DXB) or Abu Dhabi (AUH) to UK airports"
+    timing: "Once complete. Note: summer temperature embargoes June-September may delay cargo."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the UAE to the UK take?"
+    answer: "In a straightforward natural death case with a quick police NOC, repatriation from the UAE to the UK takes 5-7 days. Most cases take 7-21 days once MOFA attestation and documentation time is factored in. Cases involving UAE police investigation or drug-related deaths can take 4-12 weeks."
+  - question: "What is the UAE police NOC and why is it required?"
+    answer: "UAE law requires police attendance and a No Objection Certificate (NOC) for every death. This is standard procedure, not a sign of suspicion. In straightforward natural deaths, the NOC is typically issued within 24-48 hours. Investigation cases take considerably longer. Nothing can proceed before the NOC is issued."
+  - question: "What documents are required for repatriation from the UAE?"
+    answer: "The core documents are: UAE death certificate with MOFA attestation, Police NOC, Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British Embassy in the UAE help with repatriation?"
+    answer: "The British Embassy in Abu Dhabi and Consulate General in Dubai can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All UAE documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from the UAE instead of repatriating the body?"
+    answer: "Non-Muslim cremation is available in the UAE at designated facilities. You will need the UAE death certificate with MOFA attestation, police NOC, cremation certificate, and export permit. Ashes can be carried on a passenger flight to the UK. This is significantly faster and less costly than full body repatriation."
+links:
+  upward:
+    - url: "/repatriation-from-uae/"
+      text: "Full UAE repatriation guide"
+    - url: "/guides/death-abroad-uae/"
+      text: "What to do if someone dies in the UAE"
+    - url: "/embassy-contacts/uae/"
+      text: "British Embassy in the UAE"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-uae/"
+      text: "Repatriation from the UK to the UAE"
+    - url: "/routes/uae-to-ireland/"
+      text: "Repatriation from the UAE to Ireland"
+---

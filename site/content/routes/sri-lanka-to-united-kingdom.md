@@ -1,0 +1,85 @@
+---
+title: "Sri Lanka to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Sri Lanka. Repatriation to the UK takes 14-28 days. Documentation, Colombo cargo flights, and UK handover all handled. Contact us 24/7."
+layout: route
+origin_key: "sri-lanka"
+dest_key: "uk"
+origin_name: "Sri Lanka"
+dest_name: "United Kingdom"
+origin_slug: "sri-lanka"
+dest_slug: "united-kingdom"
+slug: "sri-lanka-to-united-kingdom"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Colombo"
+doc_processing_time: "7-14 days"
+direct_answer_heading: "Repatriation from Sri Lanka to the UK: what to expect"
+direct_answer_intro: "Repatriation from Sri Lanka is a route with a significant British Sri Lankan diaspora community. Documentation runs through the Registrar General's Department and typically takes 7-14 days. The British High Commission is in Colombo."
+direct_answer_points:
+  - "Key documents: Death certificate and Embalming certificate"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British High Commission in Colombo registers the death and advises. They cannot fund repatriation."
+overview_heading: "The repatriation process from Sri Lanka"
+overview_body: "Contact police (119) or ambulance (110). Deaths must be certified by a registered medical practitioner. Unexpected deaths require police notification. Death registered at the local Registrar General's Department. The death certificate is issued in Sinhala with an English translation available."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Sri Lankan documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registrar General's Department"
+    timing: "Death certificate in Sinhala. English translation required for UK purposes."
+    responsible: "Local funeral director and Registrar General"
+  - step: 3
+    action: "British High Commission Colombo notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bandaranaike International Airport (CMB), Colombo"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sri Lanka to the UK take?"
+    answer: "In a straightforward case, repatriation from Sri Lanka to the UK takes 14-28 days. The fastest cases complete in 10-14 days. Complex cases involving investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Sri Lanka?"
+    answer: "The core documents are: Death certificate (with certified English translation), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British High Commission in Sri Lanka help with repatriation?"
+    answer: "The British High Commission in Colombo can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What is the first step when someone dies in Sri Lanka?"
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Sri Lankan documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Sri Lanka instead of repatriating the body?"
+    answer: "Yes. Cremation in Sri Lanka and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight from Colombo."
+links:
+  upward:
+    - url: "/repatriation-from-sri-lanka/"
+      text: "Full Sri Lanka repatriation guide"
+    - url: "/guides/death-abroad-sri-lanka/"
+      text: "What to do if someone dies in Sri Lanka"
+    - url: "/embassy-contacts/sri-lanka/"
+      text: "British High Commission in Sri Lanka"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-sri-lanka/"
+      text: "Repatriation from the UK to Sri Lanka"
+    - url: "/routes/sri-lanka-to-ireland/"
+      text: "Repatriation from Sri Lanka to Ireland"
+---
