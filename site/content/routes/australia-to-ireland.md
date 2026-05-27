@@ -8,6 +8,7 @@ dest_name: "Ireland"
 origin_slug: "australia"
 dest_slug: "ireland"
 slug: "australia-to-ireland"
+template_variant: "A"
 route_complexity: "low"
 timeline_avg: "10-21 days"
 timeline_fast: "10-14 days"
@@ -15,14 +16,14 @@ timeline_complex: "4-8 weeks"
 embassy_city: ""
 doc_processing_time: "5-14 days"
 direct_answer_heading: "Repatriation from Australia to Ireland: what to expect"
-direct_answer_intro: "Getting a loved one home from Australia to Ireland is entirely achievable. The process follows Australias civil registration and export system. Most cases take 10-21 days from death to arrival."
+direct_answer_intro: "Getting a loved one home from Australia to Ireland is entirely achievable. The process follows Australia's civil registration and export system. Most cases take 10-21 days from death to arrival."
 direct_answer_points:
   - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
   - "Documentation takes 5-14 days. Appoint a specialist on day one."
 overview_heading: "What happens after a death in Australia"
 overview_body: "Call 000 (triple zero) for emergency services. If death occurs in hospital, hospital staff handle initial procedures. If death is unexpected, police and the state/territory coroner may be involved. Contact the British High Commission in Canberra or nearest consulate. Death must be registered with the state or territory Registry of Births, Deaths and Marriages."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
-dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in the country of death can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Canberra can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
     action: "Immediate steps after death"
@@ -33,7 +34,7 @@ timeline_steps:
     timing: "Death must be registered with the state or territory Registry of Births, Deaths and Marriages."
     responsible: "Local funeral director and registry"
   - step: 3
-    action: "British High Commission notification"
+    action: "Irish Embassy Canberra notified"
     timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
     responsible: "Family or repatriation specialist"
   - step: 4

@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "usa"
 dest_slug: "united-kingdom"
 slug: "usa-to-united-kingdom"
+template_variant: "C"
 route_complexity: "low"
 timeline_avg: "10-21 days"
 timeline_fast: "7-10 days"
@@ -19,12 +20,12 @@ direct_answer_intro: "The USA is a large and complex jurisdiction for repatriati
 direct_answer_points:
   - "Key documents: US death certificate (state-issued, certified copy) and Embalming certificate"
   - "Documentation takes 5-14 days depending on the state. New York and California take longer."
-  - "British Embassy in Washington DC (and consulates across the US) registers the death and advises."
+  - "British Embassy in Washington DC and consulates across the US register the death and advise."
   - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
 overview_heading: "What happens after a death in the USA"
 overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation. The funeral home handles the transit permit application."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
-dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Washington DC and consulates in Atlanta, Boston, Chicago, Houston, Los Angeles, Miami, New York, and San Francisco can register the death and advise on documentation."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Washington DC and consulates in Atlanta, Boston, Chicago, Houston, Los Angeles, Miami, New York, and San Francisco can register the death and advise."
 timeline_steps:
   - step: 1
     action: "Immediate steps after death"

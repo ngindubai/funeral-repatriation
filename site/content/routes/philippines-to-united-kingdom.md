@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "philippines"
 dest_slug: "united-kingdom"
 slug: "philippines-to-united-kingdom"
+template_variant: "E"
 route_complexity: "moderate"
 timeline_avg: "3-6 weeks"
 timeline_fast: "3 weeks"
@@ -22,8 +23,8 @@ direct_answer_points:
   - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
 overview_heading: "Key steps for Philippines to UK repatriation"
 overview_body: "Contact local emergency services (911 in Metro Manila). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required."
-dest_reception: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
-dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in English (it is throughout). The coroner is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Manila can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
     action: "Immediate steps after death"

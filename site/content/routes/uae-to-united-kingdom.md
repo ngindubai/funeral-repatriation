@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "uae"
 dest_slug: "united-kingdom"
 slug: "uae-to-united-kingdom"
+template_variant: "A"
 route_complexity: "low"
 timeline_avg: "7-21 days"
 timeline_fast: "5-7 days"
@@ -24,7 +25,7 @@ direct_answer_points:
 overview_heading: "What happens after a death in the UAE"
 overview_body: "Every death in the UAE must be reported to police immediately. The police issue a No Objection Certificate before any other step can proceed. The UAE death certificate is issued with MOFA attestation required for international validity. Emirates SkyCargo and Etihad Cargo operate multiple daily flights to UK airports."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All UAE documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
-dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Abu Dhabi and Consulate General in Dubai can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Abu Dhabi and Consulate General in Dubai can register the death and advise. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
     action: "Notify UAE police immediately. Every death requires police attendance."

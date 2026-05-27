@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "cyprus"
 dest_slug: "united-kingdom"
 slug: "cyprus-to-united-kingdom"
+template_variant: "C"
 route_complexity: "low"
 timeline_avg: "7-14 days"
 timeline_fast: "5-7 days"
@@ -22,7 +23,7 @@ direct_answer_points:
   - "British High Commission in Nicosia registers the death and advises. They cannot fund repatriation."
 overview_heading: "Key steps for Cyprus to UK repatriation"
 overview_body: "Call 112 or 199 for ambulance, 199 for police. A doctor must certify the death. Contact the British High Commission in Nicosia. Death registered at the local district administration office."
-dest_reception: "The UK funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed to funeral arrangements without delay."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Cypriot documentation must be in English (certificate is bilingual). The coroner is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
@@ -30,24 +31,24 @@ timeline_steps:
     timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
     responsible: "Family or travel insurer"
   - step: 2
-    action: "Death registration and certificate"
-    timing: "Registered at the local district administration office. Bilingual certificate issued."
+    action: "Death registered at district administration office. Bilingual death certificate issued."
+    timing: "Certificate in Greek and English. No separate translation required."
     responsible: "Local funeral director and registry"
   - step: 3
-    action: "British High Commission notification"
+    action: "British High Commission Nicosia notified"
     timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
     responsible: "Family or repatriation specialist"
   - step: 4
     action: "Embalming and preparation"
-    timing: "Cypriot funeral directors experienced with British repatriations due to large expat community."
+    timing: "Large expat community means experienced funeral directors."
     responsible: "Licensed local funeral director"
   - step: 5
-    action: "Complete export documentation and obtain all permits"
+    action: "Transit permit and all export documentation obtained"
     timing: "Allow 3-7 days. Cannot begin until death certificate issued."
     responsible: "Local funeral director and authorities"
   - step: 6
-    action: "Air cargo booked and body transported to UK"
-    timing: "Once all documentation complete. Flights from Larnaca (LCA) to UK airports."
+    action: "Air cargo from Larnaca (LCA) to UK airports"
+    timing: "Once all documentation complete."
     responsible: "Repatriation specialist and airline cargo"
   - step: 7
     action: "UK funeral director takes custody. Coroner notified."
@@ -55,7 +56,7 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Cyprus to the UK take?"
-    answer: "In a straightforward case, repatriation from Cyprus to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a post-mortem, investigation, or death in a remote area can take 3-6 weeks or longer."
+    answer: "In a straightforward case, repatriation from Cyprus to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a post-mortem or police investigation can take 3-6 weeks."
   - question: "What documents are required for repatriation from Cyprus?"
     answer: "The core documents are: Cypriot death certificate (bilingual Greek/English), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Transit permit from Cypriot authorities. Your repatriation coordinator handles obtaining these on your behalf."
   - question: "Does the British High Commission in Cyprus help with repatriation?"

@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "turkey"
 dest_slug: "united-kingdom"
 slug: "turkey-to-united-kingdom"
+template_variant: "D"
 route_complexity: "low"
 timeline_avg: "10-21 days"
 timeline_fast: "7-10 days"
@@ -23,7 +24,7 @@ direct_answer_points:
   - "Post-mortem ordered by Turkish public prosecutor (cumhuriyet savcisi) for sudden or unexplained deaths."
 overview_heading: "What happens after a death in Turkey"
 overview_body: "Call 112 for emergency services. Unexpected deaths are referred to the public prosecutor (cumhuriyet savcisi). Death registered at the nufus mudurlugu (civil registry office). The olum belgesi is issued in Turkish only. Certified English translation is required. No cremation facilities exist in Turkey."
-dest_reception: "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
