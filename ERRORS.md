@@ -36,6 +36,12 @@
 **Fix:** Gareth must edit the workflow file manually via the GitHub web editor. Always provide the complete file content, never a diff or partial snippet.
 **Note:** The MCP connector CAN write to .github/workflows/ in the pet-transport repo, but not funeral-repatriation. This appears to be a per-repo token scope issue.
 
+### E006 — README.md in site/data/ subdirectory breaks Hugo build
+**Date:** May 2026
+**What happened:** A README.md file was placed inside site/data/route_data/ for documentation. Hugo scans every file in site/data/ and tries to parse it as structured data. It cannot parse .md files and threw: `unmarshal of format "" is not supported`. This broke the entire build.
+**Fix:** Delete any non-JSON/TOML/YAML files from site/data/ and all subdirectories. Documentation for data files must live at repo root or in a non-data directory.
+**Rule:** NEVER place .md, .txt, or any non-data-format files inside site/data/ or any subdirectory of site/data/.
+
 ---
 
 *Last updated: 27 May 2026*
