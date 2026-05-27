@@ -1,7 +1,6 @@
 ---
 title: "Morocco to UK Repatriation: Guidance for British Families"
 description: "Someone has died in Morocco. Repatriation to the UK typically takes 7-14 days. Arabic and French documentation, cargo flights from Casablanca. Contact us 24/7."
-layout: route
 origin_key: "morocco"
 dest_key: "uk"
 origin_name: "Morocco"
@@ -16,7 +15,7 @@ timeline_complex: "2-4 weeks"
 embassy_city: "Rabat"
 doc_processing_time: "3-7 days"
 direct_answer_heading: "Repatriation from Morocco to the UK: what to expect"
-direct_answer_intro: "Repatriation from Morocco is one of the faster non-European corridors. Documentation is in Arabic and French. The British Embassy is in Rabat but consular assistance is available for deaths in Marrakech, Agadir, and resort areas. Typical timeline: 7-14 days."
+direct_answer_intro: "Repatriation from Morocco is one of the faster non-European corridors. Documentation is in Arabic and French. The British Embassy is in Rabat. Typical timeline: 7-14 days."
 direct_answer_points:
   - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
   - "Documentation takes 3-7 days. Appoint a specialist on day one."
@@ -31,7 +30,7 @@ timeline_steps:
     timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
     responsible: "Family or travel insurer"
   - step: 2
-    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued in Arabic and French."
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
     timing: "Funeral director handles registration. Certified English translation required."
     responsible: "Local funeral director and civil registry"
   - step: 3
@@ -40,7 +39,7 @@ timeline_steps:
     responsible: "Family or repatriation specialist"
   - step: 4
     action: "Embalming"
-    timing: "Quality variable outside Casablanca and Rabat. Islamic families may prefer minimal preparation."
+    timing: "Quality variable outside Casablanca and Rabat."
     responsible: "Licensed local funeral director"
   - step: 5
     action: "All export permits obtained"
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Morocco to the UK take?"
-    answer: "In a straightforward case, repatriation from Morocco to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving investigation or death in a remote area can take 2-4 weeks."
+    answer: "In a straightforward case, repatriation from Morocco to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
   - question: "What documents are required for repatriation from Morocco?"
-    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
   - question: "Does the British Embassy in Morocco help with repatriation?"
     answer: "The British Embassy in Rabat can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What is the first step when someone dies in Morocco?"
-    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Moroccan documentation must be in certified English translation. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Moroccan documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
-    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit. Note that Morocco's majority Muslim population means cremation facilities are limited. See our bringing ashes home guide for details."
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
 links:
   upward:
     - url: "/repatriation-from-morocco/"

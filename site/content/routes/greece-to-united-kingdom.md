@@ -1,7 +1,6 @@
 ---
 title: "Greece to UK Repatriation: Guidance for British Families"
 description: "Someone has died in Greece. Repatriation to the UK takes 10-21 days. Island transfers, Greek paperwork, and cargo flights all handled. Contact us 24/7."
-layout: route
 origin_key: "greece"
 dest_key: "uk"
 origin_name: "Greece"
@@ -16,10 +15,10 @@ timeline_complex: "4-12 weeks"
 embassy_city: "Athens"
 doc_processing_time: "8-10 days for local formalities (per gov.uk FCDO guidance)"
 direct_answer_heading: "Repatriation from Greece to the UK: what to expect"
-direct_answer_intro: "Greece is the most common repatriation corridor after Spain for British families. Most deaths occur on islands, which require an internal mainland transfer before international cargo can depart from Athens."
+direct_answer_intro: "Greece is one of the most common repatriation corridors for British families. Most deaths occur on islands, which require an internal mainland transfer before international cargo can depart from Athens."
 direct_answer_points:
   - "Key documents: Greek death certificate (lixiarxiki praxi thanatou) and certified English translation"
-  - "Documentation takes 8-10 days per FCDO guidance. Island deaths add 1-4 extra days for mainland transfer."
+  - "Documentation takes 8-10 days per FCDO guidance. Island deaths add 1-4 extra days."
   - "British Embassy in Athens registers the death and advises. They cannot fund repatriation."
   - "Post-mortem ordered by the prosecutor for sudden, unexplained, or suspicious deaths."
 overview_heading: "Key steps for Greece to UK repatriation"
@@ -57,17 +56,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Greece to the UK take?"
-    answer: "In a straightforward mainland case, repatriation from Greece to the UK takes 8-12 days. Most cases take 10-21 days once translation and documentation time is factored in. Island deaths add at least 1-4 days for the internal mainland transfer. Complex cases involving a post-mortem or prosecutor investigation can take 4-12 weeks."
+    answer: "In a straightforward mainland case, repatriation from Greece to the UK takes 8-12 days. Most cases take 10-21 days once translation and documentation time is factored in. Island deaths add at least 1-4 days. Complex cases involving a post-mortem or prosecutor investigation can take 4-12 weeks."
   - question: "My relative died on a Greek island. What happens?"
-    answer: "Deaths on any Greek island (Crete, Rhodes, Corfu, Mykonos, Santorini, Kos, Zakynthos) require an internal transfer to the mainland, usually Athens, before international repatriation can proceed. This adds approximately 1-4 days and extra cost. The island funeral director coordinates the mainland transfer."
+    answer: "Deaths on any Greek island require an internal transfer to the mainland, usually Athens, before international repatriation can proceed. This adds approximately 1-4 days and extra cost."
   - question: "What documents are required for repatriation from Greece?"
-    answer: "The core documents are: Greek death certificate (lixiarxiki praxi thanatou), certified English translation, Prosecutor authorisation for release, Embalming certificate, Freedom from infection certificate. Your repatriation coordinator handles these on your behalf."
+    answer: "The core documents are: Greek death certificate (lixiarxiki praxi thanatou), certified English translation, Prosecutor authorisation for release, Embalming certificate, Freedom from infection certificate."
   - question: "Does the British Embassy in Greece help with repatriation?"
     answer: "The British Embassy in Athens can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Greek documentation, in certified English translation, must accompany the shipment. The coroner for the district where the funeral will take place is notified."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Greek documentation must be in certified English translation. The coroner for the district is notified."
   - question: "Can I bring ashes home from Greece instead of repatriating the body?"
-    answer: "Yes. Cremation in Greece is available but note that Greek Orthodox tradition favours burial and crematoria are limited. Bringing ashes home to the UK is simpler and less costly than full body repatriation. See our bringing ashes home from Greece guide."
+    answer: "Yes. Cremation in Greece is available but note that Greek Orthodox tradition favours burial and crematoria are limited. Bringing ashes home to the UK is simpler and less costly than full body repatriation."
 links:
   upward:
     - url: "/repatriation-from-greece/"

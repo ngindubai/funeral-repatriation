@@ -1,7 +1,6 @@
 ---
 title: "Cyprus Repatriation to the UK: Every Step Explained"
 description: "Someone has died in Cyprus. Repatriation to the UK takes 7-14 days in a straightforward case. Documentation, flights and UK handover all handled for British families."
-layout: route
 origin_key: "cyprus"
 dest_key: "uk"
 origin_name: "Cyprus"
@@ -22,7 +21,7 @@ direct_answer_points:
   - "Documentation takes 3-7 days. Appoint a specialist on day one."
   - "British High Commission in Nicosia registers the death and advises. They cannot fund repatriation."
 overview_heading: "Key steps for Cyprus to UK repatriation"
-overview_body: "Call 112 or 199 for ambulance, 199 for police. A doctor must certify the death. If death occurs outside hospital, police will attend. Contact the British High Commission in Nicosia. Death registered at the local district administration office."
+overview_body: "Call 112 or 199 for ambulance, 199 for police. A doctor must certify the death. Contact the British High Commission in Nicosia. Death registered at the local district administration office."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -56,7 +55,7 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Cyprus to the UK take?"
-    answer: "In a straightforward case, repatriation from Cyprus to the UK takes 7-14 days. The fastest cases complete in 5-7 days when documentation is issued promptly and no complications arise. Complex cases involving a post-mortem, investigation, or death in a remote area can take 3-6 weeks or longer."
+    answer: "In a straightforward case, repatriation from Cyprus to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a post-mortem, investigation, or death in a remote area can take 3-6 weeks or longer."
   - question: "What documents are required for repatriation from Cyprus?"
     answer: "The core documents are: Cypriot death certificate (bilingual Greek/English), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Transit permit from Cypriot authorities. Your repatriation coordinator handles obtaining these on your behalf."
   - question: "Does the British High Commission in Cyprus help with repatriation?"
@@ -66,7 +65,7 @@ faqs:
   - question: "What happens when the body arrives in the UK?"
     answer: "The UK funeral director takes custody at the cargo terminal. All Cypriot documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases with complete documentation proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from Cyprus instead of repatriating the body?"
-    answer: "Yes. Cremation in Cyprus and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit. See our bringing ashes home guide for the full documentation list."
+    answer: "Yes. Cremation in Cyprus and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit."
 links:
   upward:
     - url: "/repatriation-from-cyprus/"

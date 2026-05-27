@@ -1,7 +1,6 @@
 ---
 title: "Australia Repatriation to Ireland: Every Step Explained"
-description: "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide British families through every step. Contact..."
-layout: route
+description: "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide British families through every step. Contact us 24/7."
 origin_key: "australia"
 dest_key: "ie"
 origin_name: "Australia"
@@ -21,7 +20,7 @@ direct_answer_points:
   - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
   - "Documentation takes 5-14 days. Appoint a specialist on day one."
 overview_heading: "What happens after a death in Australia"
-overview_body: "Call 000 (triple zero) for emergency services. If death occurs in hospital, hospital staff handle initial procedures. If death is unexpected, police and the state/territory coroner may be involved. Contact the British High Commission in Canberra or nearest consulate. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Death certificates are issued in En"
+overview_body: "Call 000 (triple zero) for emergency services. If death occurs in hospital, hospital staff handle initial procedures. If death is unexpected, police and the state/territory coroner may be involved. Contact the British High Commission in Canberra or nearest consulate. Death must be registered with the state or territory Registry of Births, Deaths and Marriages."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in the country of death can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -65,7 +64,7 @@ faqs:
   - question: "What happens when the body arrives in Ireland?"
     answer: "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
   - question: "Can I bring ashes home from Australia instead of repatriating the body?"
-    answer: "Yes. Cremation in Australia and bringing ashes home to Ireland is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit. See our bringing ashes home guide for full details."
+    answer: "Yes. Cremation in Australia and bringing ashes home to Ireland is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit."
 links:
   upward:
     - url: "/repatriation-from-australia/"

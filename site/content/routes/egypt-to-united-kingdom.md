@@ -1,7 +1,6 @@
 ---
 title: "Egypt Repatriation to the UK: Guidance for British Families"
 description: "Someone has died in Egypt. Repatriation to the UK typically takes 14-28 days. Niyaba process, Arabic documentation, and cargo flights all explained. Contact us 24/7."
-layout: route
 origin_key: "egypt"
 dest_key: "uk"
 origin_name: "Egypt"
@@ -16,14 +15,14 @@ timeline_complex: "6-12 weeks"
 embassy_city: "Cairo"
 doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
 direct_answer_heading: "Repatriation from Egypt to the UK: what to expect"
-direct_answer_intro: "Repatriation from Egypt is a route our team handles regularly. The process runs through the niyaba (public prosecutor) for unexpected deaths, and documentation is in Arabic only. Typical timeline: 14-28 days."
+direct_answer_intro: "Repatriation from Egypt runs through the niyaba (public prosecutor) for unexpected deaths. Documentation is in Arabic only and requires certified translation. Typical timeline: 14-28 days."
 direct_answer_points:
   - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
   - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
   - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
-  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths. This is standard and applies to most foreign national deaths."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
 overview_heading: "How repatriation from Egypt works"
-overview_body: "Contact police (122) or ambulance (123). If death occurs in a hotel or resort, hotel management contacts police and a doctor. All deaths of foreign nationals require police attendance. Contact the British Embassy in Cairo. Death must be registered at the local health office or civil registry. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the British Embassy in Cairo. Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Egyptian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -48,7 +47,7 @@ timeline_steps:
     timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
     responsible: "Local funeral director and authorities"
   - step: 6
-    action: "Air cargo booked from Cairo International Airport"
+    action: "Air cargo from Cairo International Airport"
     timing: "Once all documentation complete and cleared."
     responsible: "Repatriation specialist and airline cargo"
   - step: 7
@@ -57,15 +56,15 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Egypt to the UK take?"
-    answer: "In a straightforward tourist-area case with an experienced local funeral director, repatriation from Egypt to the UK takes 7-14 days. Most cases take 14-28 days once the niyaba (public prosecutor) investigation process is factored in. Complex cases involving investigation or death outside tourist zones can take 6-12 weeks."
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to the UK takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
   - question: "What documents are required for repatriation from Egypt?"
-    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, Ministry of Foreign Affairs (MOFA) attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of deceased. Your repatriation coordinator handles these on your behalf."
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of deceased."
   - question: "Does the British Embassy in Egypt help with repatriation?"
     answer: "The British Embassy in Cairo can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "Is a post-mortem required for British nationals who die in Egypt?"
-    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths in tourist areas. It adds time: typically 2-6 weeks. The body cannot be released for repatriation until the niyaba issues authorisation."
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Egyptian documentation, in certified English translation, must accompany the shipment. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Egyptian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from Egypt instead of repatriating the body?"
     answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
 links:

@@ -1,7 +1,6 @@
 ---
 title: "Philippines to UK Repatriation: Guidance for British Families"
 description: "Someone has died in the Philippines. Repatriation to the UK takes 3-6 weeks. PSA and DFA authentication are the main delays. We guide every step. Contact us 24/7."
-layout: route
 origin_key: "philippines"
 dest_key: "uk"
 origin_name: "Philippines"
@@ -16,13 +15,13 @@ timeline_complex: "8-16 weeks"
 embassy_city: "Manila"
 doc_processing_time: "3-6 weeks (PSA and DFA authentication are the main delays)"
 direct_answer_heading: "Repatriation from the Philippines to the UK: what to expect"
-direct_answer_intro: "Repatriation from the Philippines takes longer than most Asian routes because of mandatory PSA (Philippine Statistics Authority) and DFA (Department of Foreign Affairs) authentication. Most cases take 3-6 weeks. The British Embassy in Manila is the key consular contact."
+direct_answer_intro: "Repatriation from the Philippines takes longer than most Asian routes because of mandatory PSA and DFA authentication. Most cases take 3-6 weeks. The British Embassy in Manila is the key consular contact."
 direct_answer_points:
-  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication of death certificate"
+  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication"
   - "Documentation takes 3-6 weeks. PSA and DFA authentication are the main bottlenecks."
   - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
 overview_heading: "Key steps for Philippines to UK repatriation"
-overview_body: "Contact local emergency services (911 in Metro Manila, local police elsewhere). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required before the certificate has international validity."
+overview_body: "Contact local emergency services (911 in Metro Manila). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -40,7 +39,7 @@ timeline_steps:
     responsible: "Family or repatriation specialist"
   - step: 4
     action: "Embalming"
-    timing: "Embalming is standard practice in the Philippines. Filipino funeral tradition involves extended wake periods."
+    timing: "Embalming is standard practice in the Philippines."
     responsible: "Licensed local funeral director"
   - step: 5
     action: "DFA authentication, Bureau of Quarantine clearance, and all export permits obtained"
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from the Philippines to the UK take?"
-    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases involving the National Bureau of Investigation (NBI) or death in a provincial area can take 8-16 weeks."
+    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases can take 8-16 weeks."
   - question: "Why does Philippine repatriation take so long?"
-    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed. Both agencies have processing queues that cannot be expedited. Your repatriation specialist will submit applications immediately to minimise waiting time."
+    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed."
   - question: "What documents are required for repatriation from the Philippines?"
-    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased."
   - question: "Does the British Embassy in the Philippines help with repatriation?"
     answer: "The British Embassy in Manila can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from the Philippines instead of repatriating the body?"
-    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance. Ashes can be carried on a passenger flight."
+    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance."
 links:
   upward:
     - url: "/repatriation-from-philippines/"

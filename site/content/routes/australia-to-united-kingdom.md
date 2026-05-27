@@ -1,7 +1,6 @@
 ---
 title: "Australia to United Kingdom: Repatriation Guidance"
 description: "Repatriation from Australia to the UK typically takes 10-21 days. Documentation 5-14 days. We guide British families through every step. Contact us 24/7."
-layout: route
 origin_key: "australia"
 dest_key: "uk"
 origin_name: "Australia"
@@ -48,7 +47,7 @@ timeline_steps:
     responsible: "Local funeral director and authorities"
   - step: 6
     action: "Air cargo booked and body transported to UK"
-    timing: "Once all documentation complete. Direct flights to Heathrow available from Sydney, Melbourne, Brisbane."
+    timing: "Once all documentation complete. Direct flights to Heathrow from Sydney, Melbourne, Brisbane."
     responsible: "Repatriation specialist and airline cargo"
   - step: 7
     action: "UK funeral director takes custody. Coroner notified."
@@ -60,7 +59,7 @@ faqs:
   - question: "What documents are required for repatriation from Australia?"
     answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit for human remains from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
   - question: "Does the British High Commission in Australia help with repatriation?"
-    answer: "The British High Commission in Canberra (and consulates in Sydney, Melbourne, Perth) can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    answer: "The British High Commission in Canberra can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What is the first step when someone dies in Australia?"
     answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
   - question: "What happens when the body arrives in the UK?"

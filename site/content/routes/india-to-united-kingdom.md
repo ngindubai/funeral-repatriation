@@ -1,7 +1,6 @@
 ---
 title: "India to UK Repatriation: Guidance for British Families"
-description: "Someone has died in India. Repatriation to the UK typically takes 4-6 weeks. Documentation is complex and a post-mortem is routinely ordered. We guide every step. Contact us 24/7."
-layout: route
+description: "Someone has died in India. Repatriation to the UK typically takes 4-6 weeks. Complex documentation and post-mortem routinely ordered. We guide every step. Contact us 24/7."
 origin_key: "india"
 dest_key: "uk"
 origin_name: "India"
@@ -16,14 +15,14 @@ timeline_complex: "8-16 weeks or longer"
 embassy_city: "New Delhi"
 doc_processing_time: "14-30 days minimum. Often 4-6 weeks."
 direct_answer_heading: "Repatriation from India to the UK: what to expect"
-direct_answer_intro: "India is one of the more demanding repatriation routes for UK families. Post-mortems are routinely ordered by Indian police for foreign national deaths, and documentation takes 4-6 weeks on average. The British High Commission in New Delhi is the key consular contact."
+direct_answer_intro: "India is one of the more demanding repatriation routes. Post-mortems are routinely ordered by Indian police for foreign national deaths, and documentation takes 4-6 weeks on average. The British High Commission in New Delhi is the key consular contact."
 direct_answer_points:
   - "Key documents: Indian death certificate and No Objection Certificate (NOC) from local police"
-  - "Documentation takes 14-30 days minimum. Often 4-6 weeks. Appoint a specialist on day one."
-  - "Post-mortem is frequently required: Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals."
+  - "Documentation takes 14-30 days minimum. Often 4-6 weeks."
+  - "Post-mortem is frequently required: Indian police routinely order examinations for unexpected foreign national deaths."
 overview_heading: "Key steps for India to UK repatriation"
-overview_body: "Contact local emergency services (112 in many states, 100 for police, 102/108 for ambulance). If death occurs outside hospital, police must be notified and will attend. Contact the British High Commission in New Delhi. Death must be registered with the local municipal authority within 21 days under the Registration of Births and Deaths Act."
-dest_reception: "The UK funeral director takes custody at the cargo terminal. All Indian documentation must be in certified English. The coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements. Deaths involving an overseas investigation may require coroner review."
+overview_body: "Contact local emergency services (112 in many states, 100 for police, 102/108 for ambulance). If death occurs outside hospital, police must be notified. Contact the British High Commission in New Delhi. Death must be registered with the local municipal authority within 21 days."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Indian documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Deaths involving an overseas investigation may require coroner review."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
@@ -40,7 +39,7 @@ timeline_steps:
     responsible: "Family or repatriation specialist"
   - step: 4
     action: "Embalming (urgent in Indian climate)"
-    timing: "India's tropical climate requires urgent embalming. Bodies deteriorate rapidly without refrigeration."
+    timing: "India's tropical climate requires urgent embalming."
     responsible: "Licensed local funeral director"
   - step: 5
     action: "Police NOC, health authority clearance, and all export documentation obtained"
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from India to the UK take?"
-    answer: "In a straightforward case, repatriation from India to the UK takes 4-6 weeks. The fastest cases complete in 14-21 days when documentation runs smoothly and no post-mortem is required. Complex cases involving a post-mortem, investigation, or death in a smaller city can take 8-16 weeks or longer."
+    answer: "In a straightforward case, repatriation from India to the UK takes 4-6 weeks. The fastest cases complete in 14-21 days. Complex cases involving a post-mortem or death in a smaller city can take 8-16 weeks or longer."
   - question: "Is a post-mortem always required for British nationals who die in India?"
-    answer: "Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals. This is not a sign that anything suspicious has occurred. It is standard procedure. The post-mortem adds time to the process and the body cannot be released for repatriation until police issue the No Objection Certificate (NOC)."
+    answer: "Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals. It is standard procedure. The post-mortem adds time and the body cannot be released until police issue the No Objection Certificate (NOC)."
   - question: "What documents are required for repatriation from India?"
-    answer: "The core documents are: Indian death certificate, Embalming certificate, Police No Objection Certificate (NOC), Freedom from infection certificate from the health authority, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+    answer: "The core documents are: Indian death certificate, Embalming certificate, Police No Objection Certificate (NOC), Freedom from infection certificate, and Passport of the deceased."
   - question: "Does the British High Commission in India help with repatriation?"
-    answer: "The British High Commission in New Delhi (and deputy high commissions in Mumbai, Chennai, Kolkata) can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    answer: "The British High Commission in New Delhi can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Indian documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Indian documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from India instead of repatriating the body?"
-    answer: "Yes. Cremation in India and bringing ashes home to the UK is an option. Hindu cremation traditions are well-established. You will need the local death certificate, cremation certificate, and a No Objection Certificate from the local authorities. Ashes can be carried on a passenger flight."
+    answer: "Yes. Cremation in India and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and a No Objection Certificate from the local authorities."
 links:
   upward:
     - url: "/repatriation-from-india/"
