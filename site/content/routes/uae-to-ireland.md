@@ -1,7 +1,6 @@
 ---
 title: "UAE to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in the UAE and needs to come home to Ireland. Repatriation takes 7-21 days. Police NOC, Islamic law context, and all documentation handled. Contact us."
-layout: route
+description: "Someone has died in the UAE and needs to come home to Ireland. Repatriation takes 7-21 days. Police NOC, MOFA attestation, and all documentation handled. Contact us."
 origin_key: "uae"
 dest_key: "ie"
 origin_name: "United Arab Emirates"
@@ -16,19 +15,19 @@ timeline_complex: "4-12 weeks"
 embassy_city: "Abu Dhabi"
 doc_processing_time: "5-14 days"
 direct_answer_heading: "Repatriation from the UAE to Ireland: what to expect"
-direct_answer_intro: "Repatriation from the UAE to Ireland follows the UAE police-first process. Every death in the UAE must be reported to police before any other step. The police issue a No Objection Certificate (NOC) which is required before any documentation or preparation can begin. The Irish Embassy is in Abu Dhabi."
+direct_answer_intro: "Repatriation from the UAE to Ireland follows the UAE police-first process. Every death in the UAE must be reported to police before any other step. The police issue a No Objection Certificate (NOC) which is required before any documentation or preparation can begin."
 direct_answer_points:
   - "Key documents: UAE death certificate (with MOFA attestation) and Police NOC"
   - "Police must be notified first. NOC required before any other step."
   - "Irish Embassy in Abu Dhabi registers the death and advises. They cannot fund repatriation."
 overview_heading: "How repatriation from the UAE to Ireland works"
-overview_body: "Every death in the UAE must be reported to police. The police attend, investigate, and issue a No Objection Certificate (NOC) before any other steps can take place. The death certificate is then issued with MOFA attestation required for international validity. Emirates SkyCargo and Etihad Cargo provide frequent direct connections to Dublin."
+overview_body: "Every death in the UAE must be reported to police. The police issue a No Objection Certificate (NOC) before any other steps can take place. The death certificate is then issued with MOFA attestation required for international validity. Emirates SkyCargo and Etihad Cargo provide frequent direct connections to Dublin."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All UAE documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Abu Dhabi can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
     action: "Immediate steps after death. Notify police."
-    timing: "Day of death. UAE police must be first. Irish Embassy Abu Dhabi: via Dept of Foreign Affairs +353 1 408 2000."
+    timing: "Day of death. UAE police must be first. Irish Embassy: via Dept of Foreign Affairs +353 1 408 2000."
     responsible: "Family or travel insurer"
   - step: 2
     action: "Police investigation. NOC issued."
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from the UAE to Ireland take?"
-    answer: "In a straightforward natural death case with a quick police NOC, repatriation from the UAE to Ireland takes 5-7 days. Most cases take 7-21 days once MOFA attestation and documentation time is factored in. Cases involving UAE police investigation can take 4-12 weeks."
+    answer: "In a straightforward natural death case with a quick police NOC, repatriation from the UAE to Ireland takes 5-7 days. Most cases take 7-21 days. Cases involving UAE police investigation can take 4-12 weeks."
   - question: "Does the Irish Embassy in the UAE help with repatriation?"
     answer: "The Irish Embassy in Abu Dhabi can register the death with Irish authorities and advise on documentation. They cannot pay for or arrange repatriation. For emergencies, contact the Department of Foreign Affairs 24-hour line: +353 1 408 2000."
   - question: "What documents are required for repatriation from the UAE to Ireland?"
-    answer: "The core documents are: UAE death certificate (with MOFA attestation), Police NOC (No Objection Certificate), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these."
+    answer: "The core documents are: UAE death certificate (with MOFA attestation), Police NOC, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
   - question: "Why does the UAE require a police NOC for every death?"
-    answer: "UAE law requires police attendance and a No Objection Certificate for every death, regardless of cause. This is not a sign of suspicion. It is standard procedure. In straightforward natural deaths, the NOC can be issued within 24-48 hours. Investigation cases take considerably longer."
+    answer: "UAE law requires police attendance and a No Objection Certificate for every death, regardless of cause. In straightforward natural deaths, the NOC can be issued within 24-48 hours. Investigation cases take considerably longer."
   - question: "What happens when the body arrives in Ireland?"
     answer: "The Irish funeral director takes custody at the cargo terminal. All UAE documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
   - question: "Can I bring ashes home from the UAE to Ireland instead of repatriating the body?"
-    answer: "Non-Muslim cremation is available in the UAE at designated facilities. You will need the UAE death certificate with MOFA attestation, police NOC, cremation certificate, and export permit. Ashes can be carried on a passenger flight to Dublin."
+    answer: "Non-Muslim cremation is available in the UAE at designated facilities. You will need the UAE death certificate with MOFA attestation, police NOC, cremation certificate, and export permit."
 links:
   upward:
     - url: "/repatriation-from-uae/"

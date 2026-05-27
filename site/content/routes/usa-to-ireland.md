@@ -1,7 +1,6 @@
 ---
 title: "USA to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules, cargo flights from major US airports. Contact us."
-layout: route
+description: "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules and cargo flights from major US airports. Contact us."
 origin_key: "usa"
 dest_key: "ie"
 origin_name: "United States"
@@ -16,14 +15,14 @@ timeline_complex: "3-8 weeks"
 embassy_city: "Washington DC"
 doc_processing_time: "5-14 days (varies significantly by state)"
 direct_answer_heading: "Repatriation from the USA to Ireland: what to expect"
-direct_answer_intro: "Repatriation from the USA to Ireland is a significant corridor given the large Irish-American diaspora visiting Ireland and Irish nationals living or working in the US. The US death registration system is state-based, so procedures vary depending on which state the death occurred in."
+direct_answer_intro: "Repatriation from the USA to Ireland is a significant corridor given the large Irish-American diaspora. The US death registration system is state-based, so procedures vary depending on which state the death occurred in."
 direct_answer_points:
   - "Key documents: US death certificate (state-issued) and Embalming certificate"
-  - "Documentation takes 5-14 days depending on the state. Each state has its own medical examiner system."
+  - "Documentation takes 5-14 days depending on the state."
   - "Irish Consulate in the relevant US city registers the death and advises."
 overview_heading: "What happens after a death in the USA"
-overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state has its own death registration system and its own medical examiner or coroner. The death certificate is issued by the state. An embalming certificate is required for international repatriation from the US."
-dest_reception: "The Irish funeral director takes custody at the cargo terminal. All US documentation must be in certified English (it is already in English). The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state has its own death registration system. The death certificate is issued by the state. An embalming certificate is required for international repatriation from the US."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Consulate in the relevant US city can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from the USA to Ireland take?"
-    answer: "In a straightforward case, repatriation from the USA to Ireland takes 7-10 days. Most cases take 10-21 days once state-specific documentation and transit permit time is factored in. Complex cases involving a medical examiner investigation or death in a remote state can take 3-8 weeks."
+    answer: "In a straightforward case, repatriation from the USA to Ireland takes 7-10 days. Most cases take 10-21 days. Complex cases involving a medical examiner investigation can take 3-8 weeks."
   - question: "Does the Irish Consulate in the USA help with repatriation?"
     answer: "The Irish Consulate in the relevant US city can register the death with Irish authorities and advise on documentation. They cannot pay for or arrange repatriation. For emergencies, contact the Department of Foreign Affairs 24-hour line: +353 1 408 2000."
   - question: "What documents are required for repatriation from the USA to Ireland?"
-    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased."
   - question: "Does it matter which US state the death occurred in?"
-    answer: "Yes. Each US state has its own medical examiner or coroner system and its own death registration procedures. New York and California tend to have longer processing times than smaller states. The state where the death occurred determines which authorities are involved."
+    answer: "Yes. Each US state has its own medical examiner or coroner system and its own death registration procedures. New York and California tend to have longer processing times than smaller states."
   - question: "What happens when the body arrives in Ireland?"
-    answer: "The Irish funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
+    answer: "The Irish funeral director takes custody at the cargo terminal. US documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
   - question: "Can I bring ashes home from the USA to Ireland instead of repatriating the body?"
-    answer: "Yes. Cremation in the USA and bringing ashes home to Ireland is simpler and less costly. The US has a well-developed cremation sector. You will need the death certificate, cremation certificate, and transit permit. Ashes can be carried on a passenger flight."
+    answer: "Yes. Cremation in the USA and bringing ashes home to Ireland is simpler and less costly. You will need the death certificate, cremation certificate, and transit permit. Ashes can be carried on a passenger flight."
 links:
   upward:
     - url: "/repatriation-from-usa/"

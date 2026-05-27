@@ -1,7 +1,6 @@
 ---
 title: "Spain to Ireland: Funeral Repatriation Guidance"
 description: "Someone has died in Spain and needs to come home to Ireland. Repatriation takes 7-14 days. Juzgado process, island transfers, and all documentation handled. Contact us."
-layout: route
 origin_key: "spain"
 dest_key: "ie"
 origin_name: "Spain"
@@ -16,14 +15,14 @@ timeline_complex: "3-6 weeks"
 embassy_city: "Madrid"
 doc_processing_time: "3-7 days total for documentation"
 direct_answer_heading: "Repatriation from Spain to Ireland: what to expect"
-direct_answer_intro: "Spain is the most common repatriation corridor for Irish families as well as British. The large Irish expat and tourist population in Spain means local funeral directors are experienced with Irish requirements. Documentation runs through the Juzgado for unexpected deaths."
+direct_answer_intro: "Spain is the most common repatriation corridor for Irish families. The large Irish expat and tourist population in Spain means local funeral directors are experienced with Irish requirements."
 direct_answer_points:
   - "Key documents: Certificado de defuncion and Embalming certificate"
   - "Documentation takes 3-7 days. The Juzgado de Instruccion is involved in all sudden or unattended deaths."
   - "Irish Embassy in Madrid registers the death and advises. They cannot fund repatriation."
   - "Island deaths (Balearics, Canaries) require internal mainland transfer before cargo departs."
 overview_heading: "What happens after a death in Spain"
-overview_body: "Contact emergency services (112). A doctor certifies the death. If death is sudden, unattended, or traumatic, the Juzgado de Instruccion takes jurisdiction. Death is registered at the Registro Civil. The certificado de defuncion is issued. For Balearic or Canary Island deaths, internal transfer to a mainland airport is required."
+overview_body: "Contact emergency services (112). A doctor certifies the death. If death is sudden, unattended, or traumatic, the Juzgado de Instruccion takes jurisdiction. Death is registered at the Registro Civil. For Balearic or Canary Island deaths, internal transfer to a mainland airport is required."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All Spanish documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Madrid can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -48,7 +47,7 @@ timeline_steps:
     timing: "Allow 3-7 days total. Island transfers add time."
     responsible: "Local funeral director and authorities"
   - step: 6
-    action: "Air cargo to Dublin (DUB) from Barcelona (BCN), Madrid (MAD), Malaga (AGP), or Alicante (ALC)"
+    action: "Air cargo to Dublin (DUB) from BCN, MAD, AGP, ALC, or island airports"
     timing: "Once all documentation complete."
     responsible: "Repatriation specialist and airline cargo"
   - step: 7
@@ -57,17 +56,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Spain to Ireland take?"
-    answer: "In a straightforward case, repatriation from Spain to Ireland takes 7-14 days. The fastest mainland cases complete in 5-7 days. Juzgado investigations add 5-15 working days. Island deaths (Ibiza, Majorca, Tenerife, Lanzarote) add a further 1-3 days for mainland transfer. Complex cases can take 3-6 weeks."
+    answer: "In a straightforward mainland case, repatriation from Spain to Ireland takes 7-14 days. The fastest cases complete in 5-7 days. Juzgado investigations add 5-15 working days. Island deaths add a further 1-3 days. Complex cases can take 3-6 weeks."
   - question: "Does the Irish Embassy in Spain help with repatriation?"
     answer: "The Irish Embassy in Madrid can register the death with Irish authorities and advise on documentation. They cannot pay for or arrange repatriation. For emergencies, contact the Department of Foreign Affairs 24-hour line: +353 1 408 2000."
   - question: "What documents are required for repatriation from Spain to Ireland?"
-    answer: "The core documents are: Certificado de defuncion (death certificate), Juzgado release document (if applicable), Laissez-passer mortuaire (export permit), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these."
+    answer: "The core documents are: Certificado de defuncion, Juzgado release document (if applicable), Laissez-passer mortuaire, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
   - question: "My relative died on a Spanish island. What happens?"
-    answer: "Deaths on any Balearic or Canary Island (Ibiza, Majorca, Menorca, Tenerife, Lanzarote, Gran Canaria, Fuerteventura) require an internal transfer to a mainland Spanish airport before the international cargo flight to Ireland. This adds approximately 1-3 days and extra cost."
+    answer: "Deaths on any Balearic or Canary Island require an internal transfer to a mainland Spanish airport before the international cargo flight to Ireland. This adds approximately 1-3 days and extra cost."
   - question: "What happens when the body arrives in Ireland?"
-    answer: "The Irish funeral director takes custody at the cargo terminal. All Spanish documentation must be in certified English. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
+    answer: "The Irish funeral director takes custody at the cargo terminal. All Spanish documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
   - question: "Can I bring ashes home from Spain to Ireland instead of repatriating the body?"
-    answer: "Yes. Cremation in Spain and bringing ashes home to Ireland is often simpler and less costly than full body repatriation. You will need the certificado de defuncion, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+    answer: "Yes. Cremation in Spain and bringing ashes home to Ireland is often simpler and less costly. You will need the certificado de defuncion, cremation certificate, and export permit."
 links:
   upward:
     - url: "/repatriation-from-spain/"

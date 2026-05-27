@@ -1,7 +1,6 @@
 ---
 title: "South Africa to UK Repatriation: Guidance for British Families"
-description: "Someone has died in South Africa. Repatriation to the UK takes 10-21 days. Documentation, Johannesburg cargo, and UK handover all handled. Contact us 24/7."
-layout: route
+description: "Someone has died in South Africa. Repatriation to the UK takes 10-21 days. BI-1663 death certificate, Johannesburg cargo, and UK handover all handled. Contact us 24/7."
 origin_key: "south-africa"
 dest_key: "uk"
 origin_name: "South Africa"
@@ -18,12 +17,12 @@ doc_processing_time: "5-14 days"
 direct_answer_heading: "Repatriation from South Africa to the UK: what to expect"
 direct_answer_intro: "South Africa has a well-developed funeral sector and good direct flight connections to the UK. Most cases complete in 10-21 days. The British High Commission is in Pretoria with a consulate in Cape Town."
 direct_answer_points:
-  - "Key documents: South African death certificate (Home Affairs registered) and Embalming certificate"
-  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "Key documents: South African death certificate (BI-1663, Home Affairs registered) and Embalming certificate"
+  - "Documentation takes 5-14 days. Documentation is in English throughout."
   - "British High Commission in Pretoria registers the death and advises. They cannot fund repatriation."
 overview_heading: "The repatriation process from South Africa"
-overview_body: "Call 10177 for ambulance or 10111 for police. Deaths must be reported to the South African Police Service (SAPS) for unexpected deaths. Death registered with Home Affairs at the local Department of Home Affairs office. A certified BI-1663 form is issued as the death certificate."
-dest_reception: "The UK funeral director takes custody at the cargo terminal. All South African documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+overview_body: "Call 10177 for ambulance or 10111 for police. Unexpected deaths must be reported to the South African Police Service (SAPS). Death registered with the local Department of Home Affairs. A certified BI-1663 form is issued as the death certificate."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All South African documentation must be in English (it is issued in English). The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
   - step: 1
@@ -56,17 +55,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from South Africa to the UK take?"
-    answer: "In a straightforward case, repatriation from South Africa to the UK takes 10-21 days. The fastest cases complete in 10-14 days. Complex cases involving a post-mortem, SAPS investigation, or death in a remote area such as the Kruger National Park can take 4-8 weeks."
+    answer: "In a straightforward case, repatriation from South Africa to the UK takes 10-21 days. The fastest cases complete in 10-14 days. Complex cases involving a SAPS investigation or death in a remote area can take 4-8 weeks."
   - question: "What documents are required for repatriation from South Africa?"
     answer: "The core documents are: South African death certificate (BI-1663), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
   - question: "Does the British High Commission in South Africa help with repatriation?"
     answer: "The British High Commission in Pretoria can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What is the first step when someone dies in South Africa?"
-    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All South African documentation must be in English (it is issued in English). The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+    answer: "The UK funeral director takes custody at the cargo terminal. South African documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from South Africa instead of repatriating the body?"
-    answer: "Yes. Cremation in South Africa and bringing ashes home to the UK is an option. South Africa has well-established crematoria. You will need the BI-1663 death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+    answer: "Yes. Cremation in South Africa and bringing ashes home to the UK is an option. You will need the BI-1663 death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
 links:
   upward:
     - url: "/repatriation-from-south-africa/"

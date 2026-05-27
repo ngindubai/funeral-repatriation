@@ -1,7 +1,6 @@
 ---
 title: "Turkey to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Turkey. Repatriation to the UK takes 10-21 days. No cremation in Turkey, Islamic burial culture, and Ankara consular process all explained. Contact us 24/7."
-layout: route
+description: "Someone has died in Turkey. Repatriation to the UK takes 10-21 days. No cremation in Turkey, olum belgesi process, and Turkish Airlines Cargo routes explained. Contact us 24/7."
 origin_key: "turkey"
 dest_key: "uk"
 origin_name: "Turkey"
@@ -16,14 +15,14 @@ timeline_complex: "4-8 weeks"
 embassy_city: "Ankara"
 doc_processing_time: "5-10 days for documentation"
 direct_answer_heading: "Repatriation from Turkey to the UK: what to expect"
-direct_answer_intro: "Turkey has two distinctive features for repatriation: there are effectively no cremation facilities, so all repatriations are full body; and embalming must be specifically arranged as it is not standard practice for Turkish nationals. Turkish Airlines Cargo provides direct connections to all major UK airports."
+direct_answer_intro: "Turkey has two distinctive features for repatriation: there are effectively no cremation facilities, so all repatriations are full body; and embalming must be specifically arranged as it is not standard practice for Turkish nationals."
 direct_answer_points:
   - "Key documents: Turkish death certificate (olum belgesi) and certified English translation"
   - "Documentation takes 5-10 days. Embalming must be specifically arranged for UK repatriation."
   - "British Embassy in Ankara (and consulate Istanbul) registers the death and advises."
   - "Post-mortem ordered by Turkish public prosecutor (cumhuriyet savcisi) for sudden or unexplained deaths."
 overview_heading: "What happens after a death in Turkey"
-overview_body: "Call 112 for emergency services. A doctor certifies the death. Unexpected deaths are referred to the public prosecutor (cumhuriyet savcisi). Death registered at the nufus mudurlugu (civil registry office). The olum belgesi (death certificate) is issued in Turkish only. Certified English translation is required for UK purposes. No cremation facilities exist in Turkey."
+overview_body: "Call 112 for emergency services. Unexpected deaths are referred to the public prosecutor (cumhuriyet savcisi). Death registered at the nufus mudurlugu (civil registry office). The olum belgesi is issued in Turkish only. Certified English translation is required. No cremation facilities exist in Turkey."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -41,7 +40,7 @@ timeline_steps:
     responsible: "Family or repatriation specialist"
   - step: 4
     action: "Embalming arranged (specifically requested for UK repatriation)"
-    timing: "Embalming is not standard for Turkish nationals. Must be specifically arranged in Istanbul, Ankara, or Antalya."
+    timing: "Not standard for Turkish nationals. Must be specifically arranged."
     responsible: "Licensed local funeral director"
   - step: 5
     action: "All export permits obtained"
@@ -57,17 +56,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Turkey to the UK take?"
-    answer: "In a straightforward case with no prosecutor involvement, repatriation from Turkey to the UK takes 7-10 days. Most cases take 10-21 days once the public prosecutor process and documentation time is factored in. Complex cases involving investigation or death in a resort area outside Istanbul and Ankara can take 4-8 weeks."
+    answer: "In a straightforward case with no prosecutor involvement, repatriation from Turkey to the UK takes 7-10 days. Most cases take 10-21 days. Complex cases involving investigation can take 4-8 weeks."
   - question: "Is there cremation in Turkey?"
-    answer: "There are effectively no cremation facilities in Turkey. Cremation runs counter to Islamic tradition and there has been no commercial demand for crematoria. If your family wishes to have the body cremated, this cannot be done in Turkey. Full body repatriation to the UK is the only option."
+    answer: "There are effectively no cremation facilities in Turkey. If your family wishes to have the body cremated, this cannot be done in Turkey. Full body repatriation to the UK is the only option."
   - question: "What documents are required for repatriation from Turkey?"
-    answer: "The core documents are: Olum belgesi (Turkish death certificate), certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+    answer: "The core documents are: Olum belgesi (Turkish death certificate), certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
   - question: "Does the British Embassy in Turkey help with repatriation?"
     answer: "The British Embassy in Ankara and the Consulate General in Istanbul can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
-  - question: "My relative was on holiday in Antalya, Bodrum, or Marmaris. Does that change anything?"
-    answer: "Deaths in Aegean or Mediterranean resort areas are handled locally, but embalming to international standards may need to be arranged in Antalya or via Istanbul rather than the resort town. Your repatriation specialist will coordinate the right local provider. The overall process and timeline are the same."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Turkish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "My relative was on holiday in Antalya or Bodrum. Does that change anything?"
+    answer: "Deaths in resort areas are handled locally, but embalming to international standards may need to be arranged in Antalya or via Istanbul. Your repatriation specialist will coordinate the right local provider. The overall process and timeline are the same."
 links:
   upward:
     - url: "/repatriation-from-turkey/"

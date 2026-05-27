@@ -1,7 +1,6 @@
 ---
 title: "Thailand to UK Repatriation: Guidance for British Families"
 description: "Someone has died in Thailand. Repatriation to the UK takes 2-4 weeks. Strict 30-day deadline, island transfers, and post-mortem process all explained. Contact us 24/7."
-layout: route
 origin_key: "thailand"
 dest_key: "uk"
 origin_name: "Thailand"
@@ -23,7 +22,7 @@ direct_answer_points:
   - "British Embassy in Bangkok registers the death and issues the body release letter. Essential."
   - "Post-mortem is routinely ordered for non-Thai nationals who die unexpectedly."
 overview_heading: "What happens after a death in Thailand"
-overview_body: "Call 191 for police or 1669 for ambulance. A doctor certifies the death. Thai authorities will hold a body for up to 30 days before proceeding with a pauper's funeral. Thailand issues only one original death certificate in Thai only. MFA certification is required before it has international validity. An embassy release letter must be applied for through gov.uk."
+overview_body: "Call 191 for police or 1669 for ambulance. Thai authorities will hold a body for up to 30 days before proceeding with a pauper's funeral. Thailand issues only one original death certificate in Thai only. MFA certification is required. An embassy release letter must be applied for through gov.uk."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Cases involving a Thai investigation may require coroner review."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bangkok issues the body release letter, which is required for all body repatriations from Thailand."
 timeline_steps:
@@ -57,17 +56,17 @@ timeline_steps:
     responsible: "Receiving funeral director"
 faqs:
   - question: "How long does repatriation from Thailand to the UK take?"
-    answer: "In a straightforward Bangkok case with no post-mortem, repatriation from Thailand to the UK takes 10-14 days. Most cases take 2-4 weeks. Cases involving a post-mortem require a report that takes approximately 45 working days. Island deaths add 2-3 days for internal Bangkok transfer. Complex cases can take 4-12 weeks or longer."
+    answer: "In a straightforward Bangkok case with no post-mortem, repatriation from Thailand to the UK takes 10-14 days. Most cases take 2-4 weeks. Island deaths add 2-3 days. Cases involving a post-mortem report can take 4-12 weeks or longer."
   - question: "What is the 30-day deadline in Thailand?"
-    answer: "Thai authorities will hold a body for up to 30 days after death. If no repatriation or cremation plan is in place within 30 days, authorities may proceed with a pauper's burial. This deadline is real and enforced. It is the single most important reason to act immediately."
+    answer: "Thai authorities will hold a body for up to 30 days after death. If no repatriation or cremation plan is in place, authorities may proceed with a pauper's burial. Act immediately."
   - question: "What is the British Embassy body release letter and is it required?"
-    answer: "The British Embassy in Bangkok issues a body release letter that authorises release of the body from Thai authorities for repatriation. It must be applied for online through gov.uk and is required for all full body repatriations from Thailand to the UK. It is not required for ashes transport."
+    answer: "The British Embassy in Bangkok issues a body release letter that authorises release of the body for repatriation. It must be applied for online through gov.uk and is required for all full body repatriations from Thailand."
   - question: "What documents are required for repatriation from Thailand to the UK?"
     answer: "The core documents are: Thai death certificate (bai morn sia) with MFA certification, certified English translation, British Embassy body release letter, Embalming certificate, Freedom from infection certificate, and Airline cargo documentation."
   - question: "What happens when the body arrives in the UK?"
-    answer: "The UK funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Cases involving a Thai investigation may require coroner review."
+    answer: "The UK funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The coroner for the district is notified. Cases involving a Thai investigation may require coroner review."
   - question: "Can I bring ashes home from Thailand instead of repatriating the body?"
-    answer: "Yes. Cremation in Thailand and bringing ashes home to the UK is significantly faster and less costly than full body repatriation. The British Embassy body release letter is not required for ashes. You will need the bai morn sia and cremation certificate."
+    answer: "Yes. Cremation in Thailand and bringing ashes home to the UK is significantly faster and less costly. The British Embassy body release letter is not required for ashes. You will need the bai morn sia and cremation certificate."
 links:
   upward:
     - url: "/repatriation-from-thailand/"
