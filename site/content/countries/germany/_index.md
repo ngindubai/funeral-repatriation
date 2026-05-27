@@ -2,8 +2,8 @@
 template_variant: "A"
 layout: country-hub
 url: /repatriation-from-germany/
-title: "Germany"
-description: "Step-by-step guidance for repatriating a loved one from Germany to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."
+title: "Germany Repatriation to the UK: British Families, 24/7"
+description: "Repatriation from Germany to the UK typically takes 7 to 14 days. Leichenpass, Lufthansa Cargo and UK handover all handled. Contact us now."
 country_key: "germany"
 slug: "germany"
 hero_image: "/images/airport-terminal.jpg"
@@ -14,4 +14,3 @@ direct_answer_points:
   - "Post-mortems are only ordered in suspected unnatural deaths or when cause is unclear. Natural deaths move quickly through the documentation process."
 direct_answer_note: "Frankfurt, Munich, Berlin, Dusseldorf, and Hamburg all have established cargo connections to UK airports. Location within Germany has minimal impact on the overall timeline."
 ---
-

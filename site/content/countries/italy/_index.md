@@ -1,8 +1,8 @@
 ---
 template_variant: "B"
 layout: country-hub
-title: "Italy"
-description: "Step-by-step guidance for repatriating a loved one from Italy to the United Kingdom. Costs, timelines, embassy contacts and 24/7 support."
+title: "Italy Repatriation: British Families Guided 24/7"
+description: "Repatriation from Italy to the UK typically takes 7 to 14 days. Documentation, atti di morte, cargo flights and UK handover all handled. Call us now."
 country_key: "italy"
 slug: "italy"
 hero_image: "/images/mediterranean.jpg"
@@ -13,4 +13,3 @@ direct_answer_points:
   - "Post-mortems, ordered in unnatural deaths, can extend the timeline to 4 to 8 weeks. Italian courts must authorise release of the body before repatriation can proceed."
 direct_answer_note: "Using a funeral director in Italy with documented experience in international repatriation is the single most reliable way to keep documentation on track."
 ---
-

@@ -1,6 +1,6 @@
 ---
-title: "What to Do When Someone Dies in Hungary: A Step-by-Step Guide"
-description: "Practical steps for UK families when a loved one dies in Hungary. Civil registry, Public Prosecutor, ORVOSI post-mortem, Kormanyablak laissez-passer, and Budapest-London flights explained."
+title: "Hungary Repatriation Guide for British Families"
+description: "Someone has died in Hungary. Death registration, consular contacts and repatriation flight home fully explained. Typically 10 to 18 days. Call us."
 country_key: "hungary"
 slug: "death-abroad-hungary"
 hero_image: "/images/airport-exterior.jpg"
@@ -31,7 +31,7 @@ The post-mortem is mandatory for all sudden, violent, or unexplained deaths. Res
 
 ## Step 4: Embalming and Kormanyablak laissez-passer
 
-Embalming is mandatory for international repatriation from Hungary under the Council of Europe Agreement on the Transfer of Corpses (Strasbourg, 1973 — ETS No. 080). The Hungarian funeral director performs the embalming.
+Embalming is mandatory for international repatriation from Hungary under the Council of Europe Agreement on the Transfer of Corpses (Strasbourg, 1973 -- ETS No. 080). The Hungarian funeral director performs the embalming.
 
 The laissez-passer is issued by the Government Office (Kormanyablak) or district authority. Required documents: halotti anyakonyvi kivonat, embalming certificate, certificate of freedom from infectious disease (issued by local public health authority). The Kormanyablak process typically takes 2 to 5 days once all documents are submitted.
 

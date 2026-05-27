@@ -1,6 +1,6 @@
 ---
-title: "What to Do When Someone Dies in Malaysia: A Guide for UK Families"
-description: "Step-by-step guidance for UK families when a loved one dies in Malaysia. Covers civil and Syariah court processes, East Malaysia logistics and repatriation to the UK."
+title: "Malaysia Repatriation Guide for British Families"
+description: "Someone has died in Malaysia. MOH export permit, Kuala Lumpur and island cases handled. Repatriation to the UK typically takes 10 to 18 days. Contact us."
 country: "Malaysia"
 country_key: "malaysia"
 slug: "death-abroad-malaysia"

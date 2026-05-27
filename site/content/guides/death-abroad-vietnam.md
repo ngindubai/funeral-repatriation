@@ -1,6 +1,6 @@
-﻿---
-title: "What to do if someone dies in Vietnam"
-description: "What to do if someone dies in Vietnam. British Embassy Hanoi and Ho Chi Minh City contacts, the Vietnamese documentation requirements, and repatriation from a growing British travel destination."
+---
+title: "Vietnam Repatriation Guide for British Families"
+description: "Someone has died in Vietnam. Hanoi and Ho Chi Minh City cases handled, documentation explained. Repatriation typically takes 2 to 4 weeks. Contact us."
 country_key: "vietnam"
 country_name: "Vietnam"
 slug: "death-abroad-vietnam"
@@ -8,7 +8,7 @@ slug: "death-abroad-vietnam"
 
 ## Motorbike Accidents: The Leading Cause of Tourist Deaths
 
-Vietnam has one of the highest road fatality rates in Southeast Asia. Motorbike accidents — involving either rented bikes or being struck as a pedestrian — are the most common cause of death among British tourists. This matters for the process: road deaths in Vietnam are almost always classified as unnatural, which means police involvement, possible investigation, and delay before the giấy chứng tử (death certificate) can be issued.
+Vietnam has one of the highest road fatality rates in Southeast Asia. Motorbike accidents -- involving either rented bikes or being struck as a pedestrian -- are the most common cause of death among British tourists. This matters for the process: road deaths in Vietnam are almost always classified as unnatural, which means police involvement, possible investigation, and delay before the giấy chứng tử (death certificate) can be issued.
 
 Families whose loved one was on a motorbike at the time of death should expect the documentation process to take longer than the headline timeline suggests. Police clearance must precede everything else.
 

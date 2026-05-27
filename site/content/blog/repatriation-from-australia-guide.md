@@ -1,6 +1,6 @@
-﻿---
-title: "Repatriation from Australia to the UK: Guide"
-description: "A practical guide to repatriating a loved one from Australia to the UK. Timelines, costs, state-specific rules, and how to navigate the long-haul logistics."
+---
+title: "Repatriation from Australia to the UK: Full Guide"
+description: "Repatriation from Australia to the UK typically takes 7 to 14 days. This guide covers state rules, documentation, and cargo flight options home."
 date: 2025-04-13
 slug: repatriation-from-australia-guide
 author: "Senior Repatriation Consultant"

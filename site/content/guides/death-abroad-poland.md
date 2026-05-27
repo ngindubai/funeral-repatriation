@@ -1,6 +1,6 @@
 ---
-title: "What to Do When Someone Dies in Poland: A Step-by-Step Guide"
-description: "Practical steps for UK families when a loved one dies in Poland. USC death registration, Prosecutor post-mortem, laissez-passer, and direct UK flights from Warsaw and Krakow explained."
+title: "Poland Repatriation Guide for British Families"
+description: "Someone has died in Poland. Polish prokurator process, Eurotunnel and cargo flight options, documentation fully explained. Contact us 24/7."
 country_key: "poland"
 slug: "death-abroad-poland"
 hero_image: "/images/airport-exterior.jpg"
@@ -29,7 +29,7 @@ Once the post-mortem report is issued, the Prosecutor issues an authorisation fo
 
 ## Step 4: Embalming and the laissez-passer
 
-Embalming is mandatory for international repatriation from Poland under the Council of Europe Agreement on the Transfer of Corpses (Strasbourg, 1973 — ETS No. 080). The embalming must be carried out by a licensed Polish funeral director.
+Embalming is mandatory for international repatriation from Poland under the Council of Europe Agreement on the Transfer of Corpses (Strasbourg, 1973 -- ETS No. 080). The embalming must be carried out by a licensed Polish funeral director.
 
 The laissez-passer is issued by the Voivode (regional governor's office). The application requires the Akt Zgonu, embalming certificate, and certificate of freedom from contagious disease (issued by the local health authority). Once all four documents are in place, the body can be booked as air cargo.
 

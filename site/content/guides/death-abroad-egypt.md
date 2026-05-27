@@ -1,6 +1,6 @@
 ---
-title: "What to do if someone dies in Egypt"
-description: "Egypt has strict Islamic burial requirements and specific documentary demands that can complicate repatriation. This guide covers what to do, embassy contacts, documentation, timeline, and costs for bringing a loved one home from Egypt."
+title: "Egypt Repatriation Guide for British Families"
+description: "Someone has died in Egypt. Sharm el-Sheikh, Hurghada and Cairo cases all handled. Documentation and repatriation to the UK fully explained. Contact us."
 country_key: "egypt"
 country_name: "Egypt"
 slug: "death-abroad-egypt"
@@ -14,7 +14,7 @@ The challenging news is that there is no British consulate in either resort. All
 
 ## No Cremation, and No Exceptions
 
-Egypt has no cremation facilities. There are none. This is not a matter of practicality or cost — it is a consequence of Egypt's religious and legal framework. If your loved one is to be cremated, that cannot happen in Egypt. Full body repatriation to the UK and cremation here is the only route.
+Egypt has no cremation facilities. There are none. This is not a matter of practicality or cost -- it is a consequence of Egypt's religious and legal framework. If your loved one is to be cremated, that cannot happen in Egypt. Full body repatriation to the UK and cremation here is the only route.
 
 For families whose loved one was Muslim, this matters in a different way: Islamic tradition requires burial as soon as possible after death. Egyptian authorities understand this and generally move quickly when the family's wishes are clear.
 
@@ -22,12 +22,12 @@ For families whose loved one was Muslim, this matters in a different way: Islami
 
 Egyptian law requires all documents to be in Arabic. The shahadat wafaa (death certificate) is issued in Arabic only. A certified English translation must be arranged before UK authorities will accept it. The Ministry of Foreign Affairs (MOFA) stamping is also required to give the certificate international legal validity. These are additional steps that add time.
 
-For deaths classified as unnatural, sudden, or suspicious — which includes virtually all tourist deaths — the niyaba (public prosecutor) orders a post-mortem. This is standard practice, not a sign that anything is wrong. The examination adds five to ten days typically, and the formal release of your loved one depends on the niyaba's authorisation.
+For deaths classified as unnatural, sudden, or suspicious -- which includes virtually all tourist deaths -- the niyaba (public prosecutor) orders a post-mortem. This is standard practice, not a sign that anything is wrong. The examination adds five to ten days typically, and the formal release of your loved one depends on the niyaba's authorisation.
 
 ## Embalming Quality Outside Cairo
 
 Embalming is required for international air transport. In Cairo, quality is high and services are professional. In the Red Sea resorts, embalming is available but quality is variable. For deaths in Hurghada or Sharm, some families and repatriation specialists choose to have the body transported to Cairo for preparation before the international flight. This adds a day and extra cost, but it means the standard of preparation meets the expectations of a UK funeral director receiving the body at the other end.
 
-If your loved one died far outside the tourist corridor — in Luxor, Aswan, or a more remote area — sourcing an IATA-specification zinc-lined coffin locally may not be possible. It may need to come from Cairo. This is worth establishing with your repatriation coordinator on the first call.
+If your loved one died far outside the tourist corridor -- in Luxor, Aswan, or a more remote area -- sourcing an IATA-specification zinc-lined coffin locally may not be possible. It may need to come from Cairo. This is worth establishing with your repatriation coordinator on the first call.
 
 *Sources: FCDO Egypt guidance (updated January 2025); Egyptian Ministry of Foreign Affairs attestation procedures; British Embassy Cairo information sheet.*

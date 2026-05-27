@@ -1,13 +1,13 @@
-﻿---
-title: "Bringing Ashes Home on a Passenger Flight"
-description: "A practical guide to carrying cremated remains back to the UK on a commercial flight. Covers IATA rules, airline-by-airline requirements, required documents, container types, and what happens at UK border control."
+---
+title: "Bringing Ashes Home on a Passenger Flight: UK Rules"
+description: "You can carry ashes on a passenger flight to the UK. This guide covers airline rules, documentation needed, and what to do at customs."
 date: 2026-05-07
 slug: bringing-ashes-home-on-a-passenger-flight
 author: "Senior Repatriation Consultant"
 category: "Process guides"
 ---
 
-Bringing cremated remains home on a passenger flight is, in most cases, straightforward — but the rules vary by airline, and the consequences of getting the documentation wrong at an airport are severe. This guide covers what you need to know before you travel.
+Bringing cremated remains home on a passenger flight is, in most cases, straightforward -- but the rules vary by airline, and the consequences of getting the documentation wrong at an airport are severe. This guide covers what you need to know before you travel.
 
 ## The IATA framework
 
@@ -21,7 +21,7 @@ Regardless of airline or route, you will need:
 
 **Cremation certificate.** Issued by the cremation authority in the country of cremation. This confirms what the remains are and that the cremation was lawfully performed.
 
-**Proof of relationship.** Some airlines (particularly in the Middle East and Asia) require proof that the person carrying the ashes is next of kin — a birth certificate, marriage certificate, or similar.
+**Proof of relationship.** Some airlines (particularly in the Middle East and Asia) require proof that the person carrying the ashes is next of kin -- a birth certificate, marriage certificate, or similar.
 
 **Consular documentation.** For countries where the British Embassy issued a consular death registration or consular letter, including this document strengthens your position with both the airline and UK Border Force.
 
@@ -31,7 +31,7 @@ Some countries also require an export permit specifically for cremated remains. 
 
 This is where most problems occur. Airlines have two concerns: can the container pass through X-ray security screening, and is it securely sealed?
 
-**X-ray screening.** Dense materials — particularly lead-lined urns — cannot be screened by X-ray and will be refused as carry-on. If security cannot see through the container, they cannot allow it through. Use a container made from wood, bamboo, ceramic, or hard plastic. Metal urns vary: some pass screening, others do not. If in doubt, test before travel by asking the cremation provider to use a container they know is X-ray compatible.
+**X-ray screening.** Dense materials -- particularly lead-lined urns -- cannot be screened by X-ray and will be refused as carry-on. If security cannot see through the container, they cannot allow it through. Use a container made from wood, bamboo, ceramic, or hard plastic. Metal urns vary: some pass screening, others do not. If in doubt, test before travel by asking the cremation provider to use a container they know is X-ray compatible.
 
 **Security sealing.** The container should be sealed, and some airlines require it to be security-taped or sealed in a way that shows tampering. Do not present a container that can be casually opened.
 
@@ -47,7 +47,7 @@ The safest approach is always to call the airline directly, state exactly what y
 
 ## UK Border Force
 
-There is no specific requirement to obtain a permit to import cremated remains into the UK. You must declare them if asked — do not attempt to conceal human remains from border officers. In practice, Border Force officers rarely require anything beyond the cremation certificate. Having the full documentation package — death certificate, cremation certificate, consular documentation — ensures any queries are resolved immediately.
+There is no specific requirement to obtain a permit to import cremated remains into the UK. You must declare them if asked -- do not attempt to conceal human remains from border officers. In practice, Border Force officers rarely require anything beyond the cremation certificate. Having the full documentation package -- death certificate, cremation certificate, consular documentation -- ensures any queries are resolved immediately.
 
 ## If the airline refuses
 
@@ -55,6 +55,6 @@ If an airline refuses to carry ashes as cabin baggage, you have two options: car
 
 ## Countries where ashes cannot be exported
 
-Countries that do not permit cremation on religious grounds (most Islamic-majority countries, including Saudi Arabia, Iran, and Pakistan) will not have ashes to export. Where cremation does take place in a Muslim-majority country — in a dedicated facility for non-Muslims — export is generally permitted with the appropriate documentation.
+Countries that do not permit cremation on religious grounds (most Islamic-majority countries, including Saudi Arabia, Iran, and Pakistan) will not have ashes to export. Where cremation does take place in a Muslim-majority country -- in a dedicated facility for non-Muslims -- export is generally permitted with the appropriate documentation.
 
 **Source:** IATA regulations for transport of human remains; UK Border Force guidance; individual airline special assistance policies; gov.uk guidance on bringing ashes back to the UK; Civil Aviation Authority.

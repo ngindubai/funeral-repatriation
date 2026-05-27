@@ -1,6 +1,6 @@
 ---
-title: "What to Do When Someone Dies in Japan: A Guide for UK Families"
-description: "Step-by-step guidance for UK families when a loved one dies in Japan. Covers Japan's cremation default, police notification, document translation and repatriation to the UK."
+title: "Japan Repatriation Guide for British Families"
+description: "Someone has died in Japan. Japanese documentation, consular contacts and repatriation to the UK typically takes 10 to 18 days. We guide every step."
 country: "Japan"
 country_key: "japan"
 slug: "death-abroad-japan"

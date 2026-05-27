@@ -1,6 +1,6 @@
-﻿---
-title: "Death on a Cruise Ship: Repatriation Explained"
-description: "What happens when a passenger dies on a cruise ship, who takes charge, how the body is stored, and what the repatriation process looks like."
+---
+title: "Death on a Cruise Ship: Repatriation to the UK Explained"
+description: "A death on a cruise ship follows the port of disembarkation rules. This guide covers jurisdiction, flag state, and how to bring your loved one home."
 date: 2025-04-15
 slug: death-on-cruise-ship-repatriation
 author: "Senior Repatriation Consultant"
@@ -19,7 +19,7 @@ Diversion to port is expensive and disrupts thousands of other passengers. In pr
 
 ## How the body is stored
 
-All large cruise ships have a morgue. Usually small — capacity for two to four bodies is typical. The body is stored there until the ship reaches a port where it can be handled.
+All large cruise ships have a morgue. Usually small -- capacity for two to four bodies is typical. The body is stored there until the ship reaches a port where it can be handled.
 
 The time in the ship's morgue can be significant. If the ship is mid-ocean with three days to the next port, the body is in the ship's morgue for three days. This is standard procedure. It does not mean the body is being treated carelessly.
 
@@ -27,19 +27,19 @@ The time in the ship's morgue can be significant. If the ship is mid-ocean with 
 
 This is the complicating factor in cruise ship deaths. The paperwork depends on:
 
-1. **Where the ship is registered (flag state).** Cruise ships are typically registered in countries like the Bahamas, the Marshall Islands, or Panama — for commercial and tax reasons. The ship's flag state has jurisdiction over what happens on board.
+1. **Where the ship is registered (flag state).** Cruise ships are typically registered in countries like the Bahamas, the Marshall Islands, or Panama -- for commercial and tax reasons. The ship's flag state has jurisdiction over what happens on board.
 
 2. **Where the death occurred.** If the ship is in international waters, the flag state law applies. If the ship is within a country's territorial waters (12 nautical miles from shore), that country's jurisdiction may apply to the death.
 
 3. **Where the ship first docks after the death.** In practice, the country of the first port of call after the death usually processes the death registration and any investigation. This is where you deal with foreign authorities.
 
-The combination of these three factors means that a British national who dies on a Caribbean cruise might have their death processed in, say, Barbados or the Dominican Republic — with all the documentation requirements of those countries.
+The combination of these three factors means that a British national who dies on a Caribbean cruise might have their death processed in, say, Barbados or the Dominican Republic -- with all the documentation requirements of those countries.
 
 ## The cruise line's role
 
 The cruise line has procedures for this. Their shore excursion and guest services team will appoint a liaison for the family. They will cooperate with local authorities and will handle the practical arrangements for getting the body from the ship to a local funeral director.
 
-What cruise lines do not do is manage the UK end of the repatriation. They will get the body off the ship and to a local mortuary. The family is then responsible — or the travel insurer, if there is one — for arranging repatriation to the UK.
+What cruise lines do not do is manage the UK end of the repatriation. They will get the body off the ship and to a local mortuary. The family is then responsible -- or the travel insurer, if there is one -- for arranging repatriation to the UK.
 
 ## Travel insurance and cruise ship deaths
 
