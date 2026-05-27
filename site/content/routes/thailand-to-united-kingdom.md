@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "thailand"
 dest_slug: "united-kingdom"
 slug: "thailand-to-united-kingdom"
+template_variant: "D"
 route_complexity: "moderate"
 timeline_avg: "2-4 weeks"
 timeline_fast: "10-14 days"
@@ -24,7 +25,7 @@ direct_answer_points:
 overview_heading: "What happens after a death in Thailand"
 overview_body: "Call 191 for police or 1669 for ambulance. Thai authorities will hold a body for up to 30 days before proceeding with a pauper's funeral. Thailand issues only one original death certificate in Thai only. MFA certification is required. An embassy release letter must be applied for through gov.uk."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Thai documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Cases involving a Thai investigation may require coroner review."
-dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bangkok issues the body release letter, which is required for all body repatriations from Thailand."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bangkok issues the body release letter, which is required before any repatriation can proceed."
 timeline_steps:
   - step: 1
     action: "Immediate steps after death. Apply for British Embassy body release letter."

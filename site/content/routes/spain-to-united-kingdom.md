@@ -8,6 +8,7 @@ dest_name: "United Kingdom"
 origin_slug: "spain"
 dest_slug: "united-kingdom"
 slug: "spain-to-united-kingdom"
+template_variant: "A"
 route_complexity: "low"
 timeline_avg: "7-14 days"
 timeline_fast: "5-7 days"
@@ -83,4 +84,3 @@ links:
     - url: "/routes/spain-to-ireland/"
       text: "Repatriation from Spain to Ireland"
 ---
-<!-- route page refresh: deploy fix confirmed, push to live -->
