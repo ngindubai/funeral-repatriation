@@ -56,34 +56,7 @@ jobs:
       - name: Notify on failure
         if: failure()
         run: |
-          echo "====================================="
           echo "DEPLOY FAILED"
           echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          echo "====================================="
-          echo "Check: FTP secrets set? server-dir correct? Port 21 open?"
-          exit 1        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./site/public/
-          server-dir: /public_html/
-          dangerous-clean-slate: false
-          security: loose
-          port: 21
-          timeout: 60000
-          log-level: standard
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-
-      - name: Notify on failure
-        if: failure()
-        run: |
-          echo "====================================="
-          echo "DEPLOY FAILED"
-          echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          echo "====================================="
           echo "Check: FTP secrets set? server-dir correct? Port 21 open?"
           exit 1
