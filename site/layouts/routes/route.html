@@ -1,1 +1,301 @@
-{{ template "_default/single.html" . }}
+{{ define "title" }}{{ .Params.title }} | Repatriate Service{{ end }}
+
+{{ define "page-meta" }}
+<meta name="description" content="{{ .Params.description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Params.title }}">
+<meta property="og:description" content="{{ .Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"{{ site.BaseURL }}"},
+  {"@type":"ListItem","position":2,"name":"Route Guides","item":"{{ site.BaseURL }}routes/"},
+  {"@type":"ListItem","position":3,"name":"{{ .Params.origin_name }} to {{ .Params.dest_name }}","item":"{{ .Permalink }}"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service",
+ "name":{{ printf "Funeral Repatriation from %s to %s" .Params.origin_name .Params.dest_name | jsonify }},
+ "description":{{ .Params.description | jsonify }},
+ "provider":{"@type":"Organization","name":"Repatriate Service","telephone":"+447703577246","url":"{{ site.BaseURL }}"},
+ "areaServed":{{ .Params.origin_name | jsonify }},
+ "serviceType":"Funeral Repatriation"}
+</script>
+{{ if .Params.faqs }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {{ range $i, $faq := .Params.faqs }}{{ if $i }},{{ end }}
+  {"@type":"Question","name":{{ $faq.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $faq.answer | jsonify }}}}
+  {{ end }}
+]}
+</script>
+{{ end }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization",
+ "name":"Repatriate Service",
+ "url":"{{ site.BaseURL }}",
+ "telephone":"+447703577246",
+ "contactPoint":{"@type":"ContactPoint","contactType":"customer service","availableLanguage":"English","contactOption":"TollFree"}}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+{{/* HERO */}}
+<section class="country-hero" style="background-image: url('/images/cargo-terminal-night.jpg');">
+  <div class="country-hero-overlay"></div>
+  <div class="country-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:1rem">
+      <ol style="list-style:none;display:flex;gap:0.5rem;padding:0;margin:0;font-size:0.8rem;color:rgba(255,255,255,0.6)">
+        <li><a href="/" style="color:rgba(255,255,255,0.6);text-decoration:none">Home</a></li>
+        <li style="color:rgba(255,255,255,0.4)">&#8250;</li>
+        <li><a href="/routes/" style="color:rgba(255,255,255,0.6);text-decoration:none">Route guides</a></li>
+        <li style="color:rgba(255,255,255,0.4)">&#8250;</li>
+        <li style="color:rgba(255,255,255,0.8)">{{ .Params.origin_name }} to {{ .Params.dest_name }}</li>
+      </ol>
+    </nav>
+    <p class="label-sm">Funeral repatriation route guide</p>
+    <h1>Repatriation from <em>{{ .Params.origin_name }}</em> to {{ .Params.dest_name }}</h1>
+    <p class="country-hero-subtitle">For British families. 24/7 support, every step handled.</p>
+    <div class="country-hero-stats">
+      <div class="country-hero-stat">
+        <span class="stat-icon"><i class="fa-solid fa-clock"></i></span>
+        <span class="stat-val">{{ .Params.timeline_avg }}</span>
+        <span class="stat-label">Typical timeline</span>
+      </div>
+      <div class="country-hero-stat">
+        <span class="stat-icon"><i class="fa-solid fa-building-columns"></i></span>
+        <span class="stat-val">{{ if .Params.embassy_city }}{{ .Params.embassy_city }}{{ else }}In country{{ end }}</span>
+        <span class="stat-label">British Embassy</span>
+      </div>
+      <div class="country-hero-stat">
+        <span class="stat-icon"><i class="fa-solid fa-file-lines"></i></span>
+        <span class="stat-val">{{ .Params.doc_processing_time }}</span>
+        <span class="stat-label">Documentation time</span>
+      </div>
+    </div>
+    <div class="country-hero-actions">
+      <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us now</a>
+      <a href="#enquiry-form" class="btn btn-outline">Send an enquiry</a>
+    </div>
+  </div>
+</section>
+
+{{/* HELPLINE STRIP */}}
+<div class="helpline-strip">
+  <div class="section-inner">
+    <div class="helpline-strip-inner">
+      <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
+      <div class="helpline-text">
+        <p class="helpline-label">24/7 emergency helpline</p>
+        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a>
+      </div>
+      <p class="helpline-message">If your loved one has passed away in {{ .Params.origin_name }}, we are here around the clock to guide you through every step of bringing them home to {{ .Params.dest_name }}.</p>
+      <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
+    </div>
+  </div>
+</div>
+
+{{/* DIRECT ANSWER */}}
+{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+<section class="section answer-brief-section">
+  <div class="section-inner">
+    <div class="answer-brief reveal">
+      <div class="answer-brief-main">
+        <p class="label-sm">Quick answer</p>
+        <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}What to expect{{ end }}</h2>
+        {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+        {{ with .Params.direct_answer_points }}
+        <ul class="answer-brief-list">
+          {{ range . }}<li><i class="fa-solid fa-circle-check"></i> {{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="answer-brief-side">
+        <div class="answer-brief-stat">
+          <span class="answer-brief-label">Typical timeline</span>
+          <strong>{{ .Params.timeline_avg }}</strong>
+        </div>
+        <div class="answer-brief-stat">
+          <span class="answer-brief-label">Fastest case</span>
+          <strong>{{ .Params.timeline_fast }}</strong>
+        </div>
+        <div class="answer-brief-stat">
+          <span class="answer-brief-label">Complex case</span>
+          <strong>{{ .Params.timeline_complex }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* OVERVIEW */}}
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="label-sm">The process</p>
+      <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+      <p>{{ .Params.overview_body }}</p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* TIMELINE */}}
+{{ if .Params.timeline_steps }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="label-sm">Step by step</p>
+      <h2>Timeline: {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2>
+    </div>
+    <div class="process-steps-grid stagger-children">
+      {{ range .Params.timeline_steps }}
+      <div class="process-step-card reveal">
+        <div class="process-step-num">{{ .step }}</div>
+        <h3>{{ .action }}</h3>
+        <p>{{ .timing }}</p>
+        <p class="docs-note"><i class="fa-solid fa-user"></i> {{ .responsible }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* DESTINATION SECTION */}}
+{{ if .Params.dest_reception }}
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="label-sm">In {{ .Params.dest_name }}</p>
+      <h2>When the body arrives in {{ .Params.dest_name }}</h2>
+      <p>{{ .Params.dest_reception }}</p>
+    </div>
+    {{ if .Params.dest_consular }}
+    <div class="info-card info-card--blue reveal" style="margin-top:1.25rem">
+      <div class="info-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+      <div>
+        <h3>Consular support</h3>
+        <p>{{ .Params.dest_consular }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* FAQ */}}
+{{ if .Params.faqs }}
+<section class="faq-section section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="label-sm">Common questions</p>
+      <h2>FAQs: repatriation from {{ .Params.origin_name }} to {{ .Params.dest_name }}</h2>
+    </div>
+    <div class="reveal">
+      {{ range $i, $faq := .Params.faqs }}
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="route-faq-{{ $i }}">
+          {{ $faq.question }}
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="route-faq-{{ $i }}" class="faq-answer" hidden>
+          <p>{{ $faq.answer }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* CROSSLINKS */}}
+{{ if .Params.links }}
+<section class="section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="label-sm">Related guides</p>
+      <h2>More repatriation guidance</h2>
+    </div>
+    <div class="stagger-children">
+      {{ range .Params.links.upward }}
+      <a href="{{ .url }}" class="guide-crosslink-card reveal">
+        <div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+        <div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div>
+        <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+      </a>
+      {{ end }}
+      {{ range .Params.links.sideways }}
+      <a href="{{ .url }}" class="guide-crosslink-card reveal">
+        <div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+        <div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div>
+        <i class="fa-solid fa-angle-right guide-crosslink-arrow"></i>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ENQUIRY FORM */}}
+<section class="quote-section" id="enquiry-form">
+  <div class="section-inner">
+    <h2 class="reveal">We are here to help, any time of day or night</h2>
+    <p class="quote-subtitle reveal">If your loved one has passed away in {{ .Params.origin_name }}, please do not face this alone. Our team will guide you through every step of bringing them home.</p>
+    <form class="quote-form reveal" action="{{ site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width:720px;margin:0 auto">
+      <input type="hidden" name="country" value="{{ .Params.origin_name }}">
+      <input type="hidden" name="destination" value="{{ .Params.dest_name }}">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="rf-name">Your name <span class="required">*</span></label>
+          <input type="text" id="rf-name" name="name" placeholder="Full name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="rf-email">Email <span class="required">*</span></label>
+          <input type="email" id="rf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="rf-phone">Phone</label>
+          <input type="tel" id="rf-phone" name="phone" placeholder="+44..." autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="rf-service">Service needed</label>
+          <select id="rf-service" name="service">
+            <option value="">Select</option>
+            <option value="full_repatriation">Full body repatriation</option>
+            <option value="ashes_transport">Ashes transport</option>
+            <option value="cremation_abroad">Cremation abroad</option>
+            <option value="guidance_only">Guidance only</option>
+          </select>
+        </div>
+        <div class="form-group form-group-full">
+          <label for="rf-message">Message</label>
+          <textarea id="rf-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
+        </div>
+      </div>
+      <div style="display:none" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+      <button type="submit" class="btn btn-cta" style="width:100%;justify-content:center;padding:1rem">Send enquiry</button>
+      <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt editorial-credit-section">
+  <div class="section-inner">
+    <div class="editorial-credit">
+      <i class="fa-solid fa-circle-check"></i>
+      <div>
+        <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/repatriation-from-{{ .Params.origin_slug }}/">{{ .Params.origin_name }} repatriation guide</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
