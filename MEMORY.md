@@ -16,12 +16,12 @@
 
 ## 1. Site Overview
 
-**What it is:** A programmatic SEO lead generation website targeting UK families needing to repatriate a loved one who died abroad. The site converts grief-driven search traffic into service enquiries.
+**What it is:** A programmatic SEO lead generation website targeting UK and Irish families needing to repatriate a loved one who died abroad. The site converts grief-driven search traffic into service enquiries.
 
-**Niche:** Funeral repatriation, international body transfer, ashes transport, consular support for bereaved UK families.
+**Niche:** Funeral repatriation, international body transfer, ashes transport, consular support for bereaved UK and Irish families.
 
 **Target audience:**
-- UK families searching in distress immediately after a death abroad
+- UK and Irish families searching in distress immediately after a death abroad
 - Corporate travel managers arranging repatriation after employee deaths
 - Travel insurers looking for approved supplier networks
 
@@ -38,28 +38,33 @@
 - Content: Markdown with YAML frontmatter
 - Config: TOML (`site/hugo.toml`)
 - Data: JSON (`site/data/`)
-- Deployment: GitHub Actions → Hostinger FTP (automatic on push to master)
-- Build: `hugo --gc --minify --cleanDestinationDir` from `site/`
-- Deploy: push to git. GitHub Actions builds and deploys automatically. No manual step.
+- Deployment: GitHub Actions to Hostinger FTP (automatic on push to master)
+- Build: `hugo --gc --minify` from `site/`
+- Deploy: push to git. GitHub Actions builds and deploys automatically.
 
 **NEVER use Surge.** Surge has been removed from the deployment process entirely.
 
-**Hostinger FTP server-dir:** `/home/u356263466/domains/repatriationfuneral.com/public_html/`
-This is the correct full path. Do NOT use `/public_html/` (wrong — goes to wrong folder).
+**Hostinger FTP server-dir:** `/public_html/`
+This is the confirmed correct path (confirmed May 2026 via Hostinger File Manager).
+Do NOT use the long path with username. FTP chroots to account home.
 
 ---
 
 ## 2. Build Decisions
 
-**Data-driven architecture:** Country content is driven by `site/data/countries_repatriation.json` (238 countries). Layout templates pull this data via `country_key` frontmatter. Changes to JSON field names cascade to all templates that read them — check layouts before modifying data structure.
+**Data-driven architecture:** Country content driven by `site/data/countries_repatriation.json` (238 countries). Route page data driven by `site/data/route_data/*.json` (per-origin JSON, Engine 2).
 
-**URL permalink design:** Defined in `hugo.toml` under `[permalinks]`. Country section uses `/repatriation-from-:slug/`. City pages use `/repatriation-from-:sections[last]/:slug/`. Route pages use `/routes/:slug/`. This is a live indexed structure — do not change.
+**URL permalink design:** Defined in `hugo.toml` under `[permalinks]`. Route pages use `/routes/:slug/`. Do not change.
 
-**Slug requirement:** Every country `_index.md` must have an explicit `slug:` field set to just the country key (e.g. `brazil`). Hugo's automatic slug derivation from the long page title creates double-prefix ghost URLs.
+**Route page frontmatter rule:** Do NOT include `layout:` field in route page frontmatter. Hugo auto-selects `routes/single.html`. Adding `layout: route` causes Hugo to silently skip building the page. See ERRORS.md E001.
 
-**--cleanDestinationDir on every build:** Mandatory to prevent ghost pages persisting in `public/`.
+**server-dir rule:** Always `/public_html/`. Never the long Hostinger path. See ERRORS.md E002.
 
-**Direct-answer frontmatter:** Key pages include `direct_answer_heading`, `direct_answer_intro`, `direct_answer_points[]`, and `direct_answer_note` frontmatter fields for LLM citation optimisation.
+**site/data/ rule:** NEVER place .md, .txt, or any non-JSON files inside site/data/ or any subdirectory. Hugo tries to parse everything in site/data/ as structured data. See ERRORS.md E006.
+
+**Template variants:** Five variants A-E implemented in site/layouts/routes/single.html. Controlled by template_variant: frontmatter field. All 48 live pages have variants assigned. Rotate across every batch.
+
+**Direct-answer frontmatter:** Key pages include `direct_answer_heading`, `direct_answer_intro`, `direct_answer_points[]` frontmatter fields for LLM citation optimisation.
 
 **YMYL content standards:** Death, legal, and financial content site. No safety guarantees. No prices. Named sources only.
 
@@ -72,81 +77,89 @@ This is the correct full path. Do NOT use `/public_html/` (wrong — goes to wro
 6. Bringing ashes home (`/bringing-ashes-home/`)
 7. Cremation transfer (`/cremation-transfer/`)
 8. Embassy contacts (`/embassy-contacts/`)
-9. Route pairs (`/routes/`) — added May 2026
-
-**Route pair engine (added May 2026):** New silo `/routes/` generates origin x destination pages. Generator: `generate_routes.py`. QA gate: `qa_routes.py`. Template: `site/layouts/routes/single.html`. No `layout:` field in frontmatter — Hugo auto-selects `routes/single.html`. Batch 1: 25 pages live. Target: 30,000+ pages total.
+9. Route pairs (`/routes/`) -- 48 pages live, 30,000+ target
 
 **FTP deploy is incremental:** `dangerous-clean-slate: false`. Only changed files uploaded on each push. Never change this.
-
-**Route page frontmatter rule:** Do NOT include `layout:` field in route page frontmatter. Hugo auto-selects `routes/single.html` for all pages in the routes section. Adding `layout: route` causes Hugo to look for a non-existent layout and silently skip building the page.
 
 ---
 
 ## 3. Pages and Content Completed
 
-**Phase 3 (IN PROGRESS):** As of May 2026:
+**Phase 3 (IN PROGRESS):** As of 28 May 2026:
 
 | Silo | Status |
 |------|--------|
 | Country hubs | 238 countries published |
-| City pages | Complete — C1 through C22 done (220 pages) |
+| City pages | Complete -- C1 through C22 done (220 pages) |
 | Guides | All 26 P1 country guides published |
 | Blog | 150 articles live |
 | FAQ standalone pages | Published |
 | Bringing ashes home | All 238 countries covered |
 | Cremation transfer | All 238 countries covered |
 | Embassy contacts | All 238 countries covered |
-| Route pairs | Batch 1 (25 pages) committed May 2026 |
+| Route pairs | 48 pages live (Turn A: 25, Turn C: 23) |
 
 ---
 
-## 4. Build Plan Navigation
+## 4. 7-Engine Status
 
-**Primary tracker:** `funeral-repatriation-build-plan.html`
-**Session summary:** `BUILD-PLAN.md` — read at session start.
-**Current phase:** Phase 3 — Content Depth and Optimisation, IN PROGRESS.
+| Engine | Status | Files |
+|---|---|---|
+| 1 -- Route generator | INSTALLED v2 | generate_routes.py |
+| 2 -- Data layer | INSTALLED | site/data/route_data/ (11 origins, 22 corridors) |
+| 3 -- Blog factory | PARTIAL | 150 articles live. Batch scripts pending. |
+| 4 -- Link graph | INSTALLED | rebuild_link_graph.py, diagnose_links.py |
+| 5 -- QA gate | INSTALLED | qa_routes.py, check_titles.py, check_schema.py, seo_pass.py |
+| 6 -- Deploy pipeline | WORKING | .github/workflows/deploy.yml |
+| 7 -- Operating system | INSTALLED | CLAUDE.md, AGENTS.md, workforce/, MEMORY.md, ERRORS.md |
 
 ---
 
-## 5. Patterns to Follow
+## 5. Build Plan Navigation
 
-### Country Hub Frontmatter
+**Next tasks in priority order:**
+1. Engine 2 expansion -- add more origins to site/data/route_data/ (currently 11, need 50+)
+2. Turn D -- next batch of 25 route pages using new origins
+3. Engine 3 -- blog batch scripts for topical authority
+4. MEMORY.md / BUILD-PLAN.md -- keep updated each session
+5. Scale target: 30,000+ route pages
 
-```yaml
 ---
-title: "Repatriation from [Country] to the UK"
-description: "[keyword + CTA, 140-160 chars]"
-country_key: "[key matching countries_repatriation.json]"
-slug: "[country-key — MUST be explicit]"
-layout: "country-hub"
-date: YYYY-MM-DD
-direct_answer_heading: "[Question matching primary keyword]"
-direct_answer_intro: "[Opening sentence]"
-direct_answer_points:
-  - "[Specific fact]"
-direct_answer_note: "[Caveat or edge case]"
+
+## 6. Route Pages -- Current Inventory (48 total)
+
+### Turn A (25 pages -- manually written, full content, all variants assigned)
+australia-to-ireland(A), australia-to-united-kingdom(E), cyprus-to-united-kingdom(C), egypt-to-united-kingdom(E), france-to-united-kingdom(C), germany-to-united-kingdom(D), greece-to-united-kingdom(B), india-to-united-kingdom(A), italy-to-united-kingdom(B), kenya-to-united-kingdom(B), morocco-to-united-kingdom(A), philippines-to-united-kingdom(E), portugal-to-united-kingdom(C), south-africa-to-united-kingdom(C), spain-to-ireland(B), spain-to-united-kingdom(A), sri-lanka-to-united-kingdom(E), thailand-to-ireland(E), thailand-to-united-kingdom(D), turkey-to-united-kingdom(D), uae-to-ireland(B), uae-to-united-kingdom(A), usa-to-ireland(D), usa-to-united-kingdom(C), vietnam-to-united-kingdom(D)
+
+### Turn C (23 pages -- generated through full quality gate)
+greece-to-ireland(B), cyprus-to-ireland(D), turkey-to-ireland(A), philippines-to-ireland(C), india-to-ireland(E), france-to-ireland(B), germany-to-ireland(C), portugal-to-ireland(D), italy-to-ireland(E), egypt-to-ireland(A), morocco-to-ireland(B), kenya-to-ireland(C), south-africa-to-ireland(D), vietnam-to-ireland(E), sri-lanka-to-ireland(A), canada-to-united-kingdom(B), new-zealand-to-united-kingdom(C), mexico-to-united-kingdom(D), nigeria-to-united-kingdom(E), ghana-to-united-kingdom(A), jordan-to-united-kingdom(B), indonesia-to-united-kingdom(C), brazil-to-united-kingdom(D)
+
+**Template variant distribution:** A x10, B x10, C x10, D x9, E x9
+
 ---
-```
+
+## 7. Patterns to Follow
 
 ### Route Page Frontmatter (NO layout: field)
 
 ```yaml
 ---
-title: "[Origin] to [Dest] Repatriation: [trust signal]"
-description: "[origin] to [dest] repatriation: [timeline]. [CTA]."
-origin_key: "[json key]"
-dest_key: "uk"
-origin_name: "[display name]"
-dest_name: "United Kingdom"
-origin_slug: "[url slug]"
-dest_slug: "united-kingdom"
-slug: "[origin-slug]-to-[dest-slug]"
+title: "..."
+description: "..."
+origin_key: "..."
+dest_key: "uk" or "ireland"
+origin_name: "..."
+dest_name: "United Kingdom" or "Ireland"
+origin_slug: "..."
+dest_slug: "united-kingdom" or "ireland"
+slug: "{origin-slug}-to-{dest-slug}"
+template_variant: "A" through "E" -- rotate across batch
 route_complexity: "low|moderate|high"
-timeline_avg: "[X-Y days/weeks]"
-timeline_fast: "[X-Y days]"
-timeline_complex: "[X-Y weeks]"
-embassy_city: "[city]"
-doc_processing_time: "[X-Y days]"
+timeline_avg: "..."
+timeline_fast: "..."
+timeline_complex: "..."
+embassy_city: "..."
+doc_processing_time: "..."
 direct_answer_heading: "..."
 direct_answer_intro: "..."
 direct_answer_points:
@@ -165,32 +178,37 @@ faqs:
     answer: "..."
 links:
   upward:
-    - url: "/repatriation-from-[origin]/"
-      text: "..."
+    - url: "/repatriation-from-{origin}/"
+      text: "Full {Origin} repatriation guide"
+    - url: "/guides/death-abroad-{origin}/"
+      text: "What to do if someone dies in {Origin}"
+    - url: "/embassy-contacts/{origin}/"
+      text: "British Embassy in {Origin}"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
   sideways:
-    - url: "/routes/[dest]-to-[origin]/"
-      text: "..."
+    - url: "/routes/{dest}-to-{origin}/"
+      text: "Repatriation from {Dest} to {Origin}"
+    - url: "/routes/{origin}-to-{alt-dest}/"
+      text: "Repatriation from {Origin} to {AltDest}"
 ---
 ```
 
 ---
 
-## 6. Mistakes Avoided
+## 8. Mistakes Avoided
 
-- **Never omit `slug:` from country `_index.md` files.** Double-prefix ghost URLs.
-- **Never run `hugo --gc --minify` without `--cleanDestinationDir`.**
-- **Never edit `site/public/` directly.** Regenerated on every build.
-- **Never change `[permalinks]` in `hugo.toml`** without planning redirects.
-- **Never use `fa-urn-trowel`.** Use `fa-jar`.
-- **Never use Surge.** GitHub Actions → Hostinger FTP only.
+- **Never add `layout:` field to route page frontmatter.** Hugo silently skips pages with unresolvable layouts.
+- **Never use `server-dir: /home/u356263466/...`** in deploy workflow. Correct path is `/public_html/`.
 - **Never set `dangerous-clean-slate: true`** in FTP deploy. Causes timeout.
-- **Never add `layout:` field to route page frontmatter.** Hugo silently skips pages with unresolvable layouts. Routes section auto-selects `routes/single.html`.
-- **Never use `server-dir: /public_html/`** in deploy workflow. Correct path is `/home/u356263466/domains/repatriationfuneral.com/public_html/`.
 - **Never provide partial code snippets when user needs to edit a file manually.** Always paste the complete file content.
+- **Never use Surge.** GitHub Actions to Hostinger FTP only.
+- **Never place .md or non-JSON files inside site/data/ subdirectories.** Hugo tries to parse them as data.
+- **Never set template_variant to anything outside A-E.** Hugo template conditionals only handle those five.
 
 ---
 
-## 7. Design System (Locked — April 2026)
+## 9. Design System (Locked)
 
 ### Hero Image Assignments
 
@@ -206,21 +224,23 @@ links:
 
 ---
 
-## 8. Open Questions
+## 10. Open Questions
 
-- Phase 4 tasks (link building, schema expansion, conversion optimisation) not yet started.
-- `quoteFormEndpoint` in hugo.toml is still a Formspree placeholder.
+- Engine 2 expansion: need 50+ origins in route_data to enable Turn D and beyond.
+- Engine 3: blog batch scripts not yet built.
+- quoteFormEndpoint in hugo.toml is still a placeholder.
 - LLM citation audit pass 2 pending.
-- Route engine Turn B — next 25 corridors.
+- ERRORS.md E003 (stale sync-state) still possible; document the curl-delete fix.
 
 ---
 
-## 9. Session History
+## 11. Session History
 
 | Date | Session Summary |
-|------|-----------------|
+|------|---------------|
 | April 23, 2026 | Full site design review pass complete. 16 issues fixed. |
 | April 2026 | Phase 3 major work: slug fixes, cremation-transfer silo, LLM citation upgrades. |
 | April 2026 | Migration session: MEMORY.md, BUILD-PLAN.md, AGENTS.md created for VS Code. |
 | 27 May 2026 | CTR Rescue Turn A: 25 pages title/desc rewritten. Stage 3.CTR marked DONE. |
-| 27 May 2026 | Route Engine Turn A: /routes/ silo built. 25 route pages committed. Deploy pipeline fixed. Discovered server-dir was wrong (/public_html/ instead of full Hostinger path). Route page layout: frontmatter removed (was causing Hugo to silently skip building pages). MEMORY.md updated with full working rules. |
+| 27 May 2026 | Route Engine Turn A: /routes/ silo built. 25 route pages committed. Deploy pipeline fixed. Discovered server-dir error (E002). Route page layout: frontmatter removed (E001). |
+| 28 May 2026 | 7-engine install session: Engine 7 (CLAUDE.md, AGENTS.md, workforce), Engine 5 (full QA gate), Engine 2 (route_data layer, 11 origins), Engine 1 upgrade (reads route_data), Engine 4 (link graph tools). Turn C: 23 new route pages committed. Template rotation: all 48 pages now have A-E variants, single.html implements all 5 variants. Total route pages: 48. |
