@@ -1,35 +1,62 @@
-name: Deploy to Hostinger via FTP
+name: Build and Deploy to Hostinger
 
 on:
   push:
-    branches: [ main, master ]
-  workflow_dispatch:        # lets you run it manually too
+    branches: [ master, main ]
+  workflow_dispatch:
 
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout latest code
-        uses: actions/checkout@v4
 
-      - name: Build Hugo site
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.160.1'
           extended: true
 
-      - name: Run Hugo build
-        run: hugo --gc --minify --cleanDestinationDir
-        working-directory: ./site
+      - name: Build Hugo site
+        run: |
+          cd site
+          hugo --gc --minify --cleanDestinationDir
+        env:
+          HUGO_ENVIRONMENT: production
 
-      - name: Sync files over FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      - name: Verify build
+        run: |
+          echo "HTML pages built:"
+          find site/public -name '*.html' | wc -l
+
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 185.224.138.247
-          port: 21
-          username: u356263466.gitconnect2
-          password: ${{ secrets.FTP_PASSWORD }}  # set this secret in GitHub repo settings
-          protocol: ftp
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./site/public/
-          server-dir: /home/u356263466/domains/repatriationfuneral.com/public_html/
+          server-dir: /public_html/
+          dangerous-clean-slate: false
+          security: loose
+          port: 21
+          timeout: 60000
+          log-level: standard
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "====================================="
+          echo "DEPLOY FAILED"
+          echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "====================================="
+          echo "Check: FTP secrets set? server-dir correct? Port 21 open?"
+          exit 1
