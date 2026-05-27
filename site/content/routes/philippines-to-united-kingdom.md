@@ -1,0 +1,85 @@
+---
+title: "Philippines to UK Repatriation: Guidance for British Families"
+description: "Someone has died in the Philippines. Repatriation to the UK takes 3-6 weeks. PSA and DFA authentication are the main delays. We guide every step. Contact us 24/7."
+layout: route
+origin_key: "philippines"
+dest_key: "uk"
+origin_name: "Philippines"
+dest_name: "United Kingdom"
+origin_slug: "philippines"
+dest_slug: "united-kingdom"
+slug: "philippines-to-united-kingdom"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "3 weeks"
+timeline_complex: "8-16 weeks"
+embassy_city: "Manila"
+doc_processing_time: "3-6 weeks (PSA and DFA authentication are the main delays)"
+direct_answer_heading: "Repatriation from the Philippines to the UK: what to expect"
+direct_answer_intro: "Repatriation from the Philippines takes longer than most Asian routes because of mandatory PSA (Philippine Statistics Authority) and DFA (Department of Foreign Affairs) authentication. Most cases take 3-6 weeks. The British Embassy in Manila is the key consular contact."
+direct_answer_points:
+  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication of death certificate"
+  - "Documentation takes 3-6 weeks. PSA and DFA authentication are the main bottlenecks."
+  - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
+overview_heading: "Key steps for Philippines to UK repatriation"
+overview_body: "Contact local emergency services (911 in Metro Manila, local police elsewhere). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required before the certificate has international validity."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certificate filed with Local Civil Registrar. PSA authentication requested."
+    timing: "Physician issues certificate. PSA authentication adds significant processing time."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British Embassy Manila notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Embalming is standard practice in the Philippines. Filipino funeral tradition involves extended wake periods."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "DFA authentication, Bureau of Quarantine clearance, and all export permits obtained"
+    timing: "Allow 3-6 weeks. PSA and DFA are the main delays."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Manila (MNL) or Cebu (CEB)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the Philippines to the UK take?"
+    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases involving the National Bureau of Investigation (NBI) or death in a provincial area can take 8-16 weeks."
+  - question: "Why does Philippine repatriation take so long?"
+    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed. Both agencies have processing queues that cannot be expedited. Your repatriation specialist will submit applications immediately to minimise waiting time."
+  - question: "What documents are required for repatriation from the Philippines?"
+    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British Embassy in the Philippines help with repatriation?"
+    answer: "The British Embassy in Manila can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Philippine documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from the Philippines instead of repatriating the body?"
+    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-philippines/"
+      text: "Full Philippines repatriation guide"
+    - url: "/guides/death-abroad-philippines/"
+      text: "What to do if someone dies in the Philippines"
+    - url: "/embassy-contacts/philippines/"
+      text: "British Embassy in the Philippines"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-philippines/"
+      text: "Repatriation from the UK to the Philippines"
+    - url: "/routes/philippines-to-ireland/"
+      text: "Repatriation from the Philippines to Ireland"
+---

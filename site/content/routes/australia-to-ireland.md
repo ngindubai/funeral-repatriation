@@ -1,0 +1,84 @@
+---
+title: "Australia Repatriation to Ireland: Every Step Explained"
+description: "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide British families through every step. Contact..."
+layout: route
+origin_key: "australia"
+dest_key: "ie"
+origin_name: "Australia"
+dest_name: "Ireland"
+origin_slug: "australia"
+dest_slug: "ireland"
+slug: "australia-to-ireland"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: ""
+doc_processing_time: "5-14 days"
+direct_answer_heading: "Repatriation from Australia to Ireland: what to expect"
+direct_answer_intro: "Getting a loved one home from Australia to Ireland is entirely achievable. The process follows Australias civil registration and export system. Most cases take 10-21 days from death to arrival."
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 (triple zero) for emergency services. If death occurs in hospital, hospital staff handle initial procedures. If death is unexpected, police and the state/territory coroner may be involved. Contact the British High Commission in Canberra or nearest consulate. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Death certificates are issued in En"
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases with complete documentation proceed to funeral arrangements without delay."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in the country of death can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registration and certificate"
+    timing: "Death must be registered with the state or territory Registry of Births, Deaths and Marriages."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air transport to destination"
+    timing: "Once all documentation is complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Ireland funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to Ireland take?"
+    answer: "In a straightforward case, repatriation from Australia to Ireland takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, investigation, or remote location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit for human remains. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British Embassy in Australia help with repatriation?"
+    answer: "The British High Commission in Australia can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to Ireland is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit. See our bringing ashes home guide for full details."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/embassy-contacts/australia/"
+      text: "British High Commission in Australia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/ireland-to-australia/"
+      text: "Repatriation from Ireland to Australia"
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+---

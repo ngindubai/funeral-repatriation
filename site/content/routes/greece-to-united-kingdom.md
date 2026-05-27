@@ -1,0 +1,86 @@
+---
+title: "Greece to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Greece. Repatriation to the UK takes 10-21 days. Island transfers, Greek paperwork, and cargo flights all handled. Contact us 24/7."
+layout: route
+origin_key: "greece"
+dest_key: "uk"
+origin_name: "Greece"
+dest_name: "United Kingdom"
+origin_slug: "greece"
+dest_slug: "united-kingdom"
+slug: "greece-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "8-12 days"
+timeline_complex: "4-12 weeks"
+embassy_city: "Athens"
+doc_processing_time: "8-10 days for local formalities (per gov.uk FCDO guidance)"
+direct_answer_heading: "Repatriation from Greece to the UK: what to expect"
+direct_answer_intro: "Greece is the most common repatriation corridor after Spain for British families. Most deaths occur on islands, which require an internal mainland transfer before international cargo can depart from Athens."
+direct_answer_points:
+  - "Key documents: Greek death certificate (lixiarxiki praxi thanatou) and certified English translation"
+  - "Documentation takes 8-10 days per FCDO guidance. Island deaths add 1-4 extra days for mainland transfer."
+  - "British Embassy in Athens registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by the prosecutor for sudden, unexplained, or suspicious deaths."
+overview_heading: "Key steps for Greece to UK repatriation"
+overview_body: "Contact emergency services (112 or 166 for ambulance, 100 for police). A doctor certifies the death. Contact the British Embassy in Athens. Death registered at the local dimos (municipality) within 30 days. The lixiarxiki praxi thanatou is issued in Greek only and requires certified English translation."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Greek documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Deaths involving an overseas investigation may require coroner review."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local dimos. Lixiarxiki praxi thanatou issued."
+    timing: "Must be registered within 30 days. Certificate in Greek only, translation required."
+    responsible: "Local funeral director and dimos"
+  - step: 3
+    action: "British Embassy Athens notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Internal mainland transfer (if island death) and embalming"
+    timing: "Island transfers add 1-4 days. Embalming facilities on smaller islands may be limited."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Prosecutor authorisation and all export documentation completed"
+    timing: "Allow 8-10 days per FCDO guidance. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Athens (ATH) to UK airports"
+    timing: "Once all documentation complete and prosecutor has authorised release."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Greece to the UK take?"
+    answer: "In a straightforward mainland case, repatriation from Greece to the UK takes 8-12 days. Most cases take 10-21 days once translation and documentation time is factored in. Island deaths add at least 1-4 days for the internal mainland transfer. Complex cases involving a post-mortem or prosecutor investigation can take 4-12 weeks."
+  - question: "My relative died on a Greek island. What happens?"
+    answer: "Deaths on any Greek island (Crete, Rhodes, Corfu, Mykonos, Santorini, Kos, Zakynthos) require an internal transfer to the mainland, usually Athens, before international repatriation can proceed. This adds approximately 1-4 days and extra cost. The island funeral director coordinates the mainland transfer."
+  - question: "What documents are required for repatriation from Greece?"
+    answer: "The core documents are: Greek death certificate (lixiarxiki praxi thanatou), certified English translation, Prosecutor authorisation for release, Embalming certificate, Freedom from infection certificate. Your repatriation coordinator handles these on your behalf."
+  - question: "Does the British Embassy in Greece help with repatriation?"
+    answer: "The British Embassy in Athens can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Greek documentation, in certified English translation, must accompany the shipment. The coroner for the district where the funeral will take place is notified."
+  - question: "Can I bring ashes home from Greece instead of repatriating the body?"
+    answer: "Yes. Cremation in Greece is available but note that Greek Orthodox tradition favours burial and crematoria are limited. Bringing ashes home to the UK is simpler and less costly than full body repatriation. See our bringing ashes home from Greece guide."
+links:
+  upward:
+    - url: "/repatriation-from-greece/"
+      text: "Full Greece repatriation guide"
+    - url: "/guides/death-abroad-greece/"
+      text: "What to do if someone dies in Greece"
+    - url: "/embassy-contacts/greece/"
+      text: "British Embassy in Greece"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-greece/"
+      text: "Repatriation from the UK to Greece"
+    - url: "/routes/greece-to-ireland/"
+      text: "Repatriation from Greece to Ireland"
+---

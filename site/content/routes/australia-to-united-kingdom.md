@@ -1,0 +1,85 @@
+---
+title: "Australia to United Kingdom: Repatriation Guidance"
+description: "Repatriation from Australia to the UK typically takes 10-21 days. Documentation 5-14 days. We guide British families through every step. Contact us 24/7."
+layout: route
+origin_key: "australia"
+dest_key: "uk"
+origin_name: "Australia"
+dest_name: "United Kingdom"
+origin_slug: "australia"
+dest_slug: "united-kingdom"
+slug: "australia-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-14 days"
+direct_answer_heading: "Repatriation from Australia to the UK: what to expect"
+direct_answer_intro: "Repatriation from Australia is a route our team handles regularly. The process involves state-level death registration, cargo booking from Sydney, Melbourne, or Perth, and UK reception. Typical timeline: 10-21 days."
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Canberra registers the death and advises. They cannot fund repatriation."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Each Australian state has its own coroner who may be involved in unexpected deaths."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed to funeral arrangements. Deaths involving an overseas investigation may require coroner review before burial or cremation."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registration and certificate"
+    timing: "Registered with state/territory Registry. Funeral director normally handles this."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to UK"
+    timing: "Once all documentation complete. Direct flights to Heathrow available from Sydney, Melbourne, Brisbane."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to the UK take?"
+    answer: "In a straightforward case, repatriation from Australia to the UK takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, coronial investigation, or remote Northern Territory location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit for human remains from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British High Commission in Australia help with repatriation?"
+    answer: "The British High Commission in Canberra (and consulates in Sydney, Melbourne, Perth) can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Australian documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases with complete documentation proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit from the state health authority."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/embassy-contacts/australia/"
+      text: "British High Commission in Australia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-australia/"
+      text: "Repatriation from the UK to Australia"
+    - url: "/routes/australia-to-ireland/"
+      text: "Repatriation from Australia to Ireland"
+---

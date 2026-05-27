@@ -1,0 +1,86 @@
+---
+title: "Portugal to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Portugal. Repatriation to the UK takes 7-14 days. Algarve and Lisbon cases handled. Documentation and flights arranged. Contact us 24/7."
+layout: route
+origin_key: "portugal"
+dest_key: "uk"
+origin_name: "Portugal"
+dest_name: "United Kingdom"
+origin_slug: "portugal"
+dest_slug: "united-kingdom"
+slug: "portugal-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Lisbon"
+doc_processing_time: "3-7 days for full documentation"
+direct_answer_heading: "Repatriation from Portugal to the UK: what to expect"
+direct_answer_intro: "Portugal is one of the more straightforward European repatriation routes. The Algarve has experienced local funeral directors familiar with UK requirements. Documentation runs through the conservatoria do registo civil and typically takes 3-7 days."
+direct_answer_points:
+  - "Key documents: Certidao de obito (death certificate, multilingual version available) and Embalming certificate"
+  - "Documentation takes 3-7 days. Deaths in the Algarve benefit from experienced local providers."
+  - "British Embassy in Lisbon registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by Ministerio Publico for sudden, violent, or unexplained deaths."
+overview_heading: "The repatriation process from Portugal"
+overview_body: "Contact emergency services (112). A doctor certifies the death and issues a certificate. Death must be registered at the local conservatoria do registo civil. In urban areas contact PSP (Policia de Seguranca Publica), in rural areas GNR (Guarda Nacional Republicana). A multilingual death certificate is available under EU convention."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. A multilingual EU death certificate may be accepted directly. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at conservatoria do registo civil. Certidao de obito issued."
+    timing: "Doctor provides initial certificate. Multilingual version available under EU convention."
+    responsible: "Local funeral director and conservatoria"
+  - step: 3
+    action: "British Embassy Lisbon notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Portugal has a professional funeral industry. Algarve funeral directors experienced with UK repatriations."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit authorisation and all export permits obtained"
+    timing: "Allow 3-7 days for full documentation. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lisbon (LIS), Porto (OPO), or Faro (FAO)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Portugal to the UK take?"
+    answer: "In a straightforward case, repatriation from Portugal to the UK takes 7-14 days. The fastest Algarve cases complete in 5-7 days when an experienced local funeral director manages the process. Complex cases involving the Ministerio Publico (post-mortem) can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Portugal?"
+    answer: "The core documents are: Certidao de obito (death certificate, multilingual version if available), Embalming certificate, Freedom from infection certificate, Transit authorisation from the Portuguese health authority, and Passport of the deceased. Your repatriation coordinator handles these on your behalf."
+  - question: "Does the British Embassy in Portugal help with repatriation?"
+    answer: "The British Embassy in Lisbon can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "Is a post-mortem required for British nationals who die in Portugal?"
+    answer: "The Ministerio Publico (public prosecutor) orders a post-mortem for sudden, violent, suspicious, or unexplained deaths. This adds 1-4 weeks to the timeline. The body cannot be released for repatriation until the prosecutor authorises it."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. A multilingual EU death certificate from Portugal may be accepted directly without certified translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Portugal instead of repatriating the body?"
+    answer: "Yes. Cremation in Portugal and bringing ashes home to the UK is an option. Portugal has well-established crematoria. You will need the certidao de obito, cremation certificate, and export permit. Ashes can be carried on a passenger flight from Lisbon, Porto, or Faro."
+links:
+  upward:
+    - url: "/repatriation-from-portugal/"
+      text: "Full Portugal repatriation guide"
+    - url: "/guides/death-abroad-portugal/"
+      text: "What to do if someone dies in Portugal"
+    - url: "/embassy-contacts/portugal/"
+      text: "British Embassy in Portugal"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-portugal/"
+      text: "Repatriation from the UK to Portugal"
+    - url: "/routes/portugal-to-ireland/"
+      text: "Repatriation from Portugal to Ireland"
+---

@@ -1,0 +1,85 @@
+---
+title: "Cyprus Repatriation to the UK: Every Step Explained"
+description: "Someone has died in Cyprus. Repatriation to the UK takes 7-14 days in a straightforward case. Documentation, flights and UK handover all handled for British families."
+layout: route
+origin_key: "cyprus"
+dest_key: "uk"
+origin_name: "Cyprus"
+dest_name: "United Kingdom"
+origin_slug: "cyprus"
+dest_slug: "united-kingdom"
+slug: "cyprus-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Nicosia"
+doc_processing_time: "3-7 days"
+direct_answer_heading: "Repatriation from Cyprus to the UK: what to expect"
+direct_answer_intro: "Repatriation from Cyprus is a route our team handles regularly. The large British expat and retired population means local funeral directors are experienced with UK requirements. Typical timeline: 7-14 days."
+direct_answer_points:
+  - "Key documents: Cypriot death certificate (bilingual Greek/English) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British High Commission in Nicosia registers the death and advises. They cannot fund repatriation."
+overview_heading: "Key steps for Cyprus to UK repatriation"
+overview_body: "Call 112 or 199 for ambulance, 199 for police. A doctor must certify the death. If death occurs outside hospital, police will attend. Contact the British High Commission in Nicosia. Death registered at the local district administration office."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All foreign documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registration and certificate"
+    timing: "Registered at the local district administration office. Bilingual certificate issued."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Cypriot funeral directors experienced with British repatriations due to large expat community."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 3-7 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to UK"
+    timing: "Once all documentation complete. Flights from Larnaca (LCA) to UK airports."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Cyprus to the UK take?"
+    answer: "In a straightforward case, repatriation from Cyprus to the UK takes 7-14 days. The fastest cases complete in 5-7 days when documentation is issued promptly and no complications arise. Complex cases involving a post-mortem, investigation, or death in a remote area can take 3-6 weeks or longer."
+  - question: "What documents are required for repatriation from Cyprus?"
+    answer: "The core documents are: Cypriot death certificate (bilingual Greek/English), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Transit permit from Cypriot authorities. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British High Commission in Cyprus help with repatriation?"
+    answer: "The British High Commission in Nicosia can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What is the first step when someone dies in Cyprus?"
+    answer: "Notify a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Cypriot documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases with complete documentation proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Cyprus instead of repatriating the body?"
+    answer: "Yes. Cremation in Cyprus and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit. See our bringing ashes home guide for the full documentation list."
+links:
+  upward:
+    - url: "/repatriation-from-cyprus/"
+      text: "Full Cyprus repatriation guide"
+    - url: "/guides/death-abroad-cyprus/"
+      text: "What to do if someone dies in Cyprus"
+    - url: "/embassy-contacts/cyprus/"
+      text: "British High Commission in Cyprus"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-cyprus/"
+      text: "Repatriation from the UK to Cyprus"
+    - url: "/routes/cyprus-to-ireland/"
+      text: "Repatriation from Cyprus to Ireland"
+---

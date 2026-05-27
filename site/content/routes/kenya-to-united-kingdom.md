@@ -1,0 +1,85 @@
+---
+title: "Kenya to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Kenya. Repatriation to the UK takes 14-28 days. Safari zone, Nairobi Port Health clearance, and cargo flights explained. Contact us 24/7."
+layout: route
+origin_key: "kenya"
+dest_key: "uk"
+origin_name: "Kenya"
+dest_name: "United Kingdom"
+origin_slug: "kenya"
+dest_slug: "united-kingdom"
+slug: "kenya-to-united-kingdom"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-21 days"
+direct_answer_heading: "Repatriation from Kenya to the UK: what to expect"
+direct_answer_intro: "Repatriation from Kenya requires an additional Port Health clearance step not present in European routes. Deaths in safari areas require internal transfer to Nairobi before any international process can begin. Typical timeline: 14-28 days."
+direct_answer_points:
+  - "Key documents: Kenyan death certificate and Port Health clearance (freedom from infection)"
+  - "Documentation takes 7-21 days. All documentation and cargo departs from Nairobi."
+  - "British High Commission in Nairobi registers the death and advises. They cannot fund repatriation."
+overview_heading: "The repatriation process from Kenya"
+overview_body: "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend and arrange removal to a mortuary. Contact the British High Commission in Nairobi. Death must be registered with the civil registrar at the district office. A burial permit is required before any disposition. Deaths in safari areas (Masai Mara, Amboseli, Tsavo) require road or charter aircraft transfer to Nairobi."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Kenyan documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with civil registrar. Burial permit obtained."
+    timing: "Funeral director handles registration. Safari area deaths require transfer to Nairobi first."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British High Commission Nairobi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming in Nairobi"
+    timing: "Professional embalming facilities available in Nairobi. Limited outside the capital."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Port Health clearance and all export permits obtained"
+    timing: "Allow 7-21 days. Port Health is an additional step specific to Kenya."
+    responsible: "Local funeral director and Port Health"
+  - step: 6
+    action: "Air cargo from Nairobi Jomo Kenyatta International (NBO)"
+    timing: "Once all documentation complete. Kenya Airways and British Airways serve NBO-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Kenya to the UK take?"
+    answer: "In a straightforward case, repatriation from Kenya to the UK takes 14-28 days. The fastest cases from Nairobi complete in 10-14 days. Deaths in safari areas or remote locations add significant time for internal transfer to Nairobi. Complex cases involving investigation can take 6-12 weeks."
+  - question: "My relative died on safari in Kenya. What should I do?"
+    answer: "Contact a UK repatriation specialist and the FCDO emergency line (+44 (0)20 7008 5000) immediately. Deaths in the Masai Mara, Amboseli, Tsavo, or other remote areas require road or light aircraft transfer to Nairobi before any documentation can begin. All documentation, cargo, and cargo flights depart from Nairobi."
+  - question: "What documents are required for repatriation from Kenya?"
+    answer: "The core documents are: Kenyan death certificate, Embalming certificate, Port Health clearance (freedom from infection certificate), Police report/clearance, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the British High Commission in Kenya help with repatriation?"
+    answer: "The British High Commission in Nairobi can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Kenyan documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Kenya instead of repatriating the body?"
+    answer: "Yes. Cremation in Kenya and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and Port Health clearance. See our bringing ashes home guide for details."
+links:
+  upward:
+    - url: "/repatriation-from-kenya/"
+      text: "Full Kenya repatriation guide"
+    - url: "/guides/death-abroad-kenya/"
+      text: "What to do if someone dies in Kenya"
+    - url: "/embassy-contacts/kenya/"
+      text: "British High Commission in Kenya"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-kenya/"
+      text: "Repatriation from the UK to Kenya"
+    - url: "/routes/kenya-to-ireland/"
+      text: "Repatriation from Kenya to Ireland"
+---

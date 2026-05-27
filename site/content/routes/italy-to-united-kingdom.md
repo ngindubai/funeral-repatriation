@@ -1,0 +1,86 @@
+---
+title: "Italy to UK Repatriation: Guidance for British Families"
+description: "Someone has died in Italy. Repatriation to the UK typically takes 10-21 days. Atti di morte, comune process, and cargo flights all handled. Contact us 24/7."
+layout: route
+origin_key: "italy"
+dest_key: "uk"
+origin_name: "Italy"
+dest_name: "United Kingdom"
+origin_slug: "italy"
+dest_slug: "united-kingdom"
+slug: "italy-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "5-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Rome"
+doc_processing_time: "5-14 days for full documentation"
+direct_answer_heading: "Repatriation from Italy to the UK: what to expect"
+direct_answer_intro: "Repatriation from Italy follows Italy's comune (municipality) registration system. Documentation is available in multilingual format under EU convention. Most cases complete in 10-21 days. The procuratore della Repubblica orders a post-mortem for sudden or unexplained deaths."
+direct_answer_points:
+  - "Key documents: Certificato di morte (death certificate) from the comune"
+  - "Documentation takes 5-14 days. Variation between northern and southern Italy comuni."
+  - "British Embassy in Rome registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by procuratore if death is sudden, violent, or cause unknown."
+overview_heading: "Key steps for Italy to UK repatriation"
+overview_body: "Contact emergency services (112 for all emergencies, 113 for police, 118 for ambulance). A doctor certifies the death. Death must be registered at the local comune. Italy's comuni system means procedures vary between municipalities. The doctor provides the initial certificate and the comune issues the atti di morte."
+dest_reception: "The UK funeral director takes custody at the cargo terminal. All Italian documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements. Deaths involving overseas investigation may require coroner review."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local comune. Certificato di morte and atti di morte issued."
+    timing: "Doctor provides initial certificate. Comune registers and issues the atti di morte."
+    responsible: "Local funeral director and comune"
+  - step: 3
+    action: "British Embassy Rome notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (imbalsamazione or tanatoprassi)"
+    timing: "Italian funeral industry is professional. Embalming standards are generally good."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Nulla osta (clearance from comune or prosecutor) and all export permits obtained"
+    timing: "Allow 5-14 days for full documentation. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Rome (FCO), Milan (MXP/LIN), or Venice (VCE)"
+    timing: "Once all documentation complete and nulla osta issued."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Italy to the UK take?"
+    answer: "In a straightforward case, repatriation from Italy to the UK takes 10-21 days. The fastest cases complete in 5-10 days when a multilingual death certificate is available and no investigation is involved. Complex cases involving the procuratore della Repubblica can take 4-8 weeks."
+  - question: "What is the nulla osta and why is it needed?"
+    answer: "The nulla osta is the clearance document from the comune or, when the procuratore is involved, from the prosecutor's office. It authorises release of the body for international repatriation. It cannot be bypassed. Your funeral director applies for it as part of the standard process."
+  - question: "What documents are required for repatriation from Italy?"
+    answer: "The core documents are: Certificato di morte (death certificate), Nulla osta (clearance), Embalming certificate (certificato di imbalsamazione), Freedom from infection certificate. A multilingual death certificate may be available under EU convention. Your coordinator handles obtaining these."
+  - question: "Does the British Embassy in Italy help with repatriation?"
+    answer: "The British Embassy in Rome can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal. All Italian documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from Italy instead of repatriating the body?"
+    answer: "Yes. Cremation in Italy and bringing ashes home to the UK is an option. Italy has well-established crematoria. You will need the certificato di morte, cremation certificate, and nulla osta. Ashes can be carried on a passenger flight or shipped."
+links:
+  upward:
+    - url: "/repatriation-from-italy/"
+      text: "Full Italy repatriation guide"
+    - url: "/guides/death-abroad-italy/"
+      text: "What to do if someone dies in Italy"
+    - url: "/embassy-contacts/italy/"
+      text: "British Embassy in Italy"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-italy/"
+      text: "Repatriation from the UK to Italy"
+    - url: "/routes/italy-to-ireland/"
+      text: "Repatriation from Italy to Ireland"
+---

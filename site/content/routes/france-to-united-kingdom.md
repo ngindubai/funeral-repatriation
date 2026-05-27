@@ -1,0 +1,86 @@
+---
+title: "France to UK Repatriation: Guidance for British Families"
+description: "Someone has died in France. Repatriation to the UK takes 7-14 days in a straightforward case. Road via Eurotunnel or air cargo. We guide every step. Contact us 24/7."
+layout: route
+origin_key: "france"
+dest_key: "uk"
+origin_name: "France"
+dest_name: "United Kingdom"
+origin_slug: "france"
+dest_slug: "united-kingdom"
+slug: "france-to-united-kingdom"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "4-7 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Paris"
+doc_processing_time: "3-7 days total"
+direct_answer_heading: "Repatriation from France to the UK: what to expect"
+direct_answer_intro: "France is one of the most straightforward repatriation routes for UK families. Direct flights, Eurotunnel road transport, and a well-organised French funeral sector mean most cases complete within 7-14 days."
+direct_answer_points:
+  - "Key documents: Acte de deces and Embalming certificate (certificat de soins de conservation)"
+  - "Documentation takes 3-7 days. The death must be registered at the local mairie within 24 hours."
+  - "British Embassy in Paris registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem at the Institut Medico-Legal (IML) required for violent, sudden, or unexplained deaths."
+overview_heading: "What happens after a death in France"
+overview_body: "Contact emergency services (15 SAMU, 17 police, 18 fire, or 112). A doctor certifies the death and issues a certificat de deces. The death must be registered at the local mairie (town hall) within 24 hours. Eurotunnel or ferry road transport is a genuine alternative to air cargo for northern France deaths."
+dest_reception: "The UK funeral director takes custody at the cargo terminal or road crossing. All French documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The FCDO can provide information and a list of local funeral directors. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local mairie within 24 hours"
+    timing: "Hospital or doctor initiates. Acte de deces issued by the mairie."
+    responsible: "Local funeral director and mairie"
+  - step: 3
+    action: "British Embassy Paris notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (thanatopraxie) and preparation"
+    timing: "French funeral industry is professional. Regulated embalming profession."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Laissez-passer mortuaire and export documentation obtained"
+    timing: "Allow 3-7 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Transport to UK: air cargo from CDG/NCE/LYO, or road via Eurotunnel or ferry"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist"
+  - step: 7
+    action: "UK funeral director takes custody. Coroner notified."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from France to the UK take?"
+    answer: "In a straightforward case, repatriation from France to the UK takes 7-14 days. The fastest cases complete in 4-7 days when documentation is issued promptly and road transport via Eurotunnel is used. Complex cases involving a post-mortem at the Institut Medico-Legal can take 3-8 weeks."
+  - question: "What documents are required for repatriation from France?"
+    answer: "The core documents are: Acte de deces (death certificate), Embalming certificate (certificat de soins de conservation), Permission to transfer (autorisation de transport de corps), Freedom from infection certificate, and the Passport of the deceased. Your repatriation coordinator handles obtaining these."
+  - question: "Does the British Embassy in France help with repatriation?"
+    answer: "The British Embassy in Paris can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "Is road transport from France to the UK an option?"
+    answer: "Yes. Road transport via Eurotunnel or ferry is a genuine and often cheaper alternative to air cargo, particularly for deaths in northern France or Paris. Your repatriation specialist will advise which route is most practical given location and timing."
+  - question: "What happens when the body arrives in the UK?"
+    answer: "The UK funeral director takes custody at the cargo terminal or road crossing. All French documentation must be in certified English. The coroner for the district where the funeral will take place is notified. Straightforward cases proceed directly to funeral arrangements."
+  - question: "Can I bring ashes home from France instead of repatriating the body?"
+    answer: "Yes. Cremation in France and bringing ashes home to the UK is often simpler and less costly than full body repatriation. French crematoria are well-established and the ashes can be carried on a passenger flight or shipped. See our bringing ashes home guide."
+links:
+  upward:
+    - url: "/repatriation-from-france/"
+      text: "Full France repatriation guide"
+    - url: "/guides/death-abroad-france/"
+      text: "What to do if someone dies in France"
+    - url: "/embassy-contacts/france/"
+      text: "British Embassy in France"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/united-kingdom-to-france/"
+      text: "Repatriation from the UK to France"
+    - url: "/routes/france-to-ireland/"
+      text: "Repatriation from France to Ireland"
+---
