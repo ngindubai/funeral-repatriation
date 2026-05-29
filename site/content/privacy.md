@@ -1,6 +1,7 @@
 ---
 title: "Privacy policy"
 description: "How we handle your personal data."
+noindex: true
 ---
 
 ## Privacy policy
