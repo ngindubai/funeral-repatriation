@@ -11,6 +11,8 @@
     {{ block "page-meta" . }}{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
 
+    {{ if .Params.noindex }}<meta name="robots" content="noindex, follow">{{ end }}
+
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">{{ end }}
