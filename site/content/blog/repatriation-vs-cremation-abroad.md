@@ -1,7 +1,8 @@
-﻿---
+---
 title: "Repatriation vs Cremation Abroad: Which Is Right?"
 description: "A clear comparison of full body repatriation and arranging cremation abroad, covering cost, timeline, religious considerations, and the coroner question."
 date: 2025-02-26
+slug: repatriation-vs-cremation-abroad-which-is-right
 read_time: 6
 related_countries: ["spain", "france", "thailand", "greece", "portugal"]
 ---
@@ -76,4 +77,4 @@ This is a significant decision and it is worth taking time with it, if time is a
 
 None of these questions has an objectively correct answer. The right choice is the one that fits your circumstances.
 
-If you want to talk through the specific situation, call us. We give honest advice about both options, and we can coordinate either.
+If you want to talk through the specific situation, contact us. We give honest advice about both options and can coordinate either.
