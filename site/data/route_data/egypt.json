@@ -1,0 +1,98 @@
+{
+  "origin": {
+    "key": "egypt",
+    "name": "Egypt",
+    "slug": "egypt",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/egypt",
+    "embassy_city": "Cairo",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-cairo",
+    "consulates": ["Alexandria", "Luxor"],
+    "emergency_number": "122 (police), 123 (ambulance)",
+    "death_registration": "Local health office or civil registry",
+    "investigating_authority": "Niyaba (Egyptian public prosecutor)",
+    "post_mortem_trigger": "All unnatural, sudden, violent, or suspicious deaths. Routinely applied to foreign nationals.",
+    "death_certificate_language": "Arabic only. Certified English translation required.",
+    "no_cremation": true,
+    "cremation_available": false,
+    "cremation_note": "No cremation facilities exist in Egypt. All repatriations are full body.",
+    "tourist_area_note": "Deaths in Hurghada and Sharm el-Sheikh are generally processed faster than Cairo. Tourist area authorities are more experienced with international repatriation.",
+    "cargo_airports": ["CAI", "HRG", "SSH"],
+    "key_document": "Egyptian death certificate (in Arabic) with certified English translation and MOFA attestation",
+    "source": "FCDO Egypt travel advice, updated 2025; British Embassy Cairo guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "egypt-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "7-14 days",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "7-14 days in tourist areas. Longer in Cairo.",
+      "key_documents": [
+        "Egyptian death certificate (in Arabic)",
+        "Certified English translation",
+        "MOFA attestation stamp",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Police clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "EgyptAir", "routes": "CAI to LHR"},
+        {"name": "British Airways", "routes": "CAI to LHR"},
+        {"name": "Charter cargo from HRG and SSH", "routes": "to UK airports"}
+      ],
+      "special_rules": [
+        "Niyaba (public prosecutor) orders post-mortem for all unnatural or sudden deaths. Cannot be bypassed. Adds 2-6 weeks.",
+        "No cremation facilities in Egypt. All repatriations are full body.",
+        "Documentation is in Arabic. Certified English translation and MOFA attestation both required.",
+        "Tourist area cases (Hurghada, Sharm) processed faster than Cairo."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Egyptian documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Cairo can register the death and advise.",
+      "seo_title": "Egypt Repatriation Guide for British Families",
+      "seo_description": "Someone has died in Egypt. Hurghada, Sharm and Cairo cases handled. Repatriation typically takes 14-28 days. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "egypt-to-ireland",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "7-14 days",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "7-14 days in tourist areas. Longer in Cairo.",
+      "key_documents": [
+        "Egyptian death certificate with certified English translation",
+        "MOFA attestation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Police clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "EgyptAir", "routes": "CAI to DUB (via LHR or AMS)"},
+        {"name": "Emirates", "routes": "CAI to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Cairo handles consular matters for Irish nationals.",
+        "Niyaba post-mortem and MOFA attestation apply identically to Irish repatriations.",
+        "No cremation in Egypt. All Irish repatriations are full body."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Egyptian documentation must be in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Cairo can register the death and advise.",
+      "seo_title": "Egypt to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Egypt and needs to come home to Ireland. Repatriation takes 14-28 days. All documentation handled. Contact us 24/7."
+    }
+  ]
+}

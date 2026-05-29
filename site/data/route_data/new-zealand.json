@@ -1,0 +1,91 @@
+{
+  "origin": {
+    "key": "new-zealand",
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/new-zealand",
+    "embassy_city": "Wellington",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-wellington",
+    "consulates": ["Auckland", "Christchurch"],
+    "emergency_number": "111",
+    "death_registration": "Births Deaths and Marriages New Zealand",
+    "investigating_authority": "New Zealand Coroner",
+    "post_mortem_trigger": "Unexpected, unnatural, violent, or deaths where cause is uncertain. New Zealand coroner involvement is broader than UK.",
+    "documentation_language": "English throughout. No translation required.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["AKL", "WLG", "CHC"],
+    "key_document": "New Zealand death certificate (Births Deaths and Marriages, in English)",
+    "source": "FCDO New Zealand travel advice, updated 2025; British High Commission Wellington guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "new-zealand-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "New Zealand death certificate (BDM-issued)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Air New Zealand", "routes": "AKL to LHR (via SIN or LAX)"},
+        {"name": "Qantas", "routes": "AKL to LHR (via SYD)"},
+        {"name": "Emirates", "routes": "AKL to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Documentation is in English throughout. No translation required.",
+        "New Zealand coroner has broader jurisdiction than UK. Unexpected deaths, unnatural deaths, and deaths where cause is uncertain are all referred.",
+        "Cargo transit to UK takes 30-40 hours via Singapore or Los Angeles."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. New Zealand documentation is in English and typically accepted directly. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. British High Commission Wellington and consulates in Auckland and Christchurch can register the death and advise.",
+      "seo_title": "New Zealand to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in New Zealand. Repatriation to the UK takes 10-21 days. NZ documentation and long-haul cargo flights explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "new-zealand-to-ireland",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "New Zealand death certificate",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit"
+      ],
+      "airlines": [
+        {"name": "Air New Zealand", "routes": "AKL to DUB (via LHR or SIN)"},
+        {"name": "Emirates", "routes": "AKL to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Large Irish-New Zealand diaspora. Well-established corridor.",
+        "Irish Embassy in Wellington handles consular matters.",
+        "Documentation in English. No translation required."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. Documentation in English and typically accepted directly. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Wellington can register the death and advise.",
+      "seo_title": "New Zealand to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in New Zealand and needs to come home to Ireland. 10-21 days. Documentation in English. All handled. Contact us 24/7."
+    }
+  ]
+}

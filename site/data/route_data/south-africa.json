@@ -1,0 +1,90 @@
+{
+  "origin": {
+    "key": "south-africa",
+    "name": "South Africa",
+    "slug": "south-africa",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/south-africa",
+    "embassy_city": "Pretoria",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-pretoria",
+    "consulates": ["Cape Town", "Durban", "Johannesburg"],
+    "emergency_number": "10177 (ambulance), 10111 (police)",
+    "death_registration": "Local Department of Home Affairs",
+    "investigating_authority": "South African Police Service (SAPS) and state pathologist",
+    "post_mortem_trigger": "Unexpected, violent, suspicious, or unnatural deaths",
+    "death_certificate_name": "BI-1663 (Department of Home Affairs death certificate)",
+    "documentation_language": "English throughout. No translation required.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["JNB", "CPT", "DUR"],
+    "key_document": "South African death certificate (BI-1663, Home Affairs registered)",
+    "source": "FCDO South Africa travel advice, updated 2025; British High Commission Pretoria guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "south-africa-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "South African death certificate (BI-1663)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "JNB, CPT to LHR (direct)"},
+        {"name": "South African Airways", "routes": "JNB to LHR"},
+        {"name": "Virgin Atlantic", "routes": "JNB to LHR"}
+      ],
+      "special_rules": [
+        "Documentation is in English throughout. No translation required.",
+        "SAPS and state pathologist involved for unexpected or unnatural deaths.",
+        "Well-developed funeral sector with direct long-haul flight connections to Heathrow."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. South African documentation is in English and typically accepted directly. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Pretoria and consulates in Cape Town and Durban can register the death and advise.",
+      "seo_title": "South Africa to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in South Africa. Repatriation to the UK takes 10-21 days. BI-1663 certificate and direct flights handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "south-africa-to-ireland",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "South African death certificate (BI-1663)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "JNB to DUB (via LHR)"},
+        {"name": "Emirates", "routes": "JNB, CPT to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Pretoria handles consular matters.",
+        "Documentation in English throughout. No translation required."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. Documentation is in English and typically accepted directly. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Pretoria can register the death and advise.",
+      "seo_title": "South Africa to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in South Africa and needs to come home to Ireland. Repatriation takes 10-21 days. BI-1663 and all documentation handled. Contact us."
+    }
+  ]
+}

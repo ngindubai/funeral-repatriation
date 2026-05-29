@@ -1,0 +1,90 @@
+{
+  "origin": {
+    "key": "ghana",
+    "name": "Ghana",
+    "slug": "ghana",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/ghana",
+    "embassy_city": "Accra",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-accra",
+    "consulates": [],
+    "emergency_number": "191 or 112",
+    "death_registration": "Births and Deaths Registry of Ghana",
+    "investigating_authority": "Ghana Police Service",
+    "post_mortem_trigger": "Unexpected, violent, or unattended deaths",
+    "documentation_language": "English throughout. No translation required.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["ACC"],
+    "key_document": "Ghanaian death certificate (Births and Deaths Registry, in English)",
+    "source": "FCDO Ghana travel advice, updated 2025; British High Commission Accra guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "ghana-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Ghanaian death certificate (Births and Deaths Registry)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Police report (if required)",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "ACC to LHR (direct)"},
+        {"name": "KLM", "routes": "ACC to LHR (via AMS)"},
+        {"name": "Emirates", "routes": "ACC to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Documentation is in English throughout. No translation required.",
+        "Deaths must be registered with the Births and Deaths Registry before any other step.",
+        "Police report required for unexpected or unattended deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Ghanaian documentation is in English and typically accepted directly. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Accra can register the death and advise.",
+      "seo_title": "Ghana to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Ghana. Repatriation to the UK takes 2-4 weeks. Births and Deaths Registry, police report, and Accra cargo flights. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "ghana-to-ireland",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Ghanaian death certificate",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Police report (if required)"
+      ],
+      "airlines": [
+        {"name": "KLM", "routes": "ACC to DUB (via AMS)"},
+        {"name": "Emirates", "routes": "ACC to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Accra handles consular matters.",
+        "Documentation in English. No translation required."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. Documentation in English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Accra can register the death and advise.",
+      "seo_title": "Ghana to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Ghana and needs to come home to Ireland. 2-4 weeks. Accra cargo and all documentation handled. Contact us 24/7."
+    }
+  ]
+}

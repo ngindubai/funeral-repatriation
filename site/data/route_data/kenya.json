@@ -1,0 +1,95 @@
+{
+  "origin": {
+    "key": "kenya",
+    "name": "Kenya",
+    "slug": "kenya",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/kenya",
+    "embassy_city": "Nairobi",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-nairobi",
+    "consulates": [],
+    "emergency_number": "999 or 112",
+    "death_registration": "Civil registrar at the district office",
+    "investigating_authority": "Kenya Police Service and government pathologist",
+    "post_mortem_trigger": "Unexpected, violent, unnatural, or suspicious deaths",
+    "port_health_required": true,
+    "port_health_note": "Port Health clearance is an additional mandatory step in Kenya. Required before export of human remains. Not required in most other countries.",
+    "safari_transfer_note": "Deaths in safari areas (Masai Mara, Amboseli, Tsavo, Laikipia) require road or charter aircraft transfer to Nairobi before any documentation can begin. Add significant time.",
+    "embalming_certificate": true,
+    "embalming_note": "Professional embalming available in Nairobi. Quality is limited outside the capital.",
+    "cremation_available": true,
+    "cargo_airports": ["NBO"],
+    "key_document": "Kenyan death certificate and Port Health clearance",
+    "source": "FCDO Kenya travel advice, updated 2025; British High Commission Nairobi guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "kenya-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Kenyan death certificate",
+        "Embalming certificate",
+        "Port Health clearance (freedom from infection)",
+        "Police report/clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Kenya Airways", "routes": "NBO to LHR (direct)"},
+        {"name": "British Airways", "routes": "NBO to LHR (direct)"},
+        {"name": "Emirates", "routes": "NBO to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Port Health clearance is mandatory and specific to Kenya. Cannot be bypassed.",
+        "Safari area deaths require transfer to Nairobi before documentation can begin. Add significant time.",
+        "Professional embalming limited to Nairobi. Remote area deaths require body transfer to the capital before preparation."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Kenyan documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Nairobi can register the death and advise.",
+      "seo_title": "Kenya to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Kenya. Repatriation to the UK takes 14-28 days. Port Health clearance, safari transfers, and Nairobi cargo all handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "kenya-to-ireland",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Kenyan death certificate",
+        "Embalming certificate",
+        "Port Health clearance",
+        "Police report/clearance",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Kenya Airways", "routes": "NBO to DUB (via AMS or LHR)"},
+        {"name": "Emirates", "routes": "NBO to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Nairobi handles consular matters.",
+        "Port Health clearance applies identically to Irish repatriations.",
+        "Safari area transfer to Nairobi required before any process can begin."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All documentation in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Nairobi can register the death and advise.",
+      "seo_title": "Kenya to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Kenya and needs to come home to Ireland. 14-28 days. Port Health, safari transfers, and Nairobi cargo handled. Contact us 24/7."
+    }
+  ]
+}

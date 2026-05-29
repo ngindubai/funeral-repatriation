@@ -1,0 +1,90 @@
+{
+  "origin": {
+    "key": "sri-lanka",
+    "name": "Sri Lanka",
+    "slug": "sri-lanka",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/sri-lanka",
+    "embassy_city": "Colombo",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-colombo",
+    "consulates": [],
+    "emergency_number": "119 (police), 110 (ambulance)",
+    "death_registration": "Registrar General's Department",
+    "investigating_authority": "Sri Lanka Police and government medical officer",
+    "post_mortem_trigger": "Unexpected, violent, or suspicious deaths",
+    "death_certificate_name": "Death certificate from Registrar General's Department",
+    "death_certificate_language": "Sinhala. English translation available.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["CMB"],
+    "key_document": "Death certificate (with certified English translation) and embalming certificate",
+    "source": "FCDO Sri Lanka travel advice, updated 2025; British High Commission Colombo guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "sri-lanka-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Death certificate (with certified English translation)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "SriLankan Airlines", "routes": "CMB to LHR (direct)"},
+        {"name": "British Airways", "routes": "CMB to LHR (via SIN or DXB)"},
+        {"name": "Emirates", "routes": "CMB to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Death certificate is in Sinhala. Certified English translation required for UK purposes.",
+        "Police must be notified for unexpected deaths before any process can begin.",
+        "British High Commission in Colombo handles all consular matters."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Sri Lankan documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Colombo can register the death and advise.",
+      "seo_title": "Sri Lanka to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Sri Lanka. Repatriation to the UK takes 14-28 days. Colombo cargo flights and all documentation handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "sri-lanka-to-ireland",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Death certificate with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "SriLankan Airlines", "routes": "CMB to DUB (via LHR)"},
+        {"name": "Emirates", "routes": "CMB to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish consular matters for Sri Lanka are handled via the Irish Embassy in New Delhi, India.",
+        "Certified English translation of death certificate required identically to UK repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All documentation in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. Irish consular matters for Sri Lanka handled via the Irish Embassy in New Delhi.",
+      "seo_title": "Sri Lanka to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Sri Lanka and needs to come home to Ireland. 14-28 days. Colombo cargo and all documentation handled. Contact us 24/7."
+    }
+  ]
+}

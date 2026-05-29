@@ -1,0 +1,95 @@
+{
+  "origin": {
+    "key": "italy",
+    "name": "Italy",
+    "slug": "italy",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/italy",
+    "embassy_city": "Rome",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-rome",
+    "consulates": ["Milan", "Naples", "Florence", "Venice"],
+    "emergency_number": "112",
+    "death_registration": "Local comune (municipality)",
+    "investigating_authority": "Procuratore della Repubblica",
+    "post_mortem_trigger": "Sudden, violent, unexplained, or suspicious deaths",
+    "death_certificate_name": "Certificato di morte / Atti di morte",
+    "embalming_name": "Imbalsamazione or tanatoprassi",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["FCO", "MXP", "LIN", "VCE", "NAP", "BLQ"],
+    "key_document": "Certificato di morte (from the local comune)",
+    "nulla_osta_required": true,
+    "nulla_osta_note": "The nulla osta is the clearance document from the comune or procuratore authorising release of the body. Cannot be bypassed.",
+    "source": "FCDO Italy travel advice, updated 2025; British Embassy Rome guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "italy-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "5-10 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days for full documentation",
+      "key_documents": [
+        "Certificato di morte (death certificate from comune)",
+        "Nulla osta (clearance from comune or procuratore)",
+        "Embalming certificate (certificato di imbalsamazione)",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "FCO, MXP to LHR"},
+        {"name": "easyJet", "routes": "FCO, MXP, NAP, VCE to UK regional airports"},
+        {"name": "ITA Airways", "routes": "FCO, MXP to LHR"}
+      ],
+      "special_rules": [
+        "Procuratore della Repubblica orders a post-mortem for sudden, violent, or unexplained deaths. Body cannot be released until procuratore issues the nulla osta.",
+        "Processing times vary significantly between northern and southern Italian comuni. Milan and Rome are faster than Palermo or Reggio Calabria.",
+        "Deaths in Sardinia or Sicily require internal transfer to mainland airports (FCO or MXP) before international cargo."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Italian documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Rome and consulates in Milan, Naples, and Venice can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Italy to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Italy. Repatriation to the UK takes 10-21 days. Comune process, nulla osta, and cargo flights all handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "italy-to-ireland",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "5-10 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "5-14 days",
+      "key_documents": [
+        "Certificato di morte",
+        "Nulla osta",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Ryanair cargo", "routes": "FCO, MXP, BGY, PSA to DUB, ORK"},
+        {"name": "Aer Lingus", "routes": "FCO, MXP to DUB"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Rome handles consular matters for Irish nationals.",
+        "Process identical to UK repatriation. Nulla osta required before body can be released.",
+        "Island deaths (Sicily, Sardinia) require mainland transfer before international cargo."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Italian documentation must be in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Rome can register the death and advise.",
+      "seo_title": "Italy to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Italy and needs to come home to Ireland. Repatriation takes 10-21 days. Nulla osta and all documentation handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "origin": {
+    "key": "pakistan",
+    "name": "Pakistan",
+    "slug": "pakistan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/pakistan",
+    "embassy_city": "Islamabad",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-islamabad",
+    "consulates": ["Karachi", "Lahore"],
+    "emergency_number": "15 (police), 115 (ambulance)",
+    "death_registration": "National Database and Registration Authority (NADRA) or local Union Council",
+    "investigating_authority": "Pakistan Police and government forensic pathologist",
+    "post_mortem_trigger": "Unexpected, violent, or suspicious deaths",
+    "death_certificate_language": "Urdu. Certified English translation required.",
+    "security_note": "Parts of Pakistan are subject to FCDO travel warnings. Deaths in conflict-affected or restricted areas add significant complexity. Check FCDO guidance for the specific area.",
+    "embalming_certificate": true,
+    "embalming_note": "Quality embalming available in Islamabad, Karachi, and Lahore. Limited in smaller cities.",
+    "cremation_available": false,
+    "cremation_note": "Cremation is effectively unavailable in Pakistan. All repatriations are full body.",
+    "cargo_airports": ["ISB", "KHI", "LHE"],
+    "key_document": "Pakistan death certificate (NADRA-issued) with certified English translation",
+    "source": "FCDO Pakistan travel advice, updated 2025; British High Commission Islamabad guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "pakistan-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "high",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-3 weeks",
+        "complex": "8-16 weeks or longer"
+      },
+      "doc_processing_time": "14-30 days minimum",
+      "key_documents": [
+        "Pakistan death certificate (NADRA or Union Council issued)",
+        "Certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Pakistan International Airlines", "routes": "ISB, KHI, LHE to LHR (direct)"},
+        {"name": "British Airways", "routes": "ISB to LHR"},
+        {"name": "Emirates", "routes": "KHI, ISB to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Death certificate is in Urdu. Certified English translation is mandatory.",
+        "No cremation in Pakistan. All repatriations are full body.",
+        "Deaths in conflict-affected or FCDO-restricted areas add significant complexity. Seek specialist advice immediately.",
+        "Quality embalming limited to major cities."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Pakistani documentation must be in certified English. The coroner for the district is notified. Cases involving deaths in high-risk areas may require additional coroner review.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. British High Commission Islamabad and consulates in Karachi and Lahore can register the death and advise.",
+      "seo_title": "Pakistan to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Pakistan. Repatriation to the UK takes 3-6 weeks. Urdu documentation, direct flights from Islamabad. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "pakistan-to-ireland",
+      "template_variant": "C",
+      "complexity": "high",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-3 weeks",
+        "complex": "8-16 weeks"
+      },
+      "doc_processing_time": "14-30 days minimum",
+      "key_documents": [
+        "Pakistan death certificate with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "PIA", "routes": "ISB, KHI to DUB (via LHR)"},
+        {"name": "Emirates", "routes": "KHI to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Islamabad handles consular matters.",
+        "Certified English translation required identically to UK repatriations.",
+        "No cremation available in Pakistan."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Islamabad can register the death and advise.",
+      "seo_title": "Pakistan to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Pakistan and needs to come home to Ireland. 3-6 weeks. Urdu documentation and all handled. Contact us 24/7."
+    }
+  ]
+}

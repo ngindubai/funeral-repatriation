@@ -1,0 +1,92 @@
+{
+  "origin": {
+    "key": "vietnam",
+    "name": "Vietnam",
+    "slug": "vietnam",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/vietnam",
+    "embassy_city": "Hanoi",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-hanoi",
+    "consulates": ["Ho Chi Minh City"],
+    "emergency_number": "113 (police), 115 (ambulance)",
+    "death_registration": "Local civil registry (Uy ban nhan dan)",
+    "investigating_authority": "Vietnam Police and forensic authorities",
+    "post_mortem_trigger": "Unexpected, violent, road accident, or suspicious deaths",
+    "death_certificate_name": "Giay chung tu (in Vietnamese only)",
+    "death_certificate_language": "Vietnamese only. Certified English translation required.",
+    "road_accident_note": "Road accidents are the leading cause of British and Irish tourist deaths in Vietnam. Police investigation adds time.",
+    "two_consulate_note": "British Embassy in Hanoi covers north Vietnam. Consulate General in Ho Chi Minh City covers south Vietnam. Contact the correct office.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["HAN", "SGN"],
+    "key_document": "Giay chung tu (Vietnamese death certificate) with certified English translation",
+    "source": "FCDO Vietnam travel advice, updated 2025; British Embassy Hanoi guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "vietnam-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Giay chung tu (Vietnamese death certificate) with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Vietnam Airlines", "routes": "HAN, SGN to LHR (via AMS or CDG)"},
+        {"name": "Cathay Pacific", "routes": "HAN, SGN to LHR (via HKG)"},
+        {"name": "Emirates", "routes": "HAN, SGN to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Death certificate is in Vietnamese only. Certified English translation is mandatory.",
+        "Road accidents trigger police investigation. Police report must be obtained before process can begin.",
+        "British Embassy in Hanoi covers north Vietnam. Consulate General in HCMC covers south."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Vietnamese documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. British Embassy Hanoi (north) or Consulate General Ho Chi Minh City (south).",
+      "seo_title": "Vietnam to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Vietnam. Repatriation to the UK takes 14-21 days. Vietnamese documentation and cargo flights from Hanoi or HCMC handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "vietnam-to-ireland",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-21 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Giay chung tu with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Vietnam Airlines", "routes": "HAN, SGN to DUB (via AMS)"},
+        {"name": "Emirates", "routes": "HAN, SGN to DUB (via DXB)"}
+      ],
+      "special_rules": [
+        "Irish consular matters for Vietnam are handled via the Irish Embassy in Bangkok, Thailand.",
+        "Certified English translation of giay chung tu required identically to UK repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Vietnamese documentation must be in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. Irish consular matters for Vietnam handled via the Irish Embassy in Bangkok.",
+      "seo_title": "Vietnam to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Vietnam and needs to come home to Ireland. Repatriation takes 14-21 days. Vietnamese documentation all handled. Contact us 24/7."
+    }
+  ]
+}

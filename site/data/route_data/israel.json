@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "key": "israel",
+    "name": "Israel",
+    "slug": "israel",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/israel",
+    "embassy_city": "Tel Aviv",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-tel-aviv",
+    "consulates": [],
+    "emergency_number": "100 (police), 101 (ambulance/Magen David Adom)",
+    "death_registration": "Ministry of Interior (Misrad Hapnim)",
+    "investigating_authority": "Israel Police and Israel Institute of Forensic Medicine",
+    "post_mortem_trigger": "Unexpected, unnatural, or suspicious deaths. Post-mortem contested by Orthodox Jewish communities.",
+    "death_certificate_name": "Teudat Petira (in Hebrew)",
+    "death_certificate_language": "Hebrew. Certified English translation required.",
+    "religious_sensitivity_note": "Jewish law requires burial as soon as possible. Post-mortem is deeply contested in Orthodox communities. Families should be aware this may cause tension with authorities.",
+    "embalming_certificate": true,
+    "embalming_note": "Embalming is not standard in Israel due to Jewish burial traditions. Must be specifically arranged for international repatriation.",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not available in Israel. Jewish law prohibits cremation.",
+    "cargo_airports": ["TLV"],
+    "key_document": "Teudat Petira (Israeli death certificate) with certified English translation",
+    "source": "FCDO Israel travel advice, updated 2025; British Embassy Tel Aviv guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "israel-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-10 days",
+      "key_documents": [
+        "Teudat Petira (Israeli death certificate) with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "El Al Cargo", "routes": "TLV to LHR (direct)"},
+        {"name": "British Airways", "routes": "TLV to LHR"}
+      ],
+      "special_rules": [
+        "Death certificate (teudat petira) is in Hebrew. Certified English translation mandatory.",
+        "Cremation is not available in Israel. All repatriations are full body.",
+        "Embalming must be specifically requested as it is not standard Jewish burial practice.",
+        "Jewish families should be aware that post-mortem is contested in Orthodox communities, which may affect speed of documentation."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Israeli documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tel Aviv can register the death and advise.",
+      "seo_title": "Israel to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Israel. Repatriation to the UK takes 7-14 days. Hebrew documentation and Tel Aviv cargo flights explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "israel-to-ireland",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-10 days",
+      "key_documents": [
+        "Teudat Petira with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "El Al", "routes": "TLV to DUB (direct)"},
+        {"name": "Ryanair", "routes": "TLV to DUB"}
+      ],
+      "special_rules": [
+        "El Al operates a direct TLV to DUB route.",
+        "Irish Embassy in Tel Aviv handles consular matters.",
+        "Certified English translation required identically to UK repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Israeli documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Tel Aviv can register the death and advise.",
+      "seo_title": "Israel to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Israel and needs to come home to Ireland. 7-14 days. Hebrew documentation and Tel Aviv cargo flights handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "origin": {
+    "key": "portugal",
+    "name": "Portugal",
+    "slug": "portugal",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/portugal",
+    "embassy_city": "Lisbon",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-lisbon",
+    "consulates": ["Porto", "Portimao"],
+    "emergency_number": "112",
+    "death_registration": "Local conservatoria do registo civil",
+    "investigating_authority": "Ministerio Publico (public prosecutor)",
+    "post_mortem_trigger": "Sudden, violent, suspicious, or unexplained deaths",
+    "death_certificate_name": "Certidao de obito",
+    "multilingual_certificate": true,
+    "multilingual_note": "A multilingual death certificate is available under EU convention and may be accepted directly without separate translation.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "algarve_note": "Deaths in the Algarve are the most common. Local funeral directors are highly experienced with British repatriation requirements.",
+    "cargo_airports": ["LIS", "OPO", "FAO"],
+    "key_document": "Certidao de obito (multilingual version available)",
+    "source": "FCDO Portugal travel advice, updated 2025; British Embassy Lisbon guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "portugal-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days for full documentation",
+      "key_documents": [
+        "Certidao de obito (multilingual version if available)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Transit authorisation",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "TAP Air Portugal", "routes": "LIS, OPO to LHR, LGW, MAN"},
+        {"name": "British Airways", "routes": "LIS to LHR"},
+        {"name": "easyJet", "routes": "FAO, LIS, OPO to UK regional airports"}
+      ],
+      "special_rules": [
+        "Ministerio Publico orders a post-mortem for sudden, violent, suspicious, or unexplained deaths. Adds 1-4 weeks.",
+        "Algarve funeral directors are experienced with British repatriations. Faro airport (FAO) has direct UK connections.",
+        "Multilingual death certificate under EU convention may remove need for separate certified translation."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. A multilingual EU death certificate from Portugal may be accepted directly. The coroner for the district is notified. Straightforward cases proceed to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Lisbon can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Portugal to UK Repatriation: Guidance for British Families",
+      "seo_description": "Repatriation from Portugal to the UK takes 7-14 days. Algarve and Lisbon cases handled. All documentation arranged. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "portugal-to-ireland",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Certidao de obito (multilingual version if available)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Transit authorisation"
+      ],
+      "airlines": [
+        {"name": "Ryanair", "routes": "FAO, LIS, OPO to DUB, ORK, NOC"},
+        {"name": "Aer Lingus", "routes": "LIS, FAO to DUB"}
+      ],
+      "special_rules": [
+        "Ferry from Lisbon to Cork is not available. All repatriations are by air cargo.",
+        "Irish Embassy in Lisbon handles consular matters.",
+        "Multilingual death certificate may remove the need for a separate certified English translation."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. A multilingual EU death certificate may be accepted directly. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Lisbon can register the death and advise.",
+      "seo_title": "Portugal to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Portugal and needs to come home to Ireland. Repatriation takes 7-14 days. All documentation handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "key": "indonesia",
+    "name": "Indonesia",
+    "slug": "indonesia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/indonesia",
+    "embassy_city": "Jakarta",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-jakarta",
+    "consulates": ["Bali", "Surabaya"],
+    "emergency_number": "112",
+    "death_registration": "Local civil registry (Dinas Kependudukan dan Catatan Sipil)",
+    "investigating_authority": "Indonesia National Police",
+    "post_mortem_trigger": "Unexpected, violent, or suspicious deaths",
+    "death_certificate_name": "Surat keterangan kematian (in Bahasa Indonesia)",
+    "death_certificate_language": "Bahasa Indonesia. Certified English translation required.",
+    "bali_transfer_note": "Deaths in Bali require internal transfer to Jakarta (Soekarno-Hatta, CGK) for international cargo. Add 1-2 days. Most British deaths in Indonesia occur in Bali.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cremation_note": "Cremation available in Bali (Hindu tradition) and Jakarta. Particularly straightforward for Bali deaths.",
+    "cargo_airports": ["CGK"],
+    "key_document": "Surat keterangan kematian (with certified English translation)",
+    "source": "FCDO Indonesia travel advice, updated 2025; British Embassy Jakarta guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "indonesia-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Surat keterangan kematian with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Police report (if required)",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Garuda Indonesia", "routes": "CGK to LHR (via SIN)"},
+        {"name": "Singapore Airlines Cargo", "routes": "CGK to LHR (via SIN)"},
+        {"name": "Emirates", "routes": "CGK to LHR (via DXB)"}
+      ],
+      "special_rules": [
+        "Bali deaths require internal transfer to Jakarta (CGK) before international cargo. Add 1-2 days.",
+        "Death certificate in Bahasa Indonesia. Certified English translation mandatory.",
+        "Police must be notified for all unexpected deaths. Province-specific procedures vary."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Indonesian documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Jakarta can register the death and advise.",
+      "seo_title": "Indonesia to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Indonesia. Bali and Jakarta cases handled. Repatriation to the UK takes 14-28 days. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "indonesia-to-ireland",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Surat keterangan kematian with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Emirates", "routes": "CGK to DUB (via DXB)"},
+        {"name": "Etihad", "routes": "CGK to DUB (via AUH)"}
+      ],
+      "special_rules": [
+        "Bali transfer to Jakarta required before international departure.",
+        "Irish consular matters for Indonesia handled via the Irish Embassy in Singapore."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Indonesian documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. Irish consular matters for Indonesia handled via the Irish Embassy in Singapore.",
+      "seo_title": "Indonesia to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Indonesia and needs to come home to Ireland. Bali and Jakarta cases handled. 14-28 days. Contact us 24/7."
+    }
+  ]
+}

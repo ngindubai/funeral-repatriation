@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "key": "mexico",
+    "name": "Mexico",
+    "slug": "mexico",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/mexico",
+    "embassy_city": "Mexico City",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-mexico-city",
+    "consulates": ["Cancun", "Guadalajara", "Monterrey", "Tijuana"],
+    "emergency_number": "911",
+    "death_registration": "Registro Civil (civil registry)",
+    "investigating_authority": "Ministerio Publico (public prosecutor) and SEMEFO",
+    "post_mortem_trigger": "All violent, sudden, suspicious, or unexplained deaths. SEMEFO routinely involved for non-natural deaths.",
+    "death_certificate_name": "Acta de defuncion (in Spanish)",
+    "death_certificate_language": "Spanish. Certified English translation required.",
+    "semefo_note": "SEMEFO (Servicio Medico Forense) is Mexico's forensic medical service. All unexpected or violent deaths are referred to SEMEFO. Body cannot be released until SEMEFO and Ministerio Publico authorise release.",
+    "resort_note": "Deaths in Cancun, Los Cabos, and Puerto Vallarta handled locally but often involve SEMEFO. Tourist police experienced with foreign family needs.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cargo_airports": ["MEX", "CUN", "GDL", "MTY"],
+    "key_document": "Acta de defuncion with certified English translation and SEMEFO release document",
+    "source": "FCDO Mexico travel advice, updated 2025; British Embassy Mexico City guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "mexico-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-12 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Acta de defuncion with certified English translation",
+        "SEMEFO release document",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "British Airways", "routes": "MEX to LHR (direct)"},
+        {"name": "Aeromexico", "routes": "MEX to LHR (via CDG)"},
+        {"name": "American Airlines", "routes": "MEX to LHR (via DFW or JFK)"}
+      ],
+      "special_rules": [
+        "SEMEFO examination is mandatory for all violent, sudden, or unexplained deaths. Cannot be bypassed.",
+        "Acta de defuncion is in Spanish. Certified English translation mandatory.",
+        "Resort deaths (Cancun, Los Cabos) handled locally but still involve SEMEFO for unexpected deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Mexican documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. British Embassy Mexico City and consulate in Cancun can register the death and advise.",
+      "seo_title": "Mexico to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Mexico. Repatriation to the UK takes 14-28 days. SEMEFO release, Spanish documentation, and cargo flights explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "mexico-to-ireland",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "14-28 days",
+        "fast": "10-14 days",
+        "complex": "4-12 weeks"
+      },
+      "doc_processing_time": "7-21 days",
+      "key_documents": [
+        "Acta de defuncion with certified English translation",
+        "SEMEFO release document",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "Aeromexico", "routes": "MEX to DUB (via CDG or AMS)"},
+        {"name": "Iberia", "routes": "MEX to DUB (via MAD)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Mexico City handles consular matters.",
+        "SEMEFO and certified English translation requirements apply identically to Irish repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Mexican documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Mexico City can register the death and advise.",
+      "seo_title": "Mexico to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Mexico and needs to come home to Ireland. 14-28 days. SEMEFO release and all documentation handled. Contact us 24/7."
+    }
+  ]
+}

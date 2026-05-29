@@ -1,0 +1,92 @@
+{
+  "origin": {
+    "key": "morocco",
+    "name": "Morocco",
+    "slug": "morocco",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/morocco",
+    "embassy_city": "Rabat",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-rabat",
+    "consulates": ["Casablanca", "Marrakech", "Agadir"],
+    "emergency_number": "190 (police), 150 (ambulance), 15 (SAMU)",
+    "death_registration": "Bureau d'Etat Civil (civil registry)",
+    "investigating_authority": "Parquet (public prosecutor) for sudden or suspicious deaths",
+    "post_mortem_trigger": "Sudden, violent, or suspicious deaths",
+    "death_certificate_name": "Acte de Deces (in Arabic and French)",
+    "death_certificate_language": "Arabic and French. Certified English translation required.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cremation_note": "Cremation available for non-Muslims at designated facilities in Casablanca.",
+    "cargo_airports": ["CMN", "RAK", "AGA"],
+    "key_document": "Acte de Deces with certified English translation",
+    "source": "FCDO Morocco travel advice, updated 2025; British Embassy Rabat guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "morocco-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "2-4 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Acte de Deces (in Arabic and French)",
+        "Certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Consular certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Royal Air Maroc", "routes": "CMN to LHR, LGW, MAN"},
+        {"name": "easyJet", "routes": "CMN, RAK, AGA to LGW, MAN, LTN, BRS"}
+      ],
+      "special_rules": [
+        "Acte de Deces is in Arabic and French. Certified English translation required.",
+        "Cremation available for non-Muslims only at designated Casablanca facilities.",
+        "Public prosecutor (parquet) involvement adds time for sudden or unexplained deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Moroccan documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Rabat can register the death and advise.",
+      "seo_title": "Morocco to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Morocco. Repatriation to the UK takes 7-14 days. Arabic/French documentation and cargo flights from Casablanca all handled. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "morocco-to-ireland",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "7-14 days",
+        "fast": "5-7 days",
+        "complex": "2-4 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Acte de Deces with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Ryanair", "routes": "RAK, AGA, FEZ to DUB"},
+        {"name": "Royal Air Maroc", "routes": "CMN to DUB (via CDG or LHR)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Rabat handles consular matters.",
+        "Certified English translation of Acte de Deces required identically to UK repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English. The Coroner for the district is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Rabat can register the death and advise.",
+      "seo_title": "Morocco to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Morocco and needs to come home to Ireland. 7-14 days. Arabic/French documentation and cargo flights handled. Contact us 24/7."
+    }
+  ]
+}

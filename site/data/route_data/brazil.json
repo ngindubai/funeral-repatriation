@@ -1,0 +1,92 @@
+{
+  "origin": {
+    "key": "brazil",
+    "name": "Brazil",
+    "slug": "brazil",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/brazil",
+    "embassy_city": "Brasilia",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-brasilia",
+    "consulates": ["Sao Paulo", "Rio de Janeiro", "Recife", "Porto Alegre"],
+    "emergency_number": "192 (SAMU ambulance), 190 (police)",
+    "death_registration": "Cartorio de Registro Civil",
+    "investigating_authority": "Instituto Medico Legal (IML) and Ministerio Publico",
+    "post_mortem_trigger": "All violent, sudden, suspicious, or unexplained deaths referred to IML",
+    "death_certificate_name": "Certidao de obito (from cartorio de registro civil)",
+    "death_certificate_language": "Portuguese. Certified English translation required.",
+    "iml_note": "IML (Instituto Medico Legal) is Brazil's forensic service. Body cannot be released until IML examination is complete and Ministerio Publico issues authorisation.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "state_variation_note": "Brazil has 26 states and the Federal District, each with its own IML procedures. Sao Paulo and Rio have higher caseloads and sometimes slower processing.",
+    "cargo_airports": ["GRU", "GIG", "BSB", "REC", "POA"],
+    "key_document": "Certidao de obito with certified English translation and IML release document",
+    "source": "FCDO Brazil travel advice, updated 2025; British Embassy Brasilia guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "brazil-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-3 weeks",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "14-30 days",
+      "key_documents": [
+        "Certidao de obito with certified English translation",
+        "IML release document",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "LATAM Cargo", "routes": "GRU, GIG to LHR"},
+        {"name": "British Airways", "routes": "GRU to LHR (direct)"}
+      ],
+      "special_rules": [
+        "IML examination is mandatory for all violent, sudden, or unexplained deaths. Cannot be bypassed.",
+        "Certidao de obito is in Portuguese. Certified English translation is mandatory.",
+        "Brazil's size means timelines vary significantly by state and city."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Brazilian documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. British Embassy Brasilia and Consulate General Sao Paulo can register the death and advise.",
+      "seo_title": "Brazil to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Brazil. Repatriation to the UK takes 3-6 weeks. IML release, Portuguese documentation, and Sao Paulo cargo flights explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "brazil-to-ireland",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-3 weeks",
+        "complex": "6-12 weeks"
+      },
+      "doc_processing_time": "14-30 days",
+      "key_documents": [
+        "Certidao de obito with certified English translation",
+        "IML release document",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "airlines": [
+        {"name": "TAP Air Portugal", "routes": "GRU, GIG to DUB (via LIS)"},
+        {"name": "LATAM", "routes": "GRU to DUB (via LHR or MAD)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Brasilia handles consular matters.",
+        "IML and Ministerio Publico procedures apply identically to Irish repatriations."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Brazilian documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Brasilia can register the death and advise.",
+      "seo_title": "Brazil to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Brazil and needs to come home to Ireland. Repatriation takes 3-6 weeks. IML release and all documentation handled. Contact us 24/7."
+    }
+  ]
+}

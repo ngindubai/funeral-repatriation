@@ -1,0 +1,94 @@
+{
+  "origin": {
+    "key": "japan",
+    "name": "Japan",
+    "slug": "japan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/japan",
+    "embassy_city": "Tokyo",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-tokyo",
+    "consulates": ["Osaka", "Nagoya"],
+    "emergency_number": "110 (police), 119 (ambulance/fire)",
+    "death_registration": "Local ward office (shiyakusho/kuyakusho) within 7 days",
+    "investigating_authority": "Japan Police and medical examiner (kansetsu-i)",
+    "post_mortem_trigger": "Unexpected, unnatural, or suspicious deaths. Also deaths outside hospital.",
+    "death_certificate_name": "Shibo todoke (death notification) and Shibo kenshin-sho (death certificate)",
+    "death_certificate_language": "Japanese only. Certified English translation required.",
+    "embalming_note": "Embalming is not standard practice in Japan. Must be specifically arranged. Japanese funeral homes use dry ice as standard. Request embalming explicitly.",
+    "embalming_certificate": true,
+    "cremation_available": true,
+    "cremation_note": "Cremation rate in Japan is over 99%. Returning ashes home is a well-established and straightforward option.",
+    "cargo_airports": ["NRT", "HND", "KIX"],
+    "key_document": "Shibo kenshin-sho (Japanese death certificate) with certified English translation",
+    "source": "FCDO Japan travel advice, updated 2025; British Embassy Tokyo guidance"
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "japan-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Shibo kenshin-sho (Japanese death certificate) with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Japan Airlines Cargo", "routes": "NRT, HND to LHR (direct)"},
+        {"name": "British Airways", "routes": "NRT to LHR (direct)"},
+        {"name": "ANA Cargo", "routes": "NRT, HND to LHR"}
+      ],
+      "special_rules": [
+        "Death certificate is in Japanese only. Certified English translation is mandatory.",
+        "Embalming must be specifically requested. Japanese funeral homes use dry ice as standard. Embalming is required for international repatriation.",
+        "Bringing ashes home (cremation in Japan) is significantly faster and simpler than full body repatriation.",
+        "Medical examiner (kansetsu-i) involvement for unexpected deaths outside hospital."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Japanese documentation must be in certified English. The coroner for the district is notified.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tokyo can register the death and advise.",
+      "seo_title": "Japan to UK Repatriation: Guidance for British Families",
+      "seo_description": "Someone has died in Japan. Repatriation to the UK takes 10-21 days. Japanese documentation and direct flights from Tokyo explained. Contact us 24/7."
+    },
+    {
+      "key": "ireland",
+      "name": "Ireland",
+      "dest_slug": "ireland",
+      "route_slug": "japan-to-ireland",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "10-21 days",
+        "fast": "7-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Shibo kenshin-sho with certified English translation",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Passport of the deceased"
+      ],
+      "airlines": [
+        {"name": "Japan Airlines", "routes": "NRT to DUB (via LHR or FRA)"},
+        {"name": "Finnair", "routes": "NRT to DUB (via HEL)"}
+      ],
+      "special_rules": [
+        "Irish Embassy in Tokyo handles consular matters.",
+        "Embalming must be specifically arranged as in UK repatriations.",
+        "Certified English translation of shibo kenshin-sho required."
+      ],
+      "dest_reception": "The Irish funeral director takes custody at the cargo terminal. All Japanese documentation must be in certified English. The Coroner is notified.",
+      "dest_consular_note": "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Tokyo can register the death and advise.",
+      "seo_title": "Japan to Ireland: Funeral Repatriation Guidance",
+      "seo_description": "Someone has died in Japan and needs to come home to Ireland. 10-21 days. Japanese documentation and Tokyo cargo flights handled. Contact us 24/7."
+    }
+  ]
+}
