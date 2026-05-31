@@ -1,9 +1,22 @@
-﻿---
+---
 title: "Does travel insurance cover repatriation?"
 description: "Most comprehensive travel insurance policies do cover repatriation, but with conditions. Here is what the policy typically says and what to watch for."
 slug: does-travel-insurance-cover-repatriation
 short_answer: "Most comprehensive travel insurance policies cover the cost of repatriation to the UK, usually up to a specified limit. The insurer must usually be contacted before arrangements are made. Pre-existing conditions and policy exclusions can affect claims."
 date: 2025-04-16
+related_countries:
+  - name: "Spain"
+    slug: "spain"
+  - name: "Greece"
+    slug: "greece"
+  - name: "Turkey"
+    slug: "turkey"
+  - name: "Thailand"
+    slug: "thailand"
+  - name: "Egypt"
+    slug: "egypt"
+  - name: "Morocco"
+    slug: "morocco"
 ---
 
 Travel insurance is the single most important factor in managing the cost and complexity of repatriation. Most policies cover it. But the coverage is conditional, and the conditions matter.
@@ -42,4 +55,3 @@ Insurance disputes happen. Common dispute points include pre-existing conditions
 If the insurer refuses to pay, the next step is a formal complaint to the insurer. If unresolved, the Financial Ombudsman Service handles travel insurance complaints from UK residents. The FOS is free to use and has the power to require insurers to pay.
 
 Keep all documentation: the original policy, receipts, medical certificates, death certificate, and all correspondence with the insurer.
-

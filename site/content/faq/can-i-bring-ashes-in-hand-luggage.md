@@ -4,6 +4,19 @@ description: "Most airlines allow ashes in hand luggage if you have the right co
 slug: can-i-bring-ashes-in-hand-luggage
 short_answer: "Yes, most airlines allow ashes in hand luggage in a sealed container. Carry the cremation certificate and confirm rules with your airline before travel."
 date: 2026-04-21
+related_countries:
+  - name: "Spain"
+    slug: "spain"
+  - name: "Thailand"
+    slug: "thailand"
+  - name: "India"
+    slug: "india"
+  - name: "UAE"
+    slug: "uae"
+  - name: "Australia"
+    slug: "australia"
+  - name: "Morocco"
+    slug: "morocco"
 ---
 
 In most cases, yes. Airlines usually allow human ashes in hand luggage, but only if the container and paperwork meet their requirements.
@@ -56,7 +69,7 @@ Contact your specific airline at least 48 hours before departure. Policies vary 
 
 If you are connecting through another country, check transit rules as well.
 
-For country-specific document rules, use our bringing ashes home guides.
+For country-specific ashes transport rules, see our [bringing ashes home guides](/bringing-ashes-home/) or the full guide for your country of departure.
 
 ## When hold luggage is a bad idea
 

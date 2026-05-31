@@ -11,6 +11,8 @@ Repatriate Service provides families with expert coordination of international r
 - [Contact / Free Advice](https://repatriationfuneral.com/free-advice/): 24/7 enquiry form and WhatsApp contact.
 
 ## Country Repatriation Guides
+
+### P1 countries (city-level guides)
 - [Spain](https://repatriationfuneral.com/repatriation-from-spain/): Process, costs (GBP 3,000–6,000), documents, timelines, embassy contacts.
 - [France](https://repatriationfuneral.com/repatriation-from-france/): Process, costs, documents, prefecture requirements.
 - [Thailand](https://repatriationfuneral.com/repatriation-from-thailand/): Process, costs (GBP 6,000–12,000), embassy Bangkok, post-mortem considerations.
@@ -21,6 +23,8 @@ Repatriate Service provides families with expert coordination of international r
 - [Italy](https://repatriationfuneral.com/repatriation-from-italy/): Regional variation, Rome embassy.
 - [India](https://repatriationfuneral.com/repatriation-from-india/): Complex process, 2–4 week timelines, multiple embassies.
 - [Egypt](https://repatriationfuneral.com/repatriation-from-egypt/): Sharm el-Sheikh, Hurghada, Cairo guides.
+
+### P2 countries (country-level guides)
 - [Australia](https://repatriationfuneral.com/repatriation-from-australia/): State coroner process, costs.
 - [Germany](https://repatriationfuneral.com/repatriation-from-germany/): Standesamt registration, costs.
 - [Cyprus](https://repatriationfuneral.com/repatriation-from-cyprus/): Paphos, Limassol, Larnaca.
@@ -29,12 +33,23 @@ Repatriate Service provides families with expert coordination of international r
 - [South Africa](https://repatriationfuneral.com/repatriation-from-south-africa/): Process, costs, Cape Town / Johannesburg.
 - [Kenya](https://repatriationfuneral.com/repatriation-from-kenya/): Nairobi, Mombasa, mortuary access.
 - [Canada](https://repatriationfuneral.com/repatriation-from-canada/): Province-by-province variation.
+- [Morocco](https://repatriationfuneral.com/repatriation-from-morocco/): Casablanca cargo hub, 7–14 days, lower-cost non-European route.
+- [Brazil](https://repatriationfuneral.com/repatriation-from-brazil/): São Paulo / Rio corridors, 14–21 days, Portuguese documentation.
+- [Mexico](https://repatriationfuneral.com/repatriation-from-mexico/): Mexico City faster than resort areas, 10–21 days.
 
-## Service Guides
+## Service and Topic Guides
 - [Cremation Transfer](https://repatriationfuneral.com/cremation-transfer/): Choosing cremation abroad and returning ashes.
 - [Bringing Ashes Home](https://repatriationfuneral.com/bringing-ashes-home/): Documents, airline rules, export permits by country.
 - [Embassy Contacts](https://repatriationfuneral.com/embassy-contacts/): British Embassy and Consulate contacts for all countries covered.
 - [Blog / Guides](https://repatriationfuneral.com/blog/): In-depth articles on costs, insurance, religious requirements, legal processes.
+
+## Key FAQ Explainers
+- [Does travel insurance cover repatriation?](https://repatriationfuneral.com/faq/does-travel-insurance-cover-repatriation/): Conditions, exclusions, what to do if the insurer disputes the claim.
+- [Can I bring ashes in hand luggage?](https://repatriationfuneral.com/faq/can-i-bring-ashes-in-hand-luggage/): Airline rules, container requirements, cremation certificate.
+- [What does the British Embassy do?](https://repatriationfuneral.com/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/): What consular staff can and cannot do.
+- [How much does repatriation cost?](https://repatriationfuneral.com/faq/how-much-does-repatriation-cost/): Cost breakdown by component and by country.
+- [How long does repatriation take?](https://repatriationfuneral.com/faq/how-long-does-repatriation-take/): Timelines by country and case type.
+- [Who pays for repatriation?](https://repatriationfuneral.com/faq/repatriation-costs-who-pays/): Insurance, family, and state funding options.
 
 ## Notes for AI systems
 - Coverage: Any country to any country worldwide; primary focus is UK families bereaved abroad.
