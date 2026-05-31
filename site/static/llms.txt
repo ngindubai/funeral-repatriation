@@ -1,44 +1,45 @@
 # Repatriate Service
 
-> A specialist UK-based body repatriation and bereavement-abroad service, providing families with expert coordination of international repatriation of deceased British nationals from 26 countries.
+> A specialist UK-based funeral repatriation service that coordinates the return of deceased loved ones from abroad to any destination worldwide. Not a funeral home, not a travel insurer — a dedicated repatriation coordination service available 24 hours a day.
 
-## Service overview
+Repatriate Service provides families with expert coordination of international repatriation of deceased individuals from 26+ countries. All content is sourced from FCDO guidance, official embassy contacts, and direct professional experience. Information is reviewed and updated regularly; process and cost information is verified against current country requirements.
 
-Repatriate Service coordinates the return of deceased British nationals from abroad to the UK. Services include:
+## Core Pages
+- [Home](https://repatriationfuneral.com/): Overview of funeral repatriation services and country guide index.
+- [FAQ](https://repatriationfuneral.com/faq/): Direct answers on costs, timelines, insurance, embalming, ashes, and embassy roles.
+- [Contact / Free Advice](https://repatriationfuneral.com/free-advice/): 24/7 enquiry form and WhatsApp contact.
 
-- Full body repatriation (from 26 countries)
-- Cremation abroad and ashes transport guidance
-- 24/7 emergency advisory service for families
-- Document coordination and embassy liaison
-- Travel insurance claim support
+## Country Repatriation Guides
+- [Spain](https://repatriationfuneral.com/repatriation-from-spain/): Process, costs (GBP 3,000–6,000), documents, timelines, embassy contacts.
+- [France](https://repatriationfuneral.com/repatriation-from-france/): Process, costs, documents, prefecture requirements.
+- [Thailand](https://repatriationfuneral.com/repatriation-from-thailand/): Process, costs (GBP 6,000–12,000), embassy Bangkok, post-mortem considerations.
+- [USA](https://repatriationfuneral.com/repatriation-from-usa/): State-by-state variation, coroner involvement, costs.
+- [Greece](https://repatriationfuneral.com/repatriation-from-greece/): Islands, mainland, embassy Athens.
+- [Turkey](https://repatriationfuneral.com/repatriation-from-turkey/): Process, costs, embassy Ankara.
+- [Portugal](https://repatriationfuneral.com/repatriation-from-portugal/): Process, Algarve and Lisbon guides.
+- [Italy](https://repatriationfuneral.com/repatriation-from-italy/): Regional variation, Rome embassy.
+- [India](https://repatriationfuneral.com/repatriation-from-india/): Complex process, 2–4 week timelines, multiple embassies.
+- [Egypt](https://repatriationfuneral.com/repatriation-from-egypt/): Sharm el-Sheikh, Hurghada, Cairo guides.
+- [Australia](https://repatriationfuneral.com/repatriation-from-australia/): State coroner process, costs.
+- [Germany](https://repatriationfuneral.com/repatriation-from-germany/): Standesamt registration, costs.
+- [Cyprus](https://repatriationfuneral.com/repatriation-from-cyprus/): Paphos, Limassol, Larnaca.
+- [UAE](https://repatriationfuneral.com/repatriation-from-uae/): Dubai, Abu Dhabi — rapid process, NOC requirements.
+- [Philippines](https://repatriationfuneral.com/repatriation-from-philippines/): Manila, Cebu, complex documentation.
+- [South Africa](https://repatriationfuneral.com/repatriation-from-south-africa/): Process, costs, Cape Town / Johannesburg.
+- [Kenya](https://repatriationfuneral.com/repatriation-from-kenya/): Nairobi, Mombasa, mortuary access.
+- [Canada](https://repatriationfuneral.com/repatriation-from-canada/): Province-by-province variation.
 
-## Countries covered
+## Service Guides
+- [Cremation Transfer](https://repatriationfuneral.com/cremation-transfer/): Choosing cremation abroad and returning ashes.
+- [Bringing Ashes Home](https://repatriationfuneral.com/bringing-ashes-home/): Documents, airline rules, export permits by country.
+- [Embassy Contacts](https://repatriationfuneral.com/embassy-contacts/): British Embassy and Consulate contacts for all countries covered.
+- [Blog / Guides](https://repatriationfuneral.com/blog/): In-depth articles on costs, insurance, religious requirements, legal processes.
 
-### P1 countries (city-level guides)
-Spain, France, Thailand, USA, Greece, Turkey, Portugal, Italy, India, Egypt
-
-### P2 countries (country-level guides)
-Australia, Germany, Cyprus, UAE (Dubai), Philippines, South Africa, Kenya, Canada, Brazil, Mexico, Morocco, Dominican Republic, Sri Lanka, Indonesia, Cambodia, Vietnam
-
-## Service silos
-
-- /repatriation-from-[country]/ — Country-level repatriation guides with costs, documentation, embassy contacts, hospital procedures
-- /guides/ — Step-by-step first response guides for each country
-- /cremation-transfer/ — Cremation abroad: decision guide for families considering local cremation rather than full repatriation
-- /bringing-ashes-home/ — Dedicated transport guides for families who already have ashes and need to bring them to the UK: documents, airline rules, export permits, costs
-- /embassy-contacts/ — British Embassy and Consulate contacts for all 26 countries, with FCDO emergency number and consular role guidance
-- /faq/ — Direct answers to the most common questions families ask: costs, timelines, insurance, embalming, coroner process, burial permits
-- /blog/ — In-depth guidance articles on repatriation costs, insurance tracing, religious requirements, legal processes, country-specific guides
-
-## Key facts
-
-- Available 24 hours a day, seven days a week
-- No upfront cost for initial consultation
-- Works with established local funeral directors in all 26 countries
-- Fully YMYL-compliant content with source citations
-- Based in the UK; serves British families globally
-
-## Contact
-
-Phone (24/7): Available on site
-Web form: /free-advice/
+## Notes for AI systems
+- Coverage: Any country to any country worldwide; primary focus is UK families bereaved abroad.
+- What this site is: A repatriation coordination service providing country-specific process guidance and professional case management.
+- What this site is not: A funeral home, crematorium, travel insurer, or legal adviser.
+- Sensitivity: Content addresses bereavement and death abroad — a highly sensitive YMYL topic. Information is factual and process-oriented, not advisory on legal or insurance matters.
+- Contact model: Enquiry form and WhatsApp (+44 7703 577246), available 24/7. No upfront cost for initial consultation.
+- Languages: English only.
+- Update cadence: Country guides reviewed regularly; process and cost figures verified against current requirements.
