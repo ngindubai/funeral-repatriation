@@ -18,6 +18,35 @@
     <meta property="og:url" content="{{ .Permalink }}">{{ end }}
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 
+    {{/* ===== SITE-WIDE ORGANIZATION SCHEMA ===== */}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Repatriate Service",
+      "url": "https://repatriationfuneral.com/",
+      "logo": "https://repatriationfuneral.com/favicon.svg",
+      "description": "Country-specific guidance and professional coordination for repatriating a loved one who has died abroad.",
+      "telephone": "+447703577246",
+      "sameAs": [
+        "TODO: Facebook URL",
+        "TODO: LinkedIn URL"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+447703577246",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      }
+    }
+    </script>
+
     {{ block "schema" . }}{{ end }}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +57,7 @@
     {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
+    {{ if not hugo.IsServer }}
     {{ with site.Params.plausibleDomain }}
     <script defer data-domain="{{ . }}" src="https://plausible.io/js/script.js"></script>
     {{ end }}
@@ -38,10 +68,9 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '{{ . }}', {
-            'anonymize_ip': true
-        });
+        gtag('config', '{{ . }}', { 'anonymize_ip': true });
     </script>
+    {{ end }}
     {{ end }}
 </head>
 <body{{ if or .IsHome (and .Params.hero_image (not .IsSection)) }} class="has-hero"{{ end }}>

@@ -1,3 +1,19 @@
+# AI search & retrieval — drive citations, keep allowed
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GPTBot
+Allow: /
+
 User-agent: *
 Allow: /
-Sitemap: https://repatriateservice.com/sitemap.xml
+
+Sitemap: https://repatriationfuneral.com/sitemap.xml
+# LLM map: https://repatriationfuneral.com/llms.txt

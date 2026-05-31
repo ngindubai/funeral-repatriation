@@ -1,5 +1,41 @@
 {{ define "title" }}{{ .Site.Params.brand }} | Bringing your loved ones home{{ end }}
 
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does repatriation take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the country. In the EU, repatriation typically takes 5 to 10 working days. Countries with more complex bureaucracy, like India or Thailand, can take 2 to 4 weeks. We provide country-specific timelines in each guide." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to repatriate someone to the UK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Repatriation from Europe typically costs between 3,000 and 6,000 GBP. From further afield, costs can reach 8,000 to 15,000 GBP or more. The main cost drivers are embalming, zinc-lined coffin, air freight, and local funeral director fees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does travel insurance cover repatriation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Some policies do, but many do not cover funeral repatriation by default. Look for repatriation of mortal remains as a specific line item. If the policy covers it, contact the insurer before arranging anything." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I bring ashes back to the UK instead?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cremation abroad followed by ashes transport is often simpler and less expensive than full body repatriation. You will still need a death certificate, cremation certificate, and sometimes a consular letter. Ashes can usually be carried as hand luggage or shipped by courier." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the British Embassy do when someone dies abroad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The British Embassy or Consulate can help with registering the death, providing a list of local English-speaking funeral directors, and issuing consular documents. They cannot pay for funeral or repatriation costs." }
+    }
+  ]
+}
+</script>
+{{ end }}
+
 {{ define "main" }}
 
 {{/* ===== HERO ===== */}}
@@ -12,13 +48,11 @@
             <p class="label-sm">Funeral repatriation guidance</p>
             <h1>Bringing your <em>loved ones</em> home</h1>
             <p>When someone dies abroad, the process of bringing them home can feel impossible. We provide clear, country-specific guidance for every step, from death registration to arrival in the UK.</p>
-
             <div class="hero-actions">
                 <a href="/contact/" class="btn btn-cta">Request Guidance</a>
                 <a href="/services/" class="btn btn-outline">View Services</a>
             </div>
         </div>
-
         <div class="hero-form">
             <h3>Need help now?</h3>
             <p class="form-subtitle">Tell us where and we will guide you through the process</p>
@@ -45,6 +79,9 @@
                         <option value="south_africa">South Africa</option>
                         <option value="kenya">Kenya</option>
                         <option value="canada">Canada</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="mexico">Mexico</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -71,7 +108,6 @@
                         <input type="tel" id="hf-phone" name="phone" placeholder="+44..." autocomplete="tel">
                     </div>
                 </div>
-                {{/* Honeypot */}}
                 <div style="display:none;" aria-hidden="true">
                     <input type="text" name="website" tabindex="-1" autocomplete="off">
                 </div>
@@ -85,7 +121,7 @@
     </div>
 </section>
 
-{{/* ===== WHO WE ARE / WHY USE US ===== */}}
+{{/* ===== WHO WE ARE ===== */}}
 <section class="why-us-section">
     <div class="section-inner">
         <div class="why-us-grid">
@@ -101,57 +137,29 @@
             <div class="why-us-points">
                 <div class="pain-point-card reveal">
                     <div class="pain-icon"><i class="fa-solid fa-file-lines"></i></div>
-                    <div>
-                        <h4>Every country runs differently</h4>
-                        <p>Death registration, embalming requirements, export permits, airline cargo rules. They change with every border crossed. A single missed step can delay the process by weeks and add significant stress to an already difficult situation.</p>
-                    </div>
+                    <div><h4>Every country runs differently</h4><p>Death registration, embalming requirements, export permits, airline cargo rules. They change with every border crossed. A single missed step can delay the process by weeks and add significant stress to an already difficult situation.</p></div>
                 </div>
                 <div class="pain-point-card reveal">
                     <div class="pain-icon"><i class="fa-solid fa-clock"></i></div>
-                    <div>
-                        <h4>Time has consequences most families don't know about</h4>
-                        <p>Mortuary cold storage in many countries is unreliable or strictly time-limited. Knowing who to call, and in what order, is often the difference between a two-week process and a two-month one.</p>
-                    </div>
+                    <div><h4>Time has consequences most families don't know about</h4><p>Mortuary cold storage in many countries is unreliable or strictly time-limited. Knowing who to call, and in what order, is often the difference between a two-week process and a two-month one.</p></div>
                 </div>
                 <div class="pain-point-card reveal">
                     <div class="pain-icon"><i class="fa-solid fa-language"></i></div>
-                    <div>
-                        <h4>The process doesn't pause for grief</h4>
-                        <p>Coordinating with a coroner's office in a foreign language, across time zones, while arranging a funeral at home, is not something any family should be expected to do without support. We take that weight.</p>
-                    </div>
+                    <div><h4>The process doesn't pause for grief</h4><p>Coordinating with a coroner's office in a foreign language, across time zones, while arranging a funeral at home, is not something any family should be expected to do without support. We take that weight.</p></div>
                 </div>
                 <div class="pain-point-card reveal">
                     <div class="pain-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div>
-                        <h4>Insurance is rarely as straightforward as the policy suggests</h4>
-                        <p>Many travel policies cover repatriation in principle. In practice, families often find themselves caught between an insurer, a local handling agent, and a funeral director at home, all at the same time, all asking different questions.</p>
-                    </div>
+                    <div><h4>Insurance is rarely as straightforward as the policy suggests</h4><p>Many travel policies cover repatriation in principle. In practice, families often find themselves caught between an insurer, a local handling agent, and a funeral director at home, all at the same time, all asking different questions.</p></div>
                 </div>
             </div>
         </div>
         <div class="why-us-services reveal">
             <p class="label-sm" style="text-align:center; margin-bottom:1rem;">How we help</p>
             <div class="why-us-service-grid">
-                <div class="wus-item reveal">
-                    <i class="fa-solid fa-plane-departure"></i>
-                    <h4>Cargo coordination only</h4>
-                    <p>If local arrangements are already in hand and you just need the international cargo leg managed correctly and safely, we can do exactly that.</p>
-                </div>
-                <div class="wus-item reveal">
-                    <i class="fa-solid fa-route"></i>
-                    <h4>Full in-country coordination</h4>
-                    <p>We appoint a trusted local operator to handle storage, embalming, documentation, and export on your behalf. You stay at home. We take care of everything abroad.</p>
-                </div>
-                <div class="wus-item reveal">
-                    <i class="fa-solid fa-file-contract"></i>
-                    <h4>Documentation and consular guidance</h4>
-                    <p>We walk you through every document required: death certificate, consular registration, export permit. We also liaise directly with the relevant embassy where needed.</p>
-                </div>
-                <div class="wus-item reveal">
-                    <i class="fa-solid fa-earth-europe"></i>
-                    <h4>Any country to any country</h4>
-                    <p>We're not limited to UK arrivals. We arrange repatriation between any two countries, for families wherever in the world they are based.</p>
-                </div>
+                <div class="wus-item reveal"><i class="fa-solid fa-plane-departure"></i><h4>Cargo coordination only</h4><p>If local arrangements are already in hand and you just need the international cargo leg managed correctly and safely, we can do exactly that.</p></div>
+                <div class="wus-item reveal"><i class="fa-solid fa-route"></i><h4>Full in-country coordination</h4><p>We appoint a trusted local operator to handle storage, embalming, documentation, and export on your behalf. You stay at home. We take care of everything abroad.</p></div>
+                <div class="wus-item reveal"><i class="fa-solid fa-file-contract"></i><h4>Documentation and consular guidance</h4><p>We walk you through every document required: death certificate, consular registration, export permit. We also liaise directly with the relevant embassy where needed.</p></div>
+                <div class="wus-item reveal"><i class="fa-solid fa-earth-europe"></i><h4>Any country to any country</h4><p>We're not limited to UK arrivals. We arrange repatriation between any two countries, for families wherever in the world they are based.</p></div>
             </div>
         </div>
     </div>
@@ -160,39 +168,18 @@
 {{/* ===== HOW IT WORKS ===== */}}
 <section class="how-it-works">
     <div class="section-inner">
-        <div class="section-header reveal">
-            <p class="label-sm">How it works</p>
-            <h2>Three steps to bringing them home</h2>
-            <p>Every country has different rules. We break the process down so you know exactly what to do and when.</p>
-        </div>
+        <div class="section-header reveal"><p class="label-sm">How it works</p><h2>Three steps to bringing them home</h2><p>Every country has different rules. We break the process down so you know exactly what to do and when.</p></div>
         <div class="how-steps stagger-children">
-            <div class="how-step reveal">
-                <span class="how-step-badge" aria-hidden="true">01</span>
-                <div class="how-step-number"><img src="/icons/death-certificate.svg" alt="" width="48" height="48" aria-hidden="true"></div>
-                <h3>Tell us where</h3>
-                <p>Select the country where the death occurred. We will show you the exact process, documents needed, and local contacts.</p>
-            </div>
-            <div class="how-step reveal">
-                <span class="how-step-badge" aria-hidden="true">02</span>
-                <div class="how-step-number"><img src="/icons/repatriation.svg" alt="" width="48" height="48" aria-hidden="true"></div>
-                <h3>Follow the guide</h3>
-                <p>Step-by-step instructions for death registration, embalming, consular paperwork, and arranging transport back to the UK.</p>
-            </div>
-            <div class="how-step reveal">
-                <span class="how-step-badge" aria-hidden="true">03</span>
-                <div class="how-step-number"><img src="/icons/transport.svg" alt="" width="48" height="48" aria-hidden="true"></div>
-                <h3>We coordinate</h3>
-                <p>If you need hands-on help, our team works with local funeral directors, embassies, and airlines to handle everything.</p>
-            </div>
+            <div class="how-step reveal"><span class="how-step-badge" aria-hidden="true">01</span><div class="how-step-number"><img src="/icons/death-certificate.svg" alt="" width="48" height="48" aria-hidden="true"></div><h3>Tell us where</h3><p>Select the country where the death occurred. We will show you the exact process, documents needed, and local contacts.</p></div>
+            <div class="how-step reveal"><span class="how-step-badge" aria-hidden="true">02</span><div class="how-step-number"><img src="/icons/repatriation.svg" alt="" width="48" height="48" aria-hidden="true"></div><h3>Follow the guide</h3><p>Step-by-step instructions for death registration, embalming, consular paperwork, and arranging transport back to the UK.</p></div>
+            <div class="how-step reveal"><span class="how-step-badge" aria-hidden="true">03</span><div class="how-step-number"><img src="/icons/transport.svg" alt="" width="48" height="48" aria-hidden="true"></div><h3>We coordinate</h3><p>If you need hands-on help, our team works with local funeral directors, embassies, and airlines to handle everything.</p></div>
         </div>
     </div>
 </section>
 
-{{/* ===== PARALLAX INTERLUDE ===== */}}
+{{/* ===== PARALLAX ===== */}}
 <section class="parallax-interlude">
-    <div class="parallax-interlude-bg">
-        <img src="/images/repatriation-logistics.jpg" alt="International funeral repatriation logistics" width="1920" height="1080" loading="lazy">
-    </div>
+    <div class="parallax-interlude-bg"><img src="/images/repatriation-logistics.jpg" alt="International funeral repatriation logistics" width="1920" height="1080" loading="lazy"></div>
     <div class="parallax-interlude-text">
         <div class="parallax-interlude-rule" aria-hidden="true"></div>
         <p>Every family deserves to bring their loved one home with dignity.</p>
@@ -203,11 +190,7 @@
 {{/* ===== COUNTRY GUIDES ===== */}}
 <section class="country-guides-section">
     <div class="section-inner">
-        <div class="section-header reveal">
-            <p class="label-sm">Country guides</p>
-            <h2>Repatriation guides by country</h2>
-            <p>Each guide covers the full process: what to do first, documents needed, costs, timelines, and embassy contacts.</p>
-        </div>
+        <div class="section-header reveal"><p class="label-sm">Country guides</p><h2>Repatriation guides by country</h2><p>Each guide covers the full process: what to do first, documents needed, costs, timelines, and embassy contacts.</p></div>
         <div class="country-grid stagger-children">
             {{ $images := slice "/images/airport-cargo.jpg" "/images/mediterranean.jpg" "/images/airport-terminal.jpg" "/images/cargo-terminal-night.jpg" "/images/city-dusk.jpg" }}
             {{ range $i, $c := hugo.Data.countries }}
@@ -218,10 +201,7 @@
                     <p class="country-card-flag">{{ $c.flag }}</p>
                     <p class="country-card-name">{{ $c.name }}</p>
                     <p class="country-card-desc">{{ $c.short_desc }}</p>
-                    <div class="country-card-meta">
-                        <span>{{ $c.priority }}</span>
-                        <span>{{ $c.timeline }}</span>
-                    </div>
+                    <div class="country-card-meta"><span>{{ $c.priority }}</span><span>{{ $c.timeline }}</span></div>
                 </div>
             </a>
             {{ end }}
@@ -232,62 +212,45 @@
 {{/* ===== FAQ ===== */}}
 <section class="faq-section section-alt">
     <div class="section-inner">
-        <div class="section-header reveal">
-            <p class="label-sm">Common questions</p>
-            <h2>Frequently asked questions</h2>
-        </div>
-
+        <div class="section-header reveal"><p class="label-sm">Common questions</p><h2>Frequently asked questions</h2></div>
         <div class="reveal">
             <div class="faq-item">
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1">
-                    How long does repatriation take?
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1">How long does repatriation take?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-1" class="faq-answer" hidden>
                     <p>It depends on the country. In the EU, repatriation typically takes 5 to 10 working days. Countries with more complex bureaucracy, like India or Thailand, can take 2 to 4 weeks. We provide country-specific timelines in each guide.</p>
+                    <p style="margin-top:0.75rem;"><a href="/faq/how-long-does-repatriation-take/">Full guide: how long does repatriation take? &rarr;</a></p>
                 </div>
             </div>
-
             <div class="faq-item">
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2">
-                    How much does it cost to repatriate someone to the UK?
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2">How much does it cost to repatriate someone to the UK?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-2" class="faq-answer" hidden>
                     <p>Costs vary widely. Repatriation from Europe typically costs between 3,000 and 6,000 GBP. From further afield, costs can reach 8,000 to 15,000 GBP or more. The main cost drivers are embalming, zinc-lined coffin, air freight, and local funeral director fees. Each country guide includes detailed cost breakdowns.</p>
+                    <p style="margin-top:0.75rem;"><a href="/faq/how-much-does-repatriation-cost/">Full guide: repatriation cost breakdown &rarr;</a></p>
                 </div>
             </div>
-
             <div class="faq-item">
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3">
-                    Does travel insurance cover repatriation?
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3">Does travel insurance cover repatriation?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-3" class="faq-answer" hidden>
-                    <p>Some policies do, but many do not cover funeral repatriation by default. Check the policy wording carefully. Look for "repatriation of mortal remains" as a specific line item. If the policy covers it, contact the insurer before arranging anything, as they will have a preferred funeral director and airline.</p>
+                    <p>Some policies do, but many do not cover funeral repatriation by default. Check the policy wording carefully. Look for “repatriation of mortal remains” as a specific line item. If the policy covers it, contact the insurer before arranging anything, as they will have a preferred funeral director and airline.</p>
+                    <p style="margin-top:0.75rem;"><a href="/faq/does-travel-insurance-cover-repatriation/">Full guide: travel insurance and repatriation &rarr;</a></p>
                 </div>
             </div>
-
             <div class="faq-item">
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4">
-                    Can I bring ashes back to the UK instead?
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4">Can I bring ashes back to the UK instead?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-4" class="faq-answer" hidden>
                     <p>Yes. Cremation abroad followed by ashes transport is often simpler and less expensive than full body repatriation. You will still need a death certificate, cremation certificate, and sometimes a consular letter. Ashes can usually be carried as hand luggage or shipped by courier. Rules vary by country and airline.</p>
+                    <p style="margin-top:0.75rem;"><a href="/faq/can-i-bring-ashes-in-hand-luggage/">Full guide: bringing ashes home &rarr;</a> &middot; <a href="/bringing-ashes-home/">Country-specific ashes guides &rarr;</a></p>
                 </div>
             </div>
-
             <div class="faq-item">
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5">
-                    What does the British Embassy do when someone dies abroad?
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5">What does the British Embassy do when someone dies abroad?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-5" class="faq-answer" hidden>
                     <p>The British Embassy or Consulate can help with registering the death, providing a list of local English-speaking funeral directors, and issuing consular documents. They cannot pay for funeral or repatriation costs, but they can help navigate local bureaucracy. Contact them as early as possible.</p>
+                    <p style="margin-top:0.75rem;"><a href="/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/">Full guide: what the embassy does &rarr;</a> &middot; <a href="/embassy-contacts/">Embassy contacts directory &rarr;</a></p>
                 </div>
             </div>
         </div>
+        <div style="margin-top:2rem; text-align:center;"><a href="/faq/" class="btn btn-outline">View all frequently asked questions</a></div>
     </div>
 </section>
 
@@ -296,21 +259,11 @@
     <div class="section-inner">
         <h2 class="reveal">Need help with repatriation?</h2>
         <p class="quote-subtitle reveal">Our team can coordinate the entire process on your behalf</p>
-
         <form class="quote-form reveal" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate style="max-width: 720px; margin: 0 auto;">
             <div class="form-grid">
-                <div class="form-group">
-                    <label for="qf-name">Name <span class="required">*</span></label>
-                    <input type="text" id="qf-name" name="name" placeholder="Full name" required autocomplete="name">
-                </div>
-                <div class="form-group">
-                    <label for="qf-email">Email <span class="required">*</span></label>
-                    <input type="email" id="qf-email" name="email" placeholder="you@email.com" required autocomplete="email">
-                </div>
-                <div class="form-group">
-                    <label for="qf-phone">Phone</label>
-                    <input type="tel" id="qf-phone" name="phone" placeholder="+44..." autocomplete="tel">
-                </div>
+                <div class="form-group"><label for="qf-name">Name <span class="required">*</span></label><input type="text" id="qf-name" name="name" placeholder="Full name" required autocomplete="name"></div>
+                <div class="form-group"><label for="qf-email">Email <span class="required">*</span></label><input type="email" id="qf-email" name="email" placeholder="you@email.com" required autocomplete="email"></div>
+                <div class="form-group"><label for="qf-phone">Phone</label><input type="tel" id="qf-phone" name="phone" placeholder="+44..." autocomplete="tel"></div>
                 <div class="form-group">
                     <label for="qf-country">Country</label>
                     <select id="qf-country" name="country">
@@ -320,43 +273,24 @@
                         <option value="thailand">Thailand</option>
                         <option value="turkey">Turkey</option>
                         <option value="greece">Greece</option>
+                        <option value="india">India</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="australia">Australia</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="mexico">Mexico</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="qf-urgency">Urgency</label>
-                    <select id="qf-urgency" name="urgency">
-                        <option value="">When did this happen?</option>
-                        <option value="just_happened">Within 24 hours</option>
-                        <option value="this_week">Within the past week</option>
-                        <option value="planning">Planning ahead</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="qf-service">Service needed</label>
-                    <select id="qf-service" name="service">
-                        <option value="">Select</option>
-                        <option value="full_repatriation">Full body repatriation</option>
-                        <option value="ashes_transport">Ashes transport</option>
-                        <option value="cremation_abroad">Cremation abroad</option>
-                        <option value="guidance_only">Guidance only</option>
-                    </select>
-                </div>
-                <div class="form-group form-group-full">
-                    <label for="qf-message">Message</label>
-                    <textarea id="qf-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea>
-                </div>
+                <div class="form-group"><label for="qf-urgency">Urgency</label><select id="qf-urgency" name="urgency"><option value="">When did this happen?</option><option value="just_happened">Within 24 hours</option><option value="this_week">Within the past week</option><option value="planning">Planning ahead</option></select></div>
+                <div class="form-group"><label for="qf-service">Service needed</label><select id="qf-service" name="service"><option value="">Select</option><option value="full_repatriation">Full body repatriation</option><option value="ashes_transport">Ashes transport</option><option value="cremation_abroad">Cremation abroad</option><option value="guidance_only">Guidance only</option></select></div>
+                <div class="form-group form-group-full"><label for="qf-message">Message</label><textarea id="qf-message" name="message" rows="4" placeholder="Tell us anything that will help us assist you"></textarea></div>
             </div>
-            <div style="display:none;" aria-hidden="true">
-                <input type="text" name="website" tabindex="-1" autocomplete="off">
-            </div>
+            <div style="display:none;" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
             <button type="submit" class="btn btn-cta">Send enquiry</button>
             <p class="form-note">No obligation. Your details are kept strictly confidential.</p>
         </form>
-
-        <div class="quote-success" hidden>
-            <p>Thank you. We have received your enquiry and will respond as soon as possible.</p>
-        </div>
+        <div class="quote-success" hidden><p>Thank you. We have received your enquiry and will respond as soon as possible.</p></div>
     </div>
 </section>
 
