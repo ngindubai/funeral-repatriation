@@ -1,0 +1,55 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Params.brand }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "dateModified": "2026-05-31",
+  "author": {
+    "@type": "Organization",
+    "name": "Repatriate Service",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Repatriate Service",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ .Site.BaseURL }}" },
+      { "@type": "ListItem", "position": 2, "name": "Methodology", "item": "{{ .Permalink }}" }
+    ]
+  }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<section class="section">
+  <div class="section-inner" style="max-width: 780px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Methodology</li>
+      </ol>
+    </nav>
+    <h1>{{ .Title }}</h1>
+    <p class="label-sm" style="margin: 0.5rem 0 2rem;">Last reviewed: May 2026</p>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    <div class="info-card" style="margin-top:2.5rem;">
+      <div class="info-card-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <div>
+        <h3>Questions or corrections?</h3>
+        <p>If you believe any information on this site is inaccurate or out of date, please <a href="/contact/">contact us</a> or WhatsApp us at +44 7703 577246. We will review and correct any errors promptly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

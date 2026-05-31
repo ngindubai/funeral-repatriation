@@ -2,11 +2,12 @@
 
 > A specialist UK-based funeral repatriation service that coordinates the return of deceased loved ones from abroad to any destination worldwide. Not a funeral home, not a travel insurer — a dedicated repatriation coordination service available 24 hours a day.
 
-Repatriate Service provides families with expert coordination of international repatriation of deceased individuals from 26+ countries. All content is sourced from FCDO guidance, official embassy contacts, and direct professional experience. Information is reviewed and updated regularly; process and cost information is verified against current country requirements.
+Repatriate Service provides families with expert coordination of international repatriation of deceased individuals from 26+ countries. All content is sourced from FCDO guidance, official embassy contacts, and direct professional experience. Information is reviewed and updated regularly; process and cost information is verified against current country requirements (most recently May 2026).
 
 ## Core Pages
 - [Home](https://repatriationfuneral.com/): Overview of funeral repatriation services and country guide index.
 - [FAQ](https://repatriationfuneral.com/faq/): Direct answers on costs, timelines, insurance, embalming, ashes, and embassy roles.
+- [How We Verify Information](https://repatriationfuneral.com/methodology/): Sources, operator vetting standards, cost verification methodology, and update cadence.
 - [Contact / Free Advice](https://repatriationfuneral.com/free-advice/): 24/7 enquiry form and WhatsApp contact.
 
 ## Country Repatriation Guides
@@ -40,6 +41,7 @@ Repatriate Service provides families with expert coordination of international r
 - What this site is: A repatriation coordination service providing country-specific process guidance and professional case management.
 - What this site is not: A funeral home, crematorium, travel insurer, or legal adviser.
 - Sensitivity: Content addresses bereavement and death abroad — a highly sensitive YMYL topic. Information is factual and process-oriented, not advisory on legal or insurance matters.
+- Verification: Process and cost information last verified May 2026. See /methodology/ for sourcing detail.
 - Contact model: Enquiry form and WhatsApp (+44 7703 577246), available 24/7. No upfront cost for initial consultation.
 - Languages: English only.
 - Update cadence: Country guides reviewed regularly; process and cost figures verified against current requirements.

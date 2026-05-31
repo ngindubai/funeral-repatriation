@@ -18,11 +18,11 @@
   {{ $cname := or $c.name $c.country_name }}
   {{ $timeline := "" }}
   {{ if $c.typical_timeline_days_min }}
-    {{ $timeline = printf "%s–%s days" (lang.FormatNumber 0 $c.typical_timeline_days_min) (lang.FormatNumber 0 $c.typical_timeline_days_max) }}
+    {{ $timeline = printf "%s\u2013%s days" (lang.FormatNumber 0 $c.typical_timeline_days_min) (lang.FormatNumber 0 $c.typical_timeline_days_max) }}
   {{ else if $c.typical_timeline }}
     {{ $timeline = $c.typical_timeline.average_case }}
   {{ end }}
-  {{ $desc := printf "Repatriation from %s to the UK — typically %s. Expert guidance on documentation, legal requirements and 24/7 support." $cname $timeline }}
+  {{ $desc := printf "Repatriation from %s to the UK \u2014 typically %s. Expert guidance on documentation, legal requirements and 24/7 support." $cname $timeline }}
     <meta name="description" content="{{ $desc }}">
     <link rel="canonical" href="{{ .Permalink }}">
     <meta property="og:title" content="Funeral Repatriation from {{ $cname }} to the UK">
@@ -62,7 +62,7 @@
 </script>
 {{ end }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":{{ printf "Funeral Repatriation from %s to the UK" $cname | jsonify }},"provider":{"@type":"Organization","name":"Repatriate Service","telephone":"+447703577246","url":"{{ site.BaseURL }}"},"areaServed":{{ $cname | jsonify }},"serviceType":"Funeral Repatriation"}
+{"@context":"https://schema.org","@type":"Service","name":{{ printf "Funeral Repatriation from %s to the UK" $cname | jsonify }},"description":{{ printf "Expert coordination of the full repatriation process from %s. Process and costs verified May 2026." $cname | jsonify }},"dateModified":"{{ now.Format "2006-01-02" }}","provider":{"@type":"Organization","name":"Repatriate Service","telephone":"+447703577246","url":"{{ site.BaseURL }}"},"areaServed":{{ $cname | jsonify }},"serviceType":"Funeral Repatriation"}
 </script>
 {{ end }}
 {{ end }}
@@ -132,16 +132,22 @@
 {{ if $c }}
 
 {{/* ============================================================
-     SECTION 2B: DIRECT ANSWER BLOCK (NEW)
+     SECTION 2B: ANSWER-FIRST BLOCK
+     Shows from frontmatter params if set; falls back to JSON data.
      ============================================================ */}}
-{{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
+{{ $showAnswerFirst := or .Params.direct_answer_intro .Params.direct_answer_points $c.typical_timeline.average_case }}
+{{ if $showAnswerFirst }}
 <section class="section answer-brief-section">
     <div class="section-inner">
         <div class="answer-brief reveal">
             <div class="answer-brief-main">
                 <p class="label-sm">Quick answer</p>
-                <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}Key answer for {{ $c.name }}{{ end }}</h2>
-                {{ with .Params.direct_answer_intro }}<p class="answer-brief-intro">{{ . }}</p>{{ end }}
+                <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}Repatriation from {{ $c.name }}: costs &amp; timeline{{ end }}</h2>
+                {{ if .Params.direct_answer_intro }}
+                <p class="answer-brief-intro">{{ .Params.direct_answer_intro }}</p>
+                {{ else }}
+                <p class="answer-brief-intro">Repatriation from {{ $c.name }} to the UK typically costs {{ $c.cost_guide.total_typical_range_gbp }} and takes {{ $c.typical_timeline.average_case }} in a straightforward case. This covers local funeral director fees, embalming, zinc-lined coffin, export documentation, air freight, and UK reception. Costs rise when a post-mortem or island/remote-area transfer is involved.</p>
+                {{ end }}
                 {{ with .Params.direct_answer_points }}
                 <ul class="answer-brief-list">
                     {{ range . }}
@@ -162,6 +168,7 @@
                 {{ with .Params.direct_answer_note }}
                 <p class="answer-brief-note">{{ . }}</p>
                 {{ end }}
+                <p class="answer-brief-note" style="margin-top:0.75rem;"><i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Process &amp; costs verified May 2026</p>
             </div>
         </div>
     </div>
@@ -386,6 +393,7 @@
                         {{ with $c.typical_timeline.fastest_case }}<tr><td>Best case timeline</td><td>{{ . }}</td></tr>{{ end }}
                         {{ with $c.typical_timeline.average_case }}<tr><td>Typical timeline</td><td>{{ . }}</td></tr>{{ end }}
                         {{ with $c.typical_timeline.complex_case }}<tr><td>Complex case timeline</td><td>{{ . }}</td></tr>{{ end }}
+                        <tr><td>Information verified</td><td>May 2026</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -488,7 +496,10 @@
             </a>
         </div>
     </div>
-</section> CULTURAL CONSIDERATIONS
+</section>
+
+{{/* ============================================================
+     SECTION 8: CULTURAL CONSIDERATIONS
      ============================================================ */}}
 {{ with $c.cultural_practices }}
 <section class="section-alt cultural-section">
@@ -740,7 +751,7 @@
         <div class="editorial-credit">
             <i class="fa-solid fa-circle-check"></i>
             <div>
-                <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
+                <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Process and costs verified <strong>May 2026</strong>. <a href="/methodology/">How we verify information.</a></p>
                 <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/guides/death-abroad-{{ .Params.slug }}/">Full guide: what to do if someone dies in {{ if $c }}{{ $c.name | default $c.country_name }}{{ end }}</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
             </div>
         </div>
