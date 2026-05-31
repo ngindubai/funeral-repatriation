@@ -1,27 +1,9 @@
 <footer class="site-footer">
     <div class="footer-contact-strip">
         <div class="footer-contact-grid">
-            <div class="contact-chip">
-                <i class="fa-brands fa-whatsapp"></i>
-                <div>
-                    <p>WhatsApp us</p>
-                    <strong><a href="https://wa.me/{{ .Site.Params.whatsappNumber }}" target="_blank" rel="noopener" style="color:inherit;">Chat on WhatsApp</a></strong>
-                </div>
-            </div>
-            <div class="contact-chip">
-                <i class="fa-solid fa-envelope"></i>
-                <div>
-                    <p>Send us a message</p>
-                    <strong><a href="/contact/" style="color:inherit;">Use our contact form</a></strong>
-                </div>
-            </div>
-            <div class="contact-chip">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                    <p>Office location</p>
-                    <strong>London, United Kingdom</strong>
-                </div>
-            </div>
+            <div class="contact-chip"><i class="fa-brands fa-whatsapp"></i><div><p>WhatsApp us</p><strong><a href="https://wa.me/{{ .Site.Params.whatsappNumber }}" target="_blank" rel="noopener" style="color:inherit;">Chat on WhatsApp</a></strong></div></div>
+            <div class="contact-chip"><i class="fa-solid fa-envelope"></i><div><p>Send us a message</p><strong><a href="/contact/" style="color:inherit;">Use our contact form</a></strong></div></div>
+            <div class="contact-chip"><i class="fa-solid fa-location-dot"></i><div><p>Office location</p><strong>London, United Kingdom</strong></div></div>
         </div>
     </div>
 
@@ -47,6 +29,7 @@
                     <li><a href="/repatriation-from-thailand/">Thailand</a></li>
                     <li><a href="/repatriation-from-turkey/">Turkey</a></li>
                     <li><a href="/repatriation-from-greece/">Greece</a></li>
+                    <li><a href="/repatriation-from-morocco/">Morocco</a></li>
                 </ul>
             </div>
 
@@ -71,6 +54,7 @@
                     <li><a href="/guides/">First response guides</a></li>
                     <li><a href="/faq/">Frequently asked questions</a></li>
                     <li><a href="/blog/">Guidance articles</a></li>
+                    <li><a href="/methodology/">How we verify information</a></li>
                 </ul>
             </div>
 
@@ -92,7 +76,7 @@
 
         <div class="footer-bottom">
             <p>&copy; {{ now.Year }} {{ .Site.Params.brand }}. All rights reserved.</p>
-            <p class="footer-disclaimer">Information on this site is for guidance only. Regulations and processes change. Always verify current requirements with the relevant embassy or consulate. This site does not provide legal advice.</p>
+            <p class="footer-disclaimer">Information on this site is for guidance only. Regulations and processes change. Always verify current requirements with the relevant embassy or consulate. This site does not provide legal advice. <a href="/methodology/" style="color:inherit;text-decoration:underline;">How we verify information.</a></p>
         </div>
     </div>
 </footer>
