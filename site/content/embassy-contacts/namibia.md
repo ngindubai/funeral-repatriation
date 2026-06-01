@@ -1,10 +1,8 @@
-﻿---
-title: "British High Commission Namibia â€” Contacts for Repatriation"
-description: "British High Commission Windhoek contact information for repatriation cases. Resident high commission in Windhoek. English documentation throughout. Emergency contacts for UK families when a loved one dies in Namibia."
-layout: "embassy-contacts"
-country_key: "namibia"
-slug: "namibia"
-embassy_type: "High Commission"
-embassy_city: "Windhoek"
 ---
-
+title: "British High Commission Namibia: Contacts for Death Abroad"
+description: "British High Commission and consulate contact numbers for Namibia, what consular staff do when a British national dies abroad, and links to the full repatriation guides."
+country_key: "namibia"
+country_name: "Namibia"
+slug: "namibia"
+layout: "embassy-contacts"
+---

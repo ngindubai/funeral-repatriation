@@ -1,10 +1,8 @@
-﻿---
-title: "British High Commission Sierra Leone â€” Contacts for Repatriation"
-description: "British High Commission Freetown contact information for repatriation cases. Resident high commission in Freetown. English documentation throughout. Emergency contacts for UK families when a loved one dies in Sierra Leone."
-layout: "embassy-contacts"
-country_key: "sierra-leone"
-slug: "sierra-leone"
-embassy_type: "High Commission"
-embassy_city: "Freetown"
 ---
-
+title: "British High Commission Sierra Leone: Contacts for Death Abroad"
+description: "British High Commission and consulate contact numbers for Sierra Leone, what consular staff do when a British national dies abroad, and links to the full repatriation guides."
+country_key: "sierra-leone"
+country_name: "Sierra Leone"
+slug: "sierra-leone"
+layout: "embassy-contacts"
+---

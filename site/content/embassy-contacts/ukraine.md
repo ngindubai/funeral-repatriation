@@ -1,10 +1,8 @@
-﻿---
-title: "British Embassy Ukraine â€” Contacts for Repatriation"
-description: "British Embassy Ukraine contact information for repatriation cases. Kyiv premises suspended since February 2022. Consular support via FCDO London and Lviv presence. Emergency contacts for UK families."
-layout: "embassy-contacts"
-country_key: "ukraine"
-slug: "ukraine"
-embassy_type: "Embassy"
-embassy_city: "Kyiv (operations suspended since February 2022)"
 ---
-
+title: "British Embassy in Ukraine: Contacts for Death Abroad"
+description: "British Embassy and consulate contact numbers for Ukraine, what consular staff do when a British national dies abroad, and links to the full repatriation guides."
+country_key: "ukraine"
+country_name: "Ukraine"
+slug: "ukraine"
+layout: "embassy-contacts"
+---
