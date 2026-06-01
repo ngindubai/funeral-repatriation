@@ -46,18 +46,26 @@
 
 {{/* ================================================================
      TEMPLATE VARIANTS A-E
-     Controlled by template_variant: frontmatter field.
-     All variants contain the same content blocks, reordered to create
-     meaningfully different page structures for Google diversity.
-
-     A: Hero > Direct Answer > Overview > Timeline > Destination > FAQ > Crosslinks > Form
-     B: Hero > Helpline > Overview > Direct Answer > Timeline > FAQ > Destination > Crosslinks > Form
-     C: Hero > Direct Answer > Timeline > Overview > FAQ > Destination > Crosslinks > Form
-     D: Hero > Helpline > Direct Answer > Destination > Timeline > FAQ > Crosslinks > Form
-     E: Hero > Overview > Direct Answer > Timeline > Destination > Crosslinks > FAQ > Form
      ================================================================ */}}
 
 {{ $variant := .Params.template_variant | default "A" }}
+
+{{/* ================================================================
+     SIDEWAYS LINK FILTER
+     Filters out sideways links whose target page does not exist in
+     the site. Prevents 70+ broken internal links across the route
+     silo. When reverse routes are built later, links auto-restore.
+     ================================================================ */}}
+{{ $validSideways := slice }}
+{{ if .Params.links }}
+  {{ if .Params.links.sideways }}
+    {{ range .Params.links.sideways }}
+      {{ if site.GetPage .url }}
+        {{ $validSideways = $validSideways | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 {{/* ---- HERO (all variants) ---- */}}
 <section class="country-hero" style="background-image: url('/images/cargo-terminal-night.jpg');">
@@ -100,7 +108,7 @@
 </section>
 
 {{/* ================================================================
-     VARIANT A: Direct Answer > Overview > Timeline > Destination > FAQ > Crosslinks > Form
+     VARIANT A
      ================================================================ */}}
 {{ if eq $variant "A" }}
 
@@ -179,7 +187,7 @@
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
       {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
-      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
@@ -188,7 +196,7 @@
 {{ end }}{{/* end variant A */}}
 
 {{/* ================================================================
-     VARIANT B: Helpline > Overview > Direct Answer > Timeline > FAQ > Destination > Crosslinks > Form
+     VARIANT B
      ================================================================ */}}
 {{ if eq $variant "B" }}
 
@@ -266,7 +274,7 @@
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
       {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
-      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
@@ -275,7 +283,7 @@
 {{ end }}{{/* end variant B */}}
 
 {{/* ================================================================
-     VARIANT C: Direct Answer > Timeline > Overview > FAQ > Destination > Crosslinks > Form
+     VARIANT C
      ================================================================ */}}
 {{ if eq $variant "C" }}
 
@@ -344,7 +352,7 @@
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
       {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
-      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
@@ -353,7 +361,7 @@
 {{ end }}{{/* end variant C */}}
 
 {{/* ================================================================
-     VARIANT D: Helpline > Direct Answer > Destination > Timeline > FAQ > Crosslinks > Form
+     VARIANT D
      ================================================================ */}}
 {{ if eq $variant "D" }}
 
@@ -431,7 +439,7 @@
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
       {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
-      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
@@ -440,7 +448,7 @@
 {{ end }}{{/* end variant D */}}
 
 {{/* ================================================================
-     VARIANT E: Overview > Direct Answer > Timeline > Destination > Crosslinks > FAQ > Form
+     VARIANT E
      ================================================================ */}}
 {{ if eq $variant "E" }}
 
@@ -500,7 +508,7 @@
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
       {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
-      {{ range .Params.links.sideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
 </section>
