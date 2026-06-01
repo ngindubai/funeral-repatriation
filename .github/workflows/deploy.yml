@@ -1,54 +1,29 @@
-name: Build and Deploy to Hostinger
+# DISABLED 2 June 2026.
+#
+# This workflow used to build the site and FTP-push it into Hostinger's
+# /public_html/. That is now redundant and unsafe: the live site is served by
+# Hostinger's own Git integration, which pulls the pre-built `live` branch
+# (produced by build-and-publish.yml) directly into /public_html/.
+#
+# Running an FTP push as well meant two separate processes were writing to the
+# same /public_html/ folder, and this workflow also deleted the FTP sync-state
+# file on every run. Both behaviours are removed by disabling it here.
+#
+# It is kept as a disabled stub (manual-only, no steps) rather than deleted so
+# the history and prior config remain recoverable. Do NOT add a push trigger.
+# The production pipeline is build-and-publish.yml -> `live` branch -> Hostinger.
+
+name: Build and Deploy to Hostinger (DISABLED)
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-      - main
 
 jobs:
-  build-and-deploy:
+  noop:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.160.1'
-          extended: true
-
-      - name: Build Hugo site
+      - name: This workflow is intentionally disabled
         run: |
-          cd site
-          hugo --gc --minify
-        env:
-          HUGO_ENVIRONMENT: production
-
-      - name: Delete stale FTP sync-state on server
-        continue-on-error: true
-        run: |
-          curl -v --ftp-pasv --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" "ftp://${{ secrets.FTP_SERVER }}//public_html/" -Q "DELE .ftp-deploy-sync-state.json"
-
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./site/public/
-          server-dir: /public_html/
-          dangerous-clean-slate: false
-          security: loose
-          port: 21
-          timeout: 60000
-          log-level: verbose
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+          echo "deploy.yml is disabled. The live site is served by Hostinger's"
+          echo "Git integration pulling the 'live' branch (built by"
+          echo "build-and-publish.yml). No FTP deploy is needed or wanted."
