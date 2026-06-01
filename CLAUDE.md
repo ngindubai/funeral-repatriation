@@ -1,4 +1,4 @@
-# CLAUDE.md — Repatriate Service
+# CLAUDE.md -- Repatriate Service
 
 > Single source of truth for any AI assistant working on this project. Read this in full at the start of every session. Attach MEMORY.md and BUILD-PLAN.md alongside this file.
 
@@ -13,9 +13,9 @@
 
 ---
 
-## EM DASH BAN — ABSOLUTE, NO EXCEPTIONS
+## EM DASH BAN -- ABSOLUTE, NO EXCEPTIONS
 
-**Never use em dashes (— or –) anywhere, ever.** This applies to:
+**Never use em dashes (-- or -) anywhere, ever.** This applies to:
 - All site content (route pages, country guides, blog articles, FAQs)
 - All internal documents (CLAUDE.md, BUILD-PLAN.md, MEMORY.md)
 - All chat responses from Claude to Gareth
@@ -30,7 +30,7 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 - **Final domain:** repatriateservice.com (not yet live)
 - **Type:** Programmatic SEO lead-generation site for funeral repatriation
 - **Goal:** Capture enquiries from British families who need to bring a loved one home after a death abroad
-- **Audience:** Bereaved families in distress, searching immediately after a death — needs calm, authoritative, compassionate tone
+- **Audience:** Bereaved families in distress, searching immediately after a death -- needs calm, authoritative, compassionate tone
 - **Stack:**
   - Hugo v0.160.1-extended (static site generator)
   - Python 3.11 (route/content generators at repo root)
@@ -75,7 +75,7 @@ Live on repatriationfuneral.com
 
 ### Critical deploy rules
 
-- **server-dir: /public_html/** — this is the correct Hostinger path. Never change it.
+- **server-dir: /public_html/** -- this is the correct Hostinger path. Never change it.
 - **Never set dangerous-clean-slate: true** in the workflow.
 - **Never delete .ftp-deploy-sync-state.json from Hostinger** unless diagnosing a known sync problem.
 - **The .github/workflows/deploy.yml file cannot be edited via the MCP connector** (GitHub returns 403 for workflow files). Always provide the complete file and ask Gareth to paste it via the GitHub web editor.
@@ -84,7 +84,7 @@ Live on repatriationfuneral.com
 
 ---
 
-## CONTENT RULES — NON-NEGOTIABLE
+## CONTENT RULES -- NON-NEGOTIABLE
 
 1. **No safety guarantees.** Never write "we guarantee" or "100% safe" or "risk-free".
 2. **Named, dated sources for every regulatory claim.** FCDO guidance, Home Office, official embassy contacts only.
@@ -99,7 +99,7 @@ Live on repatriationfuneral.com
 
 ---
 
-## SEO RULES — NON-NEGOTIABLE
+## SEO RULES -- NON-NEGOTIABLE
 
 - Unique title and description per page.
 - Title: lead with primary keyword, under 60 characters.
@@ -113,7 +113,7 @@ Live on repatriationfuneral.com
 
 ---
 
-## AUTHOR PERSONAS — NON-NEGOTIABLE
+## AUTHOR PERSONAS -- NON-NEGOTIABLE
 
 Never use Gareth's name as author. Use one of the personas below.
 
@@ -126,17 +126,40 @@ Never use Gareth's name as author. Use one of the personas below.
 
 ---
 
-## QUALITY GATE — EVERY PAGE, EVERY BATCH
+## QUALITY GATE -- EVERY PAGE, EVERY BATCH
 
 No page ships without passing all 7 steps:
 
-1. **Research** — real regulations from data files and named FCDO/embassy sources. No invented facts.
-2. **Write** — load workforce/the-wordsmith.md for voice rules before writing.
-3. **Rotate templates** — assign template_variant A/B/C/D/E. No two consecutive pages use the same variant.
-4. **Humanise** — apply workforce/the-humaniser.md rules. Remove all AI-pattern phrases.
-5. **QA scan** — run qa_routes.py. Zero errors before proceeding.
-6. **HTML preview** — present rendered preview to Gareth for approval.
+1. **Research** -- real regulations from data files and named FCDO/embassy sources. No invented facts.
+2. **Write** -- load workforce/the-wordsmith.md for voice rules before writing.
+3. **Rotate templates** -- assign template_variant A/B/C/D/E. No two consecutive pages use the same variant.
+4. **Humanise** -- apply workforce/the-humaniser.md rules. Remove all AI-pattern phrases.
+5. **QA scan** -- run qa_routes.py. Zero errors before proceeding.
+6. **HTML preview** -- present rendered preview to Gareth for approval.
 7. **Commit to master only after approval.** Stop and wait for next "go".
+
+---
+
+## BATCH COMPLETION PROTOCOL -- NON-NEGOTIABLE
+
+**After every completed batch of blog articles or route pages, Claude must output a live link list before stopping.**
+
+The format is:
+
+```
+Batch [N] -- [topic] -- [N] articles live
+
+https://www.repatriationfuneral.com/blog/[slug-1]/
+https://www.repatriationfuneral.com/blog/[slug-2]/
+https://www.repatriationfuneral.com/blog/[slug-3]/
+...
+
+Deploy triggered automatically. Pages live within ~60 seconds of commit.
+```
+
+For route pages, use the /routes/ prefix. For country hubs, use /repatriation-from-[country]/.
+
+This applies to every batch, every session, without exception. Do not update BUILD-PLAN.md or stop the session before outputting the live link list.
 
 ---
 
@@ -156,37 +179,37 @@ All variants use site/layouts/routes/single.html as the base template. The varia
 
 ## THE 7-ENGINE BUILD SYSTEM
 
-### Engine 1 — Combinatorial route generator
+### Engine 1 -- Combinatorial route generator
 Generates origin x destination pages from structured JSON data. Target: 30,000+ route pairs.
 Files: generate_routes.py, assemble_routes.py
 Status: v1 generator exists (thin). Full version pending Engine 2 data.
 
-### Engine 2 — Structured data layer
+### Engine 2 -- Structured data layer
 Per-country and per-route JSON: embassy contacts, timeline, key documents, airlines, special rules.
 Files: site/data/countries_repatriation.json, site/data/route_data/*.json
 Status: countries_repatriation.json exists (shallow). Route data files pending.
 
-### Engine 3 — Blog factory
+### Engine 3 -- Blog factory
 Batch blog article generator producing topical authority content.
 Files: generate_blog_batch*.py
-Status: 150 articles live. Batch system pending Engine 7 operating system.
+Status: 142 articles live. Batches 1-6 complete.
 
-### Engine 4 — Internal link graph
+### Engine 4 -- Internal link graph
 Rebuilds interlink web so every route links to origin hub, destination guide, and sideways routes.
 Files: rebuild_link_graph.py
 Status: Pending build.
 
-### Engine 5 — QA and SEO quality gate
+### Engine 5 -- QA and SEO quality gate
 Automated checks before anything ships.
 Files: qa_routes.py, check_titles.py, check_schema.py, seo_pass.py
 Status: qa_routes.py exists (basic). Full suite pending.
 
-### Engine 6 — Incremental deploy pipeline
+### Engine 6 -- Incremental deploy pipeline
 Push to master, GitHub Actions, Hugo build, FTP sync to Hostinger.
 Files: .github/workflows/deploy.yml
 Status: WORKING. Confirmed 27 May 2026.
 
-### Engine 7 — Operating system
+### Engine 7 -- Operating system
 CLAUDE.md + AGENTS.md + workforce souls + cascading build plan as law.
 Files: CLAUDE.md, AGENTS.md, workforce/, BUILD-PLAN.md, MEMORY.md, ERRORS.md
 Status: THIS INSTALL (27 May 2026).
@@ -199,9 +222,9 @@ Status: THIS INSTALL (27 May 2026).
 funeral-repatriation/
 +-- site/content/          # All page content
 |   +-- countries/         # 238 country hubs
-|   +-- guides/            # 26 country guides
-|   +-- routes/            # Route pair pages (25 live, 30,000+ target)
-|   +-- blog/              # 150+ articles
+|   +-- guides/            # 238 country guides
+|   +-- routes/            # Route pair pages (70 live, 30,000+ target)
+|   +-- blog/              # 142+ articles
 |   +-- bringing-ashes-home/
 |   +-- cremation-transfer/
 |   +-- embassy-contacts/
@@ -227,12 +250,14 @@ funeral-repatriation/
 2. Write content through the full 7-step quality gate.
 3. Present HTML preview, wait for approval.
 4. Commit to master, provide live URL and Actions link.
-5. Stop and wait.
+5. **Output live link list for every batch completed (see BATCH COMPLETION PROTOCOL).**
+6. Stop and wait.
 
 ### "session end" or "wrap up"
 1. Update BUILD-PLAN.md and MEMORY.md.
 2. Commit to master.
-3. Summarise: what was built, what is live, what is next.
+3. **Output live link list for all batches completed this session.**
+4. Summarise: what was built, what is live, what is next.
 
 ### Every content task
 1. Load the-wordsmith.md before writing.
@@ -258,6 +283,7 @@ funeral-repatriation/
 - No em dashes anywhere, ever.
 - No prices on any page.
 - British English throughout.
+- **After every batch: output live links before stopping. See BATCH COMPLETION PROTOCOL.**
 
 ---
 
@@ -270,4 +296,4 @@ funeral-repatriation/
 
 ---
 
-*Last updated: 27 May 2026*
+*Last updated: 2 June 2026*
