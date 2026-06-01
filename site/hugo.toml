@@ -20,6 +20,7 @@ title = "Repatriate Service"
     routes = "/routes/:slug/"
     "embassy-contacts" = "/embassy-contacts/:slug/"
     "bringing-ashes-home" = "/bringing-ashes-home/:slug/"
+    "cremation-transfer" = "/cremation-transfer/:slug/"
     faq = "/faq/:slug/"
   [permalinks.section]
     countries = "/repatriation-from-:slug/"

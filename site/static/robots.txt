@@ -15,5 +15,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://repatriationfuneral.com/sitemap.xml
-# LLM map: https://repatriationfuneral.com/llms.txt
+Sitemap: https://www.repatriationfuneral.com/sitemap.xml
+# LLM map: https://www.repatriationfuneral.com/llms.txt
