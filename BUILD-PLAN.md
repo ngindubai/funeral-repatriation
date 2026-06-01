@@ -18,7 +18,7 @@
 **Total indexable pages (approx):** 1,400+
 **GSC known pages:** ~2,740
 **GSC indexed:** 1,880
-**GSC not indexed:** 859
+**GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
 **Engines pending:** 3 (blog batch scripts), 2 further expansion
@@ -39,17 +39,19 @@
 - [x] Total route pages: 70
 - [x] GSC canonical fix: baseURL changed to www (1 Jun 2026)
 - [x] GEO/LLM 4-phase implementation complete (1 Jun 2026)
-- [x] 10 thin blog stubs expanded to full articles (1 Jun 2026): brazil guide, south africa guide, uae guide, canada guide, connecting flights ashes, first 24 hours checklist, choosing funeral director, airline cargo booking, post-mortem delays, name mismatch
-- [x] Country hub audit: israel, singapore, pakistan, japan all confirmed with full content (1 Jun 2026)
-- [x] SEO link audit: all upward links to country hubs and guides confirmed valid (1 Jun 2026)
-- [x] Known issue logged: sideways links to reverse routes (uk-to-{country}) will 404 until those pages are built
+- [x] 10 thin blog stubs expanded to full articles (1 Jun 2026)
+- [x] Country hub audit: all 4 newer origins confirmed (1 Jun 2026)
+- [x] **Fix all known issues pass (1 Jun 2026):**
+  - [x] E008: 70 broken sideways links — patched route template to filter via site.GetPage
+  - [x] E009: robots.txt and llms.txt URLs corrected to www
+  - [x] E010: cremation-transfer permalink rule added to hugo.toml
+  - [x] E011: removed broken sameAs TODO and dead social links
 
 ---
 
 ## KNOWN ISSUES
 
-- **Reverse route 404s:** Every route page has a sideways link to `/routes/united-kingdom-to-{country}/` and `/routes/ireland-to-{country}/`. These pages do not exist yet. They will 404 until we build UK-as-origin and Ireland-as-origin route pages. This is a future Turn E/F task.
-- **859 pages not indexed in GSC:** Requires a full GSC 'not indexed' reasons audit. Stub pages now fixed. Remaining causes likely include thin city pages, paginated list pages, or pages Google hasn't yet crawled since recent pushes.
+_None currently blocking. All issues identified during 1 June audit have been fixed._
 
 ---
 
@@ -58,25 +60,25 @@
 ### Priority 1: Engine 3 -- blog batch factory
 Build generate_blog_batch1.py through generate_blog_batch5.py.
 Modelled on pet-transport repo batch system.
-Content: topical authority articles around repatriation, what to do guides, country-specific deep dives.
+Content: topical authority articles around repatriation.
 112 articles live. Target: 500+.
 
 ### Priority 2: GSC not-indexed audit
 Export the 859 not-indexed URLs from GSC and categorise by reason.
 Fix the most impactful category first.
-Likely categories: thin content, crawled-not-indexed, soft 404, noindex.
+Many of these should self-resolve over the next 7-14 days as Google re-crawls the canonical/stub/template fixes from 1 June.
 
-### Priority 3: Turn E -- next 50 route pages
-Current 32 origins x 2 destinations = 64 possible corridors. Only 70 pages exist (some corridors already have both directions).
-Identify which corridors are still missing and fill them.
-Then add new origins for Turn E expansion.
+### Priority 3: Turn E -- next 50 route pages from existing origins
+Identify missing corridors from the 32 existing origins (some have only UK or only Ireland page).
+Generate the missing direction for each.
 
-### Priority 4: Engine 2 further expansion
-Add to site/data/route_data/ to enable more corridors.
+### Priority 4: Reverse route pages (uk-to-{country}, ireland-to-{country})
+Building these would activate the now-filtered sideways links (E008 fix means they currently don't render; building reverse routes makes them auto-restore).
+Requires a new destination key pattern in the data layer.
+
+### Priority 5: Engine 2 further expansion
+Add new origins to enable Turn F.
 Needed: poland, czech-republic, hungary, austria, croatia, bulgaria, romania, bahrain, qatar, saudi-arabia, malaysia, china, hong-kong, south-korea, bangladesh, nepal
-
-### Priority 5: Reverse route pages (uk-to-{country}, ireland-to-{country})
-Building UK-as-origin and Ireland-as-origin pages would fix the sideways link 404s and significantly expand the route silo. These require a new destination key in the data layer.
 
 ---
 
@@ -111,6 +113,10 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 | E005: MCP 403 on workflow files | Documented. Gareth must paste workflow manually. |
 | E006: .md file in site/data/ | Fixed. Deleted README.md from route_data/. |
 | E007: baseURL missing www | Fixed. Changed to https://www.repatriationfuneral.com/ |
+| E008: 70 broken sideways links | Fixed via template filter (site.GetPage check) |
+| E009: robots.txt/llms.txt non-www URLs | Fixed. Both rewritten with www. |
+| E010: Missing cremation-transfer permalink | Fixed. Added to hugo.toml. |
+| E011: Broken sameAs TODO + dead social links | Fixed. Removed until real URLs exist. |
 
 ---
 
