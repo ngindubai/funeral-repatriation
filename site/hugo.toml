@@ -3,6 +3,14 @@ languageCode = "en-gb"
 title = "Repatriate Service"
 # last-reviewed: 2026-06-01
 
+# Build future-dated content. Without this, Hugo silently skips any page whose
+# date is later than the build time. Because GitHub Actions builds in UTC, a
+# page dated "today" can be skipped if the build runs before UTC midnight,
+# producing 404s with no build error. Every page on this site is meant to go
+# live on commit (there is no editorial schedule), so building future-dated
+# content is the correct behaviour here. See ERRORS.md E012.
+buildFuture = true
+
 [params]
   brand = "Repatriate Service"
   tagline = "Bringing your loved ones home"
