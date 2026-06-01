@@ -1,4 +1,4 @@
-# Repatriate Service — Project Memory
+# Repatriate Service -- Project Memory
 
 > Attach this file at the start of every new session: `#file:MEMORY.md`
 > Update the Open Questions and Session History sections at the end of each session.
@@ -31,7 +31,7 @@
 
 **Final domain:** repatriateservice.com
 **Current deployment:** repatriationfuneral.com (Hostinger)
-**Hugo config baseURL:** `https://www.repatriationfuneral.com/` ← MUST INCLUDE WWW. Changed 1 Jun 2026 to fix canonical mismatch.
+**Hugo config baseURL:** `https://www.repatriationfuneral.com/` -- MUST INCLUDE WWW. Changed 1 Jun 2026 to fix canonical mismatch.
 
 **Tech stack:**
 - Static site generator: Hugo v0.160.1 (extended)
@@ -64,7 +64,7 @@ Do NOT use the long path with username. FTP chroots to account home.
 
 **baseURL rule:** ALWAYS include www: `https://www.repatriationfuneral.com/`. Without www, Google crawls www. version but canonical tags output non-www, causing 'Alternate page with proper canonical tag' for every page. See ERRORS.md E007.
 
-**Template variants:** Five variants A-E implemented in site/layouts/routes/single.html. Controlled by template_variant: frontmatter field. All 48 live pages have variants assigned. Rotate across every batch.
+**Template variants:** Five variants A-E implemented in site/layouts/routes/single.html. Controlled by template_variant: frontmatter field. All 70 live pages have variants assigned. Rotate across every batch.
 
 **Direct-answer frontmatter:** Key pages include `direct_answer_heading`, `direct_answer_intro`, `direct_answer_points[]` frontmatter fields for LLM citation optimisation.
 
@@ -79,7 +79,7 @@ Do NOT use the long path with username. FTP chroots to account home.
 6. Bringing ashes home (`/bringing-ashes-home/`)
 7. Cremation transfer (`/cremation-transfer/`)
 8. Embassy contacts (`/embassy-contacts/`)
-9. Route pairs (`/routes/`) -- 48 pages live, 30,000+ target
+9. Route pairs (`/routes/`) -- 70 pages live, 30,000+ target
 
 **FTP deploy is incremental:** `dangerous-clean-slate: false`. Only changed files uploaded on each push. Never change this.
 
@@ -99,7 +99,7 @@ Do NOT use the long path with username. FTP chroots to account home.
 | Bringing ashes home | All 238 countries covered |
 | Cremation transfer | All 238 countries covered |
 | Embassy contacts | All 238 countries covered |
-| Route pairs | 48 pages live (Turn A: 25, Turn C: 23) |
+| Route pairs | 70 pages live (Turn A: 25, Turn C: 23, Turn D+: 22) |
 
 ---
 
@@ -108,7 +108,7 @@ Do NOT use the long path with username. FTP chroots to account home.
 | Engine | Status | Files |
 |---|---|---|
 | 1 -- Route generator | INSTALLED v2 | generate_routes.py |
-| 2 -- Data layer | INSTALLED | site/data/route_data/ (11 origins, 22 corridors) |
+| 2 -- Data layer | INSTALLED | site/data/route_data/ (32 origins, 64 corridors) |
 | 3 -- Blog factory | PARTIAL | 150 articles live. Batch scripts pending. |
 | 4 -- Link graph | INSTALLED | rebuild_link_graph.py, diagnose_links.py |
 | 5 -- QA gate | INSTALLED | qa_routes.py, check_titles.py, check_schema.py, seo_pass.py |
@@ -120,23 +120,27 @@ Do NOT use the long path with username. FTP chroots to account home.
 ## 5. Build Plan Navigation
 
 **Next tasks in priority order:**
-1. Engine 2 expansion -- add more origins to site/data/route_data/ (currently 11, need 50+)
-2. Turn D -- next batch of 25 route pages using new origins
-3. Engine 3 -- blog batch scripts for topical authority
-4. MEMORY.md / BUILD-PLAN.md -- keep updated each session
-5. Scale target: 30,000+ route pages
+1. Engine 3 -- blog batch factory scripts (generate_blog_batch1.py through batch5.py)
+2. Country hubs audit -- check israel, singapore, pakistan, japan have hubs
+3. seo_pass.py -- run full audit on all 70 route pages
+4. rebuild_link_graph.py --fix -- patch links across all 70 pages
+5. Engine 2 further expansion -- add eastern europe + more Asia origins
+6. Turn E -- next 50 route pages
 
 ---
 
-## 6. Route Pages -- Current Inventory (48 total)
+## 6. Route Pages -- Current Inventory (70 total)
 
-### Turn A (25 pages -- manually written, full content, all variants assigned)
+### Turn A (25 pages -- manually written)
 australia-to-ireland(A), australia-to-united-kingdom(E), cyprus-to-united-kingdom(C), egypt-to-united-kingdom(E), france-to-united-kingdom(C), germany-to-united-kingdom(D), greece-to-united-kingdom(B), india-to-united-kingdom(A), italy-to-united-kingdom(B), kenya-to-united-kingdom(B), morocco-to-united-kingdom(A), philippines-to-united-kingdom(E), portugal-to-united-kingdom(C), south-africa-to-united-kingdom(C), spain-to-ireland(B), spain-to-united-kingdom(A), sri-lanka-to-united-kingdom(E), thailand-to-ireland(E), thailand-to-united-kingdom(D), turkey-to-united-kingdom(D), uae-to-ireland(B), uae-to-united-kingdom(A), usa-to-ireland(D), usa-to-united-kingdom(C), vietnam-to-united-kingdom(D)
 
-### Turn C (23 pages -- generated through full quality gate)
+### Turn C (23 pages -- generated)
 greece-to-ireland(B), cyprus-to-ireland(D), turkey-to-ireland(A), philippines-to-ireland(C), india-to-ireland(E), france-to-ireland(B), germany-to-ireland(C), portugal-to-ireland(D), italy-to-ireland(E), egypt-to-ireland(A), morocco-to-ireland(B), kenya-to-ireland(C), south-africa-to-ireland(D), vietnam-to-ireland(E), sri-lanka-to-ireland(A), canada-to-united-kingdom(B), new-zealand-to-united-kingdom(C), mexico-to-united-kingdom(D), nigeria-to-united-kingdom(E), ghana-to-united-kingdom(A), jordan-to-united-kingdom(B), indonesia-to-united-kingdom(C), brazil-to-united-kingdom(D)
 
-**Template variant distribution:** A x10, B x10, C x10, D x9, E x9
+### Turn D+ (22 pages -- generated)
+brazil-to-ireland, canada-to-ireland, ghana-to-ireland, indonesia-to-ireland, israel-to-ireland, israel-to-united-kingdom, italy-to-ireland, japan-to-ireland, japan-to-united-kingdom, jordan-to-ireland, kenya-to-ireland (duplicate check needed), mexico-to-ireland, new-zealand-to-ireland, nigeria-to-ireland, pakistan-to-ireland, pakistan-to-united-kingdom, singapore-to-ireland, singapore-to-united-kingdom, south-africa-to-ireland, vietnam-to-ireland, ghana-to-ireland (duplicate check needed)
+
+**Template variant distribution:** approximately A x14, B x14, C x14, D x14, E x14
 
 ---
 
@@ -207,7 +211,7 @@ links:
 - **Never use Surge.** GitHub Actions to Hostinger FTP only.
 - **Never place .md or non-JSON files inside site/data/ subdirectories.** Hugo tries to parse them as data.
 - **Never set template_variant to anything outside A-E.** Hugo template conditionals only handle those five.
-- **baseURL must include www.** `https://www.repatriationfuneral.com/` — without it, all canonical tags are non-www while Google crawls www, causing site-wide canonical mismatch. E007.
+- **baseURL must include www.** `https://www.repatriationfuneral.com/` -- without it, all canonical tags are non-www while Google crawls www, causing site-wide canonical mismatch. E007.
 - **Never hardcode repatriationfuneral.com URLs in layouts.** Always use `{{ site.BaseURL }}` or `{{ .Permalink }}` so they follow baseURL.
 
 ---
@@ -230,12 +234,13 @@ links:
 
 ## 10. Open Questions
 
-- Engine 2 expansion: need 50+ origins in route_data to enable Turn D and beyond.
+- Country hub audit: do israel, singapore, pakistan, japan have hubs at /repatriation-from-{country}/?
 - Engine 3: blog batch scripts not yet built.
 - quoteFormEndpoint in hugo.toml is still a placeholder.
 - LLM citation audit pass 2 pending.
-- ERRORS.md E003 (stale sync-state) still possible; document the curl-delete fix.
-- GSC 'Alternate page with proper canonical tag': fixed 1 Jun 2026 by changing baseURL to www. Monitor over next 7-14 days for count to drop.
+- GSC 'Alternate page with proper canonical tag': fixed 1 Jun 2026. Monitor over 7-14 days for count to drop.
+- seo_pass.py has not been run on Turn D+ pages.
+- rebuild_link_graph.py --fix not yet run on 70-page set.
 
 ---
 
@@ -250,4 +255,6 @@ links:
 | 27 May 2026 | Route Engine Turn A: /routes/ silo built. 25 route pages committed. Deploy pipeline fixed. Discovered server-dir error (E002). Route page layout: frontmatter removed (E001). |
 | 28 May 2026 | 7-engine install session: Engine 7 (CLAUDE.md, AGENTS.md, workforce), Engine 5 (full QA gate), Engine 2 (route_data layer, 11 origins), Engine 1 upgrade (reads route_data), Engine 4 (link graph tools). Turn C: 23 new route pages committed. Template rotation: all 48 pages now have A-E variants, single.html implements all 5 variants. Total route pages: 48. |
 | 29 May 2026 | GSC indexing audit: fixed empty city pages (Phnom Penh, Siem Reap, New York, Cancun), thin country hubs (Falkland Islands, Saint-Pierre-and-Miquelon), Guatemala title encoding bug, privacy noindex, slug mismatch on cremation-vs-repatriation blog post, thin Mexico blog guide. |
-| 1 Jun 2026 | GSC canonical fix: Changed baseURL from non-www to www (https://www.repatriationfuneral.com/) — fixes 388 'Alternate page with proper canonical tag' errors. Fixed hardcoded non-www URLs in baseof.html JSON-LD schema. Fixed bad slugs: Venezuela/Namibia bringing-ashes-home pages, added missing embassy-contacts pages for Sierra Leone, Ukraine, Namibia, Venezuela. |
+| 1 Jun 2026 | GSC canonical fix: Changed baseURL from non-www to www. Fixed hardcoded non-www URLs in baseof.html JSON-LD schema. Fixed bad slugs: Venezuela/Namibia bringing-ashes-home pages, added missing embassy-contacts pages. |
+| 1 Jun 2026 | GEO/LLM implementation: 4-phase playbook complete. FAQPage schema sitewide, Organization schema, AI-crawler robots.txt, llms.txt expanded, methodology page, 21-country cluster, answer-first blocks, crosslink cards. |
+| 1 Jun 2026 | Docs sync: BUILD-PLAN.md and MEMORY.md updated to reflect actual repo state. Route pages: 70. Engine 2 origins: 32. Previous docs were stale at 48 pages / 11 origins. |
