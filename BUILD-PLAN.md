@@ -8,15 +8,15 @@
 ## CURRENT STATUS -- 1 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 112 (not 150 -- corrected 1 Jun 2026 after direct repo count)
+**Blog articles live:** 112 (all at full content -- stubs fixed 1 Jun 2026)
 **Country hubs:** 238
+**Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
 **Cremation transfer pages:** 238
 **Embassy contact pages:** 238
 **City pages:** 220
-**Guides:** 26
 **Total indexable pages (approx):** 1,400+
-**GSC known pages:** ~2,740 (includes paginated list pages, historical URLs, city sub-pages)
+**GSC known pages:** ~2,740
 **GSC indexed:** 1,880
 **GSC not indexed:** 859
 **Target route pages:** 30,000+
@@ -29,62 +29,54 @@
 
 - [x] Engine 7: CLAUDE.md, AGENTS.md, workforce/ installed
 - [x] Engine 5: qa_routes.py, check_titles.py, check_schema.py, seo_pass.py
-- [x] Engine 2: site/data/route_data/ with 32 origins (64 corridors)
-- [x] Engine 1: generate_routes.py upgraded to read route_data, apply wordsmith voice, QA gate
+- [x] Engine 2: site/data/route_data/ with 32 origins
+- [x] Engine 1: generate_routes.py upgraded
 - [x] Engine 4: rebuild_link_graph.py, diagnose_links.py installed
-- [x] Template rotation: single.html implements all A-E variants; all pages have template_variant
-- [x] Turn A: 25 route pages (manually written)
+- [x] Template rotation: all 70 route pages have A-E variants
+- [x] Turn A: 25 route pages
 - [x] Turn C: 23 route pages
-- [x] Turn D+: 22 further route pages (israel, singapore, pakistan, japan corridors)
+- [x] Turn D+: 22 further route pages
 - [x] Total route pages: 70
-- [x] ERRORS.md updated with E006, E007
 - [x] GSC canonical fix: baseURL changed to www (1 Jun 2026)
-- [x] GEO/LLM citation upgrades: FAQPage schema, Organization schema, llms.txt, methodology page
-- [x] 4-phase GEO implementation complete (1 Jun 2026)
-- [x] Page count audit: corrected blog count to 112, total site ~1,400+ indexable pages (1 Jun 2026)
+- [x] GEO/LLM 4-phase implementation complete (1 Jun 2026)
+- [x] 10 thin blog stubs expanded to full articles (1 Jun 2026): brazil guide, south africa guide, uae guide, canada guide, connecting flights ashes, first 24 hours checklist, choosing funeral director, airline cargo booking, post-mortem delays, name mismatch
+- [x] Country hub audit: israel, singapore, pakistan, japan all confirmed with full content (1 Jun 2026)
+- [x] SEO link audit: all upward links to country hubs and guides confirmed valid (1 Jun 2026)
+- [x] Known issue logged: sideways links to reverse routes (uk-to-{country}) will 404 until those pages are built
 
 ---
 
 ## KNOWN ISSUES
 
-- Several blog files are very thin (under 1.5KB): repatriation-from-brazil-guide, repatriation-from-south-africa-guide, repatriation-from-uae-guide, repatriation-from-canada-guide, bringing-ashes-through-connecting-flights, first-24-hours-after-a-death-abroad-checklist, how-to-choose-a-repatriation-funeral-director, how-airline-cargo-booking-works-for-repatriation, post-mortem-delays-and-what-families-can-control, repatriation-delays-caused-by-name-mismatch. These are likely stub pages contributing to GSC 'not indexed' count.
-- 859 pages not indexed in GSC -- requires audit of 'not indexed' reasons.
+- **Reverse route 404s:** Every route page has a sideways link to `/routes/united-kingdom-to-{country}/` and `/routes/ireland-to-{country}/`. These pages do not exist yet. They will 404 until we build UK-as-origin and Ireland-as-origin route pages. This is a future Turn E/F task.
+- **859 pages not indexed in GSC:** Requires a full GSC 'not indexed' reasons audit. Stub pages now fixed. Remaining causes likely include thin city pages, paginated list pages, or pages Google hasn't yet crawled since recent pushes.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Thin blog stub audit and fix
-Inspect the ~10 thin blog files (under 2KB). Expand each to full content or redirect/delete.
-This directly reduces the GSC 'not indexed' count.
-
-### Priority 2: Engine 3 -- blog batch factory
+### Priority 1: Engine 3 -- blog batch factory
 Build generate_blog_batch1.py through generate_blog_batch5.py.
 Modelled on pet-transport repo batch system.
 Content: topical authority articles around repatriation, what to do guides, country-specific deep dives.
 112 articles live. Target: 500+.
 
-### Priority 3: Country hubs audit for new route origins
-The following origins have route pages but may lack country hub pages at /repatriation-from-{country}/:
-Check: israel, singapore, pakistan, japan.
-Audit all 32 route origins against the country hub silo.
+### Priority 2: GSC not-indexed audit
+Export the 859 not-indexed URLs from GSC and categorise by reason.
+Fix the most impactful category first.
+Likely categories: thin content, crawled-not-indexed, soft 404, noindex.
 
-### Priority 4: seo_pass.py audit on all 70 route pages
-Run the full Engine 5 audit on the complete route page set.
-Fix any errors before next content turn.
+### Priority 3: Turn E -- next 50 route pages
+Current 32 origins x 2 destinations = 64 possible corridors. Only 70 pages exist (some corridors already have both directions).
+Identify which corridors are still missing and fill them.
+Then add new origins for Turn E expansion.
 
-### Priority 5: rebuild_link_graph.py --fix
-Run Engine 4 with --fix to patch any missing links across all 70 pages.
-Then run diagnose_links.py to confirm no orphans.
+### Priority 4: Engine 2 further expansion
+Add to site/data/route_data/ to enable more corridors.
+Needed: poland, czech-republic, hungary, austria, croatia, bulgaria, romania, bahrain, qatar, saudi-arabia, malaysia, china, hong-kong, south-korea, bangladesh, nepal
 
-### Priority 6: Engine 2 further expansion
-Add more origins to site/data/route_data/ to enable Turn E.
-Current: 32 origins.
-Still needed: poland, czech-republic, hungary, austria, croatia, bulgaria, romania, bahrain, qatar, saudi-arabia, malaysia, china, hong-kong, south-korea, bangladesh, nepal
-
-### Priority 7: Turn E -- next 50 route pages
-Once additional route_data files exist, run generate_routes.py for Turn E.
-Rotate templates continuing from last assigned variant.
+### Priority 5: Reverse route pages (uk-to-{country}, ireland-to-{country})
+Building UK-as-origin and Ireland-as-origin pages would fix the sideways link 404s and significantly expand the route silo. These require a new destination key in the data layer.
 
 ---
 
