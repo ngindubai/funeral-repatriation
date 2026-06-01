@@ -31,7 +31,7 @@
 
 **Final domain:** repatriateservice.com
 **Current deployment:** repatriationfuneral.com (Hostinger)
-**Hugo config baseURL:** `https://repatriationfuneral.com/`
+**Hugo config baseURL:** `https://www.repatriationfuneral.com/` ← MUST INCLUDE WWW. Changed 1 Jun 2026 to fix canonical mismatch.
 
 **Tech stack:**
 - Static site generator: Hugo v0.160.1 (extended)
@@ -62,6 +62,8 @@ Do NOT use the long path with username. FTP chroots to account home.
 
 **site/data/ rule:** NEVER place .md, .txt, or any non-JSON files inside site/data/ or any subdirectory. Hugo tries to parse everything in site/data/ as structured data. See ERRORS.md E006.
 
+**baseURL rule:** ALWAYS include www: `https://www.repatriationfuneral.com/`. Without www, Google crawls www. version but canonical tags output non-www, causing 'Alternate page with proper canonical tag' for every page. See ERRORS.md E007.
+
 **Template variants:** Five variants A-E implemented in site/layouts/routes/single.html. Controlled by template_variant: frontmatter field. All 48 live pages have variants assigned. Rotate across every batch.
 
 **Direct-answer frontmatter:** Key pages include `direct_answer_heading`, `direct_answer_intro`, `direct_answer_points[]` frontmatter fields for LLM citation optimisation.
@@ -85,7 +87,7 @@ Do NOT use the long path with username. FTP chroots to account home.
 
 ## 3. Pages and Content Completed
 
-**Phase 3 (IN PROGRESS):** As of 28 May 2026:
+**Phase 3 (IN PROGRESS):** As of 1 June 2026:
 
 | Silo | Status |
 |------|--------|
@@ -205,6 +207,8 @@ links:
 - **Never use Surge.** GitHub Actions to Hostinger FTP only.
 - **Never place .md or non-JSON files inside site/data/ subdirectories.** Hugo tries to parse them as data.
 - **Never set template_variant to anything outside A-E.** Hugo template conditionals only handle those five.
+- **baseURL must include www.** `https://www.repatriationfuneral.com/` — without it, all canonical tags are non-www while Google crawls www, causing site-wide canonical mismatch. E007.
+- **Never hardcode repatriationfuneral.com URLs in layouts.** Always use `{{ site.BaseURL }}` or `{{ .Permalink }}` so they follow baseURL.
 
 ---
 
@@ -231,6 +235,7 @@ links:
 - quoteFormEndpoint in hugo.toml is still a placeholder.
 - LLM citation audit pass 2 pending.
 - ERRORS.md E003 (stale sync-state) still possible; document the curl-delete fix.
+- GSC 'Alternate page with proper canonical tag': fixed 1 Jun 2026 by changing baseURL to www. Monitor over next 7-14 days for count to drop.
 
 ---
 
@@ -244,3 +249,5 @@ links:
 | 27 May 2026 | CTR Rescue Turn A: 25 pages title/desc rewritten. Stage 3.CTR marked DONE. |
 | 27 May 2026 | Route Engine Turn A: /routes/ silo built. 25 route pages committed. Deploy pipeline fixed. Discovered server-dir error (E002). Route page layout: frontmatter removed (E001). |
 | 28 May 2026 | 7-engine install session: Engine 7 (CLAUDE.md, AGENTS.md, workforce), Engine 5 (full QA gate), Engine 2 (route_data layer, 11 origins), Engine 1 upgrade (reads route_data), Engine 4 (link graph tools). Turn C: 23 new route pages committed. Template rotation: all 48 pages now have A-E variants, single.html implements all 5 variants. Total route pages: 48. |
+| 29 May 2026 | GSC indexing audit: fixed empty city pages (Phnom Penh, Siem Reap, New York, Cancun), thin country hubs (Falkland Islands, Saint-Pierre-and-Miquelon), Guatemala title encoding bug, privacy noindex, slug mismatch on cremation-vs-repatriation blog post, thin Mexico blog guide. |
+| 1 Jun 2026 | GSC canonical fix: Changed baseURL from non-www to www (https://www.repatriationfuneral.com/) — fixes 388 'Alternate page with proper canonical tag' errors. Fixed hardcoded non-www URLs in baseof.html JSON-LD schema. Fixed bad slugs: Venezuela/Namibia bringing-ashes-home pages, added missing embassy-contacts pages for Sierra Leone, Ukraine, Namibia, Venezuela. |
