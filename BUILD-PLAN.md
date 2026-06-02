@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 2 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 142 (112 baseline + 30 from Engine 3 Batches 1-6)
+**Blog articles live:** 152 (112 baseline + 40 from Engine 3 Batches 1-8)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,24 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-6 complete (30 articles).
+**Engine 3 status:** Batches 1-8 complete (40 articles).
+
+---
+
+## DEPLOY ARCHITECTURE (confirmed 2 June 2026 -- READ THIS)
+
+Production is served as follows:
+
+```
+push to master
+  -> build-and-publish.yml builds Hugo and force-pushes built HTML to the `live` branch
+     -> Hostinger Git integration pulls the `live` branch into /public_html/   <- THIS serves the site
+```
+
+- **build-and-publish.yml is the production pipeline. Do not disable it.** The `live` branch is load-bearing: Hostinger pulls it.
+- **deploy.yml (FTP) is DISABLED** as of 2 June 2026. It is now a manual-only no-op stub. It used to FTP-push into /public_html/, which fought with Hostinger's own Git pull into the same folder, and it deleted the FTP sync-state on every run. Do not re-enable it with a push trigger.
+- FTP secrets (FTP_SERVER / FTP_USERNAME / FTP_PASSWORD) are now unused and can be deleted from GitHub repo secrets.
+- buildFuture = true is set in hugo.toml. Keep it. See E012.
 
 ---
 
@@ -33,6 +50,8 @@
 - [x] GEO/LLM 4-phase implementation (1 Jun 2026)
 - [x] 10 thin blog stubs expanded (1 Jun 2026)
 - [x] Fix all known issues E008-E011 (1 Jun 2026)
+- [x] **E012 fix (2 Jun 2026):** buildFuture=true added to hugo.toml. Root cause of Batch 4-6 404s was future-dated content silently skipped by Hugo on a UTC build. See ERRORS.md.
+- [x] **Deploy structural fix (2 Jun 2026):** Confirmed Hostinger pulls the `live` branch. Disabled the redundant FTP workflow (deploy.yml) that was double-writing to /public_html/ and deleting sync-state each run.
 - [x] **Engine 3 Batch 1 (1 Jun 2026):** Cost cluster, 5 articles
   - who-pays-for-repatriation-when-someone-dies-abroad
   - repatriation-cost-without-travel-insurance
@@ -69,6 +88,18 @@
   - uk-port-health-and-repatriation
   - registering-a-death-in-uk-after-repatriation
   - uk-funeral-after-repatriation-what-to-expect
+- [x] **Engine 3 Batch 7 (2 Jun 2026):** Airline and cargo cluster, 5 articles
+  - which-airlines-accept-human-remains-cargo
+  - iata-standards-for-human-remains-transport
+  - container-requirements-for-repatriation-cargo
+  - airline-cargo-vs-passenger-aircraft-for-repatriation
+  - cargo-delays-and-what-causes-them
+- [x] **Engine 3 Batch 8 (2 Jun 2026):** Insurance deep-dives, 5 articles
+  - does-travel-insurance-cover-repatriation-of-remains
+  - how-insurer-assistance-company-coordinates-repatriation
+  - repatriation-and-pre-existing-medical-conditions
+  - repatriation-insurance-claim-refused-what-to-do
+  - credit-card-bank-travel-cover-repatriation
 
 ---
 
@@ -76,26 +107,22 @@
 
 _None currently blocking._
 
+Tidy-up (non-blocking, manual): delete unused FTP_SERVER / FTP_USERNAME / FTP_PASSWORD secrets from GitHub now that deploy.yml is disabled.
+
 ---
 
 ## ENGINE 3 -- BLOG BATCH ROADMAP
 
-### Batches 1-6: DONE (30 articles)
+### Batches 1-8: DONE (40 articles)
 
-### Batch 7: Airline-policy specific articles (NEXT)
-Which airlines accept human remains, IATA standards, container requirements, common airline policies for UK families.
-Candidate articles:
-- which-airlines-accept-human-remains-cargo
-- iata-standards-for-human-remains-transport
-- container-requirements-for-repatriation-cargo
-- airline-cargo-vs-passenger-aircraft-for-repatriation
-- cargo-delays-and-what-causes-them
-
-### Batch 8: Insurance deep-dives
-Employer schemes, policy exclusions, premium vs standard cover, claim disputes, pre-existing condition exclusions.
-
-### Batch 9: Comparison and decision articles
+### Batch 9: Comparison and decision articles (NEXT)
 Burial abroad vs repatriation, cremation abroad vs repatriation, repatriation vs memorial service, choosing between providers.
+Candidate articles:
+- burial-abroad-vs-repatriation-to-uk
+- cremation-abroad-vs-repatriation-which-to-choose
+- repatriation-vs-local-memorial-service
+- how-to-choose-a-repatriation-provider
+- direct-repatriation-vs-full-service-what-differs
 
 ### Batch 10: Embalming and preparation deep-dives
 International embalming standards, what embalming involves, religious considerations, mortuary services abroad.
@@ -103,21 +130,22 @@ International embalming standards, what embalming involves, religious considerat
 ### Batch 11+: Country deep-dive blog series
 Country-specific blog articles beyond the existing hub pages. E.g. "repatriation from Spain: the most common questions UK families ask."
 
-Target overall: 500+ blog articles. 142 live. 358 to go.
+Target overall: 500+ blog articles. 152 live. 348 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 7 -- airline-policy cluster
-Generate 5 articles on airline cargo policies and standards.
+### Priority 1: Engine 3 Batch 9 -- comparison and decision cluster
+Generate 5 articles helping families decide between options.
 
 ### Priority 2: GSC not-indexed audit
-Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes.
+Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
 
 ### Priority 3: Turn E -- next 50 route pages from existing origins
 
 ### Priority 4: Reverse route pages (uk-to-{country}, ireland-to-{country})
+Note: building these auto-restores the E008-filtered sideways links.
 
 ### Priority 5: Engine 2 further expansion
 Needed: poland, czech-republic, hungary, austria, croatia, bulgaria, romania, bahrain, qatar, saudi-arabia, malaysia, china, hong-kong, south-korea, bangladesh, nepal
@@ -140,6 +168,8 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 | E009: robots.txt/llms.txt non-www | Fixed |
 | E010: Missing cremation-transfer permalink | Fixed |
 | E011: Broken sameAs TODO + dead social links | Fixed |
+| E012: Future-dated content skipped by Hugo | Fixed (buildFuture=true) |
+| Structural: duplicate deploy workflows | Fixed (deploy.yml disabled; Hostinger pulls `live`) |
 
 ---
 
