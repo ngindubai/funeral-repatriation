@@ -209,6 +209,7 @@ dest_key: "uk" or "ireland"
 - baseURL must include www.
 - Never hardcode repatriationfuneral.com URLs in layouts.
 - **Never complete a batch without outputting live links for Gareth.**
+- **Before generating any blog batch, check site/content/blog/ for an existing slug on the same topic.** Several Batch 9 roadmap candidates already existed (burial-vs-repatriation, cremation-vs-repatriation, choosing-a-provider). Publishing them would have cannibalised live ranking pages. Roadmap candidate lists are not pre-checked against live content.
 
 ---
 
@@ -254,3 +255,4 @@ dest_key: "uk" or "ireland"
 | 1 Jun 2026 | Fix all known issues: E008-E011 resolved (sideways links, robots.txt, permalink, schema). |
 | 1 Jun 2026 | Engine 3 Batches 1-3: 15 articles (cost cluster, timeline cluster, documents deep-dive). |
 | 2 Jun 2026 | Engine 3 Batches 4-6: 15 articles (religious/cultural, special circumstances, UK reception). Total blog: 142. Added live link output rule to CLAUDE.md and MEMORY.md. |
+| 3 Jun 2026 | Engine 3 Batch 9: comparison/decision cluster. 2 new articles (repatriation-vs-local-memorial-service, direct-repatriation-vs-full-service). 3 roadmap candidates dropped as duplicates of existing live articles. Blog total: 154. |

@@ -5,10 +5,10 @@
 
 ---
 
-## CURRENT STATUS -- 2 June 2026
+## CURRENT STATUS -- 3 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 152 (112 baseline + 40 from Engine 3 Batches 1-8)
+**Blog articles live:** 154 (112 baseline + 42 from Engine 3 Batches 1-9)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-8 complete (40 articles).
+**Engine 3 status:** Batches 1-9 complete (42 articles).
 
 ---
 
@@ -100,6 +100,10 @@ push to master
   - repatriation-and-pre-existing-medical-conditions
   - repatriation-insurance-claim-refused-what-to-do
   - credit-card-bank-travel-cover-repatriation
+- [x] **Engine 3 Batch 9 (3 Jun 2026):** Comparison and decision, 2 articles
+  - repatriation-vs-local-memorial-service
+  - direct-repatriation-vs-full-service-what-differs
+  - Note: 3 of the 5 roadmap candidates were dropped because the topics already exist live (burial-abroad-vs-repatriation = repatriation-vs-local-burial-abroad; cremation-abroad-vs-repatriation = repatriation-vs-cremation-abroad; how-to-choose-a-provider = how-to-choose-a-repatriation-company + ...-funeral-director). Duplicates avoided per no-duplicate-content rule.
 
 ---
 
@@ -115,29 +119,26 @@ Tidy-up (non-blocking, manual): delete unused FTP_SERVER / FTP_USERNAME / FTP_PA
 
 ### Batches 1-8: DONE (40 articles)
 
-### Batch 9: Comparison and decision articles (NEXT)
-Burial abroad vs repatriation, cremation abroad vs repatriation, repatriation vs memorial service, choosing between providers.
-Candidate articles:
-- burial-abroad-vs-repatriation-to-uk
-- cremation-abroad-vs-repatriation-which-to-choose
+### Batch 9: Comparison and decision articles -- DONE (2 articles)
 - repatriation-vs-local-memorial-service
-- how-to-choose-a-repatriation-provider
 - direct-repatriation-vs-full-service-what-differs
+3 candidate slugs dropped as duplicates of existing live articles (see COMPLETED above). Before any future batch, check site/content/blog/ for an existing slug on the same topic to avoid cannibalisation.
 
-### Batch 10: Embalming and preparation deep-dives
+### Batch 10: Embalming and preparation deep-dives (NEXT)
 International embalming standards, what embalming involves, religious considerations, mortuary services abroad.
+Check existing first: how-embalming-works-international-repatriation and zinc-lined-coffins-explained already exist. New angles only.
 
 ### Batch 11+: Country deep-dive blog series
 Country-specific blog articles beyond the existing hub pages. E.g. "repatriation from Spain: the most common questions UK families ask."
 
-Target overall: 500+ blog articles. 152 live. 348 to go.
+Target overall: 500+ blog articles. 154 live. 346 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 9 -- comparison and decision cluster
-Generate 5 articles helping families decide between options.
+### Priority 1: Engine 3 Batch 10 -- embalming and preparation deep-dives
+Generate articles on international embalming standards and mortuary preparation. Check existing blog slugs first; new angles only.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -173,4 +174,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 2 June 2026*
+*Last updated: 3 June 2026*
