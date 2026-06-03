@@ -60,27 +60,37 @@ Use commas, full stops, colons, brackets, or restructure the sentence instead. T
 ## DEPLOY PIPELINE
 
 ```
-Push/merge to master
+Push to master
    |
-GitHub Actions triggers automatically
+GitHub Actions (build-and-publish.yml) triggers automatically
    |
 Hugo --gc --minify builds site/public/
    |
-FTP Deploy Action checks .ftp-deploy-sync-state.json on Hostinger
+Built HTML is force-pushed to the `live` branch
    |
-Only NEW or CHANGED files are uploaded (seconds, not hours)
+Hostinger Git integration pulls `live` into /public_html/
    |
-Live on repatriationfuneral.com
+Live on repatriationfuneral.com (within ~60 seconds)
 ```
+
+### HOW WE WORK IN THIS CHAT -- NON-NEGOTIABLE
+
+This project runs in Claude Code on the web. The working loop is:
+
+1. **After every prompt, push to the live site and give Gareth the links.** When Claude finishes the task in a prompt, it commits the work and pushes so the change deploys to the live site, then provides the live URLs for review before moving to the next task.
+2. **No task is complete until the change is live and the links are provided.** Do not stop, and do not start the next task, before the links are given.
+3. **Pushing to master is what triggers the deploy.** Claude pushes the session work to master directly in this environment. Gareth has authorised this (3 June 2026). Work is developed on the session branch and pushed to master so it goes live.
+4. After pushing, confirm the build is running or has gone green before reporting the links as live.
 
 ### Critical deploy rules
 
-- **server-dir: /public_html/** -- this is the correct Hostinger path. Never change it.
-- **Never set dangerous-clean-slate: true** in the workflow.
-- **Never delete .ftp-deploy-sync-state.json from Hostinger** unless diagnosing a known sync problem.
-- **The .github/workflows/deploy.yml file cannot be edited via the MCP connector** (GitHub returns 403 for workflow files). Always provide the complete file and ask Gareth to paste it via the GitHub web editor.
+- **build-and-publish.yml is the live pipeline.** It builds Hugo and force-pushes to the `live` branch, which Hostinger pulls into /public_html/. Do not disable it. The `live` branch is load-bearing.
+- **deploy.yml (FTP) is DISABLED** (2 June 2026). It is a manual-only no-op stub. Do not re-enable it with a push trigger: it fought with Hostinger's own Git pull into the same folder.
+- **server-dir: /public_html/** is the correct Hostinger path. Never change it.
+- **buildFuture = true** is set in hugo.toml. Keep it (see E012: future-dated content was being silently skipped).
+- **The .github/workflows/ files cannot be edited via the MCP connector** (GitHub returns 403 for workflow files). Always provide the complete file and ask Gareth to paste it via the GitHub web editor.
 - **Race condition warning:** Multiple concurrent deploys clobber each other. Push one commit, let it finish, then push the next.
-- **Deploy speed:** Single file change: 24-33 seconds. 25 new route pages: 1-2 minutes.
+- **Deploy speed:** pages are live within ~60 seconds of the push to master.
 
 ---
 
@@ -247,15 +257,16 @@ funeral-repatriation/
 
 ### "go" or "next block"
 1. Read BUILD-PLAN.md and MEMORY.md.
-2. Write content through the full 7-step quality gate.
-3. Present HTML preview, wait for approval.
-4. Commit to master, provide live URL and Actions link.
-5. **Output live link list for every batch completed (see BATCH COMPLETION PROTOCOL).**
-6. Stop and wait.
+2. Check the relevant content folder (e.g. site/content/blog/) for an existing slug on the same topic. Skip duplicates.
+3. Write content through the quality gate (wordsmith, humaniser, auditor; no em dashes, no banned vocab, British English).
+4. Run the QA checks.
+5. **Commit and push to master so it deploys to the live site.**
+6. Confirm the build is running or green, then **output the live link list for the batch (see BATCH COMPLETION PROTOCOL) with the Actions status.**
+7. Stop and wait. (No HTML preview step: current mode is write, QA, ship, report. Push live after every prompt.)
 
 ### "session end" or "wrap up"
 1. Update BUILD-PLAN.md and MEMORY.md.
-2. Commit to master.
+2. Commit and push to master.
 3. **Output live link list for all batches completed this session.**
 4. Summarise: what was built, what is live, what is next.
 
@@ -263,27 +274,28 @@ funeral-repatriation/
 1. Load the-wordsmith.md before writing.
 2. Load the-humaniser.md before finalising.
 3. Load the-auditor.md to QA before committing.
+4. Push to master and provide live links before moving on (see HOW WE WORK IN THIS CHAT).
 
 ---
 
 ## PERMANENT FACTS
 
 - Domain: repatriationfuneral.com (Hostinger). Final domain: repatriateservice.com.
-- Hostinger FTP server-dir: /public_html/ (confirmed correct 27 May 2026).
+- Deploy: push to master triggers build-and-publish.yml, which builds Hugo and force-pushes to the `live` branch; Hostinger pulls `live` into /public_html/. server-dir /public_html/ confirmed correct.
+- The old FTP deploy.yml is disabled (no-op stub). Do not re-enable it.
 - Slugs: lowercase, hyphen-separated, no underscores.
 - Python generators at repo root.
 - Hugo content in site/content/.
 - site/public/ is gitignored. Never commit build output.
-- Every push to master auto-deploys via incremental FTP.
-- Do NOT delete .ftp-deploy-sync-state.json from Hostinger.
-- FTP credentials in GitHub Secrets only. Never in chat or commits.
-- .github/workflows/deploy.yml cannot be edited via MCP connector (403 error). Gareth must paste via GitHub web editor.
+- Every push to master auto-deploys to the live site within ~60 seconds.
+- buildFuture = true in hugo.toml. Keep it (E012).
+- .github/workflows/ files cannot be edited via MCP connector (403 error). Gareth must paste via GitHub web editor.
 - No layout: field in route page frontmatter. Hugo auto-selects routes/single.html.
 - Never use Gareth's real name as author on published content.
 - No em dashes anywhere, ever.
 - No prices on any page.
 - British English throughout.
-- **After every batch: output live links before stopping. See BATCH COMPLETION PROTOCOL.**
+- **After every prompt: push to master (live site) and output live links before stopping. See HOW WE WORK IN THIS CHAT and BATCH COMPLETION PROTOCOL.**
 
 ---
 
@@ -296,4 +308,4 @@ funeral-repatriation/
 
 ---
 
-*Last updated: 2 June 2026*
+*Last updated: 3 June 2026*
