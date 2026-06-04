@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 199 (112 baseline + 87 from Engine 3 Batches 1-18)
+**Blog articles live:** 204 (112 baseline + 92 from Engine 3 Batches 1-19)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-18 complete (87 articles).
+**Engine 3 status:** Batches 1-19 complete (92 articles).
 
 ---
 
@@ -159,6 +159,12 @@ push to master
   - repatriation-from-south-korea-questions-families-ask
   - repatriation-from-malaysia-questions-families-ask
   - repatriation-from-saudi-arabia-questions-families-ask
+- [x] **Engine 3 Batch 19 (4 Jun 2026):** Country deep-dive series part 9 (questions families ask), 5 articles
+  - repatriation-from-qatar-questions-families-ask
+  - repatriation-from-bahrain-questions-families-ask
+  - repatriation-from-austria-questions-families-ask
+  - repatriation-from-poland-questions-families-ask
+  - repatriation-from-czech-republic-questions-families-ask
 
 ---
 
@@ -206,19 +212,22 @@ Jordan, Ghana, China, Hong Kong, Jamaica. Q&A format, distinct from -guide artic
 ### Batch 18: Country deep-dive series, part 8 -- DONE (5 articles)
 Bangladesh, Nepal, South Korea, Malaysia, Saudi Arabia. Q&A format, distinct from -guide articles, cross-linked.
 
-### Batch 19: Country deep-dive series, part 9 (NEXT)
-Next origins. Suggested: Qatar, Bahrain, Austria, Poland, Czech Republic. Check existing -guide slugs and avoid duplicating the guide content.
+### Batch 19: Country deep-dive series, part 9 -- DONE (5 articles)
+Qatar, Bahrain, Austria, Poland, Czech Republic. Q&A format, distinct from -guide articles, cross-linked.
+
+### Batch 20: Country deep-dive series, part 10 (NEXT)
+Next origins. Suggested: Hungary, Croatia, Romania, Bulgaria, Serbia. Check existing -guide slugs and avoid duplicating the guide content.
 
 ### Batch 15+: remaining origins and any new clusters.
 
-Target overall: 500+ blog articles. 199 live. 301 to go.
+Target overall: 500+ blog articles. 204 live. 296 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 19 -- country deep-dive series part 9
-Next 5 origins (Qatar, Bahrain, Austria, Poland, Czech Republic) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
+### Priority 1: Engine 3 Batch 20 -- country deep-dive series part 10
+Next 5 origins (Hungary, Croatia, Romania, Bulgaria, Serbia) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -254,4 +263,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 4 June 2026 (Batch 18 complete)*
+*Last updated: 4 June 2026 (Batch 19 complete)*
