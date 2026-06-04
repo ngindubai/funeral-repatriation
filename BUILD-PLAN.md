@@ -5,10 +5,10 @@
 
 ---
 
-## CURRENT STATUS -- 3 June 2026
+## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 154 (112 baseline + 42 from Engine 3 Batches 1-9)
+**Blog articles live:** 164 (112 baseline + 52 from Engine 3 Batches 1-11)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-9 complete (42 articles).
+**Engine 3 status:** Batches 1-11 complete (52 articles).
 
 ---
 
@@ -104,6 +104,19 @@ push to master
   - repatriation-vs-local-memorial-service
   - direct-repatriation-vs-full-service-what-differs
   - Note: 3 of the 5 roadmap candidates were dropped because the topics already exist live (burial-abroad-vs-repatriation = repatriation-vs-local-burial-abroad; cremation-abroad-vs-repatriation = repatriation-vs-cremation-abroad; how-to-choose-a-provider = how-to-choose-a-repatriation-company + ...-funeral-director). Duplicates avoided per no-duplicate-content rule.
+- [x] **Engine 3 Batch 10 (3 Jun 2026):** Embalming and mortuary preparation, 5 articles
+  - when-embalming-is-not-required-for-repatriation
+  - what-happens-in-the-mortuary-before-repatriation
+  - viewing-a-repatriated-body-in-the-uk
+  - body-preparation-time-before-repatriation-flight
+  - mortuary-standards-abroad-what-families-should-know
+- [x] **Engine 3 Batch 11 (4 Jun 2026):** Country deep-dive series (questions families ask), 5 articles
+  - repatriation-from-spain-questions-families-ask
+  - repatriation-from-greece-questions-families-ask
+  - repatriation-from-turkey-questions-families-ask
+  - repatriation-from-thailand-questions-families-ask
+  - repatriation-from-cyprus-questions-families-ask
+  - Angle: family question (Q&A) format, distinct from the existing -guide process articles, cross-linked to them.
 
 ---
 
@@ -124,21 +137,25 @@ Tidy-up (non-blocking, manual): delete unused FTP_SERVER / FTP_USERNAME / FTP_PA
 - direct-repatriation-vs-full-service-what-differs
 3 candidate slugs dropped as duplicates of existing live articles (see COMPLETED above). Before any future batch, check site/content/blog/ for an existing slug on the same topic to avoid cannibalisation.
 
-### Batch 10: Embalming and preparation deep-dives (NEXT)
-International embalming standards, what embalming involves, religious considerations, mortuary services abroad.
-Check existing first: how-embalming-works-international-repatriation and zinc-lined-coffins-explained already exist. New angles only.
+### Batch 10: Embalming and preparation deep-dives -- DONE (5 articles)
+when-embalming-is-not-required, what-happens-in-the-mortuary, viewing-a-repatriated-body-in-the-uk, body-preparation-time, mortuary-standards-abroad.
 
-### Batch 11+: Country deep-dive blog series
-Country-specific blog articles beyond the existing hub pages. E.g. "repatriation from Spain: the most common questions UK families ask."
+### Batch 11: Country deep-dive series (questions families ask) -- DONE (5 articles)
+Spain, Greece, Turkey, Thailand, Cyprus. Q&A format, distinct from the -guide articles, cross-linked.
 
-Target overall: 500+ blog articles. 154 live. 346 to go.
+### Batch 12: Country deep-dive series, part 2 (NEXT)
+Next 5 highest-volume origins, same questions-families-ask angle. Suggested: France, Portugal, USA, India, UAE. Check existing -guide slugs and avoid duplicating the guide content.
+
+### Batch 13+: more country deep-dives and any remaining clusters.
+
+Target overall: 500+ blog articles. 164 live. 336 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 10 -- embalming and preparation deep-dives
-Generate articles on international embalming standards and mortuary preparation. Check existing blog slugs first; new angles only.
+### Priority 1: Engine 3 Batch 12 -- country deep-dive series part 2
+Next 5 origins (France, Portugal, USA, India, UAE) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -174,4 +191,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 3 June 2026*
+*Last updated: 4 June 2026*
