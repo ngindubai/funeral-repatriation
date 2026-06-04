@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 229 (112 baseline + 117 from Engine 3 Batches 1-24)
+**Blog articles live:** 234 (112 baseline + 122 from Engine 3 Batches 1-25)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-24 complete (117 articles).
+**Engine 3 status:** Batches 1-25 complete (122 articles). Country deep-dive series (questions-families-ask) now covers all 75 -guide countries.
 
 ---
 
@@ -196,6 +196,13 @@ push to master
   - repatriation-from-zimbabwe-questions-families-ask
   - repatriation-from-kazakhstan-questions-families-ask
   - repatriation-from-taiwan-questions-families-ask
+- [x] **Engine 3 Batch 25 (4 Jun 2026):** Country deep-dive series part 15 (questions families ask), 5 articles
+  - repatriation-from-peru-questions-families-ask
+  - repatriation-from-venezuela-questions-families-ask
+  - repatriation-from-myanmar-questions-families-ask
+  - repatriation-from-laos-questions-families-ask
+  - repatriation-from-slovenia-questions-families-ask
+  - Completes the questions-families-ask coverage of all -guide countries.
 
 ---
 
@@ -261,19 +268,27 @@ Oman, Kuwait, Lebanon, Mauritius, Tanzania. Q&A format, distinct from -guide art
 ### Batch 24: Country deep-dive series, part 14 -- DONE (5 articles)
 Uganda, Rwanda, Zimbabwe, Kazakhstan, Taiwan. Q&A format, distinct from -guide articles, cross-linked.
 
-### Batch 25: Country deep-dive series, part 15 (NEXT)
-Next origins. Suggested: Peru, Venezuela, Myanmar, Laos, Slovenia. Check existing -guide slugs and avoid duplicating the guide content. Note: this likely completes the available -guide country coverage; after this, pivot to a new blog cluster (e.g. practical how-to, sector deep-dives, or seasonal/awareness topics).
+### Batch 25: Country deep-dive series, part 15 -- DONE (5 articles)
+Peru, Venezuela, Myanmar, Laos, Slovenia. Q&A format, distinct from -guide articles, cross-linked. Completes the questions-families-ask coverage of all -guide countries.
+
+### Batch 26: NEW CLUSTER (NEXT)
+The country deep-dive (questions-families-ask) series is complete. Pivot to a new blog cluster. Options to choose from:
+- Practical how-to: what to do in the first 24 hours, how to choose a coroner-friendly route, packing personal effects, registering the death back in the UK step by step.
+- Sector deep-dives: cruise ship deaths, airline-specific cargo procedures, hospital vs hotel deaths, deaths in custody abroad.
+- Cause-specific: deaths from specific causes (heart attack abroad, road accidents, drowning) and how each affects timeline and post-mortem.
+- Seasonal/awareness: festive-season travel deaths, hajj and umrah deaths, gap-year and student deaths.
+Confirm direction with Gareth before starting Batch 26.
 
 ### Batch 15+: remaining origins and any new clusters.
 
-Target overall: 500+ blog articles. 229 live. 271 to go.
+Target overall: 500+ blog articles. 234 live. 266 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 25 -- country deep-dive series part 15
-Next 5 origins (Peru, Venezuela, Myanmar, Laos, Slovenia) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate. This likely exhausts the -guide country list; plan a new cluster for Batch 26+.
+### Priority 1: Engine 3 Batch 26 -- NEW CLUSTER
+Country deep-dive (questions-families-ask) series is complete (75 countries). Choose a new cluster with Gareth: practical how-to, sector deep-dives, cause-specific, or seasonal/awareness. See ENGINE 3 ROADMAP Batch 26 for options.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -309,4 +324,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 4 June 2026 (Batch 24 complete)*
+*Last updated: 4 June 2026 (Batch 25 complete -- country deep-dive series finished)*
