@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 164 (112 baseline + 52 from Engine 3 Batches 1-11)
+**Blog articles live:** 169 (112 baseline + 57 from Engine 3 Batches 1-12)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-11 complete (52 articles).
+**Engine 3 status:** Batches 1-12 complete (57 articles).
 
 ---
 
@@ -117,6 +117,12 @@ push to master
   - repatriation-from-thailand-questions-families-ask
   - repatriation-from-cyprus-questions-families-ask
   - Angle: family question (Q&A) format, distinct from the existing -guide process articles, cross-linked to them.
+- [x] **Engine 3 Batch 12 (4 Jun 2026):** Country deep-dive series part 2 (questions families ask), 5 articles
+  - repatriation-from-france-questions-families-ask
+  - repatriation-from-portugal-questions-families-ask
+  - repatriation-from-usa-questions-families-ask
+  - repatriation-from-india-questions-families-ask
+  - repatriation-from-uae-questions-families-ask
 
 ---
 
@@ -143,19 +149,22 @@ when-embalming-is-not-required, what-happens-in-the-mortuary, viewing-a-repatria
 ### Batch 11: Country deep-dive series (questions families ask) -- DONE (5 articles)
 Spain, Greece, Turkey, Thailand, Cyprus. Q&A format, distinct from the -guide articles, cross-linked.
 
-### Batch 12: Country deep-dive series, part 2 (NEXT)
-Next 5 highest-volume origins, same questions-families-ask angle. Suggested: France, Portugal, USA, India, UAE. Check existing -guide slugs and avoid duplicating the guide content.
+### Batch 12: Country deep-dive series, part 2 -- DONE (5 articles)
+France, Portugal, USA, India, UAE. Q&A format, distinct from the -guide articles, cross-linked.
 
-### Batch 13+: more country deep-dives and any remaining clusters.
+### Batch 13: Country deep-dive series, part 3 (NEXT)
+Next origins, same questions-families-ask angle. Suggested: Germany, Italy, Egypt, Pakistan, Australia. Check existing -guide slugs and avoid duplicating the guide content.
 
-Target overall: 500+ blog articles. 164 live. 336 to go.
+### Batch 14+: more country deep-dives and any remaining clusters.
+
+Target overall: 500+ blog articles. 169 live. 331 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 12 -- country deep-dive series part 2
-Next 5 origins (France, Portugal, USA, India, UAE) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
+### Priority 1: Engine 3 Batch 13 -- country deep-dive series part 3
+Next 5 origins (Germany, Italy, Egypt, Pakistan, Australia) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
