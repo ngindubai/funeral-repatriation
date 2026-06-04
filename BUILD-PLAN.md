@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 219 (112 baseline + 107 from Engine 3 Batches 1-22)
+**Blog articles live:** 224 (112 baseline + 112 from Engine 3 Batches 1-23)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-22 complete (107 articles).
+**Engine 3 status:** Batches 1-23 complete (112 articles).
 
 ---
 
@@ -184,6 +184,12 @@ push to master
   - repatriation-from-norway-questions-families-ask
   - repatriation-from-sweden-questions-families-ask
   - repatriation-from-switzerland-questions-families-ask
+- [x] **Engine 3 Batch 23 (4 Jun 2026):** Country deep-dive series part 13 (questions families ask), 5 articles
+  - repatriation-from-oman-questions-families-ask
+  - repatriation-from-kuwait-questions-families-ask
+  - repatriation-from-lebanon-questions-families-ask
+  - repatriation-from-mauritius-questions-families-ask
+  - repatriation-from-tanzania-questions-families-ask
 
 ---
 
@@ -243,19 +249,22 @@ Albania, Montenegro, Ireland, Maldives, Tunisia. Q&A format, distinct from -guid
 ### Batch 22: Country deep-dive series, part 12 -- DONE (5 articles)
 Iceland, Netherlands, Norway, Sweden, Switzerland. Q&A format, distinct from -guide articles, cross-linked.
 
-### Batch 23: Country deep-dive series, part 13 (NEXT)
-Next origins. Suggested: Oman, Kuwait, Lebanon, Mauritius, Tanzania. Check existing -guide slugs and avoid duplicating the guide content.
+### Batch 23: Country deep-dive series, part 13 -- DONE (5 articles)
+Oman, Kuwait, Lebanon, Mauritius, Tanzania. Q&A format, distinct from -guide articles, cross-linked.
+
+### Batch 24: Country deep-dive series, part 14 (NEXT)
+Next origins. Suggested: Uganda, Rwanda, Zimbabwe, Kazakhstan, Taiwan. Check existing -guide slugs and avoid duplicating the guide content.
 
 ### Batch 15+: remaining origins and any new clusters.
 
-Target overall: 500+ blog articles. 219 live. 281 to go.
+Target overall: 500+ blog articles. 224 live. 276 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 23 -- country deep-dive series part 13
-Next 5 origins (Oman, Kuwait, Lebanon, Mauritius, Tanzania) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
+### Priority 1: Engine 3 Batch 24 -- country deep-dive series part 14
+Next 5 origins (Uganda, Rwanda, Zimbabwe, Kazakhstan, Taiwan) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -291,4 +300,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 4 June 2026 (Batch 22 complete)*
+*Last updated: 4 June 2026 (Batch 23 complete)*
