@@ -8,7 +8,7 @@
 ## CURRENT STATUS -- 4 June 2026
 
 **Route pages live:** 70
-**Blog articles live:** 169 (112 baseline + 57 from Engine 3 Batches 1-12)
+**Blog articles live:** 174 (112 baseline + 62 from Engine 3 Batches 1-13)
 **Country hubs:** 238
 **Guides:** 238 (one per country)
 **Bringing ashes home pages:** 238
@@ -21,7 +21,7 @@
 **GSC not indexed:** 859 (expected to drop after recent fixes)
 **Target route pages:** 30,000+
 **Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-12 complete (57 articles).
+**Engine 3 status:** Batches 1-13 complete (62 articles).
 
 ---
 
@@ -123,6 +123,12 @@ push to master
   - repatriation-from-usa-questions-families-ask
   - repatriation-from-india-questions-families-ask
   - repatriation-from-uae-questions-families-ask
+- [x] **Engine 3 Batch 13 (4 Jun 2026):** Country deep-dive series part 3 (questions families ask), 5 articles
+  - repatriation-from-germany-questions-families-ask
+  - repatriation-from-italy-questions-families-ask
+  - repatriation-from-egypt-questions-families-ask
+  - repatriation-from-pakistan-questions-families-ask
+  - repatriation-from-australia-questions-families-ask
 
 ---
 
@@ -152,19 +158,22 @@ Spain, Greece, Turkey, Thailand, Cyprus. Q&A format, distinct from the -guide ar
 ### Batch 12: Country deep-dive series, part 2 -- DONE (5 articles)
 France, Portugal, USA, India, UAE. Q&A format, distinct from the -guide articles, cross-linked.
 
-### Batch 13: Country deep-dive series, part 3 (NEXT)
-Next origins, same questions-families-ask angle. Suggested: Germany, Italy, Egypt, Pakistan, Australia. Check existing -guide slugs and avoid duplicating the guide content.
+### Batch 13: Country deep-dive series, part 3 -- DONE (5 articles)
+Germany, Italy, Egypt, Pakistan, Australia. Q&A format, distinct from the -guide articles, cross-linked.
 
-### Batch 14+: more country deep-dives and any remaining clusters.
+### Batch 14: Country deep-dive series, part 4 (NEXT)
+Next origins, same questions-families-ask angle. Suggested: Morocco, Kenya, South Africa, Nigeria, Philippines. Check existing -guide slugs and avoid duplicating the guide content.
 
-Target overall: 500+ blog articles. 169 live. 331 to go.
+### Batch 15+: remaining origins and any new clusters.
+
+Target overall: 500+ blog articles. 174 live. 326 to go.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 13 -- country deep-dive series part 3
-Next 5 origins (Germany, Italy, Egypt, Pakistan, Australia) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
+### Priority 1: Engine 3 Batch 14 -- country deep-dive series part 4
+Next 5 origins (Morocco, Kenya, South Africa, Nigeria, Philippines) in the questions-families-ask format. Check existing -guide slugs; complement, do not duplicate.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
