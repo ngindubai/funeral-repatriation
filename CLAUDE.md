@@ -154,18 +154,17 @@ No page ships without passing all 7 steps:
 
 **After every completed batch of blog articles or route pages, Claude must output a live link list before stopping.**
 
+**Links must be clickable markdown hyperlinks -- never bare URLs.** Gareth reads these on mobile and clicks through to review. Bare URLs are not acceptable.
+
 The format is:
 
-```
-Batch [N] -- [topic] -- [N] articles live
+**Batch [N] -- [topic] -- [N] articles live**
 
-https://www.repatriationfuneral.com/blog/[slug-1]/
-https://www.repatriationfuneral.com/blog/[slug-2]/
-https://www.repatriationfuneral.com/blog/[slug-3]/
-...
+- [Title of Article 1](https://www.repatriationfuneral.com/blog/[slug-1]/)
+- [Title of Article 2](https://www.repatriationfuneral.com/blog/[slug-2]/)
+- [Title of Article 3](https://www.repatriationfuneral.com/blog/[slug-3]/)
 
 Deploy triggered automatically. Pages live within ~60 seconds of commit.
-```
 
 For route pages, use the /routes/ prefix. For country hubs, use /repatriation-from-[country]/.
 
