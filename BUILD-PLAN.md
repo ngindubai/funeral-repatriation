@@ -1,357 +1,123 @@
 # BUILD-PLAN.md -- Repatriate Service
 
-> Session log and task tracker. Read at the start of every session.
-> The 7-engine system is the build framework. CLAUDE.md is the operating law.
+> This file is the quick-reference checklist and session log for the autonomous build routine.
+> Read it at the start of every run, immediately after CLAUDE.md.
+> The visual master tracker is funeral-repatriation-build-plan.html (kept in sync, not load-bearing).
+> CLAUDE.md is the operating law. This file says what to build next.
 
 ---
 
-## CURRENT STATUS -- 5 June 2026
+## THE BLOCK RHYTHM (read before every run)
 
-**Route pages live:** 70
-**Blog articles live:** 239 (112 baseline + 127 from Engine 3 Batches 1-26)
-**Country hubs:** 238
-**Guides:** 238 (one per country)
-**Bringing ashes home pages:** 238
-**Cremation transfer pages:** 238
-**Embassy contact pages:** 238
-**City pages:** 220
-**Total indexable pages (approx):** 1,400+
-**GSC known pages:** ~2,740
-**GSC indexed:** 1,880
-**GSC not indexed:** 859 (expected to drop after recent fixes)
-**Target route pages:** 30,000+
-**Engines complete:** 1, 2 (32 origins), 4, 5, 6, 7
-**Engine 3 status:** Batches 1-25 complete (122 articles). Country deep-dive series (questions-families-ask) now covers all 75 -guide countries.
+- **One run = one block. Never more.**
+- **A block = 25 route pages** at the indicated tier and template, OR (when the blog roadmap shows a batch is due) one blog batch of 5 articles. Never both in one run.
+- Every block runs the full quality gate from CLAUDE.md: research from named dated FCDO/embassy sources, write in the wordsmith voice, rotate template_variant A to E (no two consecutive pages share a variant), humanise, QA scan. Zero em dashes. Zero banned vocab. No prices. No safety guarantees. British English. Correct persona.
+- **The routine is fully autonomous. There is no human approval step and no wait-for-go.** Write, QA, commit to master, report the live links to Slack, stop. The Slack link post is a record of what shipped, not a gate: nothing waits on it.
+- If the QA gate finds any failure, do not commit. Post the halt message and end (see CLAUDE.md QUALITY GATE).
+- Every block also updates BUILD-PLAN.md and MEMORY.md in the same commit (MANDATORY DOCS UPDATE in CLAUDE.md).
+- Bulk-generation without the quality gate is banned. One block, full gate, every time.
+
+**Where we are (reconciled from disk 5 June 2026):** 70 quality route pages live (35 origins, each to United Kingdom and Ireland). The full route matrix below is now the active build. Chunk R1 is next (Tier A, Template A). Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
 
 ---
 
-## DEPLOY ARCHITECTURE (confirmed 2 June 2026 -- READ THIS)
+## THE ROUTE MATRIX -- THE GROWTH ENGINE (Phase R)
 
-Production is served as follows:
+This is the spine of the site, the funeral-repatriation equivalent of Pet Transport's 190x190 corridor matrix. The data already exists in `data/countries_repatriation.json` (regulatory detail for 238 countries), `data/countries-197.json` (the canonical country and slug list), and `data/keyword_matrix.json` (search demand per corridor).
 
-```
-push to master
-  -> build-and-publish.yml builds Hugo and force-pushes built HTML to the `live` branch
-     -> Hostinger Git integration pulls the `live` branch into /public_html/   <- THIS serves the site
-```
+**Target: the full origin to destination square. 197 countries as origins, 197 as destinations, minus same-country pairs = 38,612 route pages.** Slug format is the existing convention: `{origin-slug}-to-{destination-slug}.md` in `site/content/routes/`. Destination key uses the full country slug (united-kingdom, ireland, australia, united-states, and so on), not the short `uk`/`ireland` keys.
 
-- **build-and-publish.yml is the production pipeline. Do not disable it.** The `live` branch is load-bearing: Hostinger pulls it.
-- **deploy.yml (FTP) is DISABLED** as of 2 June 2026. It is now a manual-only no-op stub. It used to FTP-push into /public_html/, which fought with Hostinger's own Git pull into the same folder, and it deleted the FTP sync-state on every run. Do not re-enable it with a push trigger.
-- FTP secrets (FTP_SERVER / FTP_USERNAME / FTP_PASSWORD) are now unused and can be deleted from GitHub repo secrets.
-- buildFuture = true is set in hugo.toml. Keep it. See E012.
+Routes are built in four tiers, highest commercial intent first. Within each tier, build in the order the tier lists, 25 routes per block, rotating template A to E.
 
----
+### Tier A -- Inbound to the two core markets (the money tier)
 
-## COMPLETED
+Every country in the world, repatriated to the United Kingdom and to Ireland. This is where the demand is: British and Irish families bringing someone home.
 
-- [x] Engines 1, 2, 4, 5, 6, 7: all complete
-- [x] Turn A/C/D+: 70 route pages total
-- [x] GSC canonical fix: baseURL www (1 Jun 2026)
-- [x] GEO/LLM 4-phase implementation (1 Jun 2026)
-- [x] 10 thin blog stubs expanded (1 Jun 2026)
-- [x] Fix all known issues E008-E011 (1 Jun 2026)
-- [x] **E012 fix (2 Jun 2026):** buildFuture=true added to hugo.toml. Root cause of Batch 4-6 404s was future-dated content silently skipped by Hugo on a UTC build. See ERRORS.md.
-- [x] **Deploy structural fix (2 Jun 2026):** Confirmed Hostinger pulls the `live` branch. Disabled the redundant FTP workflow (deploy.yml) that was double-writing to /public_html/ and deleting sync-state each run.
-- [x] **Engine 3 Batch 1 (1 Jun 2026):** Cost cluster, 5 articles
-  - who-pays-for-repatriation-when-someone-dies-abroad
-  - repatriation-cost-without-travel-insurance
-  - repatriation-quote-what-to-check
-  - crowdfunding-repatriation-costs
-  - airline-cargo-costs-repatriation-explained
-- [x] **Engine 3 Batch 2 (1 Jun 2026):** Timeline cluster, 5 articles
-  - repatriation-timeline-by-cause-of-death
-  - repatriation-from-tourist-destinations-typical-timeline
-  - repatriation-from-asia-timeline-realistic-expectations
-  - post-mortem-extension-impact-on-repatriation-timeline
-  - expedited-repatriation-when-and-how
-- [x] **Engine 3 Batch 3 (1 Jun 2026):** Documents deep-dive, 5 articles
-  - apostille-certification-for-international-repatriation
-  - certified-translation-for-death-abroad-documents
-  - death-certificate-from-abroad-using-it-in-uk
-  - registering-a-death-abroad-with-uk-authorities
-  - fcdo-documents-for-repatriation
-- [x] **Engine 3 Batch 4 (2 Jun 2026):** Religious and cultural specifics, 5 articles
-  - muslim-repatriation-requirements-and-ghusl
-  - jewish-repatriation-requirements-and-tahara
-  - hindu-repatriation-cremation-options-abroad
-  - sikh-repatriation-considerations
-  - non-religious-secular-repatriation
-- [x] **Engine 3 Batch 5 (2 Jun 2026):** Special circumstances, 5 articles
-  - death-of-a-child-abroad-repatriation
-  - repatriation-of-uk-military-personnel
-  - dual-national-deaths-which-country-process-applies
-  - repatriation-when-no-family-can-be-contacted
-  - death-abroad-criminal-case-how-repatriation-works
-- [x] **Engine 3 Batch 6 (2 Jun 2026):** UK reception cluster, 5 articles
-  - what-happens-when-body-arrives-uk-from-abroad
-  - uk-coroner-and-repatriated-bodies
-  - uk-port-health-and-repatriation
-  - registering-a-death-in-uk-after-repatriation
-  - uk-funeral-after-repatriation-what-to-expect
-- [x] **Engine 3 Batch 7 (2 Jun 2026):** Airline and cargo cluster, 5 articles
-  - which-airlines-accept-human-remains-cargo
-  - iata-standards-for-human-remains-transport
-  - container-requirements-for-repatriation-cargo
-  - airline-cargo-vs-passenger-aircraft-for-repatriation
-  - cargo-delays-and-what-causes-them
-- [x] **Engine 3 Batch 8 (2 Jun 2026):** Insurance deep-dives, 5 articles
-  - does-travel-insurance-cover-repatriation-of-remains
-  - how-insurer-assistance-company-coordinates-repatriation
-  - repatriation-and-pre-existing-medical-conditions
-  - repatriation-insurance-claim-refused-what-to-do
-  - credit-card-bank-travel-cover-repatriation
-- [x] **Engine 3 Batch 9 (3 Jun 2026):** Comparison and decision, 2 articles
-  - repatriation-vs-local-memorial-service
-  - direct-repatriation-vs-full-service-what-differs
-  - Note: 3 of the 5 roadmap candidates were dropped because the topics already exist live (burial-abroad-vs-repatriation = repatriation-vs-local-burial-abroad; cremation-abroad-vs-repatriation = repatriation-vs-cremation-abroad; how-to-choose-a-provider = how-to-choose-a-repatriation-company + ...-funeral-director). Duplicates avoided per no-duplicate-content rule.
-- [x] **Engine 3 Batch 10 (3 Jun 2026):** Embalming and mortuary preparation, 5 articles
-  - when-embalming-is-not-required-for-repatriation
-  - what-happens-in-the-mortuary-before-repatriation
-  - viewing-a-repatriated-body-in-the-uk
-  - body-preparation-time-before-repatriation-flight
-  - mortuary-standards-abroad-what-families-should-know
-- [x] **Engine 3 Batch 11 (4 Jun 2026):** Country deep-dive series (questions families ask), 5 articles
-  - repatriation-from-spain-questions-families-ask
-  - repatriation-from-greece-questions-families-ask
-  - repatriation-from-turkey-questions-families-ask
-  - repatriation-from-thailand-questions-families-ask
-  - repatriation-from-cyprus-questions-families-ask
-  - Angle: family question (Q&A) format, distinct from the existing -guide process articles, cross-linked to them.
-- [x] **Engine 3 Batch 12 (4 Jun 2026):** Country deep-dive series part 2 (questions families ask), 5 articles
-  - repatriation-from-france-questions-families-ask
-  - repatriation-from-portugal-questions-families-ask
-  - repatriation-from-usa-questions-families-ask
-  - repatriation-from-india-questions-families-ask
-  - repatriation-from-uae-questions-families-ask
-- [x] **Engine 3 Batch 13 (4 Jun 2026):** Country deep-dive series part 3 (questions families ask), 5 articles
-  - repatriation-from-germany-questions-families-ask
-  - repatriation-from-italy-questions-families-ask
-  - repatriation-from-egypt-questions-families-ask
-  - repatriation-from-pakistan-questions-families-ask
-  - repatriation-from-australia-questions-families-ask
-- [x] **Engine 3 Batch 14 (4 Jun 2026):** Country deep-dive series part 4 (questions families ask), 5 articles
-  - repatriation-from-morocco-questions-families-ask
-  - repatriation-from-kenya-questions-families-ask
-  - repatriation-from-south-africa-questions-families-ask
-  - repatriation-from-nigeria-questions-families-ask
-  - repatriation-from-philippines-questions-families-ask
-- [x] **Engine 3 Batch 15 (4 Jun 2026):** Country deep-dive series part 5 (questions families ask), 5 articles
-  - repatriation-from-brazil-questions-families-ask
-  - repatriation-from-canada-questions-families-ask
-  - repatriation-from-mexico-questions-families-ask
-  - repatriation-from-indonesia-questions-families-ask
-  - repatriation-from-sri-lanka-questions-families-ask
-- [x] **Engine 3 Batch 16 (4 Jun 2026):** Country deep-dive series part 6 (questions families ask), 5 articles
-  - repatriation-from-japan-questions-families-ask
-  - repatriation-from-singapore-questions-families-ask
-  - repatriation-from-vietnam-questions-families-ask
-  - repatriation-from-new-zealand-questions-families-ask
-  - repatriation-from-israel-questions-families-ask
-- [x] **Engine 3 Batch 17 (4 Jun 2026):** Country deep-dive series part 7 (questions families ask), 5 articles
-  - repatriation-from-jordan-questions-families-ask
-  - repatriation-from-ghana-questions-families-ask
-  - repatriation-from-china-questions-families-ask
-  - repatriation-from-hong-kong-questions-families-ask
-  - repatriation-from-jamaica-questions-families-ask
-- [x] **Engine 3 Batch 18 (4 Jun 2026):** Country deep-dive series part 8 (questions families ask), 5 articles
-  - repatriation-from-bangladesh-questions-families-ask
-  - repatriation-from-nepal-questions-families-ask
-  - repatriation-from-south-korea-questions-families-ask
-  - repatriation-from-malaysia-questions-families-ask
-  - repatriation-from-saudi-arabia-questions-families-ask
-- [x] **Engine 3 Batch 19 (4 Jun 2026):** Country deep-dive series part 9 (questions families ask), 5 articles
-  - repatriation-from-qatar-questions-families-ask
-  - repatriation-from-bahrain-questions-families-ask
-  - repatriation-from-austria-questions-families-ask
-  - repatriation-from-poland-questions-families-ask
-  - repatriation-from-czech-republic-questions-families-ask
-- [x] **Engine 3 Batch 20 (4 Jun 2026):** Country deep-dive series part 10 (questions families ask), 5 articles
-  - repatriation-from-hungary-questions-families-ask
-  - repatriation-from-croatia-questions-families-ask
-  - repatriation-from-romania-questions-families-ask
-  - repatriation-from-bulgaria-questions-families-ask
-  - repatriation-from-serbia-questions-families-ask
-- [x] **Engine 3 Batch 21 (4 Jun 2026):** Country deep-dive series part 11 (questions families ask), 5 articles
-  - repatriation-from-albania-questions-families-ask
-  - repatriation-from-montenegro-questions-families-ask
-  - repatriation-from-ireland-questions-families-ask
-  - repatriation-from-maldives-questions-families-ask
-  - repatriation-from-tunisia-questions-families-ask
-  - Note: North Macedonia, Kosovo, Bosnia dropped (no guide pages exist). Replaced with Ireland, Maldives, Tunisia.
-- [x] **Engine 3 Batch 22 (4 Jun 2026):** Country deep-dive series part 12 (questions families ask), 5 articles
-  - repatriation-from-iceland-questions-families-ask
-  - repatriation-from-netherlands-questions-families-ask
-  - repatriation-from-norway-questions-families-ask
-  - repatriation-from-sweden-questions-families-ask
-  - repatriation-from-switzerland-questions-families-ask
-- [x] **Engine 3 Batch 23 (4 Jun 2026):** Country deep-dive series part 13 (questions families ask), 5 articles
-  - repatriation-from-oman-questions-families-ask
-  - repatriation-from-kuwait-questions-families-ask
-  - repatriation-from-lebanon-questions-families-ask
-  - repatriation-from-mauritius-questions-families-ask
-  - repatriation-from-tanzania-questions-families-ask
-- [x] **Engine 3 Batch 24 (4 Jun 2026):** Country deep-dive series part 14 (questions families ask), 5 articles
-  - repatriation-from-uganda-questions-families-ask
-  - repatriation-from-rwanda-questions-families-ask
-  - repatriation-from-zimbabwe-questions-families-ask
-  - repatriation-from-kazakhstan-questions-families-ask
-  - repatriation-from-taiwan-questions-families-ask
-- [x] **Engine 3 Batch 25 (4 Jun 2026):** Country deep-dive series part 15 (questions families ask), 5 articles
-  - repatriation-from-peru-questions-families-ask
-  - repatriation-from-venezuela-questions-families-ask
-  - repatriation-from-myanmar-questions-families-ask
-  - repatriation-from-laos-questions-families-ask
-  - repatriation-from-slovenia-questions-families-ask
-  - Completes the questions-families-ask coverage of all -guide countries.
-- [x] **Engine 3 Batch 26 (5 Jun 2026):** Seasonal and awareness cluster, 5 articles
-  - death-during-hajj-or-umrah-repatriation-guide
-  - student-gap-year-death-abroad-repatriation
-  - school-trip-death-abroad-what-parents-need-to-know
-  - summer-holiday-death-abroad-what-to-do
-  - working-abroad-death-repatriation-what-families-need-to-know
-  - Hajj 2026 season is live in June. Authors: James Whitfield (hajj/umrah, student/gap-year, working-abroad); Claire Sutton (school-trip, summer-holiday).
+- 197 origins to United Kingdom, plus 197 origins to Ireland = **394 routes.**
+- 70 already live (35 origins x UK and Ireland). **324 remaining in Tier A.**
+- Build the remaining 162 origins to United Kingdom first, then the remaining 162 to Ireland.
+- Order origins by Tier A priority list in `data/keyword_matrix.json` (highest search volume first: Spain, France, Turkey, Greece, USA, Thailand, Cyprus, Portugal, Italy, Germany, then down the list). If a corridor slug already exists on disk, skip it and take the next.
+
+### Tier B -- Diaspora and high-volume cross-border corridors
+
+The corridors where a death abroad most often needs repatriating between two non-UK/Ireland countries, driven by migration and expat patterns. Source the pairs from the `tier_b_corridors` block in `data/keyword_matrix.json` (for example: Pakistan to Saudi Arabia, India to UAE, Philippines to USA, Mexico to USA, Morocco to France, Bangladesh to UAE, Nigeria to USA, Poland to Germany, Portugal to France, Turkey to Germany, and the rest of the diaspora set).
+
+- Approximately **1,100 routes.** Build origins to the top 12 destination hubs (USA, UAE, Saudi Arabia, Germany, France, Canada, Australia, Qatar, Kuwait, Singapore, South Africa, India) excluding pairs already built in Tier A.
+
+### Tier C -- Regional and secondary destination corridors
+
+Every origin to the next band of destination countries (the remaining EU states, Gulf states, major Commonwealth and Anglophone destinations) not covered in A or B. Approximately **7,700 routes.** Source order from `data/keyword_matrix.json` `tier_c` ranking.
+
+### Tier D -- The long-tail completion of the square
+
+All remaining origin to destination pairs to complete the 38,612 matrix. Approximately **29,400 routes.** Built last, lowest individual volume, but this is the long-tail layer that captures the exact-match "{country} to {country} repatriation" queries competitors do not cover. Build in `data/keyword_matrix.json` `tier_d` order.
+
+### Tier totals
+
+| Tier | Description | Routes | Built | Remaining |
+|---|---|---|---|---|
+| A | All origins to UK and Ireland | 394 | 70 | 324 |
+| B | Diaspora and high-volume cross-border | ~1,100 | 0 | ~1,100 |
+| C | Regional and secondary destinations | ~7,700 | 0 | ~7,700 |
+| D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
+| **Total** | **Full 197x197 matrix** | **38,612** | **70** | **38,542** |
+
+At 8 blocks per day, 7 days per week (56 blocks per week, 25 routes per block = 1,400 routes per week), the full matrix completes in approximately 28 weeks. Tier A alone (the revenue tier) completes in under 3 weeks.
 
 ---
 
-## KNOWN ISSUES
+## TEMPLATE ROTATION
 
-_None currently blocking._
+Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`.
 
-Tidy-up (non-blocking, manual): delete unused FTP_SERVER / FTP_USERNAME / FTP_PASSWORD secrets from GitHub now that deploy.yml is disabled.
+- Next chunk: **R1**
+- Next tier: **A**
+- Next template lead: **A** (rotation continues A, B, C, D, E across the 25 routes in the block)
 
 ---
 
-## ENGINE 3 -- BLOG BATCH ROADMAP
+## CHUNK LEDGER
 
-### Batches 1-8: DONE (40 articles)
+The routine names each route block "chunk R<N>" in its commit message so the skip-check in the routine can detect an already-built chunk. Increment R<N> by one each block.
 
-### Batch 9: Comparison and decision articles -- DONE (2 articles)
-- repatriation-vs-local-memorial-service
-- direct-repatriation-vs-full-service-what-differs
-3 candidate slugs dropped as duplicates of existing live articles (see COMPLETED above). Before any future batch, check site/content/blog/ for an existing slug on the same topic to avoid cannibalisation.
+| Chunk | Tier | Template lead | Routes | Status | Notes |
+|---|---|---|---|---|---|
+| (pre-matrix) | A | mixed | 70 | DONE | 35 origins to UK and Ireland. Live before the matrix plan. |
+| R1 | A | A | 25 | NEXT | Remaining highest-volume origins to United Kingdom. |
 
-### Batch 10: Embalming and preparation deep-dives -- DONE (5 articles)
-when-embalming-is-not-required, what-happens-in-the-mortuary, viewing-a-repatriated-body-in-the-uk, body-preparation-time, mortuary-standards-abroad.
+When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
-### Batch 11: Country deep-dive series (questions families ask) -- DONE (5 articles)
-Spain, Greece, Turkey, Thailand, Cyprus. Q&A format, distinct from the -guide articles, cross-linked.
+---
 
-### Batch 12: Country deep-dive series, part 2 -- DONE (5 articles)
-France, Portugal, USA, India, UAE. Q&A format, distinct from the -guide articles, cross-linked.
+## BLOG ROADMAP (Engine 3) -- runs in parallel, one batch when a route block is not due
 
-### Batch 13: Country deep-dive series, part 3 -- DONE (5 articles)
-Germany, Italy, Egypt, Pakistan, Australia. Q&A format, distinct from the -guide articles, cross-linked.
+239 articles live. Target 500+. Blog batches are built only when the route matrix is not the priority for that run; the route matrix is the default. Each batch is 5 articles, distinct topics, checked against `site/content/blog/` for existing slugs first (no cannibalisation). Author personas rotate per CLAUDE.md.
 
-### Batch 14: Country deep-dive series, part 4 -- DONE (5 articles)
-Morocco, Kenya, South Africa, Nigeria, Philippines. Q&A format, distinct from the -guide articles, cross-linked.
+### Next blog batches (build in order, 5 articles each)
 
-### Batch 15: Country deep-dive series, part 5 -- DONE (5 articles)
-Brazil, Canada, Mexico, Indonesia, Sri Lanka. Q&A format, distinct from -guide articles, cross-linked.
+- **Batch 27 -- Practical first-contact cluster:** who-to-call-when-someone-dies-abroad, contacting-the-british-embassy-after-death-abroad, what-happens-to-passport-after-death-abroad, next-of-kin-rights-when-someone-dies-abroad, funeral-director-abroad-what-they-do-and-how-to-choose.
+- **Batch 28 -- Cause-specific cluster:** heart-attack-abroad-repatriation-and-post-mortem, road-accident-abroad-repatriation-process, drowning-abroad-inquest-and-repatriation, sudden-death-abroad-what-families-need-to-know, unexplained-death-abroad-what-happens-next.
+- **Batch 29 -- Sector deep-dives:** death-in-hospital-abroad-release-procedure, death-in-a-hotel-room-abroad-what-happens, death-in-custody-abroad-uk-family-rights, death-at-a-sports-event-abroad, death-in-a-care-facility-abroad-repatriation.
+- **Batch 30 onward -- Country deep-dive long-tail:** continue the "repatriation from {country} questions families ask" series for any country not yet covered, then "cost of repatriation from {country}" angle (no figures, directs to enquiry), then "how long does repatriation from {country} take". Generate the next country from `data/countries-197.json` order, skipping any slug already on disk.
 
-### Batch 16: Country deep-dive series, part 6 -- DONE (5 articles)
-Japan, Singapore, Vietnam, New Zealand, Israel. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 17: Country deep-dive series, part 7 -- DONE (5 articles)
-Jordan, Ghana, China, Hong Kong, Jamaica. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 18: Country deep-dive series, part 8 -- DONE (5 articles)
-Bangladesh, Nepal, South Korea, Malaysia, Saudi Arabia. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 19: Country deep-dive series, part 9 -- DONE (5 articles)
-Qatar, Bahrain, Austria, Poland, Czech Republic. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 20: Country deep-dive series, part 10 -- DONE (5 articles)
-Hungary, Croatia, Romania, Bulgaria, Serbia. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 21: Country deep-dive series, part 11 -- DONE (5 articles)
-Albania, Montenegro, Ireland, Maldives, Tunisia. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 22: Country deep-dive series, part 12 -- DONE (5 articles)
-Iceland, Netherlands, Norway, Sweden, Switzerland. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 23: Country deep-dive series, part 13 -- DONE (5 articles)
-Oman, Kuwait, Lebanon, Mauritius, Tanzania. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 24: Country deep-dive series, part 14 -- DONE (5 articles)
-Uganda, Rwanda, Zimbabwe, Kazakhstan, Taiwan. Q&A format, distinct from -guide articles, cross-linked.
-
-### Batch 25: Country deep-dive series, part 15 -- DONE (5 articles)
-Peru, Venezuela, Myanmar, Laos, Slovenia. Q&A format, distinct from -guide articles, cross-linked. Completes the questions-families-ask coverage of all -guide countries.
-
-### Batch 26: Seasonal and awareness cluster -- DONE (5 articles)
-death-during-hajj-or-umrah-repatriation-guide, student-gap-year-death-abroad-repatriation, school-trip-death-abroad-what-parents-need-to-know, summer-holiday-death-abroad-what-to-do, working-abroad-death-repatriation-what-families-need-to-know.
-
-### Batch 27: Practical how-to cluster -- NEXT (5 articles)
-Covers the first contacts and decisions families face that are not yet addressed on the site.
-- who-to-call-when-someone-dies-abroad
-- contacting-the-british-embassy-after-death-abroad
-- what-happens-to-passport-after-death-abroad
-- next-of-kin-rights-when-someone-dies-abroad
-- funeral-director-abroad-what-they-do-and-how-to-choose
-Author: Claire Sutton for who-to-call and next-of-kin; Dr Amara Osei for embassy and passport; James Whitfield for funeral director.
-
-### Batch 28: Cause-specific cluster (5 articles)
-How the cause of death changes the post-mortem requirement, timeline, and documentation.
-- heart-attack-abroad-repatriation-and-post-mortem
-- road-accident-abroad-repatriation-process
-- drowning-abroad-inquest-and-repatriation
-- overdose-death-abroad-what-families-need-to-know
-- unexplained-death-abroad-what-happens-next
-Author: Dr Amara Osei for all five (regulatory and post-mortem focus).
-
-### Batch 29: Sector deep-dives (5 articles)
-Deaths in specific settings that each have distinct procedures.
-- death-in-hospital-abroad-release-procedure
-- death-in-a-hotel-room-abroad-what-happens
-- death-in-custody-abroad-uk-family-rights
-- death-at-a-sports-event-abroad
-- death-in-a-care-facility-abroad-repatriation
-Author: James Whitfield for hospital, hotel, sports event, care facility; Dr Amara Osei for custody.
-
-### BUILD PLAN EXHAUSTED
-If all batches above (26-29) are complete and no further batch is listed: STOP and post to #build-funeral-repatriation: "BUILD PLAN EXHAUSTED Funeral Repatriation: all planned blog batches complete. Awaiting new tasks from Gareth before next build run." Do not invent new batches. Wait for Gareth to add them.
-
-Target overall: 500+ blog articles. 234 live. 266 to go.
+The blog roadmap does not end. When the listed batches are exhausted, continue the country long-tail series above. There is no stop condition: the routine keeps building the next unbuilt unit every run, indefinitely.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 27 -- Practical how-to cluster
-Build the 5 articles listed under Batch 27 in the ENGINE 3 ROADMAP below. No direction gate. Build autonomously in order listed. After Batch 27, proceed immediately to Batch 28, then 29. If all batches are complete, follow the BUILD PLAN EXHAUSTED instruction.
-
-### Priority 2: GSC not-indexed audit
-Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
-
-### Priority 3: Turn E -- next 50 route pages from existing origins
-
-### Priority 4: Reverse route pages (uk-to-{country}, ireland-to-{country})
-Note: building these auto-restores the E008-filtered sideways links.
-
-### Priority 5: Engine 2 further expansion
-Needed: poland, czech-republic, hungary, austria, croatia, bulgaria, romania, bahrain, qatar, saudi-arabia, malaysia, china, hong-kong, south-korea, bangladesh, nepal
+1. **Route matrix, Tier A, chunk R1** (default every run): next 25 unbuilt routes in Tier A order. This is the priority until Tier A is complete.
+2. After Tier A: continue to Tier B, then C, then D, same block rhythm.
+3. Blog batches 27 onward: built on any run where a route block has just been built by a concurrent run and the next route chunk is already committed (the routine's skip-check will route it here).
 
 ---
 
-## ROUTE DATA ORIGINS (32 total)
+## SESSION LOG
 
-australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india, indonesia, israel, italy, japan, jordan, kenya, mexico, morocco, new-zealand, nigeria, pakistan, philippines, portugal, singapore, south-africa, spain, sri-lanka, thailand, turkey, uae, usa, vietnam
-
----
-
-## ERRORS ENCOUNTERED (summary)
-
-| Error | Status |
-|---|---|
-| E001-E006 | Fixed/Documented (see ERRORS.md) |
-| E007: baseURL missing www | Fixed |
-| E008: 70 broken sideways links | Fixed via template filter |
-| E009: robots.txt/llms.txt non-www | Fixed |
-| E010: Missing cremation-transfer permalink | Fixed |
-| E011: Broken sameAs TODO + dead social links | Fixed |
-| E012: Future-dated content skipped by Hugo | Fixed (buildFuture=true) |
-| Structural: duplicate deploy workflows | Fixed (deploy.yml disabled; Hostinger pulls `live`) |
+| Date | Chunk / Batch | Work Done | Routes/Pages | Notes |
+|------|------|-----------|-------| ------|
+| 5 Jun 2026 | Plan rebuild | Route matrix plan installed: full 197x197 tiered matrix (38,612 target), four tiers A to D, chunk ledger, autonomous rhythm. Replaces the previous stub plan that topped out at the blog roadmap. No content built this entry. | 70 (unchanged) | Build plan now at parity with Pet Transport. Chunk R1 (Tier A, Template A) is next. |
 
 ---
 
-*Last updated: 5 June 2026 (Batch 26 complete, Batch 27 now next)*
+*Last updated: 5 June 2026. The routine builds one block per run, autonomously, and reports live links to Slack. No approval step. No stop condition.*
