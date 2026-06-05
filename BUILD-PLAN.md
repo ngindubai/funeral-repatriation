@@ -9,13 +9,16 @@
 
 ## THE BLOCK RHYTHM (read before every run)
 
-- **One run = one block. Never more.**
-- **A block = 25 route pages** at the indicated tier and template, OR (when the blog roadmap shows a batch is due) one blog batch of 5 articles. Never both in one run.
+- **One run = one batch of up to 4 blocks.** Floor is 1 block. (Changed 5 June 2026 from one block per run, to fit the 15-run routine cap; see session log.)
+- **A block = 25 route pages** at the indicated tier and template, OR (when the blog roadmap shows a batch is due) one blog batch of 5 articles. A run builds up to 4 such blocks. Do not mix route and blog blocks unless the route chunks are exhausted for the run.
 - Every block runs the full quality gate from CLAUDE.md: research from named dated FCDO/embassy sources, write in the wordsmith voice, rotate template_variant A to E (no two consecutive pages share a variant), humanise, QA scan. Zero em dashes. Zero banned vocab. No prices. No safety guarantees. British English. Correct persona.
-- **The routine is fully autonomous. There is no human approval step and no wait-for-go.** Write, QA, commit to master, report the live links to Slack, stop. The Slack link post is a record of what shipped, not a gate: nothing waits on it.
-- If the QA gate finds any failure, do not commit. Post the halt message and end (see CLAUDE.md QUALITY GATE).
-- Every block also updates BUILD-PLAN.md and MEMORY.md in the same commit (MANDATORY DOCS UPDATE in CLAUDE.md).
-- Bulk-generation without the quality gate is banned. One block, full gate, every time.
+- Quality first: if a run cannot finish 4 blocks cleanly, build as many as pass the gate (minimum 1), commit those, and note the shortfall in Slack.
+- **The routine is fully autonomous. There is no human approval step and no wait-for-go.** Write, QA each block, commit the whole batch to master once, report the live links to Slack, stop. The Slack link post is a record of what shipped, not a gate: nothing waits on it.
+- **One push per run.** Commit the whole batch in a single commit so concurrent deploys never clobber each other (see CLAUDE.md race condition warning). One push = one deploy per run.
+- If the QA gate finds a failure on a block, do not commit that block (see CLAUDE.md QUALITY GATE).
+- Every batch also updates BUILD-PLAN.md and MEMORY.md in the same commit (MANDATORY DOCS UPDATE in CLAUDE.md).
+- **Skip rule:** skip a block whose slugs already exist; skip the whole run only if nothing is left to build (no unbuilt chunk and no blog batch due). Do NOT skip just because a build ran earlier today; this routine runs twice a day on purpose.
+- Bulk-generation without the quality gate is banned. A batch is still N individually quality-gated blocks, full gate on each, every time.
 
 **Where we are (reconciled from disk 5 June 2026):** 70 quality route pages live (35 origins, each to United Kingdom and Ireland). The full route matrix below is now the active build. Chunk R1 is next (Tier A, Template A). Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
 
@@ -27,7 +30,7 @@ This is the spine of the site, the funeral-repatriation equivalent of Pet Transp
 
 **Target: the full origin to destination square. 197 countries as origins, 197 as destinations, minus same-country pairs = 38,612 route pages.** Slug format is the existing convention: `{origin-slug}-to-{destination-slug}.md` in `site/content/routes/`. Destination key uses the full country slug (united-kingdom, ireland, australia, united-states, and so on), not the short `uk`/`ireland` keys.
 
-Routes are built in four tiers, highest commercial intent first. Within each tier, build in the order the tier lists, 25 routes per block, rotating template A to E.
+Routes are built in four tiers, highest commercial intent first. Within each tier, build in the order the tier lists, 25 routes per block, rotating template A to E. A single run builds up to 4 such blocks and commits them once.
 
 ### Tier A -- Inbound to the two core markets (the money tier)
 
@@ -62,23 +65,23 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
 | **Total** | **Full 197x197 matrix** | **38,612** | **70** | **38,542** |
 
-At 8 blocks per day, 7 days per week (56 blocks per week, 25 routes per block = 1,400 routes per week), the full matrix completes in approximately 28 weeks. Tier A alone (the revenue tier) completes in under 3 weeks.
+At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 routes per block = up to 200 routes per day), Tier A (the revenue tier) completes in under 3 weeks and the full matrix in roughly the same horizon as before.
 
 ---
 
 ## TEMPLATE ROTATION
 
-Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`.
+Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
 - Next chunk: **R1**
 - Next tier: **A**
-- Next template lead: **A** (rotation continues A, B, C, D, E across the 25 routes in the block)
+- Next template lead: **A** (rotation continues A, B, C, D, E across the 25 routes in the block, and onward across the next block in the batch)
 
 ---
 
 ## CHUNK LEDGER
 
-The routine names each route block "chunk R<N>" in its commit message so the skip-check in the routine can detect an already-built chunk. Increment R<N> by one each block.
+The routine names each route block "chunk R<N>" in its commit message so the skip-check in the routine can detect an already-built chunk. Increment R<N> by one each block. A batch covers a contiguous run of chunks (for example R1 to R4); record each chunk row in the same batch commit.
 
 | Chunk | Tier | Template lead | Routes | Status | Notes |
 |---|---|---|---|---|---|
@@ -89,7 +92,7 @@ When a chunk is committed, add its row here (date, tier, template, routes, corri
 
 ---
 
-## BLOG ROADMAP (Engine 3) -- runs in parallel, one batch when a route block is not due
+## BLOG ROADMAP (Engine 3) -- runs in parallel, blog blocks only when route chunks are exhausted for the run
 
 239 articles live. Target 500+. Blog batches are built only when the route matrix is not the priority for that run; the route matrix is the default. Each batch is 5 articles, distinct topics, checked against `site/content/blog/` for existing slugs first (no cannibalisation). Author personas rotate per CLAUDE.md.
 
@@ -100,15 +103,15 @@ When a chunk is committed, add its row here (date, tier, template, routes, corri
 - **Batch 29 -- Sector deep-dives:** death-in-hospital-abroad-release-procedure, death-in-a-hotel-room-abroad-what-happens, death-in-custody-abroad-uk-family-rights, death-at-a-sports-event-abroad, death-in-a-care-facility-abroad-repatriation.
 - **Batch 30 onward -- Country deep-dive long-tail:** continue the "repatriation from {country} questions families ask" series for any country not yet covered, then "cost of repatriation from {country}" angle (no figures, directs to enquiry), then "how long does repatriation from {country} take". Generate the next country from `data/countries-197.json` order, skipping any slug already on disk.
 
-The blog roadmap does not end. When the listed batches are exhausted, continue the country long-tail series above. There is no stop condition: the routine keeps building the next unbuilt unit every run, indefinitely.
+The blog roadmap does not end. When the listed batches are exhausted, continue the country long-tail series above. The routine keeps building the next unbuilt unit every run; skip a run only when nothing is left to build.
 
 ---
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-1. **Route matrix, Tier A, chunk R1** (default every run): next 25 unbuilt routes in Tier A order. This is the priority until Tier A is complete.
-2. After Tier A: continue to Tier B, then C, then D, same block rhythm.
-3. Blog batches 27 onward: built on any run where a route block has just been built by a concurrent run and the next route chunk is already committed (the routine's skip-check will route it here).
+1. **Route matrix, Tier A, chunks R1 onward** (default every run): a batch of up to 4 chunks, each 25 unbuilt routes in Tier A order. This is the priority until Tier A is complete.
+2. After Tier A: continue to Tier B, then C, then D, same batch rhythm.
+3. Blog batches 27 onward: built on a run where the route chunks are exhausted, or to fill out a batch once the next route chunk is already committed (the routine's skip-check will route it here).
 
 ---
 
@@ -116,8 +119,9 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 
 | Date | Chunk / Batch | Work Done | Routes/Pages | Notes |
 |------|------|-----------|-------| ------|
+| 5 Jun 2026 | Routine config | Switched to batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap. One push per run (whole batch committed once) to avoid concurrent-deploy clobbering. Pointer-based skip (no same-day skip). Docs only (CLAUDE.md + this file). No content built this entry. | 70 (unchanged) | Instruction change only. |
 | 5 Jun 2026 | Plan rebuild | Route matrix plan installed: full 197x197 tiered matrix (38,612 target), four tiers A to D, chunk ledger, autonomous rhythm. Replaces the previous stub plan that topped out at the blog roadmap. No content built this entry. | 70 (unchanged) | Build plan now at parity with Pet Transport. Chunk R1 (Tier A, Template A) is next. |
 
 ---
 
-*Last updated: 5 June 2026. The routine builds one block per run, autonomously, and reports live links to Slack. No approval step. No stop condition.*
+*Last updated: 5 June 2026. The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*
