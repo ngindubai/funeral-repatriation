@@ -9,7 +9,7 @@
 1. **Simplest solution first.** Always implement the simplest thing that could work. Do not add abstractions or flexibility that were not explicitly requested.
 2. **Don't touch unrelated code.** If a file or function is not directly part of the current task, do not modify it, even if you think it could be improved.
 3. **Flag uncertainty by halting, not guessing.** Running autonomously, if a regulatory fact cannot be sourced from a named dated source, mark it for later rather than inventing it, and if the build itself is ambiguous, stop and post the halt message rather than guess. Confidence without certainty causes damage on a YMYL site.
-4. **One block per run.** Build exactly one unit (25 routes or one 5-article blog batch), then commit, report, and stop.
+4. **A batch of up to 4 blocks per run.** Build up to 4 units (each unit = 25 routes or one 5-article blog batch), floor 1, each through the full quality gate. Commit the whole batch ONCE, report, and stop. (Changed 5 June 2026 from one block per run, to fit the 15-run routine cap.)
 
 ---
 
@@ -18,15 +18,15 @@
 **This project is built by a scheduled cloud routine with no human watching. There is no approval step.** The old "HTML preview then wait for Gareth to approve" model is retired. The working loop is:
 
 1. Read CLAUDE.md, BUILD-PLAN.md, MEMORY.md, ERRORS.md.
-2. Determine the one next block from BUILD-PLAN.md.
-3. Build it through the full quality gate.
-4. If QA passes cleanly, commit to master and push. Deploy is automatic.
+2. Determine the next batch of up to 4 blocks from BUILD-PLAN.md.
+3. Build each block through the full quality gate, advancing the build pointer after each.
+4. If QA passes cleanly on the blocks built, commit the whole batch to master once and push. Deploy is automatic.
 5. Post the live links to the Slack channel as a record of what shipped.
 6. Stop.
 
-**The Slack link post is a record, not a gate.** Nothing waits on it. It exists so a bad batch can be caught after the fact. The safety control on this auto-deploying site is the QA gate in step 3, which must pass before any commit. If QA finds any failure, do not commit: post the halt message and end.
+**The Slack link post is a record, not a gate.** Nothing waits on it. It exists so a bad batch can be caught after the fact. The safety control on this auto-deploying site is the QA gate in step 3, which must pass before any commit. If QA fails on a block, do not commit that block: build as many of the 4 as pass cleanly (minimum 1), commit those, and note the shortfall in Slack. If nothing passes, post the halt message and end.
 
-There is no "wait for go". There is no "stop and wait for approval". Each scheduled run picks up the next unbuilt block and ships it.
+There is no "wait for go". There is no "stop and wait for approval". Each scheduled run picks up the next unbuilt blocks and ships them as one batch.
 
 ---
 
@@ -93,7 +93,7 @@ Live on repatriationfuneral.com (within ~60 seconds)
 - **buildFuture = true** is set in hugo.toml. Keep it. Author all content with a safely past date so nothing is skipped (see E012).
 - **The .github/workflows/ files cannot be edited via the MCP connector** (GitHub returns 403). Provide the complete file for manual paste if one ever needs changing.
 - **Never repoint the deploy workflow trigger.** master deploys, main does not. Never commit to main.
-- **Race condition warning:** Multiple concurrent deploys clobber each other. Push one commit, let it finish, then push the next. The routine builds one block per run for this reason.
+- **Race condition warning:** Multiple concurrent deploys clobber each other. This is exactly why a run commits its whole batch ONCE: one push per run, let it finish, never overlapping pushes. Build up to 4 blocks, then push them together in a single commit so there is one deploy per run.
 - **Deploy speed:** pages are live within ~60 seconds of the push to master.
 
 ---
@@ -142,24 +142,24 @@ Never use Gareth's name as author. Use one of the personas below.
 
 ## QUALITY GATE -- EVERY PAGE, EVERY BLOCK
 
-No page ships without passing all 6 steps. This gate runs fully inline. There is no human preview.
+No page ships without passing all 6 steps. This gate runs fully inline on every block in the batch. There is no human preview.
 
 1. **Research** -- real regulations from `data/countries_repatriation.json` and named dated FCDO/embassy sources, plus web search for current detail. No invented facts. If web search is unavailable and a claim cannot be sourced from the data files, halt.
 2. **Write** -- load workforce/the-wordsmith.md for voice rules before writing.
 3. **Rotate templates** -- assign template_variant A/B/C/D/E. No two consecutive pages use the same variant.
 4. **Humanise** -- apply workforce/the-humaniser.md rules. Remove all AI-pattern phrases.
-5. **QA scan** -- run qa_routes.py and the SEO/title/schema checks. Zero em dashes, zero banned vocab, no prices, no safety guarantees, FAQ schema present, Service schema present, internal links present (origin hub + destination hub + 2 sideways routes). **If any check fails, do not commit. Post the halt message and end.**
-6. **Commit to master, push, report.** Deploy is automatic. Post the live links to Slack as a record. Then stop.
+5. **QA scan** -- run qa_routes.py and the SEO/title/schema checks. Zero em dashes, zero banned vocab, no prices, no safety guarantees, FAQ schema present, Service schema present, internal links present (origin hub + destination hub + 2 sideways routes). **If any check fails on a block, do not commit that block. Build as many of the batch as pass cleanly (minimum 1); if none pass, post the halt message and end.**
+6. **Commit the whole batch to master once, push, report.** Run the gate on each block first, then commit all built blocks in a single commit. Deploy is automatic. Post the live links to Slack as a record. Then stop.
 
 ---
 
 ## BATCH COMPLETION -- LIVE LINK RECORD
 
-After every committed block, output a live link list. Links must be clickable markdown hyperlinks, never bare URLs (Gareth reads them on mobile). This is a record of what shipped, posted after the push, not a gate that pauses anything.
+After every committed batch, output a live link list covering every page in the batch. Links must be clickable markdown hyperlinks, never bare URLs (Gareth reads them on mobile). This is a record of what shipped, posted after the push, not a gate that pauses anything.
 
 Format:
 
-**Chunk [N] / Batch [N] -- [topic] -- [N] pages live**
+**Chunks [N-M] / Batches [N] -- [topic] -- [N] pages live**
 
 - [Title of page 1](https://www.repatriationfuneral.com/routes/[slug-1]/)
 - [Title of page 2](https://www.repatriationfuneral.com/routes/[slug-2]/)
@@ -184,7 +184,7 @@ All variants use site/layouts/routes/single.html as the base template. The varia
 
 ## THE ROUTE MATRIX IS THE GROWTH ENGINE
 
-The site's growth comes from the origin to destination route matrix: 197 countries to 197 countries, 38,612 pages, built in four tiers (A inbound to UK and Ireland, B diaspora corridors, C regional, D long-tail completion). The full tier breakdown, order, and chunk ledger live in BUILD-PLAN.md. The data exists in `data/countries_repatriation.json`, `data/countries-197.json`, and `data/keyword_matrix.json`. Build 25 routes per run, rotating templates A to E. This is the default work of every run until the matrix is complete.
+The site's growth comes from the origin to destination route matrix: 197 countries to 197 countries, 38,612 pages, built in four tiers (A inbound to UK and Ireland, B diaspora corridors, C regional, D long-tail completion). The full tier breakdown, order, and chunk ledger live in BUILD-PLAN.md. The data exists in `data/countries_repatriation.json`, `data/countries-197.json`, and `data/keyword_matrix.json`. Build up to 4 blocks of 25 routes per run, rotating templates A to E, committed once. This is the default work of every run until the matrix is complete.
 
 ---
 
@@ -218,12 +218,12 @@ funeral-repatriation/
 ## RUN PROTOCOL (autonomous)
 
 1. Read CLAUDE.md, BUILD-PLAN.md, MEMORY.md, ERRORS.md.
-2. From BUILD-PLAN.md, identify the one next block (the next route chunk by default; a blog batch only if the next route chunk is already committed).
-3. Check the target folder (site/content/routes/ or site/content/blog/) for the slugs about to be built. If they already exist, this block is built: stop and post the SKIPPED message.
-4. Build the block through the full quality gate.
-5. If QA passes: commit to master with BUILD-PLAN.md and MEMORY.md updated in the same commit. Push. Deploy is automatic.
+2. From BUILD-PLAN.md, identify the next batch of up to 4 blocks (the next route chunks by default; a blog batch only where the next route chunk is already committed). Floor is 1 block.
+3. Check the target folder (site/content/routes/ or site/content/blog/) for the slugs about to be built. Skip a block whose slugs already exist; skip the whole run only if nothing is left to build (no unbuilt chunk and no blog batch due). Do NOT skip just because a build ran earlier today; this routine runs twice a day on purpose.
+4. Build each block in the batch through the full quality gate, advancing the build pointer after each.
+5. If QA passes: commit the whole batch to master in one commit, with BUILD-PLAN.md and MEMORY.md updated in the same commit. Push once. Deploy is automatic.
 6. Post the live link list to Slack as a record.
-7. Stop. One block per run.
+7. Stop. One batch (up to 4 blocks) per run.
 
 ---
 
@@ -235,12 +235,12 @@ funeral-repatriation/
 - The old FTP deploy.yml is disabled (no-op stub). Do not re-enable it.
 - Slugs: lowercase, hyphen-separated, no underscores. Route slug format: {origin}-to-{destination}.
 - Python generators at repo root. Hugo content in site/content/. site/public/ is gitignored, never commit build output.
-- Every push to master auto-deploys within ~60 seconds.
+- Every push to master auto-deploys within ~60 seconds. One push per run (the whole batch committed once) so concurrent deploys never clobber each other.
 - buildFuture = true in hugo.toml. Keep it. Author content with a safely past date.
 - .github/workflows/ files cannot be edited via MCP connector (403).
 - No layout: field in route page frontmatter. Hugo auto-selects routes/single.html.
 - Never use Gareth's real name as author. No em dashes anywhere. No prices on any page. British English throughout.
-- The routine is autonomous: build, QA, commit, report, stop. No approval step, no wait-for-go, no stop condition. See AUTONOMY section.
+- The routine is autonomous: build a batch of up to 4 blocks, QA each, commit once, report, stop. No approval step, no wait-for-go. Bulk-generation without the quality gate is banned. See AUTONOMY section.
 
 ---
 
@@ -252,4 +252,4 @@ funeral-repatriation/
 
 ---
 
-*Last updated: 5 June 2026. Autonomous build routine. Route matrix is the growth engine.*
+*Last updated: 5 June 2026. Autonomous build routine. Route matrix is the growth engine. Batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap.*
