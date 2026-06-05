@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "colombia",
+    "name": "Colombia",
+    "slug": "colombia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/colombia",
+    "embassy_city": "Bogota",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-bogota",
+    "consulates": [],
+    "emergency_number": "123",
+    "death_registration": "Notaria or civil registry",
+    "investigating_authority": "Medicina Legal (National Institute of Legal Medicine)",
+    "post_mortem_trigger": "Violent deaths, homicide, or deaths in suspicious circumstances",
+    "key_document": "Registro civil de defuncion (death certificate)",
+    "source": "FCDO Colombia travel advice, updated 2025; British Embassy Bogota guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Colombia is available. Bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "colombia-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-10 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Registro civil de defuncion (certified English translation required)",
+        "Medicina Legal clearance (for violent deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Medicina Legal (National Institute of Legal Medicine) is involved in all violent or suspicious deaths, which can significantly extend timelines.",
+        "All Spanish-language documentation requires certified English translation for UK acceptance.",
+        "An export permit from the relevant Colombian authority is required for all repatriations.",
+        "The FCDO advises against travel to parts of Colombia; those travelling to restricted areas face greater consular limitations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Colombian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bogota can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Colombia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Colombia. Repatriation to the UK takes 2-4 weeks. Medicina Legal clearance, Spanish translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

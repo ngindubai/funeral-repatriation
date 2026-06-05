@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "myanmar",
+    "name": "Myanmar",
+    "slug": "myanmar",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/myanmar",
+    "embassy_city": "Yangon",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-rangoon",
+    "consulates": ["Mandalay"],
+    "emergency_number": "199",
+    "death_registration": "Ward or Township Administrator",
+    "investigating_authority": "Myanmar Police Force",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate (requires certified English translation)",
+    "source": "FCDO Myanmar travel advice, updated 2025; British Embassy Yangon guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Myanmar is available. Bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "myanmar-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "high",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-3 weeks",
+        "complex": "2-4 months"
+      },
+      "doc_processing_time": "14-21 days",
+      "key_documents": [
+        "Death certificate (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The FCDO advises against all travel to Myanmar. The political situation since the 2021 coup has made consular assistance more limited.",
+        "Consular access in parts of Myanmar is restricted; timelines are unpredictable.",
+        "All Myanmar-language documentation requires a certified English translation for UK acceptance.",
+        "Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Myanmar documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Yangon provides consular services with limitations due to the political situation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Myanmar to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Myanmar. Repatriation to the UK takes 3-6 weeks. Police clearance, FCDO liaison, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

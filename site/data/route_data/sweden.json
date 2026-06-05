@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "sweden",
+    "name": "Sweden",
+    "slug": "sweden",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/sweden",
+    "embassy_city": "Stockholm",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-stockholm",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Skatteverket (Swedish Tax Agency handles civil registration)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Doedsbevis (death certificate from Skatteverket)",
+    "source": "FCDO Sweden travel advice, updated 2025; British Embassy Stockholm guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Sweden is widely available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "sweden-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Doedsbevis (death certificate from Skatteverket)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Sweden is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death registration is handled by Skatteverket (Swedish Tax Agency), not a local registry.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "All Swedish-language documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Swedish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Stockholm can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Sweden to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Sweden. Repatriation to the UK takes 1-2 weeks. Skatteverket registration, apostille, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

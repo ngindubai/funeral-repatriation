@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "libya",
+    "name": "Libya",
+    "slug": "libya",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/libya",
+    "embassy_city": "Tunis (covering embassy)",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-tripoli",
+    "consulates": [],
+    "emergency_number": "1515",
+    "death_registration": "Local civil registration office",
+    "investigating_authority": "Local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Arabic death certificate (requires certified English translation)",
+    "source": "FCDO Libya travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Libyan law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "libya-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "high",
+      "timeline": {
+        "avg": "4-8 weeks",
+        "fast": "3-5 weeks",
+        "complex": "3-6 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Arabic death certificate (certified English translation required)",
+        "Local authority clearance",
+        "Exit permit",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The UK Embassy in Tripoli suspended operations in 2014. Consular assistance is provided through the British Embassy in Tunis.",
+        "The FCDO advises against all travel to Libya. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Access and logistics are severely constrained by the security situation."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance for Libya is provided via the British Embassy in Tunis. They cannot pay for or arrange repatriation.",
+      "seo_title": "Libya to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Libya. Repatriation is complex due to the security situation. FCDO liaison via Tunis and Arabic translation all handled. Contact us 24/7."
+    }
+  ]
+}

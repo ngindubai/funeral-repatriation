@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "belarus",
+    "name": "Belarus",
+    "slug": "belarus",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/belarus",
+    "embassy_city": "Minsk",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-minsk",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "ZAGS (civil registration)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from ZAGS (requires certified English translation)",
+    "source": "FCDO Belarus travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation is available in Belarus. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "belarus-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-10 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Death certificate from ZAGS (certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The UK suspended some embassy services in Belarus from 2022. Consular assistance for British nationals may be directed via Poland or Lithuania.",
+        "The FCDO advises against all travel to Belarus. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "All Belarusian or Russian-language documentation requires certified English translation for UK acceptance.",
+        "The political situation may affect timelines and access."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance for Belarus may be provided via Poland or Lithuania given the current situation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Belarus to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Belarus. Repatriation to the UK takes 2-3 weeks. FCDO liaison, ZAGS registration, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

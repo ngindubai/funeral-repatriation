@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "hungary",
+    "name": "Hungary",
+    "slug": "hungary",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/hungary",
+    "embassy_city": "Budapest",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-budapest",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Anyakönyvi hivatal (Civil Registry Office)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Halotti anyakönyvi kivonat (death certificate from Anyakönyvi hivatal)",
+    "source": "FCDO Hungary travel advice, updated 2025; British Embassy Budapest guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Hungary is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "hungary-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Halotti anyakönyvi kivonat (death certificate from Anyakönyvi hivatal)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Hungary is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered at the local Anyakönyvi hivatal (Civil Registry Office) promptly.",
+        "All Hungarian-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Hungarian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Budapest can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Hungary to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Hungary. Repatriation to the UK takes 1-2 weeks. Civil registry process, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

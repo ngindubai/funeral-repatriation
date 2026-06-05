@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "south-korea",
+    "name": "South Korea",
+    "slug": "south-korea",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/south-korea",
+    "embassy_city": "Seoul",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-seoul",
+    "consulates": [],
+    "emergency_number": "112 (police), 119 (ambulance)",
+    "death_registration": "Local government office (Jumin Centre)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Samangjindan-seo (death certificate, requires certified English translation)",
+    "source": "FCDO South Korea travel advice, updated 2025; British Embassy Seoul guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in South Korea is widely available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "south-korea-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-7 days",
+      "key_documents": [
+        "Samangjindan-seo (death certificate, certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Death is registered at the local government office (Jumin Centre) promptly.",
+        "All Korean-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "An export permit from the relevant Korean authority is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All South Korean documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Seoul can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "South Korea to UK Repatriation: Family Guide",
+      "seo_description": "Someone has died in South Korea. Repatriation to the UK takes 1-2 weeks. Korean death certificate, translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

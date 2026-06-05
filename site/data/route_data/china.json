@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "china",
+    "name": "China",
+    "slug": "china",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/china",
+    "embassy_city": "Beijing",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-beijing",
+    "consulates": ["Shanghai", "Guangzhou", "Chongqing", "Wuhan", "Chengdu"],
+    "emergency_number": "110 (police), 120 (ambulance)",
+    "death_registration": "Public Security Bureau (PSB)",
+    "investigating_authority": "Public Security Bureau",
+    "post_mortem_trigger": "Unexpected, violent, or suspicious deaths require Public Security Bureau investigation",
+    "key_document": "Si wang zheng ming shu (death certificate, issued by Public Security Bureau)",
+    "source": "FCDO China travel advice, updated 2025; British Embassy Beijing guidance",
+    "cremation_available": true,
+    "cremation_note": "China generally requires cremation before repatriation of remains. Full body repatriation is possible but requires special permits from the Ministry of Civil Affairs and is uncommon. Most families proceed with cremation in China and bring ashes home to the UK, which is simpler and faster."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "china-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-12 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Si wang zheng ming shu (death certificate, certified English translation required)",
+        "Public Security Bureau clearance",
+        "Ministry of Civil Affairs export permit (for full body repatriation)",
+        "Cremation certificate (if cremation carried out in China)",
+        "Embalming certificate (if full body repatriation)"
+      ],
+      "special_rules": [
+        "China generally requires cremation before international repatriation. Full body repatriation requires special Ministry of Civil Affairs permits.",
+        "All documentation is issued in Mandarin and requires certified English translation.",
+        "The Public Security Bureau must clear all unexpected or unnatural deaths before the body is released.",
+        "Consulates in Shanghai, Guangzhou, Chongqing, Wuhan, and Chengdu can assist depending on the location of death."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Chinese documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Beijing and consulates across China can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "China to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in China. Repatriation to the UK takes 2-4 weeks. PSB clearance, cremation rules, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

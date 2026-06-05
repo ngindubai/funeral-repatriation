@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "nepal",
+    "name": "Nepal",
+    "slug": "nepal",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/nepal",
+    "embassy_city": "Kathmandu",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-kathmandu",
+    "consulates": [],
+    "emergency_number": "100",
+    "death_registration": "Local Births and Deaths Registration Office",
+    "investigating_authority": "Nepal Police",
+    "post_mortem_trigger": "Violent, suspicious, unexplained, or trekking-related deaths",
+    "key_document": "Death certificate in Nepali (requires certified English translation)",
+    "source": "FCDO Nepal travel advice, updated 2025; British Embassy Kathmandu guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Nepal is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "nepal-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate in Nepali (certified English translation required)",
+        "Police clearance (required for all deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Altitude-related deaths and trekking fatalities are common among British nationals. Police clearance and investigation are standard.",
+        "Nepal Police must clear all deaths, including trekking and altitude-related fatalities, before the body can be released.",
+        "All Nepali-language documentation requires a certified English translation for UK acceptance.",
+        "Repatriation from remote trekking areas requires helicopter evacuation to Kathmandu before air cargo; this adds time and cost."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Nepali documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Kathmandu can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Nepal to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Nepal. Repatriation to the UK takes 2-3 weeks. Police clearance, Nepali translation, and trekking death procedures all handled. Contact us 24/7."
+    }
+  ]
+}

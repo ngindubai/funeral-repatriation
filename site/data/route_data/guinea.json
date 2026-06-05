@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "guinea",
+    "name": "Guinea",
+    "slug": "guinea",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/guinea",
+    "embassy_city": "Conakry",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-conakry",
+    "consulates": [],
+    "emergency_number": "117",
+    "death_registration": "Centre d'etat civil (Civil Registry)",
+    "investigating_authority": "Police and Prosecutor",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acte de deces (death certificate in French, requires certified English translation)",
+    "source": "FCDO Guinea travel advice, updated 2025; British Embassy Conakry guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in Guinea. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "guinea-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Acte de deces (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "All French-language documentation requires certified English translation for UK acceptance.",
+        "Police clearance is required for all violent or suspicious deaths.",
+        "An export permit from Guinean authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Conakry can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Guinea to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Guinea. Repatriation to the UK takes 2-4 weeks. Civil registry, French translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

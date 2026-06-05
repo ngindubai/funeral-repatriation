@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "switzerland",
+    "name": "Switzerland",
+    "slug": "switzerland",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/switzerland",
+    "embassy_city": "Bern",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-bern",
+    "consulates": ["Geneva", "Zurich"],
+    "emergency_number": "112",
+    "death_registration": "Zivilstandsamt (Civil Registry Office)",
+    "investigating_authority": "Staatsanwaltschaft (Public Prosecutor)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Sterbeurkunde (death certificate from Zivilstandsamt)",
+    "source": "FCDO Switzerland travel advice, updated 2025; British Embassy Bern guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Switzerland is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Sterbeurkunde, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "switzerland-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Sterbeurkunde (death certificate from Zivilstandsamt)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Switzerland is not in the EU but is a Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered at the local Zivilstandsamt (Civil Registry) promptly.",
+        "Documents may be issued in German, French, or Italian depending on the region.",
+        "All non-English documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Swiss documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bern and consulates in Geneva and Zurich can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Switzerland to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Switzerland. Repatriation to the UK takes 1-2 weeks. Zivilstandsamt registration, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

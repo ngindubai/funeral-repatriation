@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "chile",
+    "name": "Chile",
+    "slug": "chile",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/chile",
+    "embassy_city": "Santiago",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-santiago",
+    "consulates": [],
+    "emergency_number": "133 (police), 131 (ambulance)",
+    "death_registration": "Registro Civil e Identificacion",
+    "investigating_authority": "Fiscalia (Prosecutor's Office)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Certificado de defuncion (death certificate from Registro Civil e Identificacion)",
+    "source": "FCDO Chile travel advice, updated 2025; British Embassy Santiago guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Chile is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Certificado de defuncion, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "chile-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-7 days",
+      "key_documents": [
+        "Certificado de defuncion (certified English translation required)",
+        "Fiscalia clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Chile is a Hague Apostille Convention member, which simplifies document legalisation.",
+        "All Spanish-language documentation requires certified English translation for UK acceptance.",
+        "The Fiscalia (Prosecutor's Office) is involved in all violent or suspicious deaths.",
+        "An export permit from the relevant Chilean authority is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Chilean documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Santiago can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Chile to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Chile. Repatriation to the UK takes 1-2 weeks. Registro Civil, apostille, and Spanish translation all handled. Contact us 24/7."
+    }
+  ]
+}

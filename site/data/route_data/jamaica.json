@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "jamaica",
+    "name": "Jamaica",
+    "slug": "jamaica",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/jamaica",
+    "embassy_city": "Kingston",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-kingston",
+    "consulates": [],
+    "emergency_number": "119",
+    "death_registration": "Registrar General's Department",
+    "investigating_authority": "Coroner's Court (Jamaica) and Jamaica Constabulary Force",
+    "post_mortem_trigger": "Suspicious deaths, homicides, or deaths in custody require Coroner's Court involvement",
+    "key_document": "Certified death certificate from Registrar General's Department",
+    "source": "FCDO Jamaica travel advice, updated 2025; British High Commission Kingston guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Jamaica is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the certified death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "jamaica-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Certified death certificate from Registrar General's Department",
+        "Coroner's release letter (where applicable)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Jamaica has a large UK diaspora; many deaths involve British nationals visiting family. The High Commission handles a significant volume of repatriation cases.",
+        "The Jamaica Coroner's Court must authorise release for all suspicious deaths. This can add weeks.",
+        "An export permit from Jamaican authorities is required for all repatriations.",
+        "All documentation is in English, which simplifies UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Jamaican documentation is in English, which simplifies the process. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Kingston can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Jamaica to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Jamaica. Repatriation to the UK takes 2-3 weeks. Registrar General, Coroner clearance, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "qatar",
+    "name": "Qatar",
+    "slug": "qatar",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/qatar",
+    "embassy_city": "Doha",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-doha",
+    "consulates": [],
+    "emergency_number": "999",
+    "death_registration": "Ministry of Interior",
+    "investigating_authority": "Ministry of Interior forensic department",
+    "post_mortem_trigger": "Unnatural or unexplained deaths require Ministry of Interior investigation",
+    "key_document": "Qatar death certificate (requires certified English translation)",
+    "source": "FCDO Qatar travel advice, updated 2025; British Embassy Doha guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Qatari law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "qatar-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Qatar death certificate (certified English translation required)",
+        "Ministry of Interior clearance",
+        "Exit permit",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The Ministry of Interior must clear all unnatural or suspicious deaths before the body can be released.",
+        "An exit permit is required from Qatari authorities for all repatriations.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Embalming must be performed by a licensed Qatari funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Qatari documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Doha can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Qatar to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Qatar. Repatriation to the UK takes 2-3 weeks. Ministry clearance, exit permit, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

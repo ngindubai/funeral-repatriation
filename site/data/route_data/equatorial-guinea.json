@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "slug": "equatorial-guinea",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/equatorial-guinea",
+    "embassy_city": "Lagos (covering embassy, Nigeria)",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-abuja",
+    "consulates": [],
+    "emergency_number": "114",
+    "death_registration": "Civil registry",
+    "investigating_authority": "Police and local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Certificado de defuncion (death certificate in Spanish, requires certified English translation)",
+    "source": "FCDO Equatorial Guinea travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in Equatorial Guinea. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "equatorial-guinea-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "high",
+      "timeline": {
+        "avg": "4-6 weeks",
+        "fast": "3-4 weeks",
+        "complex": "2-4 months"
+      },
+      "doc_processing_time": "14-21 days",
+      "key_documents": [
+        "Certificado de defuncion (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "There is no resident UK Embassy in Equatorial Guinea; consular assistance is provided via Nigeria or Cameroon.",
+        "All Spanish-language documentation requires certified English translation for UK acceptance.",
+        "Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "Police clearance is required for all violent or suspicious deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. There is no resident UK Embassy in Equatorial Guinea; consular assistance is via Nigeria. They cannot pay for or arrange repatriation.",
+      "seo_title": "Equatorial Guinea to UK Repatriation: Family Guide",
+      "seo_description": "Someone has died in Equatorial Guinea. Repatriation to the UK takes 4-6 weeks. FCDO via Nigeria, Spanish translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

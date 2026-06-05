@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "afghanistan",
+    "name": "Afghanistan",
+    "slug": "afghanistan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/afghanistan",
+    "embassy_city": "Dubai (covering embassy)",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-kabul",
+    "consulates": [],
+    "emergency_number": "119",
+    "death_registration": "Local civil registration authority",
+    "investigating_authority": "Local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate (requires certified English translation)",
+    "source": "FCDO Afghanistan travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not available in Afghanistan. Full body repatriation is the only option. Significant practical difficulties apply given the current situation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "afghanistan-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "high",
+      "timeline": {
+        "avg": "4-8 weeks",
+        "fast": "3-5 weeks",
+        "complex": "3-6 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Death certificate (certified English translation required)",
+        "Local authority clearance",
+        "Exit permit",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The UK Embassy in Kabul suspended operations in August 2021. Consular assistance is provided through the British Embassy in Dubai.",
+        "The FCDO advises against all travel to Afghanistan. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "Practical access and logistics are severely constrained by the current situation.",
+        "All documentation requires certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Kabul is not operational; consular assistance is provided via the British Embassy in Dubai. They cannot pay for or arrange repatriation.",
+      "seo_title": "Afghanistan to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Afghanistan. Repatriation to the UK is complex. FCDO liaison via Dubai, documentation, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

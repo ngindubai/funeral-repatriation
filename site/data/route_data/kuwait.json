@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "kuwait",
+    "name": "Kuwait",
+    "slug": "kuwait",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/kuwait",
+    "embassy_city": "Kuwait City",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-kuwait",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Civil Registration Services",
+    "investigating_authority": "Ministry of Interior forensic department",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Arabic death certificate (requires certified English translation)",
+    "source": "FCDO Kuwait travel advice, updated 2025; British Embassy Kuwait City guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Kuwaiti law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "kuwait-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Arabic death certificate (certified English translation required)",
+        "Ministry of Interior clearance (for unnatural deaths)",
+        "Exit permit from Kuwaiti authorities",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The Ministry of Interior forensic department must clear all violent or suspicious deaths before the body can be released.",
+        "An exit permit from Kuwaiti authorities is required for all repatriations.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Embalming must be carried out by a licensed Kuwaiti funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Kuwaiti documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Kuwait City can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Kuwait to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Kuwait. Repatriation to the UK takes 2-3 weeks. Ministry clearance, exit permit, and Arabic translation all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "somalia",
+    "name": "Somalia",
+    "slug": "somalia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/somalia",
+    "embassy_city": "Nairobi (covering embassy)",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-mogadishu",
+    "consulates": [],
+    "emergency_number": "888",
+    "death_registration": "Local civil authority (where functional)",
+    "investigating_authority": "Local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or conflict-related deaths",
+    "key_document": "Death certificate (requires certified English translation where available)",
+    "source": "FCDO Somalia travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not available in Somalia. Full body repatriation is the only option when feasible."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "somalia-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "high",
+      "timeline": {
+        "avg": "6-12 weeks",
+        "fast": "4-8 weeks",
+        "complex": "3-6 months"
+      },
+      "doc_processing_time": "21-42 days",
+      "key_documents": [
+        "Death certificate from local authority (certified English translation required)",
+        "Local authority clearance",
+        "Exit documentation",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "There is no resident UK Embassy in Mogadishu. Consular assistance is provided via the British High Commission in Nairobi.",
+        "The FCDO advises against all travel to Somalia. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "Security conditions severely limit access, movement, and repatriation logistics.",
+        "Documentation availability and quality varies greatly by region."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance is provided via the British High Commission in Nairobi. They cannot pay for or arrange repatriation.",
+      "seo_title": "Somalia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Somalia. Repatriation is very complex. FCDO liaison via Nairobi and all documentation handled. Contact us 24/7 for immediate support."
+    }
+  ]
+}

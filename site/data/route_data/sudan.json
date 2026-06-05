@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "sudan",
+    "name": "Sudan",
+    "slug": "sudan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/sudan",
+    "embassy_city": "Cairo (covering embassy)",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-khartoum",
+    "consulates": [],
+    "emergency_number": "999",
+    "death_registration": "Local civil registration authority",
+    "investigating_authority": "Local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or conflict-related deaths",
+    "key_document": "Arabic death certificate (requires certified English translation)",
+    "source": "FCDO Sudan travel advice, updated 2025; FCDO emergency line guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not available in Sudan. Full body repatriation is the only option when feasible."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "sudan-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "high",
+      "timeline": {
+        "avg": "4-8 weeks",
+        "fast": "3-6 weeks",
+        "complex": "3-6 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Arabic death certificate (certified English translation required)",
+        "Local authority clearance",
+        "Exit permit",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The UK suspended embassy operations in Khartoum in 2023 due to the conflict. Consular assistance is provided via Egypt.",
+        "The FCDO advises against all travel to Sudan. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "The ongoing conflict makes access and logistics severely constrained and unpredictable.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance for Sudan is provided via Egypt given the current situation. They cannot pay for or arrange repatriation.",
+      "seo_title": "Sudan to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Sudan. Repatriation is complex due to the conflict. FCDO liaison via Egypt and Arabic translation all handled. Contact us 24/7."
+    }
+  ]
+}

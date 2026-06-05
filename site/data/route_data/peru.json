@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "peru",
+    "name": "Peru",
+    "slug": "peru",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/peru",
+    "embassy_city": "Lima",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-lima",
+    "consulates": [],
+    "emergency_number": "105",
+    "death_registration": "RENIEC or Registro Civil",
+    "investigating_authority": "Fiscalia (Prosecutor's Office)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acta de defuncion (death certificate from RENIEC or Registro Civil)",
+    "source": "FCDO Peru travel advice, updated 2025; British Embassy Lima guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Peru is available. Bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "peru-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Acta de defuncion (certified English translation required)",
+        "Fiscalia clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "All Spanish-language documentation requires certified English translation for UK acceptance.",
+        "The Fiscalia (Prosecutor's Office) is involved in all violent or suspicious deaths.",
+        "An export permit from the relevant Peruvian authority is required for all repatriations.",
+        "Altitude-related deaths are common among trekkers; FCDO should be notified promptly."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Peruvian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Lima can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Peru to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Peru. Repatriation to the UK takes 2-3 weeks. RENIEC registration, Spanish translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "iran",
+    "name": "Iran",
+    "slug": "iran",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/iran",
+    "embassy_city": "Tehran",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-tehran",
+    "consulates": [],
+    "emergency_number": "115",
+    "death_registration": "National Organisation for Civil Registration",
+    "investigating_authority": "Legal Medicine Organisation (Pezeshki Qanuni)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Persian death certificate from National Organisation for Civil Registration (requires certified English translation)",
+    "source": "FCDO Iran travel advice, updated 2025; British Embassy Tehran guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Iranian law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "iran-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "high",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-4 weeks",
+        "complex": "2-4 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Persian death certificate (certified English translation required)",
+        "Legal Medicine Organisation clearance",
+        "Exit permit from Iranian authorities",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "UK-Iran relations are strained. British nationals in difficulty should contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "All documentation is in Persian and requires certified English translation for UK acceptance.",
+        "The Legal Medicine Organisation (Pezeshki Qanuni) must clear all unnatural or suspicious deaths.",
+        "Bureaucratic processes can be slow; timelines are longer than in most countries."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Iranian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tehran has limited capacity to assist British nationals. Contact the FCDO directly as a first step.",
+      "seo_title": "Iran to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Iran. Repatriation to the UK takes 3-6 weeks. FCDO liaison, Persian translation, and exit permits all handled. Contact us 24/7."
+    }
+  ]
+}

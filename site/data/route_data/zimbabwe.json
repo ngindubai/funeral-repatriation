@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "zimbabwe",
+    "name": "Zimbabwe",
+    "slug": "zimbabwe",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/zimbabwe",
+    "embassy_city": "Harare",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-harare",
+    "consulates": [],
+    "emergency_number": "995",
+    "death_registration": "Registrar General's Department",
+    "investigating_authority": "Zimbabwe Republic Police",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from Registrar General's Department (English language)",
+    "source": "FCDO Zimbabwe travel advice, updated 2025; British Embassy Harare guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Zimbabwe is available. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "zimbabwe-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate from Registrar General's Department (English language)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Zimbabwe issues death certificates in English, which simplifies UK documentation requirements.",
+        "Police clearance from the Zimbabwe Republic Police is required for all unnatural or suspicious deaths.",
+        "An export permit from Zimbabwean authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Zimbabwean documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Harare can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Zimbabwe to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Zimbabwe. Repatriation to the UK takes 2-3 weeks. Registrar General, police clearance, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

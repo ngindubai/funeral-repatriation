@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "lithuania",
+    "name": "Lithuania",
+    "slug": "lithuania",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/lithuania",
+    "embassy_city": "Vilnius",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-vilnius",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Civilines metrikacijos skyrius (Civil Registry Office)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Mirties liudijimas (death certificate, requires certified English translation)",
+    "source": "FCDO Lithuania travel advice, updated 2025; British Embassy Vilnius guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Lithuania is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Mirties liudijimas, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "lithuania-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Mirties liudijimas (death certificate, certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Lithuania is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered with the Civilines metrikacijos skyrius (Civil Registry Office) promptly.",
+        "All Lithuanian-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Lithuanian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Vilnius can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Lithuania to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Lithuania. Repatriation to the UK takes 1-2 weeks. Civil Registry, apostille, and Lithuanian translation all handled. Contact us 24/7."
+    }
+  ]
+}

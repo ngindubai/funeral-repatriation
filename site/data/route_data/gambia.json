@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "gambia",
+    "name": "Gambia",
+    "slug": "gambia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/gambia",
+    "embassy_city": "Banjul",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-banjul",
+    "consulates": [],
+    "emergency_number": "117 (police)",
+    "death_registration": "National Registration Authority",
+    "investigating_authority": "Gambia Police Force",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from National Registration Authority",
+    "source": "FCDO Gambia travel advice, updated 2025; British High Commission Banjul guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Gambia is available. Bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "gambia-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate from National Registration Authority",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Gambia is popular with older British tourists and has a significant British retired community. The High Commission handles a notable volume of repatriation cases.",
+        "Police clearance is required for all unnatural or suspicious deaths.",
+        "An export permit from the relevant Gambian authority is required for all repatriations.",
+        "Documentation is in English, which simplifies UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Gambian documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Banjul can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Gambia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Gambia. Repatriation to the UK takes 2-3 weeks. National Registration Authority, police clearance, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

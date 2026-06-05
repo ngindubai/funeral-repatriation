@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "uzbekistan",
+    "name": "Uzbekistan",
+    "slug": "uzbekistan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/uzbekistan",
+    "embassy_city": "Tashkent",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-tashkent",
+    "consulates": [],
+    "emergency_number": "102",
+    "death_registration": "Hukumati (local civil administration) registration office",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate (requires certified English translation)",
+    "source": "FCDO Uzbekistan travel advice, updated 2025; British Embassy Tashkent guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation is available in Uzbekistan. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "uzbekistan-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate from Hukumati registration office (certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Death must be registered with the local Hukumati (civil administration) registration office promptly.",
+        "All Uzbek or Russian-language documentation requires certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "An export permit from Uzbek authorities is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tashkent can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Uzbekistan to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Uzbekistan. Repatriation to the UK takes 2-3 weeks. Hukumati registration, translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

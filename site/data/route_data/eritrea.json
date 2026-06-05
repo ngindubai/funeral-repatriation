@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "eritrea",
+    "name": "Eritrea",
+    "slug": "eritrea",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/eritrea",
+    "embassy_city": "Asmara",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-asmara",
+    "consulates": [],
+    "emergency_number": "113",
+    "death_registration": "Civil registration office",
+    "investigating_authority": "Police and local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate (requires certified English translation)",
+    "source": "FCDO Eritrea travel advice, updated 2025; British Embassy Asmara guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in Eritrea. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "eritrea-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "high",
+      "timeline": {
+        "avg": "3-6 weeks",
+        "fast": "2-4 weeks",
+        "complex": "2-4 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Death certificate (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Eritrea has significant bureaucratic requirements and limited infrastructure; timelines are longer than most countries.",
+        "All Tigrinya or Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Police clearance is required for all violent or suspicious deaths.",
+        "Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Asmara can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Eritrea to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Eritrea. Repatriation to the UK takes 3-6 weeks. Police clearance, document translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

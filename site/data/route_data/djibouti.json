@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "djibouti",
+    "name": "Djibouti",
+    "slug": "djibouti",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/djibouti",
+    "embassy_city": "Djibouti City",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-djibouti",
+    "consulates": [],
+    "emergency_number": "17",
+    "death_registration": "Etat civil (Civil Registry)",
+    "investigating_authority": "Police and Prosecutor",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acte de deces (death certificate in French, requires certified English translation)",
+    "source": "FCDO Djibouti travel advice, updated 2025; British Embassy Djibouti City guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in Djibouti. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "djibouti-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Acte de deces (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "French is the main official language for documentation; all French-language documentation requires certified English translation.",
+        "Police clearance is required for all violent or suspicious deaths.",
+        "An export permit from Djiboutian authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Djibouti City can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Djibouti to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Djibouti. Repatriation to the UK takes 2-4 weeks. Etat civil, French translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

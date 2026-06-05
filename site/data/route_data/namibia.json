@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "namibia",
+    "name": "Namibia",
+    "slug": "namibia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/namibia",
+    "embassy_city": "Windhoek",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-windhoek",
+    "consulates": [],
+    "emergency_number": "10111",
+    "death_registration": "Ministry of Home Affairs and Immigration",
+    "investigating_authority": "Namibian Police Force",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from Ministry of Home Affairs (English language)",
+    "source": "FCDO Namibia travel advice, updated 2025; British High Commission Windhoek guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Namibia is available. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "namibia-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate from Ministry of Home Affairs (English language)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Namibia issues death certificates in English, which simplifies UK documentation requirements.",
+        "Police clearance from the Namibian Police Force is required for all unnatural or suspicious deaths.",
+        "An export permit from Namibian authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Namibian documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Windhoek can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Namibia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Namibia. Repatriation to the UK takes 2-3 weeks. Ministry of Home Affairs, police clearance, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

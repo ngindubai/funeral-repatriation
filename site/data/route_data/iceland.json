@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "iceland",
+    "name": "Iceland",
+    "slug": "iceland",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/iceland",
+    "embassy_city": "Reykjavik",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-reykjavik",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Thjodskra Islands (National Registry)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Danarvorduord (death certificate from National Registry, requires certified English translation)",
+    "source": "FCDO Iceland travel advice, updated 2025; British Embassy Reykjavik guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Iceland is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "iceland-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Death certificate from National Registry (certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Iceland is not in the EU but is a member of the Hague Apostille Convention, which simplifies document legalisation.",
+        "Death registration is handled by Thjodskra Islands (National Registry).",
+        "All Icelandic-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Icelandic documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Reykjavik can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Iceland to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Iceland. Repatriation to the UK takes 1-2 weeks. National Registry, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

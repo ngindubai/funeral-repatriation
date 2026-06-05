@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "moldova",
+    "name": "Moldova",
+    "slug": "moldova",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/moldova",
+    "embassy_city": "Chisinau",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-chisinau",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Civil Status Service",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Certificat de deces (death certificate from Civil Status Service, requires certified English translation)",
+    "source": "FCDO Moldova travel advice, updated 2025; British Embassy Chisinau guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation is available in Moldova. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "moldova-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Certificat de deces (death certificate, certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Moldova is a Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered with the Civil Status Service promptly.",
+        "All Romanian or Russian-language documentation requires certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Chisinau can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Moldova to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Moldova. Repatriation to the UK takes 1-2 weeks. Civil Status Service, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

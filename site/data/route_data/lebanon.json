@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "lebanon",
+    "name": "Lebanon",
+    "slug": "lebanon",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/lebanon",
+    "embassy_city": "Beirut",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-beirut",
+    "consulates": [],
+    "emergency_number": "140",
+    "death_registration": "Ministry of Interior Civil Status Directorate",
+    "investigating_authority": "Police and judiciary",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Arabic death certificate from Ministry of Interior (requires certified English translation)",
+    "source": "FCDO Lebanon travel advice, updated 2025; British Embassy Beirut guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in Lebanon. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "lebanon-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-10 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Arabic death certificate (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Exit permit from Lebanese authorities",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Political instability and periodic conflict in Lebanon can affect timelines and access.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Police clearance is required for all unnatural or suspicious deaths.",
+        "Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Lebanese documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Beirut can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Lebanon to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Lebanon. Repatriation to the UK takes 2-4 weeks. Arabic translation, Ministry clearance, and exit permits all handled. Contact us 24/7."
+    }
+  ]
+}

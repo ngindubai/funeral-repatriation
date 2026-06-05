@@ -74,9 +74,9 @@
 | Bringing ashes home | 238 countries |
 | Cremation transfer | 238 countries |
 | Embassy contacts | 238 countries |
-| Route pairs | 70 of 38,612 (full 197x197 matrix is the active build) |
+| Route pairs | 170 of 38,612 (132 to UK, 32 to Ireland, 6 pre-matrix mixed) |
 
-**Active build:** Phase R, the route matrix. Tier A in progress (70 of 394 built). Next block: chunk R1 (Tier A, Template A). See BUILD-PLAN.md for the tier breakdown and chunk ledger.
+**Active build:** Phase R, the route matrix. Tier A in progress (170 of 394 built). Next block: chunk R5 (Tier A, Template A). 132 origins to UK built. See BUILD-PLAN.md for the tier breakdown and chunk ledger.
 
 ---
 
@@ -95,7 +95,7 @@ Full origin-to-destination square: 197 countries x 197, minus same-country pairs
 
 ## 5. Next Tasks -- in priority order
 
-1. **Route matrix, Tier A, chunk R1** (default every run): next 25 unbuilt Tier A routes, highest search volume first, UK destinations before Ireland. Continue chunk by chunk through Tier A.
+1. **Route matrix, Tier A, chunk R5** (default every run): next 25 unbuilt Tier A routes, UK destinations before Ireland. 132 UK routes built (chunks pre-matrix + R1-R4). Continue chunk by chunk through Tier A.
 2. After Tier A: Tier B, then C, then D, same block rhythm.
 3. Blog batches 27 onward (first-contact cluster, cause-specific, sector deep-dives, then open-ended country long-tail): built on any run where the next route chunk is already committed.
 
@@ -183,3 +183,4 @@ Hero image assignments: Countries `mrwashingt0n-ai-generated-9048740.jpg`, Guide
 | 2 Jun 2026 | Engine 3 Batches 4-6: 15 articles. Deploy structural fix (deploy.yml disabled, Hostinger pulls live). |
 | 5 Jun 2026 | Engine 3 Batch 26: 5 seasonal articles. Blog total 239. |
 | 5 Jun 2026 | Plan rebuild to Pet Transport parity: full 197x197 route matrix (38,612 target) installed across BUILD-PLAN.md, CLAUDE.md, MEMORY.md and the HTML tracker. Approval gate removed; routine now fully autonomous (build, QA, commit, report, stop; no wait-for-go, no stop condition). Chunk R1 (Tier A, Template A) is next. No content built in this entry. |
+| 5 Jun 2026 | Chunks R1-R4 (batch 1): 100 new Tier A route pages to UK. cambodia, dominican-republic, poland, china, saudi-arabia, kuwait, qatar, bahrain, malaysia, austria, croatia, czech-republic, hungary, bulgaria, netherlands, belgium, sweden, norway, switzerland, denmark, finland, romania, bangladesh, jamaica, gambia, barbados, trinidad-and-tobago, cuba, colombia, argentina, peru, chile, albania, ukraine, georgia, azerbaijan, armenia, kazakhstan, oman, nepal, myanmar, taiwan, south-korea, north-macedonia, serbia, montenegro, slovakia, slovenia, estonia, latvia, lithuania, luxembourg, iceland, malta, iran, iraq, lebanon, laos, mongolia, afghanistan, kyrgyzstan, uzbekistan, tajikistan, turkmenistan, belarus, moldova, senegal, ivory-coast, ethiopia, tanzania, uganda, zimbabwe, zambia, mozambique, botswana, namibia, malawi, rwanda, cameroon, angola, algeria, tunisia, libya, sudan, eritrea, djibouti, somalia, south-sudan, democratic-republic-of-the-congo, congo, gabon, equatorial-guinea, burundi, sierra-leone, liberia, guinea, guinea-bissau, burkina-faso, benin, togo. All QA clean. 170 total route pairs live. |

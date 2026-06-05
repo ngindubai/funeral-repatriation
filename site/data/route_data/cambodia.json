@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "cambodia",
+    "name": "Cambodia",
+    "slug": "cambodia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/cambodia",
+    "embassy_city": "Phnom Penh",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-phnom-penh",
+    "consulates": [],
+    "emergency_number": "117 (police), 119 (ambulance)",
+    "death_registration": "Ministry of Interior civil registration office",
+    "investigating_authority": "Cambodian police and Ministry of Interior",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths require police investigation and post-mortem",
+    "key_document": "Cambodian death certificate (Khmer script, requires certified English translation)",
+    "source": "FCDO Cambodia travel advice, updated 2025; British Embassy Phnom Penh guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Cambodia is available and bringing ashes home to the UK is often simpler than full body repatriation. You will need the local death certificate, cremation certificate, and an export permit."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "cambodia-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Cambodian death certificate (certified English translation required)",
+        "Police clearance letter (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit from Cambodian authorities",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The Cambodian death certificate is issued in Khmer script and requires a certified English translation before UK acceptance.",
+        "Police clearance is required for all unnatural or unexplained deaths before the body can be released.",
+        "An export permit from the relevant Cambodian authority is required for all repatriations.",
+        "Embalming must be carried out by a licensed Cambodian funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Cambodian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Phnom Penh can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Cambodia to UK Repatriation: Family Guide",
+      "seo_description": "Someone has died in Cambodia. Repatriation to the UK takes 2-4 weeks. Death certificate translation, export permits, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

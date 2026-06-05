@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "denmark",
+    "name": "Denmark",
+    "slug": "denmark",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/denmark",
+    "embassy_city": "Copenhagen",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-copenhagen",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "CPR civil registration system (kommunen)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Doedsattest (death certificate from CPR civil registration)",
+    "source": "FCDO Denmark travel advice, updated 2025; British Embassy Copenhagen guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Denmark is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "denmark-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Doedsattest (death certificate)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Denmark is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death is registered through the CPR civil registration system administered by the municipality (kommunen).",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "All Danish-language documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Danish documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Copenhagen can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Denmark to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Denmark. Repatriation to the UK takes 1-2 weeks. CPR registration, apostille, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

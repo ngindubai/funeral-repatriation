@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "algeria",
+    "name": "Algeria",
+    "slug": "algeria",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/algeria",
+    "embassy_city": "Algiers",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-algiers",
+    "consulates": [],
+    "emergency_number": "17 (police), 14 (ambulance)",
+    "death_registration": "Officier de l'etat civil (Civil Status Officer)",
+    "investigating_authority": "Police and Prosecutor",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acte de deces (death certificate in Arabic and French, requires certified English translation)",
+    "source": "FCDO Algeria travel advice, updated 2025; British Embassy Algiers guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Algerian law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "algeria-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Acte de deces (Arabic and French, certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Algerian death certificates are issued in both Arabic and French; certified English translation is required for UK acceptance.",
+        "Police clearance is required for all violent or suspicious deaths.",
+        "An export permit from Algerian authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Algerian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Algiers can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Algeria to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Algeria. Repatriation to the UK takes 2-4 weeks. Etat civil, Arabic and French translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

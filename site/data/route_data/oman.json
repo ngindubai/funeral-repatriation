@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "oman",
+    "name": "Oman",
+    "slug": "oman",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/oman",
+    "embassy_city": "Muscat",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-muscat",
+    "consulates": [],
+    "emergency_number": "999",
+    "death_registration": "Royal Oman Police",
+    "investigating_authority": "Royal Oman Police",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Arabic death certificate from Royal Oman Police (requires certified English translation)",
+    "source": "FCDO Oman travel advice, updated 2025; British Embassy Muscat guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Omani law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "oman-to-united-kingdom",
+      "template_variant": "D",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Arabic death certificate from Royal Oman Police (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Exit permit from Omani authorities",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The Royal Oman Police handles death registration and clearance. Their involvement is required for all repatriations.",
+        "An exit permit from Omani authorities is required for all repatriations.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Embalming must be performed by a licensed Omani funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Omani documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Muscat can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Oman to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Oman. Repatriation to the UK takes 2-3 weeks. Royal Oman Police, exit permit, and Arabic translation all handled. Contact us 24/7."
+    }
+  ]
+}

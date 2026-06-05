@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "luxembourg",
+    "name": "Luxembourg",
+    "slug": "luxembourg",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/luxembourg",
+    "embassy_city": "Luxembourg City",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-luxembourg",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Bureau de l'etat civil (Civil Registry Office)",
+    "investigating_authority": "Parquet (Prosecutor's Office)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acte de deces (death certificate from Bureau de l'etat civil, requires certified English translation)",
+    "source": "FCDO Luxembourg travel advice, updated 2025; British Embassy Luxembourg City guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Luxembourg is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Acte de deces, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "luxembourg-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Acte de deces (death certificate, certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Luxembourg is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered with the Bureau de l'etat civil promptly.",
+        "Documentation may be in French, German, or Luxembourgish; certified English translation required for UK acceptance.",
+        "The Parquet (Prosecutor's Office) orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Luxembourg documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Luxembourg City can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Luxembourg to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Luxembourg. Repatriation to the UK takes 1-2 weeks. Etat civil, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

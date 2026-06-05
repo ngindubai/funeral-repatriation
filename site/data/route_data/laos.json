@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "laos",
+    "name": "Laos",
+    "slug": "laos",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/laos",
+    "embassy_city": "Vientiane",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-vientiane",
+    "consulates": [],
+    "emergency_number": "191 (police)",
+    "death_registration": "Local civil registration authority",
+    "investigating_authority": "Police and local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate in Lao (requires certified English translation)",
+    "source": "FCDO Laos travel advice, updated 2025; British Embassy Vientiane guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Laos is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "laos-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-14 days",
+      "key_documents": [
+        "Death certificate in Lao (certified English translation required)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "All Lao-language documentation requires a certified English translation for UK acceptance.",
+        "Police clearance is required for all violent or suspicious deaths.",
+        "An export permit from Laotian authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Laotian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Vientiane can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Laos to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Laos. Repatriation to the UK takes 2-4 weeks. Police clearance, Lao translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

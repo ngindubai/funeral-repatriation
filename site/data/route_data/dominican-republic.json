@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "dominican-republic",
+    "name": "Dominican Republic",
+    "slug": "dominican-republic",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/dominican-republic",
+    "embassy_city": "Santo Domingo",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-santo-domingo",
+    "consulates": [],
+    "emergency_number": "911",
+    "death_registration": "Oficialía del Estado Civil (Civil Status Office)",
+    "investigating_authority": "Fiscalía (Prosecutor's Office)",
+    "post_mortem_trigger": "Unnatural, violent, or suspicious deaths require Fiscalía involvement and post-mortem",
+    "key_document": "Acta de defunción (death certificate from Oficialía del Estado Civil)",
+    "source": "FCDO Dominican Republic travel advice, updated 2025; British Embassy Santo Domingo guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in the Dominican Republic is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the local death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "dominican-republic-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Acta de defunción (certified English translation required)",
+        "Fiscalía clearance letter (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The Dominican Republic is a popular resort destination. UK travel insurers are frequently involved and should be notified immediately.",
+        "The Fiscalía (Prosecutor's Office) must authorise release of the body in all unnatural or suspicious deaths.",
+        "All Spanish-language documentation requires certified English translation before UK acceptance.",
+        "An export permit from Dominican authorities is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Dominican documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Santo Domingo can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Dominican Republic to UK Repatriation Guide",
+      "seo_description": "Someone has died in the Dominican Republic. Repatriation to the UK takes 2-3 weeks. Fiscalia clearance, translation, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "netherlands",
+    "name": "Netherlands",
+    "slug": "netherlands",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/netherlands",
+    "embassy_city": "The Hague",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-the-hague",
+    "consulates": ["Amsterdam"],
+    "emergency_number": "112",
+    "death_registration": "Burgerlijke Stand (Civil Registry)",
+    "investigating_authority": "Officier van Justitie (Public Prosecutor)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Akte van overlijden (death certificate from Burgerlijke Stand)",
+    "source": "FCDO Netherlands travel advice, updated 2025; British Embassy The Hague guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in the Netherlands is widely available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Akte van overlijden, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "netherlands-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Akte van overlijden (death certificate from Burgerlijke Stand)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "The Netherlands is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered at the local Burgerlijke Stand (Civil Registry) promptly.",
+        "The Officier van Justitie (Public Prosecutor) orders post-mortem for suspicious or violent deaths.",
+        "All Dutch-language documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Dutch documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in The Hague and consulate in Amsterdam can register the death and advise. They cannot pay for or arrange repatriation.",
+      "seo_title": "Netherlands to UK Repatriation: Family Guide",
+      "seo_description": "Someone has died in the Netherlands. Repatriation to the UK takes 1-2 weeks. Burgerlijke Stand process, apostille, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

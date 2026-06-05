@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "south-sudan",
+    "name": "South Sudan",
+    "slug": "south-sudan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/south-sudan",
+    "embassy_city": "Juba",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-juba",
+    "consulates": [],
+    "emergency_number": "911",
+    "death_registration": "Civil registry",
+    "investigating_authority": "Police and local authorities",
+    "post_mortem_trigger": "Violent, suspicious, or conflict-related deaths",
+    "key_document": "Death certificate from civil registry (English language)",
+    "source": "FCDO South Sudan travel advice, updated 2025; British Embassy Juba guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely available in South Sudan. Full body repatriation is the standard approach when feasible."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "south-sudan-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "high",
+      "timeline": {
+        "avg": "4-8 weeks",
+        "fast": "3-5 weeks",
+        "complex": "3-6 months"
+      },
+      "doc_processing_time": "14-28 days",
+      "key_documents": [
+        "Death certificate from civil registry (English language)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "The FCDO advises against all travel to South Sudan due to the security situation. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000.",
+        "Access and logistics are severely constrained by the conflict and limited infrastructure.",
+        "Documentation may be in English but obtaining it can be difficult outside Juba.",
+        "Repatriation from South Sudan requires careful coordination given the limited air connections."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Juba provides consular services with significant limitations. They cannot pay for or arrange repatriation.",
+      "seo_title": "South Sudan to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in South Sudan. Repatriation is complex due to the security situation. FCDO liaison, documentation, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

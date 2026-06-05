@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "armenia",
+    "name": "Armenia",
+    "slug": "armenia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/armenia",
+    "embassy_city": "Yerevan",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-yerevan",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Civil Registry Agency (ZAGS)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Mahvani vkayakan (death certificate, requires certified English translation)",
+    "source": "FCDO Armenia travel advice, updated 2025; British Embassy Yerevan guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation is not widely practised in Armenia. Full body repatriation is more common. Where cremation is carried out, you will need the death certificate, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "armenia-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-10 days",
+      "key_documents": [
+        "Death certificate from ZAGS (certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Death must be registered with the Civil Registry Agency (ZAGS) promptly.",
+        "All Armenian-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "An export permit from the relevant Armenian authority is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Armenian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Yerevan can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Armenia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Armenia. Repatriation to the UK takes 1-2 weeks. ZAGS registration, Armenian translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

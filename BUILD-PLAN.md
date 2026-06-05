@@ -59,7 +59,7 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 
 | Tier | Description | Routes | Built | Remaining |
 |---|---|---|---|---|
-| A | All origins to UK and Ireland | 394 | 70 | 324 |
+| A | All origins to UK and Ireland | 394 | 170 | 224 |
 | B | Diaspora and high-volume cross-border | ~1,100 | 0 | ~1,100 |
 | C | Regional and secondary destinations | ~7,700 | 0 | ~7,700 |
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
@@ -73,7 +73,7 @@ At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 ro
 
 Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
-- Next chunk: **R1**
+- Next chunk: **R5**
 - Next tier: **A**
 - Next template lead: **A** (rotation continues A, B, C, D, E across the 25 routes in the block, and onward across the next block in the batch)
 
@@ -86,7 +86,11 @@ The routine names each route block "chunk R<N>" in its commit message so the ski
 | Chunk | Tier | Template lead | Routes | Status | Notes |
 |---|---|---|---|---|---|
 | (pre-matrix) | A | mixed | 70 | DONE | 35 origins to UK and Ireland. Live before the matrix plan. |
-| R1 | A | A | 25 | NEXT | Remaining highest-volume origins to United Kingdom. |
+| R1 | A | A | 25 | DONE | cambodia, dominican-republic, poland, china, saudi-arabia, kuwait, qatar, bahrain, malaysia, austria, croatia, czech-republic, hungary, bulgaria, netherlands, belgium, sweden, norway, switzerland, denmark, finland, romania, bangladesh, jamaica, gambia to UK. 5 Jun 2026. |
+| R2 | A | A | 25 | DONE | barbados, trinidad-and-tobago, cuba, colombia, argentina, peru, chile, albania, ukraine, georgia, azerbaijan, armenia, kazakhstan, oman, nepal, myanmar, taiwan, south-korea, north-macedonia, serbia, montenegro, slovakia, slovenia, estonia, latvia to UK. 5 Jun 2026. |
+| R3 | A | A | 25 | DONE | lithuania, luxembourg, iceland, malta, iran, iraq, lebanon, laos, mongolia, afghanistan, kyrgyzstan, uzbekistan, tajikistan, turkmenistan, belarus, moldova, senegal, ivory-coast, ethiopia, tanzania, uganda, zimbabwe, zambia, mozambique, botswana to UK. 5 Jun 2026. |
+| R4 | A | A | 25 | DONE | namibia, malawi, rwanda, cameroon, angola, algeria, tunisia, libya, sudan, eritrea, djibouti, somalia, south-sudan, democratic-republic-of-the-congo, congo, gabon, equatorial-guinea, burundi, sierra-leone, liberia, guinea, guinea-bissau, burkina-faso, benin, togo to UK. 5 Jun 2026. |
+| R5 | A | A | 25 | NEXT | Next 25 unbuilt origins to United Kingdom. |
 
 When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
@@ -121,6 +125,7 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 |------|------|-----------|-------| ------|
 | 5 Jun 2026 | Routine config | Switched to batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap. One push per run (whole batch committed once) to avoid concurrent-deploy clobbering. Pointer-based skip (no same-day skip). Docs only (CLAUDE.md + this file). No content built this entry. | 70 (unchanged) | Instruction change only. |
 | 5 Jun 2026 | Plan rebuild | Route matrix plan installed: full 197x197 tiered matrix (38,612 target), four tiers A to D, chunk ledger, autonomous rhythm. Replaces the previous stub plan that topped out at the blog roadmap. No content built this entry. | 70 (unchanged) | Build plan now at parity with Pet Transport. Chunk R1 (Tier A, Template A) is next. |
+| 5 Jun 2026 | Chunks R1-R4 | Batch build: 100 new Tier A routes to United Kingdom. 4 blocks of 25 origins each. All QA clean (0 errors). 132 total UK routes now live. Next: R5 (continue Tier A to UK). | 170 (132 UK + 32 Ireland + 6 pre-matrix mixed) | R1-R4 committed in single batch. Deploy auto via build-and-publish.yml. |
 
 ---
 

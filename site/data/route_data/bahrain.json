@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "bahrain",
+    "name": "Bahrain",
+    "slug": "bahrain",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/bahrain",
+    "embassy_city": "Manama",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-manama",
+    "consulates": [],
+    "emergency_number": "999",
+    "death_registration": "Civil Information Authority",
+    "investigating_authority": "Ministry of Interior forensic department",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Bahrain death certificate (requires certified English translation)",
+    "source": "FCDO Bahrain travel advice, updated 2025; British Embassy Manama guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not permitted under Bahraini law. Full body repatriation is the only option."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "bahrain-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-7 days",
+      "key_documents": [
+        "Bahrain death certificate (certified English translation required)",
+        "Civil Information Authority registration",
+        "Exit permit",
+        "Embalming certificate",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Death must be registered with the Civil Information Authority promptly.",
+        "An exit permit is required from Bahraini authorities for all repatriations.",
+        "All Arabic-language documentation requires certified English translation for UK acceptance.",
+        "Embalming must be performed by a licensed Bahraini funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Bahraini documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Manama can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Bahrain to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Bahrain. Repatriation to the UK takes 1-2 weeks. Civil Information Authority process and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

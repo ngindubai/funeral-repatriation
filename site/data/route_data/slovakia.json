@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "slovakia",
+    "name": "Slovakia",
+    "slug": "slovakia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/slovakia",
+    "embassy_city": "Bratislava",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-bratislava",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Matrika (Civil Registry)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Vypis z matriky (death certificate from Matrika, requires certified English translation)",
+    "source": "FCDO Slovakia travel advice, updated 2025; British Embassy Bratislava guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Slovakia is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "slovakia-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Vypis z matriky (death certificate from Matrika, certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Slovakia is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered with the Matrika (Civil Registry) promptly.",
+        "All Slovak-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Slovak documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Bratislava can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Slovakia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Slovakia. Repatriation to the UK takes 1-2 weeks. Matrika civil registry, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

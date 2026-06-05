@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "botswana",
+    "name": "Botswana",
+    "slug": "botswana",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/botswana",
+    "embassy_city": "Gaborone",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-high-commission-gaborone",
+    "consulates": [],
+    "emergency_number": "999",
+    "death_registration": "Registrar General",
+    "investigating_authority": "Botswana Police Service",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from Registrar General (English language)",
+    "source": "FCDO Botswana travel advice, updated 2025; British High Commission Gaborone guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Botswana is available. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "botswana-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate from Registrar General (English language)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Botswana issues death certificates in English, which simplifies UK documentation requirements.",
+        "Police clearance from Botswana Police Service is required for all unnatural or suspicious deaths.",
+        "An export permit from Botswanan authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Botswanan documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Gaborone can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Botswana to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Botswana. Repatriation to the UK takes 2-3 weeks. Registrar General, police clearance, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "czech-republic",
+    "name": "Czech Republic",
+    "slug": "czech-republic",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/czech-republic",
+    "embassy_city": "Prague",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-prague",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Matrika (Register Office)",
+    "investigating_authority": "State Attorney's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Úmrtní list (death certificate from Matrika)",
+    "source": "FCDO Czech Republic travel advice, updated 2025; British Embassy Prague guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in the Czech Republic is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Úmrtní list, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "czech-republic-to-united-kingdom",
+      "template_variant": "B",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Úmrtní list (death certificate from Matrika)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "The Czech Republic is an EU member and Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered at the local Matrika (Register Office) promptly.",
+        "All Czech-language documentation requires a certified English translation for UK acceptance.",
+        "The State Attorney's Office orders post-mortem for suspicious or violent deaths."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Czech documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Prague can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Czech Republic to UK Repatriation: Family Guide",
+      "seo_description": "Someone has died in the Czech Republic. Repatriation to the UK takes 1-2 weeks. Matrika process, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "argentina",
+    "name": "Argentina",
+    "slug": "argentina",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/argentina",
+    "embassy_city": "Buenos Aires",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-buenos-aires",
+    "consulates": [],
+    "emergency_number": "101 (police), 107 (ambulance)",
+    "death_registration": "Registro Civil",
+    "investigating_authority": "Fiscalia (Prosecutor's Office)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Acta de defuncion (death certificate from Registro Civil)",
+    "source": "FCDO Argentina travel advice, updated 2025; British Embassy Buenos Aires guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Argentina is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Acta de defuncion, cremation certificate, and export documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "argentina-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "2-3 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Acta de defuncion (certified English translation required)",
+        "Fiscalia clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "All Spanish-language documentation requires certified English translation for UK acceptance.",
+        "Argentina is a Hague Apostille Convention member, which simplifies document legalisation.",
+        "The Fiscalia (Prosecutor's Office) is involved in all violent or suspicious deaths.",
+        "An export permit from the relevant Argentine authority is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Argentine documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Buenos Aires can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Argentina to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Argentina. Repatriation to the UK takes 2-3 weeks. Registro Civil, apostille, and Spanish translation all handled. Contact us 24/7."
+    }
+  ]
+}

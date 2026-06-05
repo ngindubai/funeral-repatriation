@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "liberia",
+    "name": "Liberia",
+    "slug": "liberia",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/liberia",
+    "embassy_city": "Monrovia",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-monrovia",
+    "consulates": [],
+    "emergency_number": "911",
+    "death_registration": "Center for National Documents and Records Agency",
+    "investigating_authority": "Liberia National Police",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Death certificate from Center for National Documents and Records Agency (English language)",
+    "source": "FCDO Liberia travel advice, updated 2025; British Embassy Monrovia guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Liberia is available. Bringing ashes home to the UK is an option alongside full body repatriation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "liberia-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "2-4 weeks",
+        "fast": "10-14 days",
+        "complex": "4-8 weeks"
+      },
+      "doc_processing_time": "7-10 days",
+      "key_documents": [
+        "Death certificate (English language)",
+        "Police clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Liberia issues death certificates in English, which simplifies UK documentation requirements.",
+        "Police clearance from the Liberia National Police is required for all unnatural or suspicious deaths.",
+        "An export permit from Liberian authorities is required for all repatriations.",
+        "Embalming must be carried out by a licensed funeral director before air transport."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. Liberian documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Monrovia can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Liberia to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Liberia. Repatriation to the UK takes 2-4 weeks. National Records Agency, police clearance, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}

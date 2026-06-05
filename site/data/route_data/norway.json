@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "norway",
+    "name": "Norway",
+    "slug": "norway",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/norway",
+    "embassy_city": "Oslo",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-oslo",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Folkeregisteret (National Population Register)",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Doedsattest (death certificate from Folkeregisteret)",
+    "source": "FCDO Norway travel advice, updated 2025; British Embassy Oslo guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Norway is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the death certificate, cremation certificate, and urn transport documentation."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "norway-to-united-kingdom",
+      "template_variant": "C",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Doedsattest (death certificate from Folkeregisteret)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Norway is a Hague Apostille Convention member (not in EU but in EEA), which simplifies document legalisation.",
+        "Death is registered with Folkeregisteret (National Population Register).",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "All Norwegian-language documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Norwegian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Oslo can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Norway to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Norway. Repatriation to the UK takes 1-2 weeks. Folkeregisteret process, apostille, and documentation all handled. Contact us 24/7."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "austria",
+    "name": "Austria",
+    "slug": "austria",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/austria",
+    "embassy_city": "Vienna",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-vienna",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "Standesamt (Civil Registry Office)",
+    "investigating_authority": "Staatsanwaltschaft (Public Prosecutor)",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Sterbeurkunde (death certificate from Standesamt)",
+    "source": "FCDO Austria travel advice, updated 2025; British Embassy Vienna guidance",
+    "cremation_available": true,
+    "cremation_note": "Cremation in Austria is available. Bringing ashes home to the UK is often simpler than full body repatriation. You will need the Sterbeurkunde, cremation certificate, and urn transport declaration."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "austria-to-united-kingdom",
+      "template_variant": "E",
+      "complexity": "low",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "5-7 days",
+        "complex": "2-4 weeks"
+      },
+      "doc_processing_time": "3-7 days",
+      "key_documents": [
+        "Sterbeurkunde (death certificate from Standesamt)",
+        "Embalming certificate",
+        "Freedom from infection certificate",
+        "Export permit",
+        "Certified English translation of death certificate"
+      ],
+      "special_rules": [
+        "Austria is a Hague Apostille Convention member, which simplifies document legalisation.",
+        "Death must be registered at the local Standesamt promptly after it occurs.",
+        "The Staatsanwaltschaft (Public Prosecutor) orders post-mortem for suspicious or violent deaths.",
+        "All German-language documentation requires a certified English translation for UK acceptance."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Austrian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Vienna can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Austria to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Austria. Repatriation to the UK takes 1-2 weeks. Standesamt process, apostille, and air cargo all handled. Contact us 24/7."
+    }
+  ]
+}

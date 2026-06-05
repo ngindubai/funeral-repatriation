@@ -1,0 +1,52 @@
+{
+  "origin": {
+    "key": "azerbaijan",
+    "name": "Azerbaijan",
+    "slug": "azerbaijan",
+    "fcdo_url": "https://www.gov.uk/foreign-travel-advice/azerbaijan",
+    "embassy_city": "Baku",
+    "embassy_url": "https://www.gov.uk/world/organisations/british-embassy-baku",
+    "consulates": [],
+    "emergency_number": "112",
+    "death_registration": "ASAN Service / State Registry",
+    "investigating_authority": "Prosecutor's Office",
+    "post_mortem_trigger": "Violent, suspicious, or unexplained deaths",
+    "key_document": "Olum haqqinda shahadatname (death certificate, requires certified English translation)",
+    "source": "FCDO Azerbaijan travel advice, updated 2025; British Embassy Baku guidance",
+    "cremation_available": false,
+    "cremation_note": "Cremation is not widely practised in Azerbaijan due to cultural and religious customs. Full body repatriation is the standard approach."
+  },
+  "destinations": [
+    {
+      "key": "uk",
+      "name": "United Kingdom",
+      "dest_slug": "united-kingdom",
+      "route_slug": "azerbaijan-to-united-kingdom",
+      "template_variant": "A",
+      "complexity": "moderate",
+      "timeline": {
+        "avg": "1-2 weeks",
+        "fast": "7-10 days",
+        "complex": "3-6 weeks"
+      },
+      "doc_processing_time": "5-10 days",
+      "key_documents": [
+        "Death certificate from ASAN Service / State Registry (certified English translation required)",
+        "Prosecutor's clearance (for unnatural deaths)",
+        "Embalming certificate",
+        "Export permit",
+        "Freedom from infection certificate"
+      ],
+      "special_rules": [
+        "Death must be registered with the ASAN Service or State Registry promptly.",
+        "All Azerbaijani-language documentation requires a certified English translation for UK acceptance.",
+        "The Prosecutor's Office orders post-mortem for suspicious or violent deaths.",
+        "An export permit from the relevant Azerbaijani authority is required for all repatriations."
+      ],
+      "dest_reception": "The UK funeral director takes custody at the cargo terminal. All Azerbaijani documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements.",
+      "dest_consular_note": "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Baku can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation.",
+      "seo_title": "Azerbaijan to UK Repatriation: Guidance for Families",
+      "seo_description": "Someone has died in Azerbaijan. Repatriation to the UK takes 1-2 weeks. ASAN Service registration, translation, and export permits all handled. Contact us 24/7."
+    }
+  ]
+}
