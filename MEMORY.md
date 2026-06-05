@@ -1,171 +1,132 @@
 # Repatriate Service -- Project Memory
 
-> Attach this file at the start of every new session: `#file:MEMORY.md`
-> Update the Open Questions and Session History sections at the end of each session.
+> Read this file at the start of every run, alongside CLAUDE.md and BUILD-PLAN.md.
+> Update the Current State, Next Tasks, and Session History sections at the end of each run.
 
 ---
 
-## CLAUDE WORKING RULES
+## CLAUDE WORKING RULES (autonomous routine)
 
-**When providing code or file content to the user:**
-- ALWAYS paste the COMPLETE file content in full so the user can overwrite the entire file.
-- NEVER provide partial snippets, diffs, or "change this line" instructions when the user needs to edit a file manually.
-- If a file needs editing and Claude cannot do it directly (e.g. `.github/workflows/` permission error), paste the entire file content in a code block so the user can select-all and replace.
-
-**After every completed batch:**
-- Output a live link list for every article or page published in that batch before stopping or updating BUILD-PLAN.
-- Format: one URL per line, using https://www.repatriationfuneral.com/blog/[slug]/ for blog articles, /routes/[slug]/ for route pages.
-- Deploy is automatic on push to master. Pages are live within ~60 seconds of commit.
-- This is non-negotiable. No batch is complete until Gareth has the links.
+**This project is built by a scheduled cloud routine with no human watching. There is no approval step.**
+- Build one block per run (25 routes, or one 5-article blog batch), pass the full QA gate, commit to master, post live links to Slack, stop.
+- The Slack live-link post is a record of what shipped, posted after the push. It does not pause anything. The QA gate is the safety control: it must pass before any commit. If QA fails, do not commit; post the halt message and end.
+- No "wait for go". No HTML preview. No stop condition: each run picks up the next unbuilt block.
+- Links in the Slack record are clickable markdown hyperlinks, never bare URLs. Use /routes/[slug]/ for route pages, /blog/[slug]/ for blog articles, /repatriation-from-[country]/ for hubs.
+- Deploy is automatic on push to master. Pages live within ~60 seconds.
 
 ---
 
 ## 1. Site Overview
 
-**What it is:** A programmatic SEO lead generation website targeting UK and Irish families needing to repatriate a loved one who died abroad. The site converts grief-driven search traffic into service enquiries.
+**What it is:** A programmatic SEO lead generation website targeting UK and Irish families needing to repatriate a loved one who died abroad. Converts grief-driven search traffic into service enquiries.
 
-**Niche:** Funeral repatriation, international body transfer, ashes transport, consular support for bereaved UK and Irish families.
-
-**Target audience:**
-- UK and Irish families searching in distress immediately after a death abroad
-- Corporate travel managers arranging repatriation after employee deaths
-- Travel insurers looking for approved supplier networks
+**Target audience:** UK and Irish families searching in distress immediately after a death abroad; corporate travel managers; travel insurers seeking approved supplier networks.
 
 **Primary goal:** Capture service enquiries. Every commercial-intent page has an enquiry form or phone CTA.
 
-**Brand:** Repatriate Service | "Bringing your loved ones home"
+**Brand:** Repatriate Service. "Bringing your loved ones home."
 
 **Final domain:** repatriateservice.com
 **Current deployment:** repatriationfuneral.com (Hostinger)
-**Hugo config baseURL:** `https://www.repatriationfuneral.com/` -- MUST INCLUDE WWW. Changed 1 Jun 2026 to fix canonical mismatch.
+**Production branch:** master (NOT main; master triggers deploy)
+**Hugo config baseURL:** `https://www.repatriationfuneral.com/` -- MUST INCLUDE WWW (canonical fix, 1 Jun 2026).
 
-**Tech stack:**
-- Static site generator: Hugo v0.160.1 (extended)
-- Content: Markdown with YAML frontmatter
-- Config: TOML (`site/hugo.toml`)
-- Data: JSON (`site/data/`)
-- Deployment: GitHub Actions to Hostinger FTP (automatic on push to master)
-- Build: `hugo --gc --minify` from `site/`
-- Deploy: push to git. GitHub Actions builds and deploys automatically.
+**Tech stack:** Hugo v0.160.1-extended, Markdown + YAML frontmatter, TOML config (site/hugo.toml), JSON data (site/data/), GitHub Actions to live branch, Hostinger pulls live into /public_html/. Build: `hugo --gc --minify` from `site/`.
 
-**NEVER use Surge.** Surge has been removed from the deployment process entirely.
+**NEVER use Surge.** Removed entirely.
 
-**Hostinger FTP server-dir:** `/public_html/`
-This is the confirmed correct path (confirmed May 2026 via Hostinger File Manager).
-Do NOT use the long path with username. FTP chroots to account home.
+**Hostinger server-dir:** `/public_html/` (confirmed May 2026).
 
 ---
 
 ## 2. Build Decisions
 
-**Data-driven architecture:** Country content driven by `site/data/countries_repatriation.json` (238 countries). Route page data driven by `site/data/route_data/*.json` (per-origin JSON, Engine 2).
+**Data-driven architecture:** Country content from `site/data/countries_repatriation.json`. Route data from `data/countries_repatriation.json` (238 countries, regulatory detail), `data/countries-197.json` (canonical country and slug list), `data/keyword_matrix.json` (per-corridor search demand and tier ordering).
 
-**URL permalink design:** Defined in `hugo.toml` under `[permalinks]`. Route pages use `/routes/:slug/`. Do not change.
+**Route page frontmatter rule:** Do NOT include `layout:` field. Hugo auto-selects `routes/single.html`. Adding it silently skips the build. See ERRORS.md E001.
 
-**Route page frontmatter rule:** Do NOT include `layout:` field in route page frontmatter. Hugo auto-selects `routes/single.html`. Adding `layout: route` causes Hugo to silently skip building the page. See ERRORS.md E001.
+**server-dir rule:** Always `/public_html/`. See ERRORS.md E002.
 
-**server-dir rule:** Always `/public_html/`. Never the long Hostinger path. See ERRORS.md E002.
+**site/data/ rule:** NEVER place .md, .txt, or non-JSON files in site/data/. Hugo parses everything there as data. See ERRORS.md E006.
 
-**site/data/ rule:** NEVER place .md, .txt, or any non-JSON files inside site/data/ or any subdirectory. Hugo tries to parse everything in site/data/ as structured data. See ERRORS.md E006.
+**baseURL rule:** ALWAYS include www. See ERRORS.md E007.
 
-**baseURL rule:** ALWAYS include www: `https://www.repatriationfuneral.com/`. Without www, Google crawls www. version but canonical tags output non-www, causing 'Alternate page with proper canonical tag' for every page. See ERRORS.md E007.
+**buildFuture rule:** buildFuture = true in hugo.toml; author content with a safely past date. See ERRORS.md E012.
 
-**Template variants:** Five variants A-E implemented in site/layouts/routes/single.html. Controlled by template_variant: frontmatter field. All 70 live pages have variants assigned. Rotate across every batch.
+**Template variants:** Five A-E in site/layouts/routes/single.html, controlled by template_variant: frontmatter. Rotate across every block, no two consecutive pages sharing a variant.
 
-**Direct-answer frontmatter:** Key pages include `direct_answer_heading`, `direct_answer_intro`, `direct_answer_points[]` frontmatter fields for LLM citation optimisation.
+**Route slug format:** `{origin-slug}-to-{destination-slug}.md`. Destination uses the full country slug (united-kingdom, ireland, united-states), not short keys.
 
-**YMYL content standards:** Death, legal, and financial content site. No safety guarantees. No prices. Named sources only.
+**YMYL standards:** No safety guarantees, no prices, named dated sources only.
 
-**9 content silos established:**
-1. Country hubs (`/repatriation-from-[country]/`)
-2. City pages (`/repatriation-from-[country]/[city]/`)
-3. Guides (`/guides/`)
-4. Blog (`/blog/`)
-5. FAQ (`/faq/`)
-6. Bringing ashes home (`/bringing-ashes-home/`)
-7. Cremation transfer (`/cremation-transfer/`)
-8. Embassy contacts (`/embassy-contacts/`)
-9. Route pairs (`/routes/`) -- 70 pages live, 30,000+ target
-
-**FTP deploy is incremental:** `dangerous-clean-slate: false`. Only changed files uploaded on each push. Never change this.
-
-**Live link rule (added 2 June 2026):** After every completed batch, output a live link list in the format:
-```
-https://www.repatriationfuneral.com/blog/[slug]/
-```
-One URL per line. Do this before updating BUILD-PLAN.md. Do not stop a session without outputting links for every batch completed that session.
+**FTP deploy.yml is disabled** (no-op stub). build-and-publish.yml (live branch) is the active pipeline. Do not re-enable deploy.yml.
 
 ---
 
-## 3. Pages and Content Completed
-
-**As of 2 June 2026:**
+## 3. Current State (5 June 2026)
 
 | Silo | Status |
 |------|--------|
 | Country hubs | 238 countries published |
-| City pages | 220 pages complete |
-| Guides | 238 country guides published |
-| Blog | 142 articles live (Engine 3 Batches 1-6 complete) |
-| FAQ standalone pages | Published |
-| Bringing ashes home | All 238 countries covered |
-| Cremation transfer | All 238 countries covered |
-| Embassy contacts | All 238 countries covered |
-| Route pairs | 70 pages live |
+| City pages | 220 pages |
+| Guides | 238 country guides |
+| Blog | 239 articles live (target 500+) |
+| Bringing ashes home | 238 countries |
+| Cremation transfer | 238 countries |
+| Embassy contacts | 238 countries |
+| Route pairs | 70 of 38,612 (full 197x197 matrix is the active build) |
 
-**Engine 3 blog batches complete:**
-- Batch 1: Cost cluster (5 articles)
-- Batch 2: Timeline cluster (5 articles)
-- Batch 3: Documents deep-dive (5 articles)
-- Batch 4: Religious and cultural specifics (5 articles)
-- Batch 5: Special circumstances (5 articles)
-- Batch 6: UK reception cluster (5 articles)
-- Total new articles from Engine 3: 30
+**Active build:** Phase R, the route matrix. Tier A in progress (70 of 394 built). Next block: chunk R1 (Tier A, Template A). See BUILD-PLAN.md for the tier breakdown and chunk ledger.
 
 ---
 
-## 4. 7-Engine Status
+## 4. The Route Matrix (the growth engine)
 
-| Engine | Status | Files |
-|---|---|---|
-| 1 -- Route generator | INSTALLED v2 | generate_routes.py |
-| 2 -- Data layer | INSTALLED | site/data/route_data/ (32 origins) |
-| 3 -- Blog factory | IN PROGRESS | 142 articles live. Batches 1-6 done. Batch 7 next. |
-| 4 -- Link graph | INSTALLED | rebuild_link_graph.py, diagnose_links.py |
-| 5 -- QA gate | INSTALLED | qa_routes.py, check_titles.py, check_schema.py, seo_pass.py |
-| 6 -- Deploy pipeline | WORKING | .github/workflows/deploy.yml |
-| 7 -- Operating system | INSTALLED | CLAUDE.md, AGENTS.md, workforce/, MEMORY.md, ERRORS.md |
+Full origin-to-destination square: 197 countries x 197, minus same-country pairs = 38,612 route pages. Four tiers, highest commercial intent first:
 
----
+- **Tier A (394):** every origin to United Kingdom and to Ireland. The revenue tier. 70 built, 324 remaining.
+- **Tier B (~1,100):** diaspora and cross-border corridors to the top 12 destination hubs.
+- **Tier C (~7,700):** regional and secondary destinations.
+- **Tier D (~29,400):** long-tail completion of the square.
 
-## 5. Build Plan Navigation
-
-**Next tasks in priority order:**
-1. Engine 3 Batch 7 -- airline-policy cluster (5 articles)
-2. GSC not-indexed audit -- export and categorise 859 URLs
-3. Turn E -- next 50 route pages from existing 32 origins
-4. Reverse route pages (uk-to-{country})
-5. Engine 2 further expansion -- eastern Europe + more Asia origins
+25 routes per block, template A-E rotation, built in `data/keyword_matrix.json` tier order. Full detail in BUILD-PLAN.md.
 
 ---
 
-## 6. Route Pages -- Current Inventory (70 total)
+## 5. Next Tasks -- in priority order
 
-### Turn A (25 pages)
-australia-to-ireland, australia-to-united-kingdom, cyprus-to-united-kingdom, egypt-to-united-kingdom, france-to-united-kingdom, germany-to-united-kingdom, greece-to-united-kingdom, india-to-united-kingdom, italy-to-united-kingdom, kenya-to-united-kingdom, morocco-to-united-kingdom, philippines-to-united-kingdom, portugal-to-united-kingdom, south-africa-to-united-kingdom, spain-to-ireland, spain-to-united-kingdom, sri-lanka-to-united-kingdom, thailand-to-ireland, thailand-to-united-kingdom, turkey-to-united-kingdom, uae-to-ireland, uae-to-united-kingdom, usa-to-ireland, usa-to-united-kingdom, vietnam-to-united-kingdom
+1. **Route matrix, Tier A, chunk R1** (default every run): next 25 unbuilt Tier A routes, highest search volume first, UK destinations before Ireland. Continue chunk by chunk through Tier A.
+2. After Tier A: Tier B, then C, then D, same block rhythm.
+3. Blog batches 27 onward (first-contact cluster, cause-specific, sector deep-dives, then open-ended country long-tail): built on any run where the next route chunk is already committed.
 
-### Turn C (23 pages)
-greece-to-ireland, cyprus-to-ireland, turkey-to-ireland, philippines-to-ireland, india-to-ireland, france-to-ireland, germany-to-ireland, portugal-to-ireland, italy-to-ireland, egypt-to-ireland, morocco-to-ireland, kenya-to-ireland, south-africa-to-ireland, vietnam-to-ireland, sri-lanka-to-ireland, canada-to-united-kingdom, new-zealand-to-united-kingdom, mexico-to-united-kingdom, nigeria-to-united-kingdom, ghana-to-united-kingdom, jordan-to-united-kingdom, indonesia-to-united-kingdom, brazil-to-united-kingdom
+There is no end state for the routine. When a tier completes, move to the next. When the matrix completes, the blog long-tail continues indefinitely.
 
-### Turn D+ (22 pages)
-brazil-to-ireland, canada-to-ireland, ghana-to-ireland, indonesia-to-ireland, israel-to-ireland, israel-to-united-kingdom, japan-to-ireland, japan-to-united-kingdom, jordan-to-ireland, mexico-to-ireland, new-zealand-to-ireland, nigeria-to-ireland, pakistan-to-ireland, pakistan-to-united-kingdom, singapore-to-ireland, singapore-to-united-kingdom, south-africa-to-ireland (check duplicate), vietnam-to-ireland (check duplicate)
+---
+
+## 6. Author Personas
+
+Never Gareth. James Whitfield (coordinator, route/process), Dr. Amara Osei (consular/legal/embassy), Claire Sutton (family/bereavement/FAQ), Thomas Anand (logistics/air cargo). Full table in CLAUDE.md.
 
 ---
 
 ## 7. Patterns to Follow
 
-### Blog Article Frontmatter (Engine 3 standard)
+### Route Page Frontmatter (NO layout: field)
+```yaml
+---
+title: "..."
+description: "..."
+origin_key: "..."
+dest_key: "..."         # full destination slug
+template_variant: "A"   # rotate A-E
+date: YYYY-MM-DD         # safely past
+faqs:
+  - question: "..."
+    answer: "..."
+---
+```
 
+### Blog Article Frontmatter
 ```yaml
 ---
 title: "..."
@@ -180,61 +141,35 @@ faqs:
     answer: "..."
 ---
 ```
-
-All articles: British English, no em dashes, 2+ internal links, named author persona, FAQs in frontmatter.
-
-### Route Page Frontmatter (NO layout: field)
-
-```yaml
----
-title: "..."
-description: "..."
-origin_key: "..."
-dest_key: "uk" or "ireland"
-...
----
-```
+British English, no em dashes, 2+ internal links, named persona, FAQs in frontmatter.
 
 ---
 
 ## 8. Mistakes Avoided
 
-- Never add `layout:` field to route page frontmatter.
-- Never use `server-dir: /home/u356263466/...` in deploy workflow.
-- Never set `dangerous-clean-slate: true` in FTP deploy.
-- Never provide partial code snippets when user needs to edit a file manually.
+- Never add `layout:` to route page frontmatter.
+- Never use the long Hostinger server-dir path.
+- Never set `dangerous-clean-slate: true`.
 - Never use Surge.
-- Never place .md or non-JSON files inside site/data/ subdirectories.
-- Never set template_variant to anything outside A-E.
+- Never place non-JSON files in site/data/.
+- Never set template_variant outside A-E.
 - baseURL must include www.
 - Never hardcode repatriationfuneral.com URLs in layouts.
-- **Never complete a batch without outputting live links for Gareth.**
-- **Before generating any blog batch, check site/content/blog/ for an existing slug on the same topic.** Several Batch 9 roadmap candidates already existed (burial-vs-repatriation, cremation-vs-repatriation, choosing-a-provider). Publishing them would have cannibalised live ranking pages. Roadmap candidate lists are not pre-checked against live content.
+- Never commit to main; master deploys.
+- **Before generating any blog batch, check site/content/blog/ for an existing slug on the same topic.** Roadmap candidate lists are not pre-checked against live content. Several earlier candidates already existed and would have cannibalised live pages.
 
 ---
 
 ## 9. Design System (Locked)
 
-### Hero Image Assignments
-
-| Section | Image |
-|---|---|
-| Countries listing | `mrwashingt0n-ai-generated-9048740.jpg` |
-| Guides | `documents-desk.jpg` |
-| Blog | `support-conversation.jpg` |
-| Cremation abroad | `airport-cargo.jpg` |
-| Embassy contacts | `passport-stamp.jpg` |
-| Bringing ashes home | `hero.jpg` |
-| Routes | `cargo-terminal-night.jpg` |
+Hero image assignments: Countries `mrwashingt0n-ai-generated-9048740.jpg`, Guides `documents-desk.jpg`, Blog `support-conversation.jpg`, Cremation `airport-cargo.jpg`, Embassy `passport-stamp.jpg`, Ashes `hero.jpg`, Routes `cargo-terminal-night.jpg`.
 
 ---
 
 ## 10. Open Questions
 
-- GSC 'Alternate page with proper canonical tag': fixed 1 Jun 2026. Monitor over 7-14 days.
+- GSC 'Alternate page with proper canonical tag': fixed 1 Jun 2026, monitoring.
 - GSC 859 not-indexed URLs: audit pending.
-- seo_pass.py not yet run on Turn D+ pages.
-- rebuild_link_graph.py --fix not yet run on 70-page set.
 
 ---
 
@@ -242,18 +177,9 @@ dest_key: "uk" or "ireland"
 
 | Date | Session Summary |
 |------|---------------|
-| April 23, 2026 | Full site design review pass complete. 16 issues fixed. |
-| April 2026 | Phase 3 major work: slug fixes, cremation-transfer silo, LLM citation upgrades. |
-| April 2026 | Migration session: MEMORY.md, BUILD-PLAN.md, AGENTS.md created for VS Code. |
-| 27 May 2026 | CTR Rescue Turn A: 25 pages title/desc rewritten. Stage 3.CTR marked DONE. |
-| 27 May 2026 | Route Engine Turn A: /routes/ silo built. 25 route pages committed. Deploy pipeline fixed. |
-| 28 May 2026 | 7-engine install: Engine 7, 5, 2, 1 upgrade, 4. Turn C: 23 route pages. Total: 48. |
-| 29 May 2026 | GSC indexing audit: fixed empty city pages, thin country hubs, Guatemala encoding bug. |
-| 1 Jun 2026 | GSC canonical fix: baseURL changed to www. Fixed non-www URLs in baseof.html. |
-| 1 Jun 2026 | GEO/LLM implementation: 4-phase playbook. FAQPage schema, llms.txt, methodology page. |
-| 1 Jun 2026 | Docs sync: BUILD-PLAN.md and MEMORY.md updated. Route pages: 70. Origins: 32. |
-| 1 Jun 2026 | Fix all known issues: E008-E011 resolved (sideways links, robots.txt, permalink, schema). |
-| 1 Jun 2026 | Engine 3 Batches 1-3: 15 articles (cost cluster, timeline cluster, documents deep-dive). |
-| 2 Jun 2026 | Engine 3 Batches 4-6: 15 articles (religious/cultural, special circumstances, UK reception). Total blog: 142. Added live link output rule to CLAUDE.md and MEMORY.md. |
-| 3 Jun 2026 | Engine 3 Batch 9: comparison/decision cluster. 2 new articles (repatriation-vs-local-memorial-service, direct-repatriation-vs-full-service). 3 roadmap candidates dropped as duplicates of existing live articles. Blog total: 154. |
-| 5 Jun 2026 | Engine 3 Batch 26: seasonal and awareness cluster. 5 articles (hajj/umrah, student/gap-year, school trip, summer holiday, working abroad). Blog total: 239. |
+| 27 May 2026 | Route Engine Turn A: /routes/ silo built, 25 route pages, deploy pipeline fixed. |
+| 28 May 2026 | 7-engine install. Turn C: 23 route pages. Total 48. |
+| 1 Jun 2026 | GSC canonical fix (www). GEO/LLM 4-phase. Route pages: 70. |
+| 2 Jun 2026 | Engine 3 Batches 4-6: 15 articles. Deploy structural fix (deploy.yml disabled, Hostinger pulls live). |
+| 5 Jun 2026 | Engine 3 Batch 26: 5 seasonal articles. Blog total 239. |
+| 5 Jun 2026 | Plan rebuild to Pet Transport parity: full 197x197 route matrix (38,612 target) installed across BUILD-PLAN.md, CLAUDE.md, MEMORY.md and the HTML tracker. Approval gate removed; routine now fully autonomous (build, QA, commit, report, stop; no wait-for-go, no stop condition). Chunk R1 (Tier A, Template A) is next. No content built in this entry. |
