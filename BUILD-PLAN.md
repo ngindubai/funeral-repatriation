@@ -271,15 +271,44 @@ Uganda, Rwanda, Zimbabwe, Kazakhstan, Taiwan. Q&A format, distinct from -guide a
 ### Batch 25: Country deep-dive series, part 15 -- DONE (5 articles)
 Peru, Venezuela, Myanmar, Laos, Slovenia. Q&A format, distinct from -guide articles, cross-linked. Completes the questions-families-ask coverage of all -guide countries.
 
-### Batch 26: NEW CLUSTER (NEXT)
-The country deep-dive (questions-families-ask) series is complete. Pivot to a new blog cluster. Options to choose from:
-- Practical how-to: what to do in the first 24 hours, how to choose a coroner-friendly route, packing personal effects, registering the death back in the UK step by step.
-- Sector deep-dives: cruise ship deaths, airline-specific cargo procedures, hospital vs hotel deaths, deaths in custody abroad.
-- Cause-specific: deaths from specific causes (heart attack abroad, road accidents, drowning) and how each affects timeline and post-mortem.
-- Seasonal/awareness: festive-season travel deaths, hajj and umrah deaths, gap-year and student deaths.
-Confirm direction with Gareth before starting Batch 26.
+### Batch 26: Seasonal and awareness cluster -- NEXT (5 articles)
+Hajj season is live in June 2026. Student and gap-year travel peaks June to September. Build this cluster now while search demand is highest.
+- death-during-hajj-or-umrah-repatriation-guide
+- student-gap-year-death-abroad-repatriation
+- school-trip-death-abroad-what-parents-need-to-know
+- summer-holiday-death-abroad-what-to-do
+- working-abroad-death-repatriation-what-families-need-to-know
+Author: Claire Sutton (family adviser) for school-trip and summer-holiday; James Whitfield (senior coordinator) for hajj/umrah, student/gap-year, working-abroad. Rotate template variants from last batch used (last was Batch 25, variants as assigned there).
 
-### Batch 15+: remaining origins and any new clusters.
+### Batch 27: Practical how-to cluster (5 articles)
+Covers the first contacts and decisions families face that are not yet addressed on the site.
+- who-to-call-when-someone-dies-abroad
+- contacting-the-british-embassy-after-death-abroad
+- what-happens-to-passport-after-death-abroad
+- next-of-kin-rights-when-someone-dies-abroad
+- funeral-director-abroad-what-they-do-and-how-to-choose
+Author: Claire Sutton for who-to-call and next-of-kin; Dr Amara Osei for embassy and passport; James Whitfield for funeral director.
+
+### Batch 28: Cause-specific cluster (5 articles)
+How the cause of death changes the post-mortem requirement, timeline, and documentation.
+- heart-attack-abroad-repatriation-and-post-mortem
+- road-accident-abroad-repatriation-process
+- drowning-abroad-inquest-and-repatriation
+- overdose-death-abroad-what-families-need-to-know
+- unexplained-death-abroad-what-happens-next
+Author: Dr Amara Osei for all five (regulatory and post-mortem focus).
+
+### Batch 29: Sector deep-dives (5 articles)
+Deaths in specific settings that each have distinct procedures.
+- death-in-hospital-abroad-release-procedure
+- death-in-a-hotel-room-abroad-what-happens
+- death-in-custody-abroad-uk-family-rights
+- death-at-a-sports-event-abroad
+- death-in-a-care-facility-abroad-repatriation
+Author: James Whitfield for hospital, hotel, sports event, care facility; Dr Amara Osei for custody.
+
+### BUILD PLAN EXHAUSTED
+If all batches above (26-29) are complete and no further batch is listed: STOP and post to #build-funeral-repatriation: "BUILD PLAN EXHAUSTED Funeral Repatriation: all planned blog batches complete. Awaiting new tasks from Gareth before next build run." Do not invent new batches. Wait for Gareth to add them.
 
 Target overall: 500+ blog articles. 234 live. 266 to go.
 
@@ -287,8 +316,8 @@ Target overall: 500+ blog articles. 234 live. 266 to go.
 
 ## NEXT TASKS -- IN PRIORITY ORDER
 
-### Priority 1: Engine 3 Batch 26 -- NEW CLUSTER
-Country deep-dive (questions-families-ask) series is complete (75 countries). Choose a new cluster with Gareth: practical how-to, sector deep-dives, cause-specific, or seasonal/awareness. See ENGINE 3 ROADMAP Batch 26 for options.
+### Priority 1: Engine 3 Batch 26 -- Seasonal and awareness cluster
+Build the 5 articles listed under Batch 26 in the ENGINE 3 ROADMAP below. No direction gate. Build autonomously in order listed. After Batch 26, proceed immediately to Batch 27, then 28, then 29. If all batches are complete, follow the BUILD PLAN EXHAUSTED instruction.
 
 ### Priority 2: GSC not-indexed audit
 Export 859 not-indexed URLs from GSC and categorise. Many should now be resolving from the 1 June canonical/stub fixes. Worth checking now that 7-14 days are passing since the canonical fix.
@@ -324,4 +353,4 @@ australia, brazil, canada, cyprus, egypt, france, germany, ghana, greece, india,
 
 ---
 
-*Last updated: 4 June 2026 (Batch 25 complete -- country deep-dive series finished)*
+*Last updated: 5 June 2026 (Batch 26-29 roadmap added, direction gate removed, build plan exhausted instruction added)*
