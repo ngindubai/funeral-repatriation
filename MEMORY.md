@@ -256,3 +256,4 @@ dest_key: "uk" or "ireland"
 | 1 Jun 2026 | Engine 3 Batches 1-3: 15 articles (cost cluster, timeline cluster, documents deep-dive). |
 | 2 Jun 2026 | Engine 3 Batches 4-6: 15 articles (religious/cultural, special circumstances, UK reception). Total blog: 142. Added live link output rule to CLAUDE.md and MEMORY.md. |
 | 3 Jun 2026 | Engine 3 Batch 9: comparison/decision cluster. 2 new articles (repatriation-vs-local-memorial-service, direct-repatriation-vs-full-service). 3 roadmap candidates dropped as duplicates of existing live articles. Blog total: 154. |
+| 5 Jun 2026 | Engine 3 Batch 26: seasonal and awareness cluster. 5 articles (hajj/umrah, student/gap-year, school trip, summer holiday, working abroad). Blog total: 239. |
