@@ -1,0 +1,98 @@
+---
+title: "Cabo Verde to Ireland: Funeral Repatriation Guidance"
+description: "Someone has died in Cabo Verde and needs to come home to Ireland. Repatriation takes 3-5 weeks. Island location adds complexity. Contact us 24/7."
+origin_key: "cabo-verde"
+dest_key: "ie"
+origin_name: "Cabo Verde"
+dest_name: "Ireland"
+origin_slug: "cabo-verde"
+dest_slug: "ireland"
+slug: "cabo-verde-to-ireland"
+template_variant: "A"
+route_complexity: "moderate-high"
+timeline_avg: "3-5 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-10 weeks"
+embassy_city: "Lisbon"
+doc_processing_time: "10-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Cabo Verde to Ireland: what to expect"
+direct_answer_intro: "There is no resident Irish Embassy in Cabo Verde. Consular cover is provided by the Irish Embassy in Lisbon, Portugal. Cabo Verde is an island nation, and if the death occurs on one of the smaller islands, an internal transfer to the main island is required before the international cargo flight. Amilcar Cabral International Airport connects via Lisbon or Las Palmas for Dublin cargo routes."
+direct_answer_points:
+  - "Key document: death certificate from the Conservatória do Registo Civil"
+  - "Island location may require internal inter-island transfer before international cargo departs"
+  - "Cape Verdean Creole and Portuguese are official languages; documents in Portuguese require certified translation"
+  - "No resident Irish Embassy in Cabo Verde; consular cover from Irish Embassy Lisbon"
+  - "Irish consular cover via DFA emergency line +353 1 408 2000 (gov.ie, 2026)"
+overview_heading: "What happens after a death in Cabo Verde"
+overview_body: "Call Cabo Verde police (132) or ambulance (130) immediately. A doctor certifies the death. Death is registered with the Conservatória do Registo Civil, which issues the official death certificate in Portuguese. For sudden, unattended, or suspicious deaths, the authorities investigate and a post-mortem may be required. The island location means that deaths on smaller islands such as Santo Antão, Fogo, or Brava require a transfer to São Vicente or Santiago before the international cargo flight. Because there is no resident Irish Embassy in Cabo Verde, all consular contact goes through the Irish Embassy in Lisbon. Contact the Department of Foreign Affairs emergency line on +353 1 408 2000 as soon as possible. Amilcar Cabral International Airport (SID) on Sal, or Nelson Mandela International Airport (RAI) on Santiago, connect via Lisbon or Las Palmas for Dublin cargo routes."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Lisbon covers Cabo Verde and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Call Cabo Verde emergency services (132 police / 130 ambulance) and contact DFA emergency line +353 1 408 2000 to reach the Irish Embassy Lisbon"
+    timing: "Day of death"
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by a doctor. Death registered with the Conservatória do Registo Civil. Death certificate issued in Portuguese."
+    timing: "Within 24-72 hours for natural deaths"
+    responsible: "Local funeral director and Conservatória do Registo Civil"
+  - step: 3
+    action: "Authorities investigation and post-mortem completed where required"
+    timing: "Add 7-21 days for suspicious or sudden deaths"
+    responsible: "Cabo Verdean authorities"
+  - step: 4
+    action: "Inter-island transfer arranged if death occurred on a smaller island"
+    timing: "Allow 1-3 additional days for inter-island logistics"
+    responsible: "Repatriation specialist and local funeral director"
+  - step: 5
+    action: "Certified English translations of all Portuguese documents prepared"
+    timing: "Allow 5-10 working days for certified translations"
+    responsible: "Certified translation service"
+  - step: 6
+    action: "Embalming and preparation in sealed, zinc-lined coffin"
+    timing: "Once authorities release the body"
+    responsible: "Licensed local funeral director"
+  - step: 7
+    action: "Export clearance and all permits obtained from Cabo Verdean authorities"
+    timing: "Allow 10-21 days total for full documentation package"
+    responsible: "Local funeral director and authorities"
+  - step: 8
+    action: "Air cargo from Amilcar Cabral International Airport (SID) or Nelson Mandela International Airport (RAI) to Dublin (DUB) via Lisbon or Las Palmas"
+    timing: "Once all documentation is complete"
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 9
+    action: "Irish funeral director takes custody at cargo terminal. Coroner notified."
+    timing: "Within 24 hours of arrival in Ireland"
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Cabo Verde to Ireland take?"
+    answer: "A straightforward case takes 3-5 weeks. The fastest cases complete in 2-3 weeks where death was natural and documentation is in order. Cases involving post-mortem or occurring on a smaller island can take 6-10 weeks."
+  - question: "Which Irish Embassy covers Cabo Verde?"
+    answer: "There is no resident Irish Embassy in Cabo Verde. Consular cover is provided by the Irish Embassy in Lisbon, Portugal. Contact the Department of Foreign Affairs 24-hour emergency line on +353 1 408 2000 (gov.ie, 2026) and they will connect you to the relevant consular officer."
+  - question: "What happens if my relative died on one of the smaller Cabo Verde islands?"
+    answer: "Deaths on smaller islands such as Santo Antão, Fogo, or Brava require an internal inter-island transfer to one of the main airports on Sal or Santiago before the international cargo flight can depart. This adds 1-3 days and requires careful coordination. A specialist repatriation coordinator manages this transfer."
+  - question: "What documents are needed for repatriation from Cabo Verde to Ireland?"
+    answer: "The core documents are: the Conservatória do Registo Civil death certificate with certified English translation, post-mortem report and release (if applicable), embalming certificate, freedom from infection certificate, and the passport of the deceased. All Portuguese documents require certified English translation."
+  - question: "Can I bring ashes home from Cabo Verde to Ireland instead of repatriating the body?"
+    answer: "Yes. Cremation is available on the main islands of Cabo Verde. Bringing ashes to Ireland requires proper export documentation and is generally simpler than full body repatriation. A specialist coordinator will advise on availability in the specific location."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. All translated documentation is reviewed. The Coroner for the district is notified. In straightforward cases, funeral arrangements can proceed without delay."
+  - question: "Does travel insurance cover repatriation from Cabo Verde?"
+    answer: "Many holiday and travel insurance policies include repatriation cover. Check the policy documents immediately and call the insurer's emergency line. The insurer may appoint their own repatriation coordinator. If no cover exists, a specialist repatriation service can manage the full process from Cabo Verde to Ireland."
+links:
+  upward:
+    - url: "/repatriation-from-cabo-verde/"
+      text: "Full Cabo Verde repatriation guide"
+    - url: "/guides/death-abroad-cabo-verde/"
+      text: "What to do if someone dies in Cabo Verde"
+    - url: "/embassy-contacts/cabo-verde/"
+      text: "Irish Embassy contacts for Cabo Verde"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/cabo-verde-to-united-kingdom/"
+      text: "Repatriation from Cabo Verde to the UK"
+    - url: "/routes/ireland-to-cabo-verde/"
+      text: "Repatriation from Ireland to Cabo Verde"
+---

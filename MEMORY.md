@@ -63,7 +63,7 @@
 
 ---
 
-## 3. Current State (5 June 2026)
+## 3. Current State (6 June 2026)
 
 | Silo | Status |
 |------|--------|
@@ -74,17 +74,13 @@
 | Bringing ashes home | 238 countries |
 | Cremation transfer | 238 countries |
 | Embassy contacts | 238 countries |
-| Route pairs | 170 of 38,612 (132 to UK, 32 to Ireland, 6 pre-matrix mixed) |
+| Route pairs | 270 of 38,612 (196 to UK, 68 to Ireland, 6 pre-matrix mixed) |
 
-**Active build:** Phase R, the route matrix. Tier A in progress (170 of 394 built). Next block: chunk R5 (Tier A, Template A). 132 origins to UK built. See BUILD-PLAN.md for the tier breakdown and chunk ledger.
-
----
-
-## 4. The Route Matrix (the growth engine)
+**Active build:** Phase R, the route matrix. Tier A in progress (270 of 394 built). Next block: chunk R9 (Tier A, Template A). UK Tier A complete at 196 routes; 68 Ireland routes built. See BUILD-PLAN.md for the tier breakdown and chunk ledger.
 
 Full origin-to-destination square: 197 countries x 197, minus same-country pairs = 38,612 route pages. Four tiers, highest commercial intent first:
 
-- **Tier A (394):** every origin to United Kingdom and to Ireland. The revenue tier. 70 built, 324 remaining.
+- **Tier A (394):** every origin to United Kingdom and to Ireland. The revenue tier. 270 built, 124 remaining.
 - **Tier B (~1,100):** diaspora and cross-border corridors to the top 12 destination hubs.
 - **Tier C (~7,700):** regional and secondary destinations.
 - **Tier D (~29,400):** long-tail completion of the square.
@@ -184,3 +180,4 @@ Hero image assignments: Countries `mrwashingt0n-ai-generated-9048740.jpg`, Guide
 | 5 Jun 2026 | Engine 3 Batch 26: 5 seasonal articles. Blog total 239. |
 | 5 Jun 2026 | Plan rebuild to Pet Transport parity: full 197x197 route matrix (38,612 target) installed across BUILD-PLAN.md, CLAUDE.md, MEMORY.md and the HTML tracker. Approval gate removed; routine now fully autonomous (build, QA, commit, report, stop; no wait-for-go, no stop condition). Chunk R1 (Tier A, Template A) is next. No content built in this entry. |
 | 5 Jun 2026 | Chunks R1-R4 (batch 1): 100 new Tier A route pages to UK. cambodia, dominican-republic, poland, china, saudi-arabia, kuwait, qatar, bahrain, malaysia, austria, croatia, czech-republic, hungary, bulgaria, netherlands, belgium, sweden, norway, switzerland, denmark, finland, romania, bangladesh, jamaica, gambia, barbados, trinidad-and-tobago, cuba, colombia, argentina, peru, chile, albania, ukraine, georgia, azerbaijan, armenia, kazakhstan, oman, nepal, myanmar, taiwan, south-korea, north-macedonia, serbia, montenegro, slovakia, slovenia, estonia, latvia, lithuania, luxembourg, iceland, malta, iran, iraq, lebanon, laos, mongolia, afghanistan, kyrgyzstan, uzbekistan, tajikistan, turkmenistan, belarus, moldova, senegal, ivory-coast, ethiopia, tanzania, uganda, zimbabwe, zambia, mozambique, botswana, namibia, malawi, rwanda, cameroon, angola, algeria, tunisia, libya, sudan, eritrea, djibouti, somalia, south-sudan, democratic-republic-of-the-congo, congo, gabon, equatorial-guinea, burundi, sierra-leone, liberia, guinea, guinea-bissau, burkina-faso, benin, togo. All QA clean. 170 total route pairs live. |
+| 6 Jun 2026 | Chunks R5-R8 (batch 2): 100 new Tier A route pages (64 to UK, 36 to Ireland). UK Tier A complete at 196 routes. andorra, antigua-and-barbuda, bahamas, belize, bhutan, bolivia, bosnia-and-herzegovina, brunei, cabo-verde, central-african-republic, chad, comoros, costa-rica, dominica, ecuador, el-salvador, eswatini, fiji, grenada, guatemala, guyana, haiti, honduras, hong-kong, ireland, kiribati, liechtenstein, madagascar, maldives, mali, marshall-islands, mauritania, mauritius, micronesia, monaco, nauru, nicaragua, niger, north-korea, palau, palestine, panama, papua-new-guinea, paraguay, russia, saint-kitts-and-nevis, saint-lucia, saint-vincent-and-the-grenadines, samoa, san-marino, sao-tome-and-principe, seychelles, solomon-islands, suriname, syria, timor-leste, tonga, tuvalu, uruguay, vanuatu, vatican-city, venezuela, yemen to UK; afghanistan, albania, algeria, andorra, angola, antigua-and-barbuda, argentina, armenia, austria, azerbaijan, bahamas, bahrain, bangladesh, barbados, belarus, belgium, belize, benin, bhutan, bolivia, bosnia-and-herzegovina, botswana, brunei, bulgaria, burkina-faso, burundi, cabo-verde, cambodia, cameroon, central-african-republic, chad, chile, china, colombia, comoros, congo to Ireland. All QA clean. 270 total route pairs live. |

@@ -59,11 +59,11 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 
 | Tier | Description | Routes | Built | Remaining |
 |---|---|---|---|---|
-| A | All origins to UK and Ireland | 394 | 170 | 224 |
+| A | All origins to UK and Ireland | 394 | 270 | 124 |
 | B | Diaspora and high-volume cross-border | ~1,100 | 0 | ~1,100 |
 | C | Regional and secondary destinations | ~7,700 | 0 | ~7,700 |
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
-| **Total** | **Full 197x197 matrix** | **38,612** | **70** | **38,542** |
+| **Total** | **Full 197x197 matrix** | **38,612** | **270** | **38,342** |
 
 At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 routes per block = up to 200 routes per day), Tier A (the revenue tier) completes in under 3 weeks and the full matrix in roughly the same horizon as before.
 
@@ -73,7 +73,7 @@ At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 ro
 
 Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
-- Next chunk: **R5**
+- Next chunk: **R9**
 - Next tier: **A**
 - Next template lead: **A** (rotation continues A, B, C, D, E across the 25 routes in the block, and onward across the next block in the batch)
 
@@ -90,7 +90,11 @@ The routine names each route block "chunk R<N>" in its commit message so the ski
 | R2 | A | A | 25 | DONE | barbados, trinidad-and-tobago, cuba, colombia, argentina, peru, chile, albania, ukraine, georgia, azerbaijan, armenia, kazakhstan, oman, nepal, myanmar, taiwan, south-korea, north-macedonia, serbia, montenegro, slovakia, slovenia, estonia, latvia to UK. 5 Jun 2026. |
 | R3 | A | A | 25 | DONE | lithuania, luxembourg, iceland, malta, iran, iraq, lebanon, laos, mongolia, afghanistan, kyrgyzstan, uzbekistan, tajikistan, turkmenistan, belarus, moldova, senegal, ivory-coast, ethiopia, tanzania, uganda, zimbabwe, zambia, mozambique, botswana to UK. 5 Jun 2026. |
 | R4 | A | A | 25 | DONE | namibia, malawi, rwanda, cameroon, angola, algeria, tunisia, libya, sudan, eritrea, djibouti, somalia, south-sudan, democratic-republic-of-the-congo, congo, gabon, equatorial-guinea, burundi, sierra-leone, liberia, guinea, guinea-bissau, burkina-faso, benin, togo to UK. 5 Jun 2026. |
-| R5 | A | A | 25 | NEXT | Next 25 unbuilt origins to United Kingdom. |
+| R5 | A | A | 25 | DONE | andorra, antigua-and-barbuda, bahamas, belize, bhutan, bolivia, bosnia-and-herzegovina, brunei, cabo-verde, central-african-republic, chad, comoros, costa-rica, dominica, ecuador, el-salvador, eswatini, fiji, grenada, guatemala, guyana, haiti, honduras, hong-kong, ireland to UK. 6 Jun 2026. |
+| R6 | A | A | 25 | DONE | kiribati, liechtenstein, madagascar, maldives, mali, marshall-islands, mauritania, mauritius, micronesia, monaco, nauru, nicaragua, niger, north-korea, palau, palestine, panama, papua-new-guinea, paraguay, russia, saint-kitts-and-nevis, saint-lucia, saint-vincent-and-the-grenadines, samoa to UK (lesotho pre-existing). 6 Jun 2026. |
+| R7 | A | B | 25 | DONE | san-marino, sao-tome-and-principe, seychelles, solomon-islands, suriname, syria, timor-leste, tonga, tuvalu, uruguay, vanuatu, vatican-city, venezuela, yemen to UK; afghanistan, albania, algeria, andorra, angola, antigua-and-barbuda, argentina, armenia, austria, azerbaijan, bahamas to Ireland. 6 Jun 2026. |
+| R8 | A | C | 25 | DONE | barbados, belarus, belgium, belize, benin, bhutan, bolivia, bosnia-and-herzegovina, botswana, brunei, bulgaria, burkina-faso, burundi, cabo-verde, cambodia, cameroon, central-african-republic, chad, chile, china, colombia, comoros, congo to Ireland (bahrain, bangladesh pre-existing). 6 Jun 2026. |
+| R9 | A | A | 25 | NEXT | Next 25 unbuilt origins to Ireland (UK Tier A complete at 196 routes). |
 
 When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
@@ -126,6 +130,7 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 | 5 Jun 2026 | Routine config | Switched to batch builds of up to 4 blocks per run, 2 runs/day, to fit the 15-run routine cap. One push per run (whole batch committed once) to avoid concurrent-deploy clobbering. Pointer-based skip (no same-day skip). Docs only (CLAUDE.md + this file). No content built this entry. | 70 (unchanged) | Instruction change only. |
 | 5 Jun 2026 | Plan rebuild | Route matrix plan installed: full 197x197 tiered matrix (38,612 target), four tiers A to D, chunk ledger, autonomous rhythm. Replaces the previous stub plan that topped out at the blog roadmap. No content built this entry. | 70 (unchanged) | Build plan now at parity with Pet Transport. Chunk R1 (Tier A, Template A) is next. |
 | 5 Jun 2026 | Chunks R1-R4 | Batch build: 100 new Tier A routes to United Kingdom. 4 blocks of 25 origins each. All QA clean (0 errors). 132 total UK routes now live. Next: R5 (continue Tier A to UK). | 170 (132 UK + 32 Ireland + 6 pre-matrix mixed) | R1-R4 committed in single batch. Deploy auto via build-and-publish.yml. |
+| 6 Jun 2026 | Chunks R5-R8 | Batch build: 100 new Tier A routes (64 to UK, 36 to Ireland). 4 blocks of 25 each. All QA clean (0 errors on new files). UK Tier A complete (196 routes). 68 Ireland routes now live. Next: R9 (continue Ireland origins). | 270 (196 UK + 68 Ireland + 6 pre-matrix mixed) | R5-R8 committed in single batch. Deploy auto via build-and-publish.yml. |
 
 ---
 

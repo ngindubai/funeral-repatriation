@@ -1,0 +1,98 @@
+---
+title: "Comoros to Ireland: Funeral Repatriation Guidance"
+description: "Someone has died in the Comoros and needs to come home to Ireland. Repatriation takes 6-10 weeks. Island location adds complexity. Contact us 24/7."
+origin_key: "comoros"
+dest_key: "ie"
+origin_name: "Comoros"
+dest_name: "Ireland"
+origin_slug: "comoros"
+dest_slug: "ireland"
+slug: "comoros-to-ireland"
+template_variant: "D"
+route_complexity: "high"
+timeline_avg: "6-10 weeks"
+timeline_fast: "4-6 weeks"
+timeline_complex: "12-16 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "14-28 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from the Comoros to Ireland: what to expect"
+direct_answer_intro: "There is no resident Irish Embassy in the Comoros. Consular cover is provided by the Irish Embassy in Nairobi, Kenya. The Comoros is an island nation in the Indian Ocean, and if the death occurs on one of the smaller islands (Anjouan or Mohéli), an internal inter-island transfer is required before the international cargo flight. French and Arabic are the administrative languages. A specialist repatriation coordinator should be engaged from the first day."
+direct_answer_points:
+  - "Key document: acte de décès (état civil) from the local civil registry"
+  - "Island location may require inter-island transfer before international cargo can depart"
+  - "French and Arabic are administrative languages; documents require certified English translation"
+  - "No resident Irish Embassy in the Comoros; consular cover from Irish Embassy Nairobi"
+  - "Irish consular cover via DFA emergency line +353 1 408 2000 (gov.ie, 2026)"
+overview_heading: "What happens after a death in the Comoros"
+overview_body: "Call Comorian police (773) or ambulance (772) immediately. A doctor certifies the death. Death is registered at the local civil registry, which issues the acte de décès. The administrative language is French, and Arabic is also used in some contexts. Both require certified English translation for use in Ireland. Deaths on smaller islands such as Anjouan or Mohéli require an internal inter-island transfer to Grande Comore before the international cargo flight. For sudden, unattended, or suspicious deaths, the authorities investigate and a post-mortem may be ordered. Because there is no resident Irish Embassy in the Comoros, all consular contact goes through the Irish Embassy in Nairobi. Contact the Department of Foreign Affairs emergency line on +353 1 408 2000 as soon as possible. Moroni Prince Said Ibrahim International Airport connects via Nairobi or Addis Ababa for Dublin cargo routes."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Nairobi covers the Comoros and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Call Comorian emergency services (773 police / 772 ambulance) and contact DFA emergency line +353 1 408 2000 to reach the Irish Embassy Nairobi"
+    timing: "Day of death"
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by a doctor. Death registered at local civil registry. Acte de décès issued in French."
+    timing: "Within 24-72 hours for natural deaths"
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Authorities investigation and post-mortem completed where required"
+    timing: "Add 14-30 days for suspicious or sudden deaths"
+    responsible: "Comorian authorities"
+  - step: 4
+    action: "Inter-island transfer arranged if death occurred on Anjouan or Mohéli"
+    timing: "Allow 1-4 additional days for inter-island logistics"
+    responsible: "Repatriation specialist and local coordinator"
+  - step: 5
+    action: "Certified English translations of all French and Arabic documents prepared"
+    timing: "Allow 7-10 working days for certified translations"
+    responsible: "Certified translation service"
+  - step: 6
+    action: "Embalming and preparation in sealed, zinc-lined coffin"
+    timing: "Once authorities release the body"
+    responsible: "Licensed local funeral director"
+  - step: 7
+    action: "Export clearance and all permits obtained from Comorian authorities"
+    timing: "Allow 14-28 days total for full documentation package"
+    responsible: "Local funeral director and authorities"
+  - step: 8
+    action: "Air cargo from Moroni Prince Said Ibrahim International Airport (HAH) to Dublin (DUB) via Nairobi or Addis Ababa"
+    timing: "Once all documentation is complete; limited connections available"
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 9
+    action: "Irish funeral director takes custody at cargo terminal. Coroner notified."
+    timing: "Within 24 hours of arrival in Ireland"
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the Comoros to Ireland take?"
+    answer: "A straightforward case takes 6-10 weeks. The fastest cases complete in 4-6 weeks where death was natural and documentation is in order. Cases involving inter-island transfer, post-mortem, or investigative procedures can take 12-16 weeks."
+  - question: "Which Irish Embassy covers the Comoros?"
+    answer: "There is no resident Irish Embassy in the Comoros. Consular cover is provided by the Irish Embassy in Nairobi, Kenya. Contact the Department of Foreign Affairs 24-hour emergency line on +353 1 408 2000 (gov.ie, 2026) and they will direct you to the relevant consular officer."
+  - question: "What happens if my relative died on one of the smaller Comorian islands?"
+    answer: "Deaths on Anjouan or Mohéli require an internal inter-island transfer to Grande Comore before the international cargo flight can depart from Moroni. This adds 1-4 days and requires careful coordination by a specialist repatriation coordinator. It is an important factor to raise immediately."
+  - question: "What documents are needed for repatriation from the Comoros to Ireland?"
+    answer: "The core documents are: the acte de décès with certified English translation, post-mortem report and release (if applicable), embalming certificate, freedom from infection certificate, and the passport of the deceased. All French and Arabic documents must be translated by a certified translator."
+  - question: "Is cremation available in the Comoros?"
+    answer: "Cremation is not widely available in the Comoros and is rare in the predominantly Muslim population. In most cases involving Irish families, full body repatriation is the standard route. A specialist repatriation coordinator will advise on what is available in the specific circumstances."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. All translated documentation is reviewed. The Coroner for the district is notified. In straightforward cases, funeral arrangements can proceed without delay."
+  - question: "Does travel insurance cover repatriation from the Comoros?"
+    answer: "Check the policy documents immediately and call the insurer's 24-hour emergency line. Many policies include repatriation cover. A specialist repatriation coordinator should be engaged from day one given the complexity of this island-based route, whether or not insurance cover exists."
+links:
+  upward:
+    - url: "/repatriation-from-comoros/"
+      text: "Full Comoros repatriation guide"
+    - url: "/guides/death-abroad-comoros/"
+      text: "What to do if someone dies in the Comoros"
+    - url: "/embassy-contacts/comoros/"
+      text: "Irish Embassy contacts for the Comoros"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/comoros-to-united-kingdom/"
+      text: "Repatriation from the Comoros to the UK"
+    - url: "/routes/ireland-to-comoros/"
+      text: "Repatriation from Ireland to the Comoros"
+---

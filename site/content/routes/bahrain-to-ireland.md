@@ -1,0 +1,93 @@
+---
+title: "Bahrain to Ireland: Funeral Repatriation Guidance"
+description: "Someone has died in Bahrain and needs to come home to Ireland. Repatriation takes 2-4 weeks. All documentation and cargo handled. Contact us 24/7."
+origin_key: "bahrain"
+dest_key: "ie"
+origin_name: "Bahrain"
+dest_name: "Ireland"
+origin_slug: "bahrain"
+dest_slug: "ireland"
+slug: "bahrain-to-ireland"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Abu Dhabi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Bahrain to Ireland: what to expect"
+direct_answer_intro: "There is no resident Irish Embassy in Bahrain. Consular cover is provided by the Irish Embassy in Abu Dhabi, UAE. The repatriation process runs through Bahraini civil and public prosecution authorities before cargo departs Bahrain International Airport for Ireland."
+direct_answer_points:
+  - "Key document: death certificate from the Central Informatics Organisation (CIO) of Bahrain"
+  - "All Arabic-language documents require certified English translation before acceptance in Ireland"
+  - "The Public Prosecution investigates sudden or unattended deaths, which can add time"
+  - "Irish consular cover: Irish Embassy Abu Dhabi, via DFA emergency line +353 1 408 2000 (gov.ie, 2026)"
+overview_heading: "What happens after a death in Bahrain"
+overview_body: "Call the Bahrain police emergency line (999) immediately. A doctor certifies the death. For sudden, unattended, or traumatic deaths, the Public Prosecution of Bahrain takes jurisdiction and a post-mortem may be ordered. Death is registered with the Central Informatics Organisation (CIO), which issues the official death certificate. Because there is no resident Irish Embassy in Bahrain, consular support comes from the Irish Embassy in Abu Dhabi. Contact the Department of Foreign Affairs emergency line (+353 1 408 2000) as soon as possible. Bahrain International Airport is the primary cargo departure point for international repatriations."
+dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
+dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Abu Dhabi covers Bahrain and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Call Bahrain emergency services (999) and notify the Irish Embassy Abu Dhabi via DFA line +353 1 408 2000"
+    timing: "Day of death"
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with the Central Informatics Organisation (CIO). CIO death certificate issued."
+    timing: "Within 24-48 hours for natural deaths. Public Prosecution cases take longer."
+    responsible: "Local funeral director and CIO"
+  - step: 3
+    action: "Public Prosecution review completed where required. Post-mortem report obtained if ordered."
+    timing: "Add 7-21 days for suspicious or sudden deaths"
+    responsible: "Bahraini authorities"
+  - step: 4
+    action: "Certified English translations of all Arabic documents prepared"
+    timing: "Allow 3-5 working days for certified translations"
+    responsible: "Certified translation service"
+  - step: 5
+    action: "Embalming and preparation in zinc-lined coffin"
+    timing: "Once authorities release the body"
+    responsible: "Licensed local funeral director"
+  - step: 6
+    action: "Export permits and all clearances obtained from Bahraini authorities"
+    timing: "Allow 7-14 days total for full documentation package"
+    responsible: "Local funeral director and authorities"
+  - step: 7
+    action: "Air cargo from Bahrain International Airport (BAH) to Dublin (DUB), typically via Gulf hub"
+    timing: "Once all documentation is complete"
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 8
+    action: "Irish funeral director takes custody at cargo terminal. Coroner notified."
+    timing: "Within 24 hours of arrival in Ireland"
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Bahrain to Ireland take?"
+    answer: "A straightforward case takes 2-4 weeks. The fastest cases, where death was natural and documentation is in order, complete in 10-14 days. Cases involving the Public Prosecution, post-mortem, or complex translation requirements can take 4-8 weeks."
+  - question: "Which Irish Embassy covers Bahrain?"
+    answer: "There is no resident Irish Embassy in Bahrain. Consular cover is provided by the Irish Embassy in Abu Dhabi, UAE. Contact the Department of Foreign Affairs 24-hour emergency line on +353 1 408 2000 (gov.ie, 2026) and they will connect you to the appropriate consular officer."
+  - question: "What documents are needed for repatriation from Bahrain to Ireland?"
+    answer: "The core documents are: CIO death certificate with certified English translation, Public Prosecution release (if applicable), embalming certificate, freedom from infection certificate, and the passport of the deceased. All Arabic documents must be translated by a certified translator."
+  - question: "Does Islamic law affect the repatriation process?"
+    answer: "Islamic law may affect procedures for Muslim nationals, particularly around post-mortem examinations and the timeline for burial. Bahraini authorities and the funeral director on the ground will advise on how this applies in each case. Non-Muslim nationals are not subject to these restrictions."
+  - question: "Can I arrange cremation in Bahrain?"
+    answer: "Cremation is not available in Bahrain for Muslim nationals. Non-Muslim nationals may be able to access cremation through specialist arrangements, but options are very limited. In most cases, full body repatriation to Ireland is the route taken for non-Muslim nationals as well."
+  - question: "What happens when the body arrives in Ireland?"
+    answer: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English. The Coroner for the district is notified. In straightforward cases, funeral arrangements can proceed without delay."
+  - question: "Does travel insurance cover repatriation from Bahrain?"
+    answer: "Many travel insurance and employer policies include repatriation cover. Check the policy documents immediately and call the insurer's emergency line. The insurer may appoint their own repatriation coordinator. If there is no cover, a specialist repatriation service manages the process directly."
+links:
+  upward:
+    - url: "/repatriation-from-bahrain/"
+      text: "Full Bahrain repatriation guide"
+    - url: "/guides/death-abroad-bahrain/"
+      text: "What to do if someone dies in Bahrain"
+    - url: "/embassy-contacts/bahrain/"
+      text: "Irish Embassy contacts for Bahrain"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/bahrain-to-united-kingdom/"
+      text: "Repatriation from Bahrain to the UK"
+    - url: "/routes/ireland-to-bahrain/"
+      text: "Repatriation from Ireland to Bahrain"
+---
