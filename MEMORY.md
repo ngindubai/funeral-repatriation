@@ -63,7 +63,7 @@
 
 ---
 
-## 3. Current State (6 June 2026)
+## 3. Current State (7 June 2026)
 
 | Silo | Status |
 |------|--------|
@@ -74,9 +74,11 @@
 | Bringing ashes home | 238 countries |
 | Cremation transfer | 238 countries |
 | Embassy contacts | 238 countries |
-| Route pairs | 370 of 38,612 (196 to UK, 168 to Ireland, 6 pre-matrix mixed) |
+| Route pairs | 398 of 38,612 (196 to UK, 196 to Ireland, 6 pre-matrix mixed) |
 
-**Active build:** Phase R, the route matrix. Tier A in progress (370 of 394 built). Next block: chunk R13 (Tier A, Template A). UK Tier A complete at 196 routes; 168 Ireland routes built. 24 Ireland origins remaining to complete Tier A. See BUILD-PLAN.md for the tier breakdown and chunk ledger.
+**Active build:** Phase R, the route matrix. Tier A complete (394 routes: 196 to UK, 196 to Ireland, 2 pre-existing counted in pre-matrix). Next block: chunk R14 (Tier B, Template D). See BUILD-PLAN.md for the tier breakdown and chunk ledger.
+
+**Note on Tier B:** The keyword_matrix.json does not contain a `tier_b_corridors` key as referenced in the BUILD-PLAN. Tier B corridors are defined in the BUILD-PLAN description: origins to the top 12 destination hubs (USA, UAE, Saudi Arabia, Germany, France, Canada, Australia, Qatar, Kuwait, Singapore, South Africa, India), approximately 1,100 routes. The route generator for Tier B needs to be written, adapting from UK route source files where they exist, or from scratch for new destination countries.
 
 Full origin-to-destination square: 197 countries x 197, minus same-country pairs = 38,612 route pages. Four tiers, highest commercial intent first:
 
@@ -91,8 +93,8 @@ Full origin-to-destination square: 197 countries x 197, minus same-country pairs
 
 ## 5. Next Tasks -- in priority order
 
-1. **Route matrix, Tier A, chunk R13** (default every run): final 24 unbuilt Ireland origins to complete Tier A. 196 UK routes built (Tier A complete). 168 Ireland routes built. Continue chunk by chunk through Tier A.
-2. After Tier A: Tier B, then C, then D, same block rhythm.
+1. **Route matrix, Tier B, chunk R14** (default every run): diaspora and high-volume cross-border corridors. Origins to the top 12 destination hubs (USA, UAE, Saudi Arabia, Germany, France, Canada, Australia, Qatar, Kuwait, Singapore, South Africa, India), excluding pairs already built in Tier A. Approximately 1,100 routes total. Write the generator using available UK route source files where they exist. Template rotation continues from D (last was C on R13).
+2. After Tier B: Tier C, then D, same block rhythm.
 3. Blog batches 27 onward (first-contact cluster, cause-specific, sector deep-dives, then open-ended country long-tail): built on any run where the next route chunk is already committed.
 
 There is no end state for the routine. When a tier completes, move to the next. When the matrix completes, the blog long-tail continues indefinitely.
@@ -182,3 +184,4 @@ Hero image assignments: Countries `mrwashingt0n-ai-generated-9048740.jpg`, Guide
 | 5 Jun 2026 | Chunks R1-R4 (batch 1): 100 new Tier A route pages to UK. cambodia, dominican-republic, poland, china, saudi-arabia, kuwait, qatar, bahrain, malaysia, austria, croatia, czech-republic, hungary, bulgaria, netherlands, belgium, sweden, norway, switzerland, denmark, finland, romania, bangladesh, jamaica, gambia, barbados, trinidad-and-tobago, cuba, colombia, argentina, peru, chile, albania, ukraine, georgia, azerbaijan, armenia, kazakhstan, oman, nepal, myanmar, taiwan, south-korea, north-macedonia, serbia, montenegro, slovakia, slovenia, estonia, latvia, lithuania, luxembourg, iceland, malta, iran, iraq, lebanon, laos, mongolia, afghanistan, kyrgyzstan, uzbekistan, tajikistan, turkmenistan, belarus, moldova, senegal, ivory-coast, ethiopia, tanzania, uganda, zimbabwe, zambia, mozambique, botswana, namibia, malawi, rwanda, cameroon, angola, algeria, tunisia, libya, sudan, eritrea, djibouti, somalia, south-sudan, democratic-republic-of-the-congo, congo, gabon, equatorial-guinea, burundi, sierra-leone, liberia, guinea, guinea-bissau, burkina-faso, benin, togo. All QA clean. 170 total route pairs live. |
 | 6 Jun 2026 | Chunks R5-R8 (batch 2): 100 new Tier A route pages (64 to UK, 36 to Ireland). UK Tier A complete at 196 routes. andorra, antigua-and-barbuda, bahamas, belize, bhutan, bolivia, bosnia-and-herzegovina, brunei, cabo-verde, central-african-republic, chad, comoros, costa-rica, dominica, ecuador, el-salvador, eswatini, fiji, grenada, guatemala, guyana, haiti, honduras, hong-kong, ireland, kiribati, liechtenstein, madagascar, maldives, mali, marshall-islands, mauritania, mauritius, micronesia, monaco, nauru, nicaragua, niger, north-korea, palau, palestine, panama, papua-new-guinea, paraguay, russia, saint-kitts-and-nevis, saint-lucia, saint-vincent-and-the-grenadines, samoa, san-marino, sao-tome-and-principe, seychelles, solomon-islands, suriname, syria, timor-leste, tonga, tuvalu, uruguay, vanuatu, vatican-city, venezuela, yemen to UK; afghanistan, albania, algeria, andorra, angola, antigua-and-barbuda, argentina, armenia, austria, azerbaijan, bahamas, bahrain, bangladesh, barbados, belarus, belgium, belize, benin, bhutan, bolivia, bosnia-and-herzegovina, botswana, brunei, bulgaria, burkina-faso, burundi, cabo-verde, cambodia, cameroon, central-african-republic, chad, chile, china, colombia, comoros, congo to Ireland. All QA clean. 270 total route pairs live. |
 | 6 Jun 2026 | Chunks R9-R12 (batch 3): 100 new Tier A route pages to Ireland. costa-rica, croatia, cuba, czech-republic, democratic-republic-of-the-congo, denmark, djibouti, dominica, dominican-republic, ecuador, el-salvador, equatorial-guinea, eritrea, estonia, eswatini, ethiopia, fiji, finland, gabon, gambia, georgia, grenada, guatemala, guinea, guinea-bissau, guyana, haiti, honduras, hungary, iceland, iran, iraq, ivory-coast, jamaica, kazakhstan, kiribati, kuwait, kyrgyzstan, laos, latvia, lebanon, lesotho, liberia, libya, liechtenstein, lithuania, luxembourg, madagascar, malawi, malaysia, maldives, mali, malta, marshall-islands, mauritania, mauritius, micronesia, moldova, monaco, mongolia, montenegro, mozambique, myanmar, namibia, nauru, nepal, netherlands, nicaragua, niger, north-korea, north-macedonia, norway, oman, palau, palestine, panama, papua-new-guinea, paraguay, peru, poland, qatar, romania, russia, rwanda, saint-kitts-and-nevis, saint-lucia, saint-vincent-and-the-grenadines, samoa, san-marino, sao-tome-and-principe, saudi-arabia, senegal, serbia, seychelles, sierra-leone, slovakia, slovenia, solomon-islands, somalia, south-sudan to Ireland. All QA clean (0 errors on new files; 36 pre-existing route failures unchanged). 370 total route pairs live. |
+| 7 Jun 2026 | Chunk R13: 28 new Tier A route pages to Ireland. hong-kong, south-korea, sudan, suriname, sweden, switzerland, syria, taiwan, tajikistan, tanzania, timor-leste, togo, tonga, trinidad-and-tobago, tunisia, turkmenistan, tuvalu, uganda, ukraine, united-kingdom, uruguay, uzbekistan, vanuatu, vatican-city, venezuela, yemen, zambia, zimbabwe to Ireland. Tier A complete (394 routes: 196 UK + 196 Ireland + 2 pre-matrix). All QA clean (0 errors on new files; 36 pre-existing route failures unchanged). 398 total route pairs live. |
