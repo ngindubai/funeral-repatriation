@@ -1,0 +1,87 @@
+---
+title: "Philippines to Australia: Repatriation Guidance"
+description: "Someone has died in Philippines. Repatriation to Australia takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "philippines"
+dest_key: "au"
+origin_name: "Philippines"
+dest_name: "Australia"
+origin_slug: "philippines"
+dest_slug: "australia"
+slug: "philippines-to-australia"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "3 weeks"
+timeline_complex: "8-16 weeks"
+embassy_city: "Manila"
+doc_processing_time: "3-6 weeks (PSA and DFA authentication are the main delays)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Philippines to Australia: what to expect"
+direct_answer_intro: "Filipino-Australians form a significant community in Australia. This corridor handles cases where an Australia-based Filipino has a family member die in the Philippines and needs remains brought to Australia."
+direct_answer_points:
+  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication"
+  - "Documentation takes 3-6 weeks. PSA and DFA authentication are the main bottlenecks."
+  - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
+  - "Australia Embassy in Manila can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for Philippines to UK repatriation"
+overview_body: "Contact local emergency services (911 in Metro Manila). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance is required. The Australian Department of Health and Aged Care regulations apply. State or territory funeral regulations govern burial or cremation: requirements differ between New South Wales, Victoria, Queensland, Western Australia, South Australia, and the Northern Territory. All documentation must be authenticated. (Australian Government, Department of Foreign Affairs and Trade, DFAT, 2025.)"
+dest_consular: "Australian Embassy or High Commission in Manila can assist Australian citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. Australian Government Consular Emergency Centre: +61 2 6261 3305 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +61 2 6261 3305."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certificate filed with Local Civil Registrar. PSA authentication requested."
+    timing: "Physician issues certificate. PSA authentication adds significant processing time."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "Australia Embassy in Manila notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Embalming is standard practice in the Philippines."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "DFA authentication, Bureau of Quarantine clearance, and all export permits obtained"
+    timing: "Allow 3-6 weeks. PSA and DFA are the main delays."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Manila (MNL) or Cebu (CEB)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the Philippines to Australia take?"
+    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases can take 8-16 weeks."
+  - question: "Why does Philippine repatriation take so long?"
+    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed."
+  - question: "What documents are required for repatriation from the Philippines?"
+    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased."
+  - question: "Does the British Embassy in the Philippines help with repatriation?"
+    answer: "The British Embassy in Manila can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. Australian Embassy or High Commission in Manila can assist Australian citizens a."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance requires the foreign death certificate, transit permit, and embalming certificate. State or territory regulations govern burial or cremation. The receiving funeral director coordinates with the relevant state authority."
+  - question: "Can I bring ashes home from the Philippines instead of repatriating the body?"
+    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance."
+links:
+  upward:
+    - url: "/repatriation-from-philippines/"
+      text: "Full Philippines repatriation guide"
+    - url: "/guides/death-abroad-philippines/"
+      text: "What to do if someone dies in Philippines"
+    - url: "/repatriation-from-australia/"
+      text: "Repatriation to Australia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/philippines-to-united-kingdom/"
+      text: "Repatriation from Philippines to the UK"
+    - url: "/routes/philippines-to-ireland/"
+      text: "Repatriation from Philippines to Ireland"
+---

@@ -1,0 +1,87 @@
+---
+title: "UAE to India Repatriation Guide"
+description: "Someone has died in the UAE. Repatriation to India takes 7-21 days. Police NOC, MOFA attestation, and Custom House clearance explained. Contact us 24/7."
+origin_key: "united-arab-emirates"
+dest_key: "in"
+origin_name: "United Arab Emirates"
+dest_name: "India"
+origin_slug: "united-arab-emirates"
+dest_slug: "india"
+slug: "united-arab-emirates-to-india"
+template_variant: "C"
+route_complexity: "low"
+timeline_avg: "7-21 days"
+timeline_fast: "5-7 days"
+timeline_complex: "4-12 weeks"
+embassy_city: "Abu Dhabi"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from the UAE to India: what to expect"
+direct_answer_intro: "Indian nationals form the largest expatriate group in the UAE. When an Indian expat dies in the UAE, their family in India often needs remains returned for Hindu, Muslim, Christian, or Sikh funeral rites. This is one of the highest-volume Gulf-to-India repatriation corridors. The critical first step is that every death in the UAE must be reported to police before anything else can happen. The police No Objection Certificate is the gate through which all other steps must pass."
+direct_answer_points:
+  - "Key documents: UAE death certificate (with MOFA attestation) and police NOC"
+  - "Police NOC required before any other step. In natural deaths, issued within 24-48 hours."
+  - "Indian Embassy or Consulate General in Dubai can register the death and advise. They cannot fund repatriation."
+  - "Summer temperature embargoes (June to September) may delay airline cargo acceptance."
+overview_heading: "What happens after a death in the UAE"
+overview_body: "Every death in the UAE must be reported to police immediately. The police issue a No Objection Certificate before any other step can proceed. The UAE death certificate is issued with MOFA attestation required for international validity. Emirates SkyCargo and Etihad Cargo operate multiple daily flights to Indian airports including Delhi (DEL), Mumbai (BOM), Chennai (MAA), Kochi (COK), and Hyderabad (HYD)."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy in Abu Dhabi and Consulate General in Dubai can assist with consular registration of the death and advise on documentation requirements. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours). Indian consulates in Dubai, Sharjah, and Ras Al Khaimah cover respective emirate regions."
+timeline_steps:
+  - step: 1
+    action: "Notify UAE police immediately. Every death requires police attendance."
+    timing: "Day of death. Indian Embassy Abu Dhabi or Consulate Dubai: +91 11 2301 2113. Cannot proceed without police NOC."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Police investigation. NOC issued."
+    timing: "Natural deaths: 24-48 hours. Investigation cases: weeks or months."
+    responsible: "UAE police (Dubai Police, Abu Dhabi Police, Sharjah Police)"
+  - step: 3
+    action: "UAE death certificate issued. MOFA attestation completed."
+    timing: "MOFA processing: 1-3 days in normal conditions. Longer during Ramadan and Eid."
+    responsible: "Local funeral director and UAE MOFA"
+  - step: 4
+    action: "Indian Embassy Abu Dhabi or Consulate General Dubai notified"
+    timing: "Simultaneous with Step 1. Embassy registers the death with Indian authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 5
+    action: "Embalming and all export permits obtained. Zinc-lined coffin prepared."
+    timing: "Allow 5-14 days total. Cannot begin until police NOC issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Dubai (DXB) or Abu Dhabi (AUH) to Indian airports"
+    timing: "Once complete. Note: summer temperature embargoes June to September may delay cargo. Multiple daily direct flights to DEL, BOM, MAA, and other Indian hubs."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Indian funeral director takes custody. Custom House clearance completed."
+    timing: "Within 24-48 hours of arrival. Clearance time varies by port of entry."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the UAE to India take?"
+    answer: "In a straightforward natural death case with a quick police NOC, repatriation from the UAE to India takes 5-7 days. Most cases take 7-21 days. Cases involving UAE police investigation can take 4-12 weeks."
+  - question: "What is the UAE police NOC and why is it required?"
+    answer: "UAE law requires police attendance and a No Objection Certificate for every death. This is standard procedure, not a sign of suspicion. In straightforward natural deaths, the NOC is typically issued within 24-48 hours."
+  - question: "What documents are required for repatriation from the UAE to India?"
+    answer: "The core documents are: UAE death certificate with MOFA attestation, police NOC, embalming certificate, freedom from infection certificate, and passport of the deceased. Custom House clearance in India requires these documents on arrival."
+  - question: "Does the Indian Embassy in the UAE help with repatriation?"
+    answer: "The Indian Embassy in Abu Dhabi and Consulate General in Dubai can register the death with Indian authorities and advise on documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours). Indian consulates in Dubai, Sharjah, and Ras Al Khaimah cover their respective regions."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the UAE death certificate with MOFA attestation, police NOC, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation."
+  - question: "Can I bring ashes from the UAE to India instead of repatriating the body?"
+    answer: "Non-Muslim cremation is available in the UAE at designated facilities. You will need the UAE death certificate with MOFA attestation, police NOC, cremation certificate, and export permit. Ashes can be carried on a passenger flight to India."
+links:
+  upward:
+    - url: "/repatriation-from-uae/"
+      text: "Full UAE repatriation guide"
+    - url: "/guides/death-abroad-uae/"
+      text: "What to do if someone dies in the UAE"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/uae-to-united-kingdom/"
+      text: "Repatriation from the UAE to the UK"
+    - url: "/routes/uae-to-ireland/"
+      text: "Repatriation from the UAE to Ireland"
+---

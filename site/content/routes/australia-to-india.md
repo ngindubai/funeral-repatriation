@@ -1,0 +1,87 @@
+---
+title: "Australia to India: Repatriation Guidance"
+description: "Someone has died in Australia. Repatriation to India takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "australia"
+dest_key: "in"
+origin_name: "Australia"
+dest_name: "India"
+origin_slug: "australia"
+dest_slug: "india"
+slug: "australia-to-india"
+template_variant: "B"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Australia to India: what to expect"
+direct_answer_intro: "This corridor handles cases where an India-based person has a family member die in Australia and needs remains brought to India. Indian-Australians who pass away in Australia are frequently repatriated to India for Hindu or Sikh funeral rites."
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Canberra registers the death and advises. They cannot fund repatriation."
+  - "India Embassy in Canberra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Each Australian state has its own coroner who may be involved in unexpected deaths."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Canberra can assist with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +91 11 2301 2113."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state/territory Registry. Death certificate issued."
+    timing: "Registered with state/territory Registry. Funeral director normally handles this."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to India"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Sydney, Melbourne, Brisbane."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "India funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to India take?"
+    answer: "In a straightforward case, repatriation from Australia to India takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, coronial investigation, or remote Northern Territory location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the India Embassy in Australia help with repatriation?"
+    answer: "The India Embassy in Canberra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the India Embassy in Canberra as soon as possible after the death."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the +91 11 2301 2113 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the foreign death certificate, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation at the destination."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit from the state health authority."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/australia-to-ireland/"
+      text: "Repatriation from Australia to Ireland"
+---

@@ -1,0 +1,87 @@
+---
+title: "Sri Lanka to United Arab Emirates: Repatriation Guidance"
+description: "Someone has died in Sri Lanka. Repatriation to United Arab Emirates takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "sri-lanka"
+dest_key: "ae"
+origin_name: "Sri Lanka"
+dest_name: "United Arab Emirates"
+origin_slug: "sri-lanka"
+dest_slug: "united-arab-emirates"
+slug: "sri-lanka-to-united-arab-emirates"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Colombo"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Sri Lanka to United Arab Emirates: what to expect"
+direct_answer_intro: "Sri Lankan nationals form a significant worker community in the UAE. This corridor handles cases where a UAE-based Sri Lankan has a family member die in Sri Lanka and needs remains returned to the UAE."
+direct_answer_points:
+  - "Key documents: Death certificate (with certified English translation) and Embalming certificate"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British High Commission in Colombo registers the death and advises. They cannot fund repatriation."
+  - "United Arab Emirates Embassy in Colombo can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Sri Lanka"
+overview_body: "Contact police (119) or ambulance (110). Deaths must be certified by a registered medical practitioner. Unexpected deaths require police notification. Death registered at the local Registrar General's Department. The death certificate is issued in Sinhala with an English translation available."
+dest_reception: "The UAE funeral home or government mortuary takes custody at Dubai International (DXB) or Abu Dhabi International (AUH) cargo terminal. UAE Ministry of Health clearance is required before burial or cremation. All foreign documentation must be attested by the UAE Embassy in the country of origin and authenticated by UAE authorities. (UAE Ministry of Foreign Affairs and International Cooperation, MOFAIC, 2025.)"
+dest_consular: "UAE Embassy in Colombo handles attestation of repatriation documents. Contact the UAE Embassy in Sri Lanka for document authentication requirements. UAE Ministry of Foreign Affairs and International Cooperation (MOFAIC) can be reached via the UAE Embassy during business hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact UAE Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registrar General's Department"
+    timing: "Death certificate in Sinhala. English translation required for UK purposes."
+    responsible: "Local funeral director and Registrar General"
+  - step: 3
+    action: "British High Commission Colombo notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bandaranaike International Airport (CMB), Colombo"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United Arab Emirates funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sri Lanka to United Arab Emirates take?"
+    answer: "In a straightforward case, repatriation from Sri Lanka to United Arab Emirates takes 14-28 days. The fastest cases complete in 10-14 days. Complex cases involving investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Sri Lanka?"
+    answer: "The core documents are: Death certificate (with certified English translation), Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the United Arab Emirates Embassy in Sri Lanka help with repatriation?"
+    answer: "The United Arab Emirates Embassy in Colombo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United Arab Emirates Embassy in Colombo as soon as possible after the death."
+  - question: "What is the first step when someone dies in Sri Lanka?"
+    answer: "Notify a UK repatriation specialist and the contact UAE Embassy in origin country (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in United Arab Emirates?"
+    answer: "The UAE funeral home takes custody at Dubai (DXB) or Abu Dhabi (AUH) cargo terminal. UAE Ministry of Health clearance is required. All documents must be attested by the UAE Embassy in the country of origin. Islamic remains require certification for Islamic burial; non-Islamic remains follow separate procedures."
+  - question: "Can I bring ashes home from Sri Lanka instead of repatriating the body?"
+    answer: "Yes. Cremation in Sri Lanka and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight from Colombo."
+links:
+  upward:
+    - url: "/repatriation-from-sri-lanka/"
+      text: "Full Sri Lanka repatriation guide"
+    - url: "/guides/death-abroad-sri-lanka/"
+      text: "What to do if someone dies in Sri Lanka"
+    - url: "/repatriation-from-united-arab-emirates/"
+      text: "Repatriation to United Arab Emirates: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sri-lanka-to-united-kingdom/"
+      text: "Repatriation from Sri Lanka to the UK"
+    - url: "/routes/sri-lanka-to-ireland/"
+      text: "Repatriation from Sri Lanka to Ireland"
+---

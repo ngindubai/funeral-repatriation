@@ -1,0 +1,87 @@
+---
+title: "Jordan to United Arab Emirates: Repatriation Guidance"
+description: "Someone has died in Jordan. Repatriation to United Arab Emirates takes 7-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "jordan"
+dest_key: "ae"
+origin_name: "Jordan"
+dest_name: "United Arab Emirates"
+origin_slug: "jordan"
+dest_slug: "united-arab-emirates"
+slug: "jordan-to-united-arab-emirates"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "7-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Amman"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Jordan to United Arab Emirates: what to expect"
+direct_answer_intro: "Jordanian nationals form a professional community in the UAE. This corridor handles repatriation of remains from Jordan to the UAE for families of UAE-based Jordanians. Documentation includes UAE Embassy attestation in Amman."
+direct_answer_points:
+  - "Key document: Jordanian death certificate (shihada al wafat, in Arabic) with certified English translation"
+  - "Documentation takes 5-14 days. Police report required for unexpected deaths."
+  - "British Embassy in Amman registers the death and advises. They cannot fund repatriation."
+  - "United Arab Emirates Embassy in Amman can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Jordan"
+overview_body: "Contact police (911) or ambulance (912). Unexpected deaths require police attendance. Death registered with the Civil Status Department (dairat al ahwal al madaniya). The death certificate (shihada al wafat) is issued in Arabic and requires certified English translation."
+dest_reception: "The UAE funeral home or government mortuary takes custody at Dubai International (DXB) or Abu Dhabi International (AUH) cargo terminal. UAE Ministry of Health clearance is required before burial or cremation. All foreign documentation must be attested by the UAE Embassy in the country of origin and authenticated by UAE authorities. (UAE Ministry of Foreign Affairs and International Cooperation, MOFAIC, 2025.)"
+dest_consular: "UAE Embassy in Amman handles attestation of repatriation documents. Contact the UAE Embassy in Jordan for document authentication requirements. UAE Ministry of Foreign Affairs and International Cooperation (MOFAIC) can be reached via the UAE Embassy during business hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact UAE Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Civil Status Department. Shihada al wafat issued."
+    timing: "Certificate in Arabic. Certified English translation required."
+    responsible: "Local funeral director and Civil Status Department"
+  - step: 3
+    action: "United Arab Emirates Embassy in Amman notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After police and civil registration release the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 5-14 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Queen Alia International Airport (AMM) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. Royal Jordanian and British Airways serve AMM-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United Arab Emirates funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Jordan to United Arab Emirates take?"
+    answer: "In a straightforward case, repatriation from Jordan to United Arab Emirates takes 7-21 days. The fastest cases complete in 7-10 days. Complex cases involving a police investigation can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Jordan to the UK?"
+    answer: "The core documents are: shihada al wafat (Jordanian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the United Arab Emirates Embassy in Jordan help with repatriation?"
+    answer: "The United Arab Emirates Embassy in Amman can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United Arab Emirates Embassy in Amman as soon as possible after the death."
+  - question: "What is the first step when someone dies in Jordan?"
+    answer: "Notify a UK repatriation specialist and the contact UAE Embassy in origin country (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a specialist."
+  - question: "What happens when the body arrives in United Arab Emirates?"
+    answer: "The UAE funeral home takes custody at Dubai (DXB) or Abu Dhabi (AUH) cargo terminal. UAE Ministry of Health clearance is required. All documents must be attested by the UAE Embassy in the country of origin. Islamic remains require certification for Islamic burial; non-Islamic remains follow separate procedures."
+  - question: "Can I bring ashes home from Jordan instead of repatriating the body?"
+    answer: "Cremation in Jordan is not widely available given the predominantly Muslim population. Most repatriations from Jordan are full body repatriations. Contact us to discuss the options specific to your situation."
+links:
+  upward:
+    - url: "/repatriation-from-jordan/"
+      text: "Full Jordan repatriation guide"
+    - url: "/guides/death-abroad-jordan/"
+      text: "What to do if someone dies in Jordan"
+    - url: "/repatriation-from-united-arab-emirates/"
+      text: "Repatriation to United Arab Emirates: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/jordan-to-united-kingdom/"
+      text: "Repatriation from Jordan to the UK"
+    - url: "/routes/jordan-to-ireland/"
+      text: "Repatriation from Jordan to Ireland"
+---

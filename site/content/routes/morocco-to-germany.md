@@ -1,0 +1,87 @@
+---
+title: "Morocco to Germany: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Germany takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "de"
+origin_name: "Morocco"
+dest_name: "Germany"
+origin_slug: "morocco"
+dest_slug: "germany"
+slug: "morocco-to-germany"
+template_variant: "B"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Germany: what to expect"
+direct_answer_intro: "Moroccan nationals form part of Germany's North African diaspora community. This corridor handles repatriation of remains from Morocco to Germany for families of Germany-based Moroccans."
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Germany Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Rabat can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Germany Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Germany take?"
+    answer: "In a straightforward case, repatriation from Morocco to Germany takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Germany Embassy in Morocco help with repatriation?"
+    answer: "The Germany Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the +49 30 5000 2000 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---

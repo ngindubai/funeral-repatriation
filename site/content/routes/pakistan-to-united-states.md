@@ -1,0 +1,88 @@
+---
+title: "Pakistan to United States: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to United States takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "us"
+origin_name: "Pakistan"
+dest_name: "United States"
+origin_slug: "pakistan"
+dest_slug: "united-states"
+slug: "pakistan-to-united-states"
+template_variant: "C"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to United States: what to expect"
+direct_answer_intro: "Pakistani-American communities across New York, Chicago, and Texas account for consistent repatriation demand on this corridor. Pakistan's documentation process is well-established given the volume of overseas Pakistani nationals."
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "United States Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in Islamabad can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to United States take?"
+    answer: "In a straightforward case, repatriation from Pakistan to United States takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +1 (202) 501-4444 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the United States Embassy in Pakistan help with repatriation?"
+    answer: "The United States Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "Nigeria to Canada: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to Canada takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "ca"
+origin_name: "Nigeria"
+dest_name: "Canada"
+origin_slug: "nigeria"
+dest_slug: "canada"
+slug: "nigeria-to-canada"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to Canada: what to expect"
+direct_answer_intro: "Nigerian-Canadians form a growing community across Ontario and British Columbia. This corridor handles cases where a Canada-based Nigerian has a family member die in Nigeria and needs remains brought to Canada."
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "Canada Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The Canadian funeral director takes custody at the cargo terminal. Canadian Border Services Agency (CBSA) clearance is required. The required documents are: the foreign death certificate, transit or burial permit, and embalming certificate. Provincial or territorial regulations apply and vary between Ontario, British Columbia, Quebec, Alberta, and other provinces. (Global Affairs Canada, 2025.)"
+dest_consular: "Canadian Embassy or High Commission in Abuja can assist Canadian citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. Global Affairs Canada emergency line: +1 (613) 996-8885 (24 hours, collect calls accepted)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (613) 996-8885."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Canada funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to Canada take?"
+    answer: "In a straightforward case, repatriation from Nigeria to Canada takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Canada Embassy in Nigeria help with repatriation?"
+    answer: "The Canada Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Canada Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in Canada?"
+    answer: "The Canadian funeral director takes custody at the cargo terminal. CBSA clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. Provincial regulations govern the burial or cremation. The receiving funeral director notifies the appropriate provincial authority."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-canada/"
+      text: "Repatriation to Canada: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---

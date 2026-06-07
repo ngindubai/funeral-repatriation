@@ -1,0 +1,88 @@
+---
+title: "Egypt to United Arab Emirates: Repatriation Guidance"
+description: "Someone has died in Egypt. Repatriation to United Arab Emirates takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "egypt"
+dest_key: "ae"
+origin_name: "Egypt"
+dest_name: "United Arab Emirates"
+origin_slug: "egypt"
+dest_slug: "united-arab-emirates"
+slug: "egypt-to-united-arab-emirates"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "7-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Cairo"
+doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Egypt to United Arab Emirates: what to expect"
+direct_answer_intro: "Egyptian nationals form a substantial community in the UAE, particularly in Dubai and Abu Dhabi. This corridor handles repatriation of remains from Egypt to the UAE for family members of UAE-based Egyptians."
+direct_answer_points:
+  - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
+  - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
+  - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
+  - "United Arab Emirates Embassy in Cairo can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Egypt works"
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the  Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+dest_reception: "The UAE funeral home or government mortuary takes custody at Dubai International (DXB) or Abu Dhabi International (AUH) cargo terminal. UAE Ministry of Health clearance is required before burial or cremation. All foreign documentation must be attested by the UAE Embassy in the country of origin and authenticated by UAE authorities. (UAE Ministry of Foreign Affairs and International Cooperation, MOFAIC, 2025.)"
+dest_consular: "UAE Embassy in Cairo handles attestation of repatriation documents. Contact the UAE Embassy in Egypt for document authentication requirements. UAE Ministry of Foreign Affairs and International Cooperation (MOFAIC) can be reached via the UAE Embassy during business hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact UAE Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local health office or civil registry"
+    timing: "In tourist areas, 3-5 days. Cairo and non-tourist areas take longer."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "United Arab Emirates Embassy in Cairo notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Cairo."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed: MOFA stamp, all permits obtained"
+    timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Cairo International Airport"
+    timing: "Once all documentation complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United Arab Emirates funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Egypt to United Arab Emirates take?"
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to United Arab Emirates takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Egypt to the UK?"
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of the deceased."
+  - question: "Does the United Arab Emirates Embassy in Egypt help with repatriation?"
+    answer: "The United Arab Emirates Embassy in Cairo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United Arab Emirates Embassy in Cairo as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Egypt?"
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
+  - question: "What happens when the body arrives in United Arab Emirates?"
+    answer: "The UAE funeral home takes custody at Dubai (DXB) or Abu Dhabi (AUH) cargo terminal. UAE Ministry of Health clearance is required. All documents must be attested by the UAE Embassy in the country of origin. Islamic remains require certification for Islamic burial; non-Islamic remains follow separate procedures."
+  - question: "Is cremation available in Egypt?"
+    answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
+links:
+  upward:
+    - url: "/repatriation-from-egypt/"
+      text: "Full Egypt repatriation guide"
+    - url: "/guides/death-abroad-egypt/"
+      text: "What to do if someone dies in Egypt"
+    - url: "/repatriation-from-united-arab-emirates/"
+      text: "Repatriation to United Arab Emirates: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/egypt-to-united-kingdom/"
+      text: "Repatriation from Egypt to the UK"
+    - url: "/routes/egypt-to-ireland/"
+      text: "Repatriation from Egypt to Ireland"
+---

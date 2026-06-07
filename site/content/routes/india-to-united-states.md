@@ -1,0 +1,87 @@
+---
+title: "India to United States: Repatriation Guidance"
+description: "Someone has died in India. Repatriation to United States takes 4-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "india"
+dest_key: "us"
+origin_name: "India"
+dest_name: "United States"
+origin_slug: "india"
+dest_slug: "united-states"
+slug: "india-to-united-states"
+template_variant: "A"
+route_complexity: "high"
+timeline_avg: "4-6 weeks"
+timeline_fast: "14-21 days"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "New Delhi"
+doc_processing_time: "14-30 days minimum. Often 4-6 weeks."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from India to United States: what to expect"
+direct_answer_intro: "The Indian-American diaspora is one of the largest in the United States. Repatriation from India to the US occurs when an Indian-American dies during a visit home, or when a US-based person with Indian heritage needs remains returned. Documentation in India is complex and requires certified translation."
+direct_answer_points:
+  - "Key documents: Indian death certificate and No Objection Certificate (NOC) from local police"
+  - "Documentation takes 14-30 days minimum. Often 4-6 weeks."
+  - "Post-mortem is frequently required: Indian police routinely order examinations for unexpected foreign national deaths."
+  - "United States Embassy in New Delhi can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for India to UK repatriation"
+overview_body: "Contact local emergency services (112 in many states, 100 for police, 102/108 for ambulance). If death occurs outside hospital, police must be notified. Contact the British High Commission in New Delhi. Death must be registered with the local municipal authority within 21 days."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in New Delhi can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local municipal authority within 21 days"
+    timing: "Funeral director handles registration. Post-mortem ordered by police delays this."
+    responsible: "Local funeral director and municipal authority"
+  - step: 3
+    action: "British High Commission New Delhi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent in Indian climate)"
+    timing: "India's tropical climate requires urgent embalming."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police NOC, health authority clearance, and all export documentation obtained"
+    timing: "Allow 14-30 days minimum. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Delhi (DEL), Mumbai (BOM), or relevant regional airport"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Delhi and Mumbai."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from India to United States take?"
+    answer: "In a straightforward case, repatriation from India to United States takes 4-6 weeks. The fastest cases complete in 14-21 days. Complex cases involving a post-mortem or death in a smaller city can take 8-16 weeks or longer."
+  - question: "Is a post-mortem always required for British nationals who die in India?"
+    answer: "Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals. It is standard procedure. The post-mortem adds time and the body cannot be released until police issue the No Objection Certificate (NOC)."
+  - question: "What documents are required for repatriation from India to the UK?"
+    answer: "The core documents are: Indian death certificate, Embalming certificate, Police No Objection Certificate (NOC), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the United States Embassy in India help with repatriation?"
+    answer: "The United States Embassy in New Delhi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in New Delhi as soon as possible after the death."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+  - question: "Can I bring ashes home from India instead of repatriating the body?"
+    answer: "Yes. Cremation in India and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and a No Objection Certificate from the local authorities."
+links:
+  upward:
+    - url: "/repatriation-from-india/"
+      text: "Full India repatriation guide"
+    - url: "/guides/death-abroad-india/"
+      text: "What to do if someone dies in India"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/india-to-united-kingdom/"
+      text: "Repatriation from India to the UK"
+    - url: "/routes/india-to-ireland/"
+      text: "Repatriation from India to Ireland"
+---

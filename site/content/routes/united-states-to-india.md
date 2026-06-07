@@ -1,0 +1,87 @@
+---
+title: "United States to India Repatriation Guide"
+description: "Someone has died in the United States. Repatriation to India takes 10-21 days. State rules and Custom House clearance explained. Contact us 24/7."
+origin_key: "united-states"
+dest_key: "in"
+origin_name: "United States"
+dest_name: "India"
+origin_slug: "united-states"
+dest_slug: "india"
+slug: "united-states-to-india"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from the United States to India: what to expect"
+direct_answer_intro: "Indian-Americans who pass away in the United States are frequently repatriated to India for Hindu, Sikh, Muslim, or Christian funeral rites. This corridor handles cases where the family in India needs remains returned. Death registration in the US is state-based; each of the 50 states has its own medical examiner or coroner and its own death certificate format. Despite this, the US is generally an efficient repatriation origin once documentation is in place."
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued, certified copy) and embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. New York and California take longer."
+  - "Indian Embassy or High Commission in Washington DC registers the death and advises. They cannot fund repatriation."
+  - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
+overview_heading: "What happens after a death in the United States"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation. The funeral home handles the transit permit application. The Indian Embassy or High Commission notifies the relevant consulate and can advise on specific state procedures."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Washington DC can assist with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours). Indian consulates in New York, Chicago, Houston, San Francisco, and Atlanta cover respective regions."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Indian Embassy: +91 11 2301 2113 or nearest Indian consulate."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. State death certificate issued."
+    timing: "State-specific. New York and California take longer. Medical examiner investigation adds time."
+    responsible: "Local funeral director and state civil records office"
+  - step: 3
+    action: "Indian Embassy or Consulate in relevant US city notified"
+    timing: "Simultaneous with Step 1. Embassy registers the death with Indian authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation. Zinc-lined coffin required for international shipment to India."
+    timing: "US funeral industry is professional and internationally experienced."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit, health certificate, and all export documentation obtained"
+    timing: "Allow 5-14 days depending on state."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to India from nearest major hub: JFK, LAX, ORD, MIA, BOS, or EWR"
+    timing: "Once all documentation complete. Air India, United Airlines, and other carriers serve direct routes to Delhi and Mumbai."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Indian funeral director takes custody. Custom House clearance completed."
+    timing: "Within 24-48 hours of arrival. Clearance time varies by port of entry."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the United States to India take?"
+    answer: "In a straightforward case, repatriation from the United States to India takes 7-10 days. Most cases take 10-21 days. Complex cases involving a county coroner investigation can take 3-8 weeks."
+  - question: "Does it matter which US state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner, its own death certificate format, and its own processing timelines. New York City and Los Angeles County have high caseloads and longer processing times. Smaller states are generally faster."
+  - question: "What documents are required for repatriation from the US to India?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), embalming certificate, transit permit for human remains, and passport of the deceased. Custom House clearance in India requires these documents on arrival."
+  - question: "Does the Indian Embassy in the US help with repatriation?"
+    answer: "The Indian Embassy in Washington DC and consulates in New York, Chicago, Houston, San Francisco, and Atlanta can register the death with Indian authorities and advise on documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours)."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the foreign death certificate, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation at the destination."
+  - question: "Can I bring ashes home from the US to India instead of repatriating the body?"
+    answer: "Yes. Cremation in the United States and bringing ashes to India is simpler and less costly. You will need the state death certificate and cremation certificate. Ashes can be carried on a passenger flight to India."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full USA repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in the USA"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/usa-to-united-kingdom/"
+      text: "Repatriation from the USA to the UK"
+    - url: "/routes/usa-to-ireland/"
+      text: "Repatriation from the USA to Ireland"
+---

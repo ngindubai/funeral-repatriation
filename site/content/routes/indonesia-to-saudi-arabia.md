@@ -1,0 +1,88 @@
+---
+title: "Indonesia to Saudi Arabia: Repatriation Guidance"
+description: "Someone has died in Indonesia. Repatriation to Saudi Arabia takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "indonesia"
+dest_key: "sa"
+origin_name: "Indonesia"
+dest_name: "Saudi Arabia"
+origin_slug: "indonesia"
+dest_slug: "saudi-arabia"
+slug: "indonesia-to-saudi-arabia"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Jakarta"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Indonesia to Saudi Arabia: what to expect"
+direct_answer_intro: "Indonesian nationals work in Saudi Arabia in significant numbers. This corridor handles cases where a Saudi-based Indonesian has a family member die in Indonesia and needs remains brought to Saudi Arabia."
+direct_answer_points:
+  - "Key document: Surat keterangan kematian (Indonesian death certificate, in Bahasa Indonesia) with certified English translation"
+  - "Bali deaths require internal transfer to Jakarta (Soekarno-Hatta airport) for international cargo."
+  - "British Embassy in Jakarta registers the death and advises. They cannot fund repatriation."
+  - "Police must be notified for all unexpected deaths. Procedure varies by province."
+  - "Saudi Arabia Embassy in Jakarta can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Indonesia"
+overview_body: "Call 112 for emergency services. Unexpected deaths require police attendance. Death registered with the local civil registry (catatan sipil). The surat keterangan kematian is issued in Bahasa Indonesia and requires certified English translation. Deaths in Bali require transfer to Jakarta (CGK) for international cargo departure."
+dest_reception: "The Saudi government mortuary or funeral home takes custody at King Khalid International (RUH, Riyadh), King Abdulaziz International (JED, Jeddah), or King Fahd International (DMM, Dammam) cargo terminal. Saudi Ministry of Health approval is required before the remains can be received. All documents must be authenticated by the Saudi Embassy in the country of origin. Non-Muslim remains require specific certification and procedures. (Saudi Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Saudi Embassy in Jakarta handles authentication of repatriation documents. Contact the Saudi Embassy in Indonesia for document legalisation requirements. Saudi Ministry of Foreign Affairs coordinates with the receiving authorities in Saudi Arabia."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact Saudi Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local civil registry. Surat keterangan kematian issued."
+    timing: "Certificate in Bahasa Indonesia. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Saudi Arabia Embassy in Jakarta notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and internal transfer (if Bali or other island)"
+    timing: "Bali deaths require transfer to Jakarta (CGK). Add 1-2 days."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Soekarno-Hatta International Airport (CGK), Jakarta to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Saudi Arabia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Indonesia to Saudi Arabia take?"
+    answer: "In a straightforward case, repatriation from Indonesia to Saudi Arabia takes 14-28 days. Bali cases that require Jakarta transfer take 10-14 days in best-case. Complex cases can take 4-8 weeks."
+  - question: "My relative died in Bali. What happens?"
+    answer: "Deaths in Bali are handled locally by Balinese authorities. The body must be transferred from Bali to Jakarta (Soekarno-Hatta airport, CGK) before international cargo can depart. This adds 1-2 days. Contact a specialist on the day of death."
+  - question: "What documents are required for repatriation from Indonesia to the UK?"
+    answer: "The core documents are: surat keterangan kematian (Indonesian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the Saudi Arabia Embassy in Indonesia help with repatriation?"
+    answer: "The Saudi Arabia Embassy in Jakarta can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Saudi Arabia Embassy in Jakarta as soon as possible after the death."
+  - question: "What happens when the body arrives in Saudi Arabia?"
+    answer: "The Saudi government mortuary takes custody at the cargo terminal. Saudi Ministry of Health approval is required in advance. All documents must be authenticated by the Saudi Embassy in the origin country. Non-Muslim remains require specific certification. The family or sponsor arranges the receiving funeral home."
+  - question: "Can I bring ashes home from Indonesia instead of repatriating the body?"
+    answer: "Yes. Cremation in Indonesia (including Bali, where Hindu cremation is traditional) and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-indonesia/"
+      text: "Full Indonesia repatriation guide"
+    - url: "/guides/death-abroad-indonesia/"
+      text: "What to do if someone dies in Indonesia"
+    - url: "/repatriation-from-saudi-arabia/"
+      text: "Repatriation to Saudi Arabia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/indonesia-to-united-kingdom/"
+      text: "Repatriation from Indonesia to the UK"
+    - url: "/routes/indonesia-to-ireland/"
+      text: "Repatriation from Indonesia to Ireland"
+---

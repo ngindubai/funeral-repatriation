@@ -1,0 +1,87 @@
+---
+title: "Kenya to United Arab Emirates: Repatriation Guidance"
+description: "Someone has died in Kenya. Repatriation to United Arab Emirates takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "kenya"
+dest_key: "ae"
+origin_name: "Kenya"
+dest_name: "United Arab Emirates"
+origin_slug: "kenya"
+dest_slug: "united-arab-emirates"
+slug: "kenya-to-united-arab-emirates"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Kenya to United Arab Emirates: what to expect"
+direct_answer_intro: "Kenyan nationals work across the UAE in various sectors. This corridor handles cases where a UAE-based Kenyan national needs remains of a family member brought from Kenya to the UAE."
+direct_answer_points:
+  - "Key documents: Kenyan death certificate and Port Health clearance (freedom from infection)"
+  - "Documentation takes 7-21 days. All documentation and cargo departs from Nairobi."
+  - "British High Commission in Nairobi registers the death and advises. They cannot fund repatriation."
+  - "United Arab Emirates Embassy in Nairobi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Kenya"
+overview_body: "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend. Contact the British High Commission in Nairobi. Death must be registered with the civil registrar at the district office. Deaths in safari areas require road or charter aircraft transfer to Nairobi."
+dest_reception: "The UAE funeral home or government mortuary takes custody at Dubai International (DXB) or Abu Dhabi International (AUH) cargo terminal. UAE Ministry of Health clearance is required before burial or cremation. All foreign documentation must be attested by the UAE Embassy in the country of origin and authenticated by UAE authorities. (UAE Ministry of Foreign Affairs and International Cooperation, MOFAIC, 2025.)"
+dest_consular: "UAE Embassy in Nairobi handles attestation of repatriation documents. Contact the UAE Embassy in Kenya for document authentication requirements. UAE Ministry of Foreign Affairs and International Cooperation (MOFAIC) can be reached via the UAE Embassy during business hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact UAE Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with civil registrar. Burial permit obtained."
+    timing: "Funeral director handles registration. Safari area deaths require transfer to Nairobi first."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British High Commission Nairobi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming in Nairobi"
+    timing: "Professional embalming facilities available in Nairobi. Limited outside the capital."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Port Health clearance and all export permits obtained"
+    timing: "Allow 7-21 days. Port Health is an additional step specific to Kenya."
+    responsible: "Local funeral director and Port Health"
+  - step: 6
+    action: "Air cargo from Nairobi Jomo Kenyatta International (NBO)"
+    timing: "Once all documentation complete. Kenya Airways and British Airways serve NBO-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United Arab Emirates funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Kenya to United Arab Emirates take?"
+    answer: "In a straightforward Nairobi case, repatriation from Kenya to United Arab Emirates takes 10-14 days. Deaths in safari areas or remote locations add significant time for internal transfer. Most cases take 14-28 days. Complex cases can take 6-12 weeks."
+  - question: "My relative died on safari in Kenya. What should I do?"
+    answer: "Contact a UK repatriation specialist and the contact UAE Embassy in origin country (+44 (0)20 7008 5000) immediately. Deaths in the Masai Mara, Amboseli, Tsavo, or other remote areas require road or light aircraft transfer to Nairobi before any documentation can begin."
+  - question: "What documents are required for repatriation from Kenya to the UK?"
+    answer: "The core documents are: Kenyan death certificate, Embalming certificate, Port Health clearance (freedom from infection certificate), Police report/clearance, and Passport of the deceased."
+  - question: "Does the United Arab Emirates Embassy in Kenya help with repatriation?"
+    answer: "The United Arab Emirates Embassy in Nairobi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United Arab Emirates Embassy in Nairobi as soon as possible after the death."
+  - question: "What happens when the body arrives in United Arab Emirates?"
+    answer: "The UAE funeral home takes custody at Dubai (DXB) or Abu Dhabi (AUH) cargo terminal. UAE Ministry of Health clearance is required. All documents must be attested by the UAE Embassy in the country of origin. Islamic remains require certification for Islamic burial; non-Islamic remains follow separate procedures."
+  - question: "Can I bring ashes home from Kenya instead of repatriating the body?"
+    answer: "Yes. Cremation in Kenya and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and Port Health clearance."
+links:
+  upward:
+    - url: "/repatriation-from-kenya/"
+      text: "Full Kenya repatriation guide"
+    - url: "/guides/death-abroad-kenya/"
+      text: "What to do if someone dies in Kenya"
+    - url: "/repatriation-from-united-arab-emirates/"
+      text: "Repatriation to United Arab Emirates: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/kenya-to-united-kingdom/"
+      text: "Repatriation from Kenya to the UK"
+    - url: "/routes/kenya-to-ireland/"
+      text: "Repatriation from Kenya to Ireland"
+---

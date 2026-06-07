@@ -1,0 +1,87 @@
+---
+title: "Vietnam to United States: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to United States takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "us"
+origin_name: "Vietnam"
+dest_name: "United States"
+origin_slug: "vietnam"
+dest_slug: "united-states"
+slug: "vietnam-to-united-states"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to United States: what to expect"
+direct_answer_intro: "Vietnamese-American communities across California, Texas, and Virginia account for substantial repatriation volume on this corridor. Vietnamese documentation requires certified English translation and official authentication."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "United States Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in Hanoi can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "United States Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to United States take?"
+    answer: "In a straightforward case, repatriation from Vietnam to United States takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the United States Embassy in Vietnam help with repatriation?"
+    answer: "The United States Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

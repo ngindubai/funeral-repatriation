@@ -1,0 +1,88 @@
+---
+title: "Canada to India: Repatriation Guidance"
+description: "Someone has died in Canada. Repatriation to India takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "canada"
+dest_key: "in"
+origin_name: "Canada"
+dest_name: "India"
+origin_slug: "canada"
+dest_slug: "india"
+slug: "canada-to-india"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Ottawa"
+doc_processing_time: "5-10 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Canada to India: what to expect"
+direct_answer_intro: "This corridor handles cases where an India-based person has a family member die in Canada and needs remains brought to India. Indian-Canadians who pass away in Canada are frequently repatriated to India for funeral rites."
+direct_answer_points:
+  - "Key document: Province-issued death certificate (in English throughout)"
+  - "Documentation takes 5-10 days. Each province has its own civil registration office."
+  - "British High Commission in Ottawa and consulates in major cities register the death and advise."
+  - "Province-specific coroners or medical examiners may be involved in unexpected deaths."
+  - "India Embassy in Ottawa can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Canada"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Canada's death registration is provincial: each of the 10 provinces and 3 territories has its own civil registration office. Documentation is in English (or French in Quebec, with English available). Transit permit required for international transport of human remains."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Ottawa can assist with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +91 11 2301 2113."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. Death certificate issued by province."
+    timing: "Province-specific timelines. Ontario and British Columbia generally efficient."
+    responsible: "Local funeral director and provincial civil registration office"
+  - step: 3
+    action: "British High Commission or Consulate in relevant city notified"
+    timing: "Simultaneous with Step 1. High Commission registers death with UK authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Canadian funeral industry is professional and experienced with international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit and export documentation obtained"
+    timing: "Allow 5-10 days depending on province."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to India"
+    timing: "Once all documentation complete. Air Canada and British Airways serve direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "India funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Canada to India take?"
+    answer: "In a straightforward case, repatriation from Canada to India takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a provincial coroner investigation can take 3-6 weeks."
+  - question: "Does it matter which province the death occurred in?"
+    answer: "Each Canadian province has its own civil registration office and its own medical examiner or coroner. Processing times vary slightly. Quebec issues death certificates in French, though English versions are available."
+  - question: "What documents are required for repatriation from Canada to the UK?"
+    answer: "The core documents are: province-issued death certificate (certified copy), embalming certificate, transit permit for human remains, and passport of the deceased."
+  - question: "Does the India Embassy in Canada help with repatriation?"
+    answer: "The India Embassy in Ottawa can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the India Embassy in Ottawa as soon as possible after the death."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the foreign death certificate, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation at the destination."
+  - question: "Can I bring ashes home from Canada instead of repatriating the body?"
+    answer: "Yes. Cremation in Canada and bringing ashes home to the UK is often simpler and less costly. Ashes can be carried on a passenger flight. You will need the death certificate and cremation certificate."
+links:
+  upward:
+    - url: "/repatriation-from-canada/"
+      text: "Full Canada repatriation guide"
+    - url: "/guides/death-abroad-canada/"
+      text: "What to do if someone dies in Canada"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/canada-to-united-kingdom/"
+      text: "Repatriation from Canada to the UK"
+    - url: "/routes/canada-to-ireland/"
+      text: "Repatriation from Canada to Ireland"
+---

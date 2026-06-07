@@ -1,0 +1,88 @@
+---
+title: "Portugal to France: Repatriation Guidance"
+description: "Someone has died in Portugal. Repatriation to France takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "portugal"
+dest_key: "fr"
+origin_name: "Portugal"
+dest_name: "France"
+origin_slug: "portugal"
+dest_slug: "france"
+slug: "portugal-to-france"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Lisbon"
+doc_processing_time: "3-7 days for full documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Portugal to France: what to expect"
+direct_answer_intro: "Portuguese nationals are among the oldest and largest EU migrant communities in France. This corridor handles cases where a France-based Portuguese has a family member die in Portugal and needs remains brought to France. EU documentation simplifies some requirements."
+direct_answer_points:
+  - "Key documents: Certidao de obito (multilingual version available) and Embalming certificate"
+  - "Documentation takes 3-7 days. Algarve cases benefit from experienced local providers."
+  - "British Embassy in Lisbon registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by Ministerio Publico for sudden, violent, or unexplained deaths."
+  - "France Embassy in Lisbon can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Portugal"
+overview_body: "Contact emergency services (112). A doctor certifies the death. Death must be registered at the local conservatoria do registo civil. A multilingual death certificate is available under EU convention."
+dest_reception: "The French funeral director (pompes funebres) takes custody at Charles de Gaulle (CDG, Paris) or another French international airport. The prefecture may require a permis d'inhumer (burial permit) or transport authorisation before burial or cremation can proceed. All foreign documents must carry a certified French translation. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+dest_consular: "French Embassy in Lisbon can advise on repatriation documentation requirements for France. French Ministry of Europe and Foreign Affairs (MAE) emergency assistance: +33 1 43 17 67 67 (24 hours). The French Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +33 1 43 17 67 67."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at conservatoria do registo civil. Certidao de obito issued."
+    timing: "Doctor provides initial certificate. Multilingual version available under EU convention."
+    responsible: "Local funeral director and conservatoria"
+  - step: 3
+    action: "France Embassy in Lisbon notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Algarve funeral directors experienced with UK repatriations."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit authorisation and all export permits obtained"
+    timing: "Allow 3-7 days for full documentation. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lisbon (LIS), Porto (OPO), or Faro (FAO)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "France funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Portugal to France take?"
+    answer: "In a straightforward Algarve case, repatriation from Portugal to France takes 5-7 days. Most cases take 7-14 days. Complex cases involving the Ministerio Publico (post-mortem) can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Portugal to the UK?"
+    answer: "The core documents are: Certidao de obito (multilingual version if available), Embalming certificate, Freedom from infection certificate, Transit authorisation, and Passport of the deceased."
+  - question: "Does the France Embassy in Portugal help with repatriation?"
+    answer: "The France Embassy in Lisbon can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the France Embassy in Lisbon as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Portugal?"
+    answer: "The Ministerio Publico orders a post-mortem for sudden, violent, suspicious, or unexplained deaths. This adds 1-4 weeks. The body cannot be released until the prosecutor authorises it."
+  - question: "What happens when the body arrives in France?"
+    answer: "The French funeral director takes custody at Charles de Gaulle (CDG) or another French airport. The prefecture issues a permis d'inhumer before burial or cremation. All foreign documents require certified French translation. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Portugal instead of repatriating the body?"
+    answer: "Yes. Cremation in Portugal and bringing ashes home to the UK is an option. You will need the certidao de obito, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-portugal/"
+      text: "Full Portugal repatriation guide"
+    - url: "/guides/death-abroad-portugal/"
+      text: "What to do if someone dies in Portugal"
+    - url: "/repatriation-from-france/"
+      text: "Repatriation to France: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/portugal-to-united-kingdom/"
+      text: "Repatriation from Portugal to the UK"
+    - url: "/routes/portugal-to-ireland/"
+      text: "Repatriation from Portugal to Ireland"
+---

@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Germany: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Germany takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "de"
+origin_name: "Vietnam"
+dest_name: "Germany"
+origin_slug: "vietnam"
+dest_slug: "germany"
+slug: "vietnam-to-germany"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Germany: what to expect"
+direct_answer_intro: "Vietnamese nationals form one of the larger Asian diaspora communities in Germany, particularly in former East Germany. This corridor handles cases where a Germany-based Vietnamese has a family member die in Vietnam and needs remains brought to Germany."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Germany Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Hanoi can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Germany Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Germany take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Germany takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Germany Embassy in Vietnam help with repatriation?"
+    answer: "The Germany Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

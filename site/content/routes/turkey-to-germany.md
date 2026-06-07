@@ -1,0 +1,88 @@
+---
+title: "Turkey to Germany: Repatriation Guidance"
+description: "Someone has died in Turkey. Repatriation to Germany takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "turkey"
+dest_key: "de"
+origin_name: "Turkey"
+dest_name: "Germany"
+origin_slug: "turkey"
+dest_slug: "germany"
+slug: "turkey-to-germany"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Ankara"
+doc_processing_time: "5-10 days for documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Turkey to Germany: what to expect"
+direct_answer_intro: "Turkish nationals form the largest non-EU migrant community in Germany. This is one of the highest-volume European repatriation corridors. Turkish-Germans whose family members die in Turkey need remains brought to Germany, typically via Frankfurt or Munich cargo terminals."
+direct_answer_points:
+  - "Key documents: Turkish death certificate (olum belgesi) and certified English translation"
+  - "Documentation takes 5-10 days. Embalming must be specifically arranged for UK repatriation."
+  - "British Embassy in Ankara (and consulate Istanbul) registers the death and advises."
+  - "Post-mortem ordered by Turkish public prosecutor (cumhuriyet savcisi) for sudden or unexplained deaths."
+  - "Germany Embassy in Ankara can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Turkey"
+overview_body: "Call 112 for emergency services. Unexpected deaths are referred to the public prosecutor (cumhuriyet savcisi). Death registered at the nufus mudurlugu (civil registry office). The olum belgesi is issued in Turkish only. Certified English translation is required. No cremation facilities exist in Turkey."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Ankara can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at nufus mudurlugu. Olum belgesi issued."
+    timing: "Certificate in Turkish only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Germany Embassy in Ankara notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming arranged (specifically requested for UK repatriation)"
+    timing: "Not standard for Turkish nationals. Must be specifically arranged."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 5-10 days. Cannot begin until public prosecutor authorises release."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Istanbul (IST/SAW), Ankara (ESB), or Antalya (AYT)"
+    timing: "Once all documentation complete. Turkish Airlines Cargo serves all major UK airports direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Turkey to Germany take?"
+    answer: "In a straightforward case with no prosecutor involvement, repatriation from Turkey to Germany takes 7-10 days. Most cases take 10-21 days. Complex cases involving investigation can take 4-8 weeks."
+  - question: "Is there cremation in Turkey?"
+    answer: "There are effectively no cremation facilities in Turkey. If your family wishes to have the body cremated, this cannot be done in Turkey. Full body repatriation to the UK is the only option."
+  - question: "What documents are required for repatriation from Turkey?"
+    answer: "The core documents are: Olum belgesi (Turkish death certificate), certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the Germany Embassy in Turkey help with repatriation?"
+    answer: "The Germany Embassy in Ankara can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Ankara as soon as possible after the death."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "My relative was on holiday in Antalya or Bodrum. Does that change anything?"
+    answer: "Deaths in resort areas are handled locally, but embalming to international standards may need to be arranged in Antalya or via Istanbul. Your repatriation specialist will coordinate the right local provider. The overall process and timeline are the same."
+links:
+  upward:
+    - url: "/repatriation-from-turkey/"
+      text: "Full Turkey repatriation guide"
+    - url: "/guides/death-abroad-turkey/"
+      text: "What to do if someone dies in Turkey"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/turkey-to-united-kingdom/"
+      text: "Repatriation from Turkey to the UK"
+    - url: "/routes/turkey-to-ireland/"
+      text: "Repatriation from Turkey to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "Nigeria to Saudi Arabia: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to Saudi Arabia takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "sa"
+origin_name: "Nigeria"
+dest_name: "Saudi Arabia"
+origin_slug: "nigeria"
+dest_slug: "saudi-arabia"
+slug: "nigeria-to-saudi-arabia"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to Saudi Arabia: what to expect"
+direct_answer_intro: "Nigerian nationals work in Saudi Arabia in professional and technical roles. This corridor handles cases where a Saudi-based Nigerian has a family member die in Nigeria and needs remains brought to Saudi Arabia."
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "Saudi Arabia Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The Saudi government mortuary or funeral home takes custody at King Khalid International (RUH, Riyadh), King Abdulaziz International (JED, Jeddah), or King Fahd International (DMM, Dammam) cargo terminal. Saudi Ministry of Health approval is required before the remains can be received. All documents must be authenticated by the Saudi Embassy in the country of origin. Non-Muslim remains require specific certification and procedures. (Saudi Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Saudi Embassy in Abuja handles authentication of repatriation documents. Contact the Saudi Embassy in Nigeria for document legalisation requirements. Saudi Ministry of Foreign Affairs coordinates with the receiving authorities in Saudi Arabia."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact Saudi Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Saudi Arabia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to Saudi Arabia take?"
+    answer: "In a straightforward case, repatriation from Nigeria to Saudi Arabia takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Saudi Arabia Embassy in Nigeria help with repatriation?"
+    answer: "The Saudi Arabia Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Saudi Arabia Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in Saudi Arabia?"
+    answer: "The Saudi government mortuary takes custody at the cargo terminal. Saudi Ministry of Health approval is required in advance. All documents must be authenticated by the Saudi Embassy in the origin country. Non-Muslim remains require specific certification. The family or sponsor arranges the receiving funeral home."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-saudi-arabia/"
+      text: "Repatriation to Saudi Arabia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---
