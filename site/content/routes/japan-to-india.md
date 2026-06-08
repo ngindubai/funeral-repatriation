@@ -1,0 +1,88 @@
+---
+title: "Japan to India: Repatriation Guidance"
+description: "Someone has died in Japan. Repatriation to India takes 10-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "japan"
+dest_key: "in"
+origin_name: "Japan"
+dest_name: "India"
+origin_slug: "japan"
+dest_slug: "india"
+slug: "japan-to-india"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "10-21 days"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Tokyo"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Japan to India: what to expect"
+direct_answer_intro: "Japanese nationals work and study in India, particularly in technology and automotive sectors. This corridor handles cases where an India-based person has a family member die in Japan and needs remains brought to India. Japanese documentation requires certified translation."
+direct_answer_points:
+  - "Key document: Shibo kenshin-sho (Japanese death certificate) with certified English translation"
+  - "Documentation takes 7-14 days. Embalming must be explicitly requested."
+  - "British Embassy in Tokyo registers the death and advises. They cannot fund repatriation."
+  - "Bringing ashes home is significantly faster and simpler than full body repatriation."
+  - "India Embassy in Tokyo can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Japan"
+overview_body: "Call 110 for police or 119 for ambulance. A licensed doctor certifies the death. Death must be registered at the local ward office (shiyakusho or kuyakusho) within 7 days. The shibo kenshin-sho is issued in Japanese only. Certified English translation is mandatory. Embalming is not standard practice in Japan and must be specifically arranged."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Tokyo can assist with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +91 11 2301 2113. Request embalming immediately."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local ward office within 7 days. Shibo kenshin-sho issued."
+    timing: "Certificate in Japanese only. Certified English translation mandatory."
+    responsible: "Local funeral director and ward office"
+  - step: 3
+    action: "India Embassy in Tokyo notified"
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming arranged (must be specifically requested)"
+    timing: "Not standard Japanese practice. Must be explicitly requested. Japanese funeral homes use dry ice as standard."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-14 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Tokyo Narita (NRT) or Haneda (HND) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. Japan Airlines Cargo and ANA Cargo operate direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "India funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Japan to India take?"
+    answer: "In a straightforward case, repatriation from Japan to India takes 10-21 days. The fastest cases complete in 7-14 days. Complex cases involving a medical examiner inquiry can take 4-8 weeks."
+  - question: "Why must embalming be specifically requested in Japan?"
+    answer: "Embalming is not part of traditional Japanese funeral practice. Japanese funeral homes use dry ice as standard for body preservation. For international repatriation, full embalming to international standards is required and must be explicitly requested."
+  - question: "Is bringing ashes home from Japan a better option?"
+    answer: "For many families, yes. Japan's cremation rate is over 99% and the process is well-organised. Bringing ashes home to the UK avoids the embalming and full body cargo requirements and is significantly faster and less costly."
+  - question: "What documents are required for repatriation from Japan to the UK?"
+    answer: "The core documents are: shibo kenshin-sho (Japanese death certificate) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the India Embassy in Japan help with repatriation?"
+    answer: "The India Embassy in Tokyo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the India Embassy in Tokyo as soon as possible after the death."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the foreign death certificate, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation at the destination."
+links:
+  upward:
+    - url: "/repatriation-from-japan/"
+      text: "Full Japan repatriation guide"
+    - url: "/guides/death-abroad-japan/"
+      text: "What to do if someone dies in Japan"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/japan-to-united-kingdom/"
+      text: "Repatriation from Japan to the UK"
+    - url: "/routes/japan-to-ireland/"
+      text: "Repatriation from Japan to Ireland"
+---

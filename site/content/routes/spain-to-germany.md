@@ -1,0 +1,88 @@
+---
+title: "Spain to Germany: Repatriation Guidance"
+description: "Someone has died in Spain. Repatriation to Germany takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "spain"
+dest_key: "de"
+origin_name: "Spain"
+dest_name: "Germany"
+origin_slug: "spain"
+dest_slug: "germany"
+slug: "spain-to-germany"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Madrid"
+doc_processing_time: "3-7 days total for documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Spain to Germany: what to expect"
+direct_answer_intro: "Spanish nationals work in Germany as part of the EU freedom of movement. This corridor handles cases where a Germany-based Spaniard has a family member die in Spain and needs remains brought to Germany. The EU Berlin Convention and apostille framework simplifies some authentication requirements."
+direct_answer_points:
+  - "Key documents: Certificado de defuncion and Embalming certificate"
+  - "Documentation takes 3-7 days. The Juzgado is involved in all sudden or unattended deaths."
+  - "British Embassy in Madrid registers the death and advises. They cannot fund repatriation."
+  - "Island deaths (Balearics, Canaries) require internal mainland transfer before international cargo departs."
+  - "Germany Embassy in Madrid can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Spain"
+overview_body: "Contact emergency services (112). A doctor certifies the death. If death is sudden, unattended, or traumatic, the Juzgado de Instruccion takes jurisdiction before the body can be moved. Death registered at the Registro Civil. The certificado de defuncion is issued. For deaths on the Balearic or Canary Islands, internal transfer to a mainland airport (Madrid, Barcelona, Malaga) is required before the international cargo flight."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Madrid can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registro Civil. Certificado de defuncion issued."
+    timing: "Within 24 hours of death in normal cases. Juzgado cases add 5-15 working days."
+    responsible: "Local funeral director and Registro Civil"
+  - step: 3
+    action: "Germany Embassy in Madrid notified"
+    timing: "Simultaneous with Step 1. Consulates in Alicante, Barcelona, Ibiza, Malaga, Palma, Tenerife."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and zinc-lined coffin preparation"
+    timing: "After Juzgado or Registro Civil releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Licencia de enterramiento, laissez-passer, and all export permits obtained"
+    timing: "Allow 3-7 days total. Island transfers add 1-3 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to Germany"
+    timing: "Once all documentation complete. British Airways, Iberia, and Vueling serve Spanish routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Spain to Germany take?"
+    answer: "In a straightforward mainland case with a physician-certified natural death, repatriation from Spain to Germany takes 7-14 days. The fastest cases complete in 5-7 days. Juzgado investigations add 5-15 working days. Island deaths add a further 1-3 days for mainland transfer. Complex or criminal cases can take 3-6 weeks or longer."
+  - question: "What is the Juzgado de Instruccion and why does it matter?"
+    answer: "The Juzgado de Instruccion is the Spanish investigative court. Any death that is sudden, unattended, traumatic, or unexplained must be referred to the Juzgado before the body can be moved or any preparation can begin. This applies to most deaths in hotels, accidents, and many natural deaths. It cannot be bypassed."
+  - question: "What documents are required for repatriation from Spain to the UK?"
+    answer: "The core documents are: Certificado de defuncion (death certificate from Registro Civil), Juzgado release document (if applicable), Licencia de enterramiento (export permit), Embalming certificate, Freedom from infection certificate, Airline cargo documentation, and Passport of the deceased."
+  - question: "Does the Germany Embassy in Spain help with repatriation?"
+    answer: "The Germany Embassy in Madrid can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Madrid as soon as possible after the death."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Can I bring ashes home from Spain instead of repatriating the body?"
+    answer: "Yes. Cremation in Spain and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the certificado de defuncion, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-spain/"
+      text: "Full Spain repatriation guide"
+    - url: "/guides/death-abroad-spain/"
+      text: "What to do if someone dies in Spain"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/spain-to-united-kingdom/"
+      text: "Repatriation from Spain to the UK"
+    - url: "/routes/spain-to-ireland/"
+      text: "Repatriation from Spain to Ireland"
+---

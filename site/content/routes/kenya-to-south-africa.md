@@ -1,0 +1,87 @@
+---
+title: "Kenya to South Africa: Repatriation Guidance"
+description: "Someone has died in Kenya. Repatriation to South Africa takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "kenya"
+dest_key: "za"
+origin_name: "Kenya"
+dest_name: "South Africa"
+origin_slug: "kenya"
+dest_slug: "south-africa"
+slug: "kenya-to-south-africa"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Kenya to South Africa: what to expect"
+direct_answer_intro: "Kenyan nationals work across South Africa in professional sectors. This corridor handles cases where a South Africa-based Kenyan has a family member die in Kenya and needs remains brought to South Africa. Both countries are English-speaking, which simplifies some documentation requirements."
+direct_answer_points:
+  - "Key documents: Kenyan death certificate and Port Health clearance (freedom from infection)"
+  - "Documentation takes 7-21 days. All documentation and cargo departs from Nairobi."
+  - "British High Commission in Nairobi registers the death and advises. They cannot fund repatriation."
+  - "South Africa Embassy in Nairobi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Kenya"
+overview_body: "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend. Contact the British High Commission in Nairobi. Death must be registered with the civil registrar at the district office. Deaths in safari areas require road or charter aircraft transfer to Nairobi."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Nairobi can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with civil registrar. Burial permit obtained."
+    timing: "Funeral director handles registration. Safari area deaths require transfer to Nairobi first."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British High Commission Nairobi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming in Nairobi"
+    timing: "Professional embalming facilities available in Nairobi. Limited outside the capital."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Port Health clearance and all export permits obtained"
+    timing: "Allow 7-21 days. Port Health is an additional step specific to Kenya."
+    responsible: "Local funeral director and Port Health"
+  - step: 6
+    action: "Air cargo from Nairobi Jomo Kenyatta International (NBO)"
+    timing: "Once all documentation complete. Kenya Airways and British Airways serve NBO-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Kenya to South Africa take?"
+    answer: "In a straightforward Nairobi case, repatriation from Kenya to South Africa takes 10-14 days. Deaths in safari areas or remote locations add significant time for internal transfer. Most cases take 14-28 days. Complex cases can take 6-12 weeks."
+  - question: "My relative died on safari in Kenya. What should I do?"
+    answer: "Contact a UK repatriation specialist and the contact nearest South African mission (+44 (0)20 7008 5000) immediately. Deaths in the Masai Mara, Amboseli, Tsavo, or other remote areas require road or light aircraft transfer to Nairobi before any documentation can begin."
+  - question: "What documents are required for repatriation from Kenya to the UK?"
+    answer: "The core documents are: Kenyan death certificate, Embalming certificate, Port Health clearance (freedom from infection certificate), Police report/clearance, and Passport of the deceased."
+  - question: "Does the South Africa Embassy in Kenya help with repatriation?"
+    answer: "The South Africa Embassy in Nairobi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in Nairobi as soon as possible after the death."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from Kenya instead of repatriating the body?"
+    answer: "Yes. Cremation in Kenya and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and Port Health clearance."
+links:
+  upward:
+    - url: "/repatriation-from-kenya/"
+      text: "Full Kenya repatriation guide"
+    - url: "/guides/death-abroad-kenya/"
+      text: "What to do if someone dies in Kenya"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/kenya-to-united-kingdom/"
+      text: "Repatriation from Kenya to the UK"
+    - url: "/routes/kenya-to-ireland/"
+      text: "Repatriation from Kenya to Ireland"
+---

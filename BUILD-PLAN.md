@@ -20,7 +20,7 @@
 - **Skip rule:** skip a block whose slugs already exist; skip the whole run only if nothing is left to build (no unbuilt chunk and no blog batch due). Do NOT skip just because a build ran earlier today; this routine runs twice a day on purpose.
 - Bulk-generation without the quality gate is banned. A batch is still N individually quality-gated blocks, full gate on each, every time.
 
-**Where we are (7 June 2026):** 498 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 100 Tier B diaspora corridors). Tier A complete (394 routes). Chunks R14-R17 (Tier B, first 100 routes) committed this run. Chunk R18 (Tier B, continuing diaspora corridors) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
+**Where we are (8 June 2026):** 598 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 200 Tier B diaspora corridors). Tier A complete (394 routes). Chunks R14-R21 (Tier B, first 200 routes) committed. Chunk R22 (Tier B, continuing diaspora corridors) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
 
 ---
 
@@ -60,10 +60,10 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 | Tier | Description | Routes | Built | Remaining |
 |---|---|---|---|---|
 | A | All origins to UK and Ireland | 394 | 394 | 0 |
-| B | Diaspora and high-volume cross-border | ~1,100 | 100 | ~1,000 |
+| B | Diaspora and high-volume cross-border | ~1,100 | 200 | ~900 |
 | C | Regional and secondary destinations | ~7,700 | 0 | ~7,700 |
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
-| **Total** | **Full 197x197 matrix** | **38,612** | **494** | **38,118** |
+| **Total** | **Full 197x197 matrix** | **38,612** | **598** | **38,014** |
 
 At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 routes per block = up to 200 routes per day), Tier A (the revenue tier) completes in under 3 weeks and the full matrix in roughly the same horizon as before.
 
@@ -73,9 +73,9 @@ At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 ro
 
 Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
-- Next chunk: **R18 (Tier B)**
+- Next chunk: **R22 (Tier B)**
 - Next tier: **B**
-- Next template lead: **D** (rotation continues from last page of R17, variant C, so next is D)
+- Next template lead: **D** (rotation continues from last page of R21, variant C, so next is D)
 
 ---
 
@@ -103,7 +103,11 @@ The routine names each route block "chunk R<N>" in its commit message so the ski
 | R15 | B | D | 25 | DONE | 12 routes to UAE (india, pakistan, bangladesh, philippines, egypt, nepal, sri-lanka, jordan, kenya, ethiopia, indonesia, morocco) and 13 routes to Saudi Arabia (pakistan, india, bangladesh, philippines, indonesia, egypt, nepal, ethiopia, jordan, kenya, sri-lanka, ghana, nigeria). 7 Jun 2026. |
 | R16 | B | D | 25 | DONE | 13 routes to Germany (turkey, poland, russia, romania, italy, serbia, ukraine, iraq, morocco, ghana, nigeria, vietnam, afghanistan) and 12 routes to France (morocco, algeria, tunisia, portugal, senegal, ivory-coast, cameroon, mali, guinea, congo, madagascar, haiti). 7 Jun 2026. |
 | R17 | B | D | 25 | DONE | 8 routes to Canada (india, philippines, china, pakistan, nigeria, ukraine, south-korea, iran), 9 routes to Australia (india, china, philippines, vietnam, malaysia, south-korea, new-zealand, indonesia, nepal), 8 routes to India (bangladesh, nepal, singapore, malaysia, united-states, canada, australia, united-arab-emirates). 7 Jun 2026. |
-| R18 | B | D | 25 | NEXT | Continue Tier B diaspora corridors: next destinations Qatar, Kuwait, Singapore, South Africa, plus second-wave high-volume corridors to USA, UAE, Germany, France not yet built. |
+| R18 | B | D | 25 | DONE | Qatar (india, pakistan, bangladesh, philippines, nepal, egypt, sri-lanka, ethiopia, indonesia, kenya), Kuwait (india, pakistan, bangladesh, philippines, egypt, sri-lanka, nepal, ethiopia), Singapore (india, china, malaysia, philippines, bangladesh, indonesia, myanmar). 8 Jun 2026. |
+| R19 | B | D | 25 | DONE | South Africa (zimbabwe, mozambique, lesotho, malawi, zambia, drc, tanzania, botswana, namibia, nigeria, ghana, kenya, ethiopia, angola, cameroon), USA second wave (bangladesh, turkey, egypt, poland, morocco, indonesia, kenya, senegal, laos, ivory-coast). 8 Jun 2026. |
+| R20 | B | D | 25 | DONE | UAE second wave (turkey, ghana, nigeria, south-korea, china, vietnam, iraq, afghanistan), Germany second wave (india, bangladesh, china, spain, portugal, algeria, tunisia, pakistan), France second wave (nigeria, burkina-faso, guinea-bissau, niger, chad, mauritania, togo, benin, gabon). 8 Jun 2026. |
+| R21 | B | D | 25 | DONE | Canada second wave (bangladesh, ghana, jamaica, trinidad-and-tobago, kenya, ethiopia, mexico, vietnam, iraq), Australia second wave (bangladesh, pakistan, myanmar, fiji, sri-lanka, singapore, kenya, ghana), India second wave (pakistan, china, sri-lanka, thailand, japan, kenya, nigeria, indonesia). 8 Jun 2026. |
+| R22 | B | D | 25 | NEXT | Continue Tier B diaspora corridors: third-wave to USA, UAE, Germany, France, Canada, Australia, India. New destinations: Italy, Netherlands, Belgium, Spain as Tier B hubs. |
 
 When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
@@ -143,7 +147,8 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 | 6 Jun 2026 | Chunks R9-R12 | Batch build: 100 new Tier A routes to Ireland (origins costa-rica through south-sudan). All QA clean (0 errors on new files). 168 Ireland routes now live. 370 total route pairs. Tier A 370/394 built; 24 Ireland origins remaining. Next: R13. | 370 (196 UK + 168 Ireland + 6 pre-matrix mixed) | R9-R12 committed in single batch. Deploy auto via build-and-publish.yml. |
 | 7 Jun 2026 | Chunk R13 | Batch build: 28 new Tier A routes to Ireland (hong-kong, south-korea, sudan, suriname, sweden, switzerland, syria, taiwan, tajikistan, tanzania, timor-leste, togo, tonga, trinidad-and-tobago, tunisia, turkmenistan, tuvalu, uganda, ukraine, united-kingdom, uruguay, uzbekistan, vanuatu, vatican-city, venezuela, yemen, zambia, zimbabwe). All QA clean (0 errors on new files; 36 pre-existing failures unchanged). Tier A complete: 394 routes (196 to UK, 196 to Ireland, 6 pre-matrix). 398 total route pairs. Next: R14 Tier B. | 398 (196 UK + 196 Ireland + 6 pre-matrix mixed) | R13 committed as single chunk. Deploy auto via build-and-publish.yml. |
 | 7 Jun 2026 | Chunks R14-R17 | Batch build: 100 new Tier B diaspora corridor routes. R14: 25 to USA (mexico, philippines, india, china, el-salvador, dominican-republic, vietnam, cuba, south-korea, guatemala, jamaica, haiti, colombia, nigeria, pakistan, brazil, honduras, ecuador, ethiopia, ghana, ukraine, iran, peru, cambodia, trinidad-and-tobago). R15: 25 to UAE and Saudi Arabia. R16: 25 to Germany and France (Turkish, Polish, Maghreb, West African corridors). R17: 25 to Canada, Australia, and India. All QA clean (0 errors on new files; 36 pre-existing failures unchanged). 498 total route pairs. Next: R18 Tier B. | 498 (196 UK + 196 Ireland + 6 pre-matrix + 100 Tier B) | R14-R17 committed in single batch. Deploy auto via build-and-publish.yml. |
+| 8 Jun 2026 | Chunks R18-R21 | Batch build: 100 new Tier B diaspora corridor routes. R18: 25 routes to Qatar (10), Kuwait (8), Singapore (7). R19: 25 routes to South Africa (15) and USA second wave (10). R20: 25 routes UAE second wave (8), Germany second wave (8), France second wave (9). R21: 25 routes Canada second wave (9), Australia second wave (8), India second wave (8). All QA clean (0 errors on new files; 36 pre-existing failures unchanged). 598 total route pairs. Next: R22 Tier B. | 598 (196 UK + 196 Ireland + 6 pre-matrix + 200 Tier B) | R18-R21 committed in single batch. Deploy auto via build-and-publish.yml. |
 
 ---
 
-*Last updated: 7 June 2026. The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*
+*Last updated: 8 June 2026. The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*

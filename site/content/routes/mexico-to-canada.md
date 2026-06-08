@@ -1,0 +1,88 @@
+---
+title: "Mexico to Canada: Repatriation Guidance"
+description: "Someone has died in Mexico. Repatriation to Canada takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "mexico"
+dest_key: "ca"
+origin_name: "Mexico"
+dest_name: "Canada"
+origin_slug: "mexico"
+dest_slug: "canada"
+slug: "mexico-to-canada"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-12 weeks"
+embassy_city: "Mexico City"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Mexico to Canada: what to expect"
+direct_answer_intro: "Mexican nationals working temporarily or permanently in Canada account for repatriation demand on this corridor. Mexico has direct air cargo links to major Canadian cities. Documentation runs through the Mexican civil registry (Registro Civil) and requires certified English or French translation."
+direct_answer_points:
+  - "Key document: Acta de defuncion (Mexican death certificate, in Spanish) with certified English translation"
+  - "Documentation takes 7-21 days. SEMEFO release required for unexpected or violent deaths."
+  - "British Embassy in Mexico City registers the death and advises. They cannot fund repatriation."
+  - "Resort area deaths (Cancun, Los Cabos, Puerto Vallarta) handled locally but often involve SEMEFO."
+  - "Canada Embassy in Mexico City can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Mexico"
+overview_body: "Call 911 for emergency services. All unexpected deaths are referred to the Ministerio Publico (public prosecutor) and SEMEFO (Servicio Medico Forense). The acta de defuncion is issued by the civil registry (registro civil) in Spanish. Certified English translation is required. A post-mortem is standard for any non-natural death."
+dest_reception: "The Canadian funeral director takes custody at the cargo terminal. Canadian Border Services Agency (CBSA) clearance is required. The required documents are: the foreign death certificate, transit or burial permit, and embalming certificate. Provincial or territorial regulations apply and vary between Ontario, British Columbia, Quebec, Alberta, and other provinces. (Global Affairs Canada, 2025.)"
+dest_consular: "Canadian Embassy or High Commission in Mexico City can assist Canadian citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. Global Affairs Canada emergency line: +1 (613) 996-8885 (24 hours, collect calls accepted)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (613) 996-8885."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death reported to Ministerio Publico. Acta de defuncion obtained from registro civil."
+    timing: "SEMEFO may retain body for post-mortem. Cannot be bypassed."
+    responsible: "Local funeral director and authorities"
+  - step: 3
+    action: "Canada Embassy in Mexico City notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After SEMEFO releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days. Cannot begin until SEMEFO releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Mexico City (MEX), Cancun (CUN), or Guadalajara (GDL) to Canada"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Canada funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Mexico to Canada take?"
+    answer: "In a straightforward case, repatriation from Mexico to Canada takes 14-28 days. The fastest cases complete in 10-14 days. Complex cases involving SEMEFO investigation or criminal proceedings can take 4-12 weeks."
+  - question: "What is SEMEFO and why is it involved?"
+    answer: "SEMEFO (Servicio Medico Forense) is Mexico's forensic medical service. All unexpected, violent, or suspicious deaths are referred to SEMEFO for examination. The body cannot be released until SEMEFO and the Ministerio Publico authorise it. This is standard procedure and cannot be bypassed."
+  - question: "What documents are required for repatriation from Mexico to the UK?"
+    answer: "The core documents are: acta de defuncion (Mexican death certificate) with certified English translation, SEMEFO release document, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Canada Embassy in Mexico help with repatriation?"
+    answer: "The Canada Embassy in Mexico City can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Canada Embassy in Mexico City as soon as possible after the death."
+  - question: "What happens when the body arrives in Canada?"
+    answer: "The Canadian funeral director takes custody at the cargo terminal. CBSA clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. Provincial regulations govern the burial or cremation. The receiving funeral director notifies the appropriate provincial authority."
+  - question: "Can I bring ashes home from Mexico instead of repatriating the body?"
+    answer: "Yes. Cremation in Mexico and bringing ashes home to the UK is an option, though SEMEFO must still release the body for cremation. You will need the acta de defuncion, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-mexico/"
+      text: "Full Mexico repatriation guide"
+    - url: "/guides/death-abroad-mexico/"
+      text: "What to do if someone dies in Mexico"
+    - url: "/repatriation-from-canada/"
+      text: "Repatriation to Canada: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/mexico-to-united-kingdom/"
+      text: "Repatriation from Mexico to the UK"
+    - url: "/routes/mexico-to-ireland/"
+      text: "Repatriation from Mexico to Ireland"
+---

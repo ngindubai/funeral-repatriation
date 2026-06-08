@@ -1,0 +1,88 @@
+---
+title: "Indonesia to United States: Repatriation Guidance"
+description: "Someone has died in Indonesia. Repatriation to United States takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "indonesia"
+dest_key: "us"
+origin_name: "Indonesia"
+dest_name: "United States"
+origin_slug: "indonesia"
+dest_slug: "united-states"
+slug: "indonesia-to-united-states"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Jakarta"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Indonesia to United States: what to expect"
+direct_answer_intro: "Indonesian-American communities across California and New York account for repatriation demand on this corridor. Indonesian documentation is in Bahasa Indonesia and requires certified English translation. Jakarta has direct cargo connections to the US through major hub airports."
+direct_answer_points:
+  - "Key document: Surat keterangan kematian (Indonesian death certificate, in Bahasa Indonesia) with certified English translation"
+  - "Bali deaths require internal transfer to Jakarta (Soekarno-Hatta airport) for international cargo."
+  - "British Embassy in Jakarta registers the death and advises. They cannot fund repatriation."
+  - "Police must be notified for all unexpected deaths. Procedure varies by province."
+  - "United States Embassy in Jakarta can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Indonesia"
+overview_body: "Call 112 for emergency services. Unexpected deaths require police attendance. Death registered with the local civil registry (catatan sipil). The surat keterangan kematian is issued in Bahasa Indonesia and requires certified English translation. Deaths in Bali require transfer to Jakarta (CGK) for international cargo departure."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in Jakarta can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local civil registry. Surat keterangan kematian issued."
+    timing: "Certificate in Bahasa Indonesia. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "United States Embassy in Jakarta notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and internal transfer (if Bali or other island)"
+    timing: "Bali deaths require transfer to Jakarta (CGK). Add 1-2 days."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Soekarno-Hatta International Airport (CGK), Jakarta to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Indonesia to United States take?"
+    answer: "In a straightforward case, repatriation from Indonesia to United States takes 14-28 days. Bali cases that require Jakarta transfer take 10-14 days in best-case. Complex cases can take 4-8 weeks."
+  - question: "My relative died in Bali. What happens?"
+    answer: "Deaths in Bali are handled locally by Balinese authorities. The body must be transferred from Bali to Jakarta (Soekarno-Hatta airport, CGK) before international cargo can depart. This adds 1-2 days. Contact a specialist on the day of death."
+  - question: "What documents are required for repatriation from Indonesia to the UK?"
+    answer: "The core documents are: surat keterangan kematian (Indonesian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the United States Embassy in Indonesia help with repatriation?"
+    answer: "The United States Embassy in Jakarta can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in Jakarta as soon as possible after the death."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+  - question: "Can I bring ashes home from Indonesia instead of repatriating the body?"
+    answer: "Yes. Cremation in Indonesia (including Bali, where Hindu cremation is traditional) and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-indonesia/"
+      text: "Full Indonesia repatriation guide"
+    - url: "/guides/death-abroad-indonesia/"
+      text: "What to do if someone dies in Indonesia"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/indonesia-to-united-kingdom/"
+      text: "Repatriation from Indonesia to the UK"
+    - url: "/routes/indonesia-to-ireland/"
+      text: "Repatriation from Indonesia to Ireland"
+---

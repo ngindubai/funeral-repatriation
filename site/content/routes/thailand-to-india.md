@@ -1,0 +1,88 @@
+---
+title: "Thailand to India: Repatriation Guidance"
+description: "Someone has died in Thailand. Repatriation to India takes 2-4 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "thailand"
+dest_key: "in"
+origin_name: "Thailand"
+dest_name: "India"
+origin_slug: "thailand"
+dest_slug: "india"
+slug: "thailand-to-india"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-12 weeks or longer"
+embassy_city: "Bangkok"
+doc_processing_time: "7-21 days minimum. Often longer."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Thailand to India: what to expect"
+direct_answer_intro: "Thai nationals visit India for business and tourism, and there is a resident Thai community in some Indian cities. This corridor handles cases where an India-based person has a family member die in Thailand and needs remains brought to India. Thai documentation requires certified translation."
+direct_answer_points:
+  - "Key documents: Thai death certificate (bai morn sia, with MFA certification) and British Embassy body release letter"
+  - "Thai authorities may act after 30 days. Appoint a specialist on the day of death."
+  - "British Embassy in Bangkok registers the death and issues the body release letter. Essential."
+  - "Post-mortem is routinely ordered for non-Thai nationals who die unexpectedly."
+  - "India Embassy in Bangkok can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Thailand"
+overview_body: "Call 191 for police or 1669 for ambulance. Thai authorities will hold a body for up to 30 days before proceeding with a pauper's funeral. Thailand issues only one original death certificate in Thai only. MFA certification is required. An embassy release letter must be applied for through gov.uk."
+dest_reception: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance is required. The remains must be embalmed and sealed in a zinc-lined coffin for international transport. State government regulations apply and may require a state-level permit. Major international entry points are Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj (BOM, Mumbai), Chennai International (MAA), and Netaji Subhas Chandra Bose (CCU, Kolkata). (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Bangkok can assist with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs helpline: +91 11 2301 2113 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Apply for British Embassy body release letter."
+    timing: "Day of death. Act immediately. 30-day deadline. Call +44 (0)20 7008 5000 (FCDO) or +91 11 2301 2113."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Thai death certificate (bai morn sia) obtained. MFA certification arranged."
+    timing: "Single original certificate, Thai only. MFA certification mandatory."
+    responsible: "Local funeral director and Thai MFA"
+  - step: 3
+    action: "British Embassy Bangkok issues body release letter"
+    timing: "Applied for via gov.uk. Cannot begin repatriation without it."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent in tropical climate)"
+    timing: "Immediate. Thailand's tropical climate accelerates decomposition."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Island transfer (if applicable) and all export documentation completed"
+    timing: "Allow 7-21 days minimum. Island deaths add 2-3 days for Bangkok transfer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bangkok Suvarnabhumi (BKK) to London Heathrow (LHR)"
+    timing: "Once all documentation complete and body release letter issued."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "India funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Thailand to India take?"
+    answer: "In a straightforward Bangkok case with no post-mortem, repatriation from Thailand to India takes 10-14 days. Most cases take 2-4 weeks. Island deaths add 2-3 days. Cases involving a post-mortem report can take 4-12 weeks or longer."
+  - question: "What is the 30-day deadline in Thailand?"
+    answer: "Thai authorities will hold a body for up to 30 days after death. If no repatriation or cremation plan is in place, authorities may proceed with a pauper's burial. Act immediately."
+  - question: "What is the British Embassy body release letter and is it required?"
+    answer: "The British Embassy in Bangkok issues a body release letter that authorises release of the body for repatriation. It must be applied for online through gov.uk and is required for all full body repatriations from Thailand."
+  - question: "What documents are required for repatriation from Thailand to the UK?"
+    answer: "The core documents are: Thai death certificate (bai morn sia) with MFA certification, certified English translation, British Embassy body release letter, Embalming certificate, Freedom from infection certificate, and Airline cargo documentation."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the cargo terminal. Custom House clearance requires the foreign death certificate, embalming certificate, and transit permit. The remains must be in a zinc-lined sealed coffin. State regulations govern the release for burial or cremation at the destination."
+  - question: "Can I bring ashes home from Thailand instead of repatriating the body?"
+    answer: "Yes. Cremation in Thailand and bringing ashes home to the UK is significantly faster and less costly. The British Embassy body release letter is not required for ashes. You will need the bai morn sia and cremation certificate."
+links:
+  upward:
+    - url: "/repatriation-from-thailand/"
+      text: "Full Thailand repatriation guide"
+    - url: "/guides/death-abroad-thailand/"
+      text: "What to do if someone dies in Thailand"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/thailand-to-united-kingdom/"
+      text: "Repatriation from Thailand to the UK"
+    - url: "/routes/thailand-to-ireland/"
+      text: "Repatriation from Thailand to Ireland"
+---
