@@ -1,0 +1,88 @@
+---
+title: "Pakistan to Belgium: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to Belgium takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "be"
+origin_name: "Pakistan"
+dest_name: "Belgium"
+origin_slug: "pakistan"
+dest_slug: "belgium"
+slug: "pakistan-to-belgium"
+template_variant: "C"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to Belgium: what to expect"
+direct_answer_intro: "Pakistani nationals form part of Belgium's South Asian diaspora community. This corridor handles cases where a Belgium-based Pakistani has a family member die in Pakistan and needs remains brought to Belgium. Documentation requires certified French or Dutch translation."
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "Belgium Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Islamabad can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to Belgium take?"
+    answer: "In a straightforward case, repatriation from Pakistan to Belgium takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +32 2 501 8111 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Belgium Embassy in Pakistan help with repatriation?"
+    answer: "The Belgium Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation. The receiving funeral director coordinates with the commune and local health authorities."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---

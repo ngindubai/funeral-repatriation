@@ -1,0 +1,88 @@
+---
+title: "Nigeria to Belgium: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to Belgium takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "be"
+origin_name: "Nigeria"
+dest_name: "Belgium"
+origin_slug: "nigeria"
+dest_slug: "belgium"
+slug: "nigeria-to-belgium"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to Belgium: what to expect"
+direct_answer_intro: "Nigerian nationals form a growing community in Belgium, concentrated in Brussels. This corridor handles cases where a Belgium-based Nigerian has a family member die in Nigeria and needs remains brought to Belgium. Documentation requires certified French or Dutch translation."
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "Belgium Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Abuja can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to Belgium take?"
+    answer: "In a straightforward case, repatriation from Nigeria to Belgium takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Belgium Embassy in Nigeria help with repatriation?"
+    answer: "The Belgium Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation. The receiving funeral director coordinates with the commune and local health authorities."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "Greece to Germany: Repatriation Guidance"
+description: "Someone has died in Greece. Repatriation to Germany takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "greece"
+dest_key: "de"
+origin_name: "Greece"
+dest_name: "Germany"
+origin_slug: "greece"
+dest_slug: "germany"
+slug: "greece-to-germany"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "8-12 days"
+timeline_complex: "4-12 weeks"
+embassy_city: "Athens"
+doc_processing_time: "8-10 days for local formalities (per gov.uk FCDO guidance)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Greece to Germany: what to expect"
+direct_answer_intro: "Greek nationals form one of Germany's older EU immigrant communities, with ties going back to guest worker programmes in the 1960s and deepened by economic migration since 2010. EU freedom of movement and the apostille framework simplify document authentication. Germany has Greece's largest diaspora community."
+direct_answer_points:
+  - "Key documents: Greek death certificate (lixiarxiki praxi thanatou) and certified English translation"
+  - "Documentation takes 8-10 days per FCDO guidance. Island deaths add 1-4 extra days."
+  - "British Embassy in Athens registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by the prosecutor for sudden, unexplained, or suspicious deaths."
+  - "Germany Embassy in Athens can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for Greece to UK repatriation"
+overview_body: "Contact emergency services (112 or 166 for ambulance, 100 for police). A doctor certifies the death. Contact the  Death registered at the local dimos (municipality) within 30 days. The lixiarxiki praxi thanatou is issued in Greek only and requires certified English translation."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Athens can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local dimos. Lixiarxiki praxi thanatou issued."
+    timing: "Must be registered within 30 days. Certificate in Greek only, translation required."
+    responsible: "Local funeral director and dimos"
+  - step: 3
+    action: "Germany Embassy in Athens notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Internal mainland transfer (if island death) and embalming"
+    timing: "Island transfers add 1-4 days. Embalming facilities on smaller islands may be limited."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Prosecutor authorisation and all export documentation completed"
+    timing: "Allow 8-10 days per FCDO guidance. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Athens (ATH) to Germany"
+    timing: "Once all documentation complete and prosecutor has authorised release."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Greece to Germany take?"
+    answer: "In a straightforward mainland case, repatriation from Greece to Germany takes 8-12 days. Most cases take 10-21 days once translation and documentation time is factored in. Island deaths add at least 1-4 days. Complex cases involving a post-mortem or prosecutor investigation can take 4-12 weeks."
+  - question: "My relative died on a Greek island. What happens?"
+    answer: "Deaths on any Greek island require an internal transfer to the mainland, usually Athens, before international repatriation can proceed. This adds approximately 1-4 days and extra cost."
+  - question: "What documents are required for repatriation from Greece to the UK?"
+    answer: "The core documents are: Greek death certificate (lixiarxiki praxi thanatou), certified English translation, Prosecutor authorisation for release, Embalming certificate, Freedom from infection certificate."
+  - question: "Does the Germany Embassy in Greece help with repatriation?"
+    answer: "The Germany Embassy in Athens can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Athens as soon as possible after the death."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Can I bring ashes home from Greece instead of repatriating the body?"
+    answer: "Yes. Cremation in Greece is available but note that Greek Orthodox tradition favours burial and crematoria are limited. Bringing ashes home to the UK is simpler and less costly than full body repatriation."
+links:
+  upward:
+    - url: "/repatriation-from-greece/"
+      text: "Full Greece repatriation guide"
+    - url: "/guides/death-abroad-greece/"
+      text: "What to do if someone dies in Greece"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/greece-to-united-kingdom/"
+      text: "Repatriation from Greece to the UK"
+    - url: "/routes/greece-to-ireland/"
+      text: "Repatriation from Greece to Ireland"
+---

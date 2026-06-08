@@ -1,0 +1,88 @@
+---
+title: "Nigeria to Australia: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to Australia takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "au"
+origin_name: "Nigeria"
+dest_name: "Australia"
+origin_slug: "nigeria"
+dest_slug: "australia"
+slug: "nigeria-to-australia"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to Australia: what to expect"
+direct_answer_intro: "Nigerian-Australians form a growing community in Sydney and Melbourne. This corridor handles cases where an Australia-based Nigerian has a family member die in Nigeria and needs remains brought to Australia. English documentation from Nigeria simplifies translation requirements."
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "Australia Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance is required. The Australian Department of Health and Aged Care regulations apply. State or territory funeral regulations govern burial or cremation: requirements differ between New South Wales, Victoria, Queensland, Western Australia, South Australia, and the Northern Territory. All documentation must be authenticated. (Australian Government, Department of Foreign Affairs and Trade, DFAT, 2025.)"
+dest_consular: "Australian Embassy or High Commission in Abuja can assist Australian citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. Australian Government Consular Emergency Centre: +61 2 6261 3305 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +61 2 6261 3305."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to Australia take?"
+    answer: "In a straightforward case, repatriation from Nigeria to Australia takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Australia Embassy in Nigeria help with repatriation?"
+    answer: "The Australia Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Australia Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance requires the foreign death certificate, transit permit, and embalming certificate. State or territory regulations govern burial or cremation. The receiving funeral director coordinates with the relevant state authority."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-australia/"
+      text: "Repatriation to Australia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---

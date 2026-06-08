@@ -1,0 +1,87 @@
+---
+title: "Morocco to Spain: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Spain takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "es"
+origin_name: "Morocco"
+dest_name: "Spain"
+origin_slug: "morocco"
+dest_slug: "spain"
+slug: "morocco-to-spain"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Spain: what to expect"
+direct_answer_intro: "Moroccan nationals are Spain's largest non-EU immigrant community, with over 900,000 registered residents. This is Spain's highest-volume repatriation corridor from outside the EU, with regular direct cargo services and well-established documentation procedures on both sides."
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Spain Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The Spanish funeral director (empresa funeraria) takes custody at the cargo terminal, typically Madrid Barajas (MAD), Barcelona El Prat (BCN), or another Spanish airport. The Registro Civil registers the death. For deaths in the Canary or Balearic Islands, an internal mainland transfer is required before any international cargo flight departs. All foreign documents must carry a certified Spanish translation. (Spanish Ministry of Foreign Affairs, European Union and Cooperation, 2025.)"
+dest_consular: "Spanish Embassy in Rabat can advise on documentation requirements for repatriation to Spain. Spanish Ministry of Foreign Affairs emergency line: +34 91 379 9700 (24 hours). The Spanish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +34 91 379 9700."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Spain Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Spain funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Spain take?"
+    answer: "In a straightforward case, repatriation from Morocco to Spain takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Spain Embassy in Morocco help with repatriation?"
+    answer: "The Spain Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Spain Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the +34 91 379 9700 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Spain?"
+    answer: "The Spanish funeral director takes custody at the cargo terminal. The Registro Civil registers the death. Island deaths require a mainland transfer first. Unexpected deaths may require a Juzgado de Instruccion investigation before release. All foreign documents require certified Spanish translation. The receiving funeral director coordinates with the Registro Civil and local health authorities."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-spain/"
+      text: "Repatriation to Spain: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---

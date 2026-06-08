@@ -1,0 +1,87 @@
+---
+title: "Morocco to Netherlands: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Netherlands takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "nl"
+origin_name: "Morocco"
+dest_name: "Netherlands"
+origin_slug: "morocco"
+dest_slug: "netherlands"
+slug: "morocco-to-netherlands"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Netherlands: what to expect"
+direct_answer_intro: "Moroccan nationals form the Netherlands' other largest non-EU community, with over 400,000 residents concentrated in Amsterdam, Rotterdam, and The Hague. This is one of the Netherlands' highest-volume repatriation corridors, with established procedures on both sides."
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Netherlands Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The Dutch funeral director (begrafenisondernemer or uitvaartondernemer) takes custody at Amsterdam Schiphol (AMS) or Rotterdam The Hague (RTM) cargo terminal. The local gemeente (municipality) registers the death with the Burgerlijke Stand (civil registry). A transport permit (laissez-passer) must accompany the remains. Foreign documents in languages other than Dutch, English, French, or German require certified translation. (Dutch Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Dutch Embassy in Rabat can advise on documentation requirements for repatriation to the Netherlands. Dutch Ministry of Foreign Affairs emergency line: +31 70 348 6486 (24 hours). The Dutch Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +31 70 348 6486."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Netherlands Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Netherlands funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Netherlands take?"
+    answer: "In a straightforward case, repatriation from Morocco to Netherlands takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Netherlands Embassy in Morocco help with repatriation?"
+    answer: "The Netherlands Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Netherlands Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the +31 70 348 6486 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Netherlands?"
+    answer: "The Dutch funeral director takes custody at Amsterdam Schiphol (AMS) cargo terminal. A laissez-passer must accompany the remains. The local gemeente registers the death with the Burgerlijke Stand. Documents not in Dutch, English, French, or German require certified translation. The receiving funeral director coordinates with the gemeente and health authorities."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-netherlands/"
+      text: "Repatriation to Netherlands: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---

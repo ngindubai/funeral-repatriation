@@ -1,0 +1,88 @@
+---
+title: "Pakistan to Spain: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to Spain takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "es"
+origin_name: "Pakistan"
+dest_name: "Spain"
+origin_slug: "pakistan"
+dest_slug: "spain"
+slug: "pakistan-to-spain"
+template_variant: "A"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to Spain: what to expect"
+direct_answer_intro: "Pakistani nationals form part of Spain's South Asian diaspora, concentrated in Barcelona and Madrid. This corridor handles cases where a Spain-based Pakistani has a family member die in Pakistan and needs remains brought to Spain."
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "Spain Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The Spanish funeral director (empresa funeraria) takes custody at the cargo terminal, typically Madrid Barajas (MAD), Barcelona El Prat (BCN), or another Spanish airport. The Registro Civil registers the death. For deaths in the Canary or Balearic Islands, an internal mainland transfer is required before any international cargo flight departs. All foreign documents must carry a certified Spanish translation. (Spanish Ministry of Foreign Affairs, European Union and Cooperation, 2025.)"
+dest_consular: "Spanish Embassy in Islamabad can advise on documentation requirements for repatriation to Spain. Spanish Ministry of Foreign Affairs emergency line: +34 91 379 9700 (24 hours). The Spanish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +34 91 379 9700. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Spain funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to Spain take?"
+    answer: "In a straightforward case, repatriation from Pakistan to Spain takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +34 91 379 9700 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Spain Embassy in Pakistan help with repatriation?"
+    answer: "The Spain Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Spain Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in Spain?"
+    answer: "The Spanish funeral director takes custody at the cargo terminal. The Registro Civil registers the death. Island deaths require a mainland transfer first. Unexpected deaths may require a Juzgado de Instruccion investigation before release. All foreign documents require certified Spanish translation. The receiving funeral director coordinates with the Registro Civil and local health authorities."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-spain/"
+      text: "Repatriation to Spain: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---

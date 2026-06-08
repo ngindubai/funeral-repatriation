@@ -1,0 +1,88 @@
+---
+title: "Egypt to Germany: Repatriation Guidance"
+description: "Someone has died in Egypt. Repatriation to Germany takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "egypt"
+dest_key: "de"
+origin_name: "Egypt"
+dest_name: "Germany"
+origin_slug: "egypt"
+dest_slug: "germany"
+slug: "egypt-to-germany"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "7-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Cairo"
+doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Egypt to Germany: what to expect"
+direct_answer_intro: "Egyptian nationals form part of Germany's Middle Eastern and North African diaspora community. This corridor handles cases where a Germany-based Egyptian has a family member die in Egypt and needs remains brought to Germany. Arabic documentation requires certified German translation."
+direct_answer_points:
+  - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
+  - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
+  - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
+  - "Germany Embassy in Cairo can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Egypt works"
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the  Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Cairo can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local health office or civil registry"
+    timing: "In tourist areas, 3-5 days. Cairo and non-tourist areas take longer."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "Germany Embassy in Cairo notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Cairo."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed: MOFA stamp, all permits obtained"
+    timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Cairo International Airport"
+    timing: "Once all documentation complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Egypt to Germany take?"
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to Germany takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Egypt to the UK?"
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of the deceased."
+  - question: "Does the Germany Embassy in Egypt help with repatriation?"
+    answer: "The Germany Embassy in Cairo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Germany Embassy in Cairo as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Egypt?"
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Is cremation available in Egypt?"
+    answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
+links:
+  upward:
+    - url: "/repatriation-from-egypt/"
+      text: "Full Egypt repatriation guide"
+    - url: "/guides/death-abroad-egypt/"
+      text: "What to do if someone dies in Egypt"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/egypt-to-united-kingdom/"
+      text: "Repatriation from Egypt to the UK"
+    - url: "/routes/egypt-to-ireland/"
+      text: "Repatriation from Egypt to Ireland"
+---

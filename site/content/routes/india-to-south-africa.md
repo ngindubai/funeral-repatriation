@@ -1,0 +1,87 @@
+---
+title: "India to South Africa: Repatriation Guidance"
+description: "Someone has died in India. Repatriation to South Africa takes 4-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "india"
+dest_key: "za"
+origin_name: "India"
+dest_name: "South Africa"
+origin_slug: "india"
+dest_slug: "south-africa"
+slug: "india-to-south-africa"
+template_variant: "B"
+route_complexity: "high"
+timeline_avg: "4-6 weeks"
+timeline_fast: "14-21 days"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "New Delhi"
+doc_processing_time: "14-30 days minimum. Often 4-6 weeks."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from India to South Africa: what to expect"
+direct_answer_intro: "Indian-South Africans form one of South Africa's oldest and most established diaspora communities, with roots going back to indentured labour in the 19th century. This corridor handles cases where a South Africa-based person of Indian heritage has a family member die in India and needs remains brought to South Africa."
+direct_answer_points:
+  - "Key documents: Indian death certificate and No Objection Certificate (NOC) from local police"
+  - "Documentation takes 14-30 days minimum. Often 4-6 weeks."
+  - "Post-mortem is frequently required: Indian police routinely order examinations for unexpected foreign national deaths."
+  - "South Africa Embassy in New Delhi can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for India to UK repatriation"
+overview_body: "Contact local emergency services (112 in many states, 100 for police, 102/108 for ambulance). If death occurs outside hospital, police must be notified. Contact the British High Commission in New Delhi. Death must be registered with the local municipal authority within 21 days."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in New Delhi can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local municipal authority within 21 days"
+    timing: "Funeral director handles registration. Post-mortem ordered by police delays this."
+    responsible: "Local funeral director and municipal authority"
+  - step: 3
+    action: "British High Commission New Delhi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent in Indian climate)"
+    timing: "India's tropical climate requires urgent embalming."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police NOC, health authority clearance, and all export documentation obtained"
+    timing: "Allow 14-30 days minimum. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Delhi (DEL), Mumbai (BOM), or relevant regional airport"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Delhi and Mumbai."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from India to South Africa take?"
+    answer: "In a straightforward case, repatriation from India to South Africa takes 4-6 weeks. The fastest cases complete in 14-21 days. Complex cases involving a post-mortem or death in a smaller city can take 8-16 weeks or longer."
+  - question: "Is a post-mortem always required for British nationals who die in India?"
+    answer: "Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals. It is standard procedure. The post-mortem adds time and the body cannot be released until police issue the No Objection Certificate (NOC)."
+  - question: "What documents are required for repatriation from India to the UK?"
+    answer: "The core documents are: Indian death certificate, Embalming certificate, Police No Objection Certificate (NOC), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the South Africa Embassy in India help with repatriation?"
+    answer: "The South Africa Embassy in New Delhi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in New Delhi as soon as possible after the death."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from India instead of repatriating the body?"
+    answer: "Yes. Cremation in India and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and a No Objection Certificate from the local authorities."
+links:
+  upward:
+    - url: "/repatriation-from-india/"
+      text: "Full India repatriation guide"
+    - url: "/guides/death-abroad-india/"
+      text: "What to do if someone dies in India"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/india-to-united-kingdom/"
+      text: "Repatriation from India to the UK"
+    - url: "/routes/india-to-ireland/"
+      text: "Repatriation from India to Ireland"
+---

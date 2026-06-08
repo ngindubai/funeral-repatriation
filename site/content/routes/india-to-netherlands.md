@@ -1,0 +1,87 @@
+---
+title: "India to Netherlands: Repatriation Guidance"
+description: "Someone has died in India. Repatriation to Netherlands takes 4-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "india"
+dest_key: "nl"
+origin_name: "India"
+dest_name: "Netherlands"
+origin_slug: "india"
+dest_slug: "netherlands"
+slug: "india-to-netherlands"
+template_variant: "C"
+route_complexity: "high"
+timeline_avg: "4-6 weeks"
+timeline_fast: "14-21 days"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "New Delhi"
+doc_processing_time: "14-30 days minimum. Often 4-6 weeks."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from India to Netherlands: what to expect"
+direct_answer_intro: "Indian nationals form a growing professional and technology community in the Netherlands, particularly in Amsterdam and Eindhoven. This corridor handles cases where a Netherlands-based Indian has a family member die in India and needs remains brought to the Netherlands."
+direct_answer_points:
+  - "Key documents: Indian death certificate and No Objection Certificate (NOC) from local police"
+  - "Documentation takes 14-30 days minimum. Often 4-6 weeks."
+  - "Post-mortem is frequently required: Indian police routinely order examinations for unexpected foreign national deaths."
+  - "Netherlands Embassy in New Delhi can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for India to UK repatriation"
+overview_body: "Contact local emergency services (112 in many states, 100 for police, 102/108 for ambulance). If death occurs outside hospital, police must be notified. Contact the British High Commission in New Delhi. Death must be registered with the local municipal authority within 21 days."
+dest_reception: "The Dutch funeral director (begrafenisondernemer or uitvaartondernemer) takes custody at Amsterdam Schiphol (AMS) or Rotterdam The Hague (RTM) cargo terminal. The local gemeente (municipality) registers the death with the Burgerlijke Stand (civil registry). A transport permit (laissez-passer) must accompany the remains. Foreign documents in languages other than Dutch, English, French, or German require certified translation. (Dutch Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Dutch Embassy in New Delhi can advise on documentation requirements for repatriation to the Netherlands. Dutch Ministry of Foreign Affairs emergency line: +31 70 348 6486 (24 hours). The Dutch Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +31 70 348 6486."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local municipal authority within 21 days"
+    timing: "Funeral director handles registration. Post-mortem ordered by police delays this."
+    responsible: "Local funeral director and municipal authority"
+  - step: 3
+    action: "British High Commission New Delhi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent in Indian climate)"
+    timing: "India's tropical climate requires urgent embalming."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police NOC, health authority clearance, and all export documentation obtained"
+    timing: "Allow 14-30 days minimum. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Delhi (DEL), Mumbai (BOM), or relevant regional airport"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Delhi and Mumbai."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Netherlands funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from India to Netherlands take?"
+    answer: "In a straightforward case, repatriation from India to Netherlands takes 4-6 weeks. The fastest cases complete in 14-21 days. Complex cases involving a post-mortem or death in a smaller city can take 8-16 weeks or longer."
+  - question: "Is a post-mortem always required for British nationals who die in India?"
+    answer: "Indian police routinely order post-mortem examinations for unexpected deaths of foreign nationals. It is standard procedure. The post-mortem adds time and the body cannot be released until police issue the No Objection Certificate (NOC)."
+  - question: "What documents are required for repatriation from India to the UK?"
+    answer: "The core documents are: Indian death certificate, Embalming certificate, Police No Objection Certificate (NOC), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the Netherlands Embassy in India help with repatriation?"
+    answer: "The Netherlands Embassy in New Delhi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Netherlands Embassy in New Delhi as soon as possible after the death."
+  - question: "What happens when the body arrives in Netherlands?"
+    answer: "The Dutch funeral director takes custody at Amsterdam Schiphol (AMS) cargo terminal. A laissez-passer must accompany the remains. The local gemeente registers the death with the Burgerlijke Stand. Documents not in Dutch, English, French, or German require certified translation. The receiving funeral director coordinates with the gemeente and health authorities."
+  - question: "Can I bring ashes home from India instead of repatriating the body?"
+    answer: "Yes. Cremation in India and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and a No Objection Certificate from the local authorities."
+links:
+  upward:
+    - url: "/repatriation-from-india/"
+      text: "Full India repatriation guide"
+    - url: "/guides/death-abroad-india/"
+      text: "What to do if someone dies in India"
+    - url: "/repatriation-from-netherlands/"
+      text: "Repatriation to Netherlands: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/india-to-united-kingdom/"
+      text: "Repatriation from India to the UK"
+    - url: "/routes/india-to-ireland/"
+      text: "Repatriation from India to Ireland"
+---
