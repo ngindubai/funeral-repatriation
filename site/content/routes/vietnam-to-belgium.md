@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Belgium: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Belgium takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "be"
+origin_name: "Vietnam"
+dest_name: "Belgium"
+origin_slug: "vietnam"
+dest_slug: "belgium"
+slug: "vietnam-to-belgium"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Belgium: what to expect"
+direct_answer_intro: "Vietnamese nationals form one of Belgium's established Asian communities, concentrated in Brussels. Belgium has historical ties with Vietnam through the French colonial connection to Indochina. This corridor handles cases where a Belgium-based Vietnamese has a family member die in Vietnam and needs remains brought to Belgium. Vietnamese documentation requires certified French or Dutch translation. The Belgian Embassy in Hanoi handles consular matters."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Belgium Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Hanoi can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Belgium Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Belgium take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Belgium takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Belgium Embassy in Vietnam help with repatriation?"
+    answer: "The Belgium Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation. The receiving funeral director coordinates with the commune and local health authorities."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

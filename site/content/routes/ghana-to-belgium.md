@@ -1,0 +1,87 @@
+---
+title: "Ghana to Belgium: Repatriation Guidance"
+description: "Someone has died in Ghana. Repatriation to Belgium takes 2-4 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "ghana"
+dest_key: "be"
+origin_name: "Ghana"
+dest_name: "Belgium"
+origin_slug: "ghana"
+dest_slug: "belgium"
+slug: "ghana-to-belgium"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Accra"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Ghana to Belgium: what to expect"
+direct_answer_intro: "Ghanaian nationals form part of Belgium's African diaspora, with communities in Brussels and Antwerp. This corridor handles cases where a Belgium-based Ghanaian has a family member die in Ghana and needs remains brought to Belgium. English documentation from Ghana requires certified French or Dutch translation for Belgian civil registry purposes. The Belgian Embassy in Accra handles consular matters."
+direct_answer_points:
+  - "Key document: Ghanaian death certificate (Births and Deaths Registry, in English)"
+  - "Documentation takes 7-21 days. Police report required for unexpected deaths."
+  - "British High Commission in Accra registers the death and advises. They cannot fund repatriation."
+  - "Belgium Embassy in Accra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Ghana"
+overview_body: "Call the police (191 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the Births and Deaths Registry of Ghana. Documentation is in English throughout. Kotoka International Airport in Accra is the main cargo departure point."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Accra can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Births and Deaths Registry of Ghana."
+    timing: "Documentation in English. Police report required for unexpected deaths."
+    responsible: "Local funeral director and Births and Deaths Registry"
+  - step: 3
+    action: "British High Commission Accra notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Kotoka International Airport (ACC) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways serves ACC-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Ghana to Belgium take?"
+    answer: "In a straightforward case, repatriation from Ghana to Belgium takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving police investigation can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Ghana to the UK?"
+    answer: "The core documents are: Ghanaian death certificate (Births and Deaths Registry), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Belgium Embassy in Ghana help with repatriation?"
+    answer: "The Belgium Embassy in Accra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Accra as soon as possible after the death."
+  - question: "What is the Births and Deaths Registry and why is it involved?"
+    answer: "The Births and Deaths Registry of Ghana is the official government body responsible for registering all deaths in Ghana. All deaths must be registered with the Registry before any funeral or repatriation process can begin. The Registry issues the official death certificate."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation. The receiving funeral director coordinates with the commune and local health authorities."
+  - question: "Can I bring ashes home from Ghana instead of repatriating the body?"
+    answer: "Yes. Cremation in Ghana and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-ghana/"
+      text: "Full Ghana repatriation guide"
+    - url: "/guides/death-abroad-ghana/"
+      text: "What to do if someone dies in Ghana"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/ghana-to-united-kingdom/"
+      text: "Repatriation from Ghana to the UK"
+    - url: "/routes/ghana-to-ireland/"
+      text: "Repatriation from Ghana to Ireland"
+---

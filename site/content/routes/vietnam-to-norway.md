@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Norway: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Norway takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "no"
+origin_name: "Vietnam"
+dest_name: "Norway"
+origin_slug: "vietnam"
+dest_slug: "norway"
+slug: "vietnam-to-norway"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Norway: what to expect"
+direct_answer_intro: "Vietnamese nationals form one of Norway's more established Asian communities, with many having arrived as refugees in the late 1970s and 1980s. This corridor handles cases where a Norway-based Vietnamese has a family member die in Vietnam and needs remains brought to Norway. The Norwegian Embassy in Hanoi handles consular matters."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Norway Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Norwegian begravelsesbyraa (funeral director) takes custody at Oslo Gardermoen (OSL) cargo terminal. A laissez-passer or equivalent body transport document must accompany the coffin. The Folkeregisteret (National Population Register) records the death. Norway is a Hague Apostille Convention member (EEA, not EU). Documents not in Norwegian or English require certified Norwegian translation. (Norwegian Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Norwegian Embassy in Hanoi can advise on documentation requirements for repatriation to Norway. Norwegian Ministry of Foreign Affairs emergency line: +47 23 95 00 00 (24 hours). The Norwegian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +47 23 95 00 00."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Norway Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Norway funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Norway take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Norway takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Norway Embassy in Vietnam help with repatriation?"
+    answer: "The Norway Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Norway Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Norway?"
+    answer: "The Norwegian begravelsesbyraa (funeral director) takes custody at Oslo Gardermoen (OSL) cargo terminal. A laissez-passer must accompany the coffin. The Folkeregisteret records the death. Documents not in Norwegian or English require certified Norwegian translation. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-norway/"
+      text: "Repatriation to Norway: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

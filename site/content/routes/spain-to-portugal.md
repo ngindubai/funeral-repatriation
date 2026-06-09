@@ -1,0 +1,88 @@
+---
+title: "Spain to Portugal: Repatriation Guidance"
+description: "Someone has died in Spain. Repatriation to Portugal takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "spain"
+dest_key: "pt"
+origin_name: "Spain"
+dest_name: "Portugal"
+origin_slug: "spain"
+dest_slug: "portugal"
+slug: "spain-to-portugal"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Madrid"
+doc_processing_time: "3-7 days total for documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Spain to Portugal: what to expect"
+direct_answer_intro: "Portuguese nationals form Spain's largest EU immigrant community, with around 400,000 residents working across Spanish regions. When a Portugal-based family has a member die in Spain, EU freedom of movement procedures apply on both sides. Direct road and air links mean transfer logistics are relatively straightforward. The Portuguese Embassy in Madrid handles consular matters."
+direct_answer_points:
+  - "Key documents: Certificado de defuncion and Embalming certificate"
+  - "Documentation takes 3-7 days. The Juzgado is involved in all sudden or unattended deaths."
+  - "British Embassy in Madrid registers the death and advises. They cannot fund repatriation."
+  - "Island deaths (Balearics, Canaries) require internal mainland transfer before international cargo departs."
+  - "Portugal Embassy in Madrid can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Spain"
+overview_body: "Contact emergency services (112). A doctor certifies the death. If death is sudden, unattended, or traumatic, the Juzgado de Instruccion takes jurisdiction before the body can be moved. Death registered at the Registro Civil. The certificado de defuncion is issued. For deaths on the Balearic or Canary Islands, internal transfer to a mainland airport (Madrid, Barcelona, Malaga) is required before the international cargo flight."
+dest_reception: "The Portuguese agencia funeraria (funeral director) takes custody at Lisbon (LIS), Porto (OPO), or Faro (FAO) cargo terminal. An Autoridade de Saude (health authority) clearance is required before burial or cremation can proceed. The Conservatoria do Registo Civil registers the death. Portugal is an EU and Hague Apostille Convention member. Documents from EU-origin countries may use a multilingual EU death certificate. Documents from non-EU countries require certified Portuguese translation. (Portuguese Ministry of Foreign Affairs, MNE, 2025.)"
+dest_consular: "Portuguese Embassy in Madrid can advise on documentation requirements for repatriation to Portugal. Portuguese Ministry of Foreign Affairs (MNE) emergency line: +351 21 394 6000 (24 hours). The Portuguese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +351 21 394 6000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registro Civil. Certificado de defuncion issued."
+    timing: "Within 24 hours of death in normal cases. Juzgado cases add 5-15 working days."
+    responsible: "Local funeral director and Registro Civil"
+  - step: 3
+    action: "Portugal Embassy in Madrid notified"
+    timing: "Simultaneous with Step 1. Consulates in Alicante, Barcelona, Ibiza, Malaga, Palma, Tenerife."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and zinc-lined coffin preparation"
+    timing: "After Juzgado or Registro Civil releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Licencia de enterramiento, laissez-passer, and all export permits obtained"
+    timing: "Allow 3-7 days total. Island transfers add 1-3 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to Portugal"
+    timing: "Once all documentation complete. British Airways, Iberia, and Vueling serve Spanish routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Portugal funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Spain to Portugal take?"
+    answer: "In a straightforward mainland case with a physician-certified natural death, repatriation from Spain to Portugal takes 7-14 days. The fastest cases complete in 5-7 days. Juzgado investigations add 5-15 working days. Island deaths add a further 1-3 days for mainland transfer. Complex or criminal cases can take 3-6 weeks or longer."
+  - question: "What is the Juzgado de Instruccion and why does it matter?"
+    answer: "The Juzgado de Instruccion is the Spanish investigative court. Any death that is sudden, unattended, traumatic, or unexplained must be referred to the Juzgado before the body can be moved or any preparation can begin. This applies to most deaths in hotels, accidents, and many natural deaths. It cannot be bypassed."
+  - question: "What documents are required for repatriation from Spain to the UK?"
+    answer: "The core documents are: Certificado de defuncion (death certificate from Registro Civil), Juzgado release document (if applicable), Licencia de enterramiento (export permit), Embalming certificate, Freedom from infection certificate, Airline cargo documentation, and Passport of the deceased."
+  - question: "Does the Portugal Embassy in Spain help with repatriation?"
+    answer: "The Portugal Embassy in Madrid can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Portugal Embassy in Madrid as soon as possible after the death."
+  - question: "What happens when the body arrives in Portugal?"
+    answer: "The Portuguese agencia funeraria (funeral director) takes custody at Lisbon (LIS), Porto (OPO), or Faro (FAO) cargo terminal. Autoridade de Saude clearance is required. The Conservatoria do Registo Civil registers the death. EU-origin documents may use a multilingual EU certificate. Non-EU documents require certified Portuguese translation. The receiving funeral director coordinates with local health authorities."
+  - question: "Can I bring ashes home from Spain instead of repatriating the body?"
+    answer: "Yes. Cremation in Spain and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the certificado de defuncion, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-spain/"
+      text: "Full Spain repatriation guide"
+    - url: "/guides/death-abroad-spain/"
+      text: "What to do if someone dies in Spain"
+    - url: "/repatriation-from-portugal/"
+      text: "Repatriation to Portugal: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/spain-to-united-kingdom/"
+      text: "Repatriation from Spain to the UK"
+    - url: "/routes/spain-to-ireland/"
+      text: "Repatriation from Spain to Ireland"
+---

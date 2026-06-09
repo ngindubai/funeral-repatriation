@@ -1,0 +1,88 @@
+---
+title: "Brazil to Spain: Repatriation Guidance"
+description: "Someone has died in Brazil. Repatriation to Spain takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "brazil"
+dest_key: "es"
+origin_name: "Brazil"
+dest_name: "Spain"
+origin_slug: "brazil"
+dest_slug: "spain"
+slug: "brazil-to-spain"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Brasilia"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Brazil to Spain: what to expect"
+direct_answer_intro: "Brazilian nationals form one of Spain's larger Latin American communities, with over 150,000 residents. Close family ties and a significant number of dual nationals mean this corridor sees consistent demand. Documentation from Brazil is in Portuguese, requiring certified Spanish translation for Spanish civil registry purposes. Direct flights connect Sao Paulo, Rio de Janeiro, and other Brazilian cities to Madrid and Barcelona."
+direct_answer_points:
+  - "Key document: Certidao de obito (Brazilian death certificate, in Portuguese) with certified English translation"
+  - "Documentation takes 14-30 days. IML release required for unexpected or violent deaths."
+  - "British Embassy in Brasilia and Consulate in Sao Paulo register the death and advise."
+  - "Brazil has 26 states and the Federal District, each with its own IML procedures."
+  - "Spain Embassy in Brasilia can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Brazil"
+overview_body: "Call SAMU (192) or police (190) for unexpected deaths. All violent, suspicious, or sudden deaths are referred to the Instituto Medico Legal (IML). The certidao de obito is issued by the cartorio de registro civil in Portuguese. Certified English translation required. Sao Paulo (GRU) has the most frequent international cargo connections."
+dest_reception: "The Spanish funeral director (empresa funeraria) takes custody at the cargo terminal, typically Madrid Barajas (MAD), Barcelona El Prat (BCN), or another Spanish airport. The Registro Civil registers the death. For deaths in the Canary or Balearic Islands, an internal mainland transfer is required before any international cargo flight departs. All foreign documents must carry a certified Spanish translation. (Spanish Ministry of Foreign Affairs, European Union and Cooperation, 2025.)"
+dest_consular: "Spanish Embassy in Brasilia can advise on documentation requirements for repatriation to Spain. Spanish Ministry of Foreign Affairs emergency line: +34 91 379 9700 (24 hours). The Spanish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +34 91 379 9700."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death reported to IML. Certidao de obito issued by cartorio de registro civil."
+    timing: "IML must release body before certificate is finalised. Adds time."
+    responsible: "Local funeral director and IML"
+  - step: 3
+    action: "Spain Embassy in Brasilia notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After IML releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days. Cannot begin until IML releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sao Paulo (GRU) or Rio de Janeiro (GIG) to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Spain funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Brazil to Spain take?"
+    answer: "In a straightforward case, repatriation from Brazil to Spain takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving IML investigation or death in a remote state can take 6-12 weeks."
+  - question: "What is the IML and why is it involved?"
+    answer: "The Instituto Medico Legal (IML) is Brazil's forensic medical service. All violent, suspicious, sudden, or unexplained deaths are referred to the IML for examination. The body cannot be released until the IML completes its examination and the Ministerio Publico authorises release."
+  - question: "What documents are required for repatriation from Brazil to the UK?"
+    answer: "The core documents are: certidao de obito (Brazilian death certificate) with certified English translation, IML release document, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Spain Embassy in Brazil help with repatriation?"
+    answer: "The Spain Embassy in Brasilia can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Spain Embassy in Brasilia as soon as possible after the death."
+  - question: "What happens when the body arrives in Spain?"
+    answer: "The Spanish funeral director takes custody at the cargo terminal. The Registro Civil registers the death. Island deaths require a mainland transfer first. Unexpected deaths may require a Juzgado de Instruccion investigation before release. All foreign documents require certified Spanish translation. The receiving funeral director coordinates with the Registro Civil and local health authorities."
+  - question: "Can I bring ashes home from Brazil instead of repatriating the body?"
+    answer: "Yes. Cremation in Brazil and bringing ashes home to the UK is an option, though the IML must still release the body for cremation. You will need the certidao de obito, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-brazil/"
+      text: "Full Brazil repatriation guide"
+    - url: "/guides/death-abroad-brazil/"
+      text: "What to do if someone dies in Brazil"
+    - url: "/repatriation-from-spain/"
+      text: "Repatriation to Spain: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/brazil-to-united-kingdom/"
+      text: "Repatriation from Brazil to the UK"
+    - url: "/routes/brazil-to-ireland/"
+      text: "Repatriation from Brazil to Ireland"
+---
