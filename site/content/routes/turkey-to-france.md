@@ -1,0 +1,88 @@
+---
+title: "Turkey to France: Repatriation Guidance"
+description: "Someone has died in Turkey. Repatriation to France takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "turkey"
+dest_key: "fr"
+origin_name: "Turkey"
+dest_name: "France"
+origin_slug: "turkey"
+dest_slug: "france"
+slug: "turkey-to-france"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Ankara"
+doc_processing_time: "5-10 days for documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Turkey to France: what to expect"
+direct_answer_intro: "Turkish nationals form a significant immigrant community in France, with an estimated 500,000 residents concentrated in the Alsace-Moselle region, the Paris area, and Lyon. France is the third-largest European destination for Turkish diaspora after Germany and the Netherlands. Turkish Airlines operates direct cargo services between Istanbul and Charles de Gaulle. Documentation takes 5 to 10 days."
+direct_answer_points:
+  - "Key documents: Turkish death certificate (olum belgesi) and certified English translation"
+  - "Documentation takes 5-10 days. Embalming must be specifically arranged for UK repatriation."
+  - "British Embassy in Ankara (and consulate Istanbul) registers the death and advises."
+  - "Post-mortem ordered by Turkish public prosecutor (cumhuriyet savcisi) for sudden or unexplained deaths."
+  - "France Embassy in Ankara can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Turkey"
+overview_body: "Call 112 for emergency services. Unexpected deaths are referred to the public prosecutor (cumhuriyet savcisi). Death registered at the nufus mudurlugu (civil registry office). The olum belgesi is issued in Turkish only. Certified English translation is required. No cremation facilities exist in Turkey."
+dest_reception: "The French funeral director (pompes funebres) takes custody at Charles de Gaulle (CDG, Paris) or another French international airport. The prefecture may require a permis d'inhumer (burial permit) or transport authorisation before burial or cremation can proceed. All foreign documents must carry a certified French translation. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+dest_consular: "French Embassy in Ankara can advise on repatriation documentation requirements for France. French Ministry of Europe and Foreign Affairs (MAE) emergency assistance: +33 1 43 17 67 67 (24 hours). The French Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +33 1 43 17 67 67."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at nufus mudurlugu. Olum belgesi issued."
+    timing: "Certificate in Turkish only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "France Embassy in Ankara notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming arranged (specifically requested for UK repatriation)"
+    timing: "Not standard for Turkish nationals. Must be specifically arranged."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 5-10 days. Cannot begin until public prosecutor authorises release."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Istanbul (IST/SAW), Ankara (ESB), or Antalya (AYT)"
+    timing: "Once all documentation complete. Turkish Airlines Cargo serves all major UK airports direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "France funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Turkey to France take?"
+    answer: "In a straightforward case with no prosecutor involvement, repatriation from Turkey to France takes 7-10 days. Most cases take 10-21 days. Complex cases involving investigation can take 4-8 weeks."
+  - question: "Is there cremation in Turkey?"
+    answer: "There are effectively no cremation facilities in Turkey. If your family wishes to have the body cremated, this cannot be done in Turkey. Full body repatriation to the UK is the only option."
+  - question: "What documents are required for repatriation from Turkey?"
+    answer: "The core documents are: Olum belgesi (Turkish death certificate), certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the France Embassy in Turkey help with repatriation?"
+    answer: "The France Embassy in Ankara can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the France Embassy in Ankara as soon as possible after the death."
+  - question: "What happens when the body arrives in France?"
+    answer: "The French funeral director takes custody at Charles de Gaulle (CDG) or another French airport. The prefecture issues a permis d'inhumer before burial or cremation. All foreign documents require certified French translation. The receiving funeral director coordinates with local authorities."
+  - question: "My relative was on holiday in Antalya or Bodrum. Does that change anything?"
+    answer: "Deaths in resort areas are handled locally, but embalming to international standards may need to be arranged in Antalya or via Istanbul. Your repatriation specialist will coordinate the right local provider. The overall process and timeline are the same."
+links:
+  upward:
+    - url: "/repatriation-from-turkey/"
+      text: "Full Turkey repatriation guide"
+    - url: "/guides/death-abroad-turkey/"
+      text: "What to do if someone dies in Turkey"
+    - url: "/repatriation-from-france/"
+      text: "Repatriation to France: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/turkey-to-united-kingdom/"
+      text: "Repatriation from Turkey to the UK"
+    - url: "/routes/turkey-to-ireland/"
+      text: "Repatriation from Turkey to Ireland"
+---

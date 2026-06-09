@@ -1,0 +1,88 @@
+---
+title: "Brazil to Portugal: Repatriation Guidance"
+description: "Someone has died in Brazil. Repatriation to Portugal takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "brazil"
+dest_key: "pt"
+origin_name: "Brazil"
+dest_name: "Portugal"
+origin_slug: "brazil"
+dest_slug: "portugal"
+slug: "brazil-to-portugal"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Brasilia"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Brazil to Portugal: what to expect"
+direct_answer_intro: "Brazilian nationals form the largest immigrant community in Portugal, with over 400,000 residents. Brazil and Portugal share language, legal traditions, and close cultural ties. This is Portugal's highest-volume non-EU repatriation corridor. Documentation is in Portuguese on both sides, which simplifies many requirements. Direct flights connect Sao Paulo, Rio de Janeiro, and other Brazilian cities to Lisbon."
+direct_answer_points:
+  - "Key document: Certidao de obito (Brazilian death certificate, in Portuguese) with certified English translation"
+  - "Documentation takes 14-30 days. IML release required for unexpected or violent deaths."
+  - "British Embassy in Brasilia and Consulate in Sao Paulo register the death and advise."
+  - "Brazil has 26 states and the Federal District, each with its own IML procedures."
+  - "Portugal Embassy in Brasilia can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Brazil"
+overview_body: "Call SAMU (192) or police (190) for unexpected deaths. All violent, suspicious, or sudden deaths are referred to the Instituto Medico Legal (IML). The certidao de obito is issued by the cartorio de registro civil in Portuguese. Certified English translation required. Sao Paulo (GRU) has the most frequent international cargo connections."
+dest_reception: "The Portuguese agencia funeraria (funeral director) takes custody at Lisbon (LIS), Porto (OPO), or Faro (FAO) cargo terminal. An Autoridade de Saude (health authority) clearance is required before burial or cremation can proceed. The Conservatoria do Registo Civil registers the death. Portugal is an EU and Hague Apostille Convention member. Documents from EU-origin countries may use a multilingual EU death certificate. Documents from non-EU countries require certified Portuguese translation. (Portuguese Ministry of Foreign Affairs, MNE, 2025.)"
+dest_consular: "Portuguese Embassy in Brasilia can advise on documentation requirements for repatriation to Portugal. Portuguese Ministry of Foreign Affairs (MNE) emergency line: +351 21 394 6000 (24 hours). The Portuguese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +351 21 394 6000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death reported to IML. Certidao de obito issued by cartorio de registro civil."
+    timing: "IML must release body before certificate is finalised. Adds time."
+    responsible: "Local funeral director and IML"
+  - step: 3
+    action: "Portugal Embassy in Brasilia notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After IML releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days. Cannot begin until IML releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sao Paulo (GRU) or Rio de Janeiro (GIG) to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Portugal funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Brazil to Portugal take?"
+    answer: "In a straightforward case, repatriation from Brazil to Portugal takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving IML investigation or death in a remote state can take 6-12 weeks."
+  - question: "What is the IML and why is it involved?"
+    answer: "The Instituto Medico Legal (IML) is Brazil's forensic medical service. All violent, suspicious, sudden, or unexplained deaths are referred to the IML for examination. The body cannot be released until the IML completes its examination and the Ministerio Publico authorises release."
+  - question: "What documents are required for repatriation from Brazil to the UK?"
+    answer: "The core documents are: certidao de obito (Brazilian death certificate) with certified English translation, IML release document, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Portugal Embassy in Brazil help with repatriation?"
+    answer: "The Portugal Embassy in Brasilia can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Portugal Embassy in Brasilia as soon as possible after the death."
+  - question: "What happens when the body arrives in Portugal?"
+    answer: "The Portuguese agencia funeraria (funeral director) takes custody at Lisbon (LIS), Porto (OPO), or Faro (FAO) cargo terminal. Autoridade de Saude clearance is required. The Conservatoria do Registo Civil registers the death. EU-origin documents may use a multilingual EU certificate. Non-EU documents require certified Portuguese translation. The receiving funeral director coordinates with local health authorities."
+  - question: "Can I bring ashes home from Brazil instead of repatriating the body?"
+    answer: "Yes. Cremation in Brazil and bringing ashes home to the UK is an option, though the IML must still release the body for cremation. You will need the certidao de obito, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-brazil/"
+      text: "Full Brazil repatriation guide"
+    - url: "/guides/death-abroad-brazil/"
+      text: "What to do if someone dies in Brazil"
+    - url: "/repatriation-from-portugal/"
+      text: "Repatriation to Portugal: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/brazil-to-united-kingdom/"
+      text: "Repatriation from Brazil to the UK"
+    - url: "/routes/brazil-to-ireland/"
+      text: "Repatriation from Brazil to Ireland"
+---
