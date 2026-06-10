@@ -1,0 +1,87 @@
+---
+title: "Philippines to Germany: Repatriation Guidance"
+description: "Someone has died in Philippines. Repatriation to Germany takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "philippines"
+dest_key: "de"
+origin_name: "Philippines"
+dest_name: "Germany"
+origin_slug: "philippines"
+dest_slug: "germany"
+slug: "philippines-to-germany"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "3 weeks"
+timeline_complex: "8-16 weeks"
+embassy_city: "Manila"
+doc_processing_time: "3-6 weeks (PSA and DFA authentication are the main delays)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Philippines to Germany: what to expect"
+direct_answer_intro: "Filipino nationals work in Germany primarily in healthcare and nursing, recruited as part of Germany's bilateral migration agreements with the Philippines. The Qualified Professionals Immigration Act has accelerated recruitment. The German Embassy in Manila handles consular matters. Filipino documentation requires certified German translation. The Philippine DFA authentication adds to the documentation timeline."
+direct_answer_points:
+  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication"
+  - "Documentation takes 3-6 weeks. PSA and DFA authentication are the main bottlenecks."
+  - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
+  - "Germany Embassy in Manila can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for Philippines to UK repatriation"
+overview_body: "Contact local emergency services (911 in Metro Manila). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required."
+dest_reception: "The German funeral director takes custody at the cargo terminal, typically Frankfurt (FRA), Munich (MUC), or Berlin (BER). A Leichenpass (body transport passport) or equivalent laissez-passer must accompany the remains. The local Gesundheitsamt (public health authority) may inspect the remains on arrival. The receiving funeral director registers the death with the local Standesamt (civil registry) if required. (German Federal Foreign Office, Auswaertiges Amt, 2025.)"
+dest_consular: "German Embassy in Manila can advise on document requirements for repatriation to Germany. Federal Foreign Office (Auswaertiges Amt) emergency assistance: +49 30 5000 2000 (24 hours). The German Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +49 30 5000 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certificate filed with Local Civil Registrar. PSA authentication requested."
+    timing: "Physician issues certificate. PSA authentication adds significant processing time."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "Germany Embassy in Manila notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Embalming is standard practice in the Philippines."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "DFA authentication, Bureau of Quarantine clearance, and all export permits obtained"
+    timing: "Allow 3-6 weeks. PSA and DFA are the main delays."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Manila (MNL) or Cebu (CEB)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Germany funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the Philippines to Germany take?"
+    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases can take 8-16 weeks."
+  - question: "Why does Philippine repatriation take so long?"
+    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed."
+  - question: "What documents are required for repatriation from the Philippines?"
+    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased."
+  - question: "Does the British Embassy in the Philippines help with repatriation?"
+    answer: "The British Embassy in Manila can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. German Embassy in Manila can advise on document requirements for repatriation to."
+  - question: "What happens when the body arrives in Germany?"
+    answer: "The German funeral director takes custody at the cargo terminal. A Leichenpass or laissez-passer must accompany the remains. The Gesundheitsamt may inspect the remains on arrival. The death is registered with the local Standesamt. All foreign documents must carry certified German translation where required."
+  - question: "Can I bring ashes home from the Philippines instead of repatriating the body?"
+    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance."
+links:
+  upward:
+    - url: "/repatriation-from-philippines/"
+      text: "Full Philippines repatriation guide"
+    - url: "/guides/death-abroad-philippines/"
+      text: "What to do if someone dies in Philippines"
+    - url: "/repatriation-from-germany/"
+      text: "Repatriation to Germany: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/philippines-to-united-kingdom/"
+      text: "Repatriation from Philippines to the UK"
+    - url: "/routes/philippines-to-ireland/"
+      text: "Repatriation from Philippines to Ireland"
+---

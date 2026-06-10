@@ -1,0 +1,88 @@
+---
+title: "Nigeria to Sweden: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to Sweden takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "se"
+origin_name: "Nigeria"
+dest_name: "Sweden"
+origin_slug: "nigeria"
+dest_slug: "sweden"
+slug: "nigeria-to-sweden"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to Sweden: what to expect"
+direct_answer_intro: "Nigerian nationals form part of Sweden's African diaspora, with a community in Stockholm and Gothenburg working in professional, academic, and service roles. English documentation from Nigeria simplifies some requirements where English is accepted alongside Swedish. The Swedish Embassy in Abuja handles consular matters. This corridor handles cases where a Sweden-based Nigerian has a family member die in Nigeria."
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "Sweden Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The Swedish begravningsentreprenor (funeral director) takes custody at Stockholm Arlanda (ARN) or Gothenburg Landvetter (GOT) cargo terminal. A laissez-passer must accompany the remains. Skatteverket (Swedish Tax Agency) is notified to update the population register. Sweden is a Hague Apostille Convention member. Documents not in Swedish or English require certified Swedish translation. (Swedish Ministry of Foreign Affairs, UD, 2025.)"
+dest_consular: "Swedish Embassy in Abuja can advise on documentation requirements for repatriation to Sweden. Swedish Ministry of Foreign Affairs emergency line: +46 8 405 50 05 (24 hours). The Swedish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +46 8 405 50 05."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Sweden funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to Sweden take?"
+    answer: "In a straightforward case, repatriation from Nigeria to Sweden takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Sweden Embassy in Nigeria help with repatriation?"
+    answer: "The Sweden Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Sweden Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in Sweden?"
+    answer: "The Swedish begravningsentreprenor takes custody at Stockholm Arlanda (ARN) or Gothenburg Landvetter (GOT) cargo terminal. A laissez-passer must accompany the remains. Skatteverket is notified to update the population register. Documents not in Swedish or English require certified Swedish translation."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-sweden/"
+      text: "Repatriation to Sweden: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---

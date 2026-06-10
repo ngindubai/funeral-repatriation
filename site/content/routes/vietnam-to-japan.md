@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Japan: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Japan takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "jp"
+origin_name: "Vietnam"
+dest_name: "Japan"
+origin_slug: "vietnam"
+dest_slug: "japan"
+slug: "vietnam-to-japan"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Japan: what to expect"
+direct_answer_intro: "Vietnamese nationals form Japan's third-largest foreign community, with over 600,000 residents working in manufacturing and technical roles under Japan's Technical Intern Training Programme and Specified Skilled Worker schemes. Vietnam to Japan is one of Japan's busiest South-East Asian repatriation corridors. Vietnamese documentation requires certified Japanese translation. The Japanese Embassy in Hanoi handles consular matters."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Japan Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Hanoi can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Japan Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Japan take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Japan takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Japan Embassy in Vietnam help with repatriation?"
+    answer: "The Japan Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "Brazil to Japan: Repatriation Guidance"
+description: "Someone has died in Brazil. Repatriation to Japan takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "brazil"
+dest_key: "jp"
+origin_name: "Brazil"
+dest_name: "Japan"
+origin_slug: "brazil"
+dest_slug: "japan"
+slug: "brazil-to-japan"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Brasilia"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Brazil to Japan: what to expect"
+direct_answer_intro: "Brazil hosts the world's largest Japanese diaspora outside Japan, with over 1.5 million Nikkei (Japanese-Brazilian) residents. Some Nikkei Brazilians return to Japan to live and work, creating a reverse corridor. Japan to Japan repatriation via Brazil handles cases where Japanese-heritage Brazilians need remains returned to Japan. Portuguese documentation from Brazil requires certified Japanese translation. The Japanese Embassy in Brasilia handles consular matters."
+direct_answer_points:
+  - "Key document: Certidao de obito (Brazilian death certificate, in Portuguese) with certified English translation"
+  - "Documentation takes 14-30 days. IML release required for unexpected or violent deaths."
+  - "British Embassy in Brasilia and Consulate in Sao Paulo register the death and advise."
+  - "Brazil has 26 states and the Federal District, each with its own IML procedures."
+  - "Japan Embassy in Brasilia can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Brazil"
+overview_body: "Call SAMU (192) or police (190) for unexpected deaths. All violent, suspicious, or sudden deaths are referred to the Instituto Medico Legal (IML). The certidao de obito is issued by the cartorio de registro civil in Portuguese. Certified English translation required. Sao Paulo (GRU) has the most frequent international cargo connections."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Brasilia can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death reported to IML. Certidao de obito issued by cartorio de registro civil."
+    timing: "IML must release body before certificate is finalised. Adds time."
+    responsible: "Local funeral director and IML"
+  - step: 3
+    action: "Japan Embassy in Brasilia notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After IML releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days. Cannot begin until IML releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sao Paulo (GRU) or Rio de Janeiro (GIG) to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Brazil to Japan take?"
+    answer: "In a straightforward case, repatriation from Brazil to Japan takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving IML investigation or death in a remote state can take 6-12 weeks."
+  - question: "What is the IML and why is it involved?"
+    answer: "The Instituto Medico Legal (IML) is Brazil's forensic medical service. All violent, suspicious, sudden, or unexplained deaths are referred to the IML for examination. The body cannot be released until the IML completes its examination and the Ministerio Publico authorises release."
+  - question: "What documents are required for repatriation from Brazil to the UK?"
+    answer: "The core documents are: certidao de obito (Brazilian death certificate) with certified English translation, IML release document, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Japan Embassy in Brazil help with repatriation?"
+    answer: "The Japan Embassy in Brasilia can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Brasilia as soon as possible after the death."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from Brazil instead of repatriating the body?"
+    answer: "Yes. Cremation in Brazil and bringing ashes home to the UK is an option, though the IML must still release the body for cremation. You will need the certidao de obito, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-brazil/"
+      text: "Full Brazil repatriation guide"
+    - url: "/guides/death-abroad-brazil/"
+      text: "What to do if someone dies in Brazil"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/brazil-to-united-kingdom/"
+      text: "Repatriation from Brazil to the UK"
+    - url: "/routes/brazil-to-ireland/"
+      text: "Repatriation from Brazil to Ireland"
+---

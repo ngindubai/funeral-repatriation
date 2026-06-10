@@ -63,7 +63,7 @@
 
 ---
 
-## 3. Current State (9 June 2026)
+## 3. Current State (10 June 2026)
 
 | Silo | Status |
 |------|--------|
@@ -74,16 +74,16 @@
 | Bringing ashes home | 238 countries |
 | Cremation transfer | 238 countries |
 | Embassy contacts | 238 countries |
-| Route pairs | 773 of 38,612 (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 375 Tier B diaspora corridors) |
+| Route pairs | 873 of 38,612 (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 475 Tier B diaspora corridors) |
 
-**Active build:** Phase R, the route matrix. Tier A complete (394 routes). Chunks R14-R28 complete (375 Tier B routes: USA, UAE, Saudi Arabia, Germany, France, Canada, Australia, India, Qatar, Kuwait, Singapore, South Africa, Italy, Spain, Netherlands, Belgium, Switzerland, Sweden, Norway, Portugal, plus wave-2, wave-3, and wave-4 corridors). Next block: chunk R29 (Tier B, Template D, continued waves to established hubs). See BUILD-PLAN.md for the tier breakdown and chunk ledger.
+**Active build:** Phase R, the route matrix. Tier A complete (394 routes). Chunks R14-R32 complete (475 Tier B routes: USA, UAE, Saudi Arabia, Germany, France, Canada, Australia, India, Qatar, Kuwait, Singapore, South Africa, Italy, Spain, Netherlands, Belgium, Switzerland, Sweden, Norway, Portugal, Japan, New Zealand, plus wave-2 through wave-5 corridors). Next block: chunk R33 (Tier B, Template D, continued waves). See BUILD-PLAN.md for the tier breakdown and chunk ledger.
 
-**Note on Tier B:** The keyword_matrix.json does not contain a `tier_b_corridors` key. Tier B corridors are built by adapting the existing {origin}-to-united-kingdom.md source files, keeping origin-country regulatory content and replacing destination-specific fields (reception, consular, embassy city, FAQs). Generators: generate_tier_b.py (R14-R17), generate_r18_r21.py (R18-R21), generate_r22_r25.py (R22-R25), generate_r26_r29.py (R26-R28+) at repo root. Two pre-matrix origins used short slugs (usa, uae) not canonical slugs; these needed manual file creation for to-India routes. Important fix: the -- replacement must protect --- YAML delimiters (use placeholder swap). New hubs added in R22-R25: italy, spain, netherlands, belgium. New hubs added in R26: switzerland, sweden, norway, portugal. R27-R28 added wave-2 corridors to switzerland/sweden/norway/portugal plus new Germany, Italy, Belgium, Saudi Arabia destinations. For R29+, add new corridors to generate_r26_r29.py ALL_ROUTES list and update DEST_META/EMBASSY_CITIES/CORRIDOR_INTRO as needed.
+**Note on Tier B:** The keyword_matrix.json does not contain a `tier_b_corridors` key. Tier B corridors are built by adapting the existing {origin}-to-united-kingdom.md source files, keeping origin-country regulatory content and replacing destination-specific fields (reception, consular, embassy city, FAQs). Generators: generate_tier_b.py (R14-R17), generate_r18_r21.py (R18-R21), generate_r22_r25.py (R22-R25), generate_r26_r29.py (R26-R28), generate_r29_r32.py (R29-R32) at repo root. Two pre-matrix origins used short slugs (usa, uae) not canonical slugs; these needed manual file creation for to-India routes. Important fix: the -- replacement must protect --- YAML delimiters (use placeholder swap). New hubs added in R22-R25: italy, spain, netherlands, belgium. New hubs added in R26: switzerland, sweden, norway, portugal. R29-R32 introduced two new hubs: japan (Narita/KIX, +81 3 3580 3311) and new-zealand (AKL/WLG/CHC, +64 4 439 8000). Embassy note: German/US Embassy in Damascus closed 2012, both covered from Beirut. South Africa and Germany have no direct embassy in Somalia, both covered from Nairobi. Saudi Embassy in Tehran reopened March 2023. For R33+, create new generator following generate_r29_r32.py pattern, updating ALL_ROUTES, DEST_META, EMBASSY_CITIES, CORRIDOR_INTRO as needed.
 
 Full origin-to-destination square: 197 countries x 197, minus same-country pairs = 38,612 route pages. Four tiers, highest commercial intent first:
 
-- **Tier A (394):** every origin to United Kingdom and to Ireland. The revenue tier. 370 built, 24 remaining.
-- **Tier B (~1,100):** diaspora and cross-border corridors to the top 12 destination hubs.
+- **Tier A (394):** every origin to United Kingdom and to Ireland. The revenue tier. Complete.
+- **Tier B (~1,100):** diaspora and cross-border corridors to the top 12 destination hubs. 475 built, ~625 remaining.
 - **Tier C (~7,700):** regional and secondary destinations.
 - **Tier D (~29,400):** long-tail completion of the square.
 
@@ -93,7 +93,7 @@ Full origin-to-destination square: 197 countries x 197, minus same-country pairs
 
 ## 5. Next Tasks -- in priority order
 
-1. **Route matrix, Tier B, chunk R29** (default every run): continued waves to established hubs (Germany, France, UAE, Canada, Australia, India, Qatar, Kuwait, Singapore, South Africa, plus any underserved hubs). Template rotation continues from D (last was C on R28). Add routes to generate_r26_r29.py ALL_ROUTES list.
+1. **Route matrix, Tier B, chunk R33** (default every run): continued waves to established hubs and new corridors. Template rotation continues from D (last was C on R32). Create generate_r33_r36.py following the generate_r29_r32.py pattern.
 2. After Tier B: Tier C, then D, same block rhythm.
 3. Blog batches 27 onward (first-contact cluster, cause-specific, sector deep-dives, then open-ended country long-tail): built on any run where the next route chunk is already committed.
 

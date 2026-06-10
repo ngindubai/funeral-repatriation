@@ -20,7 +20,7 @@
 - **Skip rule:** skip a block whose slugs already exist; skip the whole run only if nothing is left to build (no unbuilt chunk and no blog batch due). Do NOT skip just because a build ran earlier today; this routine runs twice a day on purpose.
 - Bulk-generation without the quality gate is banned. A batch is still N individually quality-gated blocks, full gate on each, every time.
 
-**Where we are (9 June 2026):** 773 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 375 Tier B diaspora corridors). Tier A complete (394 routes). Chunks R14-R28 (Tier B, first 375 routes) committed. New hubs added in R26: Switzerland, Sweden, Norway, Portugal. R27 added wave 2 for those hubs plus Germany/Italy waves. R28 added Spain/Netherlands/Italy/Belgium/Saudi Arabia further waves. Chunk R29 (Tier B, continued waves to established hubs) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
+**Where we are (10 June 2026):** 873 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 475 Tier B diaspora corridors). Tier A complete (394 routes). Chunks R14-R32 (Tier B, first 475 routes) committed. R29-R32 added Germany/France/UAE/Canada/Australia/Qatar/Kuwait/Singapore/South Africa/USA/Switzerland/Sweden/Norway/Portugal/Saudi Arabia further waves, plus new hubs Japan and New Zealand. Chunk R33 (Tier B, continued waves) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
 
 ---
 
@@ -60,10 +60,10 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 | Tier | Description | Routes | Built | Remaining |
 |---|---|---|---|---|
 | A | All origins to UK and Ireland | 394 | 394 | 0 |
-| B | Diaspora and high-volume cross-border | ~1,100 | 375 | ~725 |
+| B | Diaspora and high-volume cross-border | ~1,100 | 475 | ~625 |
 | C | Regional and secondary destinations | ~7,700 | 0 | ~7,700 |
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
-| **Total** | **Full 197x197 matrix** | **38,612** | **773** | **37,839** |
+| **Total** | **Full 197x197 matrix** | **38,612** | **873** | **37,739** |
 
 At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 routes per block = up to 200 routes per day), Tier A (the revenue tier) completes in under 3 weeks and the full matrix in roughly the same horizon as before.
 
@@ -73,9 +73,9 @@ At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 ro
 
 Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
-- Next chunk: **R29 (Tier B)**
+- Next chunk: **R33 (Tier B)**
 - Next tier: **B**
-- Next template lead: **D** (rotation continues from last page of R28, variant C, so next is D)
+- Next template lead: **D** (rotation continues from last page of R32, variant C, so next is D)
 
 ---
 
@@ -114,7 +114,11 @@ The routine names each route block "chunk R<N>" in its commit message so the ski
 | R26 | B | D | 25 | DONE | Switzerland x5 (turkey, portugal, italy, germany, india), Sweden x5 (syria, somalia, iraq, poland, afghanistan), Norway x5 (poland, somalia, pakistan, india, philippines), Portugal x5 (brazil, angola, mozambique, cabo-verde, guinea-bissau), extra waves x5 (turkey-france, iraq-france, ghana-netherlands, ghana-spain, kenya-netherlands). 9 Jun 2026. |
 | R27 | B | D | 25 | DONE | Switzerland wave 2 x5 (france, spain, morocco, eritrea, pakistan), Sweden wave 2 x5 (turkey, iran, eritrea, ethiopia, bosnia-and-herzegovina), Norway wave 2 x5 (iraq, iran, vietnam, eritrea, ethiopia), Portugal wave 2 x5 (france, spain, india, china, venezuela), additional Tier B x5 (eritrea-italy, ethiopia/kenya/senegal/cameroon-germany). 9 Jun 2026. |
 | R28 | B | D | 25 | DONE | Spain wave 3 x5 (argentina, cuba, brazil, philippines, senegal), Netherlands wave 3 x5 (nigeria, bangladesh, vietnam, somalia, eritrea), Italy wave 3 x5 (ecuador, peru, ghana, tunisia, ivory-coast), Belgium wave 3 x5 (algeria, ivory-coast, ghana, poland, vietnam), Saudi Arabia wave 2 x5 (somalia, iraq, yemen, turkey, sudan). 9 Jun 2026. |
-| R29 | B | D | 25 | NEXT | Continue Tier B diaspora corridors: further waves to established hubs (Germany, France, UAE, Canada, Australia, India, Qatar, Kuwait, Singapore, South Africa). |
+| R29 | B | D | 25 | DONE | Germany wave 4 x5 (syria, lebanon, jordan, indonesia, philippines), France wave 4 x5 (ghana, lebanon, pakistan, india, bangladesh), UAE wave 4 x5 (iran, lebanon, oman, eritrea, sudan), Canada wave 4 x5 (colombia, ecuador, peru, brazil, haiti), Australia wave 5 x5 (japan, south-africa, tonga, papua-new-guinea, ukraine). 10 Jun 2026. |
+| R30 | B | D | 25 | DONE | Qatar wave 3 x5 (vietnam, china, iran, morocco, somalia), Kuwait wave 3 x5 (jordan, malaysia, china, turkey, iran), Singapore wave 3 x5 (japan, nepal, cambodia, hong-kong, laos), South Africa wave 3 x5 (somalia, rwanda, burundi, eritrea, ivory-coast), USA wave 4 x5 (russia, lebanon, eritrea, iraq, syria). 10 Jun 2026. |
+| R31 | B | D | 25 | DONE | Switzerland wave 3 x5 (egypt, chile, colombia, brazil, china), Sweden wave 3 x5 (nigeria, kenya, morocco, tunisia, china), Norway wave 3 x5 (nigeria, kenya, morocco, turkey, china), Portugal wave 3 x5 (morocco, guinea, senegal, nigeria, turkey), Saudi Arabia wave 3 x5 (malaysia, vietnam, china, eritrea, iran). 10 Jun 2026. |
+| R32 | B | D | 25 | DONE | New hub Japan x8 (china, south-korea, philippines, vietnam, india, myanmar, indonesia, brazil), new hub New Zealand x7 (india, china, philippines, fiji, samoa, tonga, south-korea), Belgium wave 4 x5 (france, kenya, eritrea, burkina-faso, lebanon), Germany wave 5 x5 (ivory-coast, mali, togo, guinea, somalia). 10 Jun 2026. |
+| R33 | B | D | 25 | NEXT | Continue Tier B diaspora corridors: further waves to established hubs and new corridors as needed. |
 
 When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
@@ -159,7 +163,8 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 
 | 9 Jun 2026 | Chunk R26 | Batch build: 25 new Tier B diaspora corridor route pages. Four new Tier B hubs: Switzerland x5 (turkey, portugal, italy, germany, india), Sweden x5 (syria, somalia, iraq, poland, afghanistan), Norway x5 (poland, somalia, pakistan, india, philippines), Portugal x5 (brazil, angola, mozambique, cabo-verde, guinea-bissau). Extra waves x5 (turkey-france, iraq-france, ghana-netherlands, ghana-spain, kenya-netherlands). All QA clean (0 errors on new files; 36 pre-existing failures unchanged). 723 total route pairs. Next: R27 Tier B. | 723 (196 UK + 196 Ireland + 6 pre-matrix + 325 Tier B) | R26 committed as single chunk. Deploy auto via build-and-publish.yml. |
 | 9 Jun 2026 | Chunks R27-R28 | Batch build: 50 new Tier B diaspora corridor route pages. R27 (25): Switzerland wave 2 x5 (france, spain, morocco, eritrea, pakistan), Sweden wave 2 x5 (turkey, iran, eritrea, ethiopia, bosnia-and-herzegovina), Norway wave 2 x5 (iraq, iran, vietnam, eritrea, ethiopia), Portugal wave 2 x5 (france, spain, india, china, venezuela), additional Tier B x5 (eritrea-italy, ethiopia/kenya/senegal/cameroon-germany). R28 (25): Spain wave 3 x5 (argentina, cuba, brazil, philippines, senegal), Netherlands wave 3 x5 (nigeria, bangladesh, vietnam, somalia, eritrea), Italy wave 3 x5 (ecuador, peru, ghana, tunisia, ivory-coast), Belgium wave 3 x5 (algeria, ivory-coast, ghana, poland, vietnam), Saudi Arabia wave 2 x5 (somalia, iraq, yemen, turkey, sudan). All QA clean (0 errors on new files; 36 pre-existing failures unchanged). 773 total route pairs. Next: R29 Tier B. | 773 (196 UK + 196 Ireland + 6 pre-matrix + 375 Tier B) | R27-R28 committed in single batch. Deploy auto via build-and-publish.yml. |
+| 10 Jun 2026 | Chunks R29-R32 | Batch build: 100 new Tier B diaspora corridor route pages. R29 (25): Germany wave 4 x5, France wave 4 x5, UAE wave 4 x5, Canada wave 4 x5, Australia wave 5 x5. R30 (25): Qatar wave 3 x5, Kuwait wave 3 x5, Singapore wave 3 x5, South Africa wave 3 x5, USA wave 4 x5. R31 (25): Switzerland wave 3 x5, Sweden wave 3 x5, Norway wave 3 x5, Portugal wave 3 x5, Saudi Arabia wave 3 x5. R32 (25): new hub Japan x8, new hub New Zealand x7, Belgium wave 4 x5, Germany wave 5 x5. All QA clean (0 errors on new files; 36 pre-existing failures unchanged). 873 total route pairs. Next: R33 Tier B. | 873 (196 UK + 196 Ireland + 6 pre-matrix + 475 Tier B) | R29-R32 committed in single batch. Deploy auto via build-and-publish.yml. |
 
 ---
 
-*Last updated: 9 June 2026. The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*
+*Last updated: 10 June 2026. The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*

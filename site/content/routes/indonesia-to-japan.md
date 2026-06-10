@@ -1,0 +1,88 @@
+---
+title: "Indonesia to Japan: Repatriation Guidance"
+description: "Someone has died in Indonesia. Repatriation to Japan takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "indonesia"
+dest_key: "jp"
+origin_name: "Indonesia"
+dest_name: "Japan"
+origin_slug: "indonesia"
+dest_slug: "japan"
+slug: "indonesia-to-japan"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Jakarta"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Indonesia to Japan: what to expect"
+direct_answer_intro: "Indonesian nationals work in Japan in healthcare, technical intern, and specialist roles under Japan's Economic Partnership Agreement with Indonesia. The Japanese Embassy in Jakarta handles consular matters. Indonesian documentation requires certified Japanese translation. Indonesia and Japan have maintained close bilateral ties for decades, and the Indonesian community in Japan is well established."
+direct_answer_points:
+  - "Key document: Surat keterangan kematian (Indonesian death certificate, in Bahasa Indonesia) with certified English translation"
+  - "Bali deaths require internal transfer to Jakarta (Soekarno-Hatta airport) for international cargo."
+  - "British Embassy in Jakarta registers the death and advises. They cannot fund repatriation."
+  - "Police must be notified for all unexpected deaths. Procedure varies by province."
+  - "Japan Embassy in Jakarta can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Indonesia"
+overview_body: "Call 112 for emergency services. Unexpected deaths require police attendance. Death registered with the local civil registry (catatan sipil). The surat keterangan kematian is issued in Bahasa Indonesia and requires certified English translation. Deaths in Bali require transfer to Jakarta (CGK) for international cargo departure."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Jakarta can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local civil registry. Surat keterangan kematian issued."
+    timing: "Certificate in Bahasa Indonesia. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Japan Embassy in Jakarta notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and internal transfer (if Bali or other island)"
+    timing: "Bali deaths require transfer to Jakarta (CGK). Add 1-2 days."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Soekarno-Hatta International Airport (CGK), Jakarta to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Indonesia to Japan take?"
+    answer: "In a straightforward case, repatriation from Indonesia to Japan takes 14-28 days. Bali cases that require Jakarta transfer take 10-14 days in best-case. Complex cases can take 4-8 weeks."
+  - question: "My relative died in Bali. What happens?"
+    answer: "Deaths in Bali are handled locally by Balinese authorities. The body must be transferred from Bali to Jakarta (Soekarno-Hatta airport, CGK) before international cargo can depart. This adds 1-2 days. Contact a specialist on the day of death."
+  - question: "What documents are required for repatriation from Indonesia to the UK?"
+    answer: "The core documents are: surat keterangan kematian (Indonesian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the Japan Embassy in Indonesia help with repatriation?"
+    answer: "The Japan Embassy in Jakarta can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Jakarta as soon as possible after the death."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from Indonesia instead of repatriating the body?"
+    answer: "Yes. Cremation in Indonesia (including Bali, where Hindu cremation is traditional) and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-indonesia/"
+      text: "Full Indonesia repatriation guide"
+    - url: "/guides/death-abroad-indonesia/"
+      text: "What to do if someone dies in Indonesia"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/indonesia-to-united-kingdom/"
+      text: "Repatriation from Indonesia to the UK"
+    - url: "/routes/indonesia-to-ireland/"
+      text: "Repatriation from Indonesia to Ireland"
+---

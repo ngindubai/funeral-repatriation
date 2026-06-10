@@ -1,0 +1,88 @@
+---
+title: "France to Belgium: Repatriation Guidance"
+description: "Someone has died in France. Repatriation to Belgium takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "france"
+dest_key: "be"
+origin_name: "France"
+dest_name: "Belgium"
+origin_slug: "france"
+dest_slug: "belgium"
+slug: "france-to-belgium"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "4-7 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Paris"
+doc_processing_time: "3-7 days total"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from France to Belgium: what to expect"
+direct_answer_intro: "French nationals form one of Belgium's largest EU immigrant communities, concentrated in Brussels, Liege, and Namur. The two countries share borders and French is an official language in both. EU freedom of movement makes this a straightforward corridor. Direct rail and road links connect the two countries, and air cargo transits via Brussels Airport. The Belgian Embassy in Paris handles consular matters where required."
+direct_answer_points:
+  - "Key documents: Acte de deces and Embalming certificate (certificat de soins de conservation)"
+  - "Documentation takes 3-7 days. The death must be registered at the local mairie within 24 hours."
+  - "British Embassy in Paris registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem at the Institut Medico-Legal (IML) required for violent, sudden, or unexplained deaths."
+  - "Belgium Embassy in Paris can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in France"
+overview_body: "Contact emergency services (15 SAMU, 17 police, 18 fire, or 112). A doctor certifies the death and issues a certificat de deces. The death must be registered at the local mairie within 24 hours. Eurotunnel or ferry road transport is a genuine alternative to air cargo for northern France deaths."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Paris can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local mairie within 24 hours"
+    timing: "Hospital or doctor initiates. Acte de deces issued by the mairie."
+    responsible: "Local funeral director and mairie"
+  - step: 3
+    action: "Belgium Embassy in Paris notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (thanatopraxie) and preparation"
+    timing: "French funeral industry is professional. Regulated embalming profession."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Laissez-passer mortuaire and export documentation obtained"
+    timing: "Allow 3-7 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Transport to UK: air cargo or road via Eurotunnel or ferry"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from France to Belgium take?"
+    answer: "In a straightforward case, repatriation from France to Belgium takes 7-14 days. The fastest cases complete in 4-7 days when road transport via Eurotunnel is used. Complex cases involving a post-mortem at the Institut Medico-Legal can take 3-8 weeks."
+  - question: "What documents are required for repatriation from France to the UK?"
+    answer: "The core documents are: Acte de deces (death certificate), Embalming certificate (certificat de soins de conservation), Permission to transfer (autorisation de transport de corps), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the Belgium Embassy in France help with repatriation?"
+    answer: "The Belgium Embassy in Paris can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Paris as soon as possible after the death."
+  - question: "Is road transport from France to the UK an option?"
+    answer: "Yes. Road transport via Eurotunnel or ferry is a genuine and often cheaper alternative to air cargo, particularly for deaths in northern France or Paris. Your repatriation specialist will advise which route is most practical."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation."
+  - question: "Can I bring ashes home from France instead of repatriating the body?"
+    answer: "Yes. Cremation in France and bringing ashes home to the UK is often simpler and less costly. French crematoria are well-established and the ashes can be carried on a passenger flight or shipped."
+links:
+  upward:
+    - url: "/repatriation-from-france/"
+      text: "Full France repatriation guide"
+    - url: "/guides/death-abroad-france/"
+      text: "What to do if someone dies in France"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/france-to-united-kingdom/"
+      text: "Repatriation from France to the UK"
+    - url: "/routes/france-to-ireland/"
+      text: "Repatriation from France to Ireland"
+---

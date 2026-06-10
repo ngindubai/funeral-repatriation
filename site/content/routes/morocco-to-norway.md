@@ -1,0 +1,87 @@
+---
+title: "Morocco to Norway: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Norway takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "no"
+origin_name: "Morocco"
+dest_name: "Norway"
+origin_slug: "morocco"
+dest_slug: "norway"
+slug: "morocco-to-norway"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Norway: what to expect"
+direct_answer_intro: "Moroccan nationals form part of Norway's North African diaspora, with a community in Oslo and other Norwegian cities. This corridor handles cases where a Norway-based Moroccan has a family member die in Morocco and needs remains brought to Norway. Arabic documentation requires certified Norwegian translation. The Norwegian Embassy in Rabat handles consular matters."
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Norway Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The Norwegian begravelsesbyraa (funeral director) takes custody at Oslo Gardermoen (OSL) cargo terminal. A laissez-passer or equivalent body transport document must accompany the coffin. The Folkeregisteret (National Population Register) records the death. Norway is a Hague Apostille Convention member (EEA, not EU). Documents not in Norwegian or English require certified Norwegian translation. (Norwegian Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Norwegian Embassy in Rabat can advise on documentation requirements for repatriation to Norway. Norwegian Ministry of Foreign Affairs emergency line: +47 23 95 00 00 (24 hours). The Norwegian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +47 23 95 00 00."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Norway Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Norway funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Norway take?"
+    answer: "In a straightforward case, repatriation from Morocco to Norway takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Norway Embassy in Morocco help with repatriation?"
+    answer: "The Norway Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Norway Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the +47 23 95 00 00 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Norway?"
+    answer: "The Norwegian begravelsesbyraa takes custody at Oslo Gardermoen (OSL) cargo terminal. A laissez-passer must accompany the coffin. The Folkeregisteret records the death. Documents not in Norwegian or English require certified Norwegian translation."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-norway/"
+      text: "Repatriation to Norway: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---
