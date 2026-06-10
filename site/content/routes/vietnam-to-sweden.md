@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Sweden: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Sweden takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "se"
+origin_name: "Vietnam"
+dest_name: "Sweden"
+origin_slug: "vietnam"
+dest_slug: "sweden"
+slug: "vietnam-to-sweden"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Sweden: what to expect"
+direct_answer_intro: "Vietnamese nationals form part of Sweden's South-East Asian diaspora, with a long-established community of Vietnamese refugees and their descendants who arrived in Sweden from the late 1970s following the end of the Vietnam War. Sweden was among the first Western countries to open diplomatic relations with Vietnam. Vietnamese documentation requires certified Swedish translation. The Swedish Embassy in Hanoi handles consular matters."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Sweden Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Swedish begravningsentreprenor (funeral director) takes custody at Stockholm Arlanda (ARN) or Gothenburg Landvetter (GOT) cargo terminal. A laissez-passer must accompany the remains. Skatteverket (Swedish Tax Agency) is notified to update the population register. Sweden is a Hague Apostille Convention member. Documents not in Swedish or English require certified Swedish translation. (Swedish Ministry of Foreign Affairs, UD, 2025.)"
+dest_consular: "Swedish Embassy in Hanoi can advise on documentation requirements for repatriation to Sweden. Swedish Ministry of Foreign Affairs emergency line: +46 8 405 50 05 (24 hours). The Swedish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +46 8 405 50 05."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Sweden Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Sweden funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Sweden take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Sweden takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Sweden Embassy in Vietnam help with repatriation?"
+    answer: "The Sweden Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Sweden Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Sweden?"
+    answer: "The Swedish begravningsentreprenor takes custody at Stockholm Arlanda (ARN) or Gothenburg Landvetter (GOT) cargo terminal. A laissez-passer must accompany the remains. Skatteverket is notified to update the population register. Documents not in Swedish or English require certified Swedish translation."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-sweden/"
+      text: "Repatriation to Sweden: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

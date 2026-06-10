@@ -1,0 +1,87 @@
+---
+title: "Kenya to Italy: Repatriation Guidance"
+description: "Someone has died in Kenya. Repatriation to Italy takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "kenya"
+dest_key: "it"
+origin_name: "Kenya"
+dest_name: "Italy"
+origin_slug: "kenya"
+dest_slug: "italy"
+slug: "kenya-to-italy"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Kenya to Italy: what to expect"
+direct_answer_intro: "Kenyan nationals form part of Italy's East African diaspora, working in caregiving, healthcare, and professional roles. Kenya and Italy have bilateral ties through development cooperation and the Rome-based UN Food and Agriculture Organisation. English documentation from Kenya requires certified Italian translation where required by Italian registry authorities. The Italian Embassy in Nairobi handles consular matters."
+direct_answer_points:
+  - "Key documents: Kenyan death certificate and Port Health clearance (freedom from infection)"
+  - "Documentation takes 7-21 days. All documentation and cargo departs from Nairobi."
+  - "British High Commission in Nairobi registers the death and advises. They cannot fund repatriation."
+  - "Italy Embassy in Nairobi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Kenya"
+overview_body: "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend. Contact the British High Commission in Nairobi. Death must be registered with the civil registrar at the district office. Deaths in safari areas require road or charter aircraft transfer to Nairobi."
+dest_reception: "The Italian funeral director (impresa funebre) takes custody at the cargo terminal, typically Rome Fiumicino (FCO), Milan Malpensa (MXP), or another Italian international airport. A prefettura transport authorisation is required before burial or cremation. All foreign documents must carry a certified Italian translation. The local commune registers the death with the anagrafe (civil registry). (Italian Ministry of Foreign Affairs and International Cooperation, MAECI, 2025.)"
+dest_consular: "Italian Embassy in Nairobi can advise on documentation requirements for repatriation to Italy. Italian Ministry of Foreign Affairs and International Cooperation (MAECI) emergency line: +39 06 3691 3691 (24 hours). The Italian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +39 06 3691 3691."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with civil registrar. Burial permit obtained."
+    timing: "Funeral director handles registration. Safari area deaths require transfer to Nairobi first."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British High Commission Nairobi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming in Nairobi"
+    timing: "Professional embalming facilities available in Nairobi. Limited outside the capital."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Port Health clearance and all export permits obtained"
+    timing: "Allow 7-21 days. Port Health is an additional step specific to Kenya."
+    responsible: "Local funeral director and Port Health"
+  - step: 6
+    action: "Air cargo from Nairobi Jomo Kenyatta International (NBO)"
+    timing: "Once all documentation complete. Kenya Airways and British Airways serve NBO-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Italy funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Kenya to Italy take?"
+    answer: "In a straightforward Nairobi case, repatriation from Kenya to Italy takes 10-14 days. Deaths in safari areas or remote locations add significant time for internal transfer. Most cases take 14-28 days. Complex cases can take 6-12 weeks."
+  - question: "My relative died on safari in Kenya. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +39 06 3691 3691 (+44 (0)20 7008 5000) immediately. Deaths in the Masai Mara, Amboseli, Tsavo, or other remote areas require road or light aircraft transfer to Nairobi before any documentation can begin."
+  - question: "What documents are required for repatriation from Kenya to the UK?"
+    answer: "The core documents are: Kenyan death certificate, Embalming certificate, Port Health clearance (freedom from infection certificate), Police report/clearance, and Passport of the deceased."
+  - question: "Does the Italy Embassy in Kenya help with repatriation?"
+    answer: "The Italy Embassy in Nairobi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Italy Embassy in Nairobi as soon as possible after the death."
+  - question: "What happens when the body arrives in Italy?"
+    answer: "The Italian funeral director takes custody at the cargo terminal. A prefettura transport authorisation is required before burial or cremation can proceed. All foreign documents require certified Italian translation. The local commune registers the death with the anagrafe. The receiving funeral director coordinates with the prefettura and local authorities."
+  - question: "Can I bring ashes home from Kenya instead of repatriating the body?"
+    answer: "Yes. Cremation in Kenya and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and Port Health clearance."
+links:
+  upward:
+    - url: "/repatriation-from-kenya/"
+      text: "Full Kenya repatriation guide"
+    - url: "/guides/death-abroad-kenya/"
+      text: "What to do if someone dies in Kenya"
+    - url: "/repatriation-from-italy/"
+      text: "Repatriation to Italy: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/kenya-to-united-kingdom/"
+      text: "Repatriation from Kenya to the UK"
+    - url: "/routes/kenya-to-ireland/"
+      text: "Repatriation from Kenya to Ireland"
+---

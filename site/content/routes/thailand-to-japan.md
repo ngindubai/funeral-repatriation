@@ -1,0 +1,88 @@
+---
+title: "Thailand to Japan: Repatriation Guidance"
+description: "Someone has died in Thailand. Repatriation to Japan takes 2-4 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "thailand"
+dest_key: "jp"
+origin_name: "Thailand"
+dest_name: "Japan"
+origin_slug: "thailand"
+dest_slug: "japan"
+slug: "thailand-to-japan"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-12 weeks or longer"
+embassy_city: "Bangkok"
+doc_processing_time: "7-21 days minimum. Often longer."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Thailand to Japan: what to expect"
+direct_answer_intro: "Thai nationals live and work in Japan in food service, hospitality, and care roles, with a community of over 50,000 residents concentrated in Tokyo and Osaka. Thailand and Japan share extensive trade and tourism ties. Thailand to Japan is also a high-volume tourism corridor, so this route handles both resident deaths and deaths of Japanese tourists in Thailand. Thai documentation requires certified Japanese translation. The Japanese Embassy in Bangkok handles consular matters."
+direct_answer_points:
+  - "Key documents: Thai death certificate (bai morn sia, with MFA certification) and British Embassy body release letter"
+  - "Thai authorities may act after 30 days. Appoint a specialist on the day of death."
+  - "British Embassy in Bangkok registers the death and issues the body release letter. Essential."
+  - "Post-mortem is routinely ordered for non-Thai nationals who die unexpectedly."
+  - "Japan Embassy in Bangkok can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Thailand"
+overview_body: "Call 191 for police or 1669 for ambulance. Thai authorities will hold a body for up to 30 days before proceeding with a pauper's funeral. Thailand issues only one original death certificate in Thai only. MFA certification is required. An embassy release letter must be applied for through gov.uk."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Bangkok can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Apply for British Embassy body release letter."
+    timing: "Day of death. Act immediately. 30-day deadline. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Thai death certificate (bai morn sia) obtained. MFA certification arranged."
+    timing: "Single original certificate, Thai only. MFA certification mandatory."
+    responsible: "Local funeral director and Thai MFA"
+  - step: 3
+    action: "British Embassy Bangkok issues body release letter"
+    timing: "Applied for via gov.uk. Cannot begin repatriation without it."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (urgent in tropical climate)"
+    timing: "Immediate. Thailand's tropical climate accelerates decomposition."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Island transfer (if applicable) and all export documentation completed"
+    timing: "Allow 7-21 days minimum. Island deaths add 2-3 days for Bangkok transfer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bangkok Suvarnabhumi (BKK) to London Heathrow (LHR)"
+    timing: "Once all documentation complete and body release letter issued."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Thailand to Japan take?"
+    answer: "In a straightforward Bangkok case with no post-mortem, repatriation from Thailand to Japan takes 10-14 days. Most cases take 2-4 weeks. Island deaths add 2-3 days. Cases involving a post-mortem report can take 4-12 weeks or longer."
+  - question: "What is the 30-day deadline in Thailand?"
+    answer: "Thai authorities will hold a body for up to 30 days after death. If no repatriation or cremation plan is in place, authorities may proceed with a pauper's burial. Act immediately."
+  - question: "What is the British Embassy body release letter and is it required?"
+    answer: "The British Embassy in Bangkok issues a body release letter that authorises release of the body for repatriation. It must be applied for online through gov.uk and is required for all full body repatriations from Thailand."
+  - question: "What documents are required for repatriation from Thailand to the UK?"
+    answer: "The core documents are: Thai death certificate (bai morn sia) with MFA certification, certified English translation, British Embassy body release letter, Embalming certificate, Freedom from infection certificate, and Airline cargo documentation."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from Thailand instead of repatriating the body?"
+    answer: "Yes. Cremation in Thailand and bringing ashes home to the UK is significantly faster and less costly. The British Embassy body release letter is not required for ashes. You will need the bai morn sia and cremation certificate."
+links:
+  upward:
+    - url: "/repatriation-from-thailand/"
+      text: "Full Thailand repatriation guide"
+    - url: "/guides/death-abroad-thailand/"
+      text: "What to do if someone dies in Thailand"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/thailand-to-united-kingdom/"
+      text: "Repatriation from Thailand to the UK"
+    - url: "/routes/thailand-to-ireland/"
+      text: "Repatriation from Thailand to Ireland"
+---
