@@ -1,0 +1,87 @@
+---
+title: "Sri Lanka to New Zealand: Repatriation Guidance"
+description: "Someone has died in Sri Lanka. Repatriation to New Zealand takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "sri-lanka"
+dest_key: "nz"
+origin_name: "Sri Lanka"
+dest_name: "New Zealand"
+origin_slug: "sri-lanka"
+dest_slug: "new-zealand"
+slug: "sri-lanka-to-new-zealand"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "New Delhi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Sri Lanka to New Zealand: what to expect"
+direct_answer_intro: "Sri Lankan nationals form a community in New Zealand, particularly in Auckland, with families working in professional, healthcare, and trade sectors. Sri Lanka and New Zealand share Commonwealth ties, and Sri Lankan migration to New Zealand has included both skilled worker and humanitarian channels. Sinhala and Tamil documentation requires certified English translation for New Zealand Customs clearance. The New Zealand High Commission covers Sri Lanka from New Delhi. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+direct_answer_points:
+  - "Key documents: Death certificate (with certified English translation) and Embalming certificate"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British High Commission in Colombo registers the death and advises. They cannot fund repatriation."
+  - "New Zealand Embassy in New Delhi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Sri Lanka"
+overview_body: "Contact police (119) or ambulance (110). Deaths must be certified by a registered medical practitioner. Unexpected deaths require police notification. Death registered at the local Registrar General's Department. The death certificate is issued in Sinhala with an English translation available."
+dest_reception: "The New Zealand funeral director takes custody at Auckland International (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance is required. The Registrar-General of Births, Deaths and Marriages records the death under the Births, Deaths, Marriages, and Relationships Registration Act 2021. The Coroner may need to be notified under the Coroners Act 2006. All foreign documentation must be authenticated. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+dest_consular: "New Zealand Embassy or High Commission in New Delhi can assist New Zealand citizens and their families with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. New Zealand Ministry of Foreign Affairs and Trade (MFAT) emergency line: +64 4 439 8000 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +64 4 439 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registrar General's Department"
+    timing: "Death certificate in Sinhala. English translation required for UK purposes."
+    responsible: "Local funeral director and Registrar General"
+  - step: 3
+    action: "British High Commission Colombo notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bandaranaike International Airport (CMB), Colombo"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "New Zealand funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sri Lanka to New Zealand take?"
+    answer: "In a straightforward case, repatriation from Sri Lanka to New Zealand takes 14-28 days. The fastest cases complete in 10-14 days. Complex cases involving investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Sri Lanka?"
+    answer: "The core documents are: Death certificate (with certified English translation), Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the New Zealand Embassy in Sri Lanka help with repatriation?"
+    answer: "The New Zealand Embassy in New Delhi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the New Zealand Embassy in New Delhi as soon as possible after the death."
+  - question: "What is the first step when someone dies in Sri Lanka?"
+    answer: "Notify a UK repatriation specialist and the +64 4 439 8000 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in New Zealand?"
+    answer: "The New Zealand funeral director takes custody at Auckland (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance requires the foreign death certificate, transit permit, and embalming certificate. The Registrar-General records the death. The Coroner may need to be notified. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Sri Lanka instead of repatriating the body?"
+    answer: "Yes. Cremation in Sri Lanka and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight from Colombo."
+links:
+  upward:
+    - url: "/repatriation-from-sri-lanka/"
+      text: "Full Sri Lanka repatriation guide"
+    - url: "/guides/death-abroad-sri-lanka/"
+      text: "What to do if someone dies in Sri Lanka"
+    - url: "/repatriation-from-new-zealand/"
+      text: "Repatriation to New Zealand: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sri-lanka-to-united-kingdom/"
+      text: "Repatriation from Sri Lanka to the UK"
+    - url: "/routes/sri-lanka-to-ireland/"
+      text: "Repatriation from Sri Lanka to Ireland"
+---

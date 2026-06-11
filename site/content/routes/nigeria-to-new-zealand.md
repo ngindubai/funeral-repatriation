@@ -1,0 +1,88 @@
+---
+title: "Nigeria to New Zealand: Repatriation Guidance"
+description: "Someone has died in Nigeria. Repatriation to New Zealand takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "nigeria"
+dest_key: "nz"
+origin_name: "Nigeria"
+dest_name: "New Zealand"
+origin_slug: "nigeria"
+dest_slug: "new-zealand"
+slug: "nigeria-to-new-zealand"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Abuja"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Nigeria to New Zealand: what to expect"
+direct_answer_intro: "Nigerian nationals form part of New Zealand's West African diaspora, with professionals and students in Auckland and other cities. Nigeria and New Zealand share Commonwealth ties. English documentation from Nigeria is well understood by New Zealand authorities. The New Zealand High Commission in Abuja handles consular matters. Nigeria to New Zealand is a growing corridor for skilled professional migration. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+direct_answer_points:
+  - "Key document: Nigerian death certificate (state-issued, in English)"
+  - "Documentation takes 14-30 days. State-level variation applies."
+  - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
+  - "Police report required for unexpected or unattended deaths."
+  - "New Zealand Embassy in Abuja can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Nigeria"
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+dest_reception: "The New Zealand funeral director takes custody at Auckland International (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance is required. The Registrar-General of Births, Deaths and Marriages records the death under the Births, Deaths, Marriages, and Relationships Registration Act 2021. The Coroner may need to be notified under the Coroners Act 2006. All foreign documentation must be authenticated. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+dest_consular: "New Zealand Embassy or High Commission in Abuja can assist New Zealand citizens and their families with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. New Zealand Ministry of Foreign Affairs and Trade (MFAT) emergency line: +64 4 439 8000 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +64 4 439 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state civil registration office. Death certificate issued."
+    timing: "Documentation in English. State-level processing times vary."
+    responsible: "Local funeral director and state authority"
+  - step: 3
+    action: "British High Commission Abuja or Consulate General Lagos notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Lagos and Abuja."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 14-30 days. Police report required for unexpected deaths."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lagos (LOS) or Abuja (ABV) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways and Virgin Atlantic serve LOS-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "New Zealand funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Nigeria to New Zealand take?"
+    answer: "In a straightforward case, repatriation from Nigeria to New Zealand takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Nigeria to the UK?"
+    answer: "The core documents are: Nigerian death certificate (state-issued), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the New Zealand Embassy in Nigeria help with repatriation?"
+    answer: "The New Zealand Embassy in Abuja can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the New Zealand Embassy in Abuja as soon as possible after the death."
+  - question: "Does it matter which Nigerian state the death occurred in?"
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+  - question: "What happens when the body arrives in New Zealand?"
+    answer: "The New Zealand funeral director takes custody at Auckland (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance requires the foreign death certificate, transit permit, and embalming certificate. The Registrar-General records the death. The Coroner may need to be notified. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"
+    answer: "Yes. Cremation in Nigeria and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-nigeria/"
+      text: "Full Nigeria repatriation guide"
+    - url: "/guides/death-abroad-nigeria/"
+      text: "What to do if someone dies in Nigeria"
+    - url: "/repatriation-from-new-zealand/"
+      text: "Repatriation to New Zealand: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/nigeria-to-united-kingdom/"
+      text: "Repatriation from Nigeria to the UK"
+    - url: "/routes/nigeria-to-ireland/"
+      text: "Repatriation from Nigeria to Ireland"
+---

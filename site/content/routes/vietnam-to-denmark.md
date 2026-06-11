@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Denmark: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Denmark takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "dk"
+origin_name: "Vietnam"
+dest_name: "Denmark"
+origin_slug: "vietnam"
+dest_slug: "denmark"
+slug: "vietnam-to-denmark"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Denmark: what to expect"
+direct_answer_intro: "Vietnamese nationals form a community in Denmark, with many families having arrived as Vietnamese refugees from the late 1970s onward and subsequent generations building an established Vietnamese-Danish diaspora. Danish Refugee Council history includes resettlement of Vietnamese refugees from that period. Vietnamese documentation requires certified Danish translation for Danish civil registry purposes. The Danish Embassy in Hanoi handles consular matters. (Danish Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Denmark Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Danish begravelsesforretning (funeral director) takes custody at Copenhagen Kastrup (CPH) cargo terminal. A ligfølgebrev (body transit certificate) must accompany the remains. The civil registry records the death. Denmark is an EU and Hague Apostille Convention member. Documents not in Danish, English, or another major European language require certified Danish translation. (Danish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Danish Embassy in Hanoi can advise on documentation requirements for repatriation to Denmark. Danish Ministry of Foreign Affairs emergency line: +45 33 92 00 00 (24 hours). The Danish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +45 33 92 00 00."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Denmark Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Denmark funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Denmark take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Denmark takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Denmark Embassy in Vietnam help with repatriation?"
+    answer: "The Denmark Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Denmark Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Denmark?"
+    answer: "The Danish begravelsesforretning takes custody at Copenhagen Kastrup (CPH) cargo terminal. A ligfølgebrev must accompany the remains. The civil registry records the death. Documents not in Danish or English require certified Danish translation. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-denmark/"
+      text: "Repatriation to Denmark: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---
