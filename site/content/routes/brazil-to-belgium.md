@@ -1,0 +1,88 @@
+---
+title: "Brazil to Belgium: Repatriation Guidance"
+description: "Someone has died in Brazil. Repatriation to Belgium takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "brazil"
+dest_key: "be"
+origin_name: "Brazil"
+dest_name: "Belgium"
+origin_slug: "brazil"
+dest_slug: "belgium"
+slug: "brazil-to-belgium"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-12 weeks"
+embassy_city: "Brasilia"
+doc_processing_time: "14-30 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Brazil to Belgium: what to expect"
+direct_answer_intro: "Brazilian nationals form part of Belgium's South American diaspora, concentrated in Brussels and Antwerp, working in EU institutions, business, and professional services. Belgium and Brazil have bilateral diplomatic ties through EU-Mercosur relations. Brazilian documentation in Portuguese requires certified French or Dutch translation for Belgian civil registry authorities. The Belgian Embassy in Brasilia handles consular matters."
+direct_answer_points:
+  - "Key document: Certidao de obito (Brazilian death certificate, in Portuguese) with certified English translation"
+  - "Documentation takes 14-30 days. IML release required for unexpected or violent deaths."
+  - "British Embassy in Brasilia and Consulate in Sao Paulo register the death and advise."
+  - "Brazil has 26 states and the Federal District, each with its own IML procedures."
+  - "Belgium Embassy in Brasilia can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Brazil"
+overview_body: "Call SAMU (192) or police (190) for unexpected deaths. All violent, suspicious, or sudden deaths are referred to the Instituto Medico Legal (IML). The certidao de obito is issued by the cartorio de registro civil in Portuguese. Certified English translation required. Sao Paulo (GRU) has the most frequent international cargo connections."
+dest_reception: "The Belgian funeral director (entrepreneur des pompes funebres or begrafenisondernemer) takes custody at Brussels Airport (BRU) or Liege Airport (LGG) cargo terminal. The local commune or gemeente registers the death with the Registre de la Population. A transport authorisation is required before burial or cremation. All foreign documents must carry a certified French or Dutch translation. (Belgian Federal Public Service Foreign Affairs, FPS Foreign Affairs, 2025.)"
+dest_consular: "Belgian Embassy in Brasilia can advise on documentation requirements for repatriation to Belgium. Belgian Federal Public Service Foreign Affairs emergency line: +32 2 501 8111 (24 hours). The Belgian Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +32 2 501 8111."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death reported to IML. Certidao de obito issued by cartorio de registro civil."
+    timing: "IML must release body before certificate is finalised. Adds time."
+    responsible: "Local funeral director and IML"
+  - step: 3
+    action: "Belgium Embassy in Brasilia notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After IML releases the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days. Cannot begin until IML releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sao Paulo (GRU) or Rio de Janeiro (GIG) to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Belgium funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Brazil to Belgium take?"
+    answer: "In a straightforward case, repatriation from Brazil to Belgium takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving IML investigation or death in a remote state can take 6-12 weeks."
+  - question: "What is the IML and why is it involved?"
+    answer: "The Instituto Medico Legal (IML) is Brazil's forensic medical service. All violent, suspicious, sudden, or unexplained deaths are referred to the IML for examination. The body cannot be released until the IML completes its examination and the Ministerio Publico authorises release."
+  - question: "What documents are required for repatriation from Brazil to the UK?"
+    answer: "The core documents are: certidao de obito (Brazilian death certificate) with certified English translation, IML release document, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Belgium Embassy in Brazil help with repatriation?"
+    answer: "The Belgium Embassy in Brasilia can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Belgium Embassy in Brasilia as soon as possible after the death."
+  - question: "What happens when the body arrives in Belgium?"
+    answer: "The Belgian funeral director takes custody at Brussels Airport (BRU) cargo terminal. A transport authorisation is required before burial or cremation. The local commune or gemeente registers the death. All foreign documents require certified French or Dutch translation."
+  - question: "Can I bring ashes home from Brazil instead of repatriating the body?"
+    answer: "Yes. Cremation in Brazil and bringing ashes home to the UK is an option, though the IML must still release the body for cremation. You will need the certidao de obito, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-brazil/"
+      text: "Full Brazil repatriation guide"
+    - url: "/guides/death-abroad-brazil/"
+      text: "What to do if someone dies in Brazil"
+    - url: "/repatriation-from-belgium/"
+      text: "Repatriation to Belgium: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/brazil-to-united-kingdom/"
+      text: "Repatriation from Brazil to the UK"
+    - url: "/routes/brazil-to-ireland/"
+      text: "Repatriation from Brazil to Ireland"
+---

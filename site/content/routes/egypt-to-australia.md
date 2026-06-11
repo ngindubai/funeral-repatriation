@@ -1,0 +1,88 @@
+---
+title: "Egypt to Australia: Repatriation Guidance"
+description: "Someone has died in Egypt. Repatriation to Australia takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "egypt"
+dest_key: "au"
+origin_name: "Egypt"
+dest_name: "Australia"
+origin_slug: "egypt"
+dest_slug: "australia"
+slug: "egypt-to-australia"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "7-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Cairo"
+doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Egypt to Australia: what to expect"
+direct_answer_intro: "Egyptian nationals form part of Australia's Middle Eastern and Coptic Christian diaspora, with established communities in Sydney and Melbourne. Egypt and Australia have bilateral diplomatic ties. Arabic and Coptic documentation from Egypt requires certified English translation for Australian Border Force clearance. The Australian Embassy in Cairo handles consular matters. This corridor also covers Egyptian-Australians who die in Egypt while visiting family. (Australian Government, DFAT, 2025.)"
+direct_answer_points:
+  - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
+  - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
+  - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
+  - "Australia Embassy in Cairo can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Egypt works"
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the  Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance is required. State or territory funeral regulations govern burial or cremation; requirements differ between New South Wales, Victoria, Queensland, Western Australia, South Australia, and the Northern Territory. All documentation must be authenticated. (Australian Government, Department of Foreign Affairs and Trade, DFAT, 2025.)"
+dest_consular: "Australian Embassy or High Commission in Cairo can assist Australian citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. Australian Government Consular Emergency Centre: +61 2 6261 3305 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +61 2 6261 3305."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local health office or civil registry"
+    timing: "In tourist areas, 3-5 days. Cairo and non-tourist areas take longer."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "Australia Embassy in Cairo notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Cairo."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed: MOFA stamp, all permits obtained"
+    timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Cairo International Airport"
+    timing: "Once all documentation complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Egypt to Australia take?"
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to Australia takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Egypt to the UK?"
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of the deceased."
+  - question: "Does the Australia Embassy in Egypt help with repatriation?"
+    answer: "The Australia Embassy in Cairo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Australia Embassy in Cairo as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Egypt?"
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force clearance requires the foreign death certificate, transit permit, and embalming certificate. State or territory regulations govern burial or cremation. The receiving funeral director coordinates with the relevant state authority."
+  - question: "Is cremation available in Egypt?"
+    answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
+links:
+  upward:
+    - url: "/repatriation-from-egypt/"
+      text: "Full Egypt repatriation guide"
+    - url: "/guides/death-abroad-egypt/"
+      text: "What to do if someone dies in Egypt"
+    - url: "/repatriation-from-australia/"
+      text: "Repatriation to Australia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/egypt-to-united-kingdom/"
+      text: "Repatriation from Egypt to the UK"
+    - url: "/routes/egypt-to-ireland/"
+      text: "Repatriation from Egypt to Ireland"
+---

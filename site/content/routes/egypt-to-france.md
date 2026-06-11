@@ -1,0 +1,88 @@
+---
+title: "Egypt to France: Repatriation Guidance"
+description: "Someone has died in Egypt. Repatriation to France takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "egypt"
+dest_key: "fr"
+origin_name: "Egypt"
+dest_name: "France"
+origin_slug: "egypt"
+dest_slug: "france"
+slug: "egypt-to-france"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "7-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Cairo"
+doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Egypt to France: what to expect"
+direct_answer_intro: "Egyptian nationals form a significant community in France, concentrated in Paris and Lyon, with over 80,000 residents working in business, academia, and professional services. France and Egypt have close historical and cultural ties, including France's role in the 19th century Egyptian modernisation period and the French language's longstanding presence in Egyptian education. Arabic documentation from Egypt requires certified French translation for French registry purposes. The French Embassy in Cairo handles consular matters. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+direct_answer_points:
+  - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
+  - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
+  - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
+  - "France Embassy in Cairo can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Egypt works"
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the  Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+dest_reception: "The French funeral director (pompes funebres) takes custody at Charles de Gaulle (CDG, Paris) or another French international airport. The prefecture may require a permis d'inhumer (burial permit) or transport authorisation before burial or cremation can proceed. All foreign documents must carry a certified French translation. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+dest_consular: "French Embassy in Cairo can advise on repatriation documentation requirements for France. French Ministry of Europe and Foreign Affairs (MAE) emergency assistance: +33 1 43 17 67 67 (24 hours). The French Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +33 1 43 17 67 67."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local health office or civil registry"
+    timing: "In tourist areas, 3-5 days. Cairo and non-tourist areas take longer."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "France Embassy in Cairo notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Cairo."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed: MOFA stamp, all permits obtained"
+    timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Cairo International Airport"
+    timing: "Once all documentation complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "France funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Egypt to France take?"
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to France takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Egypt to the UK?"
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of the deceased."
+  - question: "Does the France Embassy in Egypt help with repatriation?"
+    answer: "The France Embassy in Cairo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the France Embassy in Cairo as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Egypt?"
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
+  - question: "What happens when the body arrives in France?"
+    answer: "The French funeral director takes custody at Charles de Gaulle (CDG) or another French airport. The prefecture issues a permis d'inhumer before burial or cremation. All foreign documents require certified French translation. The receiving funeral director coordinates with local authorities."
+  - question: "Is cremation available in Egypt?"
+    answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
+links:
+  upward:
+    - url: "/repatriation-from-egypt/"
+      text: "Full Egypt repatriation guide"
+    - url: "/guides/death-abroad-egypt/"
+      text: "What to do if someone dies in Egypt"
+    - url: "/repatriation-from-france/"
+      text: "Repatriation to France: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/egypt-to-united-kingdom/"
+      text: "Repatriation from Egypt to the UK"
+    - url: "/routes/egypt-to-ireland/"
+      text: "Repatriation from Egypt to Ireland"
+---

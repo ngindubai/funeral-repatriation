@@ -1,0 +1,88 @@
+---
+title: "Pakistan to Denmark: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to Denmark takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "dk"
+origin_name: "Pakistan"
+dest_name: "Denmark"
+origin_slug: "pakistan"
+dest_slug: "denmark"
+slug: "pakistan-to-denmark"
+template_variant: "C"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to Denmark: what to expect"
+direct_answer_intro: "Pakistani nationals form a significant Muslim community in Denmark, with families who came as labour migrants from the 1960s and 1970s establishing an established two to three generation diaspora. Pakistani communities are concentrated in Copenhagen and Aarhus. Urdu and Punjabi documentation from Pakistan requires certified Danish translation for Danish civil registry purposes. The Danish Embassy in Islamabad handles consular matters. Pakistan to Denmark is an established repatriation corridor for both settled diaspora and Pakistani workers."
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "Denmark Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The Danish begravelsesforretning (funeral director) takes custody at Copenhagen Kastrup (CPH) cargo terminal. A ligfølgebrev (body transit certificate) must accompany the remains. The civil registry records the death. Denmark is an EU and Hague Apostille Convention member. Documents not in Danish, English, or another major European language require certified Danish translation. (Danish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Danish Embassy in Islamabad can advise on documentation requirements for repatriation to Denmark. Danish Ministry of Foreign Affairs emergency line: +45 33 92 00 00 (24 hours). The Danish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +45 33 92 00 00. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Denmark funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to Denmark take?"
+    answer: "In a straightforward case, repatriation from Pakistan to Denmark takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +45 33 92 00 00 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Denmark Embassy in Pakistan help with repatriation?"
+    answer: "The Denmark Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Denmark Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in Denmark?"
+    answer: "The Danish begravelsesforretning takes custody at Copenhagen Kastrup (CPH) cargo terminal. A ligfølgebrev must accompany the remains. The civil registry records the death. Documents not in Danish or English require certified Danish translation. The receiving funeral director coordinates with local authorities."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-denmark/"
+      text: "Repatriation to Denmark: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "Pakistan to Greece: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to Greece takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "gr"
+origin_name: "Pakistan"
+dest_name: "Greece"
+origin_slug: "pakistan"
+dest_slug: "greece"
+slug: "pakistan-to-greece"
+template_variant: "B"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to Greece: what to expect"
+direct_answer_intro: "Pakistani nationals form Greece's largest non-EU immigrant community, with over 60,000 residents concentrated in Athens, Patras, and Thessaloniki, working in agriculture, catering, and trade. Pakistan to Greece is a significant migration corridor, with Pakistani workers arriving through labour and asylum channels since the 1990s. Urdu and Punjabi documentation from Pakistan requires certified Greek translation. The Greek Embassy in Islamabad handles consular matters. (Greek Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "Greece Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The Greek funeral director (grafeiou teletou) takes custody at Athens Eleftherios Venizelos (ATH) or Thessaloniki Macedonia (SKG) cargo terminal. A local health authority clearance is required before burial or cremation. The Lixiarcheio (civil registry) registers the death. Greece is an EU and Hague Apostille Convention member. All foreign documents not in Greek require certified Greek translation. (Greek Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Greek Embassy in Islamabad can advise on documentation requirements for repatriation to Greece. Greek Ministry of Foreign Affairs emergency line: +30 210 3681 000 (24 hours). The Greek Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +30 210 3681 000. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Greece funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to Greece take?"
+    answer: "In a straightforward case, repatriation from Pakistan to Greece takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +30 210 3681 000 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Greece Embassy in Pakistan help with repatriation?"
+    answer: "The Greece Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Greece Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in Greece?"
+    answer: "The Greek funeral director takes custody at Athens Eleftherios Venizelos (ATH) or Thessaloniki (SKG) cargo terminal. Local health authority clearance is required before burial or cremation. The Lixiarcheio registers the death. All foreign documents require certified Greek translation. The receiving funeral director coordinates with local authorities."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-greece/"
+      text: "Repatriation to Greece: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---
