@@ -1,0 +1,87 @@
+---
+title: "Germany to Turkey: Repatriation Guidance"
+description: "Someone has died in Germany. Repatriation to Turkey takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "germany"
+dest_key: "tr"
+origin_name: "Germany"
+dest_name: "Turkey"
+origin_slug: "germany"
+dest_slug: "turkey"
+slug: "germany-to-turkey"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Berlin"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Germany to Turkey: what to expect"
+direct_answer_intro: "Germany to Turkey is one of the highest-volume tourist and cultural corridors in Europe, with millions of German tourists visiting Turkey annually. Germany also has a large Turkish-German community that maintains family ties in Turkey, making this a consistent bilateral repatriation corridor in both directions. German documentation requires certified Turkish translation for Turkish civil registry purposes. The Turkish Embassy in Berlin handles consular matters. (Turkish Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: Sterbeurkunde (from Standesamt) and Totenschein (medical death certificate)"
+  - "Documentation takes 3-7 days. The Leichenpass is Germany's unique body-transport document."
+  - "British Embassy in Berlin registers the death and advises. They cannot fund repatriation."
+  - "Turkey Embassy in Berlin can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Germany"
+overview_body: "Call 112 for emergency services. A doctor issues the Totenschein. Death must be registered at the local Standesamt within 3 working days. The Standesamt issues the Sterbeurkunde. For international transport, a Leichenpass is required."
+dest_reception: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) or Istanbul Sabiha Gokcen (SAW) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death in the nüfus müdürlüğü (population directorate). The Turkish Ministry of Health clearance is required before burial or cremation. All foreign documents not in Turkish require certified Turkish translation. (Turkish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Turkish Embassy in Berlin can advise on documentation requirements for repatriation to Turkey. Turkish Ministry of Foreign Affairs emergency line: +90 312 292 2000 (24 hours). The Turkish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +90 312 292 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Totenschein issued. Death registered at Standesamt. Sterbeurkunde obtained."
+    timing: "Must be registered within 3 working days. Sterbeurkunde issued same or next day."
+    responsible: "Local funeral director and Standesamt"
+  - step: 3
+    action: "Turkey Embassy in Berlin notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "German funeral industry is professional and efficient."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Leichenpass obtained and all export permits completed"
+    timing: "Allow 3-7 days. Leichenpass adds 1-2 days but is standard procedure."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Frankfurt (FRA), Munich (MUC), Berlin (BER), or Dusseldorf (DUS)"
+    timing: "Once all documentation complete. Lufthansa Cargo has direct routes to all major UK airports."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Turkey funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Germany to Turkey take?"
+    answer: "In a straightforward case, repatriation from Germany to Turkey takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a post-mortem (Gerichtsmedizin) can take 3-6 weeks."
+  - question: "What is the Leichenpass and why is it needed?"
+    answer: "The Leichenpass is Germany's international body-transport document. It authorises international movement of the body and must accompany all repatriations. Your local funeral director handles the application. It adds approximately 1-2 days to the process."
+  - question: "What documents are required for repatriation from Germany?"
+    answer: "The core documents are: Sterbeurkunde (death certificate from Standesamt), Totenschein (medical death certificate), Leichenpass, Embalming certificate, Freedom from infection certificate (Gesundheitszeugnis)."
+  - question: "Does the Turkey Embassy in Germany help with repatriation?"
+    answer: "The Turkey Embassy in Berlin can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Turkey Embassy in Berlin as soon as possible after the death."
+  - question: "What happens when the body arrives in Turkey?"
+    answer: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death. The Turkish Ministry of Health clearance is required. All foreign documents require certified Turkish translation. The receiving funeral director coordinates with local municipal authorities."
+  - question: "Can I bring ashes home from Germany instead of repatriating the body?"
+    answer: "Yes. Cremation in Germany and bringing ashes home to the UK is often simpler and less costly. German crematoria operate to high standards. You will need the Sterbeurkunde, cremation certificate, and possibly an export permit."
+links:
+  upward:
+    - url: "/repatriation-from-germany/"
+      text: "Full Germany repatriation guide"
+    - url: "/guides/death-abroad-germany/"
+      text: "What to do if someone dies in Germany"
+    - url: "/repatriation-from-turkey/"
+      text: "Repatriation to Turkey: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/germany-to-united-kingdom/"
+      text: "Repatriation from Germany to the UK"
+    - url: "/routes/germany-to-ireland/"
+      text: "Repatriation from Germany to Ireland"
+---

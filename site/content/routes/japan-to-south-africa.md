@@ -1,0 +1,88 @@
+---
+title: "Japan to South Africa: Repatriation Guidance"
+description: "Someone has died in Japan. Repatriation to South Africa takes 10-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "japan"
+dest_key: "za"
+origin_name: "Japan"
+dest_name: "South Africa"
+origin_slug: "japan"
+dest_slug: "south-africa"
+slug: "japan-to-south-africa"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "10-21 days"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Tokyo"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Japan to South Africa: what to expect"
+direct_answer_intro: "Japanese nationals in South Africa include business executives, automotive industry professionals, and tourists. Japanese companies including Toyota and other manufacturers have operations in South Africa, and Japanese tourists visit the country in growing numbers for safari and wildlife experiences. Japanese documentation requires certified English translation for South African Home Affairs purposes. The South African Embassy in Tokyo handles consular matters. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+direct_answer_points:
+  - "Key document: Shibo kenshin-sho (Japanese death certificate) with certified English translation"
+  - "Documentation takes 7-14 days. Embalming must be explicitly requested."
+  - "British Embassy in Tokyo registers the death and advises. They cannot fund repatriation."
+  - "Bringing ashes home is significantly faster and simpler than full body repatriation."
+  - "South Africa Embassy in Tokyo can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Japan"
+overview_body: "Call 110 for police or 119 for ambulance. A licensed doctor certifies the death. Death must be registered at the local ward office (shiyakusho or kuyakusho) within 7 days. The shibo kenshin-sho is issued in Japanese only. Certified English translation is mandatory. Embalming is not standard practice in Japan and must be specifically arranged."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Tokyo can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission. Request embalming immediately."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local ward office within 7 days. Shibo kenshin-sho issued."
+    timing: "Certificate in Japanese only. Certified English translation mandatory."
+    responsible: "Local funeral director and ward office"
+  - step: 3
+    action: "South Africa Embassy in Tokyo notified"
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming arranged (must be specifically requested)"
+    timing: "Not standard Japanese practice. Must be explicitly requested. Japanese funeral homes use dry ice as standard."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-14 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Tokyo Narita (NRT) or Haneda (HND) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. Japan Airlines Cargo and ANA Cargo operate direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Japan to South Africa take?"
+    answer: "In a straightforward case, repatriation from Japan to South Africa takes 10-21 days. The fastest cases complete in 7-14 days. Complex cases involving a medical examiner inquiry can take 4-8 weeks."
+  - question: "Why must embalming be specifically requested in Japan?"
+    answer: "Embalming is not part of traditional Japanese funeral practice. Japanese funeral homes use dry ice as standard for body preservation. For international repatriation, full embalming to international standards is required and must be explicitly requested."
+  - question: "Is bringing ashes home from Japan a better option?"
+    answer: "For many families, yes. Japan's cremation rate is over 99% and the process is well-organised. Bringing ashes home to the UK avoids the embalming and full body cargo requirements and is significantly faster and less costly."
+  - question: "What documents are required for repatriation from Japan to the UK?"
+    answer: "The core documents are: shibo kenshin-sho (Japanese death certificate) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the South Africa Embassy in Japan help with repatriation?"
+    answer: "The South Africa Embassy in Tokyo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in Tokyo as soon as possible after the death."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+links:
+  upward:
+    - url: "/repatriation-from-japan/"
+      text: "Full Japan repatriation guide"
+    - url: "/guides/death-abroad-japan/"
+      text: "What to do if someone dies in Japan"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/japan-to-united-kingdom/"
+      text: "Repatriation from Japan to the UK"
+    - url: "/routes/japan-to-ireland/"
+      text: "Repatriation from Japan to Ireland"
+---

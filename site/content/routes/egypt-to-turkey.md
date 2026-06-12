@@ -1,0 +1,88 @@
+---
+title: "Egypt to Turkey: Repatriation Guidance"
+description: "Someone has died in Egypt. Repatriation to Turkey takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "egypt"
+dest_key: "tr"
+origin_name: "Egypt"
+dest_name: "Turkey"
+origin_slug: "egypt"
+dest_slug: "turkey"
+slug: "egypt-to-turkey"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "7-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Cairo"
+doc_processing_time: "7-14 days in tourist areas. Longer in Cairo or outside tourist zones."
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Egypt to Turkey: what to expect"
+direct_answer_intro: "Egyptian nationals form a significant community in Turkey, with a notable increase in migration to Istanbul following 2013. Egypt and Turkey have had complex but engaged bilateral relations, with diplomatic normalisation progressing since 2022. Arabic documentation from Egypt is not automatically understood by Turkish registry authorities and requires certified Turkish translation. The Turkish Embassy in Cairo handles consular matters."
+direct_answer_points:
+  - "Key documents: Egyptian death certificate (in Arabic) and certified English translation"
+  - "Documentation takes 7-14 days in tourist areas. Longer in Cairo."
+  - "British Embassy in Cairo registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem required by the niyaba for all unnatural, sudden, or suspicious deaths."
+  - "Turkey Embassy in Cairo can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Egypt works"
+overview_body: "Contact police (122) or ambulance (123). All deaths of foreign nationals require police attendance. Contact the  Death registered at the local health office. In tourist areas such as Hurghada and Sharm el-Sheikh, the process is generally more streamlined than in Cairo."
+dest_reception: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) or Istanbul Sabiha Gokcen (SAW) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death in the nüfus müdürlüğü (population directorate). The Turkish Ministry of Health clearance is required before burial or cremation. All foreign documents not in Turkish require certified Turkish translation. (Turkish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Turkish Embassy in Cairo can advise on documentation requirements for repatriation to Turkey. Turkish Ministry of Foreign Affairs emergency line: +90 312 292 2000 (24 hours). The Turkish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +90 312 292 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local health office or civil registry"
+    timing: "In tourist areas, 3-5 days. Cairo and non-tourist areas take longer."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "Turkey Embassy in Cairo notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Quality variable outside Cairo."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed: MOFA stamp, all permits obtained"
+    timing: "Allow 7-14 days in tourist areas. Cannot begin until niyaba releases body."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Cairo International Airport"
+    timing: "Once all documentation complete and cleared."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Turkey funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Egypt to Turkey take?"
+    answer: "In a straightforward tourist-area case, repatriation from Egypt to Turkey takes 7-14 days. Most cases take 14-28 days once the niyaba investigation is factored in. Complex cases or deaths outside tourist zones can take 6-12 weeks."
+  - question: "What documents are required for repatriation from Egypt to the UK?"
+    answer: "The core documents are: Egyptian death certificate (in Arabic), certified English translation, MOFA attestation stamp, Embalming certificate, Freedom from infection certificate, Police clearance, and Passport of the deceased."
+  - question: "Does the Turkey Embassy in Egypt help with repatriation?"
+    answer: "The Turkey Embassy in Cairo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Turkey Embassy in Cairo as soon as possible after the death."
+  - question: "Is a post-mortem required for British nationals who die in Egypt?"
+    answer: "The niyaba (Egyptian public prosecutor) orders a post-mortem for all unnatural, sudden, violent, or suspicious deaths. This applies routinely to foreign national deaths. It adds time: typically 2-6 weeks. The body cannot be released until the niyaba issues authorisation."
+  - question: "What happens when the body arrives in Turkey?"
+    answer: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death. The Turkish Ministry of Health clearance is required. All foreign documents require certified Turkish translation. The receiving funeral director coordinates with local municipal authorities."
+  - question: "Is cremation available in Egypt?"
+    answer: "Egypt has no cremation facilities. All repatriations from Egypt are full body repatriations. Cremation in Egypt is not available regardless of religion or preference."
+links:
+  upward:
+    - url: "/repatriation-from-egypt/"
+      text: "Full Egypt repatriation guide"
+    - url: "/guides/death-abroad-egypt/"
+      text: "What to do if someone dies in Egypt"
+    - url: "/repatriation-from-turkey/"
+      text: "Repatriation to Turkey: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/egypt-to-united-kingdom/"
+      text: "Repatriation from Egypt to the UK"
+    - url: "/routes/egypt-to-ireland/"
+      text: "Repatriation from Egypt to Ireland"
+---

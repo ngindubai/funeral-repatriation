@@ -1,0 +1,88 @@
+---
+title: "Pakistan to Turkey: Repatriation Guidance"
+description: "Someone has died in Pakistan. Repatriation to Turkey takes 3-6 weeks. Specialist help required. Contact us 24/7."
+origin_key: "pakistan"
+dest_key: "tr"
+origin_name: "Pakistan"
+dest_name: "Turkey"
+origin_slug: "pakistan"
+dest_slug: "turkey"
+slug: "pakistan-to-turkey"
+template_variant: "D"
+route_complexity: "high"
+timeline_avg: "3-6 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "8-16 weeks or longer"
+embassy_city: "Islamabad"
+doc_processing_time: "14-30 days minimum"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Pakistan to Turkey: what to expect"
+direct_answer_intro: "Pakistani nationals form a growing diaspora in Turkey, concentrated in Istanbul, working in trade, hospitality, retail, and textile sectors. Pakistan and Turkey have longstanding diplomatic and defence ties and describe their relationship as among the closest between Muslim-majority nations. Urdu documentation from Pakistan requires certified Turkish translation for Turkish civil registry purposes. The Turkish Embassy in Islamabad handles consular matters. (Turkish Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key document: Pakistani death certificate (NADRA or Union Council issued) with certified English translation"
+  - "Documentation takes 14-30 days minimum. Urdu certificate requires certified translation."
+  - "British High Commission in Islamabad registers the death and advises. They cannot fund repatriation."
+  - "No cremation in Pakistan. All repatriations are full body."
+  - "Turkey Embassy in Islamabad can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Pakistan"
+overview_body: "Call 15 for police or 115 for ambulance. Unexpected deaths require police notification. Death registered with NADRA (National Database and Registration Authority) or the local Union Council. The death certificate is in Urdu and requires certified English translation. Quality embalming is available in Islamabad, Karachi, and Lahore but limited in smaller cities."
+dest_reception: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) or Istanbul Sabiha Gokcen (SAW) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death in the nüfus müdürlüğü (population directorate). The Turkish Ministry of Health clearance is required before burial or cremation. All foreign documents not in Turkish require certified Turkish translation. (Turkish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Turkish Embassy in Islamabad can advise on documentation requirements for repatriation to Turkey. Turkish Ministry of Foreign Affairs emergency line: +90 312 292 2000 (24 hours). The Turkish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +90 312 292 2000. Seek specialist advice on FCDO travel warning status."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with NADRA or local Union Council. Certificate issued in Urdu."
+    timing: "Certified English translation required. Cannot begin process without it."
+    responsible: "Local funeral director and NADRA"
+  - step: 3
+    action: "British High Commission Islamabad or consulate notified"
+    timing: "Simultaneous with Step 1. High Commission provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Quality embalming available in Islamabad, Karachi, Lahore. Limited elsewhere."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 14-30 days minimum."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Islamabad (ISB), Karachi (KHI), or Lahore (LHE)"
+    timing: "Once all documentation complete. PIA, British Airways, and Emirates serve direct routes to LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Turkey funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Pakistan to Turkey take?"
+    answer: "In a straightforward case, repatriation from Pakistan to Turkey takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases, or those involving FCDO-restricted areas, can take 8-16 weeks or longer."
+  - question: "Is cremation available in Pakistan?"
+    answer: "Cremation is effectively unavailable in Pakistan. All repatriations must be full body repatriations. This applies regardless of the religion or wishes of the deceased."
+  - question: "My relative died in a conflict-affected area of Pakistan. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +90 312 292 2000 (+44 (0)20 7008 5000) immediately. Deaths in areas subject to FCDO travel warnings add significant complexity. Do not instruct a local funeral director independently."
+  - question: "What documents are required for repatriation from Pakistan to the UK?"
+    answer: "The core documents are: Pakistani death certificate (NADRA-issued) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the Turkey Embassy in Pakistan help with repatriation?"
+    answer: "The Turkey Embassy in Islamabad can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Turkey Embassy in Islamabad as soon as possible after the death."
+  - question: "What happens when the body arrives in Turkey?"
+    answer: "The Turkish funeral director (cenaze firması) takes custody at Istanbul Airport (IST) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death. The Turkish Ministry of Health clearance is required. All foreign documents require certified Turkish translation. The receiving funeral director coordinates with local municipal authorities."
+links:
+  upward:
+    - url: "/repatriation-from-pakistan/"
+      text: "Full Pakistan repatriation guide"
+    - url: "/guides/death-abroad-pakistan/"
+      text: "What to do if someone dies in Pakistan"
+    - url: "/repatriation-from-turkey/"
+      text: "Repatriation to Turkey: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/pakistan-to-united-kingdom/"
+      text: "Repatriation from Pakistan to the UK"
+    - url: "/routes/pakistan-to-ireland/"
+      text: "Repatriation from Pakistan to Ireland"
+---

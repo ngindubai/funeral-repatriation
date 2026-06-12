@@ -1,0 +1,87 @@
+---
+title: "Vietnam to Malaysia: Repatriation Guidance"
+description: "Someone has died in Vietnam. Repatriation to Malaysia takes 14-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "vietnam"
+dest_key: "my"
+origin_name: "Vietnam"
+dest_name: "Malaysia"
+origin_slug: "vietnam"
+dest_slug: "malaysia"
+slug: "vietnam-to-malaysia"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "14-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hanoi"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Vietnam to Malaysia: what to expect"
+direct_answer_intro: "Vietnamese nationals in Malaysia include workers in manufacturing, electronics, and service sectors, alongside students on educational exchanges. Malaysia and Vietnam share ASEAN membership and bilateral trade ties. Vietnamese documentation requires certified Malay or English translation for Malaysian NRD purposes. The Malaysian Embassy in Hanoi handles consular matters."
+direct_answer_points:
+  - "Key documents: Giay chung tu (death certificate, in Vietnamese) and certified English translation"
+  - "Documentation takes 7-14 days. Vietnamese documentation requires certified translation."
+  - "British Embassy in Hanoi or Consulate General in Ho Chi Minh City registers the death."
+  - "Malaysia Embassy in Hanoi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Vietnam"
+overview_body: "Call 113 for police or 115 for ambulance. A licensed physician must certify the death. Unexpected deaths and road accidents trigger police notification. Death registered with the local civil registry (nha nuoc). The giay chung tu is issued in Vietnamese only."
+dest_reception: "The Malaysian funeral director takes custody at Kuala Lumpur International Airport (KUL) cargo terminal. Malaysia Customs clearance is required. The National Registration Department (NRD) registers the death. The Ministry of Health may require clearance for final disposition. All foreign documents must be authenticated by the Malaysian Embassy or High Commission in the country of origin. Documents not in Malay or English require certified translation. (Malaysian Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Malaysian High Commission or Embassy in Hanoi can advise on documentation requirements and authenticate foreign certificates. They cannot pay for or arrange repatriation. Malaysian Ministry of Foreign Affairs 24-hour emergency: +603 8000 8000."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +603 8000 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local civil registry. Giay chung tu issued."
+    timing: "Certificate in Vietnamese only. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Malaysia Embassy in Hanoi notified"
+    timing: "Simultaneous with Step 1. Choose correct consulate based on location of death."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation. Available in Hanoi and HCMC."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export documentation completed"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hanoi (HAN) or Ho Chi Minh City (SGN) to London Heathrow"
+    timing: "Once all documentation complete. Vietnam Airlines operates direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Malaysia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Vietnam to Malaysia take?"
+    answer: "In a straightforward case, repatriation from Vietnam to Malaysia takes 10-14 days. Most cases take 14-21 days. Road accident deaths, where police must complete their investigation, can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Vietnam?"
+    answer: "The core documents are: Giay chung tu (Vietnamese death certificate) with certified English translation, Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Which British consulate covers my area of Vietnam?"
+    answer: "The British Embassy in Hanoi covers northern Vietnam. The Consulate General in Ho Chi Minh City covers southern Vietnam. Both offices handle repatriation cases."
+  - question: "Does the Malaysia Embassy in Vietnam help with repatriation?"
+    answer: "The Malaysia Embassy in Hanoi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Malaysia Embassy in Hanoi as soon as possible after the death."
+  - question: "What happens when the body arrives in Malaysia?"
+    answer: "The Malaysian funeral director takes custody at Kuala Lumpur International Airport (KUL) cargo terminal. Malaysia Customs clearance requires the authenticated death certificate, transit permit, and health clearance. The National Registration Department (NRD) registers the death. All foreign documents must be authenticated by the Malaysian Embassy in the origin country. The Ministry of Health may need to be notified."
+  - question: "Can I bring ashes home from Vietnam instead of repatriating the body?"
+    answer: "Yes. Cremation in Vietnam and bringing ashes home to the UK is an option. You will need the giay chung tu, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-vietnam/"
+      text: "Full Vietnam repatriation guide"
+    - url: "/guides/death-abroad-vietnam/"
+      text: "What to do if someone dies in Vietnam"
+    - url: "/repatriation-from-malaysia/"
+      text: "Repatriation to Malaysia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/vietnam-to-united-kingdom/"
+      text: "Repatriation from Vietnam to the UK"
+    - url: "/routes/vietnam-to-ireland/"
+      text: "Repatriation from Vietnam to Ireland"
+---

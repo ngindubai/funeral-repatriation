@@ -1,0 +1,88 @@
+---
+title: "Italy to South Africa: Repatriation Guidance"
+description: "Someone has died in Italy. Repatriation to South Africa takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "italy"
+dest_key: "za"
+origin_name: "Italy"
+dest_name: "South Africa"
+origin_slug: "italy"
+dest_slug: "south-africa"
+slug: "italy-to-south-africa"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "5-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Rome"
+doc_processing_time: "5-14 days for full documentation"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Italy to South Africa: what to expect"
+direct_answer_intro: "Italian nationals in South Africa include tourists, business professionals, and residents. South Africa is a popular destination for Italian tourists, and Italian companies are present in wine, agriculture, and luxury goods sectors. Italy and South Africa have bilateral diplomatic ties as fellow G20 members. Italian documentation requires certified English translation for South African Home Affairs purposes. The South African Embassy in Rome handles consular matters."
+direct_answer_points:
+  - "Key documents: Certificato di morte (death certificate) from the comune"
+  - "Documentation takes 5-14 days. Variation between northern and southern Italy comuni."
+  - "British Embassy in Rome registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem ordered by procuratore if death is sudden, violent, or cause unknown."
+  - "South Africa Embassy in Rome can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for Italy to UK repatriation"
+overview_body: "Contact emergency services (112). A doctor certifies the death. Death must be registered at the local comune. The doctor provides the initial certificate and the comune issues the atti di morte."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Rome can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local comune. Certificato di morte and atti di morte issued."
+    timing: "Doctor provides initial certificate. Comune registers and issues the atti di morte."
+    responsible: "Local funeral director and comune"
+  - step: 3
+    action: "South Africa Embassy in Rome notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (imbalsamazione or tanatoprassi)"
+    timing: "Italian funeral industry is professional."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Nulla osta and all export permits obtained"
+    timing: "Allow 5-14 days for full documentation. Post-mortem cases take longer."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Rome (FCO), Milan (MXP/LIN), or Venice (VCE)"
+    timing: "Once all documentation complete and nulla osta issued."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Italy to South Africa take?"
+    answer: "In a straightforward case, repatriation from Italy to South Africa takes 10-21 days. The fastest cases complete in 5-10 days. Complex cases involving the procuratore della Repubblica can take 4-8 weeks."
+  - question: "What is the nulla osta and why is it needed?"
+    answer: "The nulla osta is the clearance document from the comune or, when the procuratore is involved, from the prosecutor's office. It authorises release of the body for international repatriation and cannot be bypassed."
+  - question: "What documents are required for repatriation from Italy to the UK?"
+    answer: "The core documents are: Certificato di morte, Nulla osta (clearance), Embalming certificate (certificato di imbalsamazione), Freedom from infection certificate."
+  - question: "Does the South Africa Embassy in Italy help with repatriation?"
+    answer: "The South Africa Embassy in Rome can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in Rome as soon as possible after the death."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from Italy instead of repatriating the body?"
+    answer: "Yes. Cremation in Italy and bringing ashes home to the UK is an option. You will need the certificato di morte, cremation certificate, and nulla osta."
+links:
+  upward:
+    - url: "/repatriation-from-italy/"
+      text: "Full Italy repatriation guide"
+    - url: "/guides/death-abroad-italy/"
+      text: "What to do if someone dies in Italy"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/italy-to-united-kingdom/"
+      text: "Repatriation from Italy to the UK"
+    - url: "/routes/italy-to-ireland/"
+      text: "Repatriation from Italy to Ireland"
+---

@@ -1,0 +1,87 @@
+---
+title: "Germany to India: Repatriation Guidance"
+description: "Someone has died in Germany. Repatriation to India takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "germany"
+dest_key: "in"
+origin_name: "Germany"
+dest_name: "India"
+origin_slug: "germany"
+dest_slug: "india"
+slug: "germany-to-india"
+template_variant: "B"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Berlin"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Germany to India: what to expect"
+direct_answer_intro: "German nationals in India include business executives, engineers, and professionals working in the automotive, chemicals, and manufacturing sectors. Germany and India have extensive bilateral trade and a longstanding strategic partnership, with German companies including Volkswagen, BASF, and Bayer maintaining significant India operations. German documentation requires certified English translation for Indian civil registration purposes. The Indian Embassy in Berlin handles consular matters."
+direct_answer_points:
+  - "Key documents: Sterbeurkunde (from Standesamt) and Totenschein (medical death certificate)"
+  - "Documentation takes 3-7 days. The Leichenpass is Germany's unique body-transport document."
+  - "British Embassy in Berlin registers the death and advises. They cannot fund repatriation."
+  - "India Embassy in Berlin can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Germany"
+overview_body: "Call 112 for emergency services. A doctor issues the Totenschein. Death must be registered at the local Standesamt within 3 working days. The Standesamt issues the Sterbeurkunde. For international transport, a Leichenpass is required."
+dest_reception: "The Indian funeral director takes custody at the nearest international airport cargo terminal, commonly Indira Gandhi International (DEL, Delhi), Chhatrapati Shivaji Maharaj International (BOM, Mumbai), or Kempegowda International (BLR, Bangalore). The local civil registrar records the death under the Registration of Births and Deaths Act 1969. State regulations govern burial or cremation. All foreign documents must be authenticated by the Indian Embassy or High Commission in the country of origin. Documents not in English or Hindi require certified English translation. (Indian Ministry of External Affairs, 2025.)"
+dest_consular: "Indian Embassy or High Commission in Berlin can advise on documentation requirements and authenticate foreign certificates. They cannot pay for or arrange repatriation. Indian Ministry of External Affairs 24-hour emergency: +91 11 2301 2113."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +91 11 2301 2113."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Totenschein issued. Death registered at Standesamt. Sterbeurkunde obtained."
+    timing: "Must be registered within 3 working days. Sterbeurkunde issued same or next day."
+    responsible: "Local funeral director and Standesamt"
+  - step: 3
+    action: "India Embassy in Berlin notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "German funeral industry is professional and efficient."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Leichenpass obtained and all export permits completed"
+    timing: "Allow 3-7 days. Leichenpass adds 1-2 days but is standard procedure."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Frankfurt (FRA), Munich (MUC), Berlin (BER), or Dusseldorf (DUS)"
+    timing: "Once all documentation complete. Lufthansa Cargo has direct routes to all major UK airports."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "India funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Germany to India take?"
+    answer: "In a straightforward case, repatriation from Germany to India takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a post-mortem (Gerichtsmedizin) can take 3-6 weeks."
+  - question: "What is the Leichenpass and why is it needed?"
+    answer: "The Leichenpass is Germany's international body-transport document. It authorises international movement of the body and must accompany all repatriations. Your local funeral director handles the application. It adds approximately 1-2 days to the process."
+  - question: "What documents are required for repatriation from Germany?"
+    answer: "The core documents are: Sterbeurkunde (death certificate from Standesamt), Totenschein (medical death certificate), Leichenpass, Embalming certificate, Freedom from infection certificate (Gesundheitszeugnis)."
+  - question: "Does the India Embassy in Germany help with repatriation?"
+    answer: "The India Embassy in Berlin can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the India Embassy in Berlin as soon as possible after the death."
+  - question: "What happens when the body arrives in India?"
+    answer: "The Indian funeral director takes custody at the nearest international airport cargo terminal. The local civil registrar records the death under the Registration of Births and Deaths Act 1969. All foreign documents must be authenticated by the Indian Embassy in the origin country. State regulations govern burial or cremation. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Germany instead of repatriating the body?"
+    answer: "Yes. Cremation in Germany and bringing ashes home to the UK is often simpler and less costly. German crematoria operate to high standards. You will need the Sterbeurkunde, cremation certificate, and possibly an export permit."
+links:
+  upward:
+    - url: "/repatriation-from-germany/"
+      text: "Full Germany repatriation guide"
+    - url: "/guides/death-abroad-germany/"
+      text: "What to do if someone dies in Germany"
+    - url: "/repatriation-from-india/"
+      text: "Repatriation to India: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/germany-to-united-kingdom/"
+      text: "Repatriation from Germany to the UK"
+    - url: "/routes/germany-to-ireland/"
+      text: "Repatriation from Germany to Ireland"
+---
