@@ -171,7 +171,7 @@
             var crmUrgency = payload.urgency === 'just_happened' ? 'Critical' :
                              payload.urgency === 'this_week' ? 'Urgent' : 'Standard';
             try {
-                fetch('https://logistics-crm.onrender.com/api/public/leads', {
+                fetch('https://logistics-crm-tcu4.onrender.com/api/public/leads', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'x-api-key': 'uRc1IHymlMUnYfAB9i79iA3NUARQKFJdRCdo+4VDY/A=' },
                     keepalive: true,
