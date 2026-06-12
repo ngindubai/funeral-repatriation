@@ -164,6 +164,38 @@
             var payload = {};
             formData.forEach(function (value, key) { payload[key] = value; });
 
+            // ===== CRM fire-and-forget (parallel with FormSubmit) =====
+            var crmQs = new URLSearchParams(window.location.search);
+            var crmBurial = (['ashes_transport','cremation_abroad'].indexOf(payload.service) !== -1) ? 'Cremation' :
+                            (payload.service === 'full_repatriation' ? 'Burial' : undefined);
+            var crmUrgency = payload.urgency === 'just_happened' ? 'Critical' :
+                             payload.urgency === 'this_week' ? 'Urgent' : 'Standard';
+            try {
+                fetch('https://logistics-crm.onrender.com/api/public/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-api-key': 'uRc1IHymlMUnYfAB9i79iA3NUARQKFJdRCdo+4VDY/A=' },
+                    keepalive: true,
+                    body: JSON.stringify({
+                        company: 'funeral-repatriation',
+                        name: (payload.name || '').trim() || (payload.email || '').split('@')[0] || 'Website enquiry',
+                        email: payload.email || undefined,
+                        phone: payload.phone || undefined,
+                        country: payload.country || undefined,
+                        source: 'Funeral Repatriation website',
+                        landing_page: window.location.href,
+                        utm_source: crmQs.get('utm_source') || undefined,
+                        utm_medium: crmQs.get('utm_medium') || undefined,
+                        utm_campaign: crmQs.get('utm_campaign') || undefined,
+                        message: payload.message || undefined,
+                        fields: {
+                            countryOfDeath: payload.country || undefined,
+                            burialOrCremation: crmBurial,
+                            urgency: crmUrgency
+                        }
+                    })
+                });
+            } catch (e) { /* swallow */ }
+
             fetch(form.action, {
                 method: 'POST',
                 body: JSON.stringify(payload),
