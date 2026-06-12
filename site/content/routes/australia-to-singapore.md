@@ -1,0 +1,87 @@
+---
+title: "Australia to Singapore: Repatriation Guidance"
+description: "Someone has died in Australia. Repatriation to Singapore takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "australia"
+dest_key: "sg"
+origin_name: "Australia"
+dest_name: "Singapore"
+origin_slug: "australia"
+dest_slug: "singapore"
+slug: "australia-to-singapore"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Australia to Singapore: what to expect"
+direct_answer_intro: "Australian nationals form a significant professional and business community in Singapore, drawn by Singapore's role as a major financial and commercial hub in Asia. Australia and Singapore share a Free Trade Agreement and close defence ties. English documentation from Australia is well understood by Singapore authorities and requires no translation for most administrative purposes. The Singapore High Commission in Canberra handles consular matters. (Singapore Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Canberra registers the death and advises. They cannot fund repatriation."
+  - "Singapore Embassy in Canberra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Each Australian state has its own coroner who may be involved in unexpected deaths."
+dest_reception: "The Singapore funeral director takes custody at Changi Airport (SIN) cargo terminal. Singapore Customs clearance is required. The National Environment Agency (NEA) regulates the import of human remains into Singapore. All foreign death certificates must be authenticated by the Singapore Embassy or High Commission in the country of origin. (Singapore Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Singapore High Commission or Embassy in Canberra can advise on documentation requirements and authenticate foreign certificates. They cannot pay for or arrange repatriation. Singapore Ministry of Foreign Affairs 24-hour emergency: +65 6379 8000."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +65 6379 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state/territory Registry. Death certificate issued."
+    timing: "Registered with state/territory Registry. Funeral director normally handles this."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to Singapore"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Sydney, Melbourne, Brisbane."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Singapore funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to Singapore take?"
+    answer: "In a straightforward case, repatriation from Australia to Singapore takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, coronial investigation, or remote Northern Territory location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the Singapore Embassy in Australia help with repatriation?"
+    answer: "The Singapore Embassy in Canberra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Singapore Embassy in Canberra as soon as possible after the death."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the +65 6379 8000 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in Singapore?"
+    answer: "The Singapore funeral director takes custody at Changi Airport (SIN) cargo terminal. Singapore Customs clearance requires the authenticated death certificate, transit permit, and embalming certificate. The National Environment Agency (NEA) regulates the import of remains. All foreign documents must be authenticated by the Singapore Embassy in the origin country."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit from the state health authority."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/repatriation-from-singapore/"
+      text: "Repatriation to Singapore: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/australia-to-ireland/"
+      text: "Repatriation from Australia to Ireland"
+---

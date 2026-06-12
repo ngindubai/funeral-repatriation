@@ -1,0 +1,87 @@
+---
+title: "Kenya to Singapore: Repatriation Guidance"
+description: "Someone has died in Kenya. Repatriation to Singapore takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "kenya"
+dest_key: "sg"
+origin_name: "Kenya"
+dest_name: "Singapore"
+origin_slug: "kenya"
+dest_slug: "singapore"
+slug: "kenya-to-singapore"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "6-12 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Kenya to Singapore: what to expect"
+direct_answer_intro: "Kenyan nationals form part of Singapore's African professional community, working in financial services, technology, and trade. Kenya and Singapore have bilateral diplomatic relations and growing commercial links. English documentation from Kenya is generally understood by Singapore authorities, though authentication by the Singapore High Commission is required. The Singapore High Commission in Nairobi handles consular matters."
+direct_answer_points:
+  - "Key documents: Kenyan death certificate and Port Health clearance (freedom from infection)"
+  - "Documentation takes 7-21 days. All documentation and cargo departs from Nairobi."
+  - "British High Commission in Nairobi registers the death and advises. They cannot fund repatriation."
+  - "Singapore Embassy in Nairobi can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Kenya"
+overview_body: "Contact emergency services (999 or 112). If death occurs outside hospital, police must attend. Contact the British High Commission in Nairobi. Death must be registered with the civil registrar at the district office. Deaths in safari areas require road or charter aircraft transfer to Nairobi."
+dest_reception: "The Singapore funeral director takes custody at Changi Airport (SIN) cargo terminal. Singapore Customs clearance is required. The National Environment Agency (NEA) regulates the import of human remains into Singapore. All foreign death certificates must be authenticated by the Singapore Embassy or High Commission in the country of origin. (Singapore Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Singapore High Commission or Embassy in Nairobi can advise on documentation requirements and authenticate foreign certificates. They cannot pay for or arrange repatriation. Singapore Ministry of Foreign Affairs 24-hour emergency: +65 6379 8000."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +65 6379 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with civil registrar. Burial permit obtained."
+    timing: "Funeral director handles registration. Safari area deaths require transfer to Nairobi first."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "British High Commission Nairobi notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming in Nairobi"
+    timing: "Professional embalming facilities available in Nairobi. Limited outside the capital."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Port Health clearance and all export permits obtained"
+    timing: "Allow 7-21 days. Port Health is an additional step specific to Kenya."
+    responsible: "Local funeral director and Port Health"
+  - step: 6
+    action: "Air cargo from Nairobi Jomo Kenyatta International (NBO)"
+    timing: "Once all documentation complete. Kenya Airways and British Airways serve NBO-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Singapore funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Kenya to Singapore take?"
+    answer: "In a straightforward Nairobi case, repatriation from Kenya to Singapore takes 10-14 days. Deaths in safari areas or remote locations add significant time for internal transfer. Most cases take 14-28 days. Complex cases can take 6-12 weeks."
+  - question: "My relative died on safari in Kenya. What should I do?"
+    answer: "Contact a UK repatriation specialist and the +65 6379 8000 (+44 (0)20 7008 5000) immediately. Deaths in the Masai Mara, Amboseli, Tsavo, or other remote areas require road or light aircraft transfer to Nairobi before any documentation can begin."
+  - question: "What documents are required for repatriation from Kenya to the UK?"
+    answer: "The core documents are: Kenyan death certificate, Embalming certificate, Port Health clearance (freedom from infection certificate), Police report/clearance, and Passport of the deceased."
+  - question: "Does the Singapore Embassy in Kenya help with repatriation?"
+    answer: "The Singapore Embassy in Nairobi can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Singapore Embassy in Nairobi as soon as possible after the death."
+  - question: "What happens when the body arrives in Singapore?"
+    answer: "The Singapore funeral director takes custody at Changi Airport (SIN) cargo terminal. Singapore Customs clearance requires the authenticated death certificate, transit permit, and embalming certificate. The National Environment Agency (NEA) regulates the import of remains. All foreign documents must be authenticated by the Singapore Embassy in the origin country."
+  - question: "Can I bring ashes home from Kenya instead of repatriating the body?"
+    answer: "Yes. Cremation in Kenya and bringing ashes home to the UK is an option. You will need the local death certificate, cremation certificate, and Port Health clearance."
+links:
+  upward:
+    - url: "/repatriation-from-kenya/"
+      text: "Full Kenya repatriation guide"
+    - url: "/guides/death-abroad-kenya/"
+      text: "What to do if someone dies in Kenya"
+    - url: "/repatriation-from-singapore/"
+      text: "Repatriation to Singapore: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/kenya-to-united-kingdom/"
+      text: "Repatriation from Kenya to the UK"
+    - url: "/routes/kenya-to-ireland/"
+      text: "Repatriation from Kenya to Ireland"
+---

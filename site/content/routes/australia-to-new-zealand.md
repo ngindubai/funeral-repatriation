@@ -1,0 +1,87 @@
+---
+title: "Australia to New Zealand: Repatriation Guidance"
+description: "Someone has died in Australia. Repatriation to New Zealand takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "australia"
+dest_key: "nz"
+origin_name: "Australia"
+dest_name: "New Zealand"
+origin_slug: "australia"
+dest_slug: "new-zealand"
+slug: "australia-to-new-zealand"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Australia to New Zealand: what to expect"
+direct_answer_intro: "Australians form the largest foreign national group in New Zealand, with hundreds of thousands of Australian citizens living and working across the country under the Trans-Tasman Travel Arrangement, which allows citizens of each country to live and work in the other. This corridor is one of the highest-volume repatriation routes between the two countries. English documentation from Australia requires no translation for New Zealand Customs clearance. The New Zealand High Commission in Canberra handles consular matters. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Canberra registers the death and advises. They cannot fund repatriation."
+  - "New Zealand Embassy in Canberra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Each Australian state has its own coroner who may be involved in unexpected deaths."
+dest_reception: "The New Zealand funeral director takes custody at Auckland International (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance is required. The Registrar-General of Births, Deaths and Marriages records the death under the Births, Deaths, Marriages, and Relationships Registration Act 2021. The Coroner may need to be notified under the Coroners Act 2006. All foreign documentation must be authenticated. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+dest_consular: "New Zealand Embassy or High Commission in Canberra can assist New Zealand citizens and their families with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. New Zealand Ministry of Foreign Affairs and Trade (MFAT) emergency line: +64 4 439 8000 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +64 4 439 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state/territory Registry. Death certificate issued."
+    timing: "Registered with state/territory Registry. Funeral director normally handles this."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to New Zealand"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Sydney, Melbourne, Brisbane."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "New Zealand funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to New Zealand take?"
+    answer: "In a straightforward case, repatriation from Australia to New Zealand takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, coronial investigation, or remote Northern Territory location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the New Zealand Embassy in Australia help with repatriation?"
+    answer: "The New Zealand Embassy in Canberra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the New Zealand Embassy in Canberra as soon as possible after the death."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the +64 4 439 8000 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in New Zealand?"
+    answer: "The New Zealand funeral director takes custody at Auckland (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance requires the foreign death certificate, transit permit, and embalming certificate. The Registrar-General records the death. The Coroner may need to be notified. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit from the state health authority."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/repatriation-from-new-zealand/"
+      text: "Repatriation to New Zealand: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/australia-to-ireland/"
+      text: "Repatriation from Australia to Ireland"
+---

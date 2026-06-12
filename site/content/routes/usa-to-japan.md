@@ -1,0 +1,88 @@
+---
+title: "United States to Japan: Repatriation Guidance"
+description: "Someone has died in United States. Repatriation to Japan takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "usa"
+dest_key: "jp"
+origin_name: "United States"
+dest_name: "Japan"
+origin_slug: "usa"
+dest_slug: "japan"
+slug: "usa-to-japan"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from United States to Japan: what to expect"
+direct_answer_intro: "Japanese Americans and American nationals of Japanese descent maintain strong family ties to Japan, making the United States to Japan corridor a consistent repatriation route. California, Hawaii, and New York have long-established Japanese American communities. Japan requires MOFA export approval, the Burial Permit (Maiso Kyoka), and a sanitised coffin certificate before remains can depart. The Japanese Embassy in Washington DC handles consular matters for Japanese families affected by a death in the United States. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued, certified copy) and Embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. New York and California take longer."
+  - "British Embassy in Washington DC and consulates across the US register the death and advise."
+  - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
+  - "Japan Embassy in Washington DC can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in the USA"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation. The funeral home handles the transit permit application."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Washington DC can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. State death certificate issued."
+    timing: "State-specific. NY and CA take longer. Medical examiner investigation adds time."
+    responsible: "Local funeral director and state civil records"
+  - step: 3
+    action: "Japan Embassy in Washington DC notified"
+    timing: "Simultaneous with Step 1. Embassy/Consulate registers the death with UK authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "US funeral industry is professional and internationally experienced."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit, health certificate, and all export documentation obtained"
+    timing: "Allow 5-14 days depending on state."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to Japan"
+    timing: "Once all documentation complete. British Airways, Virgin Atlantic, American Airlines serve routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the USA to Japan take?"
+    answer: "In a straightforward case, repatriation from the USA to the UK takes 7-10 days. Most cases take 10-21 days. Complex cases involving a county coroner investigation can take 3-8 weeks."
+  - question: "Does it matter which state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner, its own death certificate format, and its own processing timelines. New York City and Los Angeles County have high caseloads and longer processing times. Smaller states are generally faster."
+  - question: "What documents are required for repatriation from the USA to the UK?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased."
+  - question: "Does the British Embassy in the USA help with repatriation?"
+    answer: "The British Embassy in Washington DC and consulates across the US can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. Japanese Embassy in Washington DC can advise on documentation requirements for r."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from the USA instead of repatriating the body?"
+    answer: "Yes. Cremation in the USA and bringing ashes home to the UK is simpler and less costly. You will need the state death certificate and cremation certificate. Ashes can be carried on a passenger flight to the UK."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full United States repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in United States"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/usa-to-united-kingdom/"
+      text: "Repatriation from United States to the UK"
+    - url: "/routes/usa-to-ireland/"
+      text: "Repatriation from United States to Ireland"
+---

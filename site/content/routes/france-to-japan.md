@@ -1,0 +1,88 @@
+---
+title: "France to Japan: Repatriation Guidance"
+description: "Someone has died in France. Repatriation to Japan takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "france"
+dest_key: "jp"
+origin_name: "France"
+dest_name: "Japan"
+origin_slug: "france"
+dest_slug: "japan"
+slug: "france-to-japan"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "4-7 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Paris"
+doc_processing_time: "3-7 days total"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from France to Japan: what to expect"
+direct_answer_intro: "Japanese nationals form a community in France, concentrated in Paris and the greater Paris region, with Paris hosting one of the largest Japanese communities in Europe. Japan and France share extensive cultural, trade, and diplomatic ties, including the Japan-EU Economic Partnership Agreement. French documentation requires certified Japanese translation for Japanese municipal registry purposes. The Japanese Embassy in Paris handles consular matters. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+direct_answer_points:
+  - "Key documents: Acte de deces and Embalming certificate (certificat de soins de conservation)"
+  - "Documentation takes 3-7 days. The death must be registered at the local mairie within 24 hours."
+  - "British Embassy in Paris registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem at the Institut Medico-Legal (IML) required for violent, sudden, or unexplained deaths."
+  - "Japan Embassy in Paris can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in France"
+overview_body: "Contact emergency services (15 SAMU, 17 police, 18 fire, or 112). A doctor certifies the death and issues a certificat de deces. The death must be registered at the local mairie within 24 hours. Eurotunnel or ferry road transport is a genuine alternative to air cargo for northern France deaths."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Paris can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local mairie within 24 hours"
+    timing: "Hospital or doctor initiates. Acte de deces issued by the mairie."
+    responsible: "Local funeral director and mairie"
+  - step: 3
+    action: "Japan Embassy in Paris notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (thanatopraxie) and preparation"
+    timing: "French funeral industry is professional. Regulated embalming profession."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Laissez-passer mortuaire and export documentation obtained"
+    timing: "Allow 3-7 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Transport to UK: air cargo or road via Eurotunnel or ferry"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from France to Japan take?"
+    answer: "In a straightforward case, repatriation from France to Japan takes 7-14 days. The fastest cases complete in 4-7 days when road transport via Eurotunnel is used. Complex cases involving a post-mortem at the Institut Medico-Legal can take 3-8 weeks."
+  - question: "What documents are required for repatriation from France to the UK?"
+    answer: "The core documents are: Acte de deces (death certificate), Embalming certificate (certificat de soins de conservation), Permission to transfer (autorisation de transport de corps), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the Japan Embassy in France help with repatriation?"
+    answer: "The Japan Embassy in Paris can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Paris as soon as possible after the death."
+  - question: "Is road transport from France to the UK an option?"
+    answer: "Yes. Road transport via Eurotunnel or ferry is a genuine and often cheaper alternative to air cargo, particularly for deaths in northern France or Paris. Your repatriation specialist will advise which route is most practical."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from France instead of repatriating the body?"
+    answer: "Yes. Cremation in France and bringing ashes home to the UK is often simpler and less costly. French crematoria are well-established and the ashes can be carried on a passenger flight or shipped."
+links:
+  upward:
+    - url: "/repatriation-from-france/"
+      text: "Full France repatriation guide"
+    - url: "/guides/death-abroad-france/"
+      text: "What to do if someone dies in France"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/france-to-united-kingdom/"
+      text: "Repatriation from France to the UK"
+    - url: "/routes/france-to-ireland/"
+      text: "Repatriation from France to Ireland"
+---

@@ -1,0 +1,88 @@
+---
+title: "United States to South Africa: Repatriation Guidance"
+description: "Someone has died in United States. Repatriation to South Africa takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "usa"
+dest_key: "za"
+origin_name: "United States"
+dest_name: "South Africa"
+origin_slug: "usa"
+dest_slug: "south-africa"
+slug: "usa-to-south-africa"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from United States to South Africa: what to expect"
+direct_answer_intro: "American nationals form a significant expatriate and tourist community in South Africa, drawn by the safari industry, natural beauty, and business opportunities. South Africa is a major destination for American tourists and business travellers, and US corporate investment in South Africa is substantial. English documentation from the USA is understood by South African Home Affairs authorities. The South African Embassy in Washington DC handles consular matters."
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued, certified copy) and Embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. New York and California take longer."
+  - "British Embassy in Washington DC and consulates across the US register the death and advise."
+  - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
+  - "South Africa Embassy in Washington DC can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in the USA"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation. The funeral home handles the transit permit application."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Washington DC can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. State death certificate issued."
+    timing: "State-specific. NY and CA take longer. Medical examiner investigation adds time."
+    responsible: "Local funeral director and state civil records"
+  - step: 3
+    action: "South Africa Embassy in Washington DC notified"
+    timing: "Simultaneous with Step 1. Embassy/Consulate registers the death with UK authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "US funeral industry is professional and internationally experienced."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit, health certificate, and all export documentation obtained"
+    timing: "Allow 5-14 days depending on state."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to South Africa"
+    timing: "Once all documentation complete. British Airways, Virgin Atlantic, American Airlines serve routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the USA to South Africa take?"
+    answer: "In a straightforward case, repatriation from the USA to the UK takes 7-10 days. Most cases take 10-21 days. Complex cases involving a county coroner investigation can take 3-8 weeks."
+  - question: "Does it matter which state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner, its own death certificate format, and its own processing timelines. New York City and Los Angeles County have high caseloads and longer processing times. Smaller states are generally faster."
+  - question: "What documents are required for repatriation from the USA to the UK?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased."
+  - question: "Does the British Embassy in the USA help with repatriation?"
+    answer: "The British Embassy in Washington DC and consulates across the US can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. South African Embassy or High Commission in Washington DC can advise on document."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from the USA instead of repatriating the body?"
+    answer: "Yes. Cremation in the USA and bringing ashes home to the UK is simpler and less costly. You will need the state death certificate and cremation certificate. Ashes can be carried on a passenger flight to the UK."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full United States repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in United States"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/usa-to-united-kingdom/"
+      text: "Repatriation from United States to the UK"
+    - url: "/routes/usa-to-ireland/"
+      text: "Repatriation from United States to Ireland"
+---

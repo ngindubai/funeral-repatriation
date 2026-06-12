@@ -1,0 +1,87 @@
+---
+title: "Morocco to Saudi Arabia: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Saudi Arabia takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "sa"
+origin_name: "Morocco"
+dest_name: "Saudi Arabia"
+origin_slug: "morocco"
+dest_slug: "saudi-arabia"
+slug: "morocco-to-saudi-arabia"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Saudi Arabia: what to expect"
+direct_answer_intro: "Moroccan nationals form one of the larger North African worker communities in Saudi Arabia, with thousands of Moroccans employed across construction, services, and professional sectors. Morocco and Saudi Arabia have strong bilateral ties as fellow Arab League and Organisation of Islamic Cooperation (OIC) member states. Arabic documentation from Morocco is generally understood by Saudi authorities, though notarisation and authentication by the Saudi Embassy are required. The Saudi Embassy in Rabat handles consular matters. (Saudi Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Saudi Arabia Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The Saudi government mortuary or funeral home takes custody at King Khalid International (RUH, Riyadh), King Abdulaziz International (JED, Jeddah), or King Fahd International (DMM, Dammam) cargo terminal. Saudi Ministry of Health approval is required before the remains can be received. All documents must be authenticated by the Saudi Embassy in the country of origin. Non-Muslim remains require specific certification and procedures. (Saudi Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Saudi Embassy in Rabat handles authentication of repatriation documents. Contact the Saudi Embassy in Morocco for document legalisation requirements. Saudi Ministry of Foreign Affairs coordinates with the receiving authorities in Saudi Arabia."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact Saudi Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Saudi Arabia Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Saudi Arabia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Saudi Arabia take?"
+    answer: "In a straightforward case, repatriation from Morocco to Saudi Arabia takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Saudi Arabia Embassy in Morocco help with repatriation?"
+    answer: "The Saudi Arabia Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Saudi Arabia Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the contact Saudi Embassy in origin country (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Saudi Arabia?"
+    answer: "The Saudi government mortuary takes custody at King Khalid (RUH), King Abdulaziz (JED), or King Fahd (DMM) cargo terminal. Saudi Ministry of Health clearance is required in advance. All documents must be authenticated by the Saudi Embassy in the origin country. Non-Muslim remains require specific certification. The family or sponsor in Saudi Arabia coordinates with the receiving authorities."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-saudi-arabia/"
+      text: "Repatriation to Saudi Arabia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---

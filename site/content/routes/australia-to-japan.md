@@ -1,0 +1,87 @@
+---
+title: "Australia to Japan: Repatriation Guidance"
+description: "Someone has died in Australia. Repatriation to Japan takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "australia"
+dest_key: "jp"
+origin_name: "Australia"
+dest_name: "Japan"
+origin_slug: "australia"
+dest_slug: "japan"
+slug: "australia-to-japan"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Australia to Japan: what to expect"
+direct_answer_intro: "Japanese nationals form a community in Australia, with students, working holiday visa holders, and professionals concentrated in Melbourne, Sydney, and Cairns. Australia and Japan have close bilateral ties including a Free Trade Agreement and a Status of Forces Agreement. Australian English documentation requires certified Japanese translation for Japanese municipal koseki (family register) purposes. The Japanese Embassy in Canberra handles consular matters."
+direct_answer_points:
+  - "Key documents: Australian death certificate (state-issued) and Embalming certificate"
+  - "Documentation takes 5-14 days. Appoint a specialist on day one."
+  - "British High Commission in Canberra registers the death and advises. They cannot fund repatriation."
+  - "Japan Embassy in Canberra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death must be registered with the state or territory Registry of Births, Deaths and Marriages. The funeral director normally handles registration. Each Australian state has its own coroner who may be involved in unexpected deaths."
+dest_reception: "The Japanese funeral director (sosogiya) takes custody at Narita International (NRT) or Kansai International (KIX) cargo terminal. The municipality (shi/ku/cho/son) registers the death in the koseki (family register). A sanitised coffin certificate and laissez-passer must accompany the remains. The Ministry of Health, Labour and Welfare (MHLW) regulations apply to the import of human remains. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, MOFA, 2025.)"
+dest_consular: "Japanese Embassy in Canberra can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs (MOFA) emergency line: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with state/territory Registry. Death certificate issued."
+    timing: "Registered with state/territory Registry. Funeral director normally handles this."
+    responsible: "Local funeral director and registry"
+  - step: 3
+    action: "British High Commission notification"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Australian funeral industry operates to high professional standards."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Complete export documentation and obtain all permits"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo booked and body transported to Japan"
+    timing: "Once all documentation complete. Direct flights to Heathrow from Sydney, Melbourne, Brisbane."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to Japan take?"
+    answer: "In a straightforward case, repatriation from Australia to Japan takes 10-21 days. The fastest cases complete in 10-14 days when documentation is issued promptly. Complex cases involving a post-mortem, coronial investigation, or remote Northern Territory location can take 4-8 weeks or longer."
+  - question: "What documents are required for repatriation from Australia?"
+    answer: "The core documents are: Australian death certificate (state-issued), Embalming certificate, Freedom from infection certificate, Passport of deceased (or copy), Export permit from the state health authority. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the Japan Embassy in Australia help with repatriation?"
+    answer: "The Japan Embassy in Canberra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Canberra as soon as possible after the death."
+  - question: "What is the first step when someone dies in Australia?"
+    answer: "Notify a UK repatriation specialist and the +81 3 3580 3311 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist, as this can complicate documentation and cost."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Kansai (KIX) cargo terminal. The municipality registers the death in the koseki. A sanitised coffin certificate and laissez-passer must accompany the remains. Documents not in Japanese require certified Japanese translation. The receiving funeral director coordinates with the municipal office and health authorities."
+  - question: "Can I bring ashes home from Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia and bringing ashes home to the UK is often simpler and less costly than full body repatriation. You will need the local death certificate, cremation certificate, and possibly an export permit from the state health authority."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/australia-to-ireland/"
+      text: "Repatriation from Australia to Ireland"
+---

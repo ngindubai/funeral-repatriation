@@ -1,0 +1,88 @@
+---
+title: "Japan to United States: Repatriation Guidance"
+description: "Someone has died in Japan. Repatriation to United States takes 10-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "japan"
+dest_key: "us"
+origin_name: "Japan"
+dest_name: "United States"
+origin_slug: "japan"
+dest_slug: "united-states"
+slug: "japan-to-united-states"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "10-21 days"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Tokyo"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Japan to United States: what to expect"
+direct_answer_intro: "Japanese Americans and American nationals of Japanese descent maintain strong family ties to Japan, and Japan has a long-established diplomatic and trade relationship with the United States. California, Hawaii, and New York host large Japanese American communities. A death in Japan requires the Japanese authorities to issue an export permit and a sanitised coffin certificate before remains can depart. The US Embassy in Tokyo handles consular matters for American nationals dying in Japan. (US State Department, Bureau of Consular Affairs, 2025.)"
+direct_answer_points:
+  - "Key document: Shibo kenshin-sho (Japanese death certificate) with certified English translation"
+  - "Documentation takes 7-14 days. Embalming must be explicitly requested."
+  - "British Embassy in Tokyo registers the death and advises. They cannot fund repatriation."
+  - "Bringing ashes home is significantly faster and simpler than full body repatriation."
+  - "United States Embassy in Tokyo can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Japan"
+overview_body: "Call 110 for police or 119 for ambulance. A licensed doctor certifies the death. Death must be registered at the local ward office (shiyakusho or kuyakusho) within 7 days. The shibo kenshin-sho is issued in Japanese only. Certified English translation is mandatory. Embalming is not standard practice in Japan and must be specifically arranged."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in Tokyo can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444. Request embalming immediately."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local ward office within 7 days. Shibo kenshin-sho issued."
+    timing: "Certificate in Japanese only. Certified English translation mandatory."
+    responsible: "Local funeral director and ward office"
+  - step: 3
+    action: "United States Embassy in Tokyo notified"
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming arranged (must be specifically requested)"
+    timing: "Not standard Japanese practice. Must be explicitly requested. Japanese funeral homes use dry ice as standard."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-14 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Tokyo Narita (NRT) or Haneda (HND) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. Japan Airlines Cargo and ANA Cargo operate direct routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Japan to United States take?"
+    answer: "In a straightforward case, repatriation from Japan to United States takes 10-21 days. The fastest cases complete in 7-14 days. Complex cases involving a medical examiner inquiry can take 4-8 weeks."
+  - question: "Why must embalming be specifically requested in Japan?"
+    answer: "Embalming is not part of traditional Japanese funeral practice. Japanese funeral homes use dry ice as standard for body preservation. For international repatriation, full embalming to international standards is required and must be explicitly requested."
+  - question: "Is bringing ashes home from Japan a better option?"
+    answer: "For many families, yes. Japan's cremation rate is over 99% and the process is well-organised. Bringing ashes home to the UK avoids the embalming and full body cargo requirements and is significantly faster and less costly."
+  - question: "What documents are required for repatriation from Japan to the UK?"
+    answer: "The core documents are: shibo kenshin-sho (Japanese death certificate) with certified English translation, embalming certificate, freedom from infection certificate, and passport of the deceased."
+  - question: "Does the United States Embassy in Japan help with repatriation?"
+    answer: "The United States Embassy in Tokyo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in Tokyo as soon as possible after the death."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+links:
+  upward:
+    - url: "/repatriation-from-japan/"
+      text: "Full Japan repatriation guide"
+    - url: "/guides/death-abroad-japan/"
+      text: "What to do if someone dies in Japan"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/japan-to-united-kingdom/"
+      text: "Repatriation from Japan to the UK"
+    - url: "/routes/japan-to-ireland/"
+      text: "Repatriation from Japan to Ireland"
+---

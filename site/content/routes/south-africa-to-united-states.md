@@ -1,0 +1,87 @@
+---
+title: "South Africa to United States: Repatriation Guidance"
+description: "Someone has died in South Africa. Repatriation to United States takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "south-africa"
+dest_key: "us"
+origin_name: "South Africa"
+dest_name: "United States"
+origin_slug: "south-africa"
+dest_slug: "united-states"
+slug: "south-africa-to-united-states"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Pretoria"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from South Africa to United States: what to expect"
+direct_answer_intro: "South African nationals form a professional diaspora in the United States, concentrated in New York, Los Angeles, and Houston, with South African-born professionals working in medicine, finance, and technology sectors. South Africa and the United States have bilateral diplomatic relations. English documentation from South Africa is understood by US Customs and state authorities. The US Embassy in Pretoria handles consular matters. (US State Department, Bureau of Consular Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: South African death certificate (BI-1663, Home Affairs registered) and Embalming certificate"
+  - "Documentation takes 5-14 days. Documentation is in English throughout."
+  - "British High Commission in Pretoria registers the death and advises. They cannot fund repatriation."
+  - "United States Embassy in Pretoria can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from South Africa"
+overview_body: "Call 10177 for ambulance or 10111 for police. Unexpected deaths must be reported to the South African Police Service (SAPS). Death registered with the local Department of Home Affairs. A certified BI-1663 form is issued as the death certificate."
+dest_reception: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires a transit or burial permit, the foreign death certificate, and an embalming certificate. State health department regulations apply and vary by state. The receiving funeral director notifies the medical examiner or coroner as required by state law. (US State Department, Bureau of Consular Affairs, 2025.)"
+dest_consular: "US Embassy in Pretoria can assist US citizens and their families with consular registration of the death and provide a list of local funeral directors. They cannot pay for or arrange repatriation. State Department emergency line: +1 (888) 407-4747 (within the US) or +1 (202) 501-4444 (from overseas), 24 hours."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +1 (202) 501-4444."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Home Affairs. BI-1663 death certificate issued."
+    timing: "Funeral director handles registration. Documents in English throughout."
+    responsible: "Local funeral director and Home Affairs"
+  - step: 3
+    action: "British High Commission Pretoria notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "South African funeral industry is professional and experienced with international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Johannesburg (JNB) or Cape Town (CPT)"
+    timing: "Once all documentation complete. British Airways and South African Airways serve JNB-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "United States funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from South Africa to United States take?"
+    answer: "In a straightforward case, repatriation from South Africa to United States takes 10-21 days. The fastest cases complete in 10-14 days. Complex cases involving a SAPS investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from South Africa?"
+    answer: "The core documents are: South African death certificate (BI-1663), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the United States Embassy in South Africa help with repatriation?"
+    answer: "The United States Embassy in Pretoria can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the United States Embassy in Pretoria as soon as possible after the death."
+  - question: "What is the first step when someone dies in South Africa?"
+    answer: "Notify a UK repatriation specialist and the +1 (202) 501-4444 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in United States?"
+    answer: "The US funeral director takes custody at the cargo terminal. US Customs clearance requires the foreign death certificate, transit or burial permit, and embalming certificate. State regulations govern burial or cremation. The receiving funeral director notifies the medical examiner or coroner as required."
+  - question: "Can I bring ashes home from South Africa instead of repatriating the body?"
+    answer: "Yes. Cremation in South Africa and bringing ashes home to the UK is an option. You will need the BI-1663 death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-south-africa/"
+      text: "Full South Africa repatriation guide"
+    - url: "/guides/death-abroad-south-africa/"
+      text: "What to do if someone dies in South Africa"
+    - url: "/repatriation-from-united-states/"
+      text: "Repatriation to United States: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/south-africa-to-united-kingdom/"
+      text: "Repatriation from South Africa to the UK"
+    - url: "/routes/south-africa-to-ireland/"
+      text: "Repatriation from South Africa to Ireland"
+---

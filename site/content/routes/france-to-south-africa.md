@@ -1,0 +1,88 @@
+---
+title: "France to South Africa: Repatriation Guidance"
+description: "Someone has died in France. Repatriation to South Africa takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "france"
+dest_key: "za"
+origin_name: "France"
+dest_name: "South Africa"
+origin_slug: "france"
+dest_slug: "south-africa"
+slug: "france-to-south-africa"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "4-7 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Paris"
+doc_processing_time: "3-7 days total"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from France to South Africa: what to expect"
+direct_answer_intro: "French nationals form a significant expatriate community in South Africa, concentrated in Cape Town, Johannesburg, and Durban across business, viticulture, agriculture, and professional sectors. South Africa is among France's most significant African trading partners, and French investment in South Africa is substantial. French documentation may require certified translation for South African Home Affairs purposes. The South African Embassy in Paris handles consular matters. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+direct_answer_points:
+  - "Key documents: Acte de deces and Embalming certificate (certificat de soins de conservation)"
+  - "Documentation takes 3-7 days. The death must be registered at the local mairie within 24 hours."
+  - "British Embassy in Paris registers the death and advises. They cannot fund repatriation."
+  - "Post-mortem at the Institut Medico-Legal (IML) required for violent, sudden, or unexplained deaths."
+  - "South Africa Embassy in Paris can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in France"
+overview_body: "Contact emergency services (15 SAMU, 17 police, 18 fire, or 112). A doctor certifies the death and issues a certificat de deces. The death must be registered at the local mairie within 24 hours. Eurotunnel or ferry road transport is a genuine alternative to air cargo for northern France deaths."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Paris can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at local mairie within 24 hours"
+    timing: "Hospital or doctor initiates. Acte de deces issued by the mairie."
+    responsible: "Local funeral director and mairie"
+  - step: 3
+    action: "South Africa Embassy in Paris notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming (thanatopraxie) and preparation"
+    timing: "French funeral industry is professional. Regulated embalming profession."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Laissez-passer mortuaire and export documentation obtained"
+    timing: "Allow 3-7 days total. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Transport to UK: air cargo or road via Eurotunnel or ferry"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of UK arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from France to South Africa take?"
+    answer: "In a straightforward case, repatriation from France to South Africa takes 7-14 days. The fastest cases complete in 4-7 days when road transport via Eurotunnel is used. Complex cases involving a post-mortem at the Institut Medico-Legal can take 3-8 weeks."
+  - question: "What documents are required for repatriation from France to the UK?"
+    answer: "The core documents are: Acte de deces (death certificate), Embalming certificate (certificat de soins de conservation), Permission to transfer (autorisation de transport de corps), Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the South Africa Embassy in France help with repatriation?"
+    answer: "The South Africa Embassy in Paris can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in Paris as soon as possible after the death."
+  - question: "Is road transport from France to the UK an option?"
+    answer: "Yes. Road transport via Eurotunnel or ferry is a genuine and often cheaper alternative to air cargo, particularly for deaths in northern France or Paris. Your repatriation specialist will advise which route is most practical."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from France instead of repatriating the body?"
+    answer: "Yes. Cremation in France and bringing ashes home to the UK is often simpler and less costly. French crematoria are well-established and the ashes can be carried on a passenger flight or shipped."
+links:
+  upward:
+    - url: "/repatriation-from-france/"
+      text: "Full France repatriation guide"
+    - url: "/guides/death-abroad-france/"
+      text: "What to do if someone dies in France"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/france-to-united-kingdom/"
+      text: "Repatriation from France to the UK"
+    - url: "/routes/france-to-ireland/"
+      text: "Repatriation from France to Ireland"
+---

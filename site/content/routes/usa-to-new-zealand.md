@@ -1,0 +1,88 @@
+---
+title: "United States to New Zealand: Repatriation Guidance"
+description: "Someone has died in United States. Repatriation to New Zealand takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "usa"
+dest_key: "nz"
+origin_name: "United States"
+dest_name: "New Zealand"
+origin_slug: "usa"
+dest_slug: "new-zealand"
+slug: "usa-to-new-zealand"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "3-8 weeks"
+embassy_city: "Washington DC"
+doc_processing_time: "5-14 days (varies significantly by state)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from United States to New Zealand: what to expect"
+direct_answer_intro: "American nationals form a professional and business community in New Zealand, particularly in Auckland, Wellington, and Queenstown, drawn by lifestyle and work opportunities. The US and New Zealand share Anglophone ties and bilateral diplomatic relations. American tourists and expatriates represent a consistent repatriation corridor. English documentation from the US requires no translation for New Zealand Customs clearance. The New Zealand Embassy in Washington DC handles consular matters."
+direct_answer_points:
+  - "Key documents: US death certificate (state-issued, certified copy) and Embalming certificate"
+  - "Documentation takes 5-14 days depending on the state. New York and California take longer."
+  - "British Embassy in Washington DC and consulates across the US register the death and advise."
+  - "A post-mortem may be ordered by the state medical examiner or county coroner for unexpected deaths."
+  - "New Zealand Embassy in Washington DC can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in the USA"
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Each US state issues its own death certificate. An embalming certificate is required for international repatriation. The funeral home handles the transit permit application."
+dest_reception: "The New Zealand funeral director takes custody at Auckland International (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance is required. The Registrar-General of Births, Deaths and Marriages records the death under the Births, Deaths, Marriages, and Relationships Registration Act 2021. The Coroner may need to be notified under the Coroners Act 2006. All foreign documentation must be authenticated. (New Zealand Ministry of Foreign Affairs and Trade, MFAT, 2025.)"
+dest_consular: "New Zealand Embassy or High Commission in Washington DC can assist New Zealand citizens and their families with consular registration of the death and provide guidance on required documentation. They cannot pay for or arrange repatriation. New Zealand Ministry of Foreign Affairs and Trade (MFAT) emergency line: +64 4 439 8000 (24 hours)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +64 4 439 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certified by physician or medical examiner. State death certificate issued."
+    timing: "State-specific. NY and CA take longer. Medical examiner investigation adds time."
+    responsible: "Local funeral director and state civil records"
+  - step: 3
+    action: "New Zealand Embassy in Washington DC notified"
+    timing: "Simultaneous with Step 1. Embassy/Consulate registers the death with UK authorities."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "US funeral industry is professional and internationally experienced."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Transit permit, health certificate, and all export documentation obtained"
+    timing: "Allow 5-14 days depending on state."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo to New Zealand"
+    timing: "Once all documentation complete. British Airways, Virgin Atlantic, American Airlines serve routes."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "New Zealand funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the USA to New Zealand take?"
+    answer: "In a straightforward case, repatriation from the USA to the UK takes 7-10 days. Most cases take 10-21 days. Complex cases involving a county coroner investigation can take 3-8 weeks."
+  - question: "Does it matter which state the death occurred in?"
+    answer: "Yes. Each US state has its own medical examiner or coroner, its own death certificate format, and its own processing timelines. New York City and Los Angeles County have high caseloads and longer processing times. Smaller states are generally faster."
+  - question: "What documents are required for repatriation from the USA to the UK?"
+    answer: "The core documents are: US death certificate (state-issued, certified copy), Embalming certificate, Transit permit for human remains, and Passport of the deceased."
+  - question: "Does the British Embassy in the USA help with repatriation?"
+    answer: "The British Embassy in Washington DC and consulates across the US can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. New Zealand Embassy or High Commission in Washington DC can assist New Zealand c."
+  - question: "What happens when the body arrives in New Zealand?"
+    answer: "The New Zealand funeral director takes custody at Auckland (AKL), Wellington (WLG), or Christchurch (CHC) cargo terminal. New Zealand Customs clearance requires the foreign death certificate, transit permit, and embalming certificate. The Registrar-General records the death. The Coroner may need to be notified. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from the USA instead of repatriating the body?"
+    answer: "Yes. Cremation in the USA and bringing ashes home to the UK is simpler and less costly. You will need the state death certificate and cremation certificate. Ashes can be carried on a passenger flight to the UK."
+links:
+  upward:
+    - url: "/repatriation-from-usa/"
+      text: "Full United States repatriation guide"
+    - url: "/guides/death-abroad-usa/"
+      text: "What to do if someone dies in United States"
+    - url: "/repatriation-from-new-zealand/"
+      text: "Repatriation to New Zealand: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/usa-to-united-kingdom/"
+      text: "Repatriation from United States to the UK"
+    - url: "/routes/usa-to-ireland/"
+      text: "Repatriation from United States to Ireland"
+---
