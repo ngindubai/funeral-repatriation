@@ -1,0 +1,87 @@
+---
+title: "Ghana to Malaysia: Repatriation Guidance"
+description: "Someone has died in Ghana. Repatriation to Malaysia takes 2-4 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "ghana"
+dest_key: "my"
+origin_name: "Ghana"
+dest_name: "Malaysia"
+origin_slug: "ghana"
+dest_slug: "malaysia"
+slug: "ghana-to-malaysia"
+template_variant: "E"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Accra"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Ghana to Malaysia: what to expect"
+direct_answer_intro: "Ghanaian nationals in Malaysia include students and business professionals, with Malaysia a popular educational destination for Ghanaians seeking internationally recognised degrees. Ghana and Malaysia are both Commonwealth members with shared English-language education ties. English documentation from Ghana is generally understood by Malaysian authorities, though authentication by the Malaysian High Commission is required. The Malaysian High Commission in Accra handles consular matters."
+direct_answer_points:
+  - "Key document: Ghanaian death certificate (Births and Deaths Registry, in English)"
+  - "Documentation takes 7-21 days. Police report required for unexpected deaths."
+  - "British High Commission in Accra registers the death and advises. They cannot fund repatriation."
+  - "Malaysia Embassy in Accra can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Ghana"
+overview_body: "Call the police (191 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the Births and Deaths Registry of Ghana. Documentation is in English throughout. Kotoka International Airport in Accra is the main cargo departure point."
+dest_reception: "The Malaysian funeral director takes custody at Kuala Lumpur International Airport (KUL) cargo terminal. Malaysia Customs clearance is required. The National Registration Department (NRD) registers the death. The Ministry of Health may require clearance for final disposition. All foreign documents must be authenticated by the Malaysian Embassy or High Commission in the country of origin. Documents not in Malay or English require certified translation. (Malaysian Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Malaysian High Commission or Embassy in Accra can advise on documentation requirements and authenticate foreign certificates. They cannot pay for or arrange repatriation. Malaysian Ministry of Foreign Affairs 24-hour emergency: +603 8000 8000."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +603 8000 8000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Births and Deaths Registry of Ghana."
+    timing: "Documentation in English. Police report required for unexpected deaths."
+    responsible: "Local funeral director and Births and Deaths Registry"
+  - step: 3
+    action: "British High Commission Accra notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Police report (if required) and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Kotoka International Airport (ACC) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. British Airways serves ACC-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Malaysia funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Ghana to Malaysia take?"
+    answer: "In a straightforward case, repatriation from Ghana to Malaysia takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving police investigation can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Ghana to the UK?"
+    answer: "The core documents are: Ghanaian death certificate (Births and Deaths Registry), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased. Documentation is in English throughout."
+  - question: "Does the Malaysia Embassy in Ghana help with repatriation?"
+    answer: "The Malaysia Embassy in Accra can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Malaysia Embassy in Accra as soon as possible after the death."
+  - question: "What is the Births and Deaths Registry and why is it involved?"
+    answer: "The Births and Deaths Registry of Ghana is the official government body responsible for registering all deaths in Ghana. All deaths must be registered with the Registry before any funeral or repatriation process can begin. The Registry issues the official death certificate."
+  - question: "What happens when the body arrives in Malaysia?"
+    answer: "The Malaysian funeral director takes custody at Kuala Lumpur International Airport (KUL) cargo terminal. Malaysia Customs clearance requires the authenticated death certificate, transit permit, and health clearance. The National Registration Department (NRD) registers the death. All foreign documents must be authenticated by the Malaysian Embassy in the origin country. The Ministry of Health may need to be notified."
+  - question: "Can I bring ashes home from Ghana instead of repatriating the body?"
+    answer: "Yes. Cremation in Ghana and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-ghana/"
+      text: "Full Ghana repatriation guide"
+    - url: "/guides/death-abroad-ghana/"
+      text: "What to do if someone dies in Ghana"
+    - url: "/repatriation-from-malaysia/"
+      text: "Repatriation to Malaysia: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/ghana-to-united-kingdom/"
+      text: "Repatriation from Ghana to the UK"
+    - url: "/routes/ghana-to-ireland/"
+      text: "Repatriation from Ghana to Ireland"
+---

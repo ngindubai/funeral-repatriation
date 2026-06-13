@@ -1,0 +1,87 @@
+---
+title: "Jordan to Turkey: Repatriation Guidance"
+description: "Someone has died in Jordan. Repatriation to Turkey takes 7-21 days. Specialist support recommended. Contact us 24/7."
+origin_key: "jordan"
+dest_key: "tr"
+origin_name: "Jordan"
+dest_name: "Turkey"
+origin_slug: "jordan"
+dest_slug: "turkey"
+slug: "jordan-to-turkey"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "7-21 days"
+timeline_fast: "7-10 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Amman"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Jordan to Turkey: what to expect"
+direct_answer_intro: "Jordanian nationals in Turkey include students, business professionals, and travellers. Jordan and Turkey have close bilateral diplomatic ties as fellow OIC member states with shared historical connections through the Ottoman period. Jordanian nationals travel to Turkey for tourism, trade, and medical treatment. Arabic documentation from Jordan requires certified Turkish translation for Turkish civil registry purposes. The Turkish Embassy in Amman handles consular matters. (Turkish Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key document: Jordanian death certificate (shihada al wafat, in Arabic) with certified English translation"
+  - "Documentation takes 5-14 days. Police report required for unexpected deaths."
+  - "British Embassy in Amman registers the death and advises. They cannot fund repatriation."
+  - "Turkey Embassy in Amman can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Jordan"
+overview_body: "Contact police (911) or ambulance (912). Unexpected deaths require police attendance. Death registered with the Civil Status Department (dairat al ahwal al madaniya). The death certificate (shihada al wafat) is issued in Arabic and requires certified English translation."
+dest_reception: "The Turkish funeral director (cenaze firmasi) takes custody at Istanbul Airport (IST) or Istanbul Sabiha Gokcen (SAW) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death in the nufus mudurlugu (population directorate). The Turkish Ministry of Health clearance is required before burial or cremation. All foreign documents not in Turkish require certified Turkish translation. (Turkish Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Turkish Embassy in Amman can advise on documentation requirements for repatriation to Turkey. Turkish Ministry of Foreign Affairs emergency line: +90 312 292 2000 (24 hours). The Turkish Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +90 312 292 2000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Civil Status Department. Shihada al wafat issued."
+    timing: "Certificate in Arabic. Certified English translation required."
+    responsible: "Local funeral director and Civil Status Department"
+  - step: 3
+    action: "Turkey Embassy in Amman notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "After police and civil registration release the body."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 5-14 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Queen Alia International Airport (AMM) to London Heathrow (LHR)"
+    timing: "Once all documentation complete. Royal Jordanian and British Airways serve AMM-LHR."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Turkey funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Jordan to Turkey take?"
+    answer: "In a straightforward case, repatriation from Jordan to Turkey takes 7-21 days. The fastest cases complete in 7-10 days. Complex cases involving a police investigation can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Jordan to the UK?"
+    answer: "The core documents are: shihada al wafat (Jordanian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the Turkey Embassy in Jordan help with repatriation?"
+    answer: "The Turkey Embassy in Amman can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Turkey Embassy in Amman as soon as possible after the death."
+  - question: "What is the first step when someone dies in Jordan?"
+    answer: "Notify a UK repatriation specialist and the +90 312 292 2000 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a specialist."
+  - question: "What happens when the body arrives in Turkey?"
+    answer: "The Turkish funeral director (cenaze firmasi) takes custody at Istanbul Airport (IST) cargo terminal. A transit certificate (transit belgesi) must accompany the remains. The municipality (belediye) registers the death. The Turkish Ministry of Health clearance is required. All foreign documents require certified Turkish translation. The receiving funeral director coordinates with local municipal authorities."
+  - question: "Can I bring ashes home from Jordan instead of repatriating the body?"
+    answer: "Cremation in Jordan is not widely available given the predominantly Muslim population. Most repatriations from Jordan are full body repatriations. Contact us to discuss the options specific to your situation."
+links:
+  upward:
+    - url: "/repatriation-from-jordan/"
+      text: "Full Jordan repatriation guide"
+    - url: "/guides/death-abroad-jordan/"
+      text: "What to do if someone dies in Jordan"
+    - url: "/repatriation-from-turkey/"
+      text: "Repatriation to Turkey: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/jordan-to-united-kingdom/"
+      text: "Repatriation from Jordan to the UK"
+    - url: "/routes/jordan-to-ireland/"
+      text: "Repatriation from Jordan to Ireland"
+---

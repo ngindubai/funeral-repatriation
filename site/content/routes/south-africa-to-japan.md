@@ -1,0 +1,87 @@
+---
+title: "South Africa to Japan: Repatriation Guidance"
+description: "Someone has died in South Africa. Repatriation to Japan takes 10-21 days. Established process. Contact us 24/7."
+origin_key: "south-africa"
+dest_key: "jp"
+origin_name: "South Africa"
+dest_name: "Japan"
+origin_slug: "south-africa"
+dest_slug: "japan"
+slug: "south-africa-to-japan"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "10-21 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Pretoria"
+doc_processing_time: "5-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from South Africa to Japan: what to expect"
+direct_answer_intro: "South African nationals in Japan include business professionals in the automotive and mining industries, academics, and a small diaspora community. South Africa and Japan have bilateral trade ties, with Japan a significant importer of South African platinum, coal, and agricultural products. Both countries are G20 members with close economic cooperation. English and Afrikaans documentation from South Africa requires certified Japanese translation for Japanese municipal office (koseki) registration purposes. The Japanese Embassy in Pretoria handles consular matters. (Japanese Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: South African death certificate (BI-1663, Home Affairs registered) and Embalming certificate"
+  - "Documentation takes 5-14 days. Documentation is in English throughout."
+  - "British High Commission in Pretoria registers the death and advises. They cannot fund repatriation."
+  - "Japan Embassy in Pretoria can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from South Africa"
+overview_body: "Call 10177 for ambulance or 10111 for police. Unexpected deaths must be reported to the South African Police Service (SAPS). Death registered with the local Department of Home Affairs. A certified BI-1663 form is issued as the death certificate."
+dest_reception: "The Japanese funeral director takes custody at Narita International (NRT) or Tokyo Haneda (HND) cargo terminal, or Osaka Kansai International (KIX) for western Japan. The local municipal office registers the death in the koseki (family registry). Cremation is standard in Japan and a cremation permit from the municipal office is required. All foreign documents must be authenticated by the Japanese Embassy or consulate in the country of origin. Documents not in Japanese require certified Japanese translation. (Japanese Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Japanese Embassy in Pretoria can advise on documentation requirements for repatriation to Japan. Japanese Ministry of Foreign Affairs emergency assistance: +81 3 3580 3311 (24 hours). The Japanese Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +81 3 3580 3311."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with Home Affairs. BI-1663 death certificate issued."
+    timing: "Funeral director handles registration. Documents in English throughout."
+    responsible: "Local funeral director and Home Affairs"
+  - step: 3
+    action: "British High Commission Pretoria notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "South African funeral industry is professional and experienced with international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Export documentation completed"
+    timing: "Allow 5-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Johannesburg (JNB) or Cape Town (CPT)"
+    timing: "Once all documentation complete. British Airways and South African Airways serve JNB-LHR direct."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Japan funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from South Africa to Japan take?"
+    answer: "In a straightforward case, repatriation from South Africa to Japan takes 10-21 days. The fastest cases complete in 10-14 days. Complex cases involving a SAPS investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from South Africa?"
+    answer: "The core documents are: South African death certificate (BI-1663), Embalming certificate, Freedom from infection certificate, and Passport of the deceased. Your repatriation coordinator handles obtaining these on your behalf."
+  - question: "Does the Japan Embassy in South Africa help with repatriation?"
+    answer: "The Japan Embassy in Pretoria can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Japan Embassy in Pretoria as soon as possible after the death."
+  - question: "What is the first step when someone dies in South Africa?"
+    answer: "Notify a UK repatriation specialist and the +81 3 3580 3311 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Japan?"
+    answer: "The Japanese funeral director takes custody at Narita (NRT) or Haneda (HND) cargo terminal. The municipal office registers the death in the koseki. Cremation is standard and requires a municipal permit. All foreign documents must be authenticated by the Japanese Embassy in the origin country and require certified Japanese translation."
+  - question: "Can I bring ashes home from South Africa instead of repatriating the body?"
+    answer: "Yes. Cremation in South Africa and bringing ashes home to the UK is an option. You will need the BI-1663 death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight."
+links:
+  upward:
+    - url: "/repatriation-from-south-africa/"
+      text: "Full South Africa repatriation guide"
+    - url: "/guides/death-abroad-south-africa/"
+      text: "What to do if someone dies in South Africa"
+    - url: "/repatriation-from-japan/"
+      text: "Repatriation to Japan: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/south-africa-to-united-kingdom/"
+      text: "Repatriation from South Africa to the UK"
+    - url: "/routes/south-africa-to-ireland/"
+      text: "Repatriation from South Africa to Ireland"
+---

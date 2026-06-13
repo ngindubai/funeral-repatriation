@@ -1,0 +1,88 @@
+---
+title: "Indonesia to South Africa: Repatriation Guidance"
+description: "Someone has died in Indonesia. Repatriation to South Africa takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "indonesia"
+dest_key: "za"
+origin_name: "Indonesia"
+dest_name: "South Africa"
+origin_slug: "indonesia"
+dest_slug: "south-africa"
+slug: "indonesia-to-south-africa"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Jakarta"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Indonesia to South Africa: what to expect"
+direct_answer_intro: "Indonesian nationals in South Africa include students, business professionals, and travellers. Indonesia and South Africa have bilateral trade ties and diplomatic relations, cooperating across agriculture, mining, and manufacturing. Both countries are G20 members and share development interests across the Global South. Indonesian documentation requires certified English translation for South African Home Affairs purposes. The South African Embassy in Jakarta handles consular matters. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+direct_answer_points:
+  - "Key document: Surat keterangan kematian (Indonesian death certificate, in Bahasa Indonesia) with certified English translation"
+  - "Bali deaths require internal transfer to Jakarta (Soekarno-Hatta airport) for international cargo."
+  - "British Embassy in Jakarta registers the death and advises. They cannot fund repatriation."
+  - "Police must be notified for all unexpected deaths. Procedure varies by province."
+  - "South Africa Embassy in Jakarta can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Indonesia"
+overview_body: "Call 112 for emergency services. Unexpected deaths require police attendance. Death registered with the local civil registry (catatan sipil). The surat keterangan kematian is issued in Bahasa Indonesia and requires certified English translation. Deaths in Bali require transfer to Jakarta (CGK) for international cargo departure."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Jakarta can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local civil registry. Surat keterangan kematian issued."
+    timing: "Certificate in Bahasa Indonesia. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "South Africa Embassy in Jakarta notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and internal transfer (if Bali or other island)"
+    timing: "Bali deaths require transfer to Jakarta (CGK). Add 1-2 days."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Soekarno-Hatta International Airport (CGK), Jakarta to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Indonesia to South Africa take?"
+    answer: "In a straightforward case, repatriation from Indonesia to South Africa takes 14-28 days. Bali cases that require Jakarta transfer take 10-14 days in best-case. Complex cases can take 4-8 weeks."
+  - question: "My relative died in Bali. What happens?"
+    answer: "Deaths in Bali are handled locally by Balinese authorities. The body must be transferred from Bali to Jakarta (Soekarno-Hatta airport, CGK) before international cargo can depart. This adds 1-2 days. Contact a specialist on the day of death."
+  - question: "What documents are required for repatriation from Indonesia to the UK?"
+    answer: "The core documents are: surat keterangan kematian (Indonesian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the South Africa Embassy in Indonesia help with repatriation?"
+    answer: "The South Africa Embassy in Jakarta can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the South Africa Embassy in Jakarta as soon as possible after the death."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from Indonesia instead of repatriating the body?"
+    answer: "Yes. Cremation in Indonesia (including Bali, where Hindu cremation is traditional) and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-indonesia/"
+      text: "Full Indonesia repatriation guide"
+    - url: "/guides/death-abroad-indonesia/"
+      text: "What to do if someone dies in Indonesia"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/indonesia-to-united-kingdom/"
+      text: "Repatriation from Indonesia to the UK"
+    - url: "/routes/indonesia-to-ireland/"
+      text: "Repatriation from Indonesia to Ireland"
+---

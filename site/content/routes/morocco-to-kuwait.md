@@ -1,0 +1,87 @@
+---
+title: "Morocco to Kuwait: Repatriation Guidance"
+description: "Someone has died in Morocco. Repatriation to Kuwait takes 7-14 days. Established process. Contact us 24/7."
+origin_key: "morocco"
+dest_key: "kw"
+origin_name: "Morocco"
+dest_name: "Kuwait"
+origin_slug: "morocco"
+dest_slug: "kuwait"
+slug: "morocco-to-kuwait"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "7-14 days"
+timeline_fast: "5-7 days"
+timeline_complex: "2-4 weeks"
+embassy_city: "Rabat"
+doc_processing_time: "3-7 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Morocco to Kuwait: what to expect"
+direct_answer_intro: "Moroccan nationals in Kuwait work in professional, service, and hospitality sectors. Morocco and Kuwait are OIC member states with close diplomatic ties, and Kuwaiti investment is present in Moroccan tourism and real estate. Arabic documentation from Morocco is generally understood by Kuwaiti authorities, though official notarisation and authentication by the Kuwaiti Embassy are required. The Kuwaiti Embassy in Rabat handles consular matters. (Kuwaiti Ministry of Foreign Affairs, 2025.)"
+direct_answer_points:
+  - "Key documents: Acte de Deces (in Arabic and French) and Embalming certificate"
+  - "Documentation takes 3-7 days. Appoint a specialist on day one."
+  - "British Embassy in Rabat registers the death and advises. They cannot fund repatriation."
+  - "Kuwait Embassy in Rabat can advise on documentation. They cannot fund repatriation."
+overview_heading: "How repatriation from Morocco works"
+overview_body: "Contact police (190) or ambulance (150). Hospital or doctor certifies the death. Contact the  The Acte de Deces is issued by the local civil registry (Bureau d'Etat Civil) in Arabic and French. A certified English translation is required for UK purposes."
+dest_reception: "The Kuwaiti funeral home takes custody at Kuwait International Airport (KWI) cargo terminal. The Ministry of Interior (Civil ID directorate) records the death. Muslim remains require procedures in accordance with Islamic law and the Ministry of Awqaf and Islamic Affairs may be involved. A Kuwaiti health authority clearance is required before any final disposition. All foreign documents not in Arabic require certified Arabic translation. Authentication by the Kuwaiti Embassy in the country of origin is required. (Kuwaiti Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Kuwaiti Embassy in Rabat can advise on documentation requirements for repatriation to Kuwait. Kuwaiti Ministry of Foreign Affairs emergency line: +965 2243 4567 (24 hours). The Kuwaiti Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +965 2243 4567."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Bureau d'Etat Civil. Acte de Deces issued."
+    timing: "Funeral director handles registration. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Kuwait Embassy in Rabat notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Quality variable outside Casablanca and Rabat."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 3-7 days. Cannot begin until Acte de Deces issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Casablanca (CMN) or Marrakech (RAK)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Kuwait funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Morocco to Kuwait take?"
+    answer: "In a straightforward case, repatriation from Morocco to Kuwait takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases can take 2-4 weeks."
+  - question: "What documents are required for repatriation from Morocco?"
+    answer: "The core documents are: Acte de Deces (in Arabic and French), certified English translation, Embalming certificate, Freedom from infection certificate, Consular certificate, and Passport of the deceased."
+  - question: "Does the Kuwait Embassy in Morocco help with repatriation?"
+    answer: "The Kuwait Embassy in Rabat can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Kuwait Embassy in Rabat as soon as possible after the death."
+  - question: "What is the first step when someone dies in Morocco?"
+    answer: "Notify a UK repatriation specialist and the +965 2243 4567 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in Kuwait?"
+    answer: "The Kuwaiti funeral home takes custody at Kuwait International Airport (KWI) cargo terminal. Ministry of Interior clearance is required. All foreign documents must be authenticated by the Kuwaiti Embassy in the origin country and require certified Arabic translation. Muslim remains are handled in accordance with Islamic law. The receiving funeral home coordinates with local health authorities."
+  - question: "Can I bring ashes home from Morocco instead of repatriating the body?"
+    answer: "Yes, if the deceased was non-Muslim. Cremation in Morocco is available for non-Muslims. You will need the Acte de Deces, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-morocco/"
+      text: "Full Morocco repatriation guide"
+    - url: "/guides/death-abroad-morocco/"
+      text: "What to do if someone dies in Morocco"
+    - url: "/repatriation-from-kuwait/"
+      text: "Repatriation to Kuwait: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/morocco-to-united-kingdom/"
+      text: "Repatriation from Morocco to the UK"
+    - url: "/routes/morocco-to-ireland/"
+      text: "Repatriation from Morocco to Ireland"
+---

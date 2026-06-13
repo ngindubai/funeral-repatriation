@@ -1,0 +1,87 @@
+---
+title: "Philippines to South Africa: Repatriation Guidance"
+description: "Someone has died in Philippines. Repatriation to South Africa takes 3-6 weeks. Specialist support recommended. Contact us 24/7."
+origin_key: "philippines"
+dest_key: "za"
+origin_name: "Philippines"
+dest_name: "South Africa"
+origin_slug: "philippines"
+dest_slug: "south-africa"
+slug: "philippines-to-south-africa"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "3-6 weeks"
+timeline_fast: "3 weeks"
+timeline_complex: "8-16 weeks"
+embassy_city: "Manila"
+doc_processing_time: "3-6 weeks (PSA and DFA authentication are the main delays)"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Philippines to South Africa: what to expect"
+direct_answer_intro: "Filipino nationals in South Africa include healthcare professionals, domestic workers, and a small diaspora community in Johannesburg and Cape Town. The Philippines and South Africa have bilateral diplomatic relations, with Filipino nurses and medical professionals forming part of South Africa's healthcare workforce. The Philippine Overseas Labour Office (POLO) provides welfare services to Overseas Filipino Workers (OFWs) in South Africa. English documentation from the Philippines is generally understood by South African authorities. The South African Embassy in Manila handles consular matters. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+direct_answer_points:
+  - "Key documents: Philippine death certificate (PSA-authenticated) and DFA authentication"
+  - "Documentation takes 3-6 weeks. PSA and DFA authentication are the main bottlenecks."
+  - "British Embassy in Manila registers the death and advises. They cannot fund repatriation."
+  - "South Africa Embassy in Manila can advise on documentation. They cannot fund repatriation."
+overview_heading: "Key steps for Philippines to UK repatriation"
+overview_body: "Contact local emergency services (911 in Metro Manila). If death is unexpected, police must be notified. The certificate of death is issued by the attending physician and filed with the Local Civil Registrar. PSA authentication and DFA countersignature are then required."
+dest_reception: "The South African funeral director takes custody at the cargo terminal, typically O.R. Tambo International (JNB, Johannesburg), Cape Town International (CPT), or King Shaka International (DUR, Durban). A permit from the South African Department of Home Affairs (Form DHA-1744) is required before burial or cremation. The provincial health authority issues any additional permits. (South African Department of International Relations and Cooperation, DIRCO, 2025.)"
+dest_consular: "South African Embassy or High Commission in Manila can advise on documentation requirements for repatriation to South Africa. They cannot pay for or arrange repatriation. Contact the nearest South African mission for assistance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact nearest South African mission."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death certificate filed with Local Civil Registrar. PSA authentication requested."
+    timing: "Physician issues certificate. PSA authentication adds significant processing time."
+    responsible: "Local funeral director and civil registrar"
+  - step: 3
+    action: "South Africa Embassy in Manila notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming"
+    timing: "Embalming is standard practice in the Philippines."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "DFA authentication, Bureau of Quarantine clearance, and all export permits obtained"
+    timing: "Allow 3-6 weeks. PSA and DFA are the main delays."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Manila (MNL) or Cebu (CEB)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "South Africa funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from the Philippines to South Africa take?"
+    answer: "In a straightforward case, repatriation from the Philippines to the UK takes 3-6 weeks. The fastest cases complete in 3 weeks. Complex cases can take 8-16 weeks."
+  - question: "Why does Philippine repatriation take so long?"
+    answer: "The main bottleneck is mandatory authentication by the PSA (Philippine Statistics Authority) and countersignature by the DFA (Department of Foreign Affairs). These cannot be bypassed."
+  - question: "What documents are required for repatriation from the Philippines?"
+    answer: "The core documents are: Philippine death certificate (PSA-authenticated), DFA authentication, Embalming certificate, Bureau of Quarantine (BOQ) clearance, and Passport of the deceased."
+  - question: "Does the British Embassy in the Philippines help with repatriation?"
+    answer: "The British Embassy in Manila can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. South African Embassy or High Commission in Manila can advise on documentation r."
+  - question: "What happens when the body arrives in South Africa?"
+    answer: "The South African funeral director takes custody at the cargo terminal. Department of Home Affairs Form DHA-1744 is required before burial or cremation. The provincial health authority may issue additional permits. The receiving funeral director coordinates with the local registrar."
+  - question: "Can I bring ashes home from the Philippines instead of repatriating the body?"
+    answer: "Yes. Cremation in the Philippines and bringing ashes home to the UK is an option. You will need the PSA-authenticated death certificate, DFA authentication, and BOQ clearance."
+links:
+  upward:
+    - url: "/repatriation-from-philippines/"
+      text: "Full Philippines repatriation guide"
+    - url: "/guides/death-abroad-philippines/"
+      text: "What to do if someone dies in Philippines"
+    - url: "/repatriation-from-south-africa/"
+      text: "Repatriation to South Africa: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/philippines-to-united-kingdom/"
+      text: "Repatriation from Philippines to the UK"
+    - url: "/routes/philippines-to-ireland/"
+      text: "Repatriation from Philippines to Ireland"
+---

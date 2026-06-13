@@ -1,0 +1,88 @@
+---
+title: "Indonesia to Oman: Repatriation Guidance"
+description: "Someone has died in Indonesia. Repatriation to Oman takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "indonesia"
+dest_key: "om"
+origin_name: "Indonesia"
+dest_name: "Oman"
+origin_slug: "indonesia"
+dest_slug: "oman"
+slug: "indonesia-to-oman"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Jakarta"
+doc_processing_time: "7-21 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Indonesia to Oman: what to expect"
+direct_answer_intro: "Indonesian nationals in Oman include domestic workers, construction workers, and hospitality staff. Indonesia and Oman are OIC member states with shared Islamic heritage and bilateral labour migration agreements. Indonesian domestic workers form a significant part of Oman's household sector workforce. Indonesian documentation in Bahasa Indonesia requires certified Arabic translation for Royal Oman Police registration purposes. The Omani Embassy in Jakarta handles consular matters."
+direct_answer_points:
+  - "Key document: Surat keterangan kematian (Indonesian death certificate, in Bahasa Indonesia) with certified English translation"
+  - "Bali deaths require internal transfer to Jakarta (Soekarno-Hatta airport) for international cargo."
+  - "British Embassy in Jakarta registers the death and advises. They cannot fund repatriation."
+  - "Police must be notified for all unexpected deaths. Procedure varies by province."
+  - "Oman Embassy in Jakarta can advise on documentation. They cannot fund repatriation."
+overview_heading: "What happens after a death in Indonesia"
+overview_body: "Call 112 for emergency services. Unexpected deaths require police attendance. Death registered with the local civil registry (catatan sipil). The surat keterangan kematian is issued in Bahasa Indonesia and requires certified English translation. Deaths in Bali require transfer to Jakarta (CGK) for international cargo departure."
+dest_reception: "The Omani funeral director takes custody at Muscat International Airport (MCT) cargo terminal. The Royal Oman Police registers the death and a burial permit from the Ministry of Health is required before any final disposition. Muslim remains are handled in accordance with Islamic law. All foreign documents not in Arabic require certified Arabic translation. Authentication by the Omani Embassy in the country of origin is required. (Oman Ministry of Foreign Affairs, 2025.)"
+dest_consular: "Omani Embassy in Jakarta can advise on documentation requirements for repatriation to Oman. Oman Ministry of Foreign Affairs can be reached via the Omani Embassy during business hours. The Omani Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or contact Omani Embassy in origin country."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered with local civil registry. Surat keterangan kematian issued."
+    timing: "Certificate in Bahasa Indonesia. Certified English translation required."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Oman Embassy in Jakarta notified"
+    timing: "Simultaneous with Step 1. Embassy provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and internal transfer (if Bali or other island)"
+    timing: "Bali deaths require transfer to Jakarta (CGK). Add 1-2 days."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "Certified English translation and all export permits obtained"
+    timing: "Allow 7-21 days."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Soekarno-Hatta International Airport (CGK), Jakarta to London Heathrow (LHR)"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Oman funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Indonesia to Oman take?"
+    answer: "In a straightforward case, repatriation from Indonesia to Oman takes 14-28 days. Bali cases that require Jakarta transfer take 10-14 days in best-case. Complex cases can take 4-8 weeks."
+  - question: "My relative died in Bali. What happens?"
+    answer: "Deaths in Bali are handled locally by Balinese authorities. The body must be transferred from Bali to Jakarta (Soekarno-Hatta airport, CGK) before international cargo can depart. This adds 1-2 days. Contact a specialist on the day of death."
+  - question: "What documents are required for repatriation from Indonesia to the UK?"
+    answer: "The core documents are: surat keterangan kematian (Indonesian death certificate) with certified English translation, embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
+  - question: "Does the Oman Embassy in Indonesia help with repatriation?"
+    answer: "The Oman Embassy in Jakarta can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the Oman Embassy in Jakarta as soon as possible after the death."
+  - question: "What happens when the body arrives in Oman?"
+    answer: "The Omani funeral director takes custody at Muscat International Airport (MCT) cargo terminal. The Royal Oman Police registers the death. A burial permit from the Ministry of Health is required. Muslim remains are handled in accordance with Islamic law. All foreign documents require certified Arabic translation and authentication by the Omani Embassy in the origin country."
+  - question: "Can I bring ashes home from Indonesia instead of repatriating the body?"
+    answer: "Yes. Cremation in Indonesia (including Bali, where Hindu cremation is traditional) and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit."
+links:
+  upward:
+    - url: "/repatriation-from-indonesia/"
+      text: "Full Indonesia repatriation guide"
+    - url: "/guides/death-abroad-indonesia/"
+      text: "What to do if someone dies in Indonesia"
+    - url: "/repatriation-from-oman/"
+      text: "Repatriation to Oman: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/indonesia-to-united-kingdom/"
+      text: "Repatriation from Indonesia to the UK"
+    - url: "/routes/indonesia-to-ireland/"
+      text: "Repatriation from Indonesia to Ireland"
+---

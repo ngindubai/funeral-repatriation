@@ -1,0 +1,87 @@
+---
+title: "Sri Lanka to France: Repatriation Guidance"
+description: "Someone has died in Sri Lanka. Repatriation to France takes 14-28 days. Specialist support recommended. Contact us 24/7."
+origin_key: "sri-lanka"
+dest_key: "fr"
+origin_name: "Sri Lanka"
+dest_name: "France"
+origin_slug: "sri-lanka"
+dest_slug: "france"
+slug: "sri-lanka-to-france"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "14-28 days"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Colombo"
+doc_processing_time: "7-14 days"
+date: 2026-05-01
+direct_answer_heading: "Repatriation from Sri Lanka to France: what to expect"
+direct_answer_intro: "Sri Lankan nationals in France form a substantial diaspora community, primarily in the Paris region, with the Tamil Sri Lankan community among the largest in Europe. France granted asylum to significant numbers of Sri Lankan Tamils during and after the Sri Lankan civil war. The community is now well-established, with second and third generations born in France. Sinhala and Tamil documentation requires certified French translation for French civil registry purposes. The French Embassy in Colombo handles consular matters. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+direct_answer_points:
+  - "Key documents: Death certificate (with certified English translation) and Embalming certificate"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British High Commission in Colombo registers the death and advises. They cannot fund repatriation."
+  - "France Embassy in Colombo can advise on documentation. They cannot fund repatriation."
+overview_heading: "The repatriation process from Sri Lanka"
+overview_body: "Contact police (119) or ambulance (110). Deaths must be certified by a registered medical practitioner. Unexpected deaths require police notification. Death registered at the local Registrar General's Department. The death certificate is issued in Sinhala with an English translation available."
+dest_reception: "The French funeral director (pompes funebres) takes custody at Charles de Gaulle (CDG, Paris) or another French international airport. The prefecture may require a permis d'inhumer (burial permit) or transport authorisation before burial or cremation can proceed. All foreign documents must carry a certified French translation. (French Ministry of Europe and Foreign Affairs, MAE, 2025.)"
+dest_consular: "French Embassy in Colombo can advise on repatriation documentation requirements for France. French Ministry of Europe and Foreign Affairs (MAE) emergency assistance: +33 1 43 17 67 67 (24 hours). The French Embassy cannot pay for or arrange repatriation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death"
+    timing: "Day of death. Call +44 (0)20 7008 5000 (FCDO) or +33 1 43 17 67 67."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered at Registrar General's Department"
+    timing: "Death certificate in Sinhala. English translation required for UK purposes."
+    responsible: "Local funeral director and Registrar General"
+  - step: 3
+    action: "British High Commission Colombo notified"
+    timing: "Simultaneous with Step 1. High Commission provides a list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation"
+    timing: "Embalming required for international repatriation."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits obtained"
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Bandaranaike International Airport (CMB), Colombo"
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "France funeral director takes custody. receiving funeral director coordinates with local authorities."
+    timing: "Within 24 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sri Lanka to France take?"
+    answer: "In a straightforward case, repatriation from Sri Lanka to France takes 14-28 days. The fastest cases complete in 10-14 days. Complex cases involving investigation or death in a remote area can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Sri Lanka?"
+    answer: "The core documents are: Death certificate (with certified English translation), Embalming certificate, Freedom from infection certificate, and Passport of the deceased."
+  - question: "Does the France Embassy in Sri Lanka help with repatriation?"
+    answer: "The France Embassy in Colombo can assist with document authentication and advise on repatriation requirements. They cannot pay for or arrange repatriation. Contact the France Embassy in Colombo as soon as possible after the death."
+  - question: "What is the first step when someone dies in Sri Lanka?"
+    answer: "Notify a UK repatriation specialist and the +33 1 43 17 67 67 (+44 (0)20 7008 5000) on the day of death. Do not instruct a local funeral director independently before engaging a UK specialist."
+  - question: "What happens when the body arrives in France?"
+    answer: "The French funeral director takes custody at Charles de Gaulle (CDG) or another French airport. The prefecture issues a permis d'inhumer before burial or cremation. All foreign documents require certified French translation. The receiving funeral director coordinates with local authorities."
+  - question: "Can I bring ashes home from Sri Lanka instead of repatriating the body?"
+    answer: "Yes. Cremation in Sri Lanka and bringing ashes home to the UK is an option. You will need the death certificate, cremation certificate, and export permit. Ashes can be carried on a passenger flight from Colombo."
+links:
+  upward:
+    - url: "/repatriation-from-sri-lanka/"
+      text: "Full Sri Lanka repatriation guide"
+    - url: "/guides/death-abroad-sri-lanka/"
+      text: "What to do if someone dies in Sri Lanka"
+    - url: "/repatriation-from-france/"
+      text: "Repatriation to France: overview"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sri-lanka-to-united-kingdom/"
+      text: "Repatriation from Sri Lanka to the UK"
+    - url: "/routes/sri-lanka-to-ireland/"
+      text: "Repatriation from Sri Lanka to Ireland"
+---
