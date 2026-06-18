@@ -20,7 +20,7 @@
 - **Skip rule:** skip a block whose slugs already exist; skip the whole run only if nothing is left to build (no unbuilt chunk and no blog batch due). Do NOT skip just because a build ran earlier today; this routine runs twice a day on purpose.
 - Bulk-generation without the quality gate is banned. A batch is still N individually quality-gated blocks, full gate on each, every time.
 
-**Where we are (17 June 2026):** 1,573 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 1,125 Tier B diaspora corridors, 50 Tier C). Tier A complete (394 routes). Tier B complete. Chunks R59-R60 committed (Tier C started, 50 routes: Egypt x5, Pakistan-dest x5, Philippines x5, Vietnam x5, Bangladesh x5, Thailand x5, China x5, Morocco x5, Jordan x5, Sri Lanka x5). R61 (Tier C) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
+**Where we are (18 June 2026):** 1,623 quality route pages live (196 to UK, 196 to Ireland, 6 pre-matrix mixed, 1,125 Tier B diaspora corridors, 100 Tier C). Tier A complete (394 routes). Tier B complete. Chunks R59-R62 committed (Tier C 100 routes: Egypt x5, Pakistan-dest x5, Philippines x5, Vietnam x5, Bangladesh x5, Thailand x5, China x5, Morocco x5, Jordan x5, Sri Lanka x5, Nigeria x5, Kenya x5, Ghana x5, Nepal x5, Ethiopia x5, Brazil x5, Mexico x5, Colombia x5, Argentina x5, Algeria x5). R63 (Tier C) is next. Blog: 239 articles live. Country hubs, guides, ashes, cremation, embassy silos all complete (238 countries each). The route engine is the growth engine from here.
 
 ---
 
@@ -61,9 +61,9 @@ All remaining origin to destination pairs to complete the 38,612 matrix. Approxi
 |---|---|---|---|---|
 | A | All origins to UK and Ireland | 394 | 394 | 0 |
 | B | Diaspora and high-volume cross-border | ~1,100 | 1,125 | 0 |
-| C | Regional and secondary destinations | ~7,700 | 50 | ~7,650 |
+| C | Regional and secondary destinations | ~7,700 | 100 | ~7,600 |
 | D | Long-tail completion of the square | ~29,400 | 0 | ~29,400 |
-| **Total** | **Full 197x197 matrix** | **38,612** | **1,573** | **37,039** |
+| **Total** | **Full 197x197 matrix** | **38,612** | **1,623** | **36,989** |
 
 At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 routes per block = up to 200 routes per day), Tier A (the revenue tier) completes in under 3 weeks and the full matrix in roughly the same horizon as before.
 
@@ -73,9 +73,9 @@ At 2 runs per day, each a batch of up to 4 blocks (up to 8 blocks per day, 25 ro
 
 Rotate `template_variant` A, B, C, D, E across every block so no two consecutive pages share a layout, exactly as the 70 live pages already do. The five variants are defined in CLAUDE.md (TEMPLATE VARIANTS) and implemented in `site/layouts/routes/single.html`. The rotation continues across blocks within a batch (it does not reset per block).
 
-- Next chunk: **R61 (Tier C)**
+- Next chunk: **R63 (Tier C)**
 - Next tier: **C**
-- Next template lead: **B** (rotation continues from last page of R60, variant A, so next is B)
+- Next template lead: **B** (rotation continues from last page of R62, variant A, so next is B)
 
 ---
 
@@ -146,7 +146,9 @@ The routine names each route block "chunk R<N>" in its commit message so the ski
 | R58 | B | D | 25 | DONE | Turkey wave 6 x5 (france, italy, spain, netherlands, belgium), Malaysia wave 7 x5 (turkey, egypt, iran, germany, france), Indonesia wave 4 x5 (south-africa, canada, norway, sweden, hong-kong), South Korea wave 8 x5 (spain, netherlands, belgium, switzerland, sweden), Japan wave 13 x5 (venezuela, chile, tanzania, ivory-coast, cameroon). Tier B complete. 16 Jun 2026. |
 | R59 | C | D | 25 | DONE | Egypt x5 (india, pakistan, germany, france, italy), Pakistan-dest x5 (uk, germany, us, norway, sweden), Philippines x5 (us, saudi-arabia, australia, canada, japan), Vietnam x5 (us, australia, france, germany, canada), Bangladesh x5 (uk, italy, germany, sweden, norway). 17 Jun 2026. |
 | R60 | C | D | 25 | DONE | Thailand x5 (uk, us, sweden, norway, france), China x5 (us, australia, canada, uk, sweden), Morocco x5 (france, spain, belgium, netherlands, uk), Jordan x5 (uk, us, canada, france, italy), Sri Lanka x5 (uk, germany, sweden, norway, netherlands). Tier C started (50 routes). 17 Jun 2026. |
-| R61 | C | B | 25 | NEXT | Continue Tier C: next band of regional destinations. |
+| R61 | C | B | 25 | DONE | Nigeria x5 (united-kingdom, united-states, germany, france, italy), Kenya x5 (united-kingdom, united-states, germany, australia, france), Ghana x5 (united-kingdom, united-states, germany, italy, netherlands), Nepal x5 (united-kingdom, united-states, germany, india, australia), Ethiopia x5 (united-kingdom, united-states, germany, france, italy). 18 Jun 2026. |
+| R62 | C | B | 25 | DONE | Brazil x5 (united-kingdom, united-states, germany, spain, italy), Mexico x5 (united-kingdom, united-states, germany, spain, canada), Colombia x5 (united-kingdom, united-states, spain, germany, italy), Argentina x5 (united-kingdom, united-states, spain, italy, germany), Algeria x5 (france, spain, belgium, netherlands, germany). 18 Jun 2026. |
+| R63 | C | B | 25 | NEXT | Continue Tier C: next band of regional destinations. |
 
 When a chunk is committed, add its row here (date, tier, template, routes, corridors) in the same commit, mirroring the Pet Transport session log style.
 
@@ -211,4 +213,4 @@ The blog roadmap does not end. When the listed batches are exhausted, continue t
 
 ---
 
-*Last updated: 17 June 2026 (R59-R60 batch, Tier C started). The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*
+*Last updated: 18 June 2026 (R61-R62 batch, Tier C 100 routes). The routine builds a batch of up to 4 blocks per run, autonomously, commits once, and reports live links to Slack. No approval step. Skip only when nothing is left to build.*
