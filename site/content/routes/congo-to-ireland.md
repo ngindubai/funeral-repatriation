@@ -78,9 +78,9 @@ faqs:
     answer: "Check the policy documents immediately and call the insurer's 24-hour emergency line. Many policies include repatriation cover. A specialist repatriation coordinator should be engaged from day one given the complexity of this route, whether or not insurance cover exists."
 links:
   upward:
-    - url: "/repatriation-from-congo/"
+    - url: "/repatriation-from-republic-of-congo/"
       text: "Full Congo repatriation guide"
-    - url: "/guides/death-abroad-congo/"
+    - url: "/guides/death-abroad-republic-of-congo/"
       text: "What to do if someone dies in Congo"
     - url: "/embassy-contacts/congo/"
       text: "Irish Embassy contacts for Congo"

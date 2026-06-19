@@ -74,9 +74,9 @@ faqs:
     answer: "Cremation is available on the main islands of Cabo Verde. Transporting ashes to the UK requires the death certificate with certified translation and the cremation certificate. This is generally simpler than full body repatriation, though inter-island logistics may still apply if cremation facilities are not on the island where the death occurred."
 links:
   upward:
-    - url: "/repatriation-from-cabo-verde/"
+    - url: "/repatriation-from-cape-verde/"
       text: "Full Cabo Verde repatriation guide"
-    - url: "/guides/death-abroad-cabo-verde/"
+    - url: "/guides/death-abroad-cape-verde/"
       text: "What to do if someone dies in Cabo Verde"
     - url: "/embassy-contacts/cabo-verde/"
       text: "British Embassy in Cabo Verde"

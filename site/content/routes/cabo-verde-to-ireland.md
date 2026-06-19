@@ -82,9 +82,9 @@ faqs:
     answer: "Many holiday and travel insurance policies include repatriation cover. Check the policy documents immediately and call the insurer's emergency line. The insurer may appoint their own repatriation coordinator. If no cover exists, a specialist repatriation service can manage the full process from Cabo Verde to Ireland."
 links:
   upward:
-    - url: "/repatriation-from-cabo-verde/"
+    - url: "/repatriation-from-cape-verde/"
       text: "Full Cabo Verde repatriation guide"
-    - url: "/guides/death-abroad-cabo-verde/"
+    - url: "/guides/death-abroad-cape-verde/"
       text: "What to do if someone dies in Cabo Verde"
     - url: "/embassy-contacts/cabo-verde/"
       text: "Irish Embassy contacts for Cabo Verde"

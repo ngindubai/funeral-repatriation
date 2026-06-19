@@ -73,9 +73,9 @@ faqs:
     answer: "Cremation is not widely available in the Republic of the Congo. Full body repatriation is the standard approach."
 links:
   upward:
-    - url: "/repatriation-from-congo/"
+    - url: "/repatriation-from-republic-of-congo/"
       text: "Full Congo repatriation guide"
-    - url: "/guides/death-abroad-congo/"
+    - url: "/guides/death-abroad-republic-of-congo/"
       text: "What to do if someone dies in Congo"
     - url: "/embassy-contacts/congo/"
       text: "British Embassy in Congo"

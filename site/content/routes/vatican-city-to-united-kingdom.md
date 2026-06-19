@@ -74,9 +74,9 @@ faqs:
     answer: "Yes. Cremation facilities are available in Rome. Bringing ashes home to the UK is generally faster and simpler than full body repatriation. You will need the death certificate, cremation certificate, and certified English translations."
 links:
   upward:
-    - url: "/repatriation-from-vatican-city/"
+    - url: "/repatriation-from-holy-see/"
       text: "Full Vatican City repatriation guide"
-    - url: "/guides/death-abroad-vatican-city/"
+    - url: "/guides/death-abroad-holy-see/"
       text: "What to do if someone dies in Vatican City"
     - url: "/embassy-contacts/vatican-city/"
       text: "British Embassy in Vatican City"

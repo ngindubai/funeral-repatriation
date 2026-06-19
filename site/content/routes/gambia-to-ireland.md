@@ -74,9 +74,9 @@ faqs:
     answer: "Cremation in Gambia is available. Bringing ashes home to Ireland is an option. You will need the death certificate, cremation certificate, and export documentation."
 links:
   upward:
-    - url: "/repatriation-from-gambia/"
+    - url: "/repatriation-from-the-gambia/"
       text: "Full Gambia repatriation guide"
-    - url: "/guides/death-abroad-gambia/"
+    - url: "/guides/death-abroad-the-gambia/"
       text: "What to do if someone dies in Gambia"
     - url: "/embassy-contacts/gambia/"
       text: "Irish Embassy contacts for Gambia"
