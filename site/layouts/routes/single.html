@@ -51,10 +51,18 @@
 {{ $variant := .Params.template_variant | default "A" }}
 
 {{/* ================================================================
-     SIDEWAYS LINK FILTER
-     Filters out sideways links whose target page does not exist in
-     the site. Prevents 70+ broken internal links across the route
-     silo. When reverse routes are built later, links auto-restore.
+     LINK FILTERS
+     Both upward and sideways links are filtered through site.GetPage
+     so only links whose target page actually exists in the Hugo build
+     are rendered as <a> tags. This prevents hard 404s from being
+     served and crawled.
+
+     Sideways filter: prevents broken reverse-route links (E008 fix).
+     Upward filter:   prevents broken country-hub and guide links that
+                      arise from slug mismatches between route frontmatter
+                      and actual country directory names (Chunk 3a fix).
+
+     When missing pages are added later, links auto-restore on next build.
      ================================================================ */}}
 {{ $validSideways := slice }}
 {{ if .Params.links }}
@@ -62,6 +70,17 @@
     {{ range .Params.links.sideways }}
       {{ if site.GetPage .url }}
         {{ $validSideways = $validSideways | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $validUpward := slice }}
+{{ if .Params.links }}
+  {{ if .Params.links.upward }}
+    {{ range .Params.links.upward }}
+      {{ if site.GetPage .url }}
+        {{ $validUpward = $validUpward | append . }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -186,7 +205,7 @@
   <div class="section-inner">
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validUpward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
       {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
@@ -273,7 +292,7 @@
   <div class="section-inner">
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validUpward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
       {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
@@ -351,7 +370,7 @@
   <div class="section-inner">
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validUpward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
       {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
@@ -438,7 +457,7 @@
   <div class="section-inner">
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validUpward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
       {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
@@ -507,7 +526,7 @@
   <div class="section-inner">
     <div class="section-header reveal"><p class="label-sm">Related guides</p><h2>More repatriation guidance</h2></div>
     <div class="stagger-children">
-      {{ range .Params.links.upward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
+      {{ range $validUpward }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-book-open-reader"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
       {{ range $validSideways }}<a href="{{ .url }}" class="guide-crosslink-card reveal"><div class="guide-crosslink-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div><div><p style="margin:0;font-size:0.9rem">{{ .text }}</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
     </div>
   </div>
