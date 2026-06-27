@@ -1,0 +1,86 @@
+---
+title: "Hong Kong to Canada: Funeral Repatriation Guidance"
+description: "Death in Hong Kong, coming home to Canada. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "hong-kong"
+dest_key: "canada"
+origin_name: "Hong Kong"
+dest_name: "Canada"
+origin_slug: "hong-kong"
+dest_slug: "canada"
+slug: "hong-kong-to-canada"
+template_variant: "D"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Hong Kong"
+doc_processing_time: "7-14 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Hong Kong to Canada: what to expect"
+direct_answer_intro: "Repatriation from Hong Kong to Canada follows Hong Kong's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (Births and Deaths Registry, Immigration Department of Hong Kong)"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British Embassy in Hong Kong can advise. They cannot fund repatriation."
+  - "Hong Kong is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All English and Cantonese (both official languages)-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Hong Kong"
+overview_body: "Contact emergency services (999). Death must be reported to the Births and Deaths Registry within 24 hours of the medical certificate of cause of death being issued. The Hong Kong Police Force takes jurisdiction for violent, suspicious, or unexplained deaths; a coroner may be appointed. Death certificates are issued in English and Chinese. Hong Kong is not a Hague Apostille Convention member, as China has not ratified the convention; documents must be authenticated through the Chinese Ministry of Foreign Affairs Consular Legalisation process."
+dest_reception: "The Canadian funeral director takes custody at the cargo terminal. Death is registered with the provincial civil registration authority (BDM in the relevant province). Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Canadian High Commission or Embassy in Hong Kong: contact Global Affairs Canada Emergency Watch: +1-613-996-8885 (collect calls accepted)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (births and deaths registry, immigration department of hong kong) obtained from Births and Deaths Registry, Immigration Department."
+    timing: "Registration must occur promptly. The Hong Kong Police Force investigates violent or suspicious deaths. A coroner may be involved, which can add several weeks to the process."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify Canadian High Commission or Embassy. Global Affairs Canada emergency: +1-613-996-8885."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English and Chinese. English-language certificates are accepted without translation in most English-speaking destinations. Chinese-only documents require certified translation."
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Hong Kong International Airport (HKG) to Toronto Pearson (YYZ), Vancouver (YVR), Montreal (YUL), or other major Canadian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Canadian funeral director takes custody at cargo terminal. Provincial BDM notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Hong Kong to Canada take?"
+    answer: "In a straightforward case, repatriation from Hong Kong to Canada takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Hong Kong to Canada?"
+    answer: "The core documents are: death certificate (Births and Deaths Registry, Immigration Department of Hong Kong), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English and Chinese. English-language certificates are accepted without translation in most English-speaking destinations. Chinese-only documents require certified translation. Source: FCDO Travel Advice Hong Kong 2025."
+  - question: "Does the British Embassy in Hong Kong help with repatriation?"
+    answer: "The Hong Kong-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Canada?"
+    answer: "The Canadian funeral director takes custody at the cargo terminal. Death is registered with the provincial civil registration authority (BDM in the relevant province). Straightforward cases proceed to funeral arrangements without delay. All documentation from Hong Kong must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Hong Kong to Canada instead of repatriating the body?"
+    answer: "Yes. Cremation in Hong Kong is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-hong-kong/"
+      text: "Full Hong Kong repatriation guide"
+    - url: "/guides/death-abroad-hong-kong/"
+      text: "What to do if someone dies in Hong Kong"
+    - url: "/embassy-contacts/hong-kong/"
+      text: "British Embassy in Hong Kong"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/hong-kong-to-united-kingdom/"
+      text: "Repatriation from Hong Kong to the UK"
+    - url: "/routes/singapore-to-canada/"
+      text: "Repatriation from Singapore to Canada"
+---

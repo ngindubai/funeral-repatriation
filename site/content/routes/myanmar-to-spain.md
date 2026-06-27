@@ -1,0 +1,86 @@
+---
+title: "Myanmar to Spain: Funeral Repatriation Guidance"
+description: "Death in Myanmar, coming home to Spain. Repatriation takes 4-10 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "myanmar"
+dest_key: "spain"
+origin_name: "Myanmar"
+dest_name: "Spain"
+origin_slug: "myanmar"
+dest_slug: "spain"
+slug: "myanmar-to-spain"
+template_variant: "D"
+route_complexity: "high"
+timeline_avg: "4-10 weeks"
+timeline_fast: "3-5 weeks"
+timeline_complex: "10-20 weeks"
+embassy_city: "Yangon"
+doc_processing_time: "2-6 weeks"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Myanmar to Spain: what to expect"
+direct_answer_intro: "Repatriation from Myanmar to Spain follows Myanmar's civil registration and export procedures. Most cases take 4-10 weeks."
+direct_answer_points:
+  - "Key document: death certificate from the GAD (General Administration Department), township level"
+  - "Documentation takes 2-6 weeks. Appoint a specialist on day one."
+  - "British Embassy in Yangon can advise. They cannot fund repatriation."
+  - "Myanmar is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All Burmese-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Myanmar"
+overview_body: "Contact emergency services (199). Death must be registered with the General Administration Department at township level. Since the February 2021 military coup, civil administration capacity has been disrupted across much of Myanmar. The death certificate is issued in Burmese and requires certified English translation. Myanmar is not a Hague Apostille Convention member; documents must be authenticated through the Myanmar Ministry of Foreign Affairs. A specialist repatriation company with Myanmar experience is strongly advised."
+dest_reception: "The Spanish funeral director takes custody at the cargo terminal. Death is registered with the Registro Civil (Civil Registry, Ministerio de Justicia). The certificado de defuncion (Spanish death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Spanish Embassy in Myanmar: contact the Spanish Embassy in the country of death for documentation support."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate from the gad (general administration department), township level obtained from General Administration Department (GAD), township level; operating under military administration since the February 2021 coup."
+    timing: "Registration must occur promptly. Township-level authorities investigate violent or suspicious deaths. The security situation in many areas of Myanmar can significantly extend timelines."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Spanish Embassy in Myanmar."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Myanmar documents are in Burmese. Certified English translation is required for all Western destinations. Ministry of Foreign Affairs authentication is required as Myanmar is not a Hague Apostille member."
+    timing: "Allow 2-6 weeks. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Yangon International Airport (RGN) or Mandalay International Airport (MDL) to Madrid Barajas (MAD), Barcelona El Prat (BCN), or other major Spanish airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Spanish funeral director takes custody at cargo terminal. Registro Civil notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Myanmar to Spain take?"
+    answer: "In a straightforward case, repatriation from Myanmar to Spain takes 4-10 weeks. The fastest cases complete in 3-5 weeks. Complex cases involving criminal investigation or remote locations can take 10-20 weeks."
+  - question: "What documents are required for repatriation from Myanmar to Spain?"
+    answer: "The core documents are: death certificate from the GAD (General Administration Department), township level, embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Myanmar documents are in Burmese. Certified English translation is required for all Western destinations. Ministry of Foreign Affairs authentication is required as Myanmar is not a Hague Apostille member. Source: FCDO Travel Advice Myanmar 2025."
+  - question: "Does the British Embassy in Myanmar help with repatriation?"
+    answer: "The Yangon-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Spain?"
+    answer: "The Spanish funeral director takes custody at the cargo terminal. Death is registered with the Registro Civil (Civil Registry, Ministerio de Justicia). The certificado de defuncion (Spanish death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Myanmar must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Myanmar to Spain instead of repatriating the body?"
+    answer: "Yes. Cremation in Myanmar is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-myanmar/"
+      text: "Full Myanmar repatriation guide"
+    - url: "/guides/death-abroad-myanmar/"
+      text: "What to do if someone dies in Myanmar"
+    - url: "/embassy-contacts/myanmar/"
+      text: "British Embassy in Myanmar"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/myanmar-to-united-kingdom/"
+      text: "Repatriation from Myanmar to the UK"
+    - url: "/routes/thailand-to-spain/"
+      text: "Repatriation from Thailand to Spain"
+---

@@ -1,0 +1,86 @@
+---
+title: "Sudan to Canada: Funeral Repatriation Guidance"
+description: "Death in Sudan, coming home to Canada. Repatriation takes 8-16 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "sudan"
+dest_key: "canada"
+origin_name: "Sudan"
+dest_name: "Canada"
+origin_slug: "sudan"
+dest_slug: "canada"
+slug: "sudan-to-canada"
+template_variant: "C"
+route_complexity: "very-high"
+timeline_avg: "8-16 weeks"
+timeline_fast: "6-10 weeks"
+timeline_complex: "16+ weeks"
+embassy_city: "London"
+doc_processing_time: "4-10 weeks"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Sudan to Canada: what to expect"
+direct_answer_intro: "Repatriation from Sudan to Canada follows Sudan's civil registration and export procedures. Most cases take 8-16 weeks."
+direct_answer_points:
+  - "Key document: civil registration certificate (Civil Registration General Directorate, CRGD)"
+  - "Documentation takes 4-10 weeks. Appoint a specialist on day one."
+  - "British Embassy in London can advise. They cannot fund repatriation."
+  - "Sudan is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All Arabic-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Sudan"
+overview_body: "The British Embassy in Khartoum suspended operations in May 2023. All consular matters are handled by FCDO in London. Contact the FCDO 24-hour emergency line at once. Khartoum airport is largely non-operational; the primary departure point is Port Sudan (PZU). Civil registration is through the Civil Registration General Directorate, but capacity is severely disrupted by the conflict. All documents are in Arabic and require certified English translation. A specialist repatriation company with Sudan experience is essential."
+dest_reception: "The Canadian funeral director takes custody at the cargo terminal. Death is registered with the provincial civil registration authority (BDM in the relevant province). Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Canadian High Commission or Embassy in Sudan: contact Global Affairs Canada Emergency Watch: +1-613-996-8885 (collect calls accepted)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Civil registration certificate (civil registration general directorate, crgd) obtained from Civil Registration General Directorate (CRGD), Ministry of Interior."
+    timing: "Registration must occur promptly. Formal security and police capacity is severely limited due to the ongoing conflict. Body release may depend on the authorities controlling the area."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify Canadian High Commission or Embassy. Global Affairs Canada emergency: +1-613-996-8885."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Sudanese documents are in Arabic. Certified English translation is required for all Western destinations."
+    timing: "Allow 4-10 weeks. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Khartoum Civil Aviation Authority Airport (KRT, severely damaged since April 2023); Port Sudan Airport (PZU) is the primary operational gateway to Toronto Pearson (YYZ), Vancouver (YVR), Montreal (YUL), or other major Canadian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Canadian funeral director takes custody at cargo terminal. Provincial BDM notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sudan to Canada take?"
+    answer: "In a straightforward case, repatriation from Sudan to Canada takes 8-16 weeks. The fastest cases complete in 6-10 weeks. Complex cases involving criminal investigation or remote locations can take 16+ weeks."
+  - question: "What documents are required for repatriation from Sudan to Canada?"
+    answer: "The core documents are: civil registration certificate (Civil Registration General Directorate, CRGD), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Sudanese documents are in Arabic. Certified English translation is required for all Western destinations. Source: FCDO Travel Advice Sudan 2025."
+  - question: "Does the British Embassy in Sudan help with repatriation?"
+    answer: "The British Embassy in Khartoum suspended operations in May 2023. FCDO in London now handles all consular matters for Sudan. They can advise on documentation requirements and specialist companies able to operate in the country, but cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Canada?"
+    answer: "The Canadian funeral director takes custody at the cargo terminal. Death is registered with the provincial civil registration authority (BDM in the relevant province). Straightforward cases proceed to funeral arrangements without delay. All documentation from Sudan must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Sudan to Canada instead of repatriating the body?"
+    answer: "Yes. Cremation in Sudan is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-sudan/"
+      text: "Full Sudan repatriation guide"
+    - url: "/guides/death-abroad-sudan/"
+      text: "What to do if someone dies in Sudan"
+    - url: "/embassy-contacts/sudan/"
+      text: "British Embassy in Sudan"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sudan-to-united-kingdom/"
+      text: "Repatriation from Sudan to the UK"
+    - url: "/routes/ethiopia-to-canada/"
+      text: "Repatriation from Ethiopia to Canada"
+---

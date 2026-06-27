@@ -1,0 +1,86 @@
+---
+title: "Zambia to Australia: Funeral Repatriation Guidance"
+description: "Death in Zambia, coming home to Australia. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "zambia"
+dest_key: "australia"
+origin_name: "Zambia"
+dest_name: "Australia"
+origin_slug: "zambia"
+dest_slug: "australia"
+slug: "zambia-to-australia"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Lusaka"
+doc_processing_time: "7-14 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Zambia to Australia: what to expect"
+direct_answer_intro: "Repatriation from Zambia to Australia follows Zambia's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (Registrar of Births Marriages and Deaths)"
+  - "Documentation takes 7-14 days. Appoint a specialist on day one."
+  - "British Embassy in Lusaka can advise. They cannot fund repatriation."
+  - "Zambia is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All English-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Zambia"
+overview_body: "Contact emergency services (999 or 112). Death must be registered with the Registrar of Births Marriages and Deaths within 30 days. The Zambia Police Service takes jurisdiction for violent, suspicious, or unexplained deaths. Death certificates are issued in English. Zambia is not a Hague Apostille Convention member; documents must be authenticated through the Ministry of Foreign Affairs."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Australian High Commission or Embassy in Zambia: contact DFAT on +61 2 6261 3305 or the Consular Emergency Centre on 1300 555 135 (from Australia)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (registrar of births marriages and deaths) obtained from Registrar of Births Marriages and Deaths, Ministry of Home Affairs."
+    timing: "Registration must occur promptly. The Zambia Police Service investigates violent or sudden deaths. Clearance is required before the body is released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify Australian High Commission or Embassy. DFAT emergency: +61 2 6261 3305."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English. No translation is required for English-speaking destination countries."
+    timing: "Allow 7-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Kenneth Kaunda International Airport Lusaka (LUN) or Simon Mwansa Kapwepwe Airport Ndola (NLA) to Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER), or other major Australian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australian funeral director takes custody. ABF clearance completed. State BDM notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Zambia to Australia take?"
+    answer: "In a straightforward case, repatriation from Zambia to Australia takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Zambia to Australia?"
+    answer: "The core documents are: death certificate (Registrar of Births Marriages and Deaths), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English. No translation is required for English-speaking destination countries. Source: FCDO Travel Advice Zambia 2025."
+  - question: "Does the British Embassy in Zambia help with repatriation?"
+    answer: "The Lusaka-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay. All documentation from Zambia must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Zambia to Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Zambia is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-zambia/"
+      text: "Full Zambia repatriation guide"
+    - url: "/guides/death-abroad-zambia/"
+      text: "What to do if someone dies in Zambia"
+    - url: "/embassy-contacts/zambia/"
+      text: "British Embassy in Zambia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/zambia-to-united-kingdom/"
+      text: "Repatriation from Zambia to the UK"
+    - url: "/routes/kenya-to-australia/"
+      text: "Repatriation from Kenya to Australia"
+---

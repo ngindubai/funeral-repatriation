@@ -1,0 +1,86 @@
+---
+title: "Cyprus to Netherlands: Funeral Repatriation Guidance"
+description: "Death in Cyprus, coming home to Netherlands. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "cyprus"
+dest_key: "netherlands"
+origin_name: "Cyprus"
+dest_name: "Netherlands"
+origin_slug: "cyprus"
+dest_slug: "netherlands"
+slug: "cyprus-to-netherlands"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Nicosia"
+doc_processing_time: "5-10 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Cyprus to Netherlands: what to expect"
+direct_answer_intro: "Repatriation from Cyprus to Netherlands follows Cyprus's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: death certificate (Civil Registry and Migration Department, CRMD)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Nicosia can advise. They cannot fund repatriation."
+  - "Cyprus is a Hague Apostille member (2003). This simplifies document authentication."
+  - "All Greek (English widely used; Cyprus is a former British colony)-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Cyprus"
+overview_body: "Contact emergency services (112). Death must be registered with the Civil Registry and Migration Department (CRMD). The Cyprus Police takes jurisdiction for violent, suspicious, or unexplained deaths. Death certificates are issued in Greek; English-language translations are available from the CRMD. Cyprus joined the Hague Apostille Convention in 2003. Deaths in the northern area require separate guidance; contact the FCDO for current advice."
+dest_reception: "The Dutch funeral director takes custody at the cargo terminal. Death is registered with the local gemeente (municipality) in the BRP (Municipal Personal Records Database). The akte van overlijden (Dutch death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Netherlands Embassy in Cyprus: contact the Dutch Embassy in the country of death for support with documentation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (civil registry and migration department, crmd) obtained from Civil Registry and Migration Department (CRMD), Ministry of Interior."
+    timing: "Registration must occur promptly. The Cyprus Police investigates violent or suspicious deaths. Clearance is required before the body is released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Netherlands Embassy in Cyprus."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are in Greek. Certified English translation is required for most non-Cypriot destinations. Hague Apostille authentication applies for member countries (since 2003)."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Larnaca International Airport (LCA) or Paphos International Airport (PFO) to Amsterdam Schiphol (AMS), Rotterdam The Hague (RTM), or Eindhoven (EIN)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Dutch funeral director takes custody at cargo terminal. Gemeente BRP notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Cyprus to Netherlands take?"
+    answer: "In a straightforward case, repatriation from Cyprus to Netherlands takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Cyprus to Netherlands?"
+    answer: "The core documents are: death certificate (Civil Registry and Migration Department, CRMD), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are in Greek. Certified English translation is required for most non-Cypriot destinations. Hague Apostille authentication applies for member countries (since 2003). Source: FCDO Travel Advice Cyprus 2025."
+  - question: "Does the British Embassy in Cyprus help with repatriation?"
+    answer: "The Nicosia-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Netherlands?"
+    answer: "The Dutch funeral director takes custody at the cargo terminal. Death is registered with the local gemeente (municipality) in the BRP (Municipal Personal Records Database). The akte van overlijden (Dutch death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Cyprus must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Cyprus to Netherlands instead of repatriating the body?"
+    answer: "Yes. Cremation in Cyprus is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-cyprus/"
+      text: "Full Cyprus repatriation guide"
+    - url: "/guides/death-abroad-cyprus/"
+      text: "What to do if someone dies in Cyprus"
+    - url: "/embassy-contacts/cyprus/"
+      text: "British Embassy in Cyprus"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/cyprus-to-united-kingdom/"
+      text: "Repatriation from Cyprus to the UK"
+    - url: "/routes/greece-to-netherlands/"
+      text: "Repatriation from Greece to the Netherlands"
+---

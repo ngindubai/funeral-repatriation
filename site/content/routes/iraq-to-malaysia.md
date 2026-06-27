@@ -1,0 +1,86 @@
+---
+title: "Iraq to Malaysia: Funeral Repatriation Guidance"
+description: "Death in Iraq, coming home to Malaysia. Repatriation takes 6-12 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "iraq"
+dest_key: "malaysia"
+origin_name: "Iraq"
+dest_name: "Malaysia"
+origin_slug: "iraq"
+dest_slug: "malaysia"
+slug: "iraq-to-malaysia"
+template_variant: "B"
+route_complexity: "very-high"
+timeline_avg: "6-12 weeks"
+timeline_fast: "4-6 weeks"
+timeline_complex: "12-24 weeks"
+embassy_city: "Baghdad"
+doc_processing_time: "3-8 weeks"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Iraq to Malaysia: what to expect"
+direct_answer_intro: "Repatriation from Iraq to Malaysia follows Iraq's civil registration and export procedures. Most cases take 6-12 weeks."
+direct_answer_points:
+  - "Key document: shahada wafah (death certificate from the Civil Status Directorate)"
+  - "Documentation takes 3-8 weeks. Appoint a specialist on day one."
+  - "British Embassy in Baghdad can advise. They cannot fund repatriation."
+  - "Iraq is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All Arabic-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Iraq"
+overview_body: "Contact emergency services (104). Death must be registered with the Civil Status Directorate. The Iraqi security services take jurisdiction for violent, suspicious, or unexplained deaths, which can cause significant delays. All documentation is in Arabic and requires certified English translation. Iraq is not a Hague Apostille Convention member; documents must be authenticated through the Iraqi Ministry of Foreign Affairs and the destination country's embassy. FCDO advises against all travel to Iraq; consular capacity is limited in many areas."
+dest_reception: "The Malaysian funeral director takes custody at the cargo terminal. Death is registered with Jabatan Pendaftaran Negara (JPN, National Registration Department). Documents require Malaysian High Commission attestation and Wisma Putra (Ministry of Foreign Affairs) authentication before acceptance. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Malaysian High Commission in Iraq: contact Wisma Putra (Ministry of Foreign Affairs Malaysia) at +60 3 8000 8000 for consular guidance."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Shahada wafah (death certificate from the civil status directorate) obtained from Civil Status Directorate (Mudiriyyat al-Ahwal al-Madaniyya)."
+    timing: "Registration must occur promptly. The Iraqi security services investigate violent or suspicious deaths. Political and security conditions can extend timelines considerably."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Malaysian High Commission in Iraq. Wisma Putra: +60 3 8000 8000."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Iraqi documents are in Arabic. Certified English translation is required for all Western destinations. Ministry of Foreign Affairs authentication is required as Iraq is not a Hague Apostille member."
+    timing: "Allow 3-8 weeks. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Baghdad International Airport (BGW); Erbil International Airport (EBL) in the Kurdistan Region to Kuala Lumpur International Airport (KUL), Kota Kinabalu (BKI), or Penang (PEN)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Malaysian funeral director takes custody at cargo terminal. JPN notified. Documents authenticated by Wisma Putra."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Iraq to Malaysia take?"
+    answer: "In a straightforward case, repatriation from Iraq to Malaysia takes 6-12 weeks. The fastest cases complete in 4-6 weeks. Complex cases involving criminal investigation or remote locations can take 12-24 weeks."
+  - question: "What documents are required for repatriation from Iraq to Malaysia?"
+    answer: "The core documents are: shahada wafah (death certificate from the Civil Status Directorate), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Iraqi documents are in Arabic. Certified English translation is required for all Western destinations. Ministry of Foreign Affairs authentication is required as Iraq is not a Hague Apostille member. Source: FCDO Travel Advice Iraq 2025."
+  - question: "Does the British Embassy in Iraq help with repatriation?"
+    answer: "The British Embassy in Baghdad handles consular matters for most of Iraq, and the British Consulate-General in Erbil covers the Kurdistan Region. FCDO advises against all travel to Iraq; consular capacity is limited. The Embassy can register the death and advise on approved local funeral directors, but cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Malaysia?"
+    answer: "The Malaysian funeral director takes custody at the cargo terminal. Death is registered with Jabatan Pendaftaran Negara (JPN, National Registration Department). Documents require Malaysian High Commission attestation and Wisma Putra (Ministry of Foreign Affairs) authentication before acceptance. Straightforward cases proceed to funeral arrangements without delay. All documentation from Iraq must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Iraq to Malaysia instead of repatriating the body?"
+    answer: "Yes. Cremation in Iraq is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-iraq/"
+      text: "Full Iraq repatriation guide"
+    - url: "/guides/death-abroad-iraq/"
+      text: "What to do if someone dies in Iraq"
+    - url: "/embassy-contacts/iraq/"
+      text: "British Embassy in Iraq"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/iraq-to-united-kingdom/"
+      text: "Repatriation from Iraq to the UK"
+    - url: "/routes/bangladesh-to-malaysia/"
+      text: "Repatriation from Bangladesh to Malaysia"
+---

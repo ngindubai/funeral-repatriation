@@ -1,0 +1,86 @@
+---
+title: "Somalia to Italy: Funeral Repatriation Guidance"
+description: "Death in Somalia, coming home to Italy. Repatriation takes 8-16 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "somalia"
+dest_key: "italy"
+origin_name: "Somalia"
+dest_name: "Italy"
+origin_slug: "somalia"
+dest_slug: "italy"
+slug: "somalia-to-italy"
+template_variant: "E"
+route_complexity: "very-high"
+timeline_avg: "8-16 weeks"
+timeline_fast: "6-8 weeks"
+timeline_complex: "16+ weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "4-10 weeks"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Somalia to Italy: what to expect"
+direct_answer_intro: "Repatriation from Somalia to Italy follows Somalia's civil registration and export procedures. Most cases take 8-16 weeks."
+direct_answer_points:
+  - "Key document: death certificate from local authority where available; civil registration infrastructure is severely limited in many areas"
+  - "Documentation takes 4-10 weeks. Appoint a specialist on day one."
+  - "British Embassy in Nairobi can advise. They cannot fund repatriation."
+  - "Somalia is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All Somali and Arabic-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Somalia"
+overview_body: "Somalia has very limited civil registration infrastructure in many regions. Local authority, tribal leadership, or Islamic courts may be involved in certifying the death depending on location. Contact the British High Commission in Nairobi at once; they can advise on documentation and specialist repatriation companies that operate in Somalia. FCDO advises against all travel to much of the country. A specialist repatriation company with Somalia experience is not optional in most cases."
+dest_reception: "The Italian funeral director takes custody at the cargo terminal. Death is registered with the local Comune (ufficio di stato civile). The atto di morte (Italian death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Italian Embassy in Somalia: contact the Italian Embassy in the country of death for documentation support."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate from local authority where available; civil registration infrastructure is severely limited in many areas obtained from Federal Government civil registration (very limited capacity); Somaliland Civil Registration Authority for the Somaliland region."
+    timing: "Registration must occur promptly. Formal police investigation capacity is very limited in most of Somalia. Timelines for body release vary based on location and local conditions."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Italian Embassy in Somalia."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Somali and Arabic documents require certified English translation. Notarial authentication through the Federal Government Ministry of Foreign Affairs may be required."
+    timing: "Allow 4-10 weeks. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Aden Adde International Airport Mogadishu (MGQ) or Hargeisa Airport (HGA) for Somaliland to Rome Fiumicino (FCO), Milan Malpensa (MXP), Naples (NAP), or other major Italian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Italian funeral director takes custody at cargo terminal. Comune notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Somalia to Italy take?"
+    answer: "In a straightforward case, repatriation from Somalia to Italy takes 8-16 weeks. The fastest cases complete in 6-8 weeks. Complex cases involving criminal investigation or remote locations can take 16+ weeks."
+  - question: "What documents are required for repatriation from Somalia to Italy?"
+    answer: "The core documents are: death certificate from local authority where available; civil registration infrastructure is severely limited in many areas, embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Somali and Arabic documents require certified English translation. Notarial authentication through the Federal Government Ministry of Foreign Affairs may be required. Source: FCDO Travel Advice Somalia 2025."
+  - question: "Does the British Embassy in Somalia help with repatriation?"
+    answer: "There is no resident British diplomatic mission in Mogadishu. The British High Commission in Nairobi handles consular matters for Somalia. FCDO advises against all travel to southern and central Somalia. The Nairobi High Commission can register the death and advise on specialist companies able to operate locally, but cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Italy?"
+    answer: "The Italian funeral director takes custody at the cargo terminal. Death is registered with the local Comune (ufficio di stato civile). The atto di morte (Italian death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Somalia must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Somalia to Italy instead of repatriating the body?"
+    answer: "Yes. Cremation in Somalia is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-somalia/"
+      text: "Full Somalia repatriation guide"
+    - url: "/guides/death-abroad-somalia/"
+      text: "What to do if someone dies in Somalia"
+    - url: "/embassy-contacts/somalia/"
+      text: "British Embassy in Somalia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/somalia-to-united-kingdom/"
+      text: "Repatriation from Somalia to the UK"
+    - url: "/routes/ethiopia-to-italy/"
+      text: "Repatriation from Ethiopia to Italy"
+---
