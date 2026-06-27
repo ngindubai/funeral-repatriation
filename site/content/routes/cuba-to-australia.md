@@ -1,0 +1,86 @@
+---
+title: "Cuba to Australia: Funeral Repatriation Guidance"
+description: "Death in Cuba, coming home to Australia. Repatriation takes 3-5 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "cuba"
+dest_key: "australia"
+origin_name: "Cuba"
+dest_name: "Australia"
+origin_slug: "cuba"
+dest_slug: "australia"
+slug: "cuba-to-australia"
+template_variant: "A"
+route_complexity: "moderate"
+timeline_avg: "3-5 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "6-10 weeks"
+embassy_city: "Havana"
+doc_processing_time: "10-14 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Cuba to Australia: what to expect"
+direct_answer_intro: "Repatriation from Cuba to Australia follows Cuba's civil registration and export procedures. Most cases take 3-5 weeks."
+direct_answer_points:
+  - "Key document: certificado de defuncion (Registro del Estado Civil)"
+  - "Documentation takes 10-14 days. Appoint a specialist on day one."
+  - "British Embassy in Havana can advise. They cannot fund repatriation."
+  - "Cuba is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All Spanish-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Cuba"
+overview_body: "Contact emergency services (106). Death must be registered with the Registro del Estado Civil. The Fiscalia takes jurisdiction for violent, suspicious, or unexplained deaths. All documentation is in Spanish and requires certified English translation before acceptance in English-speaking destinations. The state controls all funeral services, so a specialist repatriation company must coordinate locally through approved channels."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Australian High Commission or Embassy in Cuba: contact DFAT on +61 2 6261 3305 or the Consular Emergency Centre on 1300 555 135 (from Australia)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Certificado de defuncion (registro del estado civil) obtained from Registro del Estado Civil; Fiscalia (Prosecutor's Office) for suspicious deaths."
+    timing: "Registration must occur promptly. The Fiscalia (Prosecutor's Office) investigates violent or suspicious deaths. This can add 2-4 weeks to the process."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify Australian High Commission or Embassy. DFAT emergency: +61 2 6261 3305."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Cuban documents are in Spanish. Certified English translation is required for every document before UK, Irish, or Commonwealth destination acceptance."
+    timing: "Allow 10-14 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Jose Marti International Airport Havana (HAV) or Varadero (VRA) to Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER), or other major Australian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australian funeral director takes custody. ABF clearance completed. State BDM notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Cuba to Australia take?"
+    answer: "In a straightforward case, repatriation from Cuba to Australia takes 3-5 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving criminal investigation or remote locations can take 6-10 weeks."
+  - question: "What documents are required for repatriation from Cuba to Australia?"
+    answer: "The core documents are: certificado de defuncion (Registro del Estado Civil), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Cuban documents are in Spanish. Certified English translation is required for every document before UK, Irish, or Commonwealth destination acceptance. Source: FCDO Travel Advice Cuba 2025."
+  - question: "Does the British Embassy in Cuba help with repatriation?"
+    answer: "The Havana-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay. All documentation from Cuba must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Cuba to Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Cuba is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-cuba/"
+      text: "Full Cuba repatriation guide"
+    - url: "/guides/death-abroad-cuba/"
+      text: "What to do if someone dies in Cuba"
+    - url: "/embassy-contacts/cuba/"
+      text: "British Embassy in Cuba"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/cuba-to-united-kingdom/"
+      text: "Repatriation from Cuba to the UK"
+    - url: "/routes/jamaica-to-australia/"
+      text: "Repatriation from Jamaica to Australia"
+---

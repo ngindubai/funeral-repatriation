@@ -1,0 +1,86 @@
+---
+title: "Venezuela to Italy: Funeral Repatriation Guidance"
+description: "Death in Venezuela, coming home to Italy. Repatriation takes 4-8 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "venezuela"
+dest_key: "italy"
+origin_name: "Venezuela"
+dest_name: "Italy"
+origin_slug: "venezuela"
+dest_slug: "italy"
+slug: "venezuela-to-italy"
+template_variant: "D"
+route_complexity: "high"
+timeline_avg: "4-8 weeks"
+timeline_fast: "3-5 weeks"
+timeline_complex: "8-16 weeks"
+embassy_city: "Caracas"
+doc_processing_time: "14-30 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Venezuela to Italy: what to expect"
+direct_answer_intro: "Repatriation from Venezuela to Italy follows Venezuela's civil registration and export procedures. Most cases take 4-8 weeks."
+direct_answer_points:
+  - "Key document: acta de defuncion (SAREN, Registro Civil)"
+  - "Documentation takes 14-30 days. Appoint a specialist on day one."
+  - "British Embassy in Caracas can advise. They cannot fund repatriation."
+  - "Venezuela is a Hague Apostille member (2023). This simplifies document authentication."
+  - "All Spanish-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Venezuela"
+overview_body: "Contact emergency services (171). Death must be registered with SAREN at the local Registro Civil. Political and economic instability in Venezuela can cause delays at every stage. All documentation is in Spanish and requires certified English translation. Venezuela joined the Hague Apostille Convention in 2023, which simplifies document authentication, but the acta de defuncion must be authenticated by SAREN and the Ministry of Foreign Affairs before it is valid abroad."
+dest_reception: "The Italian funeral director takes custody at the cargo terminal. Death is registered with the local Comune (ufficio di stato civile). The atto di morte (Italian death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Italian Embassy in Venezuela: contact the Italian Embassy in the country of death for documentation support."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Acta de defuncion (saren, registro civil) obtained from SAREN (Servicio Autonomo de Registros y Notarias)."
+    timing: "Registration must occur promptly. The CICPC (investigative police) takes jurisdiction for violent or suspicious deaths. Timelines can extend significantly in cases involving criminal investigation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Italian Embassy in Venezuela."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. All Venezuelan documents are in Spanish. Certified English translation is required for UK, Irish, and Commonwealth destinations."
+    timing: "Allow 14-30 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Simon Bolivar International Airport Caracas (CCS/MAI) to Rome Fiumicino (FCO), Milan Malpensa (MXP), Naples (NAP), or other major Italian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Italian funeral director takes custody at cargo terminal. Comune notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Venezuela to Italy take?"
+    answer: "In a straightforward case, repatriation from Venezuela to Italy takes 4-8 weeks. The fastest cases complete in 3-5 weeks. Complex cases involving criminal investigation or remote locations can take 8-16 weeks."
+  - question: "What documents are required for repatriation from Venezuela to Italy?"
+    answer: "The core documents are: acta de defuncion (SAREN, Registro Civil), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. All Venezuelan documents are in Spanish. Certified English translation is required for UK, Irish, and Commonwealth destinations. Source: FCDO Travel Advice Venezuela 2025."
+  - question: "Does the British Embassy in Venezuela help with repatriation?"
+    answer: "The Caracas-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Italy?"
+    answer: "The Italian funeral director takes custody at the cargo terminal. Death is registered with the local Comune (ufficio di stato civile). The atto di morte (Italian death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Venezuela must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Venezuela to Italy instead of repatriating the body?"
+    answer: "Yes. Cremation in Venezuela is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-venezuela/"
+      text: "Full Venezuela repatriation guide"
+    - url: "/guides/death-abroad-venezuela/"
+      text: "What to do if someone dies in Venezuela"
+    - url: "/embassy-contacts/venezuela/"
+      text: "British Embassy in Venezuela"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/venezuela-to-united-kingdom/"
+      text: "Repatriation from Venezuela to the UK"
+    - url: "/routes/colombia-to-italy/"
+      text: "Repatriation from Colombia to Italy"
+---

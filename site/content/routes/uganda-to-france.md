@@ -1,0 +1,86 @@
+---
+title: "Uganda to France: Funeral Repatriation Guidance"
+description: "Death in Uganda, coming home to France. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "uganda"
+dest_key: "france"
+origin_name: "Uganda"
+dest_name: "France"
+origin_slug: "uganda"
+dest_slug: "france"
+slug: "uganda-to-france"
+template_variant: "B"
+route_complexity: "moderate"
+timeline_avg: "2-3 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Nairobi"
+doc_processing_time: "7-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Uganda to France: what to expect"
+direct_answer_intro: "Repatriation from Uganda to France follows Uganda's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: death certificate from the local government civil registry"
+  - "Documentation takes 7-10 days. Appoint a specialist on day one."
+  - "British Embassy in Nairobi can advise. They cannot fund repatriation."
+  - "Uganda is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All English-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Uganda"
+overview_body: "Contact emergency services (999 or 112). Death must be registered with the local government civil registry within 3 days. The Uganda Police Force takes jurisdiction for violent, suspicious, or unexplained deaths. The British High Commission in Kampala provides consular support. URSB issues the death certificate, which is in English, within 7 days of registration."
+dest_reception: "The French funeral director takes custody at the cargo terminal. Death is registered with the local mairie (town hall). The acte de deces (French death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "French Embassy in Uganda: contact the French Embassy in the country of death for documentation support."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate from the local government civil registry obtained from URSB (Uganda Registration Services Bureau)."
+    timing: "Registration must occur promptly. The Uganda Police Force may investigate violent or sudden deaths before authorising release."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the French Embassy in Uganda."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English. No translation is required for English-speaking destinations."
+    timing: "Allow 7-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Entebbe International Airport (EBB) to Paris Charles de Gaulle (CDG), Paris Orly (ORY), Lyon (LYS), or other major French airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "French funeral director takes custody at cargo terminal. Mairie notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Uganda to France take?"
+    answer: "In a straightforward case, repatriation from Uganda to France takes 2-3 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Uganda to France?"
+    answer: "The core documents are: death certificate from the local government civil registry, embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English. No translation is required for English-speaking destinations. Source: FCDO Travel Advice Uganda 2025."
+  - question: "Does the British Embassy in Uganda help with repatriation?"
+    answer: "The Nairobi-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in France?"
+    answer: "The French funeral director takes custody at the cargo terminal. Death is registered with the local mairie (town hall). The acte de deces (French death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Uganda must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Uganda to France instead of repatriating the body?"
+    answer: "Yes. Cremation in Uganda is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-uganda/"
+      text: "Full Uganda repatriation guide"
+    - url: "/guides/death-abroad-uganda/"
+      text: "What to do if someone dies in Uganda"
+    - url: "/embassy-contacts/uganda/"
+      text: "British Embassy in Uganda"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/uganda-to-united-kingdom/"
+      text: "Repatriation from Uganda to the UK"
+    - url: "/routes/kenya-to-france/"
+      text: "Repatriation from Kenya to France"
+---

@@ -1,0 +1,86 @@
+---
+title: "Cameroon to Australia: Funeral Repatriation Guidance"
+description: "Death in Cameroon, coming home to Australia. Repatriation takes 3-5 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "cameroon"
+dest_key: "australia"
+origin_name: "Cameroon"
+dest_name: "Australia"
+origin_slug: "cameroon"
+dest_slug: "australia"
+slug: "cameroon-to-australia"
+template_variant: "C"
+route_complexity: "moderate"
+timeline_avg: "3-5 weeks"
+timeline_fast: "2-3 weeks"
+timeline_complex: "5-10 weeks"
+embassy_city: "Yaounde"
+doc_processing_time: "10-21 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Cameroon to Australia: what to expect"
+direct_answer_intro: "Repatriation from Cameroon to Australia follows Cameroon's civil registration and export procedures. Most cases take 3-5 weeks."
+direct_answer_points:
+  - "Key document: acte de deces (Etat Civil, commune level)"
+  - "Documentation takes 10-21 days. Appoint a specialist on day one."
+  - "British Embassy in Yaounde can advise. They cannot fund repatriation."
+  - "Cameroon is not a Hague Apostille member. Documents require legalisation through the Ministry of Foreign Affairs."
+  - "All French and English (bilingual country)-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Cameroon"
+overview_body: "Contact emergency services (117 or 118). Death must be registered at the local Etat Civil (commune-level civil registry). The Parquet (Prosecutor's Office) takes jurisdiction for violent, suspicious, or unexplained deaths. Cameroon is officially bilingual (French and English), though French predominates in most official documentation. Cameroon is not a Hague Apostille Convention member, so documents must be legalised through the Cameroonian Ministry of Foreign Affairs and the destination country's embassy."
+dest_reception: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Australian High Commission or Embassy in Cameroon: contact DFAT on +61 2 6261 3305 or the Consular Emergency Centre on 1300 555 135 (from Australia)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Acte de deces (etat civil, commune level) obtained from Etat Civil (commune-level civil registration authority)."
+    timing: "Registration must occur promptly. The Gendarmerie or Police Judiciaire investigates violent or sudden deaths. Clearance is required before body release."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify Australian High Commission or Embassy. DFAT emergency: +61 2 6261 3305."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. French-language documents require certified English translation for UK, Irish, and Anglophone destinations. Cameroonian notarial legalisation and Ministry of Foreign Affairs authentication are required."
+    timing: "Allow 10-21 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Douala International Airport (DLA) or Nsimalen International Airport Yaounde (NSI) to Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER), or other major Australian airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Australian funeral director takes custody. ABF clearance completed. State BDM notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Cameroon to Australia take?"
+    answer: "In a straightforward case, repatriation from Cameroon to Australia takes 3-5 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving criminal investigation or remote locations can take 5-10 weeks."
+  - question: "What documents are required for repatriation from Cameroon to Australia?"
+    answer: "The core documents are: acte de deces (Etat Civil, commune level), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. French-language documents require certified English translation for UK, Irish, and Anglophone destinations. Cameroonian notarial legalisation and Ministry of Foreign Affairs authentication are required. Source: FCDO Travel Advice Cameroon 2025."
+  - question: "Does the British Embassy in Cameroon help with repatriation?"
+    answer: "The Yaounde-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Australia?"
+    answer: "The Australian funeral director takes custody at the cargo terminal. Australian Border Force (ABF) clearance is required on arrival. Death is registered with the relevant state BDM (Births, Deaths and Marriages). Straightforward cases proceed to funeral arrangements without delay. All documentation from Cameroon must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Cameroon to Australia instead of repatriating the body?"
+    answer: "Yes. Cremation in Cameroon is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-cameroon/"
+      text: "Full Cameroon repatriation guide"
+    - url: "/guides/death-abroad-cameroon/"
+      text: "What to do if someone dies in Cameroon"
+    - url: "/embassy-contacts/cameroon/"
+      text: "British Embassy in Cameroon"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/cameroon-to-united-kingdom/"
+      text: "Repatriation from Cameroon to the UK"
+    - url: "/routes/nigeria-to-australia/"
+      text: "Repatriation from Nigeria to Australia"
+---

@@ -1,0 +1,86 @@
+---
+title: "Romania to Netherlands: Funeral Repatriation Guidance"
+description: "Death in Romania, coming home to Netherlands. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "romania"
+dest_key: "netherlands"
+origin_name: "Romania"
+dest_name: "Netherlands"
+origin_slug: "romania"
+dest_slug: "netherlands"
+slug: "romania-to-netherlands"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Bucharest"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Romania to Netherlands: what to expect"
+direct_answer_intro: "Repatriation from Romania to Netherlands follows Romania's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: certificat de deces (Starea Civila)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Bucharest can advise. They cannot fund repatriation."
+  - "Romania is a Hague Apostille member (member). This simplifies document authentication."
+  - "All Romanian-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Romania"
+overview_body: "Contact emergency services (112). Death must be registered with the local Serviciul de Stare Civila within 3 days. The Parchet (Prosecutor's Office) takes jurisdiction for violent or suspicious deaths. The certificat de deces is issued in Romanian and requires certified English translation for UK and Irish destinations. Romania is a Hague Apostille Convention member, which simplifies document authentication."
+dest_reception: "The Dutch funeral director takes custody at the cargo terminal. Death is registered with the local gemeente (municipality) in the BRP (Municipal Personal Records Database). The akte van overlijden (Dutch death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Netherlands Embassy in Romania: contact the Dutch Embassy in the country of death for support with documentation."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Certificat de deces (starea civila) obtained from Serviciul de Stare Civila (Civil Status Office)."
+    timing: "Registration must occur promptly. The Parchet (Prosecutor's Office) investigates violent or sudden deaths. Clearance is needed before the body can be released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Netherlands Embassy in Romania."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are in Romanian. Certified English translation is required for UK, Irish, and most Anglophone destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Henri Coanda International Airport Bucharest (OTP) to Amsterdam Schiphol (AMS), Rotterdam The Hague (RTM), or Eindhoven (EIN)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Dutch funeral director takes custody at cargo terminal. Gemeente BRP notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Romania to Netherlands take?"
+    answer: "In a straightforward case, repatriation from Romania to Netherlands takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Romania to Netherlands?"
+    answer: "The core documents are: certificat de deces (Starea Civila), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are in Romanian. Certified English translation is required for UK, Irish, and most Anglophone destinations. Source: FCDO Travel Advice Romania 2025."
+  - question: "Does the British Embassy in Romania help with repatriation?"
+    answer: "The Bucharest-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Netherlands?"
+    answer: "The Dutch funeral director takes custody at the cargo terminal. Death is registered with the local gemeente (municipality) in the BRP (Municipal Personal Records Database). The akte van overlijden (Dutch death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Romania must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Romania to Netherlands instead of repatriating the body?"
+    answer: "Yes. Cremation in Romania is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-romania/"
+      text: "Full Romania repatriation guide"
+    - url: "/guides/death-abroad-romania/"
+      text: "What to do if someone dies in Romania"
+    - url: "/embassy-contacts/romania/"
+      text: "British Embassy in Romania"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/romania-to-united-kingdom/"
+      text: "Repatriation from Romania to the UK"
+    - url: "/routes/romania-to-germany/"
+      text: "Repatriation from Romania to Germany"
+---

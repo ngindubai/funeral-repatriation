@@ -1,0 +1,86 @@
+---
+title: "Poland to Spain: Funeral Repatriation Guidance"
+description: "Death in Poland, coming home to Spain. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "poland"
+dest_key: "spain"
+origin_name: "Poland"
+dest_name: "Spain"
+origin_slug: "poland"
+dest_slug: "spain"
+slug: "poland-to-spain"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-5 weeks"
+embassy_city: "Warsaw"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Poland to Spain: what to expect"
+direct_answer_intro: "Repatriation from Poland to Spain follows Poland's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: akt zgonu (USC, Urzad Stanu Cywilnego)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Warsaw can advise. They cannot fund repatriation."
+  - "Poland is a Hague Apostille member (1992). This simplifies document authentication."
+  - "All Polish-language documentation requires certified English translation where needed."
+overview_heading: "What happens after a death in Poland"
+overview_body: "Contact emergency services (112). Death must be registered with the local USC (Urzad Stanu Cywilnego) within 3 days. The Prokuratura (Prosecutor's Office) takes jurisdiction for violent or suspicious deaths. The akt zgonu is issued in Polish and requires certified English translation for UK and Irish destinations. Poland has been a Hague Apostille Convention member since 1992."
+dest_reception: "The Spanish funeral director takes custody at the cargo terminal. Death is registered with the Registro Civil (Civil Registry, Ministerio de Justicia). The certificado de defuncion (Spanish death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Spanish Embassy in Poland: contact the Spanish Embassy in the country of death for documentation support."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Akt zgonu (usc, urzad stanu cywilnego) obtained from Urzad Stanu Cywilnego (Civil Registry Office)."
+    timing: "Registration must occur promptly. The Prokuratura investigates violent or suspicious deaths. This typically adds 5-10 working days before the body is released."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Spanish Embassy in Poland."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are in Polish. Certified English translation is required for UK, Irish, and Anglophone destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Warsaw Chopin Airport (WAW) or Krakow John Paul II Airport (KRK) to Madrid Barajas (MAD), Barcelona El Prat (BCN), or other major Spanish airport."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Spanish funeral director takes custody at cargo terminal. Registro Civil notified."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Poland to Spain take?"
+    answer: "In a straightforward case, repatriation from Poland to Spain takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-5 weeks."
+  - question: "What documents are required for repatriation from Poland to Spain?"
+    answer: "The core documents are: akt zgonu (USC, Urzad Stanu Cywilnego), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are in Polish. Certified English translation is required for UK, Irish, and Anglophone destinations. Source: FCDO Travel Advice Poland 2025."
+  - question: "Does the British Embassy in Poland help with repatriation?"
+    answer: "The Warsaw-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Spain?"
+    answer: "The Spanish funeral director takes custody at the cargo terminal. Death is registered with the Registro Civil (Civil Registry, Ministerio de Justicia). The certificado de defuncion (Spanish death certificate) is issued. Straightforward cases proceed to funeral arrangements without delay. All documentation from Poland must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Poland to Spain instead of repatriating the body?"
+    answer: "Yes. Cremation in Poland is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-poland/"
+      text: "Full Poland repatriation guide"
+    - url: "/guides/death-abroad-poland/"
+      text: "What to do if someone dies in Poland"
+    - url: "/embassy-contacts/poland/"
+      text: "British Embassy in Poland"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/poland-to-united-kingdom/"
+      text: "Repatriation from Poland to the UK"
+    - url: "/routes/poland-to-germany/"
+      text: "Repatriation from Poland to Germany"
+---
