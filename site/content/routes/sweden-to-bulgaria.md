@@ -1,0 +1,88 @@
+---
+title: "Sweden to Bulgaria: Funeral Repatriation Guidance"
+description: "Death in Sweden, coming home to Bulgaria. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "sweden"
+dest_key: "bulgaria"
+origin_name: "Sweden"
+dest_name: "Bulgaria"
+origin_slug: "sweden"
+dest_slug: "bulgaria"
+slug: "sweden-to-bulgaria"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Stockholm"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Sweden to Bulgaria: what to expect"
+direct_answer_intro: "Repatriation from Sweden to Bulgaria follows Sweden's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: dodsfallsintyg (death certificate from Skatteverket)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Stockholm can advise. They cannot fund repatriation."
+  - "Sweden is a Hague Apostille member (1999). This simplifies document authentication."
+  - "All Swedish-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Sweden"
+overview_body: "Call 112 for emergency services. Death is registered with Skatteverket (the Swedish Tax Agency population register). The official death certificate is the dodsfallsintyg. The Swedish Police Authority investigates violent, suspicious, or unexplained deaths. Sweden is a Hague Apostille Convention member since 1999. The British Embassy in Stockholm can assist British nationals. (FCDO Travel Advice Sweden 2025; Swedish Skatteverket population register procedures 2025.)"
+dest_reception: "The Bulgarian funeral director takes custody at the cargo terminal at Sofia (SOF), Varna (VAR), or Burgas (BOJ). Death is registered with ESGRAON (civil registration system), administered by GRAO (Civil Registration and Administrative Services Directorate). Death certificates are issued in Bulgarian, which uses the Cyrillic script. Bulgaria is a Hague Apostille Convention member since 2001 and an EU member state. Certified translation into Bulgarian is required for all foreign-language documentation."
+dest_consular: "Bulgarian Embassy in Sweden: contact the Bulgarian Embassy for documentation guidance. Hague Apostille applies (Bulgaria joined 2001). Bulgaria is an EU member state. Certified translation into Bulgarian is required."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Dodsfallsintyg (death certificate from skatteverket) obtained from Skatteverket (Swedish Tax Agency), which maintains the population register."
+    timing: "Registration must occur promptly. The Swedish Police Authority investigates violent or suspicious deaths. Body release requires police clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Bulgarian Embassy in Sweden. Hague Apostille applies (Bulgaria joined 2001). Bulgaria is an EU member state. Certified translation into Bulgarian is required."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The dodsfallsintyg is issued in Swedish. Certified translation is required for non-Swedish-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Stockholm Arlanda (ARN), Gothenburg Landvetter (GOT), or other major Swedish airport to Sofia Airport (SOF), Varna International Airport (VAR), or Burgas Airport (BOJ)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Bulgarian funeral director takes custody at cargo terminal at Sofia (SOF), Varna (VAR), or Burgas (BOJ). ESGRAON civil registration authority notified via GRAO. Hague Apostille applies (Bulgaria joined 2001). Death certificate issued in Bulgarian (Cyrillic script)."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sweden to Bulgaria take?"
+    answer: "In a straightforward case, repatriation from Sweden to Bulgaria takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Sweden to Bulgaria?"
+    answer: "The core documents are: dodsfallsintyg (death certificate from Skatteverket), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The dodsfallsintyg is issued in Swedish. Certified translation is required for non-Swedish-speaking destinations. Source: FCDO Travel Advice Sweden 2025."
+  - question: "Does the British Embassy in Sweden help with repatriation?"
+    answer: "The Stockholm-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Bulgaria?"
+    answer: "The Bulgarian funeral director takes custody at the cargo terminal at Sofia (SOF), Varna (VAR), or Burgas (BOJ). Death is registered with ESGRAON (civil registration system), administered by GRAO (Civil Registration and Administrative Services Directorate). Death certificates are issued in Bulgarian, which uses the Cyrillic script. Bulgaria is a Hague Apostille Convention member since 2001 and an EU member state. Certified translation into Bulgarian is required for all foreign-language documentation. All documentation from Sweden must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Sweden to Bulgaria instead of repatriating the body?"
+    answer: "Yes. Cremation in Sweden is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "Do documents need to be translated into Bulgarian for repatriation from Sweden to Bulgaria?"
+    answer: "Yes. Bulgarian death certificates use the Cyrillic script and all official civil registration is conducted in Bulgarian. Documents from Sweden require certified translation into Bulgarian before they are accepted by ESGRAON (the civil registration authority). Bulgaria is a Hague Apostille member since 2001, so Apostille-stamped documents from other Hague members are accepted. Your repatriation specialist will arrange certified translation as part of the documentation process."
+links:
+  upward:
+    - url: "/repatriation-from-sweden/"
+      text: "Full Sweden repatriation guide"
+    - url: "/guides/death-abroad-sweden/"
+      text: "What to do if someone dies in Sweden"
+    - url: "/embassy-contacts/sweden/"
+      text: "British Embassy in Sweden"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sweden-to-united-kingdom/"
+      text: "Repatriation from Sweden to the UK"
+    - url: "/routes/germany-to-bulgaria/"
+      text: "Repatriation from Germany to Bulgaria"
+---

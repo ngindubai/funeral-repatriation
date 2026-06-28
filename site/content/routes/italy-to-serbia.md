@@ -1,0 +1,88 @@
+---
+title: "Italy to Serbia: Funeral Repatriation Guidance"
+description: "Death in Italy, coming home to Serbia. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "italy"
+dest_key: "serbia"
+origin_name: "Italy"
+dest_name: "Serbia"
+origin_slug: "italy"
+dest_slug: "serbia"
+slug: "italy-to-serbia"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Rome"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Italy to Serbia: what to expect"
+direct_answer_intro: "Repatriation from Italy to Serbia follows Italy's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: atto di morte (death certificate from the local Comune)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Rome can advise. They cannot fund repatriation."
+  - "Italy is a Hague Apostille member (1978). This simplifies document authentication."
+  - "All Italian-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Italy"
+overview_body: "Call 112 or 118 for emergency services. Death must be declared within 24 hours at the local Comune (ufficio di stato civile). The official death certificate is the atto di morte. The Procura della Repubblica (public prosecutor) takes jurisdiction for violent, suspicious, or unexplained deaths; a formal nulla osta is required before the body can be moved. Italy is a Hague Apostille Convention member since 1978. The British Embassy in Rome can assist British nationals. (FCDO Travel Advice Italy 2025; Italian Ministry of Interior civil registration procedures 2025.)"
+dest_reception: "The Serbian funeral director takes custody at the cargo terminal at Belgrade Nikola Tesla Airport (BEG). Death is registered with the opstina (municipal) civil status records office (Maticna knjiga umrlih). Death certificates are issued in Serbian in both Latin and Cyrillic scripts. Serbia is a Hague Apostille Convention member since 2001, which simplifies document authentication for Western documentation."
+dest_consular: "Serbian Embassy in Italy: contact the Serbian Embassy for documentation guidance. Hague Apostille applies (Serbia joined 2001 as successor state)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Atto di morte (death certificate from the local comune) obtained from local Comune (ufficio di stato civile, civil status office)."
+    timing: "Registration must occur promptly. The Procura della Repubblica investigates violent or suspicious deaths. A formal nulla osta (judicial clearance) is required before the body can be released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Serbian Embassy in Italy. Hague Apostille applies (2001)."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The atto di morte is issued in Italian. Certified translation is required for non-Italian-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Rome Fiumicino (FCO), Milan Malpensa (MXP), Naples (NAP), or other major Italian airport to Belgrade Nikola Tesla Airport (BEG)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Serbian funeral director takes custody at cargo terminal at Belgrade Nikola Tesla Airport (BEG). Opstina civil status records office (Maticna knjiga umrlih) notified. Hague Apostille applies (Serbia joined 2001). Death certificate issued in Serbian (Latin and Cyrillic scripts)."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Italy to Serbia take?"
+    answer: "In a straightforward case, repatriation from Italy to Serbia takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Italy to Serbia?"
+    answer: "The core documents are: atto di morte (death certificate from the local Comune), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The atto di morte is issued in Italian. Certified translation is required for non-Italian-speaking destinations. Source: FCDO Travel Advice Italy 2025."
+  - question: "Does the British Embassy in Italy help with repatriation?"
+    answer: "The Rome-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Serbia?"
+    answer: "The Serbian funeral director takes custody at the cargo terminal at Belgrade Nikola Tesla Airport (BEG). Death is registered with the opstina (municipal) civil status records office (Maticna knjiga umrlih). Death certificates are issued in Serbian in both Latin and Cyrillic scripts. Serbia is a Hague Apostille Convention member since 2001, which simplifies document authentication for Western documentation. All documentation from Italy must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Italy to Serbia instead of repatriating the body?"
+    answer: "Yes. Cremation in Italy is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "Is Serbia a Hague Apostille member and how does this affect repatriation from Italy?"
+    answer: "Serbia is a Hague Apostille Convention member since 2001 as a successor state of the former Federal Republic of Yugoslavia. Documents issued in Italy, which is also a Hague member, can be authenticated with an Apostille stamp rather than full consular legalisation. Death certificates in Serbia are issued in Serbian in both Latin and Cyrillic scripts. Certified translation of origin-country documents into Serbian may still be required by the receiving opstina."
+links:
+  upward:
+    - url: "/repatriation-from-italy/"
+      text: "Full Italy repatriation guide"
+    - url: "/guides/death-abroad-italy/"
+      text: "What to do if someone dies in Italy"
+    - url: "/embassy-contacts/italy/"
+      text: "British Embassy in Italy"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/italy-to-united-kingdom/"
+      text: "Repatriation from Italy to the UK"
+    - url: "/routes/austria-to-serbia/"
+      text: "Repatriation from Austria to Serbia"
+---

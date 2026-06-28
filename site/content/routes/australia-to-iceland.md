@@ -1,0 +1,88 @@
+---
+title: "Australia to Iceland: Funeral Repatriation Guidance"
+description: "Death in Australia, coming home to Iceland. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "australia"
+dest_key: "iceland"
+origin_name: "Australia"
+dest_name: "Iceland"
+origin_slug: "australia"
+dest_slug: "iceland"
+slug: "australia-to-iceland"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Australia to Iceland: what to expect"
+direct_answer_intro: "Repatriation from Australia to Iceland follows Australia's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (state or territory Births, Deaths and Marriages registry)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Canberra can advise. They cannot fund repatriation."
+  - "Australia is a Hague Apostille member (1995). This simplifies document authentication."
+  - "All English-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death is certified by a registered medical practitioner and registered with the state or territory Births, Deaths and Marriages (BDM) registry. The coroner takes jurisdiction for sudden, violent, or unexplained deaths. Australia is a Hague Apostille Convention member since 1995. Death certificates are issued in English. The British High Commission in Canberra can assist British nationals. (DFAT Smartraveller Australia 2025; FCDO Travel Advice Australia 2025.)"
+dest_reception: "The Icelandic funeral director takes custody at the cargo terminal at Keflavik International Airport (KEF). Death is registered with Thjodskra Islendinga (Registers Iceland, also known as the National Registry). Death certificates are issued in Icelandic. Iceland is a Hague Apostille Convention member since 1996. Certified translation into Icelandic may be required for non-Icelandic documentation."
+dest_consular: "Icelandic Embassy or Ministry for Foreign Affairs in Australia: contact the Icelandic Embassy for documentation guidance. Hague Apostille applies (Iceland joined 1996)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (state or territory births, deaths and marriages registry) obtained from state or territory Births, Deaths and Marriages (BDM) registry."
+    timing: "Registration must occur promptly. The coroner takes jurisdiction for sudden, violent, or unexplained deaths. Body release may be delayed until the coroner authorises it."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Icelandic Embassy or Ministry for Foreign Affairs in Australia. Hague Apostille applies (Iceland joined 1996)."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English. No translation is required for English-speaking destinations. Certified translation may be required for non-English-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER), or other major Australian airport to Keflavik International Airport (KEF)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Icelandic funeral director takes custody at cargo terminal at Keflavik International Airport (KEF). Thjodskra Islendinga (Registers Iceland) notified. Hague Apostille applies (Iceland joined 1996). Death certificate issued in Icelandic."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to Iceland take?"
+    answer: "In a straightforward case, repatriation from Australia to Iceland takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Australia to Iceland?"
+    answer: "The core documents are: death certificate (state or territory Births, Deaths and Marriages registry), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English. No translation is required for English-speaking destinations. Certified translation may be required for non-English-speaking destinations. Source: FCDO Travel Advice Australia 2025."
+  - question: "Does the British Embassy in Australia help with repatriation?"
+    answer: "The Canberra-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Iceland?"
+    answer: "The Icelandic funeral director takes custody at the cargo terminal at Keflavik International Airport (KEF). Death is registered with Thjodskra Islendinga (Registers Iceland, also known as the National Registry). Death certificates are issued in Icelandic. Iceland is a Hague Apostille Convention member since 1996. Certified translation into Icelandic may be required for non-Icelandic documentation. All documentation from Australia must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Australia to Iceland instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "How does the Hague Apostille apply to repatriation from Australia to Iceland?"
+    answer: "Iceland is a Hague Apostille Convention member since 1996. Australia is also a Hague member, so documents can be authenticated with an Apostille stamp on both ends. This removes the need for full consular legalisation and speeds up the documentation process. Death certificates in Iceland are issued in Icelandic by Thjodskra Islendinga (Registers Iceland). Certified translation of Icelandic documents into the destination language is required when used abroad."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/embassy-contacts/australia/"
+      text: "British Embassy in Australia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/germany-to-iceland/"
+      text: "Repatriation from Germany to Iceland"
+---

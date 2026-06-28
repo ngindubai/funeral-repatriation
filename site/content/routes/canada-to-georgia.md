@@ -1,0 +1,88 @@
+---
+title: "Canada to Georgia: Funeral Repatriation Guidance"
+description: "Death in Canada, coming home to Georgia. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "canada"
+dest_key: "georgia"
+origin_name: "Canada"
+dest_name: "Georgia"
+origin_slug: "canada"
+dest_slug: "georgia"
+slug: "canada-to-georgia"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Ottawa"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Canada to Georgia: what to expect"
+direct_answer_intro: "Repatriation from Canada to Georgia follows Canada's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (provincial civil registration authority)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Ottawa can advise. They cannot fund repatriation."
+  - "Canada is a Hague Apostille member (November 2024). This simplifies document authentication."
+  - "All English or French depending on province-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Canada"
+overview_body: "Call 911 for emergency services. Death is certified by a licensed physician and registered with the provincial civil registration authority. The coroner or medical examiner takes jurisdiction for sudden, violent, or unexplained deaths. Canada joined the Hague Apostille Convention in November 2024, simplifying document authentication. Death certificates are issued in English or French depending on the province. The British High Commission in Ottawa can assist British nationals. (Global Affairs Canada consular guidance 2025; Hague Conference Canada profile November 2024.)"
+dest_reception: "The Georgian funeral director takes custody at the cargo terminal at Tbilisi (TBS) or Batumi (BUS). Death is registered with the Public Service Development Agency (PSDA) through its Justice Houses (Iusticiis Sakhli). Death certificates are issued in Georgian, which uses the Mkhedruli (Georgian) script. Georgia is a Hague Apostille Convention member since 2007. Certified translation of all foreign-language documentation into Georgian is required."
+dest_consular: "Georgian Embassy in Canada: contact the Georgian Embassy for documentation guidance. Hague Apostille applies (Georgia joined 2007). Certified translation of Georgian documents is required."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (provincial civil registration authority) obtained from provincial civil registration authority (the civil records office for each province and territory)."
+    timing: "Registration must occur promptly. The coroner or medical examiner investigates sudden, violent, or unexplained deaths. Body release requires coroner authorisation before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Georgian Embassy in Canada. Hague Apostille applies (Georgia joined 2007). Certified translation of Georgian-language documents is required."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English or French depending on the province. Certified translation is required for non-English and non-French-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Toronto Pearson (YYZ), Vancouver (YVR), Montreal (YUL), or other major Canadian airport to Tbilisi International Airport (TBS) or Batumi International Airport (BUS)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Georgian funeral director takes custody at cargo terminal at Tbilisi (TBS) or Batumi (BUS). PSDA Justice House civil registry notified. Hague Apostille applies (Georgia joined 2007). Death certificate issued in Georgian (Mkhedruli script). Certified translation of all foreign documents into Georgian required."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Canada to Georgia take?"
+    answer: "In a straightforward case, repatriation from Canada to Georgia takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Canada to Georgia?"
+    answer: "The core documents are: death certificate (provincial civil registration authority), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English or French depending on the province. Certified translation is required for non-English and non-French-speaking destinations. Source: FCDO Travel Advice Canada 2025."
+  - question: "Does the British Embassy in Canada help with repatriation?"
+    answer: "The Ottawa-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Georgia?"
+    answer: "The Georgian funeral director takes custody at the cargo terminal at Tbilisi (TBS) or Batumi (BUS). Death is registered with the Public Service Development Agency (PSDA) through its Justice Houses (Iusticiis Sakhli). Death certificates are issued in Georgian, which uses the Mkhedruli (Georgian) script. Georgia is a Hague Apostille Convention member since 2007. Certified translation of all foreign-language documentation into Georgian is required. All documentation from Canada must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Canada to Georgia instead of repatriating the body?"
+    answer: "Yes. Cremation in Canada is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "What translation requirements apply when repatriating to Georgia from Canada?"
+    answer: "Georgia is a Hague Apostille member since 2007. However, the Georgian civil registry (PSDA Justice Houses) works exclusively in Georgian, which uses the Mkhedruli (Georgian) script. All documentation from Canada requires certified translation into Georgian before it is accepted. Your repatriation specialist will arrange this translation as part of the documentation process. Hague Apostille stamping applies to origin documents, but Georgian translation remains a firm requirement."
+links:
+  upward:
+    - url: "/repatriation-from-canada/"
+      text: "Full Canada repatriation guide"
+    - url: "/guides/death-abroad-canada/"
+      text: "What to do if someone dies in Canada"
+    - url: "/embassy-contacts/canada/"
+      text: "British Embassy in Canada"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/canada-to-united-kingdom/"
+      text: "Repatriation from Canada to the UK"
+    - url: "/routes/germany-to-georgia/"
+      text: "Repatriation from Germany to Georgia"
+---

@@ -1,0 +1,88 @@
+---
+title: "Norway to Iceland: Funeral Repatriation Guidance"
+description: "Death in Norway, coming home to Iceland. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "norway"
+dest_key: "iceland"
+origin_name: "Norway"
+dest_name: "Iceland"
+origin_slug: "norway"
+dest_slug: "iceland"
+slug: "norway-to-iceland"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Oslo"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Norway to Iceland: what to expect"
+direct_answer_intro: "Repatriation from Norway to Iceland follows Norway's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: dodsattest (death certificate from Folkeregisteret via Skatteetaten)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Oslo can advise. They cannot fund repatriation."
+  - "Norway is a Hague Apostille member (1980). This simplifies document authentication."
+  - "All Norwegian-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Norway"
+overview_body: "Call 112 (police) or 113 (ambulance) for emergency services. Death is registered with Folkeregisteret (Norwegian Population Register) via Skatteetaten. The official death certificate is the dodsattest. The Norwegian Police Service investigates violent, suspicious, or unexplained deaths. Norway is a Hague Apostille Convention member since 1980. The British Embassy in Oslo can assist British nationals. (FCDO Travel Advice Norway 2025; Norwegian Skatteetaten population register procedures 2025.)"
+dest_reception: "The Icelandic funeral director takes custody at the cargo terminal at Keflavik International Airport (KEF). Death is registered with Thjodskra Islendinga (Registers Iceland, also known as the National Registry). Death certificates are issued in Icelandic. Iceland is a Hague Apostille Convention member since 1996. Certified translation into Icelandic may be required for non-Icelandic documentation."
+dest_consular: "Icelandic Embassy or Ministry for Foreign Affairs in Norway: contact the Icelandic Embassy for documentation guidance. Hague Apostille applies (Iceland joined 1996)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Dodsattest (death certificate from folkeregisteret via skatteetaten) obtained from Folkeregisteret (Norwegian Population Register), administered by Skatteetaten (Tax Administration)."
+    timing: "Registration must occur promptly. The Norwegian Police Service investigates violent or suspicious deaths. Body release requires police clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Icelandic Embassy or Ministry for Foreign Affairs in Norway. Hague Apostille applies (Iceland joined 1996)."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The dodsattest is issued in Norwegian. Certified translation is required for non-Norwegian-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Oslo Gardermoen (OSL), Bergen (BGO), or Stavanger (SVG) to Keflavik International Airport (KEF)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Icelandic funeral director takes custody at cargo terminal at Keflavik International Airport (KEF). Thjodskra Islendinga (Registers Iceland) notified. Hague Apostille applies (Iceland joined 1996). Death certificate issued in Icelandic."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Norway to Iceland take?"
+    answer: "In a straightforward case, repatriation from Norway to Iceland takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Norway to Iceland?"
+    answer: "The core documents are: dodsattest (death certificate from Folkeregisteret via Skatteetaten), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The dodsattest is issued in Norwegian. Certified translation is required for non-Norwegian-speaking destinations. Source: FCDO Travel Advice Norway 2025."
+  - question: "Does the British Embassy in Norway help with repatriation?"
+    answer: "The Oslo-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Iceland?"
+    answer: "The Icelandic funeral director takes custody at the cargo terminal at Keflavik International Airport (KEF). Death is registered with Thjodskra Islendinga (Registers Iceland, also known as the National Registry). Death certificates are issued in Icelandic. Iceland is a Hague Apostille Convention member since 1996. Certified translation into Icelandic may be required for non-Icelandic documentation. All documentation from Norway must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Norway to Iceland instead of repatriating the body?"
+    answer: "Yes. Cremation in Norway is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "How does the Hague Apostille apply to repatriation from Norway to Iceland?"
+    answer: "Iceland is a Hague Apostille Convention member since 1996. Norway is also a Hague member, so documents can be authenticated with an Apostille stamp on both ends. This removes the need for full consular legalisation and speeds up the documentation process. Death certificates in Iceland are issued in Icelandic by Thjodskra Islendinga (Registers Iceland). Certified translation of Icelandic documents into the destination language is required when used abroad."
+links:
+  upward:
+    - url: "/repatriation-from-norway/"
+      text: "Full Norway repatriation guide"
+    - url: "/guides/death-abroad-norway/"
+      text: "What to do if someone dies in Norway"
+    - url: "/embassy-contacts/norway/"
+      text: "British Embassy in Norway"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/norway-to-united-kingdom/"
+      text: "Repatriation from Norway to the UK"
+    - url: "/routes/denmark-to-iceland/"
+      text: "Repatriation from Denmark to Iceland"
+---

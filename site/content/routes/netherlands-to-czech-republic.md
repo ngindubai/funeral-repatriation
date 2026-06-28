@@ -1,0 +1,88 @@
+---
+title: "Netherlands to Czech Republic: Funeral Repatriation Guidance"
+description: "Death in Netherlands, coming home to Czech Republic. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "netherlands"
+dest_key: "czech-republic"
+origin_name: "Netherlands"
+dest_name: "Czech Republic"
+origin_slug: "netherlands"
+dest_slug: "czech-republic"
+slug: "netherlands-to-czech-republic"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "The Hague"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Netherlands to Czech Republic: what to expect"
+direct_answer_intro: "Repatriation from Netherlands to Czech Republic follows Netherlands's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: akte van overlijden (death certificate from the local gemeente)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in The Hague can advise. They cannot fund repatriation."
+  - "Netherlands is a Hague Apostille member (1960). This simplifies document authentication."
+  - "All Dutch-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Netherlands"
+overview_body: "Call 112 for emergency services. Death is registered with the local gemeente (municipality) in the BRP (Municipal Personal Records Database). The official death certificate is the akte van overlijden. The Officier van Justitie (public prosecutor) takes jurisdiction for violent, suspicious, or unexplained deaths. The Netherlands is a founding Hague Apostille Convention member since 1960. The British Embassy in The Hague can assist British nationals. (FCDO Travel Advice Netherlands 2025; Dutch Ministry of Justice civil registration procedures 2025.)"
+dest_reception: "The Czech funeral director takes custody at the cargo terminal at Vaclav Havel Airport Prague (PRG). Death is registered with the matrika (civil registry) at the local magistrat or obecni urad (municipal office). Death certificates are issued in Czech. The Czech Republic is a Hague Apostille Convention member since 1998 and an EU member state. Certified translation into Czech is required for all foreign-language documentation."
+dest_consular: "Czech Embassy in Netherlands: contact the Czech Embassy for documentation guidance. Hague Apostille applies (Czech Republic joined 1998). Czech Republic is an EU member state."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Akte van overlijden (death certificate from the local gemeente) obtained from local gemeente (municipality), Basisregistratie Personen (BRP)."
+    timing: "Registration must occur promptly. The Officier van Justitie investigates violent or suspicious deaths. Body release requires formal clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Czech Embassy in Netherlands. Hague Apostille applies (Czech Republic joined 1998). Czech Republic is an EU member state."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The akte van overlijden is issued in Dutch. Certified translation is required for non-Dutch-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Amsterdam Schiphol (AMS), Rotterdam The Hague (RTM), or Eindhoven (EIN) to Vaclav Havel Airport Prague (PRG)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Czech funeral director takes custody at cargo terminal at Vaclav Havel Airport Prague (PRG). Matrika (civil registry) at local magistrat or obecni urad notified. Hague Apostille applies (Czech Republic joined 1998). Death certificate issued in Czech."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Netherlands to Czech Republic take?"
+    answer: "In a straightforward case, repatriation from Netherlands to Czech Republic takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Netherlands to Czech Republic?"
+    answer: "The core documents are: akte van overlijden (death certificate from the local gemeente), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The akte van overlijden is issued in Dutch. Certified translation is required for non-Dutch-speaking destinations. Source: FCDO Travel Advice Netherlands 2025."
+  - question: "Does the British Embassy in Netherlands help with repatriation?"
+    answer: "The The Hague-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Czech Republic?"
+    answer: "The Czech funeral director takes custody at the cargo terminal at Vaclav Havel Airport Prague (PRG). Death is registered with the matrika (civil registry) at the local magistrat or obecni urad (municipal office). Death certificates are issued in Czech. The Czech Republic is a Hague Apostille Convention member since 1998 and an EU member state. Certified translation into Czech is required for all foreign-language documentation. All documentation from Netherlands must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Netherlands to Czech Republic instead of repatriating the body?"
+    answer: "Yes. Cremation in Netherlands is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "How does EU membership simplify repatriation from Netherlands to the Czech Republic?"
+    answer: "The Czech Republic is an EU member state and a Hague Apostille member since 1998. EU membership means Czech funeral directors and civil registry officials are familiar with Western European documentation. Hague Apostille membership removes the need for full consular legalisation of documents. Death certificates are issued in Czech; certified translation of origin-country documents is required. The matrika (civil registry) at the local obecni urad processes incoming repatriations promptly once documentation is in order."
+links:
+  upward:
+    - url: "/repatriation-from-netherlands/"
+      text: "Full Netherlands repatriation guide"
+    - url: "/guides/death-abroad-netherlands/"
+      text: "What to do if someone dies in Netherlands"
+    - url: "/embassy-contacts/netherlands/"
+      text: "British Embassy in Netherlands"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/netherlands-to-united-kingdom/"
+      text: "Repatriation from the Netherlands to the UK"
+    - url: "/routes/austria-to-czech-republic/"
+      text: "Repatriation from Austria to the Czech Republic"
+---

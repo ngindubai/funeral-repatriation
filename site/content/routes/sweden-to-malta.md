@@ -1,0 +1,88 @@
+---
+title: "Sweden to Malta: Funeral Repatriation Guidance"
+description: "Death in Sweden, coming home to Malta. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "sweden"
+dest_key: "malta"
+origin_name: "Sweden"
+dest_name: "Malta"
+origin_slug: "sweden"
+dest_slug: "malta"
+slug: "sweden-to-malta"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Stockholm"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Sweden to Malta: what to expect"
+direct_answer_intro: "Repatriation from Sweden to Malta follows Sweden's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: dodsfallsintyg (death certificate from Skatteverket)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Stockholm can advise. They cannot fund repatriation."
+  - "Sweden is a Hague Apostille member (1999). This simplifies document authentication."
+  - "All Swedish-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Sweden"
+overview_body: "Call 112 for emergency services. Death is registered with Skatteverket (the Swedish Tax Agency population register). The official death certificate is the dodsfallsintyg. The Swedish Police Authority investigates violent, suspicious, or unexplained deaths. Sweden is a Hague Apostille Convention member since 1999. The British Embassy in Stockholm can assist British nationals. (FCDO Travel Advice Sweden 2025; Swedish Skatteverket population register procedures 2025.)"
+dest_reception: "The Maltese funeral director takes custody at the cargo terminal at Malta International Airport (MLA). Death is registered with the Public Registry Division (Identity Malta). Death certificates are issued in Maltese and English. Malta is a Hague Apostille Convention member since 1968 and an EU member state. Most Western documentation is accepted without additional legalisation, and the English-language process makes coordination straightforward."
+dest_consular: "Maltese High Commission or Embassy in Sweden: contact the Maltese Embassy for documentation guidance. Hague Apostille applies (Malta joined 1968). Malta is an EU member state and a Commonwealth member."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Dodsfallsintyg (death certificate from skatteverket) obtained from Skatteverket (Swedish Tax Agency), which maintains the population register."
+    timing: "Registration must occur promptly. The Swedish Police Authority investigates violent or suspicious deaths. Body release requires police clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Maltese High Commission or Embassy in Sweden. Hague Apostille applies (Malta joined 1968). Malta is an EU member state."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The dodsfallsintyg is issued in Swedish. Certified translation is required for non-Swedish-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Stockholm Arlanda (ARN), Gothenburg Landvetter (GOT), or other major Swedish airport to Malta International Airport (MLA)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Maltese funeral director takes custody at cargo terminal at Malta International Airport (MLA). Public Registry Division (Identity Malta) notified. Hague Apostille applies (Malta joined 1968). Death certificate issued in Maltese and English."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Sweden to Malta take?"
+    answer: "In a straightforward case, repatriation from Sweden to Malta takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Sweden to Malta?"
+    answer: "The core documents are: dodsfallsintyg (death certificate from Skatteverket), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The dodsfallsintyg is issued in Swedish. Certified translation is required for non-Swedish-speaking destinations. Source: FCDO Travel Advice Sweden 2025."
+  - question: "Does the British Embassy in Sweden help with repatriation?"
+    answer: "The Stockholm-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Malta?"
+    answer: "The Maltese funeral director takes custody at the cargo terminal at Malta International Airport (MLA). Death is registered with the Public Registry Division (Identity Malta). Death certificates are issued in Maltese and English. Malta is a Hague Apostille Convention member since 1968 and an EU member state. Most Western documentation is accepted without additional legalisation, and the English-language process makes coordination straightforward. All documentation from Sweden must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Sweden to Malta instead of repatriating the body?"
+    answer: "Yes. Cremation in Sweden is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "Why is Malta considered one of the simpler European repatriation destinations from Sweden?"
+    answer: "Malta combines three factors that simplify repatriation. It is a Hague Apostille member since 1968, an EU member state, and a Commonwealth member. Death certificates are issued in both Maltese and English, which reduces translation requirements. The Public Registry Division processes repatriation documentation efficiently. Sweden is also a Hague member, so document authentication is straightforward on both ends."
+links:
+  upward:
+    - url: "/repatriation-from-sweden/"
+      text: "Full Sweden repatriation guide"
+    - url: "/guides/death-abroad-sweden/"
+      text: "What to do if someone dies in Sweden"
+    - url: "/embassy-contacts/sweden/"
+      text: "British Embassy in Sweden"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/sweden-to-united-kingdom/"
+      text: "Repatriation from Sweden to the UK"
+    - url: "/routes/germany-to-malta/"
+      text: "Repatriation from Germany to Malta"
+---

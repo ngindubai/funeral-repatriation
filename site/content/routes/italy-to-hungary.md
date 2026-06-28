@@ -1,0 +1,88 @@
+---
+title: "Italy to Hungary: Funeral Repatriation Guidance"
+description: "Death in Italy, coming home to Hungary. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "italy"
+dest_key: "hungary"
+origin_name: "Italy"
+dest_name: "Hungary"
+origin_slug: "italy"
+dest_slug: "hungary"
+slug: "italy-to-hungary"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Rome"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Italy to Hungary: what to expect"
+direct_answer_intro: "Repatriation from Italy to Hungary follows Italy's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: atto di morte (death certificate from the local Comune)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Rome can advise. They cannot fund repatriation."
+  - "Italy is a Hague Apostille member (1978). This simplifies document authentication."
+  - "All Italian-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Italy"
+overview_body: "Call 112 or 118 for emergency services. Death must be declared within 24 hours at the local Comune (ufficio di stato civile). The official death certificate is the atto di morte. The Procura della Repubblica (public prosecutor) takes jurisdiction for violent, suspicious, or unexplained deaths; a formal nulla osta is required before the body can be moved. Italy is a Hague Apostille Convention member since 1978. The British Embassy in Rome can assist British nationals. (FCDO Travel Advice Italy 2025; Italian Ministry of Interior civil registration procedures 2025.)"
+dest_reception: "The Hungarian funeral director takes custody at the cargo terminal at Budapest Ferenc Liszt International Airport (BUD). Death is registered with the anyakonyvi hivatal (civil registry office), under the Belugyminiszterium (Ministry of Interior). Death certificates are issued in Hungarian. Hungary is a Hague Apostille Convention member since 1973 and an EU member state. Certified translation into Hungarian may be required for origin-country documentation."
+dest_consular: "Hungarian Embassy in Italy: contact the Hungarian Embassy for documentation guidance. Hague Apostille applies (Hungary joined 1973). Hungary is an EU member state."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Atto di morte (death certificate from the local comune) obtained from local Comune (ufficio di stato civile, civil status office)."
+    timing: "Registration must occur promptly. The Procura della Repubblica investigates violent or suspicious deaths. A formal nulla osta (judicial clearance) is required before the body can be released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Hungarian Embassy in Italy. Hague Apostille applies (Hungary joined 1973). Hungary is an EU member state."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The atto di morte is issued in Italian. Certified translation is required for non-Italian-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Rome Fiumicino (FCO), Milan Malpensa (MXP), Naples (NAP), or other major Italian airport to Budapest Ferenc Liszt International Airport (BUD)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Hungarian funeral director takes custody at cargo terminal at Budapest Ferenc Liszt Airport (BUD). Anyakonyvi hivatal (civil registry office) notified. Hague Apostille applies (Hungary joined 1973). Death certificate issued in Hungarian."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Italy to Hungary take?"
+    answer: "In a straightforward case, repatriation from Italy to Hungary takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Italy to Hungary?"
+    answer: "The core documents are: atto di morte (death certificate from the local Comune), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The atto di morte is issued in Italian. Certified translation is required for non-Italian-speaking destinations. Source: FCDO Travel Advice Italy 2025."
+  - question: "Does the British Embassy in Italy help with repatriation?"
+    answer: "The Rome-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Hungary?"
+    answer: "The Hungarian funeral director takes custody at the cargo terminal at Budapest Ferenc Liszt International Airport (BUD). Death is registered with the anyakonyvi hivatal (civil registry office), under the Belugyminiszterium (Ministry of Interior). Death certificates are issued in Hungarian. Hungary is a Hague Apostille Convention member since 1973 and an EU member state. Certified translation into Hungarian may be required for origin-country documentation. All documentation from Italy must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Italy to Hungary instead of repatriating the body?"
+    answer: "Yes. Cremation in Italy is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "How does EU membership affect the repatriation process when bringing someone home to Hungary from Italy?"
+    answer: "Hungary is an EU member state and a Hague Apostille member since 1973. EU membership means Hungarian authorities are familiar with Western European documentation standards. The anyakonyvi hivatal (civil registry office) processes incoming repatriations through established procedures. Death certificates in Hungary are issued in Hungarian; certified translation of origin-country documents into Hungarian is typically required. The process is well-understood by Hungarian funeral directors who handle repatriations regularly."
+links:
+  upward:
+    - url: "/repatriation-from-italy/"
+      text: "Full Italy repatriation guide"
+    - url: "/guides/death-abroad-italy/"
+      text: "What to do if someone dies in Italy"
+    - url: "/embassy-contacts/italy/"
+      text: "British Embassy in Italy"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/italy-to-united-kingdom/"
+      text: "Repatriation from Italy to the UK"
+    - url: "/routes/austria-to-hungary/"
+      text: "Repatriation from Austria to Hungary"
+---

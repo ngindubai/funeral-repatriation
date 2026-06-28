@@ -1,0 +1,88 @@
+---
+title: "Australia to Ukraine: Funeral Repatriation Guidance"
+description: "Death in Australia, coming home to Ukraine. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "australia"
+dest_key: "ukraine"
+origin_name: "Australia"
+dest_name: "Ukraine"
+origin_slug: "australia"
+dest_slug: "ukraine"
+slug: "australia-to-ukraine"
+template_variant: "C"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Canberra"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Australia to Ukraine: what to expect"
+direct_answer_intro: "Repatriation from Australia to Ukraine follows Australia's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (state or territory Births, Deaths and Marriages registry)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Canberra can advise. They cannot fund repatriation."
+  - "Australia is a Hague Apostille member (1995). This simplifies document authentication."
+  - "All English-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Australia"
+overview_body: "Call 000 for emergency services. Death is certified by a registered medical practitioner and registered with the state or territory Births, Deaths and Marriages (BDM) registry. The coroner takes jurisdiction for sudden, violent, or unexplained deaths. Australia is a Hague Apostille Convention member since 1995. Death certificates are issued in English. The British High Commission in Canberra can assist British nationals. (DFAT Smartraveller Australia 2025; FCDO Travel Advice Australia 2025.)"
+dest_reception: "The Ukrainian funeral director takes custody at the cargo terminal. Death is registered with the State Registry of Civil Status Acts (DRACS, Derzhavnyi Reiestr Aktiv Tsyvilnoho Stanu), administered by the Ministry of Justice of Ukraine. Death certificates are issued in Ukrainian. Ukraine is a Hague Apostille Convention member since 2003, which simplifies document authentication. Kyiv Boryspil Airport (KBP) suspended commercial operations in February 2022; repatriation currently routes via Lviv (LWO) or through third countries such as Poland and Romania. Allow significantly extended timelines due to the ongoing armed conflict. FCDO advises against all travel to Ukraine."
+dest_consular: "Ukrainian Embassy or Consulate in Australia: contact the Ukrainian Embassy for documentation guidance. FCDO advises against all travel to Ukraine. Hague Apostille applies (Ukraine joined 2003). Transit routing via Poland or Romania is typically required."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (state or territory births, deaths and marriages registry) obtained from state or territory Births, Deaths and Marriages (BDM) registry."
+    timing: "Registration must occur promptly. The coroner takes jurisdiction for sudden, violent, or unexplained deaths. Body release may be delayed until the coroner authorises it."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Ukrainian Embassy or Consulate in Australia. FCDO advises against all travel to Ukraine. Hague Apostille applies (2003). Engage a specialist with Ukraine repatriation experience."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English. No translation is required for English-speaking destinations. Certified translation may be required for non-English-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER), or other major Australian airport to Lviv Danylo Halytsky Airport (LWO) for limited international services; Kyiv Boryspil International Airport (KBP) suspended commercial operations in February 2022."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Ukrainian funeral director takes custody at cargo terminal. DRACS (State Registry of Civil Status Acts) notified. Hague Apostille applies (Ukraine joined 2003). Allow extended timelines due to ongoing armed conflict. Transit via Poland or Romania typically required."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Australia to Ukraine take?"
+    answer: "In a straightforward case, repatriation from Australia to Ukraine takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Australia to Ukraine?"
+    answer: "The core documents are: death certificate (state or territory Births, Deaths and Marriages registry), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English. No translation is required for English-speaking destinations. Certified translation may be required for non-English-speaking destinations. Source: FCDO Travel Advice Australia 2025."
+  - question: "Does the British Embassy in Australia help with repatriation?"
+    answer: "The Canberra-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Ukraine?"
+    answer: "The Ukrainian funeral director takes custody at the cargo terminal. Death is registered with the State Registry of Civil Status Acts (DRACS, Derzhavnyi Reiestr Aktiv Tsyvilnoho Stanu), administered by the Ministry of Justice of Ukraine. Death certificates are issued in Ukrainian. Ukraine is a Hague Apostille Convention member since 2003, which simplifies document authentication. Kyiv Boryspil Airport (KBP) suspended commercial operations in February 2022; repatriation currently routes via Lviv (LWO) or through third countries such as Poland and Romania. Allow significantly extended timelines due to the ongoing armed conflict. FCDO advises against all travel to Ukraine. All documentation from Australia must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Australia to Ukraine instead of repatriating the body?"
+    answer: "Yes. Cremation in Australia is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "What is the FCDO position on travel to Ukraine and how does it affect repatriation from Australia?"
+    answer: "FCDO advises against all travel to Ukraine since February 2022. Direct flights between most Western countries and Ukraine are suspended. Repatriation to Ukraine is possible but requires routing via third countries such as Poland or Romania. Ukraine is a Hague Apostille member since 2003, which helps with documentation. A specialist with Ukraine repatriation experience is essential for this corridor."
+links:
+  upward:
+    - url: "/repatriation-from-australia/"
+      text: "Full Australia repatriation guide"
+    - url: "/guides/death-abroad-australia/"
+      text: "What to do if someone dies in Australia"
+    - url: "/embassy-contacts/australia/"
+      text: "British Embassy in Australia"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/australia-to-united-kingdom/"
+      text: "Repatriation from Australia to the UK"
+    - url: "/routes/germany-to-ukraine/"
+      text: "Repatriation from Germany to Ukraine"
+---

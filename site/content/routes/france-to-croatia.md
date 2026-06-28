@@ -1,0 +1,88 @@
+---
+title: "France to Croatia: Funeral Repatriation Guidance"
+description: "Death in France, coming home to Croatia. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "france"
+dest_key: "croatia"
+origin_name: "France"
+dest_name: "Croatia"
+origin_slug: "france"
+dest_slug: "croatia"
+slug: "france-to-croatia"
+template_variant: "D"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Paris"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from France to Croatia: what to expect"
+direct_answer_intro: "Repatriation from France to Croatia follows France's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: acte de deces (death certificate from the local mairie)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Paris can advise. They cannot fund repatriation."
+  - "France is a Hague Apostille member (1960). This simplifies document authentication."
+  - "All French-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in France"
+overview_body: "Call 15 (SAMU), 17 (police), or 112 for emergency services. Death is registered at the local mairie (town hall) within 24 hours. The official death certificate is the acte de deces. The Procureur de la Republique (public prosecutor) takes jurisdiction for violent, suspicious, or unexplained deaths. France is a Hague Apostille Convention member since 1960. Death certificates are issued in French. The British Embassy in Paris can assist British nationals. (FCDO Travel Advice France 2025; French Ministry of Justice civil registration procedures 2025.)"
+dest_reception: "The Croatian funeral director takes custody at the cargo terminal at Zagreb (ZAG), Split (SPU), or Dubrovnik (DBV). Death is registered with the maticni ured (civil registry) within the local ured drzavne uprave (state administration office). Death certificates are issued in Croatian. Croatia is a Hague Apostille Convention member since 1991 and an EU member state (since 2013)."
+dest_consular: "Croatian Embassy in France: contact the Croatian Embassy for documentation guidance. Hague Apostille applies (Croatia joined 1991). Croatia is an EU member state."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Acte de deces (death certificate from the local mairie) obtained from local mairie (town hall) or commune civil registration office."
+    timing: "Registration must occur promptly. The Procureur de la Republique takes jurisdiction for violent or suspicious deaths. A judicial investigation can significantly delay body release."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Croatian Embassy in France. Hague Apostille applies (Croatia joined 1991). Croatia is an EU member state."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The acte de deces is issued in French. Certified translation into the destination country's language is required for all non-French-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Paris Charles de Gaulle (CDG), Paris Orly (ORY), Lyon Saint-Exupery (LYS), or other major French airport to Zagreb Franjo Tudman Airport (ZAG), Split Airport (SPU), or Dubrovnik Airport (DBV)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Croatian funeral director takes custody at cargo terminal at Zagreb (ZAG), Split (SPU), or Dubrovnik (DBV). Maticni ured (civil registry) within local ured drzavne uprave notified. Hague Apostille applies (Croatia joined 1991). Death certificate issued in Croatian."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from France to Croatia take?"
+    answer: "In a straightforward case, repatriation from France to Croatia takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from France to Croatia?"
+    answer: "The core documents are: acte de deces (death certificate from the local mairie), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The acte de deces is issued in French. Certified translation into the destination country's language is required for all non-French-speaking destinations. Source: FCDO Travel Advice France 2025."
+  - question: "Does the British Embassy in France help with repatriation?"
+    answer: "The Paris-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Croatia?"
+    answer: "The Croatian funeral director takes custody at the cargo terminal at Zagreb (ZAG), Split (SPU), or Dubrovnik (DBV). Death is registered with the maticni ured (civil registry) within the local ured drzavne uprave (state administration office). Death certificates are issued in Croatian. Croatia is a Hague Apostille Convention member since 1991 and an EU member state (since 2013). All documentation from France must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from France to Croatia instead of repatriating the body?"
+    answer: "Yes. Cremation in France is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "What is the realistic timeline for repatriation from France to Croatia?"
+    answer: "In a straightforward case, repatriation from France to Croatia takes 2-3 weeks standard. Croatia is a Hague Apostille member since 1991 and an EU member state, which means documentation processing is efficient. The maticni ured (civil registry) within the local ured drzavne uprave registers the death promptly on arrival. Delays occur when deaths are sudden or unexplained, requiring Croatian authorities to open an investigation before releasing the body for funeral arrangements."
+links:
+  upward:
+    - url: "/repatriation-from-france/"
+      text: "Full France repatriation guide"
+    - url: "/guides/death-abroad-france/"
+      text: "What to do if someone dies in France"
+    - url: "/embassy-contacts/france/"
+      text: "British Embassy in France"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/france-to-united-kingdom/"
+      text: "Repatriation from France to the UK"
+    - url: "/routes/italy-to-croatia/"
+      text: "Repatriation from Italy to Croatia"
+---

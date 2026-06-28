@@ -1,0 +1,88 @@
+---
+title: "Norway to Malta: Funeral Repatriation Guidance"
+description: "Death in Norway, coming home to Malta. Repatriation takes 2-3 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "norway"
+dest_key: "malta"
+origin_name: "Norway"
+dest_name: "Malta"
+origin_slug: "norway"
+dest_slug: "malta"
+slug: "norway-to-malta"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-3 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "3-6 weeks"
+embassy_city: "Oslo"
+doc_processing_time: "5-10 days"
+date: 2026-06-27
+direct_answer_heading: "Repatriation from Norway to Malta: what to expect"
+direct_answer_intro: "Repatriation from Norway to Malta follows Norway's civil registration and export procedures. Most cases take 2-3 weeks."
+direct_answer_points:
+  - "Key document: dodsattest (death certificate from Folkeregisteret via Skatteetaten)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Oslo can advise. They cannot fund repatriation."
+  - "Norway is a Hague Apostille member (1980). This simplifies document authentication."
+  - "All Norwegian-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Norway"
+overview_body: "Call 112 (police) or 113 (ambulance) for emergency services. Death is registered with Folkeregisteret (Norwegian Population Register) via Skatteetaten. The official death certificate is the dodsattest. The Norwegian Police Service investigates violent, suspicious, or unexplained deaths. Norway is a Hague Apostille Convention member since 1980. The British Embassy in Oslo can assist British nationals. (FCDO Travel Advice Norway 2025; Norwegian Skatteetaten population register procedures 2025.)"
+dest_reception: "The Maltese funeral director takes custody at the cargo terminal at Malta International Airport (MLA). Death is registered with the Public Registry Division (Identity Malta). Death certificates are issued in Maltese and English. Malta is a Hague Apostille Convention member since 1968 and an EU member state. Most Western documentation is accepted without additional legalisation, and the English-language process makes coordination straightforward."
+dest_consular: "Maltese High Commission or Embassy in Norway: contact the Maltese Embassy for documentation guidance. Hague Apostille applies (Malta joined 1968). Malta is an EU member state and a Commonwealth member."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Dodsattest (death certificate from folkeregisteret via skatteetaten) obtained from Folkeregisteret (Norwegian Population Register), administered by Skatteetaten (Tax Administration)."
+    timing: "Registration must occur promptly. The Norwegian Police Service investigates violent or suspicious deaths. Body release requires police clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Maltese High Commission or Embassy in Norway. Hague Apostille applies (Malta joined 1968). Malta is an EU member state."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The dodsattest is issued in Norwegian. Certified translation is required for non-Norwegian-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Oslo Gardermoen (OSL), Bergen (BGO), or Stavanger (SVG) to Malta International Airport (MLA)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Maltese funeral director takes custody at cargo terminal at Malta International Airport (MLA). Public Registry Division (Identity Malta) notified. Hague Apostille applies (Malta joined 1968). Death certificate issued in Maltese and English."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Norway to Malta take?"
+    answer: "In a straightforward case, repatriation from Norway to Malta takes 2-3 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 3-6 weeks."
+  - question: "What documents are required for repatriation from Norway to Malta?"
+    answer: "The core documents are: dodsattest (death certificate from Folkeregisteret via Skatteetaten), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The dodsattest is issued in Norwegian. Certified translation is required for non-Norwegian-speaking destinations. Source: FCDO Travel Advice Norway 2025."
+  - question: "Does the British Embassy in Norway help with repatriation?"
+    answer: "The Oslo-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Malta?"
+    answer: "The Maltese funeral director takes custody at the cargo terminal at Malta International Airport (MLA). Death is registered with the Public Registry Division (Identity Malta). Death certificates are issued in Maltese and English. Malta is a Hague Apostille Convention member since 1968 and an EU member state. Most Western documentation is accepted without additional legalisation, and the English-language process makes coordination straightforward. All documentation from Norway must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Norway to Malta instead of repatriating the body?"
+    answer: "Yes. Cremation in Norway is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+  - question: "Why is Malta considered one of the simpler European repatriation destinations from Norway?"
+    answer: "Malta combines three factors that simplify repatriation. It is a Hague Apostille member since 1968, an EU member state, and a Commonwealth member. Death certificates are issued in both Maltese and English, which reduces translation requirements. The Public Registry Division processes repatriation documentation efficiently. Norway is also a Hague member, so document authentication is straightforward on both ends."
+links:
+  upward:
+    - url: "/repatriation-from-norway/"
+      text: "Full Norway repatriation guide"
+    - url: "/guides/death-abroad-norway/"
+      text: "What to do if someone dies in Norway"
+    - url: "/embassy-contacts/norway/"
+      text: "British Embassy in Norway"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/norway-to-united-kingdom/"
+      text: "Repatriation from Norway to the UK"
+    - url: "/routes/italy-to-malta/"
+      text: "Repatriation from Italy to Malta"
+---
