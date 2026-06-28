@@ -1,0 +1,86 @@
+---
+title: "Canada to Peru: Funeral Repatriation Guidance"
+description: "Death in Canada, coming home to Peru. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "canada"
+dest_key: "peru"
+origin_name: "Canada"
+dest_name: "Peru"
+origin_slug: "canada"
+dest_slug: "peru"
+slug: "canada-to-peru"
+template_variant: "E"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "10-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Ottawa"
+doc_processing_time: "5-10 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Canada to Peru: what to expect"
+direct_answer_intro: "Repatriation from Canada to Peru follows Canada's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: death certificate (provincial civil registration authority)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Ottawa can advise. They cannot fund repatriation."
+  - "Canada is a Hague Apostille member (November 2024). This simplifies document authentication."
+  - "All English or French depending on province-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Canada"
+overview_body: "Call 911 for emergency services. Death is certified by a licensed physician and registered with the provincial civil registration authority. The coroner or medical examiner takes jurisdiction for sudden, violent, or unexplained deaths. Canada joined the Hague Apostille Convention in November 2024, simplifying document authentication. Death certificates are issued in English or French depending on the province. The British High Commission in Ottawa can assist British nationals. (Global Affairs Canada consular guidance 2025; Hague Conference Canada profile November 2024.)"
+dest_reception: "The Peruvian funeral director takes custody at the cargo terminal. Death is registered with RENIEC (Registro Nacional de Identificacion y Estado Civil). The partida de defuncion (death certificate) is issued in Spanish. Peru joined the Hague Apostille Convention in 2011, which simplifies document authentication. Straightforward cases proceed to funeral arrangements without delay."
+dest_consular: "Peruvian Embassy in Canada: contact the Peruvian Ministry of Foreign Affairs consular section for documentation guidance. Hague Apostille applies (Peru joined 2011)."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Death certificate (provincial civil registration authority) obtained from provincial civil registration authority (the civil records office for each province and territory)."
+    timing: "Registration must occur promptly. The coroner or medical examiner investigates sudden, violent, or unexplained deaths. Body release requires coroner's authorisation before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Peruvian Embassy in Canada."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in English or French depending on the province. Certified translation is required for non-English and non-French-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Toronto Pearson (YYZ), Vancouver (YVR), Montreal (YUL), or other major Canadian airport to Lima Jorge Chavez International Airport (LIM)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Peruvian funeral director takes custody at cargo terminal. RENIEC notified. Hague Apostille applies (Peru joined 2011)."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Canada to Peru take?"
+    answer: "In a straightforward case, repatriation from Canada to Peru takes 2-4 weeks. The fastest cases complete in 10-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Canada to Peru?"
+    answer: "The core documents are: death certificate (provincial civil registration authority), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in English or French depending on the province. Certified translation is required for non-English and non-French-speaking destinations. Source: FCDO Travel Advice Canada 2025."
+  - question: "Does the British Embassy in Canada help with repatriation?"
+    answer: "The Ottawa-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Peru?"
+    answer: "The Peruvian funeral director takes custody at the cargo terminal. Death is registered with RENIEC (Registro Nacional de Identificacion y Estado Civil). The partida de defuncion (death certificate) is issued in Spanish. Peru joined the Hague Apostille Convention in 2011, which simplifies document authentication. Straightforward cases proceed to funeral arrangements without delay. All documentation from Canada must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Canada to Peru instead of repatriating the body?"
+    answer: "Yes. Cremation in Canada is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-canada/"
+      text: "Full Canada repatriation guide"
+    - url: "/guides/death-abroad-canada/"
+      text: "What to do if someone dies in Canada"
+    - url: "/embassy-contacts/canada/"
+      text: "British Embassy in Canada"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/canada-to-united-kingdom/"
+      text: "Repatriation from Canada to the UK"
+    - url: "/routes/germany-to-peru/"
+      text: "Repatriation from Germany to Peru"
+---

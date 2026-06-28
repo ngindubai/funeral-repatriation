@@ -1,0 +1,86 @@
+---
+title: "Belgium to Libya: Funeral Repatriation Guidance"
+description: "Death in Belgium, coming home to Libya. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "belgium"
+dest_key: "libya"
+origin_name: "Belgium"
+dest_name: "Libya"
+origin_slug: "belgium"
+dest_slug: "libya"
+slug: "belgium-to-libya"
+template_variant: "A"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Brussels"
+doc_processing_time: "5-10 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Belgium to Libya: what to expect"
+direct_answer_intro: "Repatriation from Belgium to Libya follows Belgium's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: acte de deces or overlijdensakte (death certificate from the local commune or gemeenten)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Brussels can advise. They cannot fund repatriation."
+  - "Belgium is a Hague Apostille member (1975). This simplifies document authentication."
+  - "All French, Dutch, or German depending on region-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Belgium"
+overview_body: "Call 112 (ambulance and fire) or 101 (police) for emergency services. Death is registered with the local commune or gemeenten within 24 hours. The official death certificate is the acte de deces (French and German regions) or overlijdensakte (Flemish region). The Procureur du Roi takes jurisdiction for violent, suspicious, or unexplained deaths. Belgium is a Hague Apostille Convention member since 1975. The British Embassy in Brussels can assist British nationals. (FCDO Travel Advice Belgium 2025; Belgian FPS Home Affairs civil registration procedures 2025.)"
+dest_reception: "The Libyan funeral director takes custody at the cargo terminal. Death is registered with the National Centre for Civil Status (NCCS). Documents are issued in Arabic. Libya is not a Hague Apostille Convention member; full consular authentication is required. The British Embassy in Tripoli suspended operations in 2014; British interests are handled by the FCDO. All foreign-language documents require certified Arabic translation."
+dest_consular: "Libyan Embassy or Consulate in Belgium: contact the Libyan Embassy for documentation guidance. Note: the British Embassy in Tripoli suspended operations in 2014. Libya is not a Hague Apostille member."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Acte de deces or overlijdensakte (death certificate from the local commune or gemeenten) obtained from local commune (French-speaking areas) or gemeenten (Flemish areas), Registre National/Rijksregister."
+    timing: "Registration must occur promptly. The Procureur du Roi investigates violent or suspicious deaths. Formal clearance is required before the body can be released for repatriation."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Libyan Embassy or Consulate in Belgium. FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy Tripoli suspended operations in 2014."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. Death certificates are issued in French, Dutch, or German depending on region. Certified translation is required for non-Belgian language destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Brussels Airport (BRU) or Brussels South Charleroi (CRL) to Mitiga International Airport Tripoli (MJI) or Benina International Airport Benghazi (BEN)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Libyan funeral director takes custody at cargo terminal. NCCS notified. Full consular authentication required."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Belgium to Libya take?"
+    answer: "In a straightforward case, repatriation from Belgium to Libya takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Belgium to Libya?"
+    answer: "The core documents are: acte de deces or overlijdensakte (death certificate from the local commune or gemeenten), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. Death certificates are issued in French, Dutch, or German depending on region. Certified translation is required for non-Belgian language destinations. Source: FCDO Travel Advice Belgium 2025."
+  - question: "Does the British Embassy in Belgium help with repatriation?"
+    answer: "The Brussels-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Libya?"
+    answer: "The Libyan funeral director takes custody at the cargo terminal. Death is registered with the National Centre for Civil Status (NCCS). Documents are issued in Arabic. Libya is not a Hague Apostille Convention member; full consular authentication is required. The British Embassy in Tripoli suspended operations in 2014; British interests are handled by the FCDO. All foreign-language documents require certified Arabic translation. All documentation from Belgium must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Belgium to Libya instead of repatriating the body?"
+    answer: "Yes. Cremation in Belgium is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-belgium/"
+      text: "Full Belgium repatriation guide"
+    - url: "/guides/death-abroad-belgium/"
+      text: "What to do if someone dies in Belgium"
+    - url: "/embassy-contacts/belgium/"
+      text: "British Embassy in Belgium"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/belgium-to-united-kingdom/"
+      text: "Repatriation from Belgium to the UK"
+    - url: "/routes/france-to-libya/"
+      text: "Repatriation from France to Libya"
+---

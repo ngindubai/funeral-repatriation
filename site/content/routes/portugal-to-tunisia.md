@@ -1,0 +1,86 @@
+---
+title: "Portugal to Tunisia: Funeral Repatriation Guidance"
+description: "Death in Portugal, coming home to Tunisia. Repatriation takes 2-4 weeks. Consular support, all documentation handled. Contact us 24/7."
+origin_key: "portugal"
+dest_key: "tunisia"
+origin_name: "Portugal"
+dest_name: "Tunisia"
+origin_slug: "portugal"
+dest_slug: "tunisia"
+slug: "portugal-to-tunisia"
+template_variant: "B"
+route_complexity: "low"
+timeline_avg: "2-4 weeks"
+timeline_fast: "7-14 days"
+timeline_complex: "4-8 weeks"
+embassy_city: "Lisbon"
+doc_processing_time: "5-10 days"
+date: 2026-06-26
+direct_answer_heading: "Repatriation from Portugal to Tunisia: what to expect"
+direct_answer_intro: "Repatriation from Portugal to Tunisia follows Portugal's civil registration and export procedures. Most cases take 2-4 weeks."
+direct_answer_points:
+  - "Key document: certidao de obito (death certificate from the Conservatoria do Registo Civil)"
+  - "Documentation takes 5-10 days. Appoint a specialist on day one."
+  - "British Embassy in Lisbon can advise. They cannot fund repatriation."
+  - "Portugal is a Hague Apostille member (1968). This simplifies document authentication."
+  - "All Portuguese-language documentation requires certified translation where needed."
+overview_heading: "What happens after a death in Portugal"
+overview_body: "Call 112 for emergency services. Death is registered at the local Conservatoria do Registo Civil within 48 hours. The official death certificate is the certidao de obito. The Ministerio Publico (public prosecutor) takes jurisdiction for violent, suspicious, or unexplained deaths. Portugal is a Hague Apostille Convention member since 1968. The British Embassy in Lisbon can assist British nationals. (FCDO Travel Advice Portugal 2025; Portuguese IRN civil registration procedures 2025.)"
+dest_reception: "The Tunisian funeral director takes custody at the cargo terminal. Death is registered with the Bureau de l'Etat Civil (local civil status office). Documents are issued in Arabic, with French also widely used. Tunisia is not a Hague Apostille Convention member; full consular authentication through the Tunisian Embassy or Consulate in the origin country is required. For Muslim remains, Islamic law procedures apply and prompt burial is expected."
+dest_consular: "Tunisian Embassy in Portugal: contact the Tunisian Embassy or Consulate for documentation guidance. Tunisia is not a Hague Apostille member; full consular authentication is required."
+timeline_steps:
+  - step: 1
+    action: "Immediate steps after death. Report to local emergency services and contact a specialist at once."
+    timing: "Day of death. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+    responsible: "Family or travel insurer"
+  - step: 2
+    action: "Death registered. Certidao de obito (death certificate from the conservatoria do registo civil) obtained from Conservatoria do Registo Civil (Civil Registry), Instituto dos Registos e do Notariado (IRN)."
+    timing: "Registration must occur promptly. The Ministerio Publico takes jurisdiction for violent or suspicious deaths. Body release requires formal clearance before repatriation can proceed."
+    responsible: "Local funeral director and civil registry"
+  - step: 3
+    action: "Embassy or consulate notified. Notify the Tunisian Embassy in Portugal."
+    timing: "Simultaneous with Step 1. Embassy provides list of local funeral directors."
+    responsible: "Family or repatriation specialist"
+  - step: 4
+    action: "Embalming and preparation for international air transport."
+    timing: "After body released by authorities. IATA P650 requirements apply."
+    responsible: "Licensed local funeral director"
+  - step: 5
+    action: "All export permits and authenticated documents obtained. The certidao de obito is issued in Portuguese. Certified translation is required for non-Portuguese-speaking destinations."
+    timing: "Allow 5-10 days. Cannot begin until death certificate issued."
+    responsible: "Local funeral director and authorities"
+  - step: 6
+    action: "Air cargo from Lisbon Humberto Delgado (LIS), Porto Francisco Sa Carneiro (OPO), or Faro (FAO) to Tunis-Carthage International Airport (TUN) or Monastir Habib Bourguiba Airport (MIR)."
+    timing: "Once all documentation complete."
+    responsible: "Repatriation specialist and airline cargo"
+  - step: 7
+    action: "Tunisian funeral director takes custody at cargo terminal. Bureau de l'Etat Civil notified. Full consular authentication required."
+    timing: "Within 24-48 hours of arrival."
+    responsible: "Receiving funeral director"
+faqs:
+  - question: "How long does repatriation from Portugal to Tunisia take?"
+    answer: "In a straightforward case, repatriation from Portugal to Tunisia takes 2-4 weeks. The fastest cases complete in 7-14 days. Complex cases involving criminal investigation or remote locations can take 4-8 weeks."
+  - question: "What documents are required for repatriation from Portugal to Tunisia?"
+    answer: "The core documents are: certidao de obito (death certificate from the Conservatoria do Registo Civil), embalming certificate, freedom from infection certificate, passport of the deceased, and all required export permits. The certidao de obito is issued in Portuguese. Certified translation is required for non-Portuguese-speaking destinations. Source: FCDO Travel Advice Portugal 2025."
+  - question: "Does the British Embassy in Portugal help with repatriation?"
+    answer: "The Lisbon-based British embassy or high commission can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
+  - question: "What happens when the body arrives in Tunisia?"
+    answer: "The Tunisian funeral director takes custody at the cargo terminal. Death is registered with the Bureau de l'Etat Civil (local civil status office). Documents are issued in Arabic, with French also widely used. Tunisia is not a Hague Apostille Convention member; full consular authentication through the Tunisian Embassy or Consulate in the origin country is required. For Muslim remains, Islamic law procedures apply and prompt burial is expected. All documentation from Portugal must be in order before the body is released for the funeral."
+  - question: "Can I bring ashes home from Portugal to Tunisia instead of repatriating the body?"
+    answer: "Yes. Cremation in Portugal is an option in most cases, though local authorities must release the body before cremation can take place. You will need the death certificate, cremation certificate, and an export permit for the ashes. Ashes are simpler to transport than a body and carry lower cargo costs. Ask our team for specific guidance on your case."
+links:
+  upward:
+    - url: "/repatriation-from-portugal/"
+      text: "Full Portugal repatriation guide"
+    - url: "/guides/death-abroad-portugal/"
+      text: "What to do if someone dies in Portugal"
+    - url: "/embassy-contacts/portugal/"
+      text: "British Embassy in Portugal"
+    - url: "/contact/"
+      text: "Send an enquiry to our team"
+  sideways:
+    - url: "/routes/portugal-to-united-kingdom/"
+      text: "Repatriation from Portugal to the UK"
+    - url: "/routes/france-to-tunisia/"
+      text: "Repatriation from France to Tunisia"
+---
