@@ -332,4 +332,11 @@ F5, F2, F13 (folded in), and F3 all done and verified. F5+F2+F13 deployed to mas
 - Load-bearing principle written in: flag, never blind-apply; every change cites a named dated source; unverifiable facts are marked "unverified this cycle", never guessed or deleted (CLAUDE.md rule 3). Run on Opus or with a person in the loop.
 - Verified the spec itself is free of em dashes and banned vocabulary.
 
-### Block 4 complete. All four blocks (1 to 4) built, verified, and deployed to master.
+**F6 og:image and Twitter card** (done, verified; caught late)
+- File: `site/layouts/_default/baseof.html`.
+- Honest note: F6 was in the original audit but slipped through the gap between the audit's numbered findings and the four thematic blocks, so it was missed until a completeness re-check at the end of the session. Now done.
+- Added `og:image` (plus width/height and `og:site_name`) and a full Twitter `summary_large_image` card (`twitter:card`, `title`, `description`, `image`), placed outside the `page-meta` block so they render on every page including routes and hubs that override `page-meta`. Previously the site had zero `og:image` or Twitter tags.
+- Image choice: a single fixed, calm, small-file default (`cargo-terminal-night-card.jpg`, 640x448, 30KB) is used site-wide for reliable share rendering, rather than per-page hero images (some of which are multi-MB and would be rejected by social scrapers). Verified it renders with an absolute URL on home, a route, and a hub, and that the file publishes.
+- Optional manual upgrade (not required for correctness): a purpose-built 1200x630 branded share image would render larger and on-brand; it can replace the single default value in `baseof.html` with no other change.
+
+### Blocks 1 to 4 complete (including the late-caught F6), built, verified, and deployed to master.

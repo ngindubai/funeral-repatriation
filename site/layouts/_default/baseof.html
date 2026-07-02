@@ -18,6 +18,21 @@
     <meta property="og:url" content="{{ .Permalink }}">{{ end }}
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 
+    {{/* F6: og:image + Twitter card. Placed outside the page-meta block so it
+         renders on every page, including routes and hubs that override page-meta.
+         A single fixed, calm, small-file default is used site-wide for reliable
+         share rendering; a purpose-built 1200x630 branded image can replace the
+         default value here later without any other change. */}}
+    {{ $ogimg := printf "%s%s" (site.BaseURL | strings.TrimSuffix "/") "/images/cargo-terminal-night-card.jpg" }}
+    <meta property="og:image" content="{{ $ogimg }}">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="448">
+    <meta property="og:site_name" content="{{ .Site.Params.brand }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="twitter:image" content="{{ $ogimg }}">
+
     {{/* ===== SITE-WIDE ORGANIZATION SCHEMA ===== */}}
     <script type="application/ld+json">
     {
