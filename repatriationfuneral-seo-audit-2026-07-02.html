@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit and Improvement Report | Repatriate Service | 2 July 2026</title>
+<style>
+  :root{
+    --ink:#1a2230; --muted:#5b6675; --line:#e3e7ee; --bg:#f6f8fb; --card:#fff;
+    --p1:#b3261e; --p2:#b26b00; --p3:#356859; --good:#1f7a4d; --accent:#1f4e79;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:940px;margin:0 auto;padding:28px 20px 80px}
+  header.top{border-bottom:3px solid var(--accent);padding-bottom:18px;margin-bottom:8px}
+  h1{font-size:1.7rem;margin:0 0 6px}
+  h2{font-size:1.28rem;margin:38px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+  h3{font-size:1.06rem;margin:20px 0 6px}
+  p{margin:8px 0}
+  .sub{color:var(--muted);font-size:.95rem}
+  .lede{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:18px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .stat b{display:block;font-size:1.35rem}
+  .stat span{color:var(--muted);font-size:.85rem}
+  .finding{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:10px;padding:16px 18px;margin:16px 0}
+  .finding.p1{border-left-color:var(--p1)}
+  .finding.p2{border-left-color:var(--p2)}
+  .finding.p3{border-left-color:var(--p3)}
+  .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.03em;
+    padding:3px 8px;border-radius:20px;margin-right:6px;vertical-align:middle;text-transform:uppercase}
+  .tag.p1{background:#fde8e6;color:var(--p1)}
+  .tag.p2{background:#fbeecf;color:var(--p2)}
+  .tag.p3{background:#e4f1eb;color:var(--p3)}
+  .tag.op{background:#efe3fb;color:#5a2d91}
+  .tag.so{background:#e4ecf6;color:var(--accent)}
+  .finding h3{margin-top:4px}
+  .row{margin:9px 0}
+  .row .k{font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+  .trade{background:#fff9f0;border:1px solid #f0e2c8;border-radius:8px;padding:8px 12px;margin-top:8px;font-size:.94rem}
+  code{background:#eef1f6;padding:1px 5px;border-radius:4px;font-size:.85em}
+  .good{border-left-color:var(--good)}
+  ul{margin:8px 0 8px 2px;padding-left:20px}
+  li{margin:4px 0}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:10px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#eef2f7}
+  .foot{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>SEO Audit and Improvement Report</h1>
+  <p class="sub">Repatriate Service (repatriationfuneral.com) &middot; 2 July 2026 &middot; Prepared against the SEO and Search Brief dated 29 June 2026</p>
+</header>
+
+<div class="lede">
+  <p><strong>What this is.</strong> A review of the live site against the six stories in the 29 June brief, grounded in the actual templates and content in this repository. Every item below says what to change, why it helps, and the trade-off if there is one. A companion file, <code>SEO-BUILD-PLAN-2026-07-02.md</code>, turns this into an ordered set of build steps. That plan is written for Sonnet to execute, and it marks the few steps that need Opus.</p>
+  <p><strong>Headline.</strong> The site is already in good shape for the two things the brief says matter most: answering the query directly (every one of the 2,467 route pages carries a direct-answer block and FAQ data) and being readable by AI crawlers (the robots file explicitly welcomes the AI search bots). The work now is quality and trust, not volume: tighten the structured data so it is honest and matches the page, add a real author identity for a life-and-death (YMYL) topic, lift the answer block to the top of every layout, and thicken the thinnest generated prose so it is not exposed to a spam update.</p>
+</div>
+
+<h2>The site in numbers</h2>
+<div class="grid">
+  <div class="stat"><b>2,467</b><span>route pages live (target 38,612)</span></div>
+  <div class="stat"><b>239 / 239 / 278</b><span>country hubs / guides / blog posts</span></div>
+  <div class="stat"><b>100%</b><span>routes with a direct-answer block and FAQ data</span></div>
+  <div class="stat"><b>0</b><span>route pages with a named author in schema</span></div>
+  <div class="stat"><b>695</b><span>routes whose overview text is under 40 words</span></div>
+  <div class="stat"><b>0</b><span>og:image or twitter card tags anywhere</span></div>
+</div>
+
+<h2>What is already right (leave it alone)</h2>
+<div class="finding good">
+  <ul>
+    <li><strong>Direct answers everywhere.</strong> All 2,467 routes carry <code>direct_answer_intro</code>, <code>direct_answer_points</code>, <code>faqs</code> and a step timeline. This is exactly the answer-first structure Story 2 says AI Overviews pull from.</li>
+    <li><strong>AI crawlers are welcomed.</strong> <code>robots.txt</code> explicitly allows OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Google-Extended and GPTBot. Nothing to do here.</li>
+    <li><strong>Schema coverage.</strong> Route pages carry Breadcrumb, Service and FAQ schema. Blog posts and country hubs carry Article schema. Home carries Organization.</li>
+    <li><strong>Layout rotation is balanced.</strong> The A to E variants are spread evenly (roughly 490 each), so no run of identical pages.</li>
+    <li><strong>Titles and descriptions are mostly in range.</strong> Only 3 route title fields exceed 60 characters and only 33 descriptions exceed 155.</li>
+  </ul>
+</div>
+
+<h2>How to read the findings</h2>
+<div class="legend">
+  <span><span class="tag p1">P1</span> do first, high value</span>
+  <span><span class="tag p2">P2</span> worthwhile, lower urgency</span>
+  <span><span class="tag p3">P3</span> monitor or optional</span>
+  <span><span class="tag so">Sonnet</span> mechanical, safe for Sonnet</span>
+  <span><span class="tag op">Opus</span> needs judgement, use Opus</span>
+</div>
+
+<!-- F1 -->
+<h2>Findings and improvements</h2>
+
+<div class="finding p1">
+  <span class="tag p1">P1</span><span class="tag so">Sonnet</span>
+  <h3>F1. Move the direct-answer block to the top of every layout</h3>
+  <div class="row"><span class="k">What</span><p>Variants A and C already place the answer block first. Variants B, D and E do not: B and D lead with the helpline strip, then the overview paragraph, then the answer. E leads with the overview. Roughly 1,478 pages push the direct answer below other content.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 2 is explicit: pages cited in AI Overviews answer the query directly and completely near the top, and the same brief-answer structure wins featured snippets. Making the answer block the first section after the hero on all five variants gives every page its best shot at citation.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> CLAUDE.md mandates layout rotation so no two consecutive pages look identical. Moving the answer block up narrows that variety a little. Mitigation: keep the answer block first on all variants, but leave the ordering of the sections beneath it varied per variant. Variety is preserved where it matters (the body), consistency is added where it pays (the answer).</p></div>
+</div>
+
+<div class="finding p1">
+  <span class="tag p1">P1</span><span class="tag so">Sonnet</span><span class="tag op">Opus for new answer text</span>
+  <h3>F2. Fix the FAQ schema on country hubs so it matches the page</h3>
+  <div class="row"><span class="k">What</span><p>On the 239 country hubs, the visible FAQ answers are real and specific (timeline, documents, ashes). But the FAQ JSON-LD writes the same boilerplate sentence as the answer to every question: <em>"For specific guidance on this question, contact our specialist team..."</em> The structured data does not match what the reader sees.</p></div>
+  <div class="row"><span class="k">Why</span><p>Google's structured-data policy requires the marked-up answer to be the answer shown on the page. A mismatch across 239 pages is a content-mismatch risk and can trigger a manual action, which on a YMYL site is a real cost. Right now the markup is also low value because it repeats one non-answer.</p></div>
+  <div class="row"><span class="k">Fix</span><p>Make the schema answers mirror the visible answers (reuse the same template logic for both). For the questions beyond the first four, either write real answers or drop those questions from the markup.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> Google narrowed FAQ rich results to government and health sites in 2023, so the visible SERP gain is small. The reason to do this is risk removal and honesty of the markup, not a rich-result win. Writing genuine answers for the trailing questions needs Opus (they must be factually correct for a YMYL topic).</p></div>
+</div>
+
+<div class="finding p1">
+  <span class="tag p1">P1</span><span class="tag op">Opus</span>
+  <h3>F3. Give the site a real author identity (E-E-A-T)</h3>
+  <div class="row"><span class="k">What</span><p>No route page names an author in schema. Blog posts list the author as the Organization, not a person. Country hubs use a generic "Senior Repatriation Consultant". The four personas defined in CLAUDE.md (James Whitfield, Dr Amara Osei, Claire Sutton, Thomas Anand) are never wired into any byline or Person schema.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 2 lists entity authority as a thing that does matter, and this is a death, legal and consular topic where Google weighs expertise and trust heavily. A consistent, named, credentialed author with a real bio page is one of the stronger trust signals available.</p></div>
+  <div class="trade"><strong>Trade-off, stated plainly.</strong> The personas are not verifiable real people. Attaching invented credentials to YMYL content is itself a trust risk, and Story 3 warns about inauthentic authority signals. So this is a decision for Gareth, not an automatic change. Two honest options: <strong>(a)</strong> stand the personas up properly with genuine author bio pages that describe real experience, keep them consistent everywhere, and link the Person schema to those pages (a <code>sameAs</code> / <code>url</code>), which makes them real entities rather than empty names; or <strong>(b)</strong> keep the Organization as the author and instead invest the trust signal in the existing "Reviewed by the editorial team" credit plus the methodology page. Option (a) is stronger if the bios are truthful. It should not be done by inventing qualifications. This step is Opus because it is a judgement call plus careful authoring.</p></div>
+</div>
+
+<div class="finding p1">
+  <span class="tag p1">P1</span><span class="tag op">Opus</span>
+  <h3>F4. Thicken and grammar-fix the thinnest route prose</h3>
+  <div class="row"><span class="k">What</span><p>The overview text on routes has a median of 48 words, and 695 pages sit under 40 words. Some of it reads as machine-joined fragments, for example: <em>"The Local authorities takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."</em> The prose lives in front-matter fields, so the fix is in the generators and a backfill, not hand-editing 2,467 files.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 1 names the exact vulnerability: the spam update targets thin auto-generated pages that lack original information. Every other page element is strong, so the weakest link is this short, sometimes ungrammatical prose. Fixing it lifts quality and reduces spam-update exposure at the same time.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> This is the largest single job and touches many pages, so it should run in batches through the existing QA gate. It must stay inside the YMYL rules: no invented facts, every claim source-able, sentence rhythm varied, banned words avoided. That is why it is Opus, not Sonnet. Do the 695 shortest first for the biggest risk reduction per hour.</p></div>
+</div>
+
+<div class="finding p2">
+  <span class="tag p2">P2</span><span class="tag so">Sonnet</span>
+  <h3>F5. Remove the duplicate Organization schema on route pages</h3>
+  <div class="row"><span class="k">What</span><p>Route pages emit Organization schema twice: once site-wide from <code>baseof.html</code> (the fuller version, with opening hours) and again, thinner, inside <code>routes/single.html</code>.</p></div>
+  <div class="row"><span class="k">Why</span><p>One clean Organization block per page is correct. Remove the thinner duplicate in the route template and keep the site-wide one.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> None. Pure clean-up.</div>
+</div>
+
+<div class="finding p2">
+  <span class="tag p2">P2</span><span class="tag so">Sonnet</span>
+  <h3>F6. Add og:image and a Twitter card</h3>
+  <div class="row"><span class="k">What</span><p>No page carries an <code>og:image</code> or any <code>twitter:card</code> tag. Add a default share image site-wide and <code>twitter:card = summary_large_image</code> in <code>baseof.html</code>.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 4 notes traffic is fragmenting to social and chat surfaces. A share image controls how the page looks when a grieving family sends a link to a relative, and some AI and social surfaces read these tags.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> Needs one image asset chosen with care: calm and brand-appropriate, never a distressing photo. That single choice is the only non-mechanical part; the template edit is Sonnet.</div>
+</div>
+
+<div class="finding p2">
+  <span class="tag p2">P2</span><span class="tag so">Sonnet</span>
+  <h3>F7. Link country hubs down to their route pages</h3>
+  <div class="row"><span class="k">What</span><p>Routes link up to their country hub, but hubs do not link down to any route pages. With 2,467 routes, most are reached only through the sitemap and sideways route-to-route links.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 5 points at silo structure as a foundation, and Story 6 flags that the indexing report is lagging, so crawl paths matter more than usual. A "Routes from {country}" block on each hub deepens the silo and gives crawlers a clean path into the route matrix.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> Adds link volume to each hub. Keep it scoped, for example the main corridors plus a link to the routes index, rather than listing every destination.</div>
+</div>
+
+<div class="finding p2">
+  <span class="tag p2">P2</span><span class="tag so">Sonnet</span>
+  <h3>F8. Shorten the rendered title tag</h3>
+  <div class="row"><span class="k">What</span><p>The title field is fine, but the template appends <code>| Repatriate Service</code>. So the actual tag reads, for example, <em>"Afghanistan to UK Repatriation: Guidance for Families | Repatriate Service"</em> at about 73 characters. The brand suffix is past the point Google truncates.</p></div>
+  <div class="row"><span class="k">Why</span><p>Story 4 ties title and meta quality to the traffic-to-ranking conversion gap. Dropping or shortening the suffix on route and hub pages keeps the useful words inside the visible part of the SERP.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> Slightly less brand reinforcement in the tag, but it truncates anyway, so little is lost. Consider dropping the suffix on routes and hubs while keeping it on the home and top pages.</div>
+</div>
+
+<div class="finding p3">
+  <span class="tag p3">P3</span><span class="tag so">Sonnet</span>
+  <h3>F9. Trim the 33 over-length descriptions</h3>
+  <div class="row"><span class="k">What</span><p>33 route descriptions exceed 155 characters and will truncate. Trim them so the call to action survives.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> None. Small tidy-up.</div>
+</div>
+
+<div class="finding p3">
+  <span class="tag p3">P3</span><span class="tag so">no code change</span>
+  <h3>F10. Keep llms.txt, but do not invest further in it</h3>
+  <div class="row"><span class="k">What</span><p>The site ships <code>llms.txt</code> and <code>llms-full.txt</code>. Story 2 states plainly that Google does not read these for AI ranking, and that AI-specific schema and content chunking are not needed.</p></div>
+  <div class="row"><span class="k">Why keep them</span><p>They still help retrieval by ChatGPT, Perplexity and Claude, and they cost nothing to keep. The point is simply not to spend more time on llms-specific or AI-specific markup tactics that Google has said it ignores.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> None. This is a "stop here" note, not a task.</div>
+</div>
+
+<div class="finding p3">
+  <span class="tag p3">P3</span><span class="tag so">governance note</span>
+  <h3>F11. Do not buy brand mentions or use PBNs</h3>
+  <div class="row"><span class="k">What</span><p>Story 3 covers vendors selling paid brand placements on low-quality domains to influence AI citations. Google has flagged this as a violation and it does not work on Google's current AI Overview system.</p></div>
+  <div class="row"><span class="k">Action</span><p>Record it as a do-not in MEMORY.md so no future run is tempted. The correct path is the organic rank plus direct-answer structure this audit already pushes.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> None. Guard-rail only.</div>
+</div>
+
+<div class="finding p3">
+  <span class="tag p3">P3</span><span class="tag op">Opus for the fact loop</span>
+  <h3>F12. Spec a quarterly fact-refresh pass</h3>
+  <div class="row"><span class="k">What</span><p>Stories 4 and 5 both point at agent-driven content refresh. Regulatory facts on this site go stale: FCDO phone numbers, embassy operating status (the Afghanistan page already notes the Kabul closure), documentation timings.</p></div>
+  <div class="row"><span class="k">Action</span><p>Write a short spec for a quarterly pass that re-checks the dated facts against named sources and flags changes. Do not automate the edits blind; a person or Opus should confirm each factual change because it is YMYL.</p></div>
+  <div class="trade"><strong>Trade-off.</strong> Ongoing effort, but it protects accuracy and freshness, both of which feed the trust signals in Story 2.</div>
+</div>
+
+<h2>Flagged separately: a content-rule conflict, not an SEO fix</h2>
+<div class="finding p1">
+  <span class="tag p1">Decision needed</span><span class="tag so">Sonnet to action if approved</span>
+  <h3>F13. Country hubs show prices, which conflicts with the stated no-prices rule</h3>
+  <div class="row"><span class="k">What</span><p>The 239 country hubs render price ranges in several places: the hero "Typical cost" stat, the answer-brief intro and stat, a cost-total banner, a full cost section, two of the FAQ answers, and the ashes cost cards. CLAUDE.md content rule 9 says: "No prices. Never state costs or price ranges, not even 'from X'. Direct to the contact form."</p></div>
+  <div class="row"><span class="k">Why flagged, not fixed</span><p>Following the rule that says to flag uncertainty rather than guess: this may be a deliberate exception for hubs, or it may be drift from the rule. Route pages hold to the no-prices rule; the hubs do not. This needs Gareth's call before any change, because removing the cost content changes the page substantially.</p></div>
+  <div class="trade"><strong>Trade-off either way.</strong> Keeping prices risks a family being quoted a number that does not fit their case, and it breaks a stated site rule. Removing prices loses a genuinely useful signal that some searchers want. If removed, replace with a qualitative "what drives the cost" explanation and a route to the contact form, so the section still answers the question without stating a figure.</p></div>
+</div>
+
+<h2>Suggested order</h2>
+<table>
+  <tr><th>Wave</th><th>Items</th><th>Why this order</th></tr>
+  <tr><td>1. Safe mechanical wins</td><td>F1, F5, F6, F8, F9</td><td>Template-only, low risk, quick. Improves AI-Overview positioning, social sharing and SERP display in one deploy.</td></tr>
+  <tr><td>2. Structured-data honesty</td><td>F2, F7</td><td>Removes the schema-mismatch risk and strengthens the silo. F2 needs Opus for any new answer text.</td></tr>
+  <tr><td>3. Trust and quality (Opus)</td><td>F3, F4</td><td>The two judgement-heavy jobs: author identity and thin-prose repair. Highest long-term value, highest care needed.</td></tr>
+  <tr><td>4. Decision and governance</td><td>F13, F11, F10, F12</td><td>Gareth's call on prices; guard-rails and the refresh spec.</td></tr>
+</table>
+
+<div class="foot">
+  <p>Prepared 2 July 2026 against the SEO and Search Brief of 29 June 2026. Companion execution file: <code>SEO-BUILD-PLAN-2026-07-02.md</code>. Figures were measured directly from the repository at time of writing (2,467 route files, 239 hubs, 278 blog posts). No content was changed to produce this report.</p>
+</div>
+
+</div>
+</body>
+</html>
