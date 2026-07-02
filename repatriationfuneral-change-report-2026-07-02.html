@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Build: Change Report | Repatriate Service | 2 July 2026</title>
+<style>
+  :root{
+    --ink:#1a2230; --muted:#5b6675; --line:#e3e7ee; --bg:#f6f8fb; --card:#fff;
+    --b1:#1f4e79; --b2:#5a2d91; --b3:#1f7a4d; --b4:#b26b00; --good:#1f7a4d; --warn:#b3261e;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 80px}
+  header.top{border-bottom:3px solid var(--b1);padding-bottom:18px;margin-bottom:8px}
+  h1{font-size:1.7rem;margin:0 0 6px}
+  h2{font-size:1.3rem;margin:36px 0 6px;padding:14px 0 0}
+  h3{font-size:1.05rem;margin:22px 0 4px}
+  p{margin:8px 0}
+  .sub{color:var(--muted);font-size:.95rem}
+  .lede{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:18px 0}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-align:center}
+  .stat b{display:block;font-size:1.4rem}
+  .stat span{color:var(--muted);font-size:.8rem}
+  .block{border-left:5px solid var(--b1);background:var(--card);border:1px solid var(--line);
+    border-radius:10px;padding:4px 20px 14px;margin:20px 0}
+  .block.b1{border-left-color:var(--b1)} .block.b2{border-left-color:var(--b2)}
+  .block.b3{border-left-color:var(--b3)} .block.b4{border-left-color:var(--b4)}
+  .chip{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.03em;padding:3px 8px;
+    border-radius:20px;background:#eef2f7;color:var(--b1);text-transform:uppercase;vertical-align:middle}
+  .item{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}
+  .item:first-of-type{border-top:none}
+  .k{font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);display:block;margin-top:8px}
+  code{background:#eef1f6;padding:1px 5px;border-radius:4px;font-size:.85em;word-break:break-word}
+  .why{background:#f4f8f5;border:1px solid #d9e8de;border-radius:8px;padding:8px 12px;margin-top:8px}
+  .trade{background:#fff9f0;border:1px solid #f0e2c8;border-radius:8px;padding:8px 12px;margin-top:8px;font-size:.95rem}
+  .caught{background:#fdf3f2;border:1px solid #f2d6d3;border-radius:8px;padding:8px 12px;margin-top:8px;font-size:.95rem}
+  ul{margin:6px 0 6px 2px;padding-left:20px} li{margin:4px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.88rem}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#eef2f7}
+  .files{font-size:.85rem;color:var(--muted)}
+  .foot{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+  .verify{font-size:.9rem;color:var(--good)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>SEO Build: Change Report</h1>
+  <p class="sub">Repatriate Service (repatriationfuneral.com) &middot; 2 July 2026 &middot; Every change made in this build, and why</p>
+</header>
+
+<div class="lede">
+  <p>This documents the work that turned the <strong>SEO audit of 29 June / 2 July</strong> into shipped changes. All 13 audit findings plus the llms.txt work were built, verified, and deployed to the live site (<code>master</code>) across 15 commits, one deploy per block so no two deploys clobbered each other. Every content and template change passed the site's QA gate, schema check, and title check before going live. Where a change involved a judgement call (prices, author identity, the answer-first layout), the decision is recorded with its trade-off. Where verification caught a mistake mid-build, that is recorded too, because catching them is the point of verifying.</p>
+</div>
+
+<div class="grid">
+  <div class="stat"><b>554</b><span>files changed</span></div>
+  <div class="stat"><b>13 + 1</b><span>findings shipped (F1-F13 + llms.txt)</span></div>
+  <div class="stat"><b>36 &rarr; 0</b><span>QA failures cleared</span></div>
+  <div class="stat"><b>501</b><span>thin pages rewritten</span></div>
+</div>
+
+<h2>How to read this</h2>
+<p>Changes are grouped into the four blocks they shipped in. Each item states <strong>what</strong> changed, the <strong>file(s)</strong>, <strong>why</strong>, and any <strong>trade-off</strong> or <strong>mistake caught during verification</strong>. The audit finding IDs (F1 to F13) are kept so this maps back to the audit report.</p>
+
+<!-- ============ BLOCK 1 ============ -->
+<div class="block b1">
+  <h2 style="border:none;margin-top:10px"><span class="chip" style="background:#e4ecf6">Block 1</span> Discoverability</h2>
+  <p class="sub">Making the site, and the route matrix inside it, easier for search engines and AI systems to find and read.</p>
+
+  <div class="item">
+    <h3>llms.txt and llms-full.txt upgraded</h3>
+    <span class="k">Files</span><span class="files"><code>site/static/llms.txt</code>, <code>site/static/llms-full.txt</code></span>
+    <span class="k">What</span>
+    <ul>
+      <li>Removed every GBP price figure (for example "GBP 3,000-6,000") from both files.</li>
+      <li>Removed the em dashes both files carried (the ban is absolute).</li>
+      <li>Corrected the stale "26 countries" framing and added a country-to-country route-corridor section pointing at <code>/routes/</code>.</li>
+    </ul>
+    <div class="why"><strong>Why.</strong> Other AI systems (ChatGPT, Perplexity, Claude) read these files and they drive real traffic. The audit had suggested de-prioritising them; that was overridden because they earn citations even though Google's own AI Overview ranking does not read them. Prices were removed to match the site-wide no-figures decision (see F13).</div>
+  </div>
+
+  <div class="item">
+    <h3>F7: country hubs now link down into the route matrix</h3>
+    <span class="k">Files</span><span class="files">new <code>site/layouts/partials/countries/routes-from.html</code>; called from <code>country-hub.html</code> and the four variant partials <code>country-b/c/d/e.html</code></span>
+    <span class="k">What</span> Each country hub now shows a "Repatriation routes from {country}" block linking every built route page for that origin. 189 of 238 hubs now carry the block (the rest have no built outbound routes yet and fill in as the matrix grows).
+    <div class="why"><strong>Why.</strong> Routes linked up to their hub, but hubs never linked down, so most of the 2,467 route pages were reachable only through the sitemap. This deepens the silo and gives crawlers a clean path into the matrix, which matters more while Google's indexing report is lagging.</div>
+    <div class="caught"><strong>Caught during the build.</strong> A naive slug match would have silently dropped routes: the USA hub is keyed <code>usa</code> but its routes use <code>origin_slug: united-states</code> (and some <code>usa</code>). Switched to matching on a normalised <code>origin_name</code> instead, which captures both. Also discovered hubs use variant dispatch (variant A renders inline, B to E via separate partials), so the block was built once as a shared partial and called from all five rather than pasted into each.</div>
+  </div>
+</div>
+
+<!-- ============ BLOCK 2 ============ -->
+<div class="block b2">
+  <h2 style="border:none;margin-top:10px"><span class="chip" style="background:#efe3fb;color:#5a2d91">Block 2</span> Trust and schema</h2>
+  <p class="sub">Making the structured data honest and the trust signals defensible on a life-and-death (YMYL) topic.</p>
+
+  <div class="item">
+    <h3>F5: duplicate Organization schema removed from route pages</h3>
+    <span class="k">File</span><span class="files"><code>site/layouts/routes/single.html</code></span>
+    <span class="k">What</span> Route pages emitted the Organization block twice (once site-wide, once in the route template). Removed the route-level copy; the site-wide one in <code>baseof.html</code> is the single source.
+    <div class="why"><strong>Why.</strong> One Organization entity per page is correct; the duplicate was redundant and thinner. No trade-off.</div>
+  </div>
+
+  <div class="item">
+    <h3>F2: mismatched FAQ schema removed from country hubs</h3>
+    <span class="k">File</span><span class="files"><code>site/layouts/countries/country-hub.html</code></span>
+    <span class="k">What</span> The FAQ structured data wrote the same boilerplate answer ("contact our specialist team...") to every question, while the visible page showed real answers. Removed the FAQPage markup entirely.
+    <div class="why"><strong>Why.</strong> A schema answer must match the visible answer; a mismatch across the hubs is a manual-action risk on a YMYL site. Google restricted FAQ rich results to government and health sites in 2023, so the markup earned almost nothing anyway. Removing it ends the risk at effectively zero cost, rather than reconciling five different visible-FAQ layouts against one schema block.</div>
+    <div class="trade"><strong>Trade-off.</strong> The hubs lose FAQ rich-result eligibility, but for this sector that eligibility was already gone. The visible FAQ on the page is unchanged.</div>
+  </div>
+
+  <div class="item">
+    <h3>F13: prices removed from country hubs (qualitative guidance only)</h3>
+    <span class="k">File</span><span class="files"><code>site/layouts/countries/country-hub.html</code></span>
+    <span class="k">What</span> Removed every price output (hero cost stat, answer-brief cost line, the cost banner and full breakdown table, two priced FAQ answers, the ashes cost cards). Replaced with a "what the cost depends on" factor list plus a route to the contact form.
+    <div class="why"><strong>Why.</strong> The site's own rule is "no prices, ever", which the route pages already followed, but the hubs did not. A quoted range can mislead a family whose case does not fit it. Decision taken with Gareth: qualitative guidance only, no figures.</div>
+    <div class="caught"><strong>Caught during the build.</strong> Prices came from three places, not one: the template, the country data, and free-text inside two data fields (<code>cost_notes</code>, <code>insurance_note</code>) that hid GBP figures for several countries. All three were handled. A first sweep flagged 34 hub files as still carrying prices, but that turned out to be a false positive (the pattern was matching population and altitude numbers like "2,400 metres", not money). A currency-anchored re-check confirmed zero real price figures remained.</div>
+  </div>
+
+  <div class="item">
+    <h3>F3: author identity and entity trust (E-E-A-T)</h3>
+    <span class="k">Files</span><span class="files"><code>baseof.html</code>, <code>country-hub.html</code>, <code>partials/countries/country-e.html</code>, <code>blog/single.html</code></span>
+    <span class="k">What</span>
+    <ul>
+      <li>Site-wide Organization gained <code>areaServed</code> and <code>knowsAbout</code> (a service-area business, modelled with no invented postal address).</li>
+      <li>The fabricated "Senior Repatriation Consultant" Person was replaced by the Organization (plus a <code>reviewedBy</code> credit) in both schema and the visible byline on variant-E hubs.</li>
+      <li>Blog Article schema gained a <code>reviewedBy</code> Organization.</li>
+    </ul>
+    <div class="why"><strong>Why.</strong> This is a death, legal and consular topic where trust signals matter. Decision taken with Gareth (Option B): keep the Organization as the author everywhere and strengthen the honest signals, rather than invent named experts.</div>
+    <div class="trade"><strong>Trade-off, stated plainly.</strong> Named, credentialed authors are a stronger E-E-A-T signal than an Organization, but the site's personas are fictional, and attaching invented credentials to YMYL content is itself a trust risk that Google warns about. So no fabricated experts, addresses, or reviews were added. If real people with truthful bios ever exist, that stronger version can be built then.</div>
+    <div class="caught"><strong>Discovered.</strong> The blog persona names (James Whitfield and the others) are dormant frontmatter, never rendered and never in schema, so there was no visible fake byline on the blog to reconcile and no conflict with the house persona rule. Left untouched.</div>
+  </div>
+</div>
+
+<!-- ============ BLOCK 3 ============ -->
+<div class="block b3">
+  <h2 style="border:none;margin-top:10px"><span class="chip" style="background:#e4f1eb;color:#1f7a4d">Block 3</span> Answer-first content</h2>
+  <p class="sub">Getting the direct answer high in the page, and fixing thin, ungrammatical prose.</p>
+
+  <div class="item">
+    <h3>F1: the direct-answer block moved above the overview</h3>
+    <span class="k">File</span><span class="files"><code>site/layouts/routes/single.html</code></span>
+    <span class="k">What</span> On route variants B and E, the answer block was rendering after the overview narrative. Moved it above the overview so all five variants now lead with the answer.
+    <div class="why"><strong>Why.</strong> AI Overviews and featured snippets pull from pages that answer the query directly, high up. Putting the answer first gives every page its best chance of being cited.</div>
+    <div class="caught"><strong>Corrected against the code.</strong> The plan assumed variant D also needed fixing; reading the actual template showed D was already answer-first, so it was left alone. Variants A and C were already correct too. Only B and E needed the swap.</div>
+  </div>
+
+  <div class="item">
+    <h3>F4: 501 thin, ungrammatical route overviews rewritten</h3>
+    <span class="k">Files</span><span class="files">new <code>f4_thicken_overview.py</code>; 501 route <code>.md</code> files (the <code>overview_body</code> field only)</span>
+    <span class="k">What</span> Many route overviews were a broken 3-sentence template (for example "The [authority] takes jurisdiction when the death is: violent, suspicious, or unexplained deaths"). Rewrote them into 85 to 115 word, grammatical overviews composed only from facts already in the same file (emergency number, registration authority, document time, the jurisdiction rule with its grammar fixed, the standard air-cargo process, and the timeline). Three sentence frames rotate by a hash of the slug so pages do not read identically.
+    <table>
+      <tr><th>Measure</th><th>Before</th><th>After</th></tr>
+      <tr><td>Median overview length</td><td>48 words</td><td>60 words</td></tr>
+      <tr><td>Overviews under 40 words</td><td>695</td><td>194</td></tr>
+      <tr><td>Pages with the grammar bug</td><td>618</td><td>117</td></tr>
+    </table>
+    <div class="why"><strong>Why.</strong> Thin, broken auto-generated text is the exact vulnerability a spam update targets, and it reads badly on a sensitive topic. Every other element of these pages was strong, so this was the weak link.</div>
+    <div class="trade"><strong>Trade-off and deliberate stop.</strong> Only the 501 pages that exactly match the canonical thin template were rewritten. The remaining roughly 300 thinner-but-differently-phrased pages were left untouched rather than risk corrupting them; they are a noted future batch. No new facts were invented; the composition can only use facts already present, which is safer for YMYL than free text generation.</div>
+    <div class="caught"><strong>Caught during the sample check (before any bulk change).</strong> Five issues were found and fixed on a hand-checked sample first: lowercasing corrupted proper nouns ("the botswana Police Service"), a missing article ("registered with Registrar General"), one frame ran to 120 words, nested parentheses in an emergency number broke the capture, and a loose match would have destroyed extra facts on richer files (Zimbabwe's apostille note). Tightening to an exact-template match resolved the last three. Zero new QA failures resulted.</div>
+  </div>
+</div>
+
+<!-- ============ BLOCK 4 ============ -->
+<div class="block b4">
+  <h2 style="border:none;margin-top:10px"><span class="chip" style="background:#fbeecf;color:#b26b00">Block 4</span> On-page tidy and governance</h2>
+  <p class="sub">SERP display fixes, clearing the backlog of QA failures, and recording rules for future runs.</p>
+
+  <div class="item">
+    <h3>F8: rendered page titles shortened</h3>
+    <span class="k">Files</span><span class="files"><code>routes/single.html</code>, <code>country-hub.html</code></span>
+    <span class="k">What</span> Dropped the " | Repatriate Service" suffix from route and hub titles.
+    <div class="why"><strong>Why.</strong> The suffix pushed the rendered title past the point Google truncates in results (2,033 of 2,467 route titles were over 60 characters). The bare titles were already fine on their own, so dropping the suffix fixed the display for over 2,000 routes and roughly 233 hubs without rewriting any title text.</div>
+    <div class="trade"><strong>Trade-off.</strong> Slightly less brand reinforcement in the tag, but it was being truncated anyway. Five hubs with very long official country names (for example Saint Helena, Ascension and Tristan da Cunha) remain marginally over; left rather than redesigning the title format.</div>
+  </div>
+
+  <div class="item">
+    <h3>F9: all 36 pre-existing QA failures cleared</h3>
+    <span class="k">Files</span><span class="files">36 route <code>.md</code> files</span>
+    <span class="k">What</span> Trimmed 33 over-length meta descriptions and 3 over-length titles, and replaced the banned word "vital" in 6 files. Result: <span class="verify">the QA gate went from 36 failures to 0 (2,467 pass).</span>
+    <div class="why"><strong>Why.</strong> These failures pre-dated this work but blocked a clean QA run. Descriptions over 155 characters truncate in results; the banned-word list is house style.</div>
+    <div class="trade"><strong>How the "vital" fix kept accuracy.</strong> The flagged text was "vital statistics office" / "vital records office", the correct legal name for the Canadian, Nigerian and US registration agencies. Rather than degrade the wording, it was replaced with the equally accurate "civil registration office", matching a substitution the project had already used in earlier sessions.</div>
+    <div class="caught"><strong>Caught during verification.</strong> Two of the 33 description trims accidentally dropped the "Contact us" call to action while shortening. Re-running the title check surfaced it, and a second pass restored the CTA on both. This is why the gate was re-run after the change rather than assumed clean.</div>
+  </div>
+
+  <div class="item">
+    <h3>F6: social share image and Twitter card added</h3>
+    <span class="k">File</span><span class="files"><code>site/layouts/_default/baseof.html</code></span>
+    <span class="k">What</span> The site had no <code>og:image</code> or Twitter card at all. Added both site-wide, placed so every page type inherits them.
+    <div class="why"><strong>Why.</strong> Controls how a page looks when a grieving family shares a link, and some AI and social surfaces read these tags. A single calm, small-file image is used site-wide for reliable rendering.</div>
+    <div class="caught"><strong>Honest note.</strong> F6 was in the audit but slipped through the gap between the audit's numbered findings and the four thematic blocks. It was caught on an end-of-session completeness re-check and then completed. A purpose-built 1200x630 branded image would render larger than the current default and can be swapped in later with no other change.</div>
+  </div>
+
+  <div class="item">
+    <h3>F11 and F10: governance rules recorded</h3>
+    <span class="k">File</span><span class="files"><code>MEMORY.md</code></span>
+    <span class="k">What</span> Two permanent build decisions were written in so every future autonomous run reads them: (F11) do not buy brand mentions or use private blog networks to influence AI citations; (F10) keep and maintain llms.txt as a live deliverable.
+    <div class="why"><strong>Why.</strong> F11 is a guard-rail: the paid-mention tactic is a Google violation and does not work on its current AI Overview system anyway; the correct path is organic rank plus direct-answer structure, which this build already strengthened. F10 records the override of the audit's llms.txt advice.</div>
+  </div>
+
+  <div class="item">
+    <h3>F12: quarterly fact-refresh spec written</h3>
+    <span class="k">File</span><span class="files">new <code>CONTENT-REFRESH-SPEC.md</code></span>
+    <span class="k">What</span> A spec for a recurring pass that re-verifies dated regulatory facts (the FCDO emergency line, embassy operational status, travel advisories, treaty membership) against named government sources and flags changes for confirmation before applying.
+    <div class="why"><strong>Why.</strong> These facts go stale, and a wrong consular fact causes real harm. The spec's core rule is "flag, never blind-apply": every change cites a named dated source and is confirmed by a person or Opus; unverifiable facts are flagged, never guessed. It also fixes a subtle integrity issue found in the audit, where the site stamps "Updated [current month]" on every build with no actual review behind it, by tying that date to a real review marker.</div>
+  </div>
+</div>
+
+<h2>Deploy record</h2>
+<p>Fifteen commits, deployed to <code>master</code> one block at a time (each push triggers the live build and Hostinger pull within about 60 seconds). Deploying per block, rather than all at once, avoids concurrent deploys clobbering each other.</p>
+<table>
+  <tr><th>Commit</th><th>What shipped</th></tr>
+  <tr><td><code>366c4fe</code></td><td>Block 1: llms.txt upgrade + hub-to-route links (F7)</td></tr>
+  <tr><td><code>2cdc8e8</code></td><td>Block 2: F5 dedupe Organization schema</td></tr>
+  <tr><td><code>0f844c6</code></td><td>Block 2: F2 remove hub FAQ schema, F13 remove hub prices, em dash cleanup</td></tr>
+  <tr><td><code>6527541</code></td><td>Block 2: F3 E-E-A-T, Organization as author</td></tr>
+  <tr><td><code>f4b9d25</code></td><td>Block 3: F1 answer block moved above overview (variants B, E)</td></tr>
+  <tr><td><code>38fa568</code></td><td>Block 3: F4 thicken 501 thin route overviews</td></tr>
+  <tr><td><code>05ed152</code></td><td>Block 4: F8 shorten titles, F9 clear all 36 QA failures</td></tr>
+  <tr><td><code>06cb136</code></td><td>Block 4: F11 / F10 governance notes</td></tr>
+  <tr><td><code>a090134</code></td><td>Block 4: F12 quarterly refresh spec</td></tr>
+  <tr><td><code>1a7bc73</code></td><td>F6 og:image + Twitter card (completes the audit)</td></tr>
+</table>
+
+<h2>What was deliberately left, and why</h2>
+<ul>
+  <li><strong>~300 differently-phrased thin overviews</strong> (F4): left untouched rather than risk corrupting their sourced facts. A future batch with its own pattern analysis.</li>
+  <li><strong>5 hubs with very long country names</strong> (F8): marginally over the title length; not worth redesigning the title scheme for.</li>
+  <li><strong>27 pre-existing "no call-to-action" description warnings</strong> (lower severity than the 36 failures, and outside this task's scope).</li>
+  <li><strong>A purpose-built 1200x630 share image</strong> (F6): the wired default works; a branded image is an optional design upgrade.</li>
+  <li><strong>Off-site validation and monitoring</strong>: schema and social-card validation on live URLs, Search Console reindex and query tracking, and the first run of the F12 fact-check. These need logged-in third-party tools, not repository changes.</li>
+</ul>
+
+<div class="foot">
+  <p>Prepared 2 July 2026. Full per-change detail with line-level notes lives in <code>SEO-BUILD-PLAN-2026-07-02.md</code> (the "Changes made and why" log). Every content and template change was verified with the site's own <code>qa_routes.py</code>, <code>check_schema.py</code> and <code>check_titles.py</code> plus a Hugo build before deploy. The QA gate finished at 0 failures across all 2,467 route pages.</p>
+</div>
+
+</div>
+</body>
+</html>
