@@ -227,4 +227,12 @@ Format per entry: finding ID, files and lines touched, what changed, why. Writte
 - Discovered during build: country hubs use variant dispatch. Variant A renders inline in `country-hub.html`; variants B/C/D/E render via the `partials/countries/country-{b,c,d,e}.html` partials. That is why the block was factored into one shared partial called from all five, rather than edited into a single template.
 - Why: strengthens the silo and gives crawlers a path into the 2,467 route pages (audit F7; brief Story 5 silo structure, Story 6 indexing lag).
 
+### Block 2: Trust and schema (in progress)
+
+**2B.1 F5 dedupe Organization schema** (done, verified; commit pending, batched with the rest of Block 2)
+- File: `site/layouts/routes/single.html`.
+- Removed the standalone route-level Organization JSON-LD block (the one carrying `contactOption: TollFree`). The site-wide Organization schema in `_default/baseof.html` is retained as the single source.
+- Verified: a built route page now has 4 JSON-LD blocks with top-level types Organization (from baseof), BreadcrumbList, Service, FAQPage; the `TollFree` block is gone; all parse as valid JSON. The Organization nested as the Service `provider` is unchanged and correct.
+- Why: one Organization entity per page (audit F5).
+
 **Pre-existing QA state noted (not caused by Block 1):** `qa_routes.py` reports 36 route files failing, and `check_titles.py` matches: descriptions over 155 characters, the banned word "vital" in 6 files, and 2 titles at 61 characters. Block 1 changed only templates and static files (no route `.md` touched), and `check_schema.py` passes with zero errors. These 36 map to Block 4 F9 (descriptions) plus a new banned-word sub-item; see Block 4.

@@ -33,13 +33,8 @@
 ]}
 </script>
 {{ end }}
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization",
- "name":"Repatriate Service",
- "url":"{{ site.BaseURL }}",
- "telephone":"+447703577246",
- "contactPoint":{"@type":"ContactPoint","contactType":"customer service","availableLanguage":"English","contactOption":"TollFree"}}
-</script>
+{{/* F5: Organization schema is emitted site-wide in baseof.html; the
+     duplicate route-level Organization block was removed to leave one per page. */}}
 {{ end }}
 
 {{ define "main" }}
