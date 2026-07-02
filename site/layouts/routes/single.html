@@ -223,16 +223,6 @@
   </div></div>
 </div>
 
-{{ if .Params.overview_body }}
-<section class="section">
-  <div class="section-inner"><div class="reveal">
-    <p class="label-sm">The process</p>
-    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
-    <p>{{ .Params.overview_body }}</p>
-  </div></div>
-</section>
-{{ end }}
-
 {{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
 <section class="section-alt answer-brief-section">
   <div class="section-inner">
@@ -250,6 +240,16 @@
       </div>
     </div>
   </div>
+</section>
+{{ end }}
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
 </section>
 {{ end }}
 
@@ -466,16 +466,6 @@
      ================================================================ */}}
 {{ if eq $variant "E" }}
 
-{{ if .Params.overview_body }}
-<section class="section">
-  <div class="section-inner"><div class="reveal">
-    <p class="label-sm">The process</p>
-    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
-    <p>{{ .Params.overview_body }}</p>
-  </div></div>
-</section>
-{{ end }}
-
 {{ if or .Params.direct_answer_intro .Params.direct_answer_points }}
 <section class="section-alt answer-brief-section">
   <div class="section-inner">
@@ -493,6 +483,16 @@
       </div>
     </div>
   </div>
+</section>
+{{ end }}
+
+{{ if .Params.overview_body }}
+<section class="section">
+  <div class="section-inner"><div class="reveal">
+    <p class="label-sm">The process</p>
+    <h2>{{ with .Params.overview_heading }}{{ . }}{{ else }}How repatriation from {{ .Params.origin_name }} works{{ end }}</h2>
+    <p>{{ .Params.overview_body }}</p>
+  </div></div>
 </section>
 {{ end }}
 

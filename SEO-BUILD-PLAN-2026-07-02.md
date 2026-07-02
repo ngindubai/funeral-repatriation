@@ -211,6 +211,14 @@ Recommendation: Option 3 (lowest risk, near-zero cost), or Option 2 if we want t
 - **3B.1 F1 answer block to top of variants B, D, E (Sonnet OK).**
 - **3B.2 F4 thicken and grammar-fix thin overview prose (OPUS ADVISED).** Opus writes the rubric and hand-checks a sample before any bulk pass.
 
+### Block 3: Answer-first content (in progress)
+
+**3B.1 F1 answer block to top of route variants** (done, verified; commit pending, batched with F4)
+- File: `site/layouts/routes/single.html`.
+- Corrected the plan's assumption after reading the live code: variant A and C already led with the answer; variant D already placed the answer above the overview (helpline, then answer, then dest, then overview), so D needed no change; only variants B and E rendered the overview narrative before the answer. B and E shared a byte-identical "overview then answer" sequence, so one swap (replace all) moved the answer block above the overview in both.
+- Result: all five variants now render the `answer-brief-section` before the overview narrative. Verified on a sample route of each variant that the answer block's DOM position precedes "The process" overview. In B and D the helpline strip (a short contact bar, roughly 30 words) still sits directly under the hero, so the answer remains well inside the first 200 words.
+- Why: AI Overview and featured-snippet capture favour the direct answer high in the document (brief Story 2).
+
 ## Block 4: On-page tidy and governance
 - **4B.1 F8 shorten rendered title (Sonnet OK).**
 - **4B.2 F9 trim 33 over-length descriptions (Sonnet OK).**
