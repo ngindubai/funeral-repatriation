@@ -301,4 +301,17 @@ Format per entry: finding ID, files and lines touched, what changed, why. Writte
 ### Block 2 complete
 F5, F2, F13 (folded in), and F3 all done and verified. F5+F2+F13 deployed to master at commit 0f844c6. F3 pending deploy (this commit).
 
-**Pre-existing QA state noted (not caused by Block 1):** `qa_routes.py` reports 36 route files failing, and `check_titles.py` matches: descriptions over 155 characters, the banned word "vital" in 6 files, and 2 titles at 61 characters. Block 1 changed only templates and static files (no route `.md` touched), and `check_schema.py` passes with zero errors. These 36 map to Block 4 F9 (descriptions) plus a new banned-word sub-item; see Block 4.
+### Block 4: On-page tidy and governance (Sonnet session)
+
+**4B.1 F8 shorten rendered title** (done, verified)
+- Files: `site/layouts/routes/single.html`, `site/layouts/countries/country-hub.html`.
+- Dropped the ` | Repatriate Service` (22-char) suffix from the route and hub `<title>` blocks. Measured first: the bare title fields were already fine (only 3/2467 routes and 5/238 hubs exceed 60 chars on their own), so dropping the suffix alone resolved the SERP-truncation problem for 2030 routes and ~233 hubs without rewriting any title text. The 5 remaining long hub titles are extreme official country names (for example Saint Helena, Ascension and Tristan da Cunha) and were left as a known, small residual rather than redesigning the hub title format.
+- Verified: rendered `<title>` on a sample route is 55 chars, on a sample hub 41 chars.
+
+**4B.2 F9 clear the 36 pre-existing QA failures** (done, verified)
+- 33 route descriptions over 155 chars trimmed to fit while preserving the core facts and the CTA. Two of the trims (Cyprus, Turkey to UK) initially dropped the CTA while shortening; caught by re-running `check_titles.py` after the change and fixed with a second pass so both end in "Contact us."
+- 2 further titles over 60 chars trimmed (Philippines, South Africa), plus New Zealand's title (61 chars) which had no description error, only a title error, so its description was left untouched.
+- 6 files flagged for the banned word 'vital' (Canada x2, Nigeria x2, USA x2): the flagged text was "vital statistics office" / "vital records office", the accurate technical term for the Canadian, Nigerian and US civil registration authorities, not AI-slop phrasing. Rather than lose accuracy by inventing different wording, substituted the equally accurate, synonymous "civil registration office" framing throughout (overview, timeline steps, and FAQ answers in each file), which describes the same government function without the banned word.
+- Verified: `qa_routes.py` now reports 0 FAIL / 2467 PASS (was 36 FAIL). `check_schema.py` 0 errors. `check_titles.py` 0 errors (the 29 pre-existing "no CTA in description" warnings, a lower-severity non-blocking category, dropped to 27 as a side effect of the two CTA fixes above; the remaining 27 are pre-existing and out of this task's scope). Swept all 36 touched files for em dashes and banned words: zero found.
+
+**Pre-existing QA state as of Block 1/2/3 (resolved in Block 4):** `qa_routes.py` reported 36 route files failing at the time Blocks 1 to 3 were built (descriptions over 155 characters, the banned word "vital" in 6 files, 2 titles at 61 characters). None were caused by Blocks 1 to 3; all were cleared in Block 4 F9 above, which also caught and fixed a small regression in its own two of the trims (see 4B.2).

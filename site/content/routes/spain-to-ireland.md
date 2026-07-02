@@ -1,6 +1,6 @@
 ---
 title: "Spain to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Spain and needs to come home to Ireland. Repatriation takes 7-14 days. Juzgado process, island transfers, and all documentation handled. Contact us."
+description: "Someone has died in Spain and needs to come home to Ireland. Repatriation takes 7-14 days. Juzgado process explained. Contact us."
 origin_key: "spain"
 dest_key: "ie"
 origin_name: "Spain"

@@ -1,6 +1,6 @@
 ---
 title: "Turkey to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Turkey. Repatriation to the UK takes 10-21 days. No cremation in Turkey, olum belgesi process, and Turkish Airlines Cargo routes explained. Contact us 24/7."
+description: "Someone has died in Turkey. Repatriation to the UK takes 10-21 days. No cremation available. Turkish Airlines Cargo routes. Contact us."
 origin_key: "turkey"
 dest_key: "uk"
 origin_name: "Turkey"

@@ -1,6 +1,6 @@
 ---
 title: "Sri Lanka to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Sri Lanka and needs to come home to Ireland. Repatriation takes 14-28 days. Colombo cargo flights and all documentation handled. Contact us 24/7."
+description: "Someone has died in Sri Lanka and needs to come home to Ireland. Repatriation takes 14-28 days. Colombo cargo flights handled. Contact us."
 origin_key: "sri-lanka"
 dest_key: "ireland"
 origin_name: "Sri Lanka"

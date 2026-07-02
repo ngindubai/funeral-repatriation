@@ -1,6 +1,6 @@
 ---
 title: "India to UK Repatriation: Guidance for British Families"
-description: "Someone has died in India. Repatriation to the UK typically takes 4-6 weeks. Complex documentation and post-mortem routinely ordered. We guide every step. Contact us 24/7."
+description: "Someone has died in India. Repatriation to the UK typically takes 4-6 weeks. Complex documentation explained. We guide every step. Contact us."
 origin_key: "india"
 dest_key: "uk"
 origin_name: "India"

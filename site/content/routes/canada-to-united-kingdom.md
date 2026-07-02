@@ -19,11 +19,11 @@ direct_answer_heading: "Repatriation from Canada to the UK: what to expect"
 direct_answer_intro: "Canada is one of the more straightforward repatriation corridors for British families. Documentation is in English throughout, direct flights operate daily to Heathrow from Toronto and Vancouver, and the funeral sector is professionally organised. Most cases complete in 7-14 days."
 direct_answer_points:
   - "Key document: Province-issued death certificate (in English throughout)"
-  - "Documentation takes 5-10 days. Each province has its own vital statistics office."
+  - "Documentation takes 5-10 days. Each province has its own civil registration office."
   - "British High Commission in Ottawa and consulates in major cities register the death and advise."
   - "Province-specific coroners or medical examiners may be involved in unexpected deaths."
 overview_heading: "What happens after a death in Canada"
-overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Canada's death registration is provincial: each of the 10 provinces and 3 territories has its own vital statistics office. Documentation is in English (or French in Quebec, with English available). Transit permit required for international transport of human remains."
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Canada's death registration is provincial: each of the 10 provinces and 3 territories has its own civil registration office. Documentation is in English (or French in Quebec, with English available). Transit permit required for international transport of human remains."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. Canadian documentation is in English and typically accepted directly. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Ottawa and consulates in Calgary, Halifax, Montreal, Toronto, and Vancouver can register the death and advise. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -34,7 +34,7 @@ timeline_steps:
   - step: 2
     action: "Death certified by physician or medical examiner. Death certificate issued by province."
     timing: "Province-specific timelines. Ontario and British Columbia generally efficient."
-    responsible: "Local funeral director and provincial vital statistics office"
+    responsible: "Local funeral director and provincial civil registration office"
   - step: 3
     action: "British High Commission or Consulate in relevant city notified"
     timing: "Simultaneous with Step 1. High Commission registers death with UK authorities."
@@ -59,7 +59,7 @@ faqs:
   - question: "How long does repatriation from Canada to the UK take?"
     answer: "In a straightforward case, repatriation from Canada to the UK takes 7-14 days. The fastest cases complete in 5-7 days. Complex cases involving a provincial coroner investigation can take 3-6 weeks."
   - question: "Does it matter which province the death occurred in?"
-    answer: "Each Canadian province has its own vital statistics office and its own medical examiner or coroner. Processing times vary slightly. Quebec issues death certificates in French, though English versions are available."
+    answer: "Each Canadian province has its own civil registration office and its own medical examiner or coroner. Processing times vary slightly. Quebec issues death certificates in French, though English versions are available."
   - question: "What documents are required for repatriation from Canada to the UK?"
     answer: "The core documents are: province-issued death certificate (certified copy), embalming certificate, transit permit for human remains, and passport of the deceased."
   - question: "Does the British High Commission in Canada help with repatriation?"

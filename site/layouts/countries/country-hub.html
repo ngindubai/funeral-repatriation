@@ -2,11 +2,13 @@
   COUNTRY HUB ROUTER, with full GEO schema (P2) + freshness/answer-first (P3)
 */}}
 
+{{/* F8: brand suffix dropped so the rendered title stays inside the ~60-char
+     SERP truncation point for all but a handful of long country names. */}}
 {{ define "title" }}
 {{ $key := .Params.country_key }}
 {{ $c := index hugo.Data.countries_repatriation.countries $key }}
-{{ if $c }}{{ $cname := or $c.name $c.country_name }}Funeral Repatriation from {{ $cname }} to the UK | Repatriate Service
-{{ else }}{{ .Title }} | Repatriate Service{{ end }}{{ end }}
+{{ if $c }}{{ $cname := or $c.name $c.country_name }}Funeral Repatriation from {{ $cname }} to the UK
+{{ else }}{{ .Title }}{{ end }}{{ end }}
 
 {{ define "page-meta" }}
 {{ $key := .Params.country_key }}

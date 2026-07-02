@@ -1,6 +1,6 @@
 ---
 title: "Indonesia to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Indonesia. Repatriation to the UK takes 14-28 days. Bali and Jakarta cases handled. Indonesian documentation explained. Contact us 24/7."
+description: "Someone has died in Indonesia. Repatriation to the UK takes 14-28 days. Bali and Jakarta cases handled. Contact us 24/7."
 origin_key: "indonesia"
 dest_key: "uk"
 origin_name: "Indonesia"

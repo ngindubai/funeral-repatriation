@@ -1,6 +1,6 @@
 ---
 title: "Kenya to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Kenya and needs to come home to Ireland. Repatriation takes 14-28 days. Safari zone, Port Health clearance, and Nairobi cargo explained. Contact us 24/7."
+description: "Someone has died in Kenya and needs to come home to Ireland. Repatriation takes 14-28 days. Port Health clearance explained. Contact us."
 origin_key: "kenya"
 dest_key: "ireland"
 origin_name: "Kenya"

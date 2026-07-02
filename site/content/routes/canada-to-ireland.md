@@ -1,6 +1,6 @@
 ---
 title: "Canada to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Canada and needs to come home to Ireland. Repatriation takes 7-14 days. Direct Aer Lingus flights and all documentation handled. Contact us 24/7."
+description: "Someone has died in Canada and needs to come home to Ireland. Repatriation takes 7-14 days. Direct Aer Lingus flights. Contact us 24/7."
 origin_key: "canada"
 dest_key: "ireland"
 origin_name: "Canada"
@@ -19,10 +19,10 @@ direct_answer_heading: "Repatriation from Canada to Ireland: what to expect"
 direct_answer_intro: "Canada to Ireland is one of the most straightforward long-haul repatriation corridors. The large Irish-Canadian diaspora means Aer Lingus operates direct Toronto and Montreal to Dublin routes, documentation is in English throughout, and local funeral directors are experienced with Irish requirements."
 direct_answer_points:
   - "Key document: Province-issued death certificate (certified copy, in English)"
-  - "Documentation takes 5-10 days. Each province has its own vital statistics office."
+  - "Documentation takes 5-10 days. Each province has its own civil registration office."
   - "Irish consulates in Toronto, Ottawa, and Vancouver handle consular matters."
 overview_heading: "How repatriation from Canada to Ireland works"
-overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Canada's death registration is provincial: each of the 10 provinces and 3 territories has its own vital statistics office. Documentation is in English throughout. Aer Lingus operates direct Toronto (YYZ) and Montreal (YUL) to Dublin (DUB) routes."
+overview_body: "Call 911 for emergency services. Death must be certified by a licensed physician or medical examiner. Canada's death registration is provincial: each of the 10 provinces and 3 territories has its own civil registration office. Documentation is in English throughout. Aer Lingus operates direct Toronto (YYZ) and Montreal (YUL) to Dublin (DUB) routes."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. Canadian documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000. Irish consulates in Toronto, Ottawa, and Vancouver can register the death and advise."
 timeline_steps:
@@ -33,7 +33,7 @@ timeline_steps:
   - step: 2
     action: "Death certified by physician or medical examiner. Provincial death certificate issued."
     timing: "Province-specific timelines. Ontario and British Columbia are generally efficient."
-    responsible: "Local funeral director and provincial vital statistics office"
+    responsible: "Local funeral director and provincial civil registration office"
   - step: 3
     action: "Irish Consulate in relevant Canadian city notified"
     timing: "Simultaneous with Step 1. Consulate provides list of local funeral directors."
@@ -62,7 +62,7 @@ faqs:
   - question: "Which Irish office covers Canada?"
     answer: "The Irish Consulate General in Toronto covers Ontario and eastern Canada. The Consulate in Vancouver covers British Columbia and western Canada. The Embassy in Ottawa handles national-level consular matters."
   - question: "Does it matter which province the death occurred in?"
-    answer: "Each Canadian province has its own vital statistics office and its own coroner or medical examiner. Processing times vary slightly. Quebec issues death certificates in French, though English versions are available."
+    answer: "Each Canadian province has its own civil registration office and its own coroner or medical examiner. Processing times vary slightly. Quebec issues death certificates in French, though English versions are available."
   - question: "What happens when the body arrives in Ireland?"
     answer: "The Irish funeral director takes custody at the cargo terminal. Canadian documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
   - question: "Can I bring ashes home from Canada to Ireland instead of repatriating the body?"

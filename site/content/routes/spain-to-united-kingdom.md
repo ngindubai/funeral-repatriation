@@ -1,6 +1,6 @@
 ---
 title: "Spain to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Spain. Repatriation to the UK takes 7-14 days in a straightforward case. Juzgado process, island transfers, and all documentation handled. Contact us 24/7."
+description: "Someone has died in Spain. Repatriation to the UK takes 7-14 days in a straightforward case. Juzgado process explained. Contact us 24/7."
 origin_key: "spain"
 dest_key: "uk"
 origin_name: "Spain"

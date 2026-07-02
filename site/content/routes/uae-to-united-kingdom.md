@@ -1,6 +1,6 @@
 ---
 title: "UAE to UK Repatriation: Guidance for British Families"
-description: "Someone has died in the UAE. Repatriation to the UK typically takes 7-21 days. Police NOC, MOFA attestation, and cargo flights from Dubai all handled. Contact us 24/7."
+description: "Someone has died in the UAE. Repatriation to the UK typically takes 7-21 days. Police NOC and cargo flights from Dubai. Contact us 24/7."
 origin_key: "uae"
 dest_key: "uk"
 origin_name: "United Arab Emirates"

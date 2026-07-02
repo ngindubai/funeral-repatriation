@@ -1,6 +1,6 @@
 ---
 title: "South Africa to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in South Africa and needs to come home to Ireland. Repatriation takes 10-21 days. BI-1663 death certificate and cargo flights explained. Contact us 24/7."
+description: "Someone has died in South Africa, needing to come home to Ireland. Repatriation takes 10-21 days. BI-1663 certificate explained. Contact us."
 origin_key: "south-africa"
 dest_key: "ireland"
 origin_name: "South Africa"

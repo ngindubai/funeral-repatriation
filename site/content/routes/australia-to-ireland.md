@@ -1,6 +1,6 @@
 ---
 title: "Australia Repatriation to Ireland: Every Step Explained"
-description: "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide British families through every step. Contact us 24/7."
+description: "Repatriation from Australia to Ireland typically takes 10-21 days. Documentation takes 5-14 days. We guide every step. Contact us 24/7."
 origin_key: "australia"
 dest_key: "ie"
 origin_name: "Australia"

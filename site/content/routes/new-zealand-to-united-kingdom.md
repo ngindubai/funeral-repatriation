@@ -1,5 +1,5 @@
 ---
-title: "New Zealand to UK Repatriation: Guidance for British Families"
+title: "New Zealand to UK Repatriation: Family Guidance"
 description: "Someone has died in New Zealand. Repatriation to the UK takes 10-21 days. New Zealand documentation and long-haul cargo flights explained. Contact us 24/7."
 origin_key: "new-zealand"
 dest_key: "uk"

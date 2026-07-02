@@ -1,6 +1,6 @@
 ---
 title: "Greece to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Greece and needs to come home to Ireland. Repatriation takes 10-21 days. Island transfers and Greek paperwork all handled. Contact us 24/7."
+description: "Someone has died in Greece and needs to come home to Ireland. Repatriation takes 10-21 days. Island transfers handled. Contact us 24/7."
 origin_key: "greece"
 dest_key: "ireland"
 origin_name: "Greece"

@@ -1,6 +1,6 @@
 ---
 title: "UAE to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in the UAE and needs to come home to Ireland. Repatriation takes 7-21 days. Police NOC, MOFA attestation, and all documentation handled. Contact us."
+description: "Someone has died in the UAE and needs to come home to Ireland. Repatriation takes 7-21 days. Police NOC and MOFA attestation. Contact us."
 origin_key: "uae"
 dest_key: "ie"
 origin_name: "United Arab Emirates"

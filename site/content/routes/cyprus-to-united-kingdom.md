@@ -1,6 +1,6 @@
 ---
 title: "Cyprus Repatriation to the UK: Every Step Explained"
-description: "Someone has died in Cyprus. Repatriation to the UK takes 7-14 days in a straightforward case. Documentation, flights and UK handover all handled for British families."
+description: "Someone has died in Cyprus. Repatriation to the UK takes 7-14 days in a straightforward case. Documentation and flights handled. Contact us."
 origin_key: "cyprus"
 dest_key: "uk"
 origin_name: "Cyprus"

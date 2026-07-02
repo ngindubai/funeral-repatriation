@@ -1,6 +1,6 @@
 ---
 title: "Germany to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Germany and needs to come home to Ireland. Repatriation takes 7-14 days. Leichenpass, Standesamt process, and cargo flights explained. Contact us 24/7."
+description: "Someone has died in Germany and needs to come home to Ireland. Repatriation takes 7-14 days. Leichenpass process explained. Contact us 24/7."
 origin_key: "germany"
 dest_key: "ireland"
 origin_name: "Germany"

@@ -1,6 +1,6 @@
 ---
 title: "USA to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules and cargo flights from major US airports. Contact us."
+description: "Someone has died in the USA and needs to come home to Ireland. Repatriation takes 10-21 days. State-by-state rules explained. Contact us."
 origin_key: "usa"
 dest_key: "ie"
 origin_name: "United States"
@@ -33,7 +33,7 @@ timeline_steps:
   - step: 2
     action: "Death certified by physician or medical examiner. Death certificate issued by state."
     timing: "State-specific timelines. New York and California take longer than smaller states."
-    responsible: "Local funeral director and state vital records office"
+    responsible: "Local funeral director and state civil registration office"
   - step: 3
     action: "Irish Consulate in relevant city notified"
     timing: "Simultaneous with Step 1. Consulate provides a list of local funeral directors."

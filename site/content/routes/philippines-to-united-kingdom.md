@@ -1,6 +1,6 @@
 ---
-title: "Philippines to UK Repatriation: Guidance for British Families"
-description: "Someone has died in the Philippines. Repatriation to the UK takes 3-6 weeks. PSA and DFA authentication are the main delays. We guide every step. Contact us 24/7."
+title: "Philippines to UK Repatriation: Family Guidance"
+description: "Someone has died in the Philippines. Repatriation to the UK takes 3-6 weeks. PSA and DFA authentication explained. Contact us 24/7."
 origin_key: "philippines"
 dest_key: "uk"
 origin_name: "Philippines"

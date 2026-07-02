@@ -22,7 +22,7 @@ direct_answer_points:
   - "Documentation takes 14-30 days. Lagos and Abuja are significantly faster than other states."
   - "Irish Embassy in Abuja registers the death and advises. They cannot fund repatriation."
 overview_heading: "How repatriation from Nigeria to Ireland works"
-overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state vital statistics office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. Nigerian documentation is in English and typically accepted directly. The Coroner for the district is notified. Straightforward cases proceed to funeral arrangements without delay."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000. The Irish Embassy in Abuja can register the death and advise."
 timeline_steps:
@@ -31,7 +31,7 @@ timeline_steps:
     timing: "Day of death. Irish Embassy Abuja: via Dept of Foreign Affairs +353 1 408 2000."
     responsible: "Family or travel insurer"
   - step: 2
-    action: "Death registered with state vital statistics office. Death certificate issued."
+    action: "Death registered with state civil registration office. Death certificate issued."
     timing: "Documentation in English. State-level processing times vary considerably."
     responsible: "Local funeral director and state authority"
   - step: 3
@@ -58,7 +58,7 @@ faqs:
   - question: "How long does repatriation from Nigeria to Ireland take?"
     answer: "In a straightforward case, repatriation from Nigeria to Ireland takes 3-6 weeks. The fastest cases complete in 2-3 weeks. Complex cases involving police investigation or death in a remote state can take 6-12 weeks."
   - question: "Does it matter which Nigerian state the death occurred in?"
-    answer: "Yes. Nigeria has 36 states and the FCT, each with its own vital statistics office. Lagos and Abuja have the most experienced international funeral providers and generally faster processing. Deaths in more remote states take longer."
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have the most experienced international funeral providers and generally faster processing. Deaths in more remote states take longer."
   - question: "What documents are required for repatriation from Nigeria to Ireland?"
     answer: "The core documents are: Nigerian death certificate (state-issued, in English), embalming certificate, freedom from infection certificate, police report (if required), and passport of the deceased."
   - question: "Does the Irish Embassy in Nigeria help with repatriation?"

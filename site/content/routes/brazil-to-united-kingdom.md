@@ -1,6 +1,6 @@
 ---
 title: "Brazil to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Brazil. Repatriation to the UK takes 3-6 weeks. IML release, Portuguese documentation, and Sao Paulo cargo flights explained. Contact us 24/7."
+description: "Someone has died in Brazil. Repatriation to the UK takes 3-6 weeks. IML release and Portuguese documentation explained. Contact us 24/7."
 origin_key: "brazil"
 dest_key: "uk"
 origin_name: "Brazil"

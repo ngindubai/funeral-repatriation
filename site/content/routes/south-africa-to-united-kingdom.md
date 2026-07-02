@@ -1,6 +1,6 @@
 ---
-title: "South Africa to UK Repatriation: Guidance for British Families"
-description: "Someone has died in South Africa. BI-1663 death certificate, Johannesburg cargo, and UK handover all handled. Repatriation typically takes 10-21 days. Contact us 24/7."
+title: "South Africa to UK Repatriation: Family Guidance"
+description: "Someone has died in South Africa. BI-1663 certificate and Johannesburg cargo handled. Repatriation typically takes 10-21 days. Contact us."
 origin_key: "south-africa"
 dest_key: "uk"
 origin_name: "South Africa"

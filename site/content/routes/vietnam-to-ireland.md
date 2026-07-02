@@ -1,6 +1,6 @@
 ---
 title: "Vietnam to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Vietnam and needs to come home to Ireland. Repatriation takes 14-21 days. Vietnamese documentation and cargo flights explained. Contact us 24/7."
+description: "Someone has died in Vietnam and needs to come home to Ireland. Repatriation takes 14-21 days. Vietnamese documentation. Contact us 24/7."
 origin_key: "vietnam"
 dest_key: "ireland"
 origin_name: "Vietnam"

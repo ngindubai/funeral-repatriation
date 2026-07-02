@@ -1,6 +1,6 @@
 ---
 title: "France to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in France and needs to come home to Ireland. Repatriation takes 7-14 days. Ferry or air cargo options. All documentation handled. Contact us 24/7."
+description: "Someone has died in France and needs to come home to Ireland. Repatriation takes 7-14 days. Ferry or air cargo options. Contact us 24/7."
 origin_key: "france"
 dest_key: "ireland"
 origin_name: "France"

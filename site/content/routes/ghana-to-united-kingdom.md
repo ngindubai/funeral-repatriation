@@ -1,6 +1,6 @@
 ---
 title: "Ghana to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Ghana. Repatriation to the UK takes 2-4 weeks. Births and Deaths Registry, police report, and Accra cargo flights all handled. Contact us 24/7."
+description: "Someone has died in Ghana. Repatriation to the UK takes 2-4 weeks. Police report and Accra cargo flights handled. Contact us 24/7."
 origin_key: "ghana"
 dest_key: "uk"
 origin_name: "Ghana"

@@ -1,6 +1,6 @@
 ---
 title: "Kenya to Ireland: Guidance for British Families in Kenya"
-description: "Someone has died in Kenya. Port Health clearance, safari area transfers, and Nairobi cargo all handled. Repatriation to the UK takes 14-28 days. Contact us 24/7."
+description: "Someone has died in Kenya. Port Health clearance and Nairobi cargo handled. Repatriation to the UK takes 14-28 days. Contact us 24/7."
 origin_key: "kenya"
 dest_key: "uk"
 origin_name: "Kenya"

@@ -1,6 +1,6 @@
 ---
 title: "USA to UK Repatriation: Guidance for British Families"
-description: "Someone has died in the USA. Repatriation to the UK takes 10-21 days. State-by-state rules and cargo flights from major US airports all handled. Contact us 24/7."
+description: "Someone has died in the USA. Repatriation to the UK takes 10-21 days. State-by-state rules and cargo flights explained. Contact us 24/7."
 origin_key: "usa"
 dest_key: "uk"
 origin_name: "United States"
@@ -34,7 +34,7 @@ timeline_steps:
   - step: 2
     action: "Death certified by physician or medical examiner. State death certificate issued."
     timing: "State-specific. NY and CA take longer. Medical examiner investigation adds time."
-    responsible: "Local funeral director and state vital records"
+    responsible: "Local funeral director and state civil registration office"
   - step: 3
     action: "British Embassy or Consulate in relevant US city notified"
     timing: "Simultaneous with Step 1. Embassy/Consulate registers the death with UK authorities."

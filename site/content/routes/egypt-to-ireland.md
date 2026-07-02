@@ -1,6 +1,6 @@
 ---
 title: "Egypt to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Egypt and needs to come home to Ireland. Repatriation takes 14-28 days. Niyaba process and Arabic documentation explained. Contact us 24/7."
+description: "Someone has died in Egypt and needs to come home to Ireland. Repatriation takes 14-28 days. Niyaba process explained. Contact us 24/7."
 origin_key: "egypt"
 dest_key: "ireland"
 origin_name: "Egypt"

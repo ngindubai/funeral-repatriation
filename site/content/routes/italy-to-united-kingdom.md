@@ -1,6 +1,6 @@
 ---
 title: "Italy to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Italy. Repatriation to the UK typically takes 10-21 days. Atti di morte, comune process, and cargo flights all handled. Contact us 24/7."
+description: "Someone has died in Italy. Repatriation to the UK typically takes 10-21 days. Atti di morte and cargo flights handled. Contact us 24/7."
 origin_key: "italy"
 dest_key: "uk"
 origin_name: "Italy"

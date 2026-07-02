@@ -1,6 +1,6 @@
 ---
 title: "Thailand to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Thailand. Repatriation to the UK takes 2-4 weeks. Strict 30-day deadline, island transfers, and post-mortem process all explained. Contact us 24/7."
+description: "Someone has died in Thailand. Repatriation to the UK takes 2-4 weeks. Strict 30-day deadline and post-mortem process explained. Contact us."
 origin_key: "thailand"
 dest_key: "uk"
 origin_name: "Thailand"

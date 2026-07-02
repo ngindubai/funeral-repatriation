@@ -1,6 +1,6 @@
 ---
 title: "Jordan to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Jordan. Repatriation to the UK takes 7-21 days. Police report, Arabic documentation, and Amman cargo flights all handled. Contact us 24/7."
+description: "Someone has died in Jordan. Repatriation to the UK takes 7-21 days. Police report and Amman cargo flights handled. Contact us 24/7."
 origin_key: "jordan"
 dest_key: "uk"
 origin_name: "Jordan"

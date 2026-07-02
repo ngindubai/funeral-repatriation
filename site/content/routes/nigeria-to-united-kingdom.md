@@ -1,6 +1,6 @@
 ---
 title: "Nigeria to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Nigeria. Repatriation to the UK takes 3-6 weeks. Police report, documentation in English, and Lagos cargo flights all handled. Contact us 24/7."
+description: "Someone has died in Nigeria. Repatriation to the UK takes 3-6 weeks. Police report and Lagos cargo flights handled. Contact us 24/7."
 origin_key: "nigeria"
 dest_key: "uk"
 origin_name: "Nigeria"
@@ -23,7 +23,7 @@ direct_answer_points:
   - "British High Commission in Abuja and Consulate in Lagos register the death and advise."
   - "Police report required for unexpected or unattended deaths."
 overview_heading: "What happens after a death in Nigeria"
-overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state vital statistics office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
+overview_body: "Contact the police (199 or 112) for unexpected deaths. A doctor must certify the death. Death registered with the state civil registration office. Nigeria has 36 states and the FCT, each with its own procedures. Documentation is in English throughout. Lagos handles the majority of international cargo flights."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. Nigerian documentation is in English and typically accepted directly. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Abuja and Consulate General in Lagos can register the death and advise. They cannot pay for or arrange repatriation."
 timeline_steps:
@@ -32,7 +32,7 @@ timeline_steps:
     timing: "Day of death. FCDO 24hr: +44 (0)20 7008 5000."
     responsible: "Family or travel insurer"
   - step: 2
-    action: "Death registered with state vital statistics office. Death certificate issued."
+    action: "Death registered with state civil registration office. Death certificate issued."
     timing: "Documentation in English. State-level processing times vary."
     responsible: "Local funeral director and state authority"
   - step: 3
@@ -63,7 +63,7 @@ faqs:
   - question: "Does the British High Commission in Nigeria help with repatriation?"
     answer: "The British High Commission in Abuja and Consulate General in Lagos can register the death with UK authorities, provide a list of local funeral directors, and advise on documentation. They cannot pay for or arrange repatriation. FCDO 24-hour emergency line: +44 (0)20 7008 5000."
   - question: "Does it matter which Nigerian state the death occurred in?"
-    answer: "Yes. Nigeria has 36 states and the FCT, each with its own vital statistics office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
+    answer: "Yes. Nigeria has 36 states and the FCT, each with its own civil registration office. Lagos and Abuja have more experienced international funeral providers and faster processing. Deaths in more remote states take longer."
   - question: "What happens when the body arrives in the UK?"
     answer: "The UK funeral director takes custody at the cargo terminal. Nigerian documentation is in English and typically accepted directly. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
   - question: "Can I bring ashes home from Nigeria instead of repatriating the body?"

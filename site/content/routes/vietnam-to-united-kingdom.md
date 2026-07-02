@@ -1,6 +1,6 @@
 ---
 title: "Vietnam to UK Repatriation: Guidance for British Families"
-description: "Someone has died in Vietnam. Hanoi and Ho Chi Minh City cases handled. Repatriation typically takes 14-21 days. Vietnamese documentation explained. Contact us 24/7."
+description: "Someone has died in Vietnam. Hanoi and Ho Chi Minh City cases handled. Repatriation typically takes 14-21 days. Contact us 24/7."
 origin_key: "vietnam"
 dest_key: "uk"
 origin_name: "Vietnam"

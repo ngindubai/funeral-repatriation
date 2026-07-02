@@ -1,4 +1,7 @@
-{{ define "title" }}{{ .Params.title }} | Repatriate Service{{ end }}
+{{/* F8: brand suffix dropped so the rendered title stays inside the ~60-char
+     SERP truncation point; the bare title field already carries the primary
+     keyword and CTA framing needed. */}}
+{{ define "title" }}{{ .Params.title }}{{ end }}
 
 {{ define "page-meta" }}
 <meta name="description" content="{{ .Params.description }}">

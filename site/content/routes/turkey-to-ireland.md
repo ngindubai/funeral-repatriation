@@ -1,6 +1,6 @@
 ---
 title: "Turkey to Ireland: Funeral Repatriation Guidance"
-description: "Someone has died in Turkey and needs to come home to Ireland. Repatriation takes 10-21 days. No cremation available. All documentation handled. Contact us 24/7."
+description: "Someone has died in Turkey and needs to come home to Ireland. Repatriation takes 10-21 days. No cremation available. Contact us 24/7."
 origin_key: "turkey"
 dest_key: "ireland"
 origin_name: "Turkey"
