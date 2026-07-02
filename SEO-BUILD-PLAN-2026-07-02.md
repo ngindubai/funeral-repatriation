@@ -324,3 +324,12 @@ F5, F2, F13 (folded in), and F3 all done and verified. F5+F2+F13 deployed to mas
 - File: `MEMORY.md`, Build Decisions section.
 - Recorded that llms.txt and llms-full.txt are kept and treated as live deliverables going forward, overriding the audit's original suggestion to deprioritise them, because other AI systems read them and they drive real traffic even though Google's own AI Overview ranking does not. Also recorded the audit's finding that no further AI-specific schema or content chunking is needed, per Google's own Search Central documentation.
 - Session history: appended a summary row for this entire session (Blocks 1 to 4) to `MEMORY.md` section 11, matching the file's existing per-session log format.
+
+**4B.4c F12 quarterly fact-refresh spec** (Opus session; done)
+- File: new `CONTENT-REFRESH-SPEC.md`.
+- Wrote a concrete, grounded spec for a recurring quarterly (plus event-triggered) pass that re-verifies dated regulatory facts against named sources and flags changes for confirmation before applying. Grounded in the actual volatile surface found in this repo: the FCDO 24-hour line (`+44 (0)20 7008 5000`, ~3,029 occurrences), embassy operational status and contacts in `embassy_contacts.*` plus hardcoded closure lines, FCDO travel advisories, Hague Apostille facts, and the dormant `cost_guide` data. Register is priority-ordered by harm, each class paired with its named gov.uk / HCCH source and its location in the repo.
+- Included a specific first-run fix for a freshness-integrity issue found during the audit: the 8 `{{ now.Format "January 2006" }}` "Updated [month]" auto-stamps advance on every build with no review behind them, and there are 3 hardcoded "May 2026" stamps. The spec replaces both with a single `site.Params.lastReviewed` param bumped only when a refresh pass completes, so the displayed review date becomes honest.
+- Load-bearing principle written in: flag, never blind-apply; every change cites a named dated source; unverifiable facts are marked "unverified this cycle", never guessed or deleted (CLAUDE.md rule 3). Run on Opus or with a person in the loop.
+- Verified the spec itself is free of em dashes and banned vocabulary.
+
+### Block 4 complete. All four blocks (1 to 4) built, verified, and deployed to master.
