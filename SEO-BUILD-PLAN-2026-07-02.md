@@ -3,7 +3,7 @@
 Execution plan derived from `seo-audit-2026-07-02.html`, which is derived from the SEO and Search Brief dated 29 June 2026.
 
 **Execution model:** Sonnet, unless a step is marked **OPUS REQUIRED**.
-**Branch:** `claude/funeral-repatriation-seo-audit-zayex7` (per run instructions). Do not commit to `main`. `master` is the deploy branch; do not touch it unless Gareth approves a live push.
+**Deploy target (updated 2 July 2026, authorised by Gareth):** every block is pushed to `master`, which is the live production branch. Pushing to `master` triggers `build-and-publish.yml`, which force-pushes to `live`, and Hostinger serves it within about 60 seconds. So every push is a live deploy of a YMYL site. Work is prepared on `claude/funeral-repatriation-seo-audit-zayex7` and fast-forwarded to `master` per block. Still never commit to `main`. Deploy discipline from CLAUDE.md holds: one push (one deploy) per block, and only push a block that builds clean and passes `check_schema.py`; do not deploy a block whose own gate fails.
 **House rules that still apply to every step:** no em dashes anywhere, no banned vocabulary, British English, no prices on route pages, no invented facts on a YMYL topic. Run the QA gate before any commit.
 
 ## Standard checks (run after every code wave)
@@ -178,7 +178,7 @@ PY
 
 This session runs the plan in thematic blocks in this order: **Block 1 Discoverability**, **Block 2 Trust and schema**, **Block 3 Answer-first content**, then **Block 4 On-page tidy and governance**. The findings above are re-grouped into these blocks below. Nothing in the findings changes; only the running order and two additions (llms.txt per the session rules, and a cross-cutting prices decision).
 
-Session rules in force: ask before every decision (no default assumed); stop and request a model switch at every Opus-tagged or Opus-designed step; extend this plan in place; keep the changelog at the foot of this file; treat llms.txt as a live deliverable regardless of what the audit said about it.
+Session rules in force: ask before every decision (no default assumed); stop and request a model switch at every Opus-tagged or Opus-designed step; extend this plan in place; keep the changelog at the foot of this file; treat llms.txt as a live deliverable regardless of what the audit said about it; push every completed block to `master` for live deploy (see Deploy target above).
 
 ## Block 1: Discoverability
 - **1B.1 llms.txt upgrade (NEW this session, Sonnet OK after prices decision).** The site already ships `site/static/llms.txt` and `site/static/llms-full.txt`. Upgrade, do not skip. Verify every linked page exists (all core pages confirmed present on 2 July), reflect the route matrix and country-hub coverage, and resolve the price content per the cross-cutting prices decision below. Decision raised: prices in llms.txt (see Prices decision). Do not assert a fresh verification date that has not actually been re-verified on a YMYL site.
