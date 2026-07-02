@@ -1,5 +1,5 @@
 {{/*
-  COUNTRY HUB ROUTER — with full GEO schema (P2) + freshness/answer-first (P3)
+  COUNTRY HUB ROUTER, with full GEO schema (P2) + freshness/answer-first (P3)
 */}}
 
 {{ define "title" }}
@@ -19,7 +19,7 @@
   {{ else if $c.typical_timeline }}
     {{ $timeline = $c.typical_timeline.average_case }}
   {{ end }}
-  {{ $desc := printf "Repatriation from %s to the UK \u2014 typically %s. Expert guidance on documentation, legal requirements and 24/7 support." $cname $timeline }}
+  {{ $desc := printf "Repatriation from %s to the UK, typically %s. Expert guidance on documentation, legal requirements and 24/7 support." $cname $timeline }}
     <meta name="description" content="{{ $desc }}">
     <link rel="canonical" href="{{ .Permalink }}">
     <meta property="og:title" content="Funeral Repatriation from {{ $cname }} to the UK">
@@ -48,11 +48,12 @@
 {"@context":"https://schema.org","@type":"HowTo","name":{{ printf "How to arrange repatriation from %s to the UK" $cname | jsonify }},"description":{{ printf "Step-by-step process for bringing a loved one home from %s." $cname | jsonify }},"step":[{"@type":"HowToStep","name":"Notify the local authorities","text":"Report the death to local police, hospital, and the British Embassy as soon as possible."},{"@type":"HowToStep","name":"Obtain the local death certificate","text":"A local death certificate, translated and authenticated if required, must be obtained before repatriation can begin."},{"@type":"HowToStep","name":"Appoint a local funeral director","text":"A licensed local funeral director will coordinate embalming, coffin preparation, and documentation."},{"@type":"HowToStep","name":"Arrange embalming and preparation","text":"Embalming to international standards is required for air transport. A zinc-lined coffin is usually mandatory."},{"@type":"HowToStep","name":"Complete export documentation","text":"Gather export permits, freedom from infection certificate, and airline cargo paperwork."},{"@type":"HowToStep","name":"Book air freight","text":"Arrange air freight with an approved repatriation provider."},{"@type":"HowToStep","name":"Notify the UK funeral director","text":"The receiving UK funeral director takes custody on arrival and notifies the local registrar."},{"@type":"HowToStep","name":"Arrange the UK funeral","text":"Once repatriated, your family can proceed with funeral arrangements in the UK."}]}
 </script>
 {{ end }}
-{{ if eq $variant "D" }}
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ with $c.content_angles.faq_angles }}{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ printf "For specific guidance on this question, contact our specialist team. We are available 24 hours a day via our enquiry form at repatriationfuneral.com/contact/" | jsonify }}}}{{ end }}{{ end }}]}
-</script>
-{{ end }}
+{{/* F2: FAQPage schema removed (variant D only rendered it). The markup's
+     answer text did not match the page's visible FAQ answers, and Google
+     restricted FAQ rich results to government/health sites in 2023, so the
+     markup carried real schema-mismatch risk on a YMYL site for near-zero
+     SEO benefit. Removing rather than reconciling five different visible-FAQ
+     implementations against the schema. */}}
 {{ if eq $variant "E" }}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":{{ printf "Repatriation from %s to the UK: A Complete Guide" $cname | jsonify }},"author":{"@type":"Person","name":"Senior Repatriation Consultant"},"publisher":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"dateModified":"{{ now.Format "2006-01-02" }}","about":{"@type":"Thing","name":"Funeral Repatriation"}}
@@ -83,7 +84,7 @@
         {{ if $c }}
         <div class="country-hero-stats">
             <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-clock"></i></span><span class="stat-val">{{ $c.typical_timeline.average_case }}</span><span class="stat-label">Typical timeline</span></div>
-            <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-sterling-sign"></i></span><span class="stat-val">{{ $c.cost_guide.total_typical_range_gbp }}</span><span class="stat-label">Typical cost</span></div>
+            <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-phone-volume"></i></span><span class="stat-val">24/7</span><span class="stat-label">Support available</span></div>
             <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-flag"></i></span><span class="stat-val">{{ $c.priority }}</span><span class="stat-label">Priority country</span></div>
         </div>
         {{ end }}
@@ -107,7 +108,7 @@
 
 {{ if $c }}
 
-{{/* ANSWER-FIRST BLOCK — fires from frontmatter OR falls back to JSON data */}}
+{{/* ANSWER-FIRST BLOCK, fires from frontmatter OR falls back to JSON data */}}
 {{ $showAnswer := or .Params.direct_answer_intro .Params.direct_answer_points $c.typical_timeline.average_case }}
 {{ if $showAnswer }}
 <section class="section answer-brief-section">
@@ -115,11 +116,11 @@
         <div class="answer-brief reveal">
             <div class="answer-brief-main">
                 <p class="label-sm">Quick answer</p>
-                <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}Repatriation from {{ $c.name }}: costs &amp; timeline{{ end }}</h2>
+                <h2>{{ with .Params.direct_answer_heading }}{{ . }}{{ else }}Repatriation from {{ $c.name }}: what to expect{{ end }}</h2>
                 {{ if .Params.direct_answer_intro }}
                 <p class="answer-brief-intro">{{ .Params.direct_answer_intro }}</p>
                 {{ else }}
-                <p class="answer-brief-intro">Repatriation from {{ $c.name }} to the UK typically costs {{ $c.cost_guide.total_typical_range_gbp }} and takes {{ $c.typical_timeline.average_case }} in a straightforward case. This includes local funeral director fees, embalming, zinc-lined coffin, export documentation, air freight, and UK reception. Costs rise when a post-mortem or island/remote transfer is involved.</p>
+                <p class="answer-brief-intro">Repatriation from {{ $c.name }} to the UK typically takes {{ $c.typical_timeline.average_case }} in a straightforward case, covering local funeral director fees, embalming, zinc-lined coffin, export documentation, air freight, and UK reception. Timelines and costs rise when a post-mortem or an island or remote transfer is involved. Contact us for a case-specific estimate.</p>
                 {{ end }}
                 {{ with .Params.direct_answer_points }}
                 <ul class="answer-brief-list">
@@ -129,9 +130,9 @@
             </div>
             <div class="answer-brief-side">
                 <div class="answer-brief-stat"><span class="answer-brief-label">Typical timeline</span><strong>{{ $c.typical_timeline.average_case }}</strong></div>
-                <div class="answer-brief-stat"><span class="answer-brief-label">Typical cost</span><strong>{{ $c.cost_guide.total_typical_range_gbp }}</strong></div>
+                <div class="answer-brief-stat"><span class="answer-brief-label">Availability</span><strong>24/7</strong></div>
                 {{ with .Params.direct_answer_note }}<p class="answer-brief-note">{{ . }}</p>{{ end }}
-                <p class="answer-brief-note" style="margin-top:0.75rem;"><i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Process &amp; costs verified May 2026 &mdash; <a href="/methodology/">how we verify</a></p>
+                <p class="answer-brief-note" style="margin-top:0.75rem;"><i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Process verified May 2026, <a href="/methodology/">how we verify</a></p>
             </div>
         </div>
     </div>
@@ -148,7 +149,7 @@
                 <div class="process-step-num">{{ add $i 1 }}</div>
                 <h3>{{ $step.title }}</h3>
                 {{ $text := "" }}{{ if $step.details }}{{ $text = $step.details }}{{ else if $step.notes }}{{ $text = $step.notes }}{{ end }}
-                {{ if $text }}<p>{{ $text | truncate 180 }}</p>{{ else }}<p>{{ if $step.zinc_lined_required }}Zinc-lined coffin required for international air transport. {{ end }}{{ with $step.typical_cost_gbp }}Estimated cost: <strong>{{ . }}</strong>.{{ end }}{{ with $step.documents_needed }}{{ len . }} documents required.{{ end }}{{ with $step.processing_time }} Typically takes <strong>{{ . }}</strong> to complete.{{ end }}</p>{{ end }}
+                {{ if $text }}<p>{{ $text | truncate 180 }}</p>{{ else }}<p>{{ if $step.zinc_lined_required }}Zinc-lined coffin required for international air transport. {{ end }}{{ with $step.documents_needed }}{{ len . }} documents required.{{ end }}{{ with $step.processing_time }} Typically takes <strong>{{ . }}</strong> to complete.{{ end }}</p>{{ end }}
             </div>
             {{ end }}{{ end }}
         </div>
@@ -190,30 +191,31 @@
     </div>
 </section>
 
+{{/* F13: cost section rewritten to be qualitative only, no figures.
+     The old version rendered $c.cost_guide.total_typical_range_gbp and a
+     per-line breakdown, and cost_notes/insurance_note free text can also
+     carry embedded GBP figures for some countries, so none of that data is
+     rendered here any more. Content below is static, price-free copy. */}}
 <section class="section-alt cost-section">
     <div class="section-inner">
         <div class="cost-layout reveal">
             <div class="cost-header">
-                <p class="label-sm">Typical costs</p>
-                <h2>How much does repatriation from {{ $c.name }} cost?</h2>
-                {{ with $c.cost_guide }}<div class="cost-total-banner"><span class="cost-total-label">Typical total cost</span><span class="cost-total-val">{{ .total_typical_range_gbp }}</span></div>{{ end }}
+                <p class="label-sm">Cost</p>
+                <h2>What does repatriation from {{ $c.name }} cost?</h2>
+                <p>Every case is different, so we do not quote a figure until we know the details. Contact us for a case-specific estimate with no obligation.</p>
             </div>
-            {{ with $c.cost_guide }}
             <div class="cost-breakdown-card">
-                <h3>Cost breakdown</h3>
-                <table class="cost-table"><tbody>
-                    {{ with .breakdown.local_funeral_director_fees }}<tr><td>Local funeral director fees</td><td>{{ . }}</td></tr>{{ end }}
-                    {{ with .breakdown.embalming }}<tr><td>Embalming</td><td>{{ . }}</td></tr>{{ end }}
-                    {{ with .breakdown.zinc_lined_coffin }}<tr><td>Zinc-lined coffin</td><td>{{ . }}</td></tr>{{ end }}
-                    {{ with .breakdown.documentation_and_certificates }}<tr><td>Documentation &amp; certificates</td><td>{{ . }}</td></tr>{{ end }}
-                    {{ with .breakdown.air_freight }}<tr><td>Air freight to UK</td><td>{{ . }}</td></tr>{{ end }}
-                    {{ with .breakdown.uk_reception_and_transfer }}<tr><td>UK reception &amp; transfer</td><td>{{ . }}</td></tr>{{ end }}
-                    <tr><td>Information verified</td><td>May 2026 &mdash; <a href="/methodology/">how we verify</a></td></tr>
-                </tbody></table>
-                {{ with .cost_notes }}<p class="cost-note">{{ . }}</p>{{ end }}
+                <h3>What the cost depends on</h3>
+                <ul class="docs-checklist">
+                    <li><i class="fa-solid fa-circle-check"></i> Whether a post-mortem or inquest is required</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Distance and location, including island or remote transfers</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Documentation and certification needed for {{ $c.name }}</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Whether travel insurance covers repatriation</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Air freight availability and timing</li>
+                </ul>
+                <p class="cost-note">Travel insurance with repatriation cover often meets the full cost. Without insurance, the family is responsible for costs directly; the embassy and consulate cannot pay repatriation expenses. <a href="/methodology/">How we verify our information.</a></p>
             </div>
-            {{ if .insurance_note }}<div class="info-card info-card--gold"><div class="info-card-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h3>Travel insurance</h3><p>{{ .insurance_note }}</p></div></div>{{ end }}
-            {{ end }}
+            <div class="info-card info-card--gold"><div class="info-card-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h3>Travel insurance</h3><p>Check whether your policy, or the deceased's policy, includes repatriation cover. If it does, the insurer typically appoints and funds the funeral director directly.</p></div></div>
         </div>
     </div>
 </section>
@@ -266,9 +268,9 @@
                 <button class="faq-trigger" aria-expanded="false" aria-controls="country-faq-{{ $i }}">{{ $q }}<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="country-faq-{{ $i }}" class="faq-answer" hidden>
                     {{ if eq $i 0 }}<p>Repatriation from {{ $c.name }} typically takes <strong>{{ $c.typical_timeline.average_case }}</strong> in a straightforward case. The fastest we have seen is {{ $c.typical_timeline.fastest_case }}, while complex cases involving a post-mortem or investigation can take {{ $c.typical_timeline.complex_case }} or longer.</p>
-                    {{ else if eq $i 1 }}<p>The typical cost for repatriation from {{ $c.name }} is <strong>{{ $c.cost_guide.total_typical_range_gbp }}</strong>. This covers local funeral director fees, embalming, a zinc-lined coffin, documentation, air freight, and UK reception.</p>
+                    {{ else if eq $i 1 }}<p>The cost of repatriation from {{ $c.name }} depends on the circumstances, including whether a post-mortem is required and how the location affects transport. It covers local funeral director fees, embalming, a zinc-lined coffin, documentation, air freight, and UK reception. <a href="/contact/">Contact us</a> for a case-specific estimate.</p>
                     {{ else if eq $i 2 }}<p>The key documents required are: local death certificate, embalming certificate, freedom from infection certificate, and airline cargo documentation. Your local funeral director will gather most of these on your behalf.</p>
-                    {{ else if eq $i 3 }}<p>{{ with $c.ashes_transport }}Yes, cremation in {{ $c.name }} is an option. {{ if .cremation_available }}Cremation facilities are available. {{ end }}Transporting ashes to the UK typically costs {{ .typical_cost_ashes_return_gbp }}. {{ .critical_warning }}{{ end }}</p>
+                    {{ else if eq $i 3 }}<p>{{ with $c.ashes_transport }}Yes, cremation in {{ $c.name }} is an option. {{ if .cremation_available }}Cremation facilities are available. {{ end }}{{ .critical_warning }}{{ end }}</p>
                     {{ else }}<p>Please <a href="/contact/">contact our team</a> for specific guidance on this question. We are available 24 hours a day.</p>
                     {{ end }}
                 </div>
@@ -315,7 +317,7 @@
                 {{ if .cremation_available }}<a href="/cremation-transfer/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:1.25rem;"><div class="guide-crosslink-icon"><i class="fa-solid fa-fire"></i></div><div><p class="label-sm">Full cremation guide</p><p style="margin:0; font-size:0.9rem;">Cremation in {{ $c.name }}: documentation, airline rules, costs</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>{{ end }}
                 <a href="/bringing-ashes-home/{{ $c.slug }}/" class="guide-crosslink-card" style="margin-top:0.75rem;"><div class="guide-crosslink-icon"><i class="fa-solid fa-urn-trowel"></i></div><div><p class="label-sm">Already have ashes?</p><p style="margin:0; font-size:0.9rem;">Bringing ashes from {{ $c.name }} to the UK: documents and airline rules</p></div><i class="fa-solid fa-angle-right guide-crosslink-arrow"></i></a>
             </div>
-            <div class="ashes-costs"><div class="ashes-cost-card"><p class="label-sm">Typical costs</p>{{ with .typical_cost_cremation_gbp }}<div class="ashes-cost-line"><span>Cremation in {{ $c.name }}</span><strong>{{ . }}</strong></div>{{ end }}{{ with .typical_cost_ashes_return_gbp }}<div class="ashes-cost-line"><span>Returning ashes to UK</span><strong>{{ . }}</strong></div>{{ end }}<a href="/contact/" class="btn btn-cta" style="margin-top:1.25rem; width:100%; justify-content:center;">Ask about ashes transport</a></div></div>
+            <div class="ashes-costs"><div class="ashes-cost-card"><p class="label-sm">Cost</p><p style="font-size:0.9rem;">Cremation and ashes return costs depend on your circumstances. Contact us for a case-specific estimate.</p><a href="/contact/" class="btn btn-cta" style="margin-top:1.25rem; width:100%; justify-content:center;">Ask about ashes transport</a></div></div>
         </div>
     </div>
 </section>
