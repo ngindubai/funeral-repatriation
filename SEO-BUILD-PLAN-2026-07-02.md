@@ -189,6 +189,24 @@ Session rules in force: ask before every decision (no default assumed); stop and
 - **2B.2 F2 FAQ schema mirrors visible answers on hubs (Sonnet OK; 2.1a new answers is Opus advised).**
 - **2B.3 F3 author identity / E-E-A-T (OPUS ADVISED, and a business decision).** Raises: option A real author bio pages with Person schema, or option B keep Organization as author. Also raises the Organization-modelling decision: no postal address is set, so is the business a service-area Organization (no address) or is there a real address to add. Both are decisions for Gareth.
 
+## Block 2 sub-plan (added 2 July after code mapping)
+
+Reality found during Block 2: hubs use variant dispatch (variant A inline in `country-hub.html`; B/C/D/E via partials). The FAQ JSON-LD is emitted once from `country-hub.html`'s `define "schema"` for all variants, but the visible FAQ is implemented five ways. Prices reach hubs from three places: the variant-A cost sections, the `cost_guide` data in `data/countries_repatriation.json`, and free-text figures inside individual hub `_index.md` frontmatter. Only 13 hubs render a price today (bolivia, egypt, germany, india, indonesia, kyrgyzstan, malaysia, morocco, nepal, philippines, south-africa, spain, turkey).
+
+### 2B.2a F13 hub price removal (qualitative-only; Sonnet OK; decided)
+Steps:
+1. `country-hub.html` inline template: remove the price outputs and replace with qualitative wording plus a contact route. Specific spots: hero "Typical cost" stat (line ~86), answer-brief cost clause and cost stat (lines ~122, ~132), process-step `typical_cost_gbp` clause (line ~151), the whole cost banner + breakdown table section (lines ~193-219) becomes a "What affects the cost" factor list (post-mortem, island or remote transfer, distance, weekend delay) with no figures, FAQ answer 1 cost line (line ~269) and FAQ answer 3 ashes figure (line ~271), and the ashes cost card figures (line ~318, keep the CTA).
+2. Individual hub `_index.md` frontmatter: sweep for figures in `short_answer`, `direct_answer_intro`, `direct_answer_points`, and any faq text; rewrite qualitatively. Start with the 13 listed above; grep the rest for `GBP`, `£`, and thousands figures.
+3. `data/countries_repatriation.json` `cost_guide`: leave the data in place; once the template stops rendering it, it is dormant. Not deleted, so it can feed a future qualitative "what affects cost" note if wanted.
+Decision raised: none beyond the prices decision already made (qualitative only).
+
+### 2B.2b F2 hub FAQ schema (decision required)
+The FAQ JSON-LD answers are identical boilerplate and do not match the visible answers. Options:
+- Option 1: make the schema answers mirror the visible answers. Most faithful to audit F2, but must reconcile five visible implementations and keep them price-free.
+- Option 2: emit schema only for the questions that have real, data-backed, price-free answers (timeline, documents, ashes without a figure); drop the rest from the markup.
+- Option 3: remove the FAQPage schema from hubs entirely. Google restricted FAQ rich results to government and health sites in 2023, so hubs gain little from it; removal ends the mismatch risk at effectively zero SEO cost.
+Recommendation: Option 3 (lowest risk, near-zero cost), or Option 2 if we want to keep some FAQ markup. Awaiting decision.
+
 ## Block 3: Answer-first content
 - **3B.1 F1 answer block to top of variants B, D, E (Sonnet OK).**
 - **3B.2 F4 thicken and grammar-fix thin overview prose (OPUS ADVISED).** Opus writes the rubric and hand-checks a sample before any bulk pass.
