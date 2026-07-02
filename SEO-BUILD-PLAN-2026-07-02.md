@@ -315,3 +315,12 @@ F5, F2, F13 (folded in), and F3 all done and verified. F5+F2+F13 deployed to mas
 - Verified: `qa_routes.py` now reports 0 FAIL / 2467 PASS (was 36 FAIL). `check_schema.py` 0 errors. `check_titles.py` 0 errors (the 29 pre-existing "no CTA in description" warnings, a lower-severity non-blocking category, dropped to 27 as a side effect of the two CTA fixes above; the remaining 27 are pre-existing and out of this task's scope). Swept all 36 touched files for em dashes and banned words: zero found.
 
 **Pre-existing QA state as of Block 1/2/3 (resolved in Block 4):** `qa_routes.py` reported 36 route files failing at the time Blocks 1 to 3 were built (descriptions over 155 characters, the banned word "vital" in 6 files, 2 titles at 61 characters). None were caused by Blocks 1 to 3; all were cleared in Block 4 F9 above, which also caught and fixed a small regression in its own two of the trims (see 4B.2).
+
+**4B.4a F11 record the no-PBN/paid-GEO-mention do-not** (done)
+- File: `MEMORY.md`, Build Decisions section.
+- Added a permanent rule: do not buy brand mentions on low-quality domains or PBNs to influence AI Overview or chatbot citations (audit F11; brief Story 3). Recorded as a durable build decision, not just a session-history note, so it is read at the start of every future autonomous run per CLAUDE.md's run protocol.
+
+**4B.4b F10 note on llms.txt** (done; supersedes the audit's original F10, per session rule 5)
+- File: `MEMORY.md`, Build Decisions section.
+- Recorded that llms.txt and llms-full.txt are kept and treated as live deliverables going forward, overriding the audit's original suggestion to deprioritise them, because other AI systems read them and they drive real traffic even though Google's own AI Overview ranking does not. Also recorded the audit's finding that no further AI-specific schema or content chunking is needed, per Google's own Search Central documentation.
+- Session history: appended a summary row for this entire session (Blocks 1 to 4) to `MEMORY.md` section 11, matching the file's existing per-session log format.
