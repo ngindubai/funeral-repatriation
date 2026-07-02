@@ -24,7 +24,7 @@ direct_answer_points:
   - "Deaths on Zanzibar may involve additional logistics for transfer to the mainland before air repatriation."
   - "Swahili-language documentation requires certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Tanzania"
-overview_body: "Contact emergency services (112). Death must be registered with the Local authority registration office. The Police and Coroner takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Tanzania, the death must be reported to the local emergency services on 112 and registered with the Local authority registration office. Obtaining the local death certificate typically takes 7-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Police and Coroner takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 2-3 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Dar es Salaam can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

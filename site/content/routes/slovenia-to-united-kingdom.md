@@ -24,7 +24,7 @@ direct_answer_points:
   - "Slovenia is an EU member and Hague Apostille Convention member, which simplifies document legalisation."
   - "Death must be registered with the Maticni urad (Registry Office) promptly."
 overview_heading: "What happens after a death in Slovenia"
-overview_body: "Contact emergency services (112). Death must be registered with the Matični urad (Registry Office). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Slovenia, the death must be reported to the local emergency services on 112 and registered with the Matični urad (Registry Office). Obtaining the local death certificate typically takes 3-7 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 1-2 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Slovenian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Ljubljana can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

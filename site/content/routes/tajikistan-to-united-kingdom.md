@@ -24,7 +24,7 @@ direct_answer_points:
   - "Death must be registered with the civil registration office (ZAGS) promptly."
   - "All Tajik or Russian-language documentation requires certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Tajikistan"
-overview_body: "Contact emergency services (102). Death must be registered with the Civil registration (ZAGS). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Tajikistan begins at the local level: contacting the emergency services on 102, then registering the death with the Civil registration (ZAGS) and obtaining a certified local death certificate, which usually takes 7-14 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Prosecutor's Office, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 2-4 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Dushanbe can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

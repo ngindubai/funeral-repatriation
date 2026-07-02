@@ -24,7 +24,7 @@ direct_answer_points:
   - "The FCDO advises against all travel to Myanmar. The political situation since the 2021 coup has made consular assistance more limited."
   - "Consular access in parts of Myanmar is restricted; timelines are unpredictable."
 overview_heading: "What happens after a death in Myanmar"
-overview_body: "Contact emergency services (199). Death must be registered with the Ward or Township Administrator. The Myanmar Police Force takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Myanmar, the death must be reported to the local emergency services on 199 and registered with the Ward or Township Administrator. Obtaining the local death certificate typically takes 14-21 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Myanmar Police Force takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 3-6 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Myanmar documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Yangon provides consular services with limitations due to the political situation. They cannot pay for or arrange repatriation."
 timeline_steps:

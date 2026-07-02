@@ -24,7 +24,7 @@ direct_answer_points:
   - "UK-Iran relations are strained. British nationals in difficulty should contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
   - "All documentation is in Persian and requires certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Iran"
-overview_body: "Contact emergency services (115). Death must be registered with the National Organisation for Civil Registration. The Legal Medicine Organisation (Pezeshki Qanuni) takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Iran begins at the local level: contacting the emergency services on 115, then registering the death with the National Organisation for Civil Registration and obtaining a certified local death certificate, which usually takes 14-28 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Legal Medicine Organisation (Pezeshki Qanuni), which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 3-6 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Iranian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tehran has limited capacity to assist British nationals. Contact the FCDO directly as a first step."
 timeline_steps:

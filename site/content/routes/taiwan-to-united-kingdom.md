@@ -24,7 +24,7 @@ direct_answer_points:
   - "The UK maintains informal relations with Taiwan through the British Office Taipei, which handles consular functions in place of a formal embassy."
   - "Death is registered at the local Household Registration Office."
 overview_heading: "What happens after a death in Taiwan"
-overview_body: "Contact emergency services (110 (police), 119 (ambulance)). Death must be registered with the Household Registration Office. The Police and Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Taiwan, the family should contact the local emergency services on 110 (police), 119 (ambulance) and have the death formally certified. It is then registered with the Household Registration Office, and a local death certificate issued, which usually takes 5-7 days. Where a death is violent, suspicious or unexplained, the Police and Prosecutor's Office takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to United Kingdom as air cargo, where a receiving funeral director takes custody. Most cases take 1-2 weeks from the death to arrival in United Kingdom."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Taiwan documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Office Taipei handles consular assistance in lieu of a formal embassy. They cannot pay for or arrange repatriation."
 timeline_steps:

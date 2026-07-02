@@ -25,7 +25,7 @@ direct_answer_points:
   - "There is no resident Irish Embassy in Equatorial Guinea; consular assistance is via Abuja."
   - "All Spanish-language documentation requires certified English translation for Irish acceptance."
 overview_heading: "What happens after a death in Equatorial Guinea"
-overview_body: "Contact emergency services (114). Death must be registered with the Civil registry. The Police and local authorities takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Equatorial Guinea, the family should contact the local emergency services on 114 and have the death formally certified. It is then registered with the Civil registry, and a local death certificate issued, which usually takes 14-21 days. Where a death is violent, suspicious or unexplained, the Police and local authorities takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to Ireland as air cargo, where a receiving funeral director takes custody. Most cases take 4-6 weeks from the death to arrival in Ireland."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Abuja covers Equatorial Guinea and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:

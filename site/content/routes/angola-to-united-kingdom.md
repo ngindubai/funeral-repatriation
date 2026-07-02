@@ -24,7 +24,7 @@ direct_answer_points:
   - "All Portuguese-language documentation requires certified English translation for UK acceptance."
   - "Police clearance is required for all violent or suspicious deaths."
 overview_heading: "What happens after a death in Angola"
-overview_body: "Contact emergency services (113). Death must be registered with the Conservatoria do Registo Civil. The Police and Prosecutor takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Angola begins at the local level: contacting the emergency services on 113, then registering the death with the Conservatoria do Registo Civil and obtaining a certified local death certificate, which usually takes 10-14 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Police and Prosecutor, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 3-5 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Luanda can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

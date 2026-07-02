@@ -25,7 +25,7 @@ direct_answer_points:
   - "All Spanish-language documentation requires certified English translation for Irish acceptance."
   - "The Fiscalia (Prosecutor's Office) is involved in all violent or suspicious deaths."
 overview_heading: "What happens after a death in Peru"
-overview_body: "Contact emergency services (105). Death must be registered with the RENIEC or Registro Civil. The Fiscalia (Prosecutor's Office) takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Peru, the death must be reported to the local emergency services on 105 and registered with the RENIEC or Registro Civil. Obtaining the local death certificate typically takes 7-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Fiscalia (Prosecutor's Office) takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to Ireland by air cargo. From death to arrival in Ireland, most cases take 2-3 weeks."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Lima can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

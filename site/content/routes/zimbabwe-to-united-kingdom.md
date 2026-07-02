@@ -24,7 +24,7 @@ direct_answer_points:
   - "Zimbabwe issues death certificates in English, which simplifies UK documentation requirements."
   - "Police clearance from the Zimbabwe Republic Police is required for all unnatural or suspicious deaths."
 overview_heading: "What happens after a death in Zimbabwe"
-overview_body: "Contact emergency services (995). Death must be registered with the Registrar General's Department. The Zimbabwe Republic Police takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Zimbabwe, the death must be reported to the local emergency services on 995 and registered with the Registrar General's Department. Obtaining the local death certificate typically takes 7-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Zimbabwe Republic Police takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 2-3 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. Zimbabwean documentation is in English. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Harare can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

@@ -24,7 +24,7 @@ direct_answer_points:
   - "Death must be registered with the Civil Registry Agency promptly."
   - "All Georgian-language documentation requires a certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Georgia"
-overview_body: "Contact emergency services (112). Death must be registered with the Civil Registry Agency. The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Georgia, the death must be reported to the local emergency services on 112 and registered with the Civil Registry Agency. Obtaining the local death certificate typically takes 5-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 1-2 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Georgian documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Tbilisi can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

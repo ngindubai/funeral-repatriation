@@ -24,7 +24,7 @@ direct_answer_points:
   - "The FCDO advises against all travel to many parts of the DRC. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
   - "All French-language documentation requires certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Democratic Republic of the Congo"
-overview_body: "Contact emergency services (112). Death must be registered with the Bureau d'etat civil (Civil Registry). The Police and Prosecutor takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Democratic Republic of the Congo, the family should contact the local emergency services on 112 and have the death formally certified. It is then registered with the Bureau d'etat civil (Civil Registry), and a local death certificate issued, which usually takes 14-28 days. Where a death is violent, suspicious or unexplained, the Police and Prosecutor takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to United Kingdom as air cargo, where a receiving funeral director takes custody. Most cases take 3-6 weeks from the death to arrival in United Kingdom."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Kinshasa can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

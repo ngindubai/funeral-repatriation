@@ -25,7 +25,7 @@ direct_answer_points:
   - "Death is registered at the local government office (Jumin Centre) promptly."
   - "All Korean-language documentation requires a certified English translation for Irish acceptance."
 overview_heading: "What happens after a death in South Korea"
-overview_body: "Contact emergency services (112 (police), 119 (ambulance)). Death must be registered with the Local government office (Jumin Centre). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from South Korea begins at the local level: contacting the emergency services on 112 (police), 119 (ambulance), then registering the death with the Local government office (Jumin Centre) and obtaining a certified local death certificate, which usually takes 5-7 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Prosecutor's Office, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to Ireland as air cargo. A funeral director in Ireland then takes custody. The full process most often takes 1-2 weeks."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Seoul can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

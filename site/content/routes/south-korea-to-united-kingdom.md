@@ -24,7 +24,7 @@ direct_answer_points:
   - "Death is registered at the local government office (Jumin Centre) promptly."
   - "All Korean-language documentation requires a certified English translation for UK acceptance."
 overview_heading: "What happens after a death in South Korea"
-overview_body: "Contact emergency services (112 (police), 119 (ambulance)). Death must be registered with the Local government office (Jumin Centre). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in South Korea, the death must be reported to the local emergency services on 112 (police), 119 (ambulance) and registered with the Local government office (Jumin Centre). Obtaining the local death certificate typically takes 5-7 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to United Kingdom by air cargo. From death to arrival in United Kingdom, most cases take 1-2 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All South Korean documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Seoul can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

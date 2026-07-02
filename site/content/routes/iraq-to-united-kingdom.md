@@ -24,7 +24,7 @@ direct_answer_points:
   - "The FCDO advises against all travel to Iraq except the Kurdistan Region. Consular assistance in other parts of Iraq is severely limited."
   - "A consulate in Erbil covers the Kurdistan Region."
 overview_heading: "What happens after a death in Iraq"
-overview_body: "Contact emergency services (104 (police)). Death must be registered with the Civil registration office. The Police and judiciary takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Iraq, the family should contact the local emergency services on 104 (police) and have the death formally certified. It is then registered with the Civil registration office, and a local death certificate issued, which usually takes 14-28 days. Where a death is violent, suspicious or unexplained, the Police and judiciary takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to United Kingdom as air cargo, where a receiving funeral director takes custody. Most cases take 3-6 weeks from the death to arrival in United Kingdom."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Iraqi documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Baghdad and consulate in Erbil provide consular assistance with significant limitations. They cannot pay for or arrange repatriation."
 timeline_steps:

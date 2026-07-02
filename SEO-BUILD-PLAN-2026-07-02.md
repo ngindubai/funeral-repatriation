@@ -219,6 +219,17 @@ Recommendation: Option 3 (lowest risk, near-zero cost), or Option 2 if we want t
 - Result: all five variants now render the `answer-brief-section` before the overview narrative. Verified on a sample route of each variant that the answer block's DOM position precedes "The process" overview. In B and D the helpline strip (a short contact bar, roughly 30 words) still sits directly under the hero, so the answer remains well inside the first 200 words.
 - Why: AI Overview and featured-snippet capture favour the direct answer high in the document (brief Story 2).
 
+**3B.2 F4 thicken thin overview prose** (Opus-designed rubric + hand-checked sample, then bulk; done, verified)
+- Files: new `f4_thicken_overview.py` (the composition script); 501 route `_index`-excluded `.md` files rewritten (only the `overview_body` field).
+- Rubric: compose an 85-115 word, grammatical overview using only facts already in the same file (local emergency number, registration authority, document processing time, the jurisdiction rule with its grammar fixed, the standard air-cargo process flow, and the typical timeline). No new facts. No embassy claim, because the set spans many destination countries and a "British Embassy" line would be wrong for corridor routes. Three sentence frames rotate by a hash of the slug so pages do not read identically. Guardrails reject any output containing a banned word, an em dash, a price, or an unescaped quote.
+- Scope discipline: only bodies that are an EXACT full match of the canonical thin template (emergency sentence, registration sentence, optional jurisdiction sentence, nothing else) are rewritten. This was tightened during the sample hand-check after the loose version would have destroyed sourced facts on richer files (for example Zimbabwe's apostille and English-certificate notes) and mangled edge cases (Laos's nested-paren emergency number, Poland's "within 3 days" clause). Final safe scope: 501 files.
+- Hand-check found and fixed five issues before the bulk pass: proper-noun corruption from lowercasing ("the botswana Police Service"), a missing article ("registered with Registrar General"), an over-length frame (120w), nested-paren emergency numbers, and rich-file fact destruction. The strict full-match resolved the last three.
+- Result: route `overview_body` median 48 to 60 words, mean 55 to 70; under-40-word bodies 695 to 194; the "takes jurisdiction when the death is:" grammar bug 618 to 117. `check_schema.py` 0 errors; `qa_routes.py` still exactly 36 pre-existing FAILs (zero new failures, and none of the 501 rewritten files fail); YAML integrity and rendered output spot-checked.
+- Follow-up (not done, worth a future batch): the remaining ~194 under-40-word and ~117 grammar-bug files do not match the canonical template (different phrasing), so they were left untouched rather than risk corrupting them. They need their own pattern analysis. This is a deliberate stop, not an oversight.
+
+### Block 3 complete
+F1 and F4 done and verified. Deploying to master.
+
 ## Block 4: On-page tidy and governance
 - **4B.1 F8 shorten rendered title (Sonnet OK).**
 - **4B.2 F9 trim 33 over-length descriptions (Sonnet OK).**

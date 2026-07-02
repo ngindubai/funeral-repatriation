@@ -25,7 +25,7 @@ direct_answer_points:
   - "Death must be registered with the local Hukumati (civil administration) registration office promptly."
   - "All Uzbek or Russian-language documentation requires certified English translation for Irish acceptance."
 overview_heading: "What happens after a death in Uzbekistan"
-overview_body: "Contact emergency services (102). Death must be registered with the Hukumati (local civil administration) registration office. The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Uzbekistan, the family should contact the local emergency services on 102 and have the death formally certified. It is then registered with the Hukumati (local civil administration) registration office, and a local death certificate issued, which usually takes 7-10 days. Where a death is violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to Ireland as air cargo, where a receiving funeral director takes custody. Most cases take 2-3 weeks from the death to arrival in Ireland."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Ankara covers Uzbekistan and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:

@@ -24,7 +24,7 @@ direct_answer_points:
   - "Malaysia issues death certificates in both English and Malay, which simplifies UK documentation requirements."
   - "Muslim deaths have additional religious and procedural considerations that affect preparation and timing."
 overview_heading: "What happens after a death in Malaysia"
-overview_body: "Contact emergency services (999). Death must be registered with the National Registration Department (JPN). The Royal Malaysia Police takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Malaysia begins at the local level: contacting the emergency services on 999, then registering the death with the National Registration Department (JPN) and obtaining a certified local death certificate, which usually takes 3-7 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Royal Malaysia Police, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 1-2 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. Malaysian death certificates are issued in English, so documentation is straightforward. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British High Commission in Kuala Lumpur can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

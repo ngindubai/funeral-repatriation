@@ -24,7 +24,7 @@ direct_answer_points:
   - "All French-language documentation requires certified English translation for UK acceptance."
   - "Police clearance is required for all violent or suspicious deaths."
 overview_heading: "What happens after a death in Congo"
-overview_body: "Contact emergency services (118). Death must be registered with the Civil registry. The Police and Prosecutor takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Congo, the family should contact the local emergency services on 118 and have the death formally certified. It is then registered with the Civil registry, and a local death certificate issued, which usually takes 10-14 days. Where a death is violent, suspicious or unexplained, the Police and Prosecutor takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to United Kingdom as air cargo, where a receiving funeral director takes custody. Most cases take 3-5 weeks from the death to arrival in United Kingdom."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Brazzaville can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

@@ -24,7 +24,7 @@ direct_answer_points:
   - "The UK suspended some embassy services in Belarus from 2022. Consular assistance for British nationals may be directed via Poland or Lithuania."
   - "The FCDO advises against all travel to Belarus. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
 overview_heading: "What happens after a death in Belarus"
-overview_body: "Contact emergency services (112). Death must be registered with the ZAGS (civil registration). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Belarus begins at the local level: contacting the emergency services on 112, then registering the death with the ZAGS (civil registration) and obtaining a certified local death certificate, which usually takes 7-14 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Prosecutor's Office, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 2-3 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance for Belarus may be provided via Poland or Lithuania given the current situation. They cannot pay for or arrange repatriation."
 timeline_steps:

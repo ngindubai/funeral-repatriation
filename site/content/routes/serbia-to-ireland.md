@@ -25,7 +25,7 @@ direct_answer_points:
   - "Serbia is a Hague Apostille Convention member, which simplifies document legalisation."
   - "Death must be registered at the local civil registry office promptly."
 overview_heading: "What happens after a death in Serbia"
-overview_body: "Contact emergency services (112). Death must be registered with the Maticna knjiga umrlih (Civil Registry). The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Serbia begins at the local level: contacting the emergency services on 112, then registering the death with the Maticna knjiga umrlih (Civil Registry) and obtaining a certified local death certificate, which usually takes 3-7 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Prosecutor's Office, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to Ireland as air cargo. A funeral director in Ireland then takes custody. The full process most often takes 1-2 weeks."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Belgrade can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

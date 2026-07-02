@@ -25,7 +25,7 @@ direct_answer_points:
   - "Switzerland is not in the EU but is a Hague Apostille Convention member, which simplifies document legalisation."
   - "Death must be registered at the local Zivilstandsamt (Civil Registry) promptly."
 overview_heading: "What happens after a death in Switzerland"
-overview_body: "Contact emergency services (112). Death must be registered with the Zivilstandsamt (Civil Registry Office). The Staatsanwaltschaft (Public Prosecutor) takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Switzerland, the family should contact the local emergency services on 112 and have the death formally certified. It is then registered with the Zivilstandsamt (Civil Registry Office), and a local death certificate issued, which usually takes 3-7 days. Where a death is violent, suspicious or unexplained, the Staatsanwaltschaft (Public Prosecutor) takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to Ireland as air cargo, where a receiving funeral director takes custody. Most cases take 1-2 weeks from the death to arrival in Ireland."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Berne can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

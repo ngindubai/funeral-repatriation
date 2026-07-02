@@ -25,7 +25,7 @@ direct_answer_points:
   - "Gambia is popular with older British tourists and has a significant British retired community. The High Commission handles a notable volume of repatriation cases."
   - "Police clearance is required for all unnatural or suspicious deaths."
 overview_heading: "What happens after a death in Gambia"
-overview_body: "Contact emergency services (117 (police)). Death must be registered with the National Registration Authority. The Gambia Police Force takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Gambia, the death must be reported to the local emergency services on 117 (police) and registered with the National Registration Authority. Obtaining the local death certificate typically takes 7-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Gambia Police Force takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to Ireland by air cargo. From death to arrival in Ireland, most cases take 2-3 weeks."
 dest_reception: "The Irish funeral director takes custody at the cargo terminal. All documentation must be in certified English translation where required. The Coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "Department of Foreign Affairs emergency line: +353 1 408 2000 (24 hours). The Irish Embassy in Accra covers Gambia and can register the death and advise on documentation. They cannot pay for or arrange repatriation."
 timeline_steps:

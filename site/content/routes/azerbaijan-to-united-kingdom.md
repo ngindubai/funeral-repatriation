@@ -24,7 +24,7 @@ direct_answer_points:
   - "Death must be registered with the ASAN Service or State Registry promptly."
   - "All Azerbaijani-language documentation requires a certified English translation for UK acceptance."
 overview_heading: "What happens after a death in Azerbaijan"
-overview_body: "Contact emergency services (112). Death must be registered with the ASAN Service / State Registry. The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Azerbaijan, the family should contact the local emergency services on 112 and have the death formally certified. It is then registered with the ASAN Service / State Registry, and a local death certificate issued, which usually takes 5-10 days. Where a death is violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to United Kingdom as air cargo, where a receiving funeral director takes custody. Most cases take 1-2 weeks from the death to arrival in United Kingdom."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Azerbaijani documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Baku can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

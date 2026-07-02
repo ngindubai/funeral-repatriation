@@ -24,7 +24,7 @@ direct_answer_points:
   - "The UK Embassy in Tripoli suspended operations in 2014. Consular assistance is provided through the British Embassy in Tunis."
   - "The FCDO advises against all travel to Libya. Contact the FCDO emergency line immediately: +44 (0)20 7008 5000."
 overview_heading: "What happens after a death in Libya"
-overview_body: "Contact emergency services (1515). Death must be registered with the Local civil registration office. The Local authorities takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Libya begins at the local level: contacting the emergency services on 1515, then registering the death with the Local civil registration office and obtaining a certified local death certificate, which usually takes 14-28 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Local authorities, which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 4-8 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. Consular assistance for Libya is provided via the British Embassy in Tunis. They cannot pay for or arrange repatriation."
 timeline_steps:

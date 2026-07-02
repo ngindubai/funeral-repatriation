@@ -24,7 +24,7 @@ direct_answer_points:
   - "Luxembourg is an EU member and Hague Apostille Convention member, which simplifies document legalisation."
   - "Death must be registered with the Bureau de l'etat civil promptly."
 overview_heading: "What happens after a death in Luxembourg"
-overview_body: "Contact emergency services (112). Death must be registered with the Bureau de l'etat civil (Civil Registry Office). The Parquet (Prosecutor's Office) takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "Repatriation from Luxembourg begins at the local level: contacting the emergency services on 112, then registering the death with the Bureau de l'etat civil (Civil Registry Office) and obtaining a certified local death certificate, which usually takes 3-7 days. A death that is violent, suspicious or unexplained falls under the jurisdiction of the Parquet (Prosecutor's Office), which may require a post-mortem first. With the paperwork complete, the body is embalmed, sealed in a zinc-lined coffin, and cleared for export before being flown to United Kingdom as air cargo. A funeral director in United Kingdom then takes custody. The full process most often takes 1-2 weeks."
 dest_reception: "The UK funeral director takes custody at the cargo terminal. All Luxembourg documentation must be in certified English translation. The coroner for the district is notified. Straightforward cases proceed directly to funeral arrangements."
 dest_consular: "FCDO 24-hour emergency line: +44 (0)20 7008 5000. The British Embassy in Luxembourg City can register the death and advise on local funeral directors. They cannot pay for or arrange repatriation."
 timeline_steps:

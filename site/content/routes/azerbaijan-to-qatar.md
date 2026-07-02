@@ -25,7 +25,7 @@ direct_answer_points:
   - "Death must be registered with the ASAN Service or State Registry promptly."
   - "All Azerbaijani-language documentation requires a certified English translation for Qatar acceptance."
 overview_heading: "What happens after a death in Azerbaijan"
-overview_body: "Contact emergency services (112). Death must be registered with the ASAN Service / State Registry. The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "After a death in Azerbaijan, the family should contact the local emergency services on 112 and have the death formally certified. It is then registered with the ASAN Service / State Registry, and a local death certificate issued, which usually takes 5-10 days. Where a death is violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction and may order a post-mortem before the body can be released. Once the paperwork is complete, the body is embalmed, sealed in a zinc-lined coffin, and flown to Qatar as air cargo, where a receiving funeral director takes custody. Most cases take 1-2 weeks from the death to arrival in Qatar."
 dest_reception: "The Qatari funeral home or government mortuary takes custody at Hamad International Airport (DOH) cargo terminal. Qatar Ministry of Public Health approval is required before the remains can be received. All documents must be attested by the Qatari Embassy in the country of origin. (Qatar Ministry of Foreign Affairs, 2025.)"
 dest_consular: "Qatar Embassy in Baku handles attestation of repatriation documents. Contact the Qatar Embassy for document authentication requirements. Qatar Ministry of Foreign Affairs can be reached via the Qatar Embassy."
 timeline_steps:

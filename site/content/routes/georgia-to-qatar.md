@@ -25,7 +25,7 @@ direct_answer_points:
   - "Death must be registered with the Civil Registry Agency promptly."
   - "All Georgian-language documentation requires a certified English translation for Qatar acceptance."
 overview_heading: "What happens after a death in Georgia"
-overview_body: "Contact emergency services (112). Death must be registered with the Civil Registry Agency. The Prosecutor's Office takes jurisdiction when the death is: violent, suspicious, or unexplained deaths."
+overview_body: "When someone dies in Georgia, the death must be reported to the local emergency services on 112 and registered with the Civil Registry Agency. Obtaining the local death certificate typically takes 5-10 days, and it is this document that lets the rest of the process begin. If the death is treated as violent, suspicious or unexplained, the Prosecutor's Office takes jurisdiction, and a post-mortem may be needed before release. After the documentation is in order, the body is embalmed and placed in a zinc-lined coffin for international transport, then sent to Qatar by air cargo. From death to arrival in Qatar, most cases take 1-2 weeks."
 dest_reception: "The Qatari funeral home or government mortuary takes custody at Hamad International Airport (DOH) cargo terminal. Qatar Ministry of Public Health approval is required before the remains can be received. All documents must be attested by the Qatari Embassy in the country of origin. (Qatar Ministry of Foreign Affairs, 2025.)"
 dest_consular: "Qatar Embassy in Tbilisi handles attestation of repatriation documents. Contact the Qatar Embassy for document authentication requirements. Qatar Ministry of Foreign Affairs can be reached via the Qatar Embassy."
 timeline_steps:
