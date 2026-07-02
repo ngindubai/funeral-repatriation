@@ -211,4 +211,20 @@ Options: (a) link every built route page whose origin is this country, filtered 
 
 Format per entry: finding ID, files and lines touched, what changed, why. Written so it can be lifted into the routine build prompts later.
 
-_No changes committed yet this session. Entries appended as each item completes._
+### Block 1: Discoverability (built and verified 2 July 2026; commit pending)
+
+**1B.1 llms.txt and llms-full.txt upgrade** (session rule 5; supersedes audit F10)
+- Files: `site/static/llms.txt`, `site/static/llms-full.txt`.
+- llms.txt: removed the two GBP price figures (Spain, Thailand) under the qualitative-only prices decision; removed two em dashes (UAE line, Sensitivity note) under the em dash ban; added a "Route Guides (country to country)" section linking /routes/.
+- llms-full.txt: removed all GBP cost figures (the P1/P2 country lines and the "typical cost range (GBP)" phrase); replaced the em dash separators with colons throughout; corrected the stale "26 countries" framing to describe full country coverage plus route corridors; added a "Country-to-country route guides" section linking /routes/. Left the "verified May 2026" line unchanged, since it was not actually re-verified.
+- Why: other AI systems read these files and they drive real traffic (session rule 5). Figures removed to match the site-wide qualitative-only decision and the route-page no-prices rule. Em dashes removed under the absolute ban.
+
+**1B.2 F7 hub-to-route internal links**
+- Files: new `site/layouts/partials/countries/routes-from.html`; partial call added in `site/layouts/countries/country-hub.html` (variant A inline path) and in `site/layouts/partials/countries/country-b.html`, `country-c.html`, `country-d.html`, `country-e.html` (immediately before the enquiry form).
+- What: every country hub now renders a "Repatriation routes from {country}" block linking each built route page whose origin is that country, sorted by destination.
+- Matching approach: normalise `origin_name` (lowercase, strip a leading "the ") and compare to the hub name, rather than joining on slug. The hub slug and route `origin_slug` diverge (hub `usa` but route `origin_slug` `united-states` and `usa`; both captured; USA hub shows 113 destinations). Only `site.RegularPages` are linked, so no link can 404 and the block self-scales as the matrix grows.
+- Coverage: 189 of 238 hubs render a block; the remainder have no built outbound routes yet.
+- Discovered during build: country hubs use variant dispatch. Variant A renders inline in `country-hub.html`; variants B/C/D/E render via the `partials/countries/country-{b,c,d,e}.html` partials. That is why the block was factored into one shared partial called from all five, rather than edited into a single template.
+- Why: strengthens the silo and gives crawlers a path into the 2,467 route pages (audit F7; brief Story 5 silo structure, Story 6 indexing lag).
+
+**Pre-existing QA state noted (not caused by Block 1):** `qa_routes.py` reports 36 route files failing, and `check_titles.py` matches: descriptions over 155 characters, the banned word "vital" in 6 files, and 2 titles at 61 characters. Block 1 changed only templates and static files (no route `.md` touched), and `check_schema.py` passes with zero errors. These 36 map to Block 4 F9 (descriptions) plus a new banned-word sub-item; see Block 4.

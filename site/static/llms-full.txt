@@ -1,69 +1,77 @@
-# Repatriate Service — Full Site Index
+# Repatriate Service: Full Site Index
 
-> Specialist UK body repatriation service. 26 countries. 24/7 availability. Full documentation coordination and embassy liaison.
+> Specialist UK body repatriation service. In-depth country guides for the priority countries below, full country coverage worldwide, and country-to-country route guides. 24/7 availability. Full documentation coordination and embassy liaison.
 
 ---
 
 ## Country repatriation guides
 
-Each country guide covers: typical cost range (GBP), required documentation, local funeral director availability, embassy contact, airport information, common challenges, and a step-by-step process overview.
+Each country guide covers required documentation, local funeral director availability, embassy contact, airport information, common challenges, and a step-by-step process overview. Costs depend on the specifics of each case, so we give a case-specific estimate on contact rather than a fixed figure.
 
 ### P1 countries (with city-level guides)
 
-**Spain** — /repatriation-from-spain/
-Cost: £3,000 to £5,500. Documentation: local death certificate, certified translation, embalming certificate, OFII transit permit. P1 cities: Madrid, Barcelona, Malaga, Ibiza, Tenerife.
+**Spain**: /repatriation-from-spain/
+Documentation: local death certificate, certified translation, embalming certificate, OFII transit permit. P1 cities: Madrid, Barcelona, Malaga, Ibiza, Tenerife.
 
-**France** — /repatriation-from-france/
-Cost: £3,500 to £5,500. Documentation: acte de deces, laissez-passer mortuaire. P1 cities: Paris, Nice, Lyon.
+**France**: /repatriation-from-france/
+Documentation: acte de deces, laissez-passer mortuaire. P1 cities: Paris, Nice, Lyon.
 
-**Thailand** — /repatriation-from-thailand/
-Cost: £5,000 to £9,000. Post-mortem often required. Documentation: death certificate, Foreign Affairs Division clearance, embalming certificate. P1 cities: Bangkok, Phuket, Koh Samui, Chiang Mai.
+**Thailand**: /repatriation-from-thailand/
+Post-mortem often required. Documentation: death certificate, Foreign Affairs Division clearance, embalming certificate. P1 cities: Bangkok, Phuket, Koh Samui, Chiang Mai.
 
-**USA** — /repatriation-from-usa/
-Cost: £5,000 to £10,000. State-level variation. P1 cities: New York, Los Angeles, Miami, Orlando.
+**USA**: /repatriation-from-usa/
+State-level variation. P1 cities: New York, Los Angeles, Miami, Orlando.
 
-**Greece** — /repatriation-from-greece/
-Cost: £3,500 to £6,000. Post-mortem common for accidents. P1 cities: Athens, Crete, Corfu, Rhodes.
+**Greece**: /repatriation-from-greece/
+Post-mortem common for accidents. P1 cities: Athens, Crete, Corfu, Rhodes.
 
-**Turkey** — /repatriation-from-turkey/
-Cost: £4,000 to £6,500. Laissez-passer required. P1 cities: Istanbul, Antalya, Bodrum.
+**Turkey**: /repatriation-from-turkey/
+Laissez-passer required. P1 cities: Istanbul, Antalya, Bodrum.
 
-**Portugal** — /repatriation-from-portugal/
-Cost: £3,000 to £5,000. P1 cities: Lisbon, Algarve.
+**Portugal**: /repatriation-from-portugal/
+P1 cities: Lisbon, Algarve.
 
-**Italy** — /repatriation-from-italy/
-Cost: £3,500 to £5,500. Regional variation. P1 cities: Rome, Milan, Venice.
+**Italy**: /repatriation-from-italy/
+Regional variation. P1 cities: Rome, Milan, Venice.
 
-**India** — /repatriation-from-india/
-Cost: £5,000 to £9,000. Documentation-intensive. P1 cities: Mumbai, Goa, Delhi, Chennai.
+**India**: /repatriation-from-india/
+Documentation-intensive. P1 cities: Mumbai, Goa, Delhi, Chennai.
 
-**Egypt** — /repatriation-from-egypt/
-Cost: £5,000 to £8,000. Bureaucratic delays common. P1 cities: Cairo, Hurghada, Sharm El Sheikh.
+**Egypt**: /repatriation-from-egypt/
+Bureaucratic delays common. P1 cities: Cairo, Hurghada, Sharm El Sheikh.
 
 ### P2 countries (country-level guides)
 
-**Australia** — /repatriation-from-australia/ — Cost: £6,000 to £11,000
-**Germany** — /repatriation-from-germany/ — Cost: £3,500 to £5,500
-**Cyprus** — /repatriation-from-cyprus/ — Cost: £3,000 to £5,000
-**UAE (Dubai)** — /repatriation-from-uae/ — Cost: £4,500 to £7,000
-**Philippines** — /repatriation-from-philippines/ — Cost: £5,500 to £9,000
-**South Africa** — /repatriation-from-south-africa/ — Cost: £5,000 to £8,500
-**Kenya** — /repatriation-from-kenya/ — Cost: £5,000 to £8,000
-**Canada** — /repatriation-from-canada/ — Cost: £5,500 to £9,000
-**Brazil** — /repatriation-from-brazil/ — Cost: £6,000 to £10,000
-**Mexico** — /repatriation-from-mexico/ — Cost: £5,500 to £9,000
-**Morocco** — /repatriation-from-morocco/ — Cost: £4,500 to £7,000
-**Dominican Republic** — /repatriation-from-dominican-republic/ — Cost: £6,000 to £10,000
-**Sri Lanka** — /repatriation-from-sri-lanka/ — Cost: £5,000 to £8,000
-**Indonesia** — /repatriation-from-indonesia/ — Cost: £6,000 to £11,000
-**Cambodia** — /repatriation-from-cambodia/ — Cost: £5,500 to £9,500
-**Vietnam** — /repatriation-from-vietnam/ — Cost: £5,500 to £9,500
+**Australia**: /repatriation-from-australia/
+**Germany**: /repatriation-from-germany/
+**Cyprus**: /repatriation-from-cyprus/
+**UAE (Dubai)**: /repatriation-from-uae/
+**Philippines**: /repatriation-from-philippines/
+**South Africa**: /repatriation-from-south-africa/
+**Kenya**: /repatriation-from-kenya/
+**Canada**: /repatriation-from-canada/
+**Brazil**: /repatriation-from-brazil/
+**Mexico**: /repatriation-from-mexico/
+**Morocco**: /repatriation-from-morocco/
+**Dominican Republic**: /repatriation-from-dominican-republic/
+**Sri Lanka**: /repatriation-from-sri-lanka/
+**Indonesia**: /repatriation-from-indonesia/
+**Cambodia**: /repatriation-from-cambodia/
+**Vietnam**: /repatriation-from-vietnam/
+
+---
+
+## Country-to-country route guides
+
+Beyond the UK-inbound country guides, the site publishes route guides for specific origin-to-destination corridors, for example Spain to the United Kingdom or UAE to Ireland. Each route guide covers the documentation, timeline, and step-by-step process for that corridor.
+
+/routes/ : Full index of country-to-country repatriation corridors covered.
 
 ---
 
 ## First response guides
 
-Step-by-step guides for the immediate hours after a death abroad. Each guide covers: who to call first, what happens to the body, emergency contacts, documentation required, timeline.
+Step-by-step guides for the immediate hours after a death abroad. Each guide covers who to call first, what happens to the body, emergency contacts, documentation required, and timeline.
 
 /guides/death-abroad-spain/
 /guides/death-abroad-france/
@@ -96,11 +104,11 @@ Step-by-step guides for the immediate hours after a death abroad. Each guide cov
 
 ## Cremation abroad and ashes transport
 
-For families choosing local cremation over full repatriation. Country guides covering: cremation availability, documentation required, airline rules for carrying ashes, cost comparison.
+For families choosing local cremation over full repatriation. Country guides covering cremation availability, documentation required, airline rules for carrying ashes, and how the options compare.
 
 Note: cremation is not available in Muslim-majority countries (Turkey, Egypt, Morocco) under standard circumstances.
 
-/cremation-transfer/ — Hub page
+/cremation-transfer/ : Hub page
 /cremation-transfer/spain/
 /cremation-transfer/france/
 /cremation-transfer/thailand/
@@ -118,15 +126,15 @@ Note: cremation is not available in Muslim-majority countries (Turkey, Egypt, Mo
 
 ## Guidance articles
 
-/blog/ — Index
-/blog/what-happens-when-someone-dies-abroad/ — Overview of the full process from death to UK arrival
-/blog/repatriation-cost-guide/ — Country-by-country cost breakdown
-/blog/religious-requirements-repatriation/ — Islamic, Hindu, Sikh, Jewish, Christian requirements
-/blog/repatriation-travel-insurance/ — What insurance covers, exclusions, and what to do when insurers delay
-/blog/british-embassy-role-death-abroad/ — What embassies actually do (and cannot do)
-/blog/repatriation-vs-cremation-abroad/ — Decision guide for families choosing between options
-/blog/zinc-lined-coffins-explained/ — Why zinc coffins are required, what they cost, how they affect the funeral
-/blog/how-to-register-a-death-abroad/ — Local registration vs UK consular registration
+/blog/ : Index
+/blog/what-happens-when-someone-dies-abroad/ : Overview of the full process from death to UK arrival
+/blog/repatriation-cost-guide/ : How costs are made up, by component and by country
+/blog/religious-requirements-repatriation/ : Islamic, Hindu, Sikh, Jewish, Christian requirements
+/blog/repatriation-travel-insurance/ : What insurance covers, exclusions, and what to do when insurers delay
+/blog/british-embassy-role-death-abroad/ : What embassies actually do (and cannot do)
+/blog/repatriation-vs-cremation-abroad/ : Decision guide for families choosing between options
+/blog/zinc-lined-coffins-explained/ : Why zinc coffins are required and how they affect the funeral
+/blog/how-to-register-a-death-abroad/ : Local registration vs UK consular registration
 
 ---
 

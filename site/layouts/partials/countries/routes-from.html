@@ -1,0 +1,37 @@
+{{/* ================================================================
+     F7: hub-to-route internal links ("Routes from {country}")
+     Shared across the variant-A inline hub template and the B/C/D/E
+     variant partials so every country hub links down into the route
+     matrix.
+
+     Match on a normalised origin_name (lowercased, leading "the "
+     removed) rather than slug, because a hub slug and the route
+     origin_slug can differ (for example hub "usa" but route
+     origin_slug "united-states"). Only built route pages are in
+     site.RegularPages, so the block self-scales as the matrix grows
+     and never links a page that does not exist.
+
+     Context: the country hub page (.). Reads .Params.country_key.
+     ================================================================ */}}
+{{ $key := .Params.country_key }}
+{{ $c := index hugo.Data.countries_repatriation.countries $key }}
+{{ if $c }}
+  {{ $hubName := lower (or $c.name $c.country_name) }}
+  {{ if hasPrefix $hubName "the " }}{{ $hubName = substr $hubName 4 }}{{ end }}
+  {{ $originRoutes := slice }}
+  {{ range where site.RegularPages "Section" "routes" }}
+    {{ $on := lower (or .Params.origin_name "") }}
+    {{ if hasPrefix $on "the " }}{{ $on = substr $on 4 }}{{ end }}
+    {{ if and (ne $on "") (eq $on $hubName) }}{{ $originRoutes = $originRoutes | append . }}{{ end }}
+  {{ end }}
+  {{ if $originRoutes }}
+<section class="section route-links-section">
+    <div class="section-inner">
+        <div class="section-header reveal"><p class="label-sm">Route guides</p><h2>Repatriation routes from {{ $c.name }}</h2><p>Bringing someone from {{ $c.name }} to a country other than the UK? These route guides cover the documentation, timeline and process for each corridor.</p></div>
+        <div class="city-links-grid stagger-children">
+            {{ range sort $originRoutes ".Params.dest_name" }}<a href="{{ .RelPermalink }}" class="city-link-card reveal"><i class="fa-solid fa-route"></i><span>{{ .Params.origin_name }} to {{ .Params.dest_name }}</span><i class="fa-solid fa-angle-right city-arrow"></i></a>{{ end }}
+        </div>
+    </div>
+</section>
+  {{ end }}
+{{ end }}
