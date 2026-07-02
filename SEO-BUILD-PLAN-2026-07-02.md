@@ -171,3 +171,44 @@ PY
 | 4.1 | Prices on hubs | Decision (Gareth); Sonnet to action |
 | 4.2, 4.3 | Governance notes in MEMORY.md | Sonnet |
 | 4.4 | Quarterly refresh spec + fact loop | **Opus** |
+
+---
+
+# Execution session, 2 July 2026: block order and additions
+
+This session runs the plan in thematic blocks in this order: **Block 1 Discoverability**, **Block 2 Trust and schema**, **Block 3 Answer-first content**, then **Block 4 On-page tidy and governance**. The findings above are re-grouped into these blocks below. Nothing in the findings changes; only the running order and two additions (llms.txt per the session rules, and a cross-cutting prices decision).
+
+Session rules in force: ask before every decision (no default assumed); stop and request a model switch at every Opus-tagged or Opus-designed step; extend this plan in place; keep the changelog at the foot of this file; treat llms.txt as a live deliverable regardless of what the audit said about it.
+
+## Block 1: Discoverability
+- **1B.1 llms.txt upgrade (NEW this session, Sonnet OK after prices decision).** The site already ships `site/static/llms.txt` and `site/static/llms-full.txt`. Upgrade, do not skip. Verify every linked page exists (all core pages confirmed present on 2 July), reflect the route matrix and country-hub coverage, and resolve the price content per the cross-cutting prices decision below. Decision raised: prices in llms.txt (see Prices decision). Do not assert a fresh verification date that has not actually been re-verified on a YMYL site.
+- **1B.2 F7 hub to route links (Sonnet OK after scope decision).** Add a "Routes from {country}" block to `site/layouts/countries/country-hub.html`, filtered so only built route pages render. Decision raised: link scope (see F7 scope decision).
+
+## Block 2: Trust and schema
+- **2B.1 F5 dedupe Organization schema (Sonnet OK).**
+- **2B.2 F2 FAQ schema mirrors visible answers on hubs (Sonnet OK; 2.1a new answers is Opus advised).**
+- **2B.3 F3 author identity / E-E-A-T (OPUS ADVISED, and a business decision).** Raises: option A real author bio pages with Person schema, or option B keep Organization as author. Also raises the Organization-modelling decision: no postal address is set, so is the business a service-area Organization (no address) or is there a real address to add. Both are decisions for Gareth.
+
+## Block 3: Answer-first content
+- **3B.1 F1 answer block to top of variants B, D, E (Sonnet OK).**
+- **3B.2 F4 thicken and grammar-fix thin overview prose (OPUS ADVISED).** Opus writes the rubric and hand-checks a sample before any bulk pass.
+
+## Block 4: On-page tidy and governance
+- **4B.1 F8 shorten rendered title (Sonnet OK).**
+- **4B.2 F9 trim 33 over-length descriptions (Sonnet OK).**
+- **4B.3 F13 prices on hubs (DECISION, then Sonnet to action).** Folded into the cross-cutting Prices decision below.
+- **4B.4 F11 record PBN do-not, F10 llms note superseded by session rule 5, F12 quarterly refresh spec (Opus advised).**
+
+## Cross-cutting decision: prices
+Route pages carry no prices (compliant with CLAUDE.md rule 9). Country hubs and `llms.txt` both publish GBP price ranges. This must be resolved once, because it affects Block 1 (llms.txt), Block 2 (any schema), and Block 4 (F13 hubs). Options: (a) strip all figures site-wide and direct to the contact form; (b) keep figures as a deliberate exception and record it in CLAUDE.md; (c) keep qualitative "what affects the cost" wording with no figures. Awaiting Gareth's decision before editing llms.txt or hubs.
+
+## F7 scope decision
+Options: (a) link every built route page whose origin is this country, filtered by existence so it self-scales as the matrix grows; (b) a curated set of top corridors plus a link to the routes index; (c) a full collapsible list of all destinations. Awaiting Gareth's decision.
+
+---
+
+## Changes made and why
+
+Format per entry: finding ID, files and lines touched, what changed, why. Written so it can be lifted into the routine build prompts later.
+
+_No changes committed yet this session. Entries appended as each item completes._
