@@ -1,0 +1,173 @@
+# SEO Build Plan, 2 July 2026
+
+Execution plan derived from `seo-audit-2026-07-02.html`, which is derived from the SEO and Search Brief dated 29 June 2026.
+
+**Execution model:** Sonnet, unless a step is marked **OPUS REQUIRED**.
+**Branch:** `claude/funeral-repatriation-seo-audit-zayex7` (per run instructions). Do not commit to `main`. `master` is the deploy branch; do not touch it unless Gareth approves a live push.
+**House rules that still apply to every step:** no em dashes anywhere, no banned vocabulary, British English, no prices on route pages, no invented facts on a YMYL topic. Run the QA gate before any commit.
+
+## Standard checks (run after every code wave)
+
+```
+cd /home/user/funeral-repatriation
+hugo --source site --gc --minify            # must build with no errors
+python3 qa_routes.py                          # route QA gate, exit 0 required
+python3 check_schema.py                        # schema check
+python3 check_titles.py --routes-only          # title/description lengths
+```
+
+If any gate fails, fix before committing. Commit each wave once, with a clear message.
+
+---
+
+## WAVE 1, safe mechanical wins (Sonnet)
+
+One deploy covers F1, F5, F6, F8, F9. All template-only, low risk.
+
+### Step 1.1, F1: answer block first on all variants
+- File: `site/layouts/routes/single.html`.
+- In variants B, D and E, move the `answer-brief-section` block so it is the first `<section>` after the hero (before the helpline strip in B and D, before the overview in E). Variants A and C already do this; use them as the pattern.
+- Keep the ordering of the sections beneath the answer block as they are per variant, so layout variety is preserved below the fold.
+- Acceptance: build succeeds; view one page of each variant (B, D, E) in the built output and confirm the "Quick answer" / "Key facts" block renders directly under the hero.
+
+### Step 1.2, F5: remove duplicate Organization schema
+- File: `site/layouts/routes/single.html`, lines defining the second `Organization` JSON-LD inside the `schema` block (the thinner one, around the `contactOption:"TollFree"` block).
+- Delete that block only. The site-wide Organization schema in `site/layouts/_default/baseof.html` stays and is the single source.
+- Acceptance: `check_schema.py` passes; a built route page contains exactly one `"@type":"Organization"` block (the one from baseof).
+
+### Step 1.3, F6: og:image and twitter card
+- File: `site/layouts/_default/baseof.html`, in `<head>`.
+- Add, after the existing og tags: a default `og:image` (absolute URL), `og:image:width`/`og:image:height`, and `twitter:card` = `summary_large_image`, `twitter:title`, `twitter:description`, `twitter:image`.
+- Image asset: use an existing calm brand image from `site/static/images/` if one is suitable (for example the cargo-terminal image already used in the route hero), or ask Gareth for one. Never a distressing photo. If no suitable asset exists, use the site logo/favicon as a fallback and note it for later replacement.
+- Acceptance: built home page and a route page both output `og:image` and `twitter:card` tags with an absolute URL.
+
+### Step 1.4, F8: shorten rendered title
+- Files: `site/layouts/routes/single.html` (title block) and `site/layouts/countries/country-hub.html`.
+- Drop the ` | Repatriate Service` suffix from route and country-hub `<title>` output (or shorten to ` | Repatriate`). Keep the suffix on the home page and top-level pages.
+- Acceptance: `check_titles.py --routes-only` shows rendered titles inside 60 characters where the field itself was already short.
+
+### Step 1.5, F9: trim over-length descriptions
+- 33 route files have `description` over 155 characters. List them, then trim each to end with the call to action inside 155 characters. Do not change meaning.
+- Find them:
+```
+python3 - <<'PY'
+import glob,re
+for f in sorted(glob.glob("site/content/routes/*.md")):
+    if "_index" in f: continue
+    fm=open(f,encoding="utf-8").read().split("---",2)[1]
+    m=re.search(r'^description:\s*"?(.+?)"?\s*$',fm,re.M)
+    if m and len(m.group(1))>155: print(len(m.group(1)),f)
+PY
+```
+- Acceptance: `check_titles.py` reports zero descriptions over 155.
+
+### Commit Wave 1
+- Message example: `seo: answer-first layouts, dedupe org schema, og:image, title/desc length (F1,F5,F6,F8,F9)`.
+
+---
+
+## WAVE 2, structured-data honesty and silo (Sonnet, with one Opus sub-step)
+
+### Step 2.1, F2: FAQ schema must match visible answers (country hubs)
+- File: `site/layouts/countries/country-hub.html`.
+- The visible FAQ (around lines 259 to 277) already builds real answers for questions 0 to 3 from country data. The FAQ JSON-LD (around line 53) writes the same boilerplate for every answer.
+- Change the JSON-LD so each `acceptedAnswer.text` reproduces the same text the visible block shows for that index. The cleanest approach: build each answer string once (as a Hugo variable per index) and use it in both the visible HTML and the JSON-LD, so they cannot drift again.
+- For question indexes with no real answer (index 4 and beyond, currently the "contact our team" fallback): either omit those questions from the JSON-LD entirely, or supply a real answer (see 2.1a).
+- **Do not emit price figures into route-page schema.** On hubs, prices are a separate open decision (see Wave 4, F13); do not add new price output here, only mirror what already renders.
+- Acceptance: for a built hub page, each FAQ question's schema answer text equals its visible answer text; `check_schema.py` passes.
+
+### Step 2.1a **OPUS REQUIRED**: write real answers for trailing hub FAQ questions
+- Only needed if Gareth wants the trailing questions kept in the markup rather than dropped.
+- Writing new YMYL answers needs Opus: they must be factually correct, source-able against `data/countries_repatriation.json` or named FCDO/embassy sources, and free of banned words and em dashes.
+- If Opus is not being used this run, take the safe path instead: drop the trailing (index 4+) questions from the JSON-LD so no unbacked answer is marked up. This still resolves the mismatch risk.
+
+### Step 2.2, F7: link hubs down to route pages
+- File: `site/layouts/countries/country-hub.html`.
+- Add a "Routes from {country}" section that links to route pages whose `origin_slug` matches this country. Use `site.GetPage` or a filtered `where` over the routes section so only existing pages are linked (follow the existing link-filter pattern in `routes/single.html` that guards against 404s).
+- Keep it scoped: link the main corridors for that origin plus a link to `/routes/`. Do not list every possible destination.
+- Acceptance: a built hub page shows working links into `/routes/...`; no link points to a non-existent page (`hugo` build has no broken-ref warnings for these).
+
+### Commit Wave 2
+- Message example: `seo: FAQ schema matches visible answers on hubs, hub-to-route links (F2,F7)`.
+
+---
+
+## WAVE 3, trust and content quality (OPUS REQUIRED)
+
+Both steps here need Opus. Do not run them on Sonnet.
+
+### Step 3.1 **OPUS REQUIRED**, F3: author identity (E-E-A-T)
+- This starts with a decision, so surface the two options to Gareth before building:
+  - Option A: stand up real author bio pages (a new `/authors/` or `/about/team/` section) for the four personas, describing genuine experience only, then wire named Person schema (`name`, `jobTitle`, `url` pointing to the bio) into route, hub and blog templates. Assign a persona per content type per the CLAUDE.md persona table.
+  - Option B: keep Organization as author, and instead strengthen the existing "Reviewed by the editorial team" credit and the methodology page.
+- Do not invent qualifications. If real experience cannot be described truthfully, prefer Option B.
+- If Option A is approved: add the bio pages, then add author frontmatter or template mapping so each page resolves to one persona deterministically, then add Person schema (upgrade blog author from Organization to Person, replace the generic "Senior Repatriation Consultant" on hubs).
+- Acceptance: chosen option built and passing `check_schema.py`; if Option A, each Person in schema has a `url` to a real bio page.
+
+### Step 3.2 **OPUS REQUIRED**, F4: thicken the thin overview prose
+- Target: the 695 routes with `overview_body` under 40 words first, then the rest under 60.
+- The prose is generated from the route generators (`generate_r*.py`) into frontmatter, so fix at the source: improve the sentence templates so output is grammatical and fuller (aim for 60 to 110 words), then re-generate or backfill the affected files.
+- Hard constraints: no invented facts (source from `data/countries_repatriation.json` and named FCDO/embassy sources), varied sentence rhythm, no banned words, no em dashes, no prices on routes.
+- Work in batches through the QA gate. Do not attempt all 2,467 in one commit; the deploy pipeline expects one push per run and small batches are safer for a YMYL site.
+- Find the shortest first:
+```
+python3 - <<'PY'
+import glob,re
+rows=[]
+for f in glob.glob("site/content/routes/*.md"):
+    if "_index" in f: continue
+    fm=open(f,encoding="utf-8").read().split("---",2)[1]
+    m=re.search(r'^overview_body:\s*"(.+?)"\s*$',fm,re.M)
+    if m:
+        w=len(m.group(1).split())
+        if w<40: rows.append((w,f))
+for w,f in sorted(rows): print(w,f)
+PY
+```
+- Acceptance per batch: QA gate green; spot-read 5 rewritten pages for grammar and factual sourcing.
+
+### Commit Wave 3
+- Commit F3 and each F4 batch separately, each with its own clear message.
+
+---
+
+## WAVE 4, decision and governance (no build until decided)
+
+### Step 4.1, F13 **DECISION NEEDED from Gareth**: prices on country hubs
+- The 239 hubs render price ranges (hero stat, answer brief, cost banner, cost section, two FAQ answers, ashes cards). This conflicts with CLAUDE.md content rule 9 (no prices).
+- Do not change anything until Gareth decides. Present the two paths:
+  - Keep prices (treat hubs as a deliberate exception; update CLAUDE.md to record the exception so it is not flagged again).
+  - Remove prices (replace each price element with a qualitative "what affects the cost" explanation plus a link to the contact form; then the no-prices rule holds site-wide).
+- If removal is approved, it is a Sonnet job across `site/layouts/countries/country-hub.html` and any hub data references. QA gate must pass.
+
+### Step 4.2, F11: record the do-not
+- Add a line to `MEMORY.md`: do not buy brand mentions or use PBNs for GEO; Google flags it and it does not work on AI Overviews (per 29 June brief, Story 3).
+
+### Step 4.3, F10: note on llms.txt
+- No code change. Keep `llms.txt` and `llms-full.txt`. Do not add AI-specific schema, content chunking, or further llms-specific files; Google does not read them for AI ranking (Story 2). Record this in `MEMORY.md` so future runs do not re-open it.
+
+### Step 4.4, F12 **OPUS REQUIRED for the fact loop**: quarterly refresh spec
+- Write a short spec (a new doc, for example `CONTENT-REFRESH-SPEC.md`) for a quarterly pass that re-checks dated regulatory facts (FCDO numbers, embassy status, documentation timings) against named sources and flags changes for confirmation. Edits are confirmed by Opus or a person, never applied blind, because the content is YMYL.
+
+---
+
+## Monitoring (operational, no code), from the brief
+
+- Track positions for the named queries in Story 1: "repatriation of remains" and "body repatriation from UAE", plus core UK-inbound corridors.
+- The GSC page indexing report is lagging (no data since 11 June per Story 6). Use the URL Inspection tool for individual pages until the bulk report resolves; do not trust the bulk report for anything launched after 11 June.
+
+---
+
+## Summary of model requirements
+
+| Step | Item | Model |
+|---|---|---|
+| 1.1 to 1.5 | Answer-first, dedupe schema, og:image, titles, descriptions | Sonnet |
+| 2.1 | FAQ schema mirrors visible answers | Sonnet |
+| 2.1a | New YMYL answers for trailing FAQ questions | **Opus** (or drop questions on Sonnet) |
+| 2.2 | Hub to route links | Sonnet |
+| 3.1 | Author identity / E-E-A-T | **Opus** |
+| 3.2 | Thicken thin overview prose | **Opus** |
+| 4.1 | Prices on hubs | Decision (Gareth); Sonnet to action |
+| 4.2, 4.3 | Governance notes in MEMORY.md | Sonnet |
+| 4.4 | Quarterly refresh spec + fact loop | **Opus** |
