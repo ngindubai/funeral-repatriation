@@ -31,7 +31,7 @@ These are grounded; the file and root cause are named.
 - Confirmed. `guides/list.html` renders `<h3>{{ .Params.country_name }}</h3>`, but guide pages have no `country_name` param, so every card title renders as `<h3></h3>` (empty). The built page shows cards with description text and no heading.
 - Fix: use `{{ .Title }}` (or a cleaned country name) for the card heading. Also correct the stale "26 country guides" label above the grid (there are 239). Verify cards show a country/title.
 
-### Block D2: Conversion (Sonnet, two DECISION points)
+### Block D2: Conversion (Sonnet, decisions resolved)
 
 **D2.1 No visible phone/WhatsApp number on the homepage hero or the contact page** [Major]
 - Confirmed. `index.html` hero and `_default/contact.html` link to `wa.me/447703577246` via buttons but never print the number `+44 7703 577246` as readable, tappable text. A family cannot copy or hand-write it. (Route and hub pages that include the emergency helpline bar do show it; the highest-traffic pages do not.)
@@ -41,16 +41,18 @@ These are grounded; the file and root cause are named.
 - Confirmed. On every interior template the enquiry form sits at the page bottom; there is no sticky element. Only the floating WhatsApp button persists.
 - Fix: add one shared sticky bottom CTA bar for mobile (a partial included from `baseof.html`), two actions: "WhatsApp now" and "Send enquiry" (anchor to the page form or `/contact/`). Ensure it does not collide with the existing floating WhatsApp button (reposition or merge the float into the bar on mobile). This is the single highest-impact mobile conversion change in the audit.
 
-**D2.3 Contact form length** [Minor, **DECISION**]
-- Confirmed the contact form has 7 inputs including two selects (`service`, `urgency`). Whether to trim is a business-triage decision (does the team use those fields?). Awaiting Gareth: keep as is, or reduce to name / email or phone / country / message.
+**D2.3 Contact page form length** [Minor, **DECIDED: trim**]
+- Scope check: the audit's D2.3 finding and Gareth's "trim" decision were specifically about the Contact page form (`site/layouts/_default/contact.html`), which has 7 fields including two selects (`service`, `urgency`). The route-page form (`routes/single.html`) and hub form (`country-hub.html`) already have only 5 fields and 1 select each (country is hidden/pre-filled, no `urgency` select), so they are not part of this item; leave them as is (no unrequested rewrite).
+- Fix: on `contact.html` only, remove the `service` and `urgency` selects, keep name, email, phone, country (free text), and the message textarea (already required). Confirm the `formsubmit.co` endpoint does not depend on the removed field names.
+- Also found while reading this file: two em dashes (`Repatriation enquiry — Repatriate Service` in the hidden `_subject` field; `country, circumstances, timeline — will help us respond` in the message placeholder). Fix both while in this file (absolute ban).
 
 **D2.4 Trust text and response-time near forms** [Minor]
 - The microtext under submit buttons is small. Add a short line ("We usually reply within the hour. No obligation, strictly confidential."). Note: the thank-you page already promises a call within the hour and is well written (no change needed there; see false-claims list).
 
 ### Block D3: Consistency and polish (Sonnet)
 
-**D3.1 Green WhatsApp button on the homepage** [Minor, **DECISION**]
-- Confirmed: `index.html` line 135 uses `.btn-whatsapp` (`background:#25D366`) mid-page, the only non-gold CTA in page content. The floating WhatsApp button is also green, which is the accepted WhatsApp convention and should stay. Decision for Gareth: recolour the mid-page button to the gold system for consistency, or keep WhatsApp-green deliberately. Recommend recolouring the in-content button to gold, leaving the floating button green.
+**D3.1 Green WhatsApp button on the homepage** [Minor, **DECIDED: keep green, no change**]
+- Confirmed: `index.html` line 135 uses `.btn-whatsapp` (`background:#25D366`) mid-page. Gareth decided to keep it green (WhatsApp brand convention). This item is closed; do not recolour it.
 
 **D3.2 "P1 / P2" priority badges are unexplained jargon** [Minor]
 - Confirmed on homepage and country cards. Relabel to plain language ("Priority country" / remove the P2 tier badge) so a grieving reader is not shown internal tiering codes.
@@ -61,35 +63,37 @@ These are grounded; the file and root cause are named.
 **D3.4 Stale hardcoded counts** [Minor]
 - "26 country guides" and similar hardcoded counts are stale (the site has 239). Replace with a live count (`len` of the section) or a rounded phrase.
 
-### Block D4: Imagery (Sonnet reassign; DECISION on tone/new assets)
+### Block D4: Imagery (Sonnet; scope confirmed)
 
-**D4.1 Repeated and tonally wrong hero images** [Major]
+**D4.1 Repeated and tonally wrong hero images** [Major, **DECIDED: keep current images, reassign only**]
 - Confirmed: `ctandt-ai-generated-8884751.jpg` (the image the audit calls "coffin and flowers") is hardcoded in `_default/contact.html` and is the default in `_default/single.html`, so it appears on Contact, Privacy, and generic pages. Every route hero uses `cargo-terminal-night.jpg`. The countries index uses `mrwashingt0n-ai-generated-9048740.jpg` (the audit calls it "figure among gravestones"). `_default/list.html` defaults to a couple image.
-- Sonnet action now: reassign these to the calmest existing assets already in `site/static/images/` (for example `mediterranean.jpg`, `city-dusk.jpg`, `consultation-office.jpg`, `support-conversation.jpg`, `airport-terminal.jpg`), giving Contact, the index pages, and the generic template distinct, non-distressing images, and removing the coffin image from the conversion and legal pages.
-- **DECISION / Gareth**: whether to commission a small set of purpose-made images. Route heroes all being identical is a per-page-relevance weakness, but 2,467 unique images is not realistic; a handful of rotating destination-neutral images is the pragmatic option. Confirm the tone rule: no gravestones, no coffins, no funeral-group photos.
+- Decided: no new or commissioned images. Reassign only from what already exists in `site/static/images/` (for example `mediterranean.jpg`, `city-dusk.jpg`, `consultation-office.jpg`, `support-conversation.jpg`, `airport-terminal.jpg`), giving Contact, the index pages, and the generic template distinct, non-distressing images, and removing the coffin image from the conversion and legal pages. Route heroes staying visually similar across corridors is accepted as a known limitation, not fixed here.
 
 ---
 
-## Structural items (OPUS to design, DECISION to approve)
+## Structural items
 
-**D5.1 The five country-hub layouts are inconsistent** [Critical per audit, **OPUS + DECISION**]
+**D5.1 The five country-hub layouts are inconsistent** [Critical per audit, **DECIDED: Option 1, OPUS REQUIRED, not yet started**]
 - Confirmed the five hubs render very differently: variant A is the inline template in `country-hub.html` (hero + stats + article), while B, C, D, E are separate partials (`partials/countries/country-b/c/d/e.html`) with genuinely different structures (accordion, two-column, no-hero editorial, and so on). The audit rates USA (E) and Thailand (B) weakest and Spain (A) strongest.
-- **The tension that needs a decision:** this A-to-E variety is deliberate. CLAUDE.md mandates template rotation so no two consecutive pages share a layout (an anti-footprint measure for programmatic SEO). The audit says that same variety reads as an inconsistent, less trustworthy product. These goals conflict. Options: (1) keep five variants but bring the weaker ones (B, D, E) up to the same quality bar and shared components as A and C, so they differ in arrangement but not in polish or completeness (recommended: satisfies both goals); (2) collapse to one strong template (drops the rotation, contradicts CLAUDE.md, needs that rule changed); (3) leave as is. This is Gareth's call. If option 1, Opus should design the shared component set and the per-variant checklist before Sonnet touches the partials.
-- Also verify, as part of this, the audit's specific structural claims that could not be confirmed by the browser agent: France (C) "blank left column", Thailand (B) "no hero", Greece (D) "no helpline bar", and the route hero stat bar showing 2 vs 3 pills. Reproduce each in the built output first.
+- Decided: Option 1, "raise the quality, keep some consistency." Keep all five variants (satisfies the CLAUDE.md rotation rule) but bring B, D, E up to the same completeness and component quality as A and C, so pages differ in arrangement but not in polish. This needs an actual Opus session to design the shared component set and a per-variant checklist before Sonnet touches the partials (see the model-switch note above; not yet done).
+- When that Opus session happens, also verify the audit's specific structural claims that could not be confirmed by the browser agent before designing around them: France (C) "blank left column", Thailand (B) "no hero", Greece (D) "no helpline bar", and the route hero stat bar showing 2 vs 3 pills. Reproduce each in the built output first, per the verify-first rule.
 
-**D5.2 Navigation restructure** [Major, **DECISION**]
-- Confirmed the nav has eight items plus a "Resources" dropdown and a redundant pair (a "WhatsApp us" text link and a "Get Help Now" button). The audit wants a leaner crisis-focused nav. This is a decision about information architecture; propose a 4-to-5 item structure for Gareth to approve before changing `header.html`.
+**D5.2 Navigation restructure** [Major, **DECIDED: proceed, Sonnet**]
+- Confirmed the nav has eight items plus a "Resources" dropdown and a redundant pair (a "WhatsApp us" text link and a "Get Help Now" button). Gareth approved proceeding; no specific target structure was given, so the proposal below is what Sonnet builds. If this is not what Gareth had in mind, it is a one-file (`header.html`) change to adjust.
+- **Proposed 5-item structure:** Home / Country Guides / Resources (dropdown, unchanged: guides, cremation, embassy, ashes, blog) / Services / Contact, plus the WhatsApp icon-button. Change: drop the separate gold "Get Help Now" button, since it duplicates Contact and the WhatsApp button in a 3-way tie for the same job; "Contact" in the main nav and the WhatsApp button together cover both channels without a third, differently-worded button. Keep "About Us" but fold it as the first item under Resources rather than a top-level slot, since it is not a crisis-relevant destination. Net: 8 top-level items (Home, About, Country Guides, Resources-dropdown, Services, Contact, WhatsApp-link, Get-Help-button) become 5 (Home, Country Guides, Resources-dropdown-with-About-added, Services, Contact) plus one WhatsApp action, not two.
 
 ---
 
-## Needs Gareth before Sonnet can build (decisions and assets)
+## Decisions (Gareth, 3 July 2026)
 
-1. **Social proof / testimonials** (audit calls this the biggest missing trust element). Cannot be invented on a YMYL site. Needs real, permissioned reviews or a genuine "families helped since 20XX" figure from Gareth. Until provided, this stays out.
-2. **Hub standardisation scope** (D5.1 option 1, 2, or 3), given the CLAUDE.md rotation rule.
-3. **Nav structure** (D5.2).
-4. **Contact form fields** (D2.3).
-5. **Green vs gold** in-content WhatsApp button (D3.1).
-6. **Image tone / whether to commission assets** (D4.1).
+1. **Testimonials/social proof: NO.** Confirmed: nothing invented, no placeholder reviews or figures. This item stays out of scope entirely; do not add any social-proof element without new, explicit instruction and real data.
+2. **Hub standardisation: Option 1.** "Raise the quality, keep some consistency." Keep the five A to E variants (satisfies the CLAUDE.md rotation rule) but bring the weaker ones (B, D, E per the audit) up to the same completeness and component quality as the strongest (A, C). Per the original plan, this needs Opus to design the shared component set and a per-variant checklist before Sonnet touches the partials. **Not yet started: needs an actual Opus session (see model-switch note below).**
+3. **Nav structure: proceed.** Build the leaner 4-to-5 item nav per D5.2.
+4. **Contact form fields: trim.** Reduce to name, email or phone, country, message. Remove the `service` and `urgency` selects per D2.3.
+5. **Green vs gold: keep green.** The mid-page homepage WhatsApp button (`.btn-whatsapp`, `#25D366`) stays as is. D3.1 is closed, no change needed. (The floating WhatsApp button was already going to stay green regardless; this confirms the in-content button too.)
+6. **Imagery: keep current images.** D4.1's Sonnet-reassignment (swapping the repeated `ctandt` "coffin" image and picking distinct existing images per page) still goes ahead using only images already in `site/static/images/`. No new commissioned assets, no change to the tone rule beyond what D4.1 already specifies.
+
+**Model-switch note (3 July 2026):** Gareth said "switched to opus" when giving these decisions, but the `/model` command that fired that turn set the session to Sonnet 5 (confirmed by the system). D5.1 (hub standardisation) requires an actual Opus session per its own tagging; it should not be attempted on Sonnet. All other items below (D1, D2.1, D2.2, D2.4, D3.2 to D3.4, D4.1, D5.2) are Sonnet-safe and can proceed immediately.
 
 ---
 
