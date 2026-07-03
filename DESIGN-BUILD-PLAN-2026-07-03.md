@@ -173,3 +173,25 @@ These are grounded; the file and root cause are named.
 - Seven em dashes across `site/assets/css/main.css` comment headers, found during a full sweep of the file while adding the D2.2 sticky-bar CSS (the file header, two variable-block comments, a card-accent comment, two section-divider comments, one inline comment). All replaced with commas.
 
 **Gate status after Block D2:** Hugo build clean, `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, `check_titles.py` 0 errors / 27 pre-existing warnings, no banned words or em dashes in any file touched this block.
+
+### Block D3 and D5.2 (Sonnet, done, verified)
+
+**D3.2 "P1/P2" priority badges removed** (done, verified)
+- Files: `site/layouts/countries/list.html`, `site/layouts/index.html`.
+- The `$c.priority` field holds a raw internal content-build tier code (P1/P2/P3), used elsewhere in this project only to sequence which countries got deeper city-level guides first. Displaying it to a bereaved family does more harm than the audit's "unexplained jargon" framing suggests: it implies an explicit ranking of which countries, and by extension which families' deaths, the site treats as a priority. Removed entirely from both user-facing card displays rather than relabelling it to something like "Priority country", which would still expose the ranking, just in friendlier words.
+- Verified: build clean, no `$c.priority` output remains on `/countries/` cards or the homepage country grid.
+
+**D3.3 Overline label contrast on light backgrounds** (done, partially, verified and honestly scoped)
+- File: `site/assets/css/main.css`.
+- Computed the actual WCAG contrast ratios before touching anything: `.label-sm` in full gold (`--gold`, `#D5A021`) scores 8.26:1 on the dark hero backgrounds it was designed for (comfortably passes), but only 2.36:1 on the white `.section`/`.section-alt` backgrounds where most instances of this label actually appear on the site (route/hub/guide/blog templates all use it as a small eyebrow above section headings). WCAG AA requires 4.5:1 for normal-size text.
+- Fix: added a scoped override, `.section .label-sm, .section-alt .label-sm { color: var(--gold-dark) }` (the existing `--gold-dark` variable, already used elsewhere in the file), which improves the light-background contrast to 3.17:1, and bumped the base font-size from 0.72rem to 0.76rem. The base rule (used in hero contexts) is untouched, so the strong 8.26:1 contrast there is preserved.
+- Honestly scoped, not overclaimed: 3.17:1 clears WCAG's "large text" threshold (3:1) but does not reach the stricter normal-text threshold (4.5:1). Reaching 4.5:1 at this text size would require abandoning the gold brand colour for this element entirely (a much darker, less "gold" hue), or enlarging the label into the WCAG "large text" size category, both larger changes than this Minor-severity polish item calls for. Flagged here rather than silently marked "fixed"; a genuine full-AA pass on this element is a future decision, not done in this block.
+- Verified: confirmed via the built CSS that the base rule and the scoped override both landed correctly (an earlier check briefly appeared to fail because a stale, previously-fingerprinted CSS file was being read instead of the fresh build; a clean rebuild resolved this and is noted here so it is not mistaken for a real bug in a future session). Confirmed on a live route page that the hero-context label and the light-section-context label pick up different classes as intended.
+
+**D5.2 Navigation restructured to 5 top-level items** (done, verified)
+- File: `site/layouts/partials/header.html`; dead CSS removed from `site/assets/css/main.css`.
+- Per the approved proposal: dropped the separate gold "Get Help Now" button (it duplicated Contact and the WhatsApp button, three routes to the same two actions). Folded "About Us" into the Resources dropdown as its first item, since it is not a crisis-relevant destination for a distressed visitor. Nav is now: Home, Country Guides, Resources (dropdown: About us, What to do abroad, Cremation abroad, Embassy contacts, Bringing ashes home, Guidance articles), Services, Contact, plus the WhatsApp icon-button.
+- Removed the now-fully-unused `.header-cta` CSS rule (confirmed no other template referenced it) and its mobile-hide media query line, rather than leaving dead code behind.
+- Verified: built homepage nav has exactly 5 top-level `<li>` elements, no `header-cta` markup anywhere, "About us" renders inside the dropdown with working `aria-current` on the About page.
+
+**Gate status after Block D3/D5.2:** Hugo build clean (after a clean rebuild to clear stale fingerprinted CSS), `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, no banned words or em dashes in any file touched this block.

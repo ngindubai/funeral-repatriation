@@ -206,7 +206,9 @@
                     <p class="country-card-flag">{{ $c.flag }}</p>
                     <p class="country-card-name">{{ $c.name }}</p>
                     <p class="country-card-desc">{{ $c.short_desc }}</p>
-                    <div class="country-card-meta"><span>{{ $c.priority }}</span><span>{{ $c.timeline }}</span></div>
+                    {{/* D3.2: removed the raw internal P1/P2/P3 tier code
+                         from the meta line, same reasoning as countries/list.html. */}}
+                    <div class="country-card-meta"><span>{{ $c.timeline }}</span></div>
                 </div>
             </a>
             {{ end }}

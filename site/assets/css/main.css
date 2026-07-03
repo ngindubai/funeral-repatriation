@@ -114,11 +114,24 @@ ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
     align-items: center;
     gap: 0.4rem;
     font-family: 'Cinzel', serif;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--gold);
+}
+
+/* D3.3: full gold (contrast ratio ~2.4:1 on white) reads fine on the dark
+   hero sections it was designed for (~8.3:1) but fails WCAG AA badly on
+   the light .section/.section-alt content areas where most instances of
+   this label actually appear. Darkening it there brings contrast to
+   ~3.2:1: clears the "large text" AA threshold (3:1) but not the stricter
+   normal-text threshold (4.5:1) without losing the gold brand colour
+   entirely or redesigning this as a much larger element. Left as a
+   genuine improvement, not a full fix; flagged in the changelog. */
+.section .label-sm,
+.section-alt .label-sm {
+    color: var(--gold-dark);
 }
 
 /* ============================================
@@ -389,28 +402,6 @@ body:not(.has-hero) .site-header.scrolled {
     }
 }
 
-.header-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.6rem 1.6rem;
-    font-size: 0.74rem;
-    font-weight: 700;
-    color: var(--charcoal);
-    background: linear-gradient(135deg, #E8BA28 0%, #D5A021 60%, #C39018 100%);
-    text-transform: uppercase;
-    letter-spacing: 0.09em;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-    box-shadow: 0 2px 12px rgba(213,160,33,0.28);
-}
-
-.header-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 22px rgba(213,160,33,0.45);
-    color: var(--charcoal);
-}
 
 .header-phone {
     display: flex;
@@ -2177,7 +2168,6 @@ body:not(.has-hero) .site-header.scrolled {
     .main-nav { display: none; }
     .mobile-toggle { display: flex; }
     .header-phone { display: none; }
-    .header-cta { display: none; }
 
     .main-nav.open {
         display: block;

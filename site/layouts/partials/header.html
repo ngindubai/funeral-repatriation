@@ -13,10 +13,16 @@
             <span class="logo-text">Repatriate <span>Service</span></span>
         </a>
 
+        {{/* D5.2: nav restructured from 8 top-level items (Home, About Us,
+             Country Guides, Resources dropdown, Services, Contact, WhatsApp
+             text link, and a separate gold "Get Help Now" button, two of
+             which did the same job as Contact/WhatsApp) down to 5, plus one
+             WhatsApp action. About Us folded into the Resources dropdown
+             as a crisis-nav priority call (it is not a crisis-relevant
+             destination); the redundant "Get Help Now" button removed. */}}
         <nav class="main-nav" aria-label="Main navigation">
             <ul class="nav-list">
                 <li><a href="/" {{ if .IsHome }}aria-current="page"{{ end }}>Home</a></li>
-                <li><a href="/about/" {{ if eq .RelPermalink "/about/" }}aria-current="page"{{ end }}>About Us</a></li>
                 <li><a href="/countries/" {{ if eq .Section "countries" }}aria-current="page"{{ end }}>Country Guides</a></li>
                 <li class="nav-dropdown">
                     <span class="nav-dropdown-toggle" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">
@@ -24,6 +30,7 @@
                         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-menu" role="menu">
+                        <a href="/about/" role="menuitem" {{ if eq .RelPermalink "/about/" }}aria-current="page"{{ end }}><i class="fa-solid fa-circle-user" aria-hidden="true"></i>About us</a>
                         <a href="/guides/" role="menuitem" {{ if eq .Section "guides" }}aria-current="page"{{ end }}><i class="fa-solid fa-circle-info" aria-hidden="true"></i>What to do abroad</a>
                         <a href="/cremation-transfer/" role="menuitem" {{ if eq .Section "cremation-transfer" }}aria-current="page"{{ end }}><i class="fa-solid fa-fire" aria-hidden="true"></i>Cremation abroad</a>
                         <a href="/embassy-contacts/" role="menuitem" {{ if eq .Section "embassy-contacts" }}aria-current="page"{{ end }}><i class="fa-solid fa-building-columns" aria-hidden="true"></i>Embassy contacts</a>
@@ -40,8 +47,6 @@
             <i class="fa-brands fa-whatsapp"></i>
             <span>WhatsApp us</span>
         </a>
-
-        <a href="/contact/" class="header-cta">Get Help Now</a>
 
         <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
             <span class="toggle-bar"></span>

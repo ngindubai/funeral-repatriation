@@ -25,7 +25,10 @@
             <a href="{{ .RelPermalink }}" class="country-card reveal">
                 <div class="country-card-body">
                     {{ if $c }}
-                    <span class="country-card-priority">{{ $c.priority }}</span>
+                    {{/* D3.2: removed the raw internal P1/P2/P3 content-tier
+                         badge. It is a build-priority code, not information
+                         a bereaved family should read as ranking countries
+                         or deaths. */}}
                     <h3>{{ .Title }}</h3>
                     {{ with $c.british_deaths_per_year_est }}
                     <p class="country-card-deaths"><i class="fa-solid fa-users" style="color:var(--gold); margin-right:0.3rem; font-size:0.7rem;"></i>~{{ . }} British deaths/yr</p>
