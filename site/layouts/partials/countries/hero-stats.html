@@ -1,0 +1,34 @@
+{{/* D5.1: shared orientation stat strip. Variants B, D and E rendered no
+     at-a-glance facts at all, unlike A (hero stat pills) and C (stat-strip
+     hero), so a family landing on those hubs got no quick orientation.
+     This is a light-background strip (styled in main.css as .hub-orient-*)
+     that reads correctly under any variant's hero, giving all five hubs a
+     consistent orientation cue while leaving each hero's own arrangement
+     intact. Facts are pulled from data, each shown only if present, so no
+     empty cells appear. Context: the hub page (.). */}}
+{{ $c := index hugo.Data.countries_repatriation.countries .Params.country_key }}
+{{ with $c }}
+{{ $embassyCity := "" }}{{ with .embassy_contacts }}{{ with .british_embassy }}{{ $embassyCity = .city }}{{ end }}{{ end }}
+<div class="hub-orient-strip">
+    <div class="section-inner">
+        <div class="hub-orient-inner">
+            {{ with .typical_timeline }}{{ with .average_case }}
+            <div class="hub-orient-item">
+                <span class="hub-orient-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+                <span class="hub-orient-body"><span class="hub-orient-val">{{ . }}</span><span class="hub-orient-label">Typical timeline</span></span>
+            </div>
+            {{ end }}{{ end }}
+            <div class="hub-orient-item">
+                <span class="hub-orient-icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+                <span class="hub-orient-body"><span class="hub-orient-val">24/7</span><span class="hub-orient-label">Support available</span></span>
+            </div>
+            {{ with $embassyCity }}
+            <div class="hub-orient-item">
+                <span class="hub-orient-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
+                <span class="hub-orient-body"><span class="hub-orient-val">{{ . }}</span><span class="hub-orient-label">British Embassy</span></span>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

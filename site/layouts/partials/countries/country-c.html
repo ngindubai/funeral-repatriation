@@ -54,20 +54,10 @@
   </div>
 </section>
 
-{{/* HELPLINE STRIP */}}
-<div class="helpline-strip">
-  <div class="section-inner">
-    <div class="helpline-strip-inner">
-      <div class="helpline-icon"><i class="fa-brands fa-whatsapp"></i></div>
-      <div class="helpline-text">
-        <p class="helpline-label">WhatsApp, available 24/7</p>
-        <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">+44 7703 577246</a>
-      </div>
-      <p class="helpline-message">Available around the clock for families dealing with a death in {{ $cname }}.</p>
-      <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener">WhatsApp us</a>
-    </div>
-  </div>
-</div>
+{{/* D5.1: switched the inline helpline copy to the shared partial. This
+     variant already has a stat-strip hero, so no orientation strip is
+     added. */}}
+{{ partial "countries/helpline-strip.html" . }}
 
 {{/* TWO-COLUMN: main content + sticky timeline sidebar */}}
 <div class="section-inner" style="display:grid; grid-template-columns:1fr 280px; gap:2.5rem; align-items:start; padding-top:2.5rem; padding-bottom:2.5rem;">

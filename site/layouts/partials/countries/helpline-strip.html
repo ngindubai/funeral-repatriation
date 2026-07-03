@@ -1,0 +1,24 @@
+{{/* D5.1: shared emergency-helpline strip for all country-hub variants.
+     Variants D and E rendered no helpline bar at all (no 24/7 emergency
+     number anywhere on those hubs), and A/B/C each had a near-identical
+     inline copy that had already drifted in wording. Unifying them here
+     gives every hub the same branded emergency component, which is itself
+     a strong "same service" consistency signal, and removes the drift.
+     Self-contained: resolves the country name from country_key, falling
+     back to the page title. Context: the hub page (.). */}}
+{{ $c := index hugo.Data.countries_repatriation.countries .Params.country_key }}
+{{ $cname := .Title }}
+{{ with $c }}{{ $cname = or .name .country_name }}{{ end }}
+<div class="helpline-strip">
+    <div class="section-inner">
+        <div class="helpline-strip-inner">
+            <div class="helpline-icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></div>
+            <div class="helpline-text">
+                <p class="helpline-label">24/7 emergency helpline</p>
+                <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a>
+            </div>
+            <p class="helpline-message">If your loved one has passed away in {{ $cname }}, our team is available around the clock to guide you through every step of bringing them home.</p>
+            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp now</a>
+        </div>
+    </div>
+</div>

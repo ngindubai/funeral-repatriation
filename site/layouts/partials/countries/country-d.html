@@ -27,6 +27,12 @@
   </div>
 </section>
 
+{{/* D5.1: this variant had no emergency helpline bar and no orientation
+     stats at all; added the shared components so it matches the other
+     hubs on completeness while keeping its Q&A arrangement. */}}
+{{ partial "countries/hero-stats.html" . }}
+{{ partial "countries/helpline-strip.html" . }}
+
 {{/* TWO-COLUMN: Q&A content + mini ToC sidebar */}}
 <div class="country-two-col section-inner" style="padding-top:2.5rem;">
 

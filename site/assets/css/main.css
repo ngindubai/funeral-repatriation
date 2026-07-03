@@ -2299,6 +2299,59 @@ body:not(.has-hero) .site-header.scrolled {
     border-bottom: 1px solid rgba(213,160,33,0.2);
     padding: 1.25rem 2rem;
 }
+
+/* D5.1: shared orientation stat strip for hub variants B, D, E (which had
+   no at-a-glance facts). Light background so it reads under any hero. */
+.hub-orient-strip {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--border);
+    padding: 1.1rem 1.5rem;
+}
+.hub-orient-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.hub-orient-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.hub-orient-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(213,160,33,0.12);
+    color: var(--gold-dark);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+.hub-orient-body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+.hub-orient-val {
+    font-weight: 700;
+    color: var(--charcoal);
+    font-size: 0.98rem;
+}
+.hub-orient-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+}
+@media (max-width: 600px) {
+    .hub-orient-inner { justify-content: flex-start; gap: 1rem 1.5rem; }
+}
 .helpline-strip-inner {
     display: flex;
     align-items: center;

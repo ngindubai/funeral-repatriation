@@ -195,3 +195,24 @@ These are grounded; the file and root cause are named.
 - Verified: built homepage nav has exactly 5 top-level `<li>` elements, no `header-cta` markup anywhere, "About us" renders inside the dropdown with working `aria-current` on the About page.
 
 **Gate status after Block D3/D5.2:** Hugo build clean (after a clean rebuild to clear stale fingerprinted CSS), `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, no banned words or em dashes in any file touched this block.
+
+### Block D5.1 (Opus session, done, verified)
+
+**D5.1 Hub layout standardisation, Option 1 (raise the weaker variants to the completeness bar, keep the arrangement variety)**
+
+Verify-first pass (per the plan's rule, before designing anything). Read all five hub variant templates and their built output. Findings:
+- The audit was right that variant D (Greece) and E (USA) rendered **no emergency helpline bar at all** (`helpline-strip=0` in the built HTML): the 24/7 emergency number, the single most important trust and safety element, was absent from those hubs entirely.
+- The audit was right that variants B (Thailand), D and E rendered **no orientation stats** (timeline, availability, embassy), unlike A (hero stat pills) and C (stat-strip hero).
+- The audit was **wrong** about variant C (France) having a "blank left column / missing body content": its built output shows a fully populated hero (label, H1, subtitle, WhatsApp CTA) plus a nine-element stat strip. C needed nothing. Recorded as not-a-bug rather than actioned.
+- Also found: variant A's hero still showed the raw internal `$c.priority` tier code ("Priority country" pill), a miss from the D3.2 pass which only removed it from the index cards.
+
+Shared component set built (the plan's requested "shared component set"):
+- New `site/layouts/partials/countries/helpline-strip.html`: one self-contained emergency-helpline bar (resolves the country name from `country_key`, warm consistent wording). Every hub variant now renders this identical component. Replaced the inline copies in A, B and C (which had already drifted in icon, label and wording) with the partial, and added it to D and E where it was missing. That one identical branded bar on all five hubs is itself the main "same service" consistency signal.
+- New `site/layouts/partials/countries/hero-stats.html` plus `.hub-orient-*` CSS in `main.css`: a light-background orientation strip (typical timeline, 24/7 support, British Embassy city, each shown only if present) that reads correctly under any variant's hero. Added to B, D and E, which had no at-a-glance facts. A and C already have their own stat displays, so they were left as is.
+- Variant A: replaced the `$c.priority` pill with the British Embassy city (shown where known), matching the orientation strip.
+
+Deliberately NOT done (kept the rotation variety, per Option 1 and the CLAUDE.md anti-footprint rule): the five heroes still differ in kind (A image hero, B compact banner, C stat-strip, D question-led, E editorial byline). They were not collapsed into one hero. The consistency added is in the load-bearing components (emergency access, orientation, CTA), not the layout, which is exactly what Option 1 asked for. Variant E keeps its author-byline-first hero (now honest "editorial team" wording from F3), but the orientation strip and emergency bar immediately below it restore the service signal the audit said was missing.
+
+Verified: all five built hubs (Spain A, Thailand B, France C, Greece D, USA E) now render the helpline strip and show the number; B/D/E each render the orientation strip with three real facts (for example Greece: 10-21 days, 24/7, Athens); A's hero shows the embassy city (Madrid) instead of the priority code; `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, no banned words or em dashes in any of the eight files touched. (One mid-build scare where Greece's orientation strip looked like it was missing the embassy city turned out to be a truncated grep window, not a real gap; confirmed all three B/D/E strips carry the city.)
+
+**Block D5.1 complete. All design-audit blocks (D1, D2, D3, D5.1, D5.2) now done.** D5.1 was the only Opus-required item; it was held until an actual Opus session per the earlier model-switch note, then built here.

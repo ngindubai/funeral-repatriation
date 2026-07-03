@@ -38,6 +38,14 @@
   </div>
 </section>
 
+{{/* D5.1: this variant had no emergency helpline bar and no orientation
+     stats, and its author-byline-first hero read as an article rather than
+     a service page. Adding the shared orientation strip and emergency bar
+     right below the hero restores the service signal while keeping the
+     variant's editorial emphasis. */}}
+{{ partial "countries/hero-stats.html" . }}
+{{ partial "countries/helpline-strip.html" . }}
+
 {{/* TWO-COLUMN: prose content + sources sidebar */}}
 <div class="country-two-col section-inner" style="padding-top:2.5rem;">
 

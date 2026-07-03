@@ -84,10 +84,15 @@
         <h1>Repatriation from <em>{{ if $c }}{{ $c.name }}{{ else }}{{ .Title }}{{ end }}</em> to the UK</h1>
         <p class="country-hero-subtitle">Bringing your loved one home. We are here 24 hours a day.</p>
         {{ if $c }}
+        {{/* D5.1: third pill was the raw internal priority code ($c.priority,
+             "Priority country"), the same P1/P2 jargon removed elsewhere in
+             D3.2; replaced with the British Embassy city where known. */}}
         <div class="country-hero-stats">
             <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-clock"></i></span><span class="stat-val">{{ $c.typical_timeline.average_case }}</span><span class="stat-label">Typical timeline</span></div>
             <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-phone-volume"></i></span><span class="stat-val">24/7</span><span class="stat-label">Support available</span></div>
-            <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-flag"></i></span><span class="stat-val">{{ $c.priority }}</span><span class="stat-label">Priority country</span></div>
+            {{ with $c.embassy_contacts }}{{ with .british_embassy }}{{ with .city }}
+            <div class="country-hero-stat"><span class="stat-icon"><i class="fa-solid fa-building-columns"></i></span><span class="stat-val">{{ . }}</span><span class="stat-label">British Embassy</span></div>
+            {{ end }}{{ end }}{{ end }}
         </div>
         {{ end }}
         <div class="country-hero-actions">
@@ -97,16 +102,8 @@
     </div>
 </section>
 
-<div class="helpline-strip">
-    <div class="section-inner">
-        <div class="helpline-strip-inner">
-            <div class="helpline-icon"><i class="fa-solid fa-phone-volume"></i></div>
-            <div class="helpline-text"><p class="helpline-label">24/7 emergency helpline</p><a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="helpline-number" target="_blank" rel="noopener">WhatsApp: +44 7703 577246</a></div>
-            <p class="helpline-message">If your loved one has passed away in {{ if $c }}{{ $c.name }}{{ else }}{{ .Title }}{{ end }}, our team is available around the clock to guide you through every step.</p>
-            <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="btn btn-cta helpline-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp now</a>
-        </div>
-    </div>
-</div>
+{{/* D5.1: switched the inline helpline copy to the shared partial. */}}
+{{ partial "countries/helpline-strip.html" . }}
 
 {{ if $c }}
 
