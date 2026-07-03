@@ -95,10 +95,10 @@ These are grounded; the file and root cause are named.
 
 ## Audit claims that are NOT real (verified false, do NOT action)
 
-- **Body text is 14px, raise to 16px** — false. `main.css` `body { font-size: 1rem }` is already 16px. No change.
-- **Doubled "//" breadcrumb separators** — false. The route breadcrumb markup uses clean `&#8250;` (the "›" glyph) with no empty segment. Not reproduced.
-- **Thank-you page is sparse and shows a coffin image** — false. `_default/thank-you.html` is thoughtful and complete (promises a call within the hour, a "in the meantime" safety checklist) and has no hero image at all. Already good; leave it.
-- **Embassy index cards show no country name** — false. `embassy-contacts/list.html` renders `<h3>{{ .Params.country_name }}</h3>` and the param is populated. Fine. (Contrast with the guides index, D1.3, where the param is genuinely empty.)
+- **Body text is 14px, raise to 16px**: false. `main.css` `body { font-size: 1rem }` is already 16px. No change.
+- **Doubled "//" breadcrumb separators**: false. The route breadcrumb markup uses clean `&#8250;` (the "›" glyph) with no empty segment. Not reproduced.
+- **Thank-you page is sparse and shows a coffin image**: false. `_default/thank-you.html` is thoughtful and complete (promises a call within the hour, a "in the meantime" safety checklist) and has no hero image at all. Already good; leave it.
+- **Embassy index cards show no country name**: false. `embassy-contacts/list.html` renders `<h3>{{ .Params.country_name }}</h3>` and the param is populated. Fine. (Contrast with the guides index, D1.3, where the param is genuinely empty.)
 
 ---
 
