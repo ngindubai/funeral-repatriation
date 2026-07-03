@@ -44,7 +44,7 @@ These are grounded; the file and root cause are named.
 **D2.3 Contact page form length** [Minor, **DECIDED: trim**]
 - Scope check: the audit's D2.3 finding and Gareth's "trim" decision were specifically about the Contact page form (`site/layouts/_default/contact.html`), which has 7 fields including two selects (`service`, `urgency`). The route-page form (`routes/single.html`) and hub form (`country-hub.html`) already have only 5 fields and 1 select each (country is hidden/pre-filled, no `urgency` select), so they are not part of this item; leave them as is (no unrequested rewrite).
 - Fix: on `contact.html` only, remove the `service` and `urgency` selects, keep name, email, phone, country (free text), and the message textarea (already required). Confirm the `formsubmit.co` endpoint does not depend on the removed field names.
-- Also found while reading this file: two em dashes (`Repatriation enquiry — Repatriate Service` in the hidden `_subject` field; `country, circumstances, timeline — will help us respond` in the message placeholder). Fix both while in this file (absolute ban).
+- Also found while reading this file: two em dashes, one in the hidden `_subject` field value and one in the message textarea's placeholder text. Fix both while in this file (absolute ban).
 
 **D2.4 Trust text and response-time near forms** [Minor]
 - The microtext under submit buttons is small. Add a short line ("We usually reply within the hour. No obligation, strictly confidential."). Note: the thank-you page already promises a call within the hour and is well written (no change needed there; see false-claims list).
