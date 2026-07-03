@@ -1,4 +1,4 @@
-/* Funeral Repatriation — Main CSS
+/* Funeral Repatriation, Main CSS
    Design: Virtuary template adaptation.
    Color palette: dark navy, gold accent, warm whites.
    Tone: dignified, calm, professional. Not clinical. Not aggressive.
@@ -8,7 +8,7 @@
    CUSTOM PROPERTIES
    ============================================ */
 :root {
-    /* Core palette — Virtuary */
+    /* Core palette, Virtuary */
     --charcoal: #050D15;
     --charcoal-light: #08131E;
     --slate: #16222E;
@@ -51,7 +51,7 @@
     --error: #c44f4f;
     --success: #4a7c6f;
 
-    /* Radii — sharper than original */
+    /* Radii, sharper than original */
     --radius-sm: 4px;
     --radius: 6px;
     --radius-lg: 8px;
@@ -1168,6 +1168,52 @@ body:not(.has-hero) .site-header.scrolled {
     .whatsapp-float i { font-size: 1.5rem; }
 }
 
+/* D2.2: persistent mobile CTA bar. Hidden on desktop; on mobile it takes
+   over the WhatsApp button's job, so the separate floating button is
+   hidden at the same breakpoint to avoid the two stacking or colliding. */
+.sticky-cta-bar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float { display: none; }
+
+    .sticky-cta-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9400;
+        box-shadow: 0 -2px 16px rgba(0,0,0,0.18);
+    }
+    .sticky-cta-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        padding: 0.85rem 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .sticky-cta-whatsapp {
+        background: #25D366;
+        color: #fff;
+    }
+    .sticky-cta-enquiry {
+        background: var(--gold);
+        color: var(--charcoal);
+    }
+    /* Leave room at the foot of the page so the bar never covers the last
+       piece of content or an in-page form's submit button. */
+    body {
+        padding-bottom: 3.6rem;
+    }
+}
+
 /* ============================================
    WHATSAPP INLINE BUTTON
    ============================================ */
@@ -1386,7 +1432,7 @@ body:not(.has-hero) .site-header.scrolled {
     pointer-events: none;
 }
 
-/* Gold accent line at top of each card — always visible */
+/* Gold accent line at top of each card, always visible */
 .how-step::after {
     content: '';
     position: absolute;
@@ -2181,7 +2227,7 @@ body:not(.has-hero) .site-header.scrolled {
 }
 
 /* ============================================
-   COUNTRY PAGE — HERO
+   COUNTRY PAGE, HERO
    ============================================ */
 .country-hero {
     position: relative;
@@ -3060,7 +3106,7 @@ body:not(.has-hero) .site-header.scrolled {
 .service-card-link:hover { gap: 0.7rem; color: var(--gold); }
 
 /* ============================================
-   COUNTRY PAGE — SECTION TITLES
+   COUNTRY PAGE, SECTION TITLES
    ============================================ */
 .section-header {
     text-align: center;
@@ -3931,7 +3977,7 @@ body:not(.has-hero) .site-header.scrolled {
     .guides-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* country-card-link — used in guides/list.html */
+/* country-card-link, used in guides/list.html */
 .country-card-link {
     display: inline-flex;
     align-items: center;

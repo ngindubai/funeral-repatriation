@@ -52,6 +52,11 @@
                 <a href="/contact/" class="btn btn-cta">Request Guidance</a>
                 <a href="/services/" class="btn btn-outline">View Services</a>
             </div>
+            {{/* D2.1: no readable phone number existed anywhere on the
+                 homepage, only buttons linking out to WhatsApp. Reusing the
+                 existing .helpline-number style (already used on route/hub
+                 emergency bars) rather than inventing new CSS. */}}
+            <p style="margin-top:1.25rem;"><i class="fa-solid fa-phone-volume" style="color:var(--gold); margin-right:0.5rem;" aria-hidden="true"></i>Or call/WhatsApp <a href="tel:+447703577246" class="helpline-number">+44 7703 577246</a></p>
         </div>
         <div class="hero-form">
             <h3>Need help now?</h3>
@@ -245,7 +250,7 @@
             <div class="faq-item">
                 <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5">What does the British Embassy do when someone dies abroad?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
                 <div id="faq-5" class="faq-answer" hidden>
-                    <p>The British Embassy or Consulate can help with registering the death, providing a list of local English-speaking funeral directors, and issuing consular documents. They cannot pay for funeral or repatriation costs, but they can help navigate local bureaucracy. Contact them as early as possible.</p>
+                    <p>The British Embassy or Consulate can help with registering the death, providing a list of local English-speaking funeral directors, and issuing consular documents. They cannot pay for funeral or repatriation costs, but they can help you work through local bureaucracy. Contact them as early as possible.</p>
                     <p style="margin-top:0.75rem;"><a href="/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/">Full guide: what the embassy does &rarr;</a> &middot; <a href="/embassy-contacts/">Embassy contacts directory &rarr;</a></p>
                 </div>
             </div>

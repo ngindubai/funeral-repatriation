@@ -1,9 +1,16 @@
 {{ define "main" }}
-<section class="page-hero" style="background-image: url('/images/ctandt-ai-generated-8884751.jpg');">
+{{/* D4.1: swapped the coffin/flowers hero image for a calmer, unused image;
+     this was also hardcoded on the generic _default/single.html fallback
+     (privacy, methodology), given a different unused image there so the two
+     do not end up identical to each other. */}}
+<section class="page-hero" style="background-image: url('/images/consultation-room.jpg');">
     <div class="page-hero-content">
         <p class="label-sm">Repatriate Service</p>
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        {{/* D2.1: no readable phone number existed on this page; the only
+             route to WhatsApp was a nav icon with no visible number. */}}
+        <p style="margin-top:1rem;"><i class="fa-solid fa-phone-volume" style="color:var(--gold); margin-right:0.5rem;" aria-hidden="true"></i>Call or WhatsApp any time: <a href="tel:+447703577246" class="helpline-number">+44 7703 577246</a></p>
     </div>
 </section>
 
@@ -13,8 +20,12 @@
             {{ .Content }}
         </div>
 
+        {{/* D2.3: trimmed from 7 fields (2 selects) to 5; removed the
+             "service" and "urgency" selects per the decision to reduce
+             friction. Country stays as free text (not a select) since it
+             already was. */}}
         <form class="quote-form" action="{{ .Site.Params.quoteFormEndpoint }}" method="POST" novalidate style="margin-top: 2rem;">
-            <input type="hidden" name="_subject" value="Repatriation enquiry — Repatriate Service">
+            <input type="hidden" name="_subject" value="Repatriation enquiry, Repatriate Service">
             <div class="form-grid">
                 <div class="form-group">
                     <label for="ct-name">Your name <span class="required">*</span></label>
@@ -32,37 +43,19 @@
                     <label for="ct-country">Country where death occurred</label>
                     <input type="text" id="ct-country" name="country" placeholder="e.g. Spain, Thailand, India" autocomplete="off">
                 </div>
-                <div class="form-group">
-                    <label for="ct-service">How can we help?</label>
-                    <select id="ct-service" name="service">
-                        <option value="">Select</option>
-                        <option value="full_repatriation">Full body repatriation to the UK</option>
-                        <option value="ashes_transport">Bringing ashes home</option>
-                        <option value="cremation_abroad">Cremation abroad</option>
-                        <option value="guidance_only">Guidance and information only</option>
-                        <option value="other">Something else</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="ct-urgency">Urgency</label>
-                    <select id="ct-urgency" name="urgency">
-                        <option value="">When did this happen?</option>
-                        <option value="just_happened">Within the last 24 hours</option>
-                        <option value="this_week">Within the last week</option>
-                        <option value="planning">I am planning ahead</option>
-                    </select>
-                </div>
                 <div class="form-group form-group-full">
                     <label for="ct-message">Your message <span class="required">*</span></label>
-                    <textarea id="ct-message" name="message" rows="5" placeholder="Tell us what has happened and how we can help. Any details you can share — country, circumstances, timeline — will help us respond more usefully." required></textarea>
+                    <textarea id="ct-message" name="message" rows="5" placeholder="Tell us what has happened and how we can help. Any details you can share, country, circumstances, timeline, will help us respond more usefully." required></textarea>
                 </div>
             </div>
-            {{/* Honeypot — not visible to users */}}
+            {{/* Honeypot, not visible to users */}}
             <div style="display:none;" aria-hidden="true">
                 <input type="text" name="website" tabindex="-1" autocomplete="off">
             </div>
             <button type="submit" class="btn btn-cta" style="width:100%; justify-content:center; padding:1rem;">Send enquiry</button>
-            <p class="form-note">No obligation. Your details are kept strictly confidential and never shared with third parties.</p>
+            {{/* D2.4: trust/response-time line near submit, was a single
+                 small line before. */}}
+            <p class="form-note">We usually reply within the hour. No obligation, and your details are kept strictly confidential and never shared with third parties.</p>
         </form>
         <div class="quote-success" hidden>
             <p>Thank you for getting in touch. We have received your enquiry and a member of our team will respond as soon as possible, typically within a few hours.</p>

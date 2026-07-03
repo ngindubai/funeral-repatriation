@@ -1,0 +1,14 @@
+{{/* D2.2: persistent mobile CTA bar. Only the floating WhatsApp button
+     persisted before; on every interior template the form sat at the page
+     bottom with nothing to rescue a visitor who scrolled through the
+     content without converting. Mobile-only (see .sticky-cta-bar media
+     query in main.css); the floating WhatsApp button is hidden on mobile
+     once this bar is present, so the two do not stack or collide. */}}
+<div class="sticky-cta-bar" role="navigation" aria-label="Quick contact">
+    <a href="https://wa.me/{{ site.Params.whatsappNumber }}" class="sticky-cta-btn sticky-cta-whatsapp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+    </a>
+    <a href="/contact/" class="sticky-cta-btn sticky-cta-enquiry">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> Send Enquiry
+    </a>
+</div>

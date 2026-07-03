@@ -140,3 +140,36 @@ These are grounded; the file and root cause are named.
 **Also fixed while in this file family (not a separate audit finding):** `countries/list.html` (the `/countries/` index) rendered a `£`/GBP price stat (`$c.cost_guide.total_typical_range_gbp`) on every card, which contradicts the site-wide qualitative-only prices decision made in the 2 July SEO build (F13). Removed the price stat, kept the timeline stat. Verified zero `£` characters remain on the built `/countries/` page and `check_schema.py` still passes.
 
 **Gate status after Block D1:** Hugo build clean, `qa_routes.py` 0 FAIL / 2,467 PASS (unchanged, D1 touched no route content), `check_schema.py` 0 errors, `check_titles.py` 0 errors / 27 pre-existing warnings (unchanged).
+
+### Block D2 (Sonnet, done, verified)
+
+**D2.1 Visible phone number on homepage and Contact page** (done, verified)
+- Files: `site/layouts/index.html`, `site/layouts/_default/contact.html`.
+- Added a `tel:+447703577246`-linked line reading "+44 7703 577246" below the hero actions on both pages, reusing the existing `.helpline-number` style (already used on route/hub emergency bars) rather than inventing new CSS. Verified the surrounding `.hero-text p` / hero context styles the line legibly (light/silver text, gold number) without any new CSS needed.
+- Verified: the `tel:` link and number render correctly in the built output on both pages.
+
+**D2.2 Persistent mobile CTA bar** (done, verified)
+- Files: new `site/layouts/partials/sticky-cta.html`; CSS added to `site/assets/css/main.css`; included from `site/layouts/_default/baseof.html`.
+- A fixed-bottom, two-button bar (WhatsApp, green; Send Enquiry, gold, linking to `/contact/`) shown only under the existing 600px mobile breakpoint. "Send Enquiry" always targets `/contact/` rather than an in-page form anchor, since not every template has a predictable in-page form id. The existing floating WhatsApp button is hidden at the same breakpoint so the two do not stack or collide (the plan's "reposition or merge" choice; merged). Added `body { padding-bottom }` in the same mobile query so the bar never covers the last piece of page content.
+- Verified: renders on a route page, a blog page, and the homepage; both links carry the correct `href`; CSS confirmed present in the built stylesheet; `check_schema.py` and the full QA gate unaffected.
+
+**D2.3 Contact page form trimmed** (done, verified)
+- File: `site/layouts/_default/contact.html`.
+- Removed the `service` and `urgency` selects, scoped to the Contact page only (route/hub forms were already short; see the scope-check note above). Form is now 5 fields: name, email, phone, country, message.
+- Verified: built page shows exactly 5 named inputs/textarea, 0 `<select>` elements, honeypot untouched.
+
+**D2.4 Trust and response-time text near the Contact form submit button** (done, verified)
+- File: `site/layouts/_default/contact.html`.
+- Changed the small note under the submit button from a single confidentiality line to "We usually reply within the hour. No obligation, and your details are kept strictly confidential and never shared with third parties."
+
+**D4.1 (Contact-page portion) Coffin/flowers hero image reassigned** (done, verified)
+- Files: `site/layouts/_default/contact.html`, `site/layouts/_default/single.html`.
+- `ctandt-ai-generated-8884751.jpg` was hardcoded on the Contact page and was the default fallback on the generic `_default/single.html` template (used by Privacy and Methodology, since neither sets its own `hero_image`). Checked the full image-usage inventory across `site/layouts/` first to avoid picking an image already claimed elsewhere (`support-conversation.jpg` and `city-dusk.jpg` were both already in use, for example). Assigned two distinct, previously-unused images: `consultation-room.jpg` for Contact, `advisor-documents.jpg` for the generic single-page fallback, so Contact/Privacy/Methodology no longer share an image with each other or with any other page.
+- Verified: both new filenames appear in the built Contact, Privacy, and Methodology pages; the coffin image no longer appears on any of the three.
+
+**Also fixed while in these files this block (not separate audit findings):**
+- Two em dashes in `contact.html` (the hidden `_subject` field value, the message textarea placeholder) and one in a code comment, all replaced with commas per the absolute ban.
+- A banned word ("navigate") found in `index.html` at an unrelated FAQ answer (line 253, far from the D2.1 hero edit but in the same file being touched this block); replaced with "work through".
+- Seven em dashes across `site/assets/css/main.css` comment headers, found during a full sweep of the file while adding the D2.2 sticky-bar CSS (the file header, two variable-block comments, a card-accent comment, two section-divider comments, one inline comment). All replaced with commas.
+
+**Gate status after Block D2:** Hugo build clean, `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, `check_titles.py` 0 errors / 27 pre-existing warnings, no banned words or em dashes in any file touched this block.

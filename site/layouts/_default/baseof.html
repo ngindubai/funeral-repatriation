@@ -119,5 +119,9 @@
         <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         <span class="whatsapp-float-label">24/7 Global Emergency WhatsApp</span>
     </a>
+
+    {{/* D2.2: persistent mobile CTA bar; hides the button above on mobile
+         (see main.css) so the two do not stack. */}}
+    {{ partial "sticky-cta.html" . }}
 </body>
 </html>

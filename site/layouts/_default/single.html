@@ -1,5 +1,9 @@
 {{ define "main" }}
-<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/ctandt-ai-generated-8884751.jpg{{ end }}');">
+{{/* D4.1: default fallback image changed from the coffin/flowers photo
+     (also used, until fixed, on the Contact page) to an unused, calmer
+     image. This is the generic single-page template, used by pages such
+     as Privacy and Methodology that set no hero_image of their own. */}}
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/advisor-documents.jpg{{ end }}');">
     <div class="page-hero-content">
         <p class="label-sm">{{ with .Parent }}{{ .Title }}{{ else }}Repatriate Service{{ end }}</p>
         <h1>{{ .Title }}</h1>
