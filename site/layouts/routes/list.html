@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+{{/* D1.2: /routes/ previously fell back to _default/list.html, which only
+     renders .Content, and content/routes/_index.md has no body, so the
+     index showed a hero and nothing else. This lists all built route pages,
+     grouped by destination (129 destinations, 2467 routes), as collapsible
+     accordion groups reusing the existing .faq-item/.faq-trigger JS and CSS
+     so no new interaction code is needed. Groups are sorted by route count
+     so the largest, most-searched destinations (UK, Ireland) appear first. */}}
+
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/nhuhang9261-couple-6976409.jpg{{ end }}');">
+    <div class="page-hero-content">
+        <p class="label-sm">Repatriate Service</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <div class="hero-actions page-hero-actions">
+            <a href="/contact/" class="btn btn-cta">Request Support</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div class="section-header reveal" style="margin-bottom: 2rem;">
+            <p class="label-sm">Browse by destination</p>
+            <h2>Find your route</h2>
+            <p>Select a destination country to see every origin country we cover a repatriation route from. If your exact corridor is not listed, contact us directly; we coordinate cases worldwide.</p>
+        </div>
+
+        {{ $routes := where site.RegularPages "Section" "routes" }}
+        {{ $destNames := slice }}
+        {{ range $routes }}{{ $destNames = $destNames | append .Params.dest_name }}{{ end }}
+        {{ $destGroups := slice }}
+        {{ range ($destNames | uniq) }}
+            {{ $name := . }}
+            {{ $pages := where $routes "Params.dest_name" $name }}
+            {{ $destGroups = $destGroups | append (dict "name" $name "pages" $pages "count" (len $pages)) }}
+        {{ end }}
+        {{ $sortedGroups := sort $destGroups "count" "desc" }}
+
+        <div class="reveal">
+            {{ range $i, $group := $sortedGroups }}
+            <div class="faq-item">
+                <button class="faq-trigger" aria-expanded="false" aria-controls="route-dest-{{ $i }}">
+                    {{ $group.name }} <span style="color:var(--text-muted); font-weight:400;">({{ $group.count }} {{ if eq $group.count 1 }}route{{ else }}routes{{ end }})</span>
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div id="route-dest-{{ $i }}" class="faq-answer" hidden>
+                    <div class="stagger-children" style="display:flex; flex-wrap:wrap; gap:0.6rem;">
+                        {{ range sort $group.pages "Params.origin_name" }}
+                        <a href="{{ .RelPermalink }}" class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.82rem;">{{ .Params.origin_name }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="countries-cta-strip reveal" style="margin-top:3rem;">
+            <div class="countries-cta-inner">
+                <div>
+                    <p class="label-sm">Can't find your route?</p>
+                    <h3>We coordinate repatriation between almost any two countries</h3>
+                    <p>If the corridor you need is not listed above, contact our team directly with the origin and destination. We can advise on the process even where we do not yet have a published guide.</p>
+                </div>
+                <a href="/contact/" class="btn btn-cta">Speak to our team</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

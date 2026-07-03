@@ -30,14 +30,14 @@
                     {{ with $c.british_deaths_per_year_est }}
                     <p class="country-card-deaths"><i class="fa-solid fa-users" style="color:var(--gold); margin-right:0.3rem; font-size:0.7rem;"></i>~{{ . }} British deaths/yr</p>
                     {{ end }}
+                    {{/* Price ccs-item removed: contradicts the site-wide
+                         no-prices/qualitative-only decision (F13, 2 Jul
+                         2026 SEO build). Found while working on this file
+                         family for the design audit build, fixed here. */}}
                     <div class="country-card-stats">
                         <div class="ccs-item">
                             <i class="fa-solid fa-clock"></i>
                             <span>{{ $c.typical_timeline.average_case }}</span>
-                        </div>
-                        <div class="ccs-item">
-                            <i class="fa-solid fa-sterling-sign"></i>
-                            <span>{{ $c.cost_guide.total_typical_range_gbp }}</span>
                         </div>
                     </div>
                     {{ else }}

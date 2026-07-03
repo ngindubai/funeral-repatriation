@@ -93,7 +93,16 @@
     {{ end }}
     {{ end }}
 </head>
-<body{{ if or .IsHome (and .Params.hero_image (not .IsSection)) }} class="has-hero"{{ end }}>
+{{/* D1.1: has-hero makes the fixed header transparent, expecting a dark
+     full-bleed photo hero underneath it. Three single-page templates set
+     hero_image in frontmatter but never render it as a background (their
+     own .city-hero / .ct-hero / .embassy-hero sections are a separate,
+     light, dark-text design), so has-hero was firing with no dark backdrop
+     to justify it, leaving the header's white nav text invisible. Excluded
+     here rather than removing hero_image from hundreds of content files. */}}
+{{ $heroExcludedSections := slice "cremation-transfer" "embassy-contacts" }}
+{{ $isCityPage := and (eq .Section "countries") (not .IsSection) }}
+<body{{ if or .IsHome (and .Params.hero_image (not .IsSection) (not $isCityPage) (not (in $heroExcludedSections .Section))) }} class="has-hero"{{ end }}>
     {{ partial "header.html" . }}
 
     <main id="main-content">

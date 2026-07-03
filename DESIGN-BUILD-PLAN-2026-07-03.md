@@ -115,4 +115,28 @@ These are grounded; the file and root cause are named.
 
 ## Changes made and why
 
-_No design changes built yet. Entries appended per item as they are executed, with file, what, and why, matching the SEO build plan's changelog style._
+### Block D1 (Sonnet, done, verified)
+
+**D1.1 Invisible nav on city / cremation-transfer / embassy-contacts pages** (done, verified)
+- File: `site/layouts/_default/baseof.html`.
+- Root cause found, more precise than the audit's guess: `.site-header` is `position:fixed; background:transparent` and only turns solid dark via `body:not(.has-hero) .site-header` or on scroll. `has-hero` fires whenever `.Params.hero_image` is set on a non-section page, but `countries/single.html` (city pages), `cremation-transfer/single.html`, and `embassy-contacts/single.html` all set `hero_image` in frontmatter without ever rendering it as a background; their own hero sections (`.city-hero`, `.ct-hero`, `.embassy-hero`) are a separate light, dark-text design, never a dark full-bleed photo. So the header stayed wrongly transparent over a light page with no dark backdrop, and the white "Repatriate" logo text plus white nav links became invisible, leaving only the gold "Service" span. This exactly matches the audit's screenshot description. Country hub pages were never affected: they are Hugo sections (`_index.md`), already excluded by the existing `(not .IsSection)` clause, so their header was always solid-dark; the audit never flagged hub nav, which is consistent.
+- Fix: excluded `countries` city-level pages (a page, not the hub section) and the `cremation-transfer` / `embassy-contacts` sections from the `has-hero` gate in `baseof.html`, rather than stripping the dead `hero_image` field from roughly 630 content files. `bringing-ashes-home` was left untouched: it genuinely uses `.Params.hero_image` as a real background-image (`.page-hero`), so `has-hero` is correct there.
+- Investigated and left alone: the separately broken `--bg-dark` CSS custom property (referenced 5 times, defined nowhere, in `.city-hero`, `.ct-hero`, `.blog-hero`, `.embassy-hero` x2), which makes those gradients invalid and the sections render with no background. Confirmed this is cosmetically harmless once the has-hero fix lands: the in-page heading text in those sections is dark (`h1 { color: var(--charcoal) }`), so a plain white section background (the effective fallback) is legible and was clearly the intended light-hero look, not a photo hero. Fixing the dead variable is unrequested scope beyond D1.1 and was not done.
+- Verified: rebuilt and confirmed `<body>` (no `has-hero`) on a city page, a cremation-transfer page, and an embassy-contacts page; confirmed `<body class=has-hero>` unchanged on the homepage and a bringing-ashes-home page; confirmed hub and route pages unaffected (they never had the class). Confirmed the fallback CSS rule (`rgba(5,13,21,0.97)` background, white/70% nav text, white logo text) will render correctly.
+
+**D1.2 Blank /routes/ index** (done, verified)
+- File: new `site/layouts/routes/list.html`.
+- Root cause: there was no `routes/list.html`, so `/routes/` fell back to `_default/list.html`, which only renders `{{ .Content }}`, and `content/routes/_index.md` has no body. The index showed a hero and nothing else, none of the 2,467 route pages were listed.
+- Built a grouped index: routes grouped by destination (129 distinct destinations), each an accordion group (reusing the existing `.faq-item` / `.faq-trigger` markup and JS verbatim, so no new interaction code was needed) showing an alphabetical list of origin-country links, sorted by group size so the largest destinations (United Kingdom and Ireland, 196 routes each) appear first.
+- Technical note: Hugo's `Pages.GroupBy "Params.dest_name"` failed at build time in this Hugo version (`reflect: Elem of invalid type page.Page`); replaced with a manual `where`-based grouping loop (the same pattern already used in `routes-from.html` from the earlier SEO session), which builds in about 6 seconds for all 2,467 routes.
+- Verified: 129 groups rendered with matching `aria-controls`/`id` pairs; the United Kingdom group contains exactly 196 alphabetically sorted links with zero duplicates (checked by isolating its specific answer block, after an initial false alarm from a sloppy regex that matched an unrelated destination's group); a sample link resolves to a real built page.
+
+**D1.3 Empty guide-card titles on /guides/** (done, verified)
+- File: `site/layouts/guides/list.html`.
+- Root cause: the card heading rendered `{{ .Params.country_name }}`, but guide pages carry no `country_name` param (0 of 238 have it), so every card heading rendered as an empty `<h3></h3>`.
+- Fix: resolve the country name from `.Params.country_key` via the shared `countries_repatriation` data file, the same lookup pattern `country-hub.html` already uses, with a fallback to `.Title` if a country is somehow not in the data. Also corrected the stale "26 country guides" label (there are 238) to a live count, found and fixed in the same file while in there.
+- Verified: 0 empty `<h3>` tags remain across all 238 cards; count label now reads "238 country guides".
+
+**Also fixed while in this file family (not a separate audit finding):** `countries/list.html` (the `/countries/` index) rendered a `£`/GBP price stat (`$c.cost_guide.total_typical_range_gbp`) on every card, which contradicts the site-wide qualitative-only prices decision made in the 2 July SEO build (F13). Removed the price stat, kept the timeline stat. Verified zero `£` characters remain on the built `/countries/` page and `check_schema.py` still passes.
+
+**Gate status after Block D1:** Hugo build clean, `qa_routes.py` 0 FAIL / 2,467 PASS (unchanged, D1 touched no route content), `check_schema.py` 0 errors, `check_titles.py` 0 errors / 27 pre-existing warnings (unchanged).

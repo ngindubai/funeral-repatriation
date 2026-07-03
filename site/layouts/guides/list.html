@@ -14,15 +14,21 @@
 
 <section class="section">
     <div class="section-inner">
+        {{ $guidePages := where .Site.RegularPages "Section" "guides" }}
         <div class="section-header reveal" style="margin-bottom:2rem;">
-            <p class="label-sm">26 country guides</p>
+            <p class="label-sm">{{ len $guidePages }} country guides</p>
             <h2>Select a country</h2>
         </div>
         <div class="countries-grid stagger-children">
-            {{ range where .Site.RegularPages "Section" "guides" }}
+            {{ range $guidePages }}
+            {{/* D1.3: guide pages carry no country_name param (only 26 of
+                 238 ever had one), so the card heading rendered empty.
+                 Resolve the name from country_key via the shared data file,
+                 the same pattern country-hub.html already uses. */}}
+            {{ $c := index hugo.Data.countries_repatriation.countries .Params.country_key }}
             <a href="{{ .RelPermalink }}" class="country-card reveal">
                 <div class="country-card-body">
-                    <h3>{{ .Params.country_name }}</h3>
+                    <h3>{{ if $c }}{{ or $c.name $c.country_name }}{{ else }}{{ .Params.country_name | default .Title }}{{ end }}</h3>
                     <p>{{ .Description }}</p>
                     <span class="country-card-cta">Read guide <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
