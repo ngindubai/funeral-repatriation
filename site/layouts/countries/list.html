@@ -1,5 +1,10 @@
 {{ define "main" }}
-<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/mrwashingt0n-ai-generated-9048740.jpg{{ end }}');">
+{{/* D4.1: replaced the default hero image. The previous default
+     (mrwashingt0n-ai-generated-9048740.jpg) is the figure-among-gravestones
+     image the audit named as the most distressing on the site, and it was
+     the first thing a family saw on the main country index. Swapped for a
+     calm, unused travel image. */}}
+<section class="page-hero" style="background-image: url('{{ with .Params.hero_image }}{{ . }}{{ else }}/images/airport-exterior.jpg{{ end }}');">
     <div class="page-hero-content">
         <p class="label-sm">Repatriate Service</p>
         <h1>{{ .Title }}</h1>

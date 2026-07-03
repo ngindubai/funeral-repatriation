@@ -216,3 +216,21 @@ Deliberately NOT done (kept the rotation variety, per Option 1 and the CLAUDE.md
 Verified: all five built hubs (Spain A, Thailand B, France C, Greece D, USA E) now render the helpline strip and show the number; B/D/E each render the orientation strip with three real facts (for example Greece: 10-21 days, 24/7, Athens); A's hero shows the embassy city (Madrid) instead of the priority code; `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, no banned words or em dashes in any of the eight files touched. (One mid-build scare where Greece's orientation strip looked like it was missing the embassy city turned out to be a truncated grep window, not a real gap; confirmed all three B/D/E strips carry the city.)
 
 **Block D5.1 complete. All design-audit blocks (D1, D2, D3, D5.1, D5.2) now done.** D5.1 was the only Opus-required item; it was held until an actual Opus session per the earlier model-switch note, then built here.
+
+### D4.1 completion (gap found on a completeness review)
+
+On a "is the plan complete" review, found that D4.1 had only been half-done: the D2-block entry covered the Contact page and the generic single-page template (Privacy, Methodology), but the plan's D4.1 also named the **index pages**, and those still carried the two images the audit flagged as most distressing:
+- the countries index still showed the figure-among-gravestones image (`mrwashingt0n-ai-generated-9048740.jpg`), the audit's single most-distressing image, and the first thing seen on the main country index;
+- the routes index and the generic section-list fallback still defaulted to the couple-at-a-deathbed image (`nhuhang9261-couple-6976409.jpg`).
+
+Fixed, and verified in the built output:
+- `countries/list.html` default plus, importantly, `content/countries/_index.md` frontmatter (which was hardcoding the gravestone image and overriding the template default, so changing the template alone did nothing; caught by checking the built page rather than assuming): now `airport-exterior.jpg`.
+- `routes/list.html`: now `logistics-coordinator.jpg`.
+- `_default/list.html` (generic section-list fallback): now `document-checklist.jpg`.
+- All three are calm, previously-unused images already in `site/static/images/`, per the "existing images only, no commissioning" decision.
+- Checked every other section index too: `blog` (support-conversation), `cremation-transfer` (airport-cargo), `embassy-contacts` (passport-stamp), `faq` and `bringing-ashes-home` (the brand `hero.jpg`) are all calm and appropriate, so they were left unchanged rather than churned. The audit's "hearse / clasped hands" descriptions of those did not match the actual files.
+- No distressing image (gravestones, couple-at-deathbed, coffin, grief) remains as an active default anywhere in the templates or content index files.
+
+Gate: `qa_routes.py` 0 FAIL / 2,467 PASS, `check_schema.py` 0 errors, no em dashes in the touched files.
+
+**Now genuinely complete.** All plan items are done, deferred with a recorded decision (D3.1 keep green, D4.1 no commissioning), or explicitly out of scope (testimonials, per Gareth). Two honest caveats remain, both documented above and not silently closed: the D3.3 label contrast reaches large-text AA but not full normal-text AA, and true mobile-device rendering (the sticky bar overlap, the hamburger menu) still wants a real device check that neither the code nor a desktop build can fully confirm.
