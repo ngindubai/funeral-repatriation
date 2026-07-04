@@ -46,7 +46,31 @@ buildFuture = true
     [markup.goldmark.renderer]
       unsafe = true
 
+[outputFormats]
+  # Sitemap split (4 Jul 2026): the single sitemap.xml is replaced by a sitemap
+  # index at /sitemap.xml referencing one child sitemap per section, to stay
+  # under Google's 50,000-URL limit as the 38,612-route matrix fills and to give
+  # per-section indexation visibility in Search Console.
+  [outputFormats.SitemapIndex]
+    mediaType = "application/xml"
+    baseName = "sitemap"
+    isPlainText = false
+    noUgly = true
+    rel = "sitemap"
+  [outputFormats.RootSitemap]
+    mediaType = "application/xml"
+    baseName = "sitemap-pages"
+    isPlainText = false
+    noUgly = true
+    rel = "sitemap"
+  [outputFormats.SectionSitemap]
+    mediaType = "application/xml"
+    baseName = "sitemap"
+    isPlainText = false
+    noUgly = true
+    rel = "sitemap"
+
 [outputs]
-  home = ["HTML", "RSS", "Sitemap"]
-  section = ["HTML"]
+  home = ["HTML", "RSS", "SitemapIndex", "RootSitemap"]
+  section = ["HTML", "SectionSitemap"]
   page = ["HTML"]

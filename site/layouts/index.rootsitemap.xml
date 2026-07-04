@@ -1,0 +1,10 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- /* Root-pages child sitemap: the home page plus standalone pages that live
+       at content root and belong to no section (about, contact, methodology,
+       privacy, services, thank-you). Referenced from the sitemap index. Uses an
+       empty top-level .Section, which matches exactly those pages. */ -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range where site.Pages "Section" "" }}
+{{- partial "sitemap-url.html" . }}
+{{- end }}
+</urlset>

@@ -1,0 +1,16 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- /* Per-section child sitemap, one per TOP-LEVEL section (routes, countries,
+       guides, blog, faq, bringing-ashes-home, cremation-transfer,
+       embassy-contacts), referenced from the sitemap index. Driven by top-level
+       .Section so it captures every page under the section regardless of nesting
+       (the countries section nests one sub-section per country). The
+       .Parent.IsHome guard keeps nested sections from emitting their own
+       sitemap; they are also switched to HTML-only via cascade in
+       countries/_index.md so no orphan files are written. */ -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- if .Parent.IsHome }}
+{{- range where site.Pages "Section" .Section }}
+{{- partial "sitemap-url.html" . }}
+{{- end }}
+{{- end }}
+</urlset>

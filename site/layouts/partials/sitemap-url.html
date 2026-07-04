@@ -1,6 +1,10 @@
-{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{{- range site.Pages }}{{- if not .Params.noindex }}
+{{- /* Emits one <url> block for the given page, honouring noindex and the
+       per-section priority scheme. Shared by the section sitemaps and the
+       root-pages sitemap so every child sitemap weights URLs identically.
+       Split out from the former single layouts/sitemap.xml when the sitemap
+       was broken into a sitemap index (one child per section) to stay under
+       Google's 50,000-URL limit as the route matrix fills. */ -}}
+{{- if not .Params.noindex }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
@@ -22,5 +26,4 @@
       {{- end }}
     </priority>
   </url>
-{{- end }}{{- end }}
-</urlset>
+{{- end }}

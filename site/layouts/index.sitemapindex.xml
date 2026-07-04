@@ -1,0 +1,17 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- /* Sitemap index. Lists one child sitemap per top-level section, plus the
+       root-pages sitemap (home + standalone pages not in any section). Served
+       at /sitemap.xml, which robots.txt already points to. Search engines
+       follow the index down to each child. */ -}}
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ (.OutputFormats.Get "RootSitemap").Permalink }}</loc>
+  </sitemap>
+{{- range site.Sections }}
+  {{- with .OutputFormats.Get "SectionSitemap" }}
+  <sitemap>
+    <loc>{{ .Permalink }}</loc>
+  </sitemap>
+  {{- end }}
+{{- end }}
+</sitemapindex>
