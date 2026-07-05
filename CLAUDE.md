@@ -9,7 +9,7 @@
 1. **Simplest solution first.** Always implement the simplest thing that could work. Do not add abstractions or flexibility that were not explicitly requested.
 2. **Don't touch unrelated code.** If a file or function is not directly part of the current task, do not modify it, even if you think it could be improved.
 3. **Flag uncertainty by halting, not guessing.** Running autonomously, if a regulatory fact cannot be sourced from a named dated source, mark it for later rather than inventing it, and if the build itself is ambiguous, stop and post the halt message rather than guess. Confidence without certainty causes damage on a YMYL site.
-4. **A batch of up to 4 blocks per run.** Build up to 4 units (each unit = 25 routes or one 5-article blog batch), floor 1, each through the full quality gate. Commit the whole batch ONCE, report, and stop. (Changed 5 June 2026 from one block per run, to fit the 15-run routine cap.)
+4. **A batch of up to 4 blocks per run.** Build up to 4 units (each unit = 25 routes or one 5-article blog batch), floor 1, each through the full quality gate. Commit the whole batch ONCE, report, and stop. (Changed 5 June 2026 from one block per run, to fit the 15-run routine cap.) **Throughput target (added 5 July 2026): 100 new pages/day across two runs, so 50 pages/run (2 blocks of 25). Ceiling stays 4 blocks (100 pages) when capacity allows; floor 1 clean block. Quality always gates volume: never ship a thin or duplicate page to hit the number.**
 
 ---
 
@@ -104,7 +104,7 @@ Live on repatriationfuneral.com (within ~60 seconds)
 2. **Named, dated sources for every regulatory claim.** FCDO guidance, Home Office, official embassy contacts only. If a fact cannot be sourced, do not state it.
 3. **Calm, authoritative, compassionate tone.** The reader has just lost someone. Do not use sales language.
 4. **No em dashes. Ever. Anywhere. See EM DASH BAN above.**
-5. **No banned vocabulary:** delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament, moreover, furthermore, groundbreaking, transformative, synergy, reimagine, bustling, nestled, nuanced, illuminate, encompasses, proactive, ubiquitous, quintessential.
+5. **No banned vocabulary:** delve, meticulous, comprehensive, tailored, navigate, leverage, seamless, robust, vital, crucial, utilize, intricate, paramount, pivotal, embark, foster, elevate, unleash, unlock, harness, streamline, holistic, realm, landscape (figurative), testament, moreover, furthermore, groundbreaking, transformative, synergy, reimagine, bustling, nestled, nuanced, illuminate, encompasses, proactive, ubiquitous, quintessential. **AI-tell phrases also banned (added 5 July 2026):** additionally, in conclusion, it is worth noting, it is important to note, when it comes to, in today's fast-paced world, navigate the complexities, a testament to, plays a crucial role, plays a vital role, in the realm of, tapestry, underscore, myriad, plethora, dive into, ever-evolving, cutting-edge, game-changer, at the end of the day, rest assured, look no further, "whether you are a X or a Y".
 6. **Vary sentence rhythm.** Avoid AI-pattern writing: lists of three, symmetrical sentence pairs, over-use of "not only...but also".
 7. **Use correct author persona.** See AUTHOR PERSONAS section. Never use Gareth's name.
 8. **British English throughout.** -ise not -ize. Organise, recognise, specialise.
@@ -124,6 +124,40 @@ Live on repatriationfuneral.com (within ~60 seconds)
 - FAQ schema from faqs: frontmatter on all route and country pages.
 - Service schema on all route pages.
 - No duplicate content. Check the target folder for an existing slug before building.
+
+---
+
+## CANONICAL SEO, HUMANISATION AND FRESHNESS CONSTANTS (added 5 July 2026)
+
+Durable rules distilled from the July 2026 upgrade work. Full detail and status in `docs/seo-upgrade-log.md`; the build routine that applies them is `docs/build-routine.md`. These bind every future run.
+
+**Title and description**
+- Route and country-hub titles carry NO ` | Repatriate Service` suffix (it pushed titles past 60 characters). Home and top-level pages keep it.
+- Do not use one fixed title or description skeleton across pages. Rotate several genuine shapes and openings, so pages at scale do not share an identifiable pattern.
+
+**Schema**
+- Exactly one Organization entity per page, from `_default/baseof.html`. Never add a second route-level Organization.
+- FAQ schema answer text MUST match the visible answer text word for word (build each answer once, use in both). No boilerplate schema answers.
+- No FAQPage schema on country hubs (removed 2 July 2026; Google restricts FAQ rich results to gov/health).
+- Service schema on every route page. Schema author is the Organization; visible bylines, where a template shows one, are one of the four personas, never a fabricated title, never Gareth.
+- Organization is a service-area business: `areaServed` and `knowsAbout` set, no invented postal address, no invented reviews.
+- Canonical is auto self-referencing from baseof; never add a canonical override in front matter.
+
+**Content and information gain**
+- Every page must state at least one specific, sourced, page-unique fact a competitor lacks (local emergency number, named registration authority, jurisdiction rule, corridor-specific transfer method, document time, timeline). A page that cannot clear this bar is thin: enrich it or set `noindex: true`, do not publish it thin.
+- No prices anywhere, not even a range or "from X"; give qualitative "what affects the cost" wording and direct to the contact form.
+- Never display the internal P1/P2/P3 build-tier codes in visible content.
+- Never set a distressing hero image (gravestones, coffin, grief, deathbed) in front matter; use a calm image from `site/static/images/`.
+
+**Freshness (YMYL honesty)**
+- Do not present a fabricated "updated this month" date. The auto `now.Format` stamps are being replaced by a single `site.Params.lastReviewed` bumped only when a real regulatory review runs (see `CONTENT-REFRESH-SPEC.md`). Never claim a review that did not happen.
+
+**Canonical facts**
+- FCDO 24-hour emergency line: `+44 (0)20 7008 5000` (verify against gov.uk before changing anywhere; it appears in thousands of pages).
+- WhatsApp: `+44 7703 577246`. Enquiry endpoint: `formsubmit.co/ajax/garethsomers@outlook.com`.
+
+**Deploy safety**
+- CI does not yet run the QA scripts before publishing. Until a QA job is added to `build-and-publish.yml` (needs a manual paste; the API returns 403 on workflow files), the inline QA gate in the routine is the only backstop. It must pass before any commit.
 
 ---
 
