@@ -65,6 +65,12 @@
 
 **llms.txt and llms-full.txt are kept and treated as live deliverables (2 Jul 2026), overriding the SEO audit's advice to deprioritise them.** Other AI systems (ChatGPT, Perplexity, Claude) read these files and they drive real traffic, even though Google's own AI Overview ranking does not read them. Keep both files current as the route matrix and hub coverage grow; do not add AI-specific schema or content chunking beyond this, since Google's Search Central documentation (per the audit) says neither is required or used.
 
+**qa_routes.py does not apply to blog content (11 Jul 2026).** REQUIRED_FRONTMATTER in qa_routes.py (origin_name, dest_name, timeline_avg, timeline_steps) is route-page-specific; running it against site/content/blog/ produces false "missing field" errors on every file. For blog batches, run qa_routes.py --path only to catch the content-quality checks (em dash, banned vocabulary, AI-tell phrases, price patterns, safety-guarantee patterns all still apply and did fire correctly in testing) and ignore the frontmatter-structure errors, or do the banned-word/em-dash/price/safety sweep manually against the full CLAUDE.md lists (the script's BANNED_WORDS and AI_PHRASES sets are an older, smaller subset of the lists CLAUDE.md now specifies, missing "landscape" and the July 2026 AI-tell-phrase additions). Blog frontmatter's `faqs:` and `author`/`author_title` fields are not rendered anywhere by site/layouts/blog/single.html (no visible byline, no FAQPage schema); this is pre-existing template behaviour matching every blog article already live, not something this run changed or needs to fix.
+
+**Hugo build verification workaround when no matching binary is available (11 Jul 2026).** This session had no Hugo binary at all; `apt-get install hugo` installs v0.123.7+extended (Ubuntu package), older than the pinned production v0.160.1-extended, and GitHub binary release downloads are blocked by this session's network policy (repo access is scoped to ngindubai/funeral-repatriation only). A full `hugo --source site --gc --minify` build fails on two pre-existing, unrelated issues: the known 66-file invalid-UTF-8 problem in site/content/countries/ (first flagged 5 Jul 2026 in this file, confirmed again this run: algeria and angola both hit directly, 66 total via a scratch scan) and a `hugo.Data`-field template incompatibility on the home page and other shared partials (Hugo API added after 0.123.7, also previously flagged 5 Jul 2026 for R97-R98). Neither was touched, per CLAUDE.md rule 2. To verify new content actually compiles, copy site/ to a scratch directory outside the repo, fix the UTF-8 only in that scratch copy, and build; for isolating blog-only content, additionally delete non-blog content sections and disable the home/RSS/sitemap/taxonomy/404 page kinds in the scratch copy's config (`disableKinds` in an extra --config file) so unrelated broken templates don't block verification of the pages actually being added. Never apply any of this to the real working tree.
+
+**R120 still unresolved as of 11 Jul 2026.** No route chunk was built this run for that reason (see BUILD-PLAN.md session log). Two blog batches (27 and 28, 10 articles) were built instead, since the block rhythm allows a blog block when route chunks are exhausted for the run and the blog roadmap's next batches were unambiguous and fully sourceable. This is not a substitute for resolving R120: a human still needs to choose between genuine Tier D long-tail pair selection (no source/method defined anywhere in this repo) and an authorised origin-pool expansion of the 70 Tier C destinations built since R97 beyond the current 8-country pool.
+
 ---
 
 ## 3. Current State (28 June 2026)
@@ -74,7 +80,7 @@
 | Country hubs | 238 countries published |
 | City pages | 220 pages |
 | Guides | 238 country guides |
-| Blog | 239 articles live (target 500+) |
+| Blog | 288 articles live (target 500+); 239 as of 28 Jun 2026, +49 from later sessions including Batches 27-28 on 11 Jul 2026 |
 | Bringing ashes home | 238 countries |
 | Cremation transfer | 238 countries |
 | Embassy contacts | 238 countries |
