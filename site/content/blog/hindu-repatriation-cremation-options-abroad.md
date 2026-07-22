@@ -75,4 +75,4 @@ A pandit can perform antyesti at many locations and in many forms. For deaths ab
 
 Major cities in South and South-East Asia, the Middle East, East Africa, and parts of North America and Europe have Hindu communities with pandits available. The repatriation coordinator can help identify contacts in the country of death.
 
-For further guidance, see our articles on [bringing ashes home on a passenger flight](/blog/bringing-ashes-home-on-a-passenger-flight/) and [the main repatriation cost guide](/blog/repatriation-cost-guide/).
+For further guidance, see our articles on [bringing ashes home on a passenger flight](/blog/bringing-ashes-home-on-a-passenger-flight/) and [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/).

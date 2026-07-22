@@ -58,7 +58,7 @@
      implementations against the schema. */}}
 {{ if eq $variant "E" }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":{{ printf "Repatriation from %s to the UK: A Complete Guide" $cname | jsonify }},"author":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"reviewedBy":{"@type":"Organization","name":"Repatriate Service"},"publisher":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"dateModified":"{{ now.Format "2006-01-02" }}","about":{"@type":"Thing","name":"Funeral Repatriation"}}
+{"@context":"https://schema.org","@type":"Article","headline":{{ printf "Repatriation from %s to the UK: A Complete Guide" $cname | jsonify }},"author":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"publisher":{"@type":"Organization","name":"Repatriate Service","url":"{{ site.BaseURL }}"},"dateModified":"{{ now.Format "2006-01-02" }}","about":{"@type":"Thing","name":"Funeral Repatriation"}}
 </script>
 {{ end }}
 <script type="application/ld+json">

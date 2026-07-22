@@ -67,4 +67,4 @@ A practical approach is to ask what the deceased would have wanted, based on thi
 
 Where preferences are unknown, the family's own comfort is the guide. A decision that gives the family a sense of peace and closure is the right decision, regardless of whether it follows any particular convention.
 
-For further guidance, see our articles on [the main repatriation cost guide](/blog/repatriation-cost-guide/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).
+For further guidance, see our articles on [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).

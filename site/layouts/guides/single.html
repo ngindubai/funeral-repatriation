@@ -1,4 +1,4 @@
-{{ define "title" }}{{ $key := .Params.country_key }}{{ $c := index hugo.Data.countries_repatriation.countries $key }}{{ $t := "" }}{{ if $c }}{{ $t = or $c.name $c.country_name }}{{ end }}{{ if not $t }}{{ $t = .Params.country_name }}{{ end }}What to do if someone dies in {{ $t }} | Repatriate Service{{ end }}
+{{ define "title" }}{{ $key := .Params.country_key }}{{ $c := index hugo.Data.countries_repatriation.countries $key }}{{ $t := "" }}{{ if $c }}{{ $t = or $c.name $c.country_name }}{{ end }}{{ if not $t }}{{ $t = .Params.country_name }}{{ end }}What to do if someone dies in {{ $t }}{{ end }}
 
 {{ define "schema" }}
 {{ $key := .Params.country_key }}

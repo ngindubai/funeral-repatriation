@@ -39,6 +39,6 @@ Djibouti-Ambouli International Airport connects to Addis Ababa, Dubai, and Istan
 
 We work directly with French-speaking contacts on the ground and keep the Addis Ababa embassy in the loop throughout, so the distance between Djibouti and the office handling its consular affairs doesn't become the family's problem to manage.
 
-Read about [what the British Embassy actually does when someone dies abroad](/blog/british-embassy-role-death-abroad/), or see the [full Djibouti repatriation guide](/repatriation-from-djibouti/) for the complete picture.
+Read about [what the British Embassy actually does when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/), or see the [full Djibouti repatriation guide](/repatriation-from-djibouti/) for the complete picture.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

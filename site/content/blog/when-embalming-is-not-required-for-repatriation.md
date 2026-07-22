@@ -47,4 +47,4 @@ Long-haul flights to the UK from Asia, Africa, or the Americas make unbroken ref
 
 Tell your repatriation coordinator at the start of the case that you are requesting no embalming. The coordinator will contact the local funeral director, the airline, and the local authorities to establish whether it is possible on that specific route. Do not assume a previous case's outcome applies to your route: regulations and airline policies differ by country and airline.
 
-For further guidance on body preparation and transport requirements, see our articles on [how embalming works for international repatriation](/blog/how-embalming-works-international-repatriation/) and [zinc-lined coffins: what they are and why required](/blog/zinc-lined-coffins-explained/).
+For further guidance on body preparation and transport requirements, see our articles on [how embalming works for international repatriation](/blog/how-embalming-works-international-repatriation/) and [zinc-lined coffins: what they are and why required](/blog/zinc-lined-coffins-what-they-are-and-why-required/).

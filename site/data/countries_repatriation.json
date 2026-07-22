@@ -9879,6 +9879,7 @@
       }
     },
     "romania": {
+      "slug": "romania",
       "name": "Romania",
       "flag": "Ã°Å¸â€¡Â·Ã°Å¸â€¡Â´",
       "region": "Europe",
@@ -9942,6 +9943,7 @@
       ]
     },
     "albania": {
+      "slug": "albania",
       "name": "Albania",
       "flag": "Ã°Å¸â€¡Â¦Ã°Å¸â€¡Â±",
       "region": "Europe",
@@ -10006,6 +10008,7 @@
       ]
     },
     "colombia": {
+      "slug": "colombia",
       "name": "Colombia",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â´",
       "region": "South America",
@@ -10073,6 +10076,7 @@
       ]
     },
     "china": {
+      "slug": "china",
       "name": "China",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â³",
       "region": "Asia",
@@ -10147,6 +10151,7 @@
       ]
     },
     "hong-kong": {
+      "slug": "hong-kong",
       "name": "Hong Kong",
       "flag": "Ã°Å¸â€¡Â­Ã°Å¸â€¡Â°",
       "region": "Asia",
@@ -10209,6 +10214,7 @@
       ]
     },
     "oman": {
+      "slug": "oman",
       "name": "Oman",
       "flag": "Ã°Å¸â€¡Â´Ã°Å¸â€¡Â²",
       "region": "Middle East",
@@ -10273,6 +10279,7 @@
       ]
     },
     "argentina": {
+      "slug": "argentina",
       "name": "Argentina",
       "flag": "Ã°Å¸â€¡Â¦Ã°Å¸â€¡Â·",
       "region": "South America",
@@ -10338,6 +10345,7 @@
       ]
     },
     "costa-rica": {
+      "slug": "costa-rica",
       "name": "Costa Rica",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â·",
       "region": "Central America",
@@ -10403,6 +10411,7 @@
       ]
     },
     "senegal": {
+      "slug": "senegal",
       "name": "Senegal",
       "flag": "Ã°Å¸â€¡Â¸Ã°Å¸â€¡Â³",
       "region": "Africa",
@@ -10468,6 +10477,7 @@
       ]
     },
     "ethiopia": {
+      "slug": "ethiopia",
       "name": "Ethiopia",
       "flag": "Ã°Å¸â€¡ÂªÃ°Å¸â€¡Â¹",
       "region": "Africa",
@@ -10533,6 +10543,7 @@
       ]
     },
     "jordan": {
+      "slug": "jordan",
       "name": "Jordan",
       "flag": "Ã°Å¸â€¡Â¯Ã°Å¸â€¡Â´",
       "region": "Middle East",
@@ -10596,6 +10607,7 @@
       ]
     },
     "ghana": {
+      "slug": "ghana",
       "name": "Ghana",
       "flag": "Ã°Å¸â€¡Â¬Ã°Å¸â€¡Â­",
       "region": "Africa",
@@ -10660,6 +10672,7 @@
       ]
     },
     "nepal": {
+      "slug": "nepal",
       "name": "Nepal",
       "flag": "Ã°Å¸â€¡Â³Ã°Å¸â€¡Âµ",
       "region": "Asia",
@@ -10725,6 +10738,7 @@
       ]
     },
     "ecuador": {
+      "slug": "ecuador",
       "name": "Ecuador",
       "flag": "Ã°Å¸â€¡ÂªÃ°Å¸â€¡Â¨",
       "region": "South America",
@@ -10790,6 +10804,7 @@
       ]
     },
     "serbia": {
+      "slug": "serbia",
       "name": "Serbia",
       "flag": "Ã°Å¸â€¡Â·Ã°Å¸â€¡Â¸",
       "region": "Europe",
@@ -10854,6 +10869,7 @@
       ]
     },
     "bolivia": {
+      "slug": "bolivia",
       "name": "Bolivia",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Â´",
       "region": "South America",
@@ -10920,6 +10936,7 @@
       ]
     },
     "bangladesh": {
+      "slug": "bangladesh",
       "name": "Bangladesh",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Â©",
       "region": "Asia",
@@ -10985,6 +11002,7 @@
       ]
     },
     "uganda": {
+      "slug": "uganda",
       "name": "Uganda",
       "flag": "Ã°Å¸â€¡ÂºÃ°Å¸â€¡Â¬",
       "region": "Africa",
@@ -11050,6 +11068,7 @@
       ]
     },
     "qatar": {
+      "slug": "qatar",
       "name": "Qatar",
       "flag": "Ã°Å¸â€¡Â¶Ã°Å¸â€¡Â¦",
       "region": "Middle East",
@@ -11112,6 +11131,7 @@
       ]
     },
     "tunisia": {
+      "slug": "tunisia",
       "name": "Tunisia",
       "flag": "Ã°Å¸â€¡Â¹Ã°Å¸â€¡Â³",
       "region": "Africa",
@@ -11179,6 +11199,7 @@
       ]
     },
     "zimbabwe": {
+      "slug": "zimbabwe",
       "name": "Zimbabwe",
       "flag": "Ã°Å¸â€¡Â¿Ã°Å¸â€¡Â¼",
       "region": "Africa",
@@ -11246,6 +11267,7 @@
       ]
     },
     "rwanda": {
+      "slug": "rwanda",
       "name": "Rwanda",
       "flag": "Ã°Å¸â€¡Â·Ã°Å¸â€¡Â¼",
       "region": "Africa",
@@ -11310,6 +11332,7 @@
       ]
     },
     "zambia": {
+      "slug": "zambia",
       "name": "Zambia",
       "flag": "Ã°Å¸â€¡Â¿Ã°Å¸â€¡Â²",
       "region": "Africa",
@@ -11376,6 +11399,7 @@
       ]
     },
     "iceland": {
+      "slug": "iceland",
       "name": "Iceland",
       "flag": "Ã°Å¸â€¡Â®Ã°Å¸â€¡Â¸",
       "region": "Europe",
@@ -11440,6 +11464,7 @@
       ]
     },
     "cameroon": {
+      "slug": "cameroon",
       "name": "Cameroon",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â²",
       "region": "Africa",
@@ -11506,6 +11531,7 @@
       ]
     },
     "mozambique": {
+      "slug": "mozambique",
       "name": "Mozambique",
       "flag": "Ã°Å¸â€¡Â²Ã°Å¸â€¡Â¿",
       "region": "Africa",
@@ -11574,6 +11600,7 @@
       ]
     },
     "malawi": {
+      "slug": "malawi",
       "name": "Malawi",
       "flag": "Ã°Å¸â€¡Â²Ã°Å¸â€¡Â¼",
       "region": "Africa",
@@ -11639,6 +11666,7 @@
       ]
     },
     "norway": {
+      "slug": "norway",
       "name": "Norway",
       "flag": "Ã°Å¸â€¡Â³Ã°Å¸â€¡Â´",
       "region": "Europe",
@@ -11705,6 +11733,7 @@
       ]
     },
     "sweden": {
+      "slug": "sweden",
       "name": "Sweden",
       "flag": "Ã°Å¸â€¡Â¸Ã°Å¸â€¡Âª",
       "region": "Europe",
@@ -11772,6 +11801,7 @@
       ]
     },
     "myanmar": {
+      "slug": "myanmar",
       "name": "Myanmar",
       "flag": "Ã°Å¸â€¡Â²Ã°Å¸â€¡Â²",
       "region": "Asia",
@@ -11838,6 +11868,7 @@
       ]
     },
     "lebanon": {
+      "slug": "lebanon",
       "name": "Lebanon",
       "flag": "Ã°Å¸â€¡Â±Ã°Å¸â€¡Â§",
       "region": "Middle East",
@@ -11903,6 +11934,7 @@
       ]
     },
     "algeria": {
+      "slug": "algeria",
       "name": "Algeria",
       "flag": "Ã°Å¸â€¡Â©Ã°Å¸â€¡Â¿",
       "region": "Africa",
@@ -11971,6 +12003,7 @@
       ]
     },
     "denmark": {
+      "slug": "denmark",
       "name": "Denmark",
       "flag": "Ã°Å¸â€¡Â©Ã°Å¸â€¡Â°",
       "region": "Europe",
@@ -12037,6 +12070,7 @@
       ]
     },
     "finland": {
+      "slug": "finland",
       "name": "Finland",
       "flag": "Ã°Å¸â€¡Â«Ã°Å¸â€¡Â®",
       "region": "Europe",
@@ -12103,6 +12137,7 @@
       ]
     },
     "kuwait": {
+      "slug": "kuwait",
       "name": "Kuwait",
       "flag": "Ã°Å¸â€¡Â°Ã°Å¸â€¡Â¼",
       "region": "Middle East",
@@ -12168,6 +12203,7 @@
       ]
     },
     "bahrain": {
+      "slug": "bahrain",
       "name": "Bahrain",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Â­",
       "region": "Middle East",
@@ -12232,6 +12268,7 @@
       ]
     },
     "austria": {
+      "slug": "austria",
       "name": "Austria",
       "flag": "Ã°Å¸â€¡Â¦Ã°Å¸â€¡Â¹",
       "region": "Europe",
@@ -12299,6 +12336,7 @@
       ]
     },
     "switzerland": {
+      "slug": "switzerland",
       "name": "Switzerland",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â­",
       "region": "Europe",
@@ -12366,6 +12404,7 @@
       ]
     },
     "belgium": {
+      "slug": "belgium",
       "name": "Belgium",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Âª",
       "region": "Europe",
@@ -12433,6 +12472,7 @@
       ]
     },
     "saudi-arabia": {
+      "slug": "saudi-arabia",
       "name": "Saudi Arabia",
       "flag": "Ã°Å¸â€¡Â¸Ã°Å¸â€¡Â¦",
       "region": "Middle East",
@@ -12503,6 +12543,7 @@
       ]
     },
     "israel": {
+      "slug": "israel",
       "name": "Israel",
       "flag": "Ã°Å¸â€¡Â®Ã°Å¸â€¡Â±",
       "region": "Middle East",
@@ -12570,6 +12611,7 @@
       ]
     },
     "south-korea": {
+      "slug": "south-korea",
       "name": "South Korea",
       "flag": "Ã°Å¸â€¡Â°Ã°Å¸â€¡Â·",
       "region": "Asia",
@@ -12637,6 +12679,7 @@
       ]
     },
     "chile": {
+      "slug": "chile",
       "name": "Chile",
       "flag": "Ã°Å¸â€¡Â¨Ã°Å¸â€¡Â±",
       "region": "South America",
@@ -12705,6 +12748,7 @@
       ]
     },
     "taiwan": {
+      "slug": "taiwan",
       "name": "Taiwan",
       "flag": "Ã°Å¸â€¡Â¹Ã°Å¸â€¡Â¼",
       "region": "Asia",
@@ -12772,6 +12816,7 @@
       ]
     },
     "mauritius": {
+      "slug": "mauritius",
       "name": "Mauritius",
       "flag": "Ã°Å¸â€¡Â²Ã°Å¸â€¡Âº",
       "region": "Africa",
@@ -12835,6 +12880,7 @@
       ]
     },
     "seychelles": {
+      "slug": "seychelles",
       "name": "Seychelles",
       "flag": "Ã°Å¸â€¡Â¸Ã°Å¸â€¡Â¨",
       "region": "Africa",
@@ -12899,6 +12945,7 @@
       ]
     },
     "georgia": {
+      "slug": "georgia",
       "name": "Georgia",
       "flag": "Ã°Å¸â€¡Â¬Ã°Å¸â€¡Âª",
       "region": "Europe",
@@ -12966,6 +13013,7 @@
       ]
     },
     "bahamas": {
+      "slug": "bahamas",
       "name": "The Bahamas",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Â¸",
       "region": "Caribbean",
@@ -13032,6 +13080,7 @@
       ]
     },
     "botswana": {
+      "slug": "botswana",
       "name": "Botswana",
       "flag": "Ã°Å¸â€¡Â§Ã°Å¸â€¡Â¼",
       "region": "Africa",
@@ -13097,6 +13146,7 @@
       ]
     },
     "slovenia": {
+      "slug": "slovenia",
       "name": "Slovenia",
       "flag": "Ã°Å¸â€¡Â¸Ã°Å¸â€¡Â®",
       "region": "Europe",
@@ -13162,6 +13212,7 @@
       ]
     },
     "montenegro": {
+      "slug": "montenegro",
       "name": "Montenegro",
       "flag": "Ã°Å¸â€¡Â²Ã°Å¸â€¡Âª",
       "region": "Europe",
@@ -13229,6 +13280,7 @@
       ]
     },
     "laos": {
+      "slug": "laos",
       "name": "Laos",
       "flag": "Ã°Å¸â€¡Â±Ã°Å¸â€¡Â¦",
       "region": "Asia",
@@ -13297,6 +13349,7 @@
       ]
     },
     "kazakhstan": {
+      "slug": "kazakhstan",
       "name": "Kazakhstan",
       "flag": "Ã°Å¸â€¡Â°Ã°Å¸â€¡Â¿",
       "region": "Central Asia",
@@ -13366,6 +13419,7 @@
       ]
     },
     "uzbekistan": {
+      "slug": "uzbekistan",
       "name": "Uzbekistan",
       "flag": "Ã°Å¸â€¡ÂºÃ°Å¸â€¡Â¿",
       "region": "Central Asia",
@@ -13433,6 +13487,7 @@
       ]
     },
     "armenia": {
+      "slug": "armenia",
       "name": "Armenia",
       "flag": "Ã°Å¸â€¡Â¦Ã°Å¸â€¡Â²",
       "region": "Caucasus",
@@ -13500,6 +13555,7 @@
       ]
     },
     "azerbaijan": {
+      "slug": "azerbaijan",
       "name": "Azerbaijan",
       "flag": "Ã°Å¸â€¡Â¦Ã°Å¸â€¡Â¿",
       "region": "Caucasus",
@@ -13566,6 +13622,7 @@
       ]
     },
     "kyrgyzstan": {
+      "slug": "kyrgyzstan",
       "name": "Kyrgyzstan",
       "flag": "Ã°Å¸â€¡Â°Ã°Å¸â€¡Â¬",
       "region": "Central Asia",
@@ -13633,6 +13690,7 @@
       ]
     },
     "fiji": {
+      "slug": "fiji",
       "name": "Fiji",
       "flag": "Ã°Å¸â€¡Â«Ã°Å¸â€¡Â¯",
       "region": "Pacific",
@@ -13699,6 +13757,7 @@
       ]
     },
     "vanuatu": {
+      "slug": "vanuatu",
       "name": "Vanuatu",
       "flag": "Ã°Å¸â€¡Â»Ã°Å¸â€¡Âº",
       "region": "Pacific",
@@ -13766,6 +13825,7 @@
       ]
     },
     "samoa": {
+      "slug": "samoa",
       "name": "Samoa",
       "flag": "Ã°Å¸â€¡Â¼Ã°Å¸â€¡Â¸",
       "region": "Pacific",
@@ -13831,6 +13891,7 @@
       ]
     },
     "tonga": {
+      "slug": "tonga",
       "name": "Tonga",
       "flag": "Ã°Å¸â€¡Â¹Ã°Å¸â€¡Â´",
       "region": "Pacific",
@@ -13896,6 +13957,7 @@
       ]
     },
     "papua-new-guinea": {
+      "slug": "papua-new-guinea",
       "name": "Papua New Guinea",
       "flag": "Ã°Å¸â€¡ÂµÃ°Å¸â€¡Â¬",
       "region": "Pacific",
@@ -13963,6 +14025,7 @@
       ]
     },
     "trinidad-and-tobago": {
+      "slug": "trinidad-and-tobago",
       "name": "Trinidad and Tobago",
       "flag": "ðŸ‡¹ðŸ‡¹",
       "region": "Caribbean",
@@ -14018,6 +14081,7 @@
       "ashes_transport_days_estimate": "8 to 14 days once cremation and documentation complete; direct BA routing to London is a material advantage"
     },
     "saint-lucia": {
+      "slug": "saint-lucia",
       "name": "Saint Lucia",
       "flag": "ðŸ‡±ðŸ‡¨",
       "region": "Caribbean",
@@ -14075,6 +14139,7 @@
       "ashes_transport_days_estimate": "10 to 16 days once cremation and documentation complete; routing via Barbados to London"
     },
     "grenada": {
+      "slug": "grenada",
       "name": "Grenada",
       "flag": "ðŸ‡¬ðŸ‡©",
       "region": "Caribbean",
@@ -14129,6 +14194,7 @@
       "ashes_transport_days_estimate": "10 to 16 days once cremation and documentation complete; routing via Barbados or Trinidad to London"
     },
     "antigua-and-barbuda": {
+      "slug": "antigua-and-barbuda",
       "name": "Antigua and Barbuda",
       "flag": "ðŸ‡¦ðŸ‡¬",
       "region": "Caribbean",
@@ -14183,6 +14249,7 @@
       "ashes_transport_days_estimate": "8 to 14 days once cremation and documentation complete; direct BA or Virgin routing to London is a material advantage"
     },
     "belize": {
+      "slug": "belize",
       "name": "Belize",
       "flag": "ðŸ‡§ðŸ‡¿",
       "region": "Central America",
@@ -14237,6 +14304,7 @@
       "ashes_transport_days_estimate": "12 to 18 days once cremation and documentation complete; routing via Miami or Houston to London"
     },
     "the-gambia": {
+      "slug": "the-gambia",
       "name": "The Gambia",
       "flag": "ðŸ‡¬ðŸ‡²",
       "region": "West Africa",
@@ -14300,6 +14368,7 @@
       "ashes_transport_days_estimate": "Not applicable â€” cremation not standard in The Gambia; body repatriation typical"
     },
     "honduras": {
+      "slug": "honduras",
       "name": "Honduras",
       "flag": "ðŸ‡­ðŸ‡³",
       "region": "Central America",
@@ -14367,6 +14436,7 @@
       "ashes_transport_days_estimate": "14 to 21 days once cremation and documentation complete; routing via Miami or Houston to London"
     },
     "panama": {
+      "slug": "panama",
       "name": "Panama",
       "flag": "ðŸ‡µðŸ‡¦",
       "region": "Central America",
@@ -14433,6 +14503,7 @@
       "ashes_transport_days_estimate": "10 to 16 days once cremation and documentation complete; routing via Miami or Madrid to London"
     },
     "ivory-coast": {
+      "slug": "ivory-coast",
       "name": "Ivory Coast (CÃ´te d'Ivoire)",
       "flag": "ðŸ‡¨ðŸ‡®",
       "region": "West Africa",
@@ -14500,6 +14571,7 @@
       "ashes_transport_days_estimate": "Not applicable â€” cremation not standard; body repatriation typical"
     },
     "madagascar": {
+      "slug": "madagascar",
       "name": "Madagascar",
       "flag": "ðŸ‡²ðŸ‡¬",
       "region": "Indian Ocean / East Africa",
@@ -14568,6 +14640,7 @@
       "ashes_transport_days_estimate": "Not applicable â€” cremation not standard in Madagascar; body repatriation typical"
     },
     "ukraine": {
+      "slug": "ukraine",
       "name": "Ukraine",
       "flag": "🇺🇦",
       "region": "Eastern Europe",
@@ -14637,6 +14710,7 @@
       "ashes_transport_days_estimate": "Not determinable under current conditions — all logistics subject to conflict zone security and access constraints"
     },
     "guatemala": {
+      "slug": "guatemala",
       "name": "Guatemala",
       "flag": "🇬🇹",
       "region": "Central America",
@@ -14704,6 +14778,7 @@
       "ashes_transport_days_estimate": "12 to 18 days once cremation and documentation complete; routing via Miami or Mexico City to London"
     },
     "namibia": {
+      "slug": "namibia",
       "name": "Namibia",
       "flag": "🇳🇦",
       "region": "Southern Africa",
@@ -14770,6 +14845,7 @@
       "ashes_transport_days_estimate": "12 to 18 days once cremation and documentation complete; routing via Johannesburg to London"
     },
     "sierra-leone": {
+      "slug": "sierra-leone",
       "name": "Sierra Leone",
       "flag": "🇸🇱",
       "region": "West Africa",
@@ -14837,6 +14913,7 @@
       "ashes_transport_days_estimate": "Not applicable — cremation not standard in Sierra Leone; body repatriation typical"
     },
     "venezuela": {
+      "slug": "venezuela",
       "name": "Venezuela",
       "flag": "🇻🇪",
       "region": "South America",
@@ -14905,6 +14982,7 @@
       "ashes_transport_days_estimate": "14 to 21 days once cremation and documentation complete; routing via Bogota or Panama City to London"
     },
     "angola": {
+      "slug": "angola",
       "country_name": "Angola",
       "country_adjective": "Angolan",
       "flag": "ðŸ‡¦ðŸ‡´",
@@ -14951,6 +15029,7 @@
       "ashes_transport_days_estimate": "10 to 18 days once cremation and documentation complete; routing via Johannesburg or Doha to London"
     },
     "cape-verde": {
+      "slug": "cape-verde",
       "country_name": "Cape Verde",
       "country_adjective": "Cape Verdean",
       "flag": "ðŸ‡¨ðŸ‡»",
@@ -14999,6 +15078,7 @@
       "ashes_transport_days_estimate": "Not applicable â€” no cremation facilities in Cape Verde. Body repatriation to UK required for cremation."
     },
     "el-salvador": {
+      "slug": "el-salvador",
       "country_name": "El Salvador",
       "country_adjective": "Salvadoran",
       "flag": "ðŸ‡¸ðŸ‡»",
@@ -15046,6 +15126,7 @@
       "ashes_transport_days_estimate": "10 to 16 days once cremation and documentation complete; routing via Miami or Houston to London"
     },
     "libya": {
+      "slug": "libya",
       "country_name": "Libya",
       "country_adjective": "Libyan",
       "flag": "ðŸ‡±ðŸ‡¾",
@@ -15100,6 +15181,7 @@
       "ashes_transport_days_estimate": "Not applicable â€” cremation not practised in Libya."
     },
     "north-macedonia": {
+      "slug": "north-macedonia",
       "country_name": "North Macedonia",
       "country_adjective": "Macedonian",
       "flag": "ðŸ‡²ðŸ‡°",
@@ -15149,6 +15231,7 @@
       "ashes_transport_days_estimate": "8 to 14 days once cremation and documentation complete; routing via Belgrade or Vienna to London"
     },
     "russia": {
+      "slug": "russia",
       "country_name": "Russia",
       "country_adjective": "Russian",
       "flag": "🇷🇺",
@@ -15204,6 +15287,7 @@
       ]
     },
     "bosnia-and-herzegovina": {
+      "slug": "bosnia-and-herzegovina",
       "country_name": "Bosnia and Herzegovina",
       "country_adjective": "Bosnian",
       "flag": "🇧🇦",
@@ -15253,6 +15337,7 @@
       ]
     },
     "kosovo": {
+      "slug": "kosovo",
       "country_name": "Kosovo",
       "country_adjective": "Kosovar",
       "flag": "🇽🇰",
@@ -15300,6 +15385,7 @@
       ]
     },
     "luxembourg": {
+      "slug": "luxembourg",
       "country_name": "Luxembourg",
       "country_adjective": "Luxembourgish",
       "flag": "🇱🇺",
@@ -15347,6 +15433,7 @@
       ]
     },
     "uruguay": {
+      "slug": "uruguay",
       "country_name": "Uruguay",
       "country_adjective": "Uruguayan",
       "flag": "🇺🇾",
@@ -15394,6 +15481,7 @@
       ]
     },
     "sudan": {
+      "slug": "sudan",
       "country_name": "Sudan",
       "country_adjective": "Sudanese",
       "flag": "🇸🇩",
@@ -15448,6 +15536,7 @@
       ]
     },
     "moldova": {
+      "slug": "moldova",
       "country_name": "Moldova",
       "country_adjective": "Moldovan",
       "flag": "🇲🇩",
@@ -15497,6 +15586,7 @@
       ]
     },
     "belarus": {
+      "slug": "belarus",
       "country_name": "Belarus",
       "country_adjective": "Belarusian",
       "flag": "🇧🇾",
@@ -15550,6 +15640,7 @@
       ]
     },
     "tajikistan": {
+      "slug": "tajikistan",
       "country_name": "Tajikistan",
       "country_adjective": "Tajik",
       "flag": "🇹🇯",
@@ -15603,6 +15694,7 @@
       ]
     },
     "guyana": {
+      "slug": "guyana",
       "country_name": "Guyana",
       "country_adjective": "Guyanese",
       "flag": "🇬🇾",
@@ -15652,6 +15744,7 @@
       ]
     },
     "brunei": {
+      "slug": "brunei",
       "country_key": "brunei",
       "country_name": "Brunei",
       "country_adjective": "Bruneian",
@@ -15699,6 +15792,7 @@
       ]
     },
     "democratic-republic-of-congo": {
+      "slug": "democratic-republic-of-congo",
       "country_key": "democratic-republic-of-congo",
       "country_name": "Democratic Republic of Congo",
       "country_adjective": "Congolese",
@@ -15756,6 +15850,7 @@
       ]
     },
     "eritrea": {
+      "slug": "eritrea",
       "country_key": "eritrea",
       "country_name": "Eritrea",
       "country_adjective": "Eritrean",
@@ -15808,6 +15903,7 @@
       ]
     },
     "mongolia": {
+      "slug": "mongolia",
       "country_key": "mongolia",
       "country_name": "Mongolia",
       "country_adjective": "Mongolian",
@@ -15853,6 +15949,7 @@
       ]
     },
     "eswatini": {
+      "slug": "eswatini",
       "country_key": "eswatini",
       "country_name": "Eswatini",
       "country_adjective": "Swazi",
@@ -15898,6 +15995,7 @@
       ]
     },
     "djibouti": {
+      "slug": "djibouti",
       "country_key": "djibouti",
       "country_name": "Djibouti",
       "country_adjective": "Djiboutian",
@@ -15948,6 +16046,7 @@
       ]
     },
     "lesotho": {
+      "slug": "lesotho",
       "country_key": "lesotho",
       "country_name": "Lesotho",
       "country_adjective": "Basotho",
@@ -15992,6 +16091,7 @@
       ]
     },
     "suriname": {
+      "slug": "suriname",
       "country_key": "suriname",
       "country_name": "Suriname",
       "country_adjective": "Surinamese",
@@ -16040,6 +16140,7 @@
       ]
     },
     "timor-leste": {
+      "slug": "timor-leste",
       "country_key": "timor-leste",
       "country_name": "Timor-Leste",
       "country_adjective": "Timorese",
@@ -16089,6 +16190,7 @@
       ]
     },
     "niger": {
+      "slug": "niger",
       "country_key": "niger",
       "country_name": "Niger",
       "country_adjective": "Nigerien",
@@ -16142,6 +16244,7 @@
       ]
     },
     "mali": {
+      "slug": "mali",
       "country_key": "mali",
       "country_name": "Mali",
       "country_adjective": "Malian",
@@ -16192,6 +16295,7 @@
       ]
     },
     "burkina-faso": {
+      "slug": "burkina-faso",
       "country_key": "burkina-faso",
       "country_name": "Burkina Faso",
       "country_adjective": "Burkinabé",
@@ -16242,6 +16346,7 @@
       ]
     },
     "south-sudan": {
+      "slug": "south-sudan",
       "country_key": "south-sudan",
       "country_name": "South Sudan",
       "country_adjective": "South Sudanese",
@@ -16292,6 +16397,7 @@
       ]
     },
     "somalia": {
+      "slug": "somalia",
       "country_key": "somalia",
       "country_name": "Somalia",
       "country_adjective": "Somali",
@@ -16345,6 +16451,7 @@
       ]
     },
     "comoros": {
+      "slug": "comoros",
       "country_key": "comoros",
       "country_name": "Comoros",
       "country_adjective": "Comorian",
@@ -16390,6 +16497,7 @@
       ]
     },
     "guinea": {
+      "slug": "guinea",
       "country_key": "guinea",
       "country_name": "Guinea",
       "country_adjective": "Guinean",
@@ -16436,6 +16544,7 @@
       ]
     },
     "liberia": {
+      "slug": "liberia",
       "country_key": "liberia",
       "country_name": "Liberia",
       "country_adjective": "Liberian",
@@ -16478,6 +16587,7 @@
       ]
     },
     "chad": {
+      "slug": "chad",
       "country_key": "chad",
       "country_name": "Chad",
       "country_adjective": "Chadian",
@@ -16528,6 +16638,7 @@
       ]
     },
     "mauritania": {
+      "slug": "mauritania",
       "country_key": "mauritania",
       "country_name": "Mauritania",
       "country_adjective": "Mauritanian",
@@ -16576,6 +16687,7 @@
       ]
     },
     "central-african-republic": {
+      "slug": "central-african-republic",
       "country_key": "central-african-republic",
       "country_name": "Central African Republic",
       "country_adjective": "Central African",
@@ -16624,6 +16736,7 @@
       ]
     },
     "guinea-bissau": {
+      "slug": "guinea-bissau",
       "country_key": "guinea-bissau",
       "country_name": "Guinea-Bissau",
       "country_adjective": "Bissau-Guinean",
@@ -16673,6 +16786,7 @@
       ]
     },
     "benin": {
+      "slug": "benin",
       "country_key": "benin",
       "country_name": "Benin",
       "country_adjective": "Beninese",
@@ -16721,6 +16835,7 @@
       ]
     },
     "togo": {
+      "slug": "togo",
       "country_key": "togo",
       "country_name": "Togo",
       "country_adjective": "Togolese",
@@ -16768,6 +16883,7 @@
       ]
     },
     "gabon": {
+      "slug": "gabon",
       "country_key": "gabon",
       "country_name": "Gabon",
       "country_adjective": "Gabonese",
@@ -16816,6 +16932,7 @@
       ]
     },
     "republic-of-congo": {
+      "slug": "republic-of-congo",
       "country_key": "republic-of-congo",
       "country_name": "Republic of Congo",
       "country_adjective": "Congolese",
@@ -16866,6 +16983,7 @@
       ]
     },
     "sao-tome-and-principe": {
+      "slug": "sao-tome-and-principe",
       "country_key": "sao-tome-and-principe",
       "country_name": "São Tomé and Príncipe",
       "country_adjective": "São Toméan",
@@ -16911,6 +17029,7 @@
       ]
     },
     "equatorial-guinea": {
+      "slug": "equatorial-guinea",
       "country_key": "equatorial-guinea",
       "country_name": "Equatorial Guinea",
       "country_adjective": "Equatoguinean",
@@ -16961,6 +17080,7 @@
       ]
     },
     "haiti": {
+      "slug": "haiti",
       "country_key": "haiti",
       "country_name": "Haiti",
       "country_adjective": "Haitian",
@@ -17015,6 +17135,7 @@
       ]
     },
     "nicaragua": {
+      "slug": "nicaragua",
       "country_key": "nicaragua",
       "country_name": "Nicaragua",
       "country_adjective": "Nicaraguan",
@@ -17063,6 +17184,7 @@
       ]
     },
     "paraguay": {
+      "slug": "paraguay",
       "country_key": "paraguay",
       "country_name": "Paraguay",
       "country_adjective": "Paraguayan",
@@ -17111,6 +17233,7 @@
       ]
     },
     "iraq": {
+      "slug": "iraq",
       "country_key": "iraq",
       "country_name": "Iraq",
       "country_adjective": "Iraqi",
@@ -17168,6 +17291,7 @@
       ]
     },
     "afghanistan": {
+      "slug": "afghanistan",
       "country_key": "afghanistan",
       "country_name": "Afghanistan",
       "country_adjective": "Afghan",
@@ -17225,6 +17349,7 @@
       ]
     },
     "syria": {
+      "slug": "syria",
       "country_key": "syria",
       "country_name": "Syria",
       "country_adjective": "Syrian",
@@ -17279,6 +17404,7 @@
       ]
     },
     "yemen": {
+      "slug": "yemen",
       "country_key": "yemen",
       "country_name": "Yemen",
       "country_adjective": "Yemeni",
@@ -17333,6 +17459,7 @@
       ]
     },
     "turkmenistan": {
+      "slug": "turkmenistan",
       "country_key": "turkmenistan",
       "country_name": "Turkmenistan",
       "country_adjective": "Turkmen",
@@ -17384,6 +17511,7 @@
       ]
     },
     "iran": {
+      "slug": "iran",
       "country_key": "iran",
       "country_name": "Iran",
       "country_adjective": "Iranian",
@@ -17425,6 +17553,7 @@
       ]
     },
     "burundi": {
+      "slug": "burundi",
       "country_key": "burundi",
       "country_name": "Burundi",
       "country_adjective": "Burundian",
@@ -17464,6 +17593,7 @@
       ]
     },
     "saint-vincent-and-the-grenadines": {
+      "slug": "saint-vincent-and-the-grenadines",
       "country_key": "saint-vincent-and-the-grenadines",
       "country_name": "Saint Vincent and the Grenadines",
       "country_adjective": "Vincentian",
@@ -17503,6 +17633,7 @@
       ]
     },
     "andorra": {
+      "slug": "andorra",
       "country_key": "andorra",
       "country_name": "Andorra",
       "country_adjective": "Andorran",
@@ -17542,6 +17673,7 @@
       ]
     },
     "liechtenstein": {
+      "slug": "liechtenstein",
       "country_key": "liechtenstein",
       "country_name": "Liechtenstein",
       "country_adjective": "Liechtenstein",
@@ -17581,6 +17713,7 @@
       ]
     },
     "north-korea": {
+      "slug": "north-korea",
       "country_key": "north-korea",
       "country_name": "North Korea",
       "country_adjective": "North Korean",
@@ -17621,6 +17754,7 @@
       ]
     },
     "bhutan": {
+      "slug": "bhutan",
       "country_key": "bhutan",
       "country_name": "Bhutan",
       "country_adjective": "Bhutanese",
@@ -17661,6 +17795,7 @@
       ]
     },
     "saint-kitts-and-nevis": {
+      "slug": "saint-kitts-and-nevis",
       "country_key": "saint-kitts-and-nevis",
       "country_name": "Saint Kitts and Nevis",
       "country_adjective": "Kittitian/Nevisian",
@@ -17700,6 +17835,7 @@
       ]
     },
     "monaco": {
+      "slug": "monaco",
       "country_key": "monaco",
       "country_name": "Monaco",
       "country_adjective": "Monégasque",
@@ -17739,6 +17875,7 @@
       ]
     },
     "san-marino": {
+      "slug": "san-marino",
       "country_key": "san-marino",
       "country_name": "San Marino",
       "country_adjective": "Sammarinese",
@@ -17778,6 +17915,7 @@
       ]
     },
     "dominica": {
+      "slug": "dominica",
       "country_key": "dominica",
       "country_name": "Dominica",
       "country_adjective": "Dominican",
@@ -17818,6 +17956,7 @@
       ]
     },
     "palau": {
+      "slug": "palau",
       "country_key": "palau",
       "country_name": "Palau",
       "country_adjective": "Palauan",
@@ -17858,6 +17997,7 @@
       ]
     },
     "micronesia": {
+      "slug": "micronesia",
       "country_key": "micronesia",
       "country_name": "Micronesia",
       "country_adjective": "Micronesian",
@@ -17898,6 +18038,7 @@
       ]
     },
     "marshall-islands": {
+      "slug": "marshall-islands",
       "country_key": "marshall-islands",
       "country_name": "Marshall Islands",
       "country_adjective": "Marshallese",
@@ -17938,6 +18079,7 @@
       ]
     },
     "nauru": {
+      "slug": "nauru",
       "country_key": "nauru",
       "country_name": "Nauru",
       "country_adjective": "Nauruan",
@@ -17978,6 +18120,7 @@
       ]
     },
     "tuvalu": {
+      "slug": "tuvalu",
       "country_key": "tuvalu",
       "country_name": "Tuvalu",
       "country_adjective": "Tuvaluan",
@@ -18019,6 +18162,7 @@
       ]
     },
     "solomon-islands": {
+      "slug": "solomon-islands",
       "country_key": "solomon-islands",
       "country_name": "Solomon Islands",
       "country_adjective": "Solomon Islander",
@@ -18060,6 +18204,7 @@
       ]
     },
     "kiribati": {
+      "slug": "kiribati",
       "country_key": "kiribati",
       "country_name": "Kiribati",
       "country_adjective": "I-Kiribati",
@@ -18101,6 +18246,7 @@
       ]
     },
     "slovakia": {
+      "slug": "slovakia",
       "country_key": "slovakia",
       "country_name": "Slovakia",
       "country_adjective": "Slovak",
@@ -18142,6 +18288,7 @@
       ]
     },
     "estonia": {
+      "slug": "estonia",
       "country_key": "estonia",
       "country_name": "Estonia",
       "country_adjective": "Estonian",
@@ -18183,6 +18330,7 @@
       ]
     },
     "latvia": {
+      "slug": "latvia",
       "country_key": "latvia",
       "country_name": "Latvia",
       "country_adjective": "Latvian",
@@ -18224,6 +18372,7 @@
       ]
     },
     "lithuania": {
+      "slug": "lithuania",
       "country_key": "lithuania",
       "country_name": "Lithuania",
       "country_adjective": "Lithuanian",
@@ -18265,6 +18414,7 @@
       ]
     },
     "holy-see": {
+      "slug": "holy-see",
       "country_key": "holy-see",
       "country_name": "Holy See (Vatican City)",
       "country_adjective": "Vatican",
@@ -18306,6 +18456,7 @@
       ]
     },
     "cook-islands": {
+      "slug": "cook-islands",
       "country_key": "cook-islands",
       "country_name": "Cook Islands",
       "country_adjective": "Cook Islander",
@@ -18346,6 +18497,7 @@
       ]
     },
     "niue": {
+      "slug": "niue",
       "country_key": "niue",
       "country_name": "Niue",
       "country_adjective": "Niuean",
@@ -18388,6 +18540,7 @@
       ]
     },
     "aruba": {
+      "slug": "aruba",
       "country_key": "aruba",
       "country_name": "Aruba",
       "country_adjective": "Aruban",
@@ -18429,6 +18582,7 @@
       ]
     },
     "curacao": {
+      "slug": "curacao",
       "country_key": "curacao",
       "country_name": "Curaçao",
       "country_adjective": "Curaçaoan",
@@ -18470,6 +18624,7 @@
       ]
     },
     "cayman-islands": {
+      "slug": "cayman-islands",
       "country_key": "cayman-islands",
       "country_name": "Cayman Islands",
       "country_adjective": "Caymanian",
@@ -18510,6 +18665,7 @@
       ]
     },
     "turks-and-caicos": {
+      "slug": "turks-and-caicos",
       "country_key": "turks-and-caicos",
       "country_name": "Turks and Caicos Islands",
       "country_adjective": "Turks and Caicos Islander",
@@ -18551,6 +18707,7 @@
       ]
     },
     "macau": {
+      "slug": "macau",
       "country_key": "macau",
       "country_name": "Macau",
       "country_adjective": "Macanese",
@@ -18592,6 +18749,7 @@
       ]
     },
     "bermuda": {
+      "slug": "bermuda",
       "country_key": "bermuda",
       "country_name": "Bermuda",
       "country_adjective": "Bermudian",
@@ -18632,6 +18790,7 @@
       ]
     },
     "british-virgin-islands": {
+      "slug": "british-virgin-islands",
       "country_key": "british-virgin-islands",
       "country_name": "British Virgin Islands",
       "country_adjective": "Virgin Islander",
@@ -18673,6 +18832,7 @@
       ]
     },
     "anguilla": {
+      "slug": "anguilla",
       "country_key": "anguilla",
       "country_name": "Anguilla",
       "country_adjective": "Anguillian",
@@ -18714,6 +18874,7 @@
       ]
     },
     "montserrat": {
+      "slug": "montserrat",
       "country_key": "montserrat",
       "country_name": "Montserrat",
       "country_adjective": "Montserratian",
@@ -18756,6 +18917,7 @@
       ]
     },
     "sint-maarten": {
+      "slug": "sint-maarten",
       "country_key": "sint-maarten",
       "country_name": "Sint Maarten",
       "country_adjective": "Sint Maartener",
@@ -18798,6 +18960,7 @@
       ]
     },
     "french-polynesia": {
+      "slug": "french-polynesia",
       "country_key": "french-polynesia",
       "country_name": "French Polynesia",
       "country_adjective": "French Polynesian",
@@ -18841,6 +19004,7 @@
       ]
     },
     "martinique": {
+      "slug": "martinique",
       "country_key": "martinique",
       "country_name": "Martinique",
       "country_adjective": "Martiniquais",
@@ -18882,6 +19046,7 @@
       ]
     },
     "guadeloupe": {
+      "slug": "guadeloupe",
       "country_key": "guadeloupe",
       "country_name": "Guadeloupe",
       "country_adjective": "Guadeloupean",
@@ -18924,6 +19089,7 @@
       ]
     },
     "reunion": {
+      "slug": "reunion",
       "country_key": "reunion",
       "country_name": "Réunion",
       "country_adjective": "Réunionese",
@@ -18967,6 +19133,7 @@
       ]
     },
     "new-caledonia": {
+      "slug": "new-caledonia",
       "country_key": "new-caledonia",
       "country_name": "New Caledonia",
       "country_adjective": "New Caledonian",
@@ -19010,6 +19177,7 @@
       ]
     },
     "gibraltar": {
+      "slug": "gibraltar",
       "country_key": "gibraltar",
       "country_name": "Gibraltar",
       "country_adjective": "Gibraltarian",
@@ -19049,6 +19217,7 @@
       "risk_highlights": "None significant. Standard repatriation process applies."
     },
     "falkland-islands": {
+      "slug": "falkland-islands",
       "country_key": "falkland-islands",
       "country_name": "Falkland Islands",
       "country_adjective": "Falkland Islands",
@@ -19087,6 +19256,7 @@
       "risk_highlights": "Residual landmines in marked areas (1982 conflict). Extreme weather and remote terrain. Very limited medical facilities outside Stanley."
     },
     "saint-helena": {
+      "slug": "saint-helena",
       "country_key": "saint-helena",
       "country_name": "Saint Helena, Ascension and Tristan da Cunha",
       "country_adjective": "Saint Helenian",
@@ -19125,6 +19295,7 @@
       "risk_highlights": "Extreme remoteness. Very limited medical facilities. Flight frequency from Saint Helena Airport is severely restricted. Tristan da Cunha has no air connection."
     },
     "american-samoa": {
+      "slug": "american-samoa",
       "country_key": "american-samoa",
       "country_name": "American Samoa",
       "country_adjective": "American Samoan",
@@ -19165,6 +19336,7 @@
       "risk_highlights": "Tropical cyclones June–November. Tsunami risk (Pacific Ring of Fire). Limited medical facilities outside Lyndon B. Johnson Tropical Medical Center in Pago Pago."
     },
     "french-guiana": {
+      "slug": "french-guiana",
       "country_key": "french-guiana",
       "country_name": "French Guiana",
       "country_adjective": "French Guianese",
@@ -19205,6 +19377,7 @@
       "risk_highlights": "Malaria risk in interior jungle. Interior travel significantly lengthens repatriation. Gold-mining border areas have crime risk. Cayenne Kourou area (Ariane rocket launch site) has no special repatriation impact."
     },
     "puerto-rico": {
+      "slug": "puerto-rico",
       "country_key": "puerto-rico",
       "country_name": "Puerto Rico",
       "country_adjective": "Puerto Rican",
@@ -19244,6 +19417,7 @@
       "risk_highlights": "Hurricane season June–November. Occasional earthquake activity. Infrastructure in some rural inland areas may be affected by storm damage. Medical facilities in San Juan are good; rural areas have limited resources."
     },
     "guam": {
+      "slug": "guam",
       "country_key": "guam",
       "country_name": "Guam",
       "country_adjective": "Guamanian",
@@ -19283,6 +19457,7 @@
       "risk_highlights": "Typhoon risk June–November. North Korea ballistic missile overflight risk (historically — check FCDO current advice). US military presence throughout the island. Medical facilities are reasonable for the Pacific."
     },
     "us-virgin-islands": {
+      "slug": "us-virgin-islands",
       "country_key": "us-virgin-islands",
       "country_name": "US Virgin Islands",
       "country_adjective": "Virgin Islander",
@@ -19322,6 +19497,7 @@
       "risk_highlights": "Hurricane season June–November. Crime in some areas of St Croix and St Thomas — check FCDO travel advice. Deaths on St John require transfer to St Thomas. Water Island: ferry transfer to St Thomas."
     },
     "greenland": {
+      "slug": "greenland",
       "country_key": "greenland",
       "country_name": "Greenland",
       "country_adjective": "Greenlandic",
@@ -19363,6 +19539,7 @@
       "risk_highlights": "Extreme Arctic conditions. Limited medical facilities outside Nuuk. Sea ice and weather can close airports and ports for days. Dog sledge routes and ice cap traverses carry serious risk. Very limited emergency response capacity in remote settlements."
     },
     "faroe-islands": {
+      "slug": "faroe-islands",
       "country_key": "faroe-islands",
       "country_name": "Faroe Islands",
       "country_adjective": "Faroese",
@@ -19402,6 +19579,7 @@
       "risk_highlights": "Severe North Atlantic weather can delay flights significantly. Coastal cliff walking — significant fall risk on popular hiking routes. Very limited medical facilities outside Torshavn."
     },
     "svalbard": {
+      "slug": "svalbard",
       "country_key": "svalbard",
       "country_name": "Svalbard",
       "country_adjective": "Svalbard",
@@ -19441,6 +19619,7 @@
       "risk_highlights": "Polar bear attacks outside settlements. Extreme cold, avalanche, and crevasse risk. Very limited medical facilities (Longyearbyen Hospital only). No infrastructure in the vast wilderness areas. Arctic storms can close the airport for days."
     },
     "northern-mariana-islands": {
+      "slug": "northern-mariana-islands",
       "country_key": "northern-mariana-islands",
       "country_name": "Northern Mariana Islands",
       "country_adjective": "Northern Marianan",
@@ -19482,6 +19661,7 @@
       "risk_highlights": "Typhoon risk June–November. WWII unexploded ordnance in some locations. Limited medical facilities outside Saipan. Deaths on Tinian or Rota require inter-island transfer."
     },
     "wallis-and-futuna": {
+      "slug": "wallis-and-futuna",
       "country_key": "wallis-and-futuna",
       "country_name": "Wallis and Futuna",
       "country_adjective": "Wallisian/Futunan",
@@ -19525,6 +19705,7 @@
       "risk_highlights": "Extremely limited medical facilities — one hospital on Wallis, basic clinic on Futuna. Cyclone risk. Deaths on Futuna may require emergency medevac to Wallis or New Caledonia for treatment. Very remote."
     },
     "saint-pierre-and-miquelon": {
+      "slug": "saint-pierre-and-miquelon",
       "country_key": "saint-pierre-and-miquelon",
       "country_name": "Saint Pierre and Miquelon",
       "country_adjective": "Saint-Pierrais/Miquelonnais",
@@ -19566,6 +19747,7 @@
       "risk_highlights": "Dense fog and severe North Atlantic weather frequently disrupt air and ferry services. Very limited medical facilities — serious cases are evacuated to Halifax or St John's."
     },
     "mayotte": {
+      "slug": "mayotte",
       "country_key": "mayotte",
       "country_name": "Mayotte",
       "country_adjective": "Mahorais",
@@ -19608,6 +19790,7 @@
       "risk_highlights": "Civil unrest and migration crisis have affected Mayotte periodically — check FCDO current advice. Cyclone risk in the Indian Ocean. Limited medical facilities for complex cases. Inter-island boat travel between Grande-Terre and Petite-Terre carries some risk in poor weather."
     },
     "pitcairn-islands": {
+      "slug": "pitcairn-islands",
       "country_key": "pitcairn-islands",
       "country_name": "Pitcairn Islands",
       "country_adjective": "Pitcairn",
@@ -19655,6 +19838,7 @@
       ]
     },
     "cocos-keeling-islands": {
+      "slug": "cocos-keeling-islands",
       "country_key": "cocos-keeling-islands",
       "country_name": "Cocos (Keeling) Islands",
       "country_adjective": "Cocos Islander",
@@ -19702,6 +19886,7 @@
       ]
     },
     "christmas-island": {
+      "slug": "christmas-island",
       "country_key": "christmas-island",
       "country_name": "Christmas Island",
       "country_adjective": "Christmas Islander",
@@ -19750,6 +19935,7 @@
       ]
     },
     "norfolk-island": {
+      "slug": "norfolk-island",
       "country_key": "norfolk-island",
       "country_name": "Norfolk Island",
       "country_adjective": "Norfolk Islander",
@@ -19796,6 +19982,7 @@
       ]
     },
     "tokelau": {
+      "slug": "tokelau",
       "country_key": "tokelau",
       "country_name": "Tokelau",
       "country_adjective": "Tokelauan",
@@ -19845,6 +20032,7 @@
       ]
     },
     "akrotiri-and-dhekelia": {
+      "slug": "akrotiri-and-dhekelia",
       "country_key": "akrotiri-and-dhekelia",
       "country_name": "Akrotiri and Dhekelia",
       "country_adjective": "Akrotiri and Dhekelia",
@@ -19891,6 +20079,7 @@
       ]
     },
     "isle-of-man": {
+      "slug": "isle-of-man",
       "country_key": "isle-of-man",
       "country_name": "Isle of Man",
       "country_adjective": "Manx",
@@ -19934,6 +20123,7 @@
       ]
     },
     "jersey": {
+      "slug": "jersey",
       "country_key": "jersey",
       "country_name": "Jersey",
       "country_adjective": "Jersey",
@@ -19977,6 +20167,7 @@
       ]
     },
     "guernsey": {
+      "slug": "guernsey",
       "country_key": "guernsey",
       "country_name": "Guernsey",
       "country_adjective": "Guernsey",
@@ -20020,6 +20211,7 @@
       ]
     },
     "bonaire": {
+      "slug": "bonaire",
       "country_key": "bonaire",
       "country_name": "Bonaire",
       "country_adjective": "Bonairean",

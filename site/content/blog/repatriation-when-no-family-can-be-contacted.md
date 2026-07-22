@@ -71,4 +71,4 @@ If you are notified by the FCDO that a relative has died abroad and you are aske
 
 If you cannot afford repatriation, the honest course is to say so. The local authorities and the FCDO can then manage the case accordingly. Attempts to stall or claim you are arranging things when you are not simply delay the local authority's ability to proceed with appropriate local burial.
 
-For further guidance, see our articles on [the British Embassy's role when someone dies abroad](/blog/british-embassy-role-death-abroad/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).
+For further guidance, see our articles on [the British Embassy's role when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).

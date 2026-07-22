@@ -39,6 +39,6 @@ Douglas-Charles Airport's short runway rules out larger aircraft, so every route
 
 We bring in local ground contacts who know the interior roads, so a death in the mountains doesn't sit waiting for transport that never quite arrives.
 
-Read about [repatriation versus cremation abroad and how families decide](/blog/repatriation-vs-cremation-abroad/), or see the [full Dominica repatriation guide](/repatriation-from-dominica/) for the complete picture.
+Read about [repatriation versus cremation abroad and how families decide](/blog/repatriation-vs-cremation-abroad-which-is-right/), or see the [full Dominica repatriation guide](/repatriation-from-dominica/) for the complete picture.
 
 Call Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

@@ -39,6 +39,6 @@ Douglas-Charles Airport's short runway limits it to smaller regional aircraft, s
 
 Documents you'll need along the way: a death certificate from the Registrar General, a Coroner's certificate if applicable, an embalming certificate, a freedom-from-infection certificate, and the export permit itself.
 
-For how the terrain affects other Caribbean cases, read [repatriation versus cremation abroad](/blog/repatriation-vs-cremation-abroad/), or see [repatriation from Dominica to the UK](/repatriation-from-dominica/) for the complete process.
+For how the terrain affects other Caribbean cases, read [repatriation versus cremation abroad](/blog/repatriation-vs-cremation-abroad-which-is-right/), or see [repatriation from Dominica to the UK](/repatriation-from-dominica/) for the complete process.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

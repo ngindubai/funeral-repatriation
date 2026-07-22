@@ -21,7 +21,7 @@ faqs:
 
 Thailand sees a high number of British deaths each year, spread across Bangkok, Phuket, Pattaya, Koh Samui, Krabi, and Chiang Mai. The process takes longer than families expect, and the reasons are specific. This guide answers the questions families ask most.
 
-For the full process and embassy detail, see our [complete guide to repatriation from Thailand](/blog/repatriation-from-thailand-guide/). This article focuses on the practical questions.
+For the full process and embassy detail, see our [complete guide to repatriation from Thailand](/blog/repatriation-from-thailand-to-the-uk/). This article focuses on the practical questions.
 
 ## Why the timeline is longer
 

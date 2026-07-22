@@ -95,4 +95,4 @@ If you are facing an uninsured repatriation, the practical sequence is:
 
 4. If proceeding with repatriation, start the funding conversations immediately. Family, bank, crowdfunding, charitable approaches. Repatriation cannot wait for a fundraising campaign to reach target.
 
-For further guidance, see our articles on [crowdfunding repatriation costs](/blog/crowdfunding-repatriation-costs/) and [the main repatriation cost guide](/blog/repatriation-cost-guide/).
+For further guidance, see our articles on [crowdfunding repatriation costs](/blog/crowdfunding-repatriation-costs/) and [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/).

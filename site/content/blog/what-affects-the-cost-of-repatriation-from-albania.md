@@ -41,6 +41,6 @@ All Albanian documentation is in Albanian and needs certified translation, a sta
 
 We don't quote a fixed figure for Albania on this page, because the difference between a Tirana case and a coastal or inland one, or between a natural death and a Prosecutor's case, is real and it matters. Tell us the circumstances and we'll give you a clear, itemised answer.
 
-Read [our general guide to what determines repatriation cost](/blog/repatriation-cost-guide/), or see the [full Albania repatriation guide](/repatriation-from-albania/) for the complete picture.
+Read [our general guide to what determines repatriation cost](/blog/how-much-does-repatriation-cost/), or see the [full Albania repatriation guide](/repatriation-from-albania/) for the complete picture.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

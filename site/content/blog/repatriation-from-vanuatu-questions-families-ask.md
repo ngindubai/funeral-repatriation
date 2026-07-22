@@ -41,6 +41,6 @@ Cyclone season runs from November to April. Tropical cyclones regularly disrupt 
 
 All cargo connections to the UK route via Brisbane or Sydney. There's no direct option from Vanuatu.
 
-Read [what the British Embassy actually does after a death abroad](/blog/british-embassy-role-death-abroad/), or see the [full Vanuatu repatriation guide](/repatriation-from-vanuatu/) for the complete picture.
+Read [what the British Embassy actually does after a death abroad](/blog/british-embassy-role-when-someone-dies-abroad/), or see the [full Vanuatu repatriation guide](/repatriation-from-vanuatu/) for the complete picture.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

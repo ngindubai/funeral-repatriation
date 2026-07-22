@@ -41,4 +41,4 @@ The large British community around Paphos works in families' favour. Local funer
 
 Deaths on the Sovereign Base Areas of Akrotiri and Dhekelia are a separate matter. These areas are under British administration with their own police, so a death there is handled under that jurisdiction rather than the Republic's system. A coordinator works with the SBA authorities in those cases.
 
-For further guidance, see our articles on [deaths in British Overseas Territories and Crown Dependencies](/blog/deaths-in-british-overseas-territories-and-crown-dependencies/) and [the repatriation timeline by cause of death](/blog/repatriation-timeline-by-cause-of-death/).
+For further guidance, see our articles on [deaths in British Overseas Territories and Crown Dependencies](/blog/deaths-in-british-overseas-territories-uk-guide/) and [the repatriation timeline by cause of death](/blog/repatriation-timeline-by-cause-of-death/).

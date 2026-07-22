@@ -3,6 +3,7 @@ title: "What to Do When Someone Dies in Namibia: A Guide for UK Families"
 description: "Step-by-step guide for UK families when a loved one dies in Namibia. British High Commission Windhoek. English documentation. Self-drive accidents, Etosha, Skeleton Coast, Caprivi Strip. What to do first."
 layout: "guide"
 country_key: "namibia"
+slug: "death-abroad-namibia"
 ---
 
 When a British national dies in Namibia, contact the British High Commission in Windhoek and the FCDO Emergency Travel Line: **020 7008 5000**.

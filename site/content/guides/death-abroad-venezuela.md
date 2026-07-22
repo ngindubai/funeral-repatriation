@@ -3,6 +3,7 @@ title: "What to Do When Someone Dies in Venezuela: A Guide for UK Families"
 description: "Step-by-step guide for UK families when a loved one dies in Venezuela. British Embassy Caracas. CICPC forensics, SAREN, MPPS export permit. Economic crisis, limited flights, Bogota routing. What to do first."
 layout: "guide"
 country_key: "venezuela"
+slug: "death-abroad-venezuela"
 ---
 
 When a British national dies in Venezuela, contact the British Embassy in Caracas and the FCDO Emergency Travel Line: **020 7008 5000**. Venezuela's economic and infrastructure crisis means this is a more complex case than most South American countries.

@@ -161,6 +161,31 @@ Durable rules distilled from the July 2026 upgrade work. Full detail and status 
 
 ---
 
+## LINK AND SLUG INTEGRITY (added 22 July 2026, after a Semrush audit found 1,474 broken internal links and 1,008 schema errors)
+
+These rules exist because a whole class of 404s and schema faults built cleanly, passed the old QA, and only showed up in a live crawl. Every rule below is load-bearing. Root causes and the exact fixes are in `docs/semrush-fix-log.md`.
+
+**Rule S1: every content file MUST carry an explicit `slug:` field.**
+Hugo's `:slug` permalink token, when `slug` is absent from front matter, falls back to a slug derived from the page TITLE, not the filename. A guide filed as `death-abroad-venezuela.md` with no `slug` therefore went live at `/guides/what-to-do-when-someone-dies-in-venezuela-a-guide-for-uk-families/` while every internal link pointed at `/guides/death-abroad-venezuela/`, a hard 404. Five guides and nine blog posts were lost this way. The slug must equal the intended URL path. Never rely on filename or title derivation. The generator sets `slug:` on every page; the QA gate rejects any content file missing it.
+
+**Rule S2: the canonical hub slug is the country directory name, which equals the data map key.** `site/data/countries_repatriation.json` is keyed by that slug. Every entry MUST have `slug` set equal to its key. 192 of 238 entries had `slug: null`, so any template reading `$c.slug` emitted `/repatriation-from-/` (empty). Keep `slug` populated for every country. When iterating the data, use the key, or `$c.slug` only after confirming it is filled.
+
+**Rule S3: never hardcode an internal hub or guide link from a raw slug parameter.** Route front matter carries non-canonical identifiers (`origin_slug: "united-states"` while the hub is `usa`; `dest_key: "us"`). Building `/repatriation-from-{{ .Params.origin_slug }}/` produced 249 broken links plus the matching 4xx pages. Instead resolve the target through `site.GetPage` on the content path (`/countries/<key>`) and emit the resolved page's `.RelPermalink`. Guard every such link with `site.GetPage` so a missing or mismatched target is dropped, never served as a 404. Known origin aliases map in `routes/single.html` (`united-states` to `usa`, `united-kingdom` to `uk`, `united-arab-emirates` to `uae`, `gambia` to `the-gambia`, `cabo-verde` to `cape-verde`, `congo` to `republic-of-congo`, `democratic-republic-of-the-congo` to `democratic-republic-of-congo`, `vatican-city` to `holy-see`). Palestine has no hub, so its link is correctly suppressed.
+
+**Rule S4: when a page slug changes, fix every inbound link in the same change.** Nine blog posts were renamed to better slugs but 31 articles still linked the old paths, all 404. If a slug must change, grep the whole repo for the old path and repoint every reference. Prefer never renaming a live, indexed slug.
+
+**Rule S5: schema must validate.** No `reviewedBy` on `Article`: validators report it as `NOT_RECOGNIZED` (this alone caused 1,008 errors). Article schema carries `author` and `publisher` only. Any new schema block must be checked against a validator before it ships.
+
+**Rule S6: titles stay unique and under 60 characters.** Programmatic single pages (route, country hub, guide, embassy, city, blog, ashes, cremation) carry NO ` | Repatriate Service` suffix. Only the home page, section list pages, and top-level pages keep it. Resolve the country name from the data map, never from a front-matter field that may be empty: embassy pages had no `country_name`, so every title rendered `British Embassy in : ...`, 184 identical titles. A page title that cannot be made unique from real data is a content bug, not a template default.
+
+**Rule S7: the QA gate MUST build the site and crawl internal links before any commit.** Front-matter checks alone do not catch these faults, because the broken pages built without error. After Hugo builds, walk `public/`, collect every internal `href`, and assert each resolves to a built file (`<path>/index.html` or the file itself). Zero unresolved internal links is a hard gate. This is the single check that would have caught all of the above. `docs/semrush-fix-log.md` carries a reference link-crawl script.
+
+**Rule S8: content files must be UTF-8.** 67 files carry stray Windows-1252 bytes (smart quotes, en and em dashes) that render as the replacement character on the live page and break stricter Hugo builds. The generator writes UTF-8 only; the QA gate rejects any file that is not valid UTF-8. (This also enforces the em dash ban at the byte level.)
+
+**Known non-defect: `wa.me` "broken external link" warnings.** Semrush reports the WhatsApp click-to-chat links (about 9,720 of them) as broken because `wa.me` returns HTTP 429 to the Semrush crawler. The links work for real users. This is a crawler false positive, not a site fault. Do not try to "fix" it by removing or rewriting the WhatsApp links.
+
+---
+
 ## AUTHOR PERSONAS -- NON-NEGOTIABLE
 
 Never use Gareth's name as author. Use one of the personas below.

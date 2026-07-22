@@ -41,4 +41,4 @@ An expected death moves through registration and documentation in 7 to 14 days i
 
 A local funeral is possible for families who prefer it, though most repatriate so the service can be held at home.
 
-For further guidance, see our articles on [the repatriation timeline by cause of death](/blog/repatriation-timeline-by-cause-of-death/) and [tracing travel insurance after a death](/blog/tracing-travel-insurance-after-death/).
+For further guidance, see our articles on [the repatriation timeline by cause of death](/blog/repatriation-timeline-by-cause-of-death/) and [tracing travel insurance after a death](/blog/finding-travel-insurance-after-a-death-abroad/).

@@ -79,4 +79,4 @@ If you are reading this because someone has just died abroad, the practical prio
 
 Funding decisions made in the first 48 hours determine what happens next. Honesty with the repatriation provider is more useful than optimism: a provider working with a clear picture of the family's resources can structure the case appropriately. One working without that picture will assume normal commercial terms.
 
-For further guidance, see our [main repatriation cost guide](/blog/repatriation-cost-guide/) and our article on [tracing travel insurance after a death](/blog/tracing-travel-insurance-after-death/).
+For further guidance, see our [main repatriation cost guide](/blog/how-much-does-repatriation-cost/) and our article on [tracing travel insurance after a death](/blog/finding-travel-insurance-after-a-death-abroad/).

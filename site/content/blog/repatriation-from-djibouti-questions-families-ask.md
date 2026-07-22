@@ -39,6 +39,6 @@ Once civil registration is complete and any Tribunal clearance secured, the Mini
 
 Djibouti-Ambouli International Airport connects onward via Ethiopian Airlines to Addis Ababa, the primary and most dependable route for UK cargo, or via Dubai with flydubai or Air Arabia, linking to Emirates or British Airways. Turkish Airlines via Istanbul is a further alternative. Whichever route is used, every French and Arabic document has to carry certified English translation before it means anything on the UK end.
 
-Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-death-abroad/) for how non-resident coverage works more widely, or see [repatriation from Djibouti to the UK](/repatriation-from-djibouti/) for the full process.
+Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/) for how non-resident coverage works more widely, or see [repatriation from Djibouti to the UK](/repatriation-from-djibouti/) for the full process.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

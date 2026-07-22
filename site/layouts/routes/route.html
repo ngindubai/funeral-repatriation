@@ -286,13 +286,17 @@
   </div>
 </section>
 
+{{/* See routes/single.html: resolve non-canonical origin_slug to the real hub
+     and guard with site.GetPage so a missing hub never yields a 404. */}}
+{{ $hubAliases := dict "united-states" "usa" "united-kingdom" "uk" "united-arab-emirates" "uae" "gambia" "the-gambia" "cabo-verde" "cape-verde" "congo" "republic-of-congo" "democratic-republic-of-the-congo" "democratic-republic-of-congo" "vatican-city" "holy-see" }}
+{{ $originHub := index $hubAliases .Params.origin_slug | default .Params.origin_slug }}
 <section class="section-alt editorial-credit-section">
   <div class="section-inner">
     <div class="editorial-credit">
       <i class="fa-solid fa-circle-check"></i>
       <div>
         <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
-        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/repatriation-from-{{ .Params.origin_slug }}/">{{ .Params.origin_name }} repatriation guide</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a>{{ with site.GetPage (printf "/countries/%s" $originHub) }} &middot; <a href="{{ .RelPermalink }}">{{ $.Params.origin_name }} repatriation guide</a>{{ end }} &middot; <a href="/faq/">Frequently asked questions</a></p>
       </div>
     </div>
   </div>

@@ -35,6 +35,6 @@ This one surprises families who assume it's simply a question of finding a facil
 
 Surfing, kiteboarding, and diving deaths are a recurring pattern among British visitors, particularly off Sal's northern coast and around Boa Vista, where conditions can be more demanding than they appear from the beach. Where a drowning isn't immediately recovered, the timeline for everything that follows, including the forensic examination the Instituto Nacional de Medicina Legal requires for non-natural deaths, starts later than the date of death itself.
 
-Read [repatriation versus cremation abroad](/blog/repatriation-vs-cremation-abroad/) for how this choice plays out elsewhere, or see [repatriation from Cabo Verde to the UK](/repatriation-from-cape-verde/) for the full process and documentation list.
+Read [repatriation versus cremation abroad](/blog/repatriation-vs-cremation-abroad-which-is-right/) for how this choice plays out elsewhere, or see [repatriation from Cabo Verde to the UK](/repatriation-from-cape-verde/) for the full process and documentation list.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

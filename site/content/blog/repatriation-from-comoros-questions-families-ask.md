@@ -41,6 +41,6 @@ The Ministry of Health issues the export permit once civil registration and any 
 
 From Prince Said Ibrahim International Airport in Moroni, three routes connect onward to London: Air Austral via Reunion, Ethiopian Airlines via Addis Ababa, and Kenya Airways via Nairobi. All of them involve at least two connections, so cargo coordination needs planning well ahead.
 
-Read [how a Muslim-majority country's customs shape a repatriation timeline](/blog/death-abroad-muslim-countries/) for more on this, or see [repatriation from Comoros to the UK](/repatriation-from-comoros/) for the complete process.
+Read [how a Muslim-majority country's customs shape a repatriation timeline](/blog/death-abroad-in-a-muslim-country-uk-family-guide/) for more on this, or see [repatriation from Comoros to the UK](/repatriation-from-comoros/) for the complete process.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.
