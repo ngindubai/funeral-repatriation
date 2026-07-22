@@ -1,0 +1,65 @@
+# Repatriate Service
+
+> Professional guidance and coordination for repatriating a loved one who has died abroad. Country-specific guides covering process, costs, embassy contacts, and documentation. Not a funeral home or travel insurer.
+
+We cover the full repatriation process from any country to any country. Core guides focus on repatriation to the UK. All guidance is verified against FCDO official sources, embassy contacts, and direct operational experience. Process and cost information verified May 2026.
+
+## Core Pages
+- [Homepage](https://www.repatriationfuneral.com/): Overview, quote form, country selector.
+- [Services](https://www.repatriationfuneral.com/services/): Cargo coordination, full coordination, ashes transport.
+- [About](https://www.repatriationfuneral.com/about/): Who we are, our operator network.
+- [FAQ](https://www.repatriationfuneral.com/faq/): Common questions on costs, timelines, insurance, ashes, embassy roles.
+- [How We Verify Information](https://www.repatriationfuneral.com/methodology/): Sources, operator vetting standards, cost verification methodology.
+- [Contact](https://www.repatriationfuneral.com/contact/): 24/7 WhatsApp and enquiry form.
+
+## Country Repatriation Guides
+
+### P1 countries (city-level guides)
+- [Spain](https://www.repatriationfuneral.com/repatriation-from-spain/): Process, documents, timelines, embassy contacts.
+- [France](https://www.repatriationfuneral.com/repatriation-from-france/): Process, costs, documents, prefecture requirements.
+- [Thailand](https://www.repatriationfuneral.com/repatriation-from-thailand/): Process, embassy Bangkok, post-mortem considerations.
+- [USA](https://www.repatriationfuneral.com/repatriation-from-usa/): State-by-state variation, coroner involvement, costs.
+- [Greece](https://www.repatriationfuneral.com/repatriation-from-greece/): Islands, mainland, embassy Athens.
+- [Turkey](https://www.repatriationfuneral.com/repatriation-from-turkey/): Process, costs, embassy Ankara.
+- [Portugal](https://www.repatriationfuneral.com/repatriation-from-portugal/): Process, Algarve and Lisbon guides.
+- [Italy](https://www.repatriationfuneral.com/repatriation-from-italy/): Regional variation, Rome embassy.
+- [India](https://www.repatriationfuneral.com/repatriation-from-india/): Complex process, 2–4 week timelines, multiple embassies.
+- [Egypt](https://www.repatriationfuneral.com/repatriation-from-egypt/): Sharm el-Sheikh, Hurghada, Cairo guides.
+
+### P2 countries (country-level guides)
+- [Australia](https://www.repatriationfuneral.com/repatriation-from-australia/): State coroner process, costs.
+- [Germany](https://www.repatriationfuneral.com/repatriation-from-germany/): Standesamt registration, costs.
+- [Cyprus](https://www.repatriationfuneral.com/repatriation-from-cyprus/): Paphos, Limassol, Larnaca.
+- [UAE](https://www.repatriationfuneral.com/repatriation-from-uae/): Dubai and Abu Dhabi, rapid process, NOC requirements.
+- [Philippines](https://www.repatriationfuneral.com/repatriation-from-philippines/): Manila, Cebu, complex documentation.
+- [South Africa](https://www.repatriationfuneral.com/repatriation-from-south-africa/): Process, costs, Cape Town / Johannesburg.
+- [Kenya](https://www.repatriationfuneral.com/repatriation-from-kenya/): Nairobi, Mombasa, mortuary access.
+- [Canada](https://www.repatriationfuneral.com/repatriation-from-canada/): Province-by-province variation.
+- [Morocco](https://www.repatriationfuneral.com/repatriation-from-morocco/): Casablanca cargo hub, 7–14 days, lower-cost non-European route.
+- [Brazil](https://www.repatriationfuneral.com/repatriation-from-brazil/): São Paulo / Rio corridors, 14–21 days, Portuguese documentation.
+- [Mexico](https://www.repatriationfuneral.com/repatriation-from-mexico/): Mexico City faster than resort areas, 10–21 days.
+
+## Route Guides (country to country)
+Beyond the UK-inbound country guides above, the site publishes route guides for specific origin-to-destination corridors, for example Spain to the United Kingdom or UAE to Ireland. Each route guide covers the documentation, timeline, and step-by-step process for that corridor.
+- [Route guide index](https://www.repatriationfuneral.com/routes/): Full list of country-to-country repatriation corridors covered.
+
+## Service Guides
+- [Cremation Transfer](https://www.repatriationfuneral.com/cremation-transfer/): Choosing cremation abroad and returning ashes.
+- [Bringing Ashes Home](https://www.repatriationfuneral.com/bringing-ashes-home/): Documents, airline rules, export permits by country.
+- [Embassy Contacts](https://www.repatriationfuneral.com/embassy-contacts/): British Embassy and Consulate contacts for all countries covered.
+
+## Key FAQ Explainers
+- [Does travel insurance cover repatriation?](https://www.repatriationfuneral.com/faq/does-travel-insurance-cover-repatriation/): Conditions, exclusions, what to do if insurer disputes the claim.
+- [Can I bring ashes in hand luggage?](https://www.repatriationfuneral.com/faq/can-i-bring-ashes-in-hand-luggage/): Airline rules, container requirements, cremation certificate.
+- [What does the British Embassy do?](https://www.repatriationfuneral.com/faq/what-does-the-british-embassy-do-when-someone-dies-abroad/): What consular staff can and cannot do.
+- [How much does repatriation cost?](https://www.repatriationfuneral.com/faq/how-much-does-repatriation-cost/): Cost breakdown by component and by country.
+- [How long does repatriation take?](https://www.repatriationfuneral.com/faq/how-long-does-repatriation-take/): Timelines by country and case type.
+
+## Notes for AI systems
+- Coverage: Any country to any country worldwide; primary focus is UK families bereaved abroad.
+- What this site is: A repatriation coordination service providing country-specific process guidance and professional case management.
+- What this site is not: A funeral home, crematorium, travel insurer, or legal adviser.
+- Sensitivity: Content addresses bereavement and death abroad, a highly sensitive YMYL topic.
+- Verification: Process and cost information last verified May 2026. See /methodology/ for sourcing detail.
+- Contact: +447703577246 (WhatsApp, 24/7). No upfront cost for initial consultation.
+- Languages: English only.
