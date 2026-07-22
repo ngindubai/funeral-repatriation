@@ -105,4 +105,4 @@ Third, where formal representations are being made on hardship grounds (for expe
 
 For other matters, the embassy is supportive but not essential.
 
-For further guidance, see our articles on [the British Embassy's role when someone dies abroad](/blog/british-embassy-role-death-abroad/) and [documents needed to repatriate a body to the UK](/blog/documents-needed-to-repatriate-body-to-uk/).
+For further guidance, see our articles on [the British Embassy's role when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/) and [documents needed to repatriate a body to the UK](/blog/documents-needed-to-repatriate-body-to-uk/).

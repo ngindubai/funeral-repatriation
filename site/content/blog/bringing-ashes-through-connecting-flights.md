@@ -74,4 +74,4 @@ Remain calm and ask to speak with a supervisor. Produce all your documentation c
 
 If ashes are temporarily detained, get written confirmation of what has been detained, by whom, and what documentation is needed to resolve the situation. Contact your repatriation provider or a specialist immediately.
 
-For further guidance, see our article on [bringing ashes home on a passenger flight](/blog/bringing-ashes-home-on-a-passenger-flight/) and our guide to [what to do with ashes in the UK](/blog/what-to-do-with-ashes-uk/).
+For further guidance, see our article on [bringing ashes home on a passenger flight](/blog/bringing-ashes-home-on-a-passenger-flight/) and our guide to [what to do with ashes in the UK](/blog/what-to-do-with-ashes-after-repatriation/).

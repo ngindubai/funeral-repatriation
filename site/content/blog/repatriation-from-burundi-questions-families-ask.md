@@ -35,6 +35,6 @@ Melchior Ndadaye International Airport is the country's only international gatew
 
 Cremation facilities aren't widely available in Burundi. Full body repatriation to the UK is the standard route for essentially every case. Knowing this from the start avoids building a plan around an option that isn't actually on the table.
 
-Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-death-abroad/) for how non-resident coverage works more broadly, or see [repatriation from Burundi to the UK](/repatriation-from-burundi/) for the full timeline and document list.
+Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/) for how non-resident coverage works more broadly, or see [repatriation from Burundi to the UK](/repatriation-from-burundi/) for the full timeline and document list.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

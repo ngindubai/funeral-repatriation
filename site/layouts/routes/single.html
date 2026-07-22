@@ -587,13 +587,22 @@
   </div>
 </section>
 
+{{/* Resolve the origin-country hub. Route front matter origin_slug can be a
+     non-canonical alias (e.g. "united-states" vs the hub slug "usa"), which
+     produced hard 404s (Semrush: broken internal links + 4xx errors). Map the
+     known aliases to the canonical hub slug, then emit the link through
+     site.GetPage so a missing hub is silently dropped instead of served as a
+     404. Use the resolved page's RelPermalink so the href always matches the
+     built URL. */}}
+{{ $hubAliases := dict "united-states" "usa" "united-kingdom" "uk" "united-arab-emirates" "uae" "gambia" "the-gambia" "cabo-verde" "cape-verde" "congo" "republic-of-congo" "democratic-republic-of-the-congo" "democratic-republic-of-congo" "vatican-city" "holy-see" }}
+{{ $originHub := index $hubAliases .Params.origin_slug | default .Params.origin_slug }}
 <section class="section-alt editorial-credit-section">
   <div class="section-inner">
     <div class="editorial-credit">
       <i class="fa-solid fa-circle-check"></i>
       <div>
         <p><strong>Reviewed by the Repatriate Service editorial team.</strong> Information sourced from UK Foreign, Commonwealth &amp; Development Office (FCDO) guidance, official embassy contacts, and professional repatriation experience. Updated {{ now.Format "January 2006" }}.</p>
-        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a> &middot; <a href="/repatriation-from-{{ .Params.origin_slug }}/">{{ .Params.origin_name }} repatriation guide</a> &middot; <a href="/faq/">Frequently asked questions</a></p>
+        <p class="editorial-credit-links">Sources: <a href="https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" rel="nofollow noopener" target="_blank">FCDO gov.uk</a>{{ with site.GetPage (printf "/countries/%s" $originHub) }} &middot; <a href="{{ .RelPermalink }}">{{ $.Params.origin_name }} repatriation guide</a>{{ end }} &middot; <a href="/faq/">Frequently asked questions</a></p>
       </div>
     </div>
   </div>

@@ -39,6 +39,6 @@ It isn't all cost pressure. The common language and broadly compatible administr
 
 Tell us the state, whether a coroner is involved, and whether you're leaning toward repatriation or cremation, and we'll set out honestly what each path costs and why.
 
-Read [repatriation versus cremation abroad: how families decide](/blog/repatriation-vs-cremation-abroad/), or see the [full Australia repatriation guide](/repatriation-from-australia/) for the complete picture.
+Read [repatriation versus cremation abroad: how families decide](/blog/repatriation-vs-cremation-abroad-which-is-right/), or see the [full Australia repatriation guide](/repatriation-from-australia/) for the complete picture.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

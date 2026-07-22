@@ -41,4 +41,4 @@ The Egyptian death certificate is issued in Arabic and, along with the supportin
 
 International cargo for human remains mainly runs from Cairo, so a death at a Red Sea resort generally involves a domestic transfer to Cairo before the flight to the UK.
 
-For further guidance, see our articles on [death abroad in Muslim countries](/blog/death-abroad-muslim-countries/) and [tracing travel insurance after a death](/blog/tracing-travel-insurance-after-death/).
+For further guidance, see our articles on [death abroad in Muslim countries](/blog/death-abroad-in-a-muslim-country-uk-family-guide/) and [tracing travel insurance after a death](/blog/finding-travel-insurance-after-a-death-abroad/).

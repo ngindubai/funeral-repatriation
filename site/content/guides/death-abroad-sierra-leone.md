@@ -3,6 +3,7 @@ title: "What to Do When Someone Dies in Sierra Leone: A Guide for UK Families"
 description: "Step-by-step guide for UK families when a loved one dies in Sierra Leone. British High Commission Freetown. Lungi Airport estuary crossing explained. Connaught Hospital. Upcountry deaths and what to do first."
 layout: "guide"
 country_key: "sierra-leone"
+slug: "death-abroad-sierra-leone"
 ---
 
 When a British national dies in Sierra Leone, contact the British High Commission in Freetown and the FCDO Emergency Travel Line: **020 7008 5000**.

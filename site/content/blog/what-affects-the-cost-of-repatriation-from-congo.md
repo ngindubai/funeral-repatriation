@@ -43,6 +43,6 @@ Air France operates direct flights to Paris from both Brazzaville's Maya-Maya Ai
 
 We have experience managing Central African cases where security context matters as much as paperwork, and we give families a frank answer on timing from the first call rather than an optimistic one.
 
-Read about [what a British Embassy actually does when someone dies abroad](/blog/british-embassy-role-death-abroad/), or see the [full Republic of Congo repatriation guide](/repatriation-from-republic-of-congo/) for the complete picture.
+Read about [what a British Embassy actually does when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/), or see the [full Republic of Congo repatriation guide](/repatriation-from-republic-of-congo/) for the complete picture.
 
 Call Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

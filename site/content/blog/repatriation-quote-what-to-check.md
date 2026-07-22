@@ -91,4 +91,4 @@ Get a written receipt that specifies what the deposit covers, what the next paym
 
 Do not pay 100 percent of the cost in advance. A reasonable deposit is 40 to 60 percent of the total, with the balance due before or on UK arrival. Demands for full upfront payment are unusual and should be questioned.
 
-For further guidance, see our articles on [how to choose a repatriation funeral director](/blog/how-to-choose-a-repatriation-funeral-director/) and [the main repatriation cost guide](/blog/repatriation-cost-guide/).
+For further guidance, see our articles on [how to choose a repatriation funeral director](/blog/how-to-choose-a-repatriation-funeral-director/) and [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/).

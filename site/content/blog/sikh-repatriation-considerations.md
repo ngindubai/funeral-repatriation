@@ -61,4 +61,4 @@ For families abroad dealing with a death, the local Sikh community is often the 
 
 In the UK, the family's local gurdwara should be contacted as early as possible. The gurdwara can support the Akhand Path reading, coordinate the antam sanskar, advise on local funeral directors with Sikh experience, and provide pastoral support to the family during the repatriation period.
 
-For further guidance, see our articles on [bringing ashes through connecting flights](/blog/bringing-ashes-through-connecting-flights/) and [the main repatriation cost guide](/blog/repatriation-cost-guide/).
+For further guidance, see our articles on [bringing ashes through connecting flights](/blog/bringing-ashes-through-connecting-flights/) and [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/).

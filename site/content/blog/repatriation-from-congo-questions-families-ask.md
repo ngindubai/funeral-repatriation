@@ -37,6 +37,6 @@ Brazzaville's Maya-Maya Airport offers a direct Air France service to Paris CDG,
 
 Cremation isn't available anywhere in the country, so any family wanting cremation rather than burial needs to plan for full repatriation to the UK from the outset.
 
-Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-death-abroad/) for more on how non-resident coverage works, or see [repatriation from Congo-Brazzaville to the UK](/repatriation-from-republic-of-congo/) for the full document list.
+Read [what the British Embassy does when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/) for more on how non-resident coverage works, or see [repatriation from Congo-Brazzaville to the UK](/repatriation-from-republic-of-congo/) for the full document list.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

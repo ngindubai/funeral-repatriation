@@ -1,4 +1,10 @@
-{{ define "title" }}British Embassy in {{ .Params.country_name }}: Contacts for Death Abroad | Repatriate Service{{ end }}
+{{/* Title resolves the country name from the country database keyed by
+     country_key. Embassy pages carry no country_name front-matter field, so the
+     old template rendered "British Embassy in : Contacts..." identically on
+     every page (Semrush: 184 duplicate titles). Brand suffix dropped to stay
+     under the ~60-char SERP limit, consistent with route and hub titles. Falls
+     back to the unique front-matter title if the name cannot be resolved. */}}
+{{ define "title" }}{{ $c := index hugo.Data.countries_repatriation.countries .Params.country_key }}{{ $n := "" }}{{ if $c }}{{ $n = or $c.name $c.country_name }}{{ end }}{{ if $n }}British Embassy in {{ $n }}: Death Abroad Contacts{{ else }}{{ .Title }}{{ end }}{{ end }}
 
 {{ define "schema" }}
 {{ $key := .Params.country_key }}

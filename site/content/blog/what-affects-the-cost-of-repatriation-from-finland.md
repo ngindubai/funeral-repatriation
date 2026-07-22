@@ -35,6 +35,6 @@ An expected death, certified by a doctor, is quick. Anything sudden, violent, or
 
 Documents come out in Finnish, sometimes with Swedish alongside in bilingual regions, and need certified English translation before UK authorities will use them. Unlike some corridors where translator scarcity becomes its own bottleneck, this is a routine, fixed-cost step here.
 
-Read our article on [what a typical repatriation costs and why it varies](/blog/repatriation-cost-guide/), or see the [full Finland repatriation guide](/repatriation-from-finland/) for the complete process.
+Read our article on [what a typical repatriation costs and why it varies](/blog/how-much-does-repatriation-cost/), or see the [full Finland repatriation guide](/repatriation-from-finland/) for the complete process.
 
 Contact us any hour on +44 7703 577246, or use the enquiry form below.

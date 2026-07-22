@@ -3,6 +3,7 @@ title: "What to Do When Someone Dies in Ukraine: A Guide for UK Families"
 description: "Step-by-step guide for UK families when a loved one dies in Ukraine. Active conflict zone. FCDO emergency contacts. Boryspil Airport closed. Overland Poland routing. What to do first."
 layout: "guide"
 country_key: "ukraine"
+slug: "death-abroad-ukraine"
 ---
 
 Ukraine is an active conflict zone. If a British national has died in Ukraine, the first call is not to a funeral home. It is to the FCDO Emergency Travel Line: **020 7008 5000**.

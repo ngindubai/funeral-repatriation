@@ -35,6 +35,6 @@ Liberia's road network thins out fast once you leave Monrovia, particularly in t
 
 Roberts International Airport sits 60 kilometres east of Monrovia, a one to two hour ground transfer. Brussels Airlines to Brussels is the primary UK cargo route from there, with Ethiopian Airlines via Addis Ababa and Royal Air Maroc via Casablanca as the usual alternatives.
 
-Read [the British Embassy's role after a death abroad](/blog/british-embassy-role-death-abroad/) for what consular support generally covers, or see [repatriation from Liberia to the UK](/repatriation-from-liberia/) for the full process.
+Read [the British Embassy's role after a death abroad](/blog/british-embassy-role-when-someone-dies-abroad/) for what consular support generally covers, or see [repatriation from Liberia to the UK](/repatriation-from-liberia/) for the full process.
 
 Contact Repatriate Service on +44 7703 577246 at any hour, or use the enquiry form below.

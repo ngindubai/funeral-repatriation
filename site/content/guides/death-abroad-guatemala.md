@@ -3,6 +3,7 @@ title: "What to Do When Someone Dies in Guatemala: A Guide for UK Families"
 description: "Step-by-step guide for UK families when a loved one dies in Guatemala. British Embassy Guatemala City. INACIF forensics, Antigua, Lake Atitlan, Tikal. What to do first, documentation, and timelines."
 layout: "guide"
 country_key: "guatemala"
+slug: "death-abroad-guatemala"
 ---
 
 When a British national dies in Guatemala, the first calls are to the British Embassy in Guatemala City and the FCDO Emergency Travel Line: **020 7008 5000**.

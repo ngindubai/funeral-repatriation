@@ -64,4 +64,4 @@ Appoint a local funeral director with Canadian repatriation experience in the re
 
 Do not set a UK funeral date until cargo confirmation is received. Province-level paperwork timelines are not always predictable, particularly where coroner involvement is required.
 
-For further guidance, see our [Canada repatriation country hub](/repatriation-from-canada/) and our article on the [role of the British Embassy when someone dies abroad](/blog/british-embassy-role-death-abroad/).
+For further guidance, see our [Canada repatriation country hub](/repatriation-from-canada/) and our article on the [role of the British Embassy when someone dies abroad](/blog/british-embassy-role-when-someone-dies-abroad/).

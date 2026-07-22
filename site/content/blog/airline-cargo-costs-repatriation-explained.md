@@ -79,4 +79,4 @@ A good coordinator will warn you of these variables at quote stage and try to lo
 
 Where the cargo quote changes upward after deposit, ask for the specific reason. Legitimate changes (fuel surcharge increase, route change due to capacity) should be evidenced. Unexplained changes are a sign of poor process.
 
-For further guidance, see our articles on [how airline cargo booking works for repatriation](/blog/how-airline-cargo-booking-works-for-repatriation/) and [the main repatriation cost guide](/blog/repatriation-cost-guide/).
+For further guidance, see our articles on [how airline cargo booking works for repatriation](/blog/how-airline-cargo-booking-works-for-repatriation/) and [the main repatriation cost guide](/blog/how-much-does-repatriation-cost/).

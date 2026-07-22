@@ -45,4 +45,4 @@ A family cannot get a reliable timeline until the Spanish authorities have decid
 
 Island deaths add a transfer leg, as explained above. Belongings and tenancy matters are common in expat cases, particularly on the Costa del Sol, the Costa Blanca, and the Canary Islands. These can be dealt with by a family member travelling out later, by a solicitor, or in some cases by the funeral director's local contacts. They are separate from the repatriation and should not delay it.
 
-For further guidance, see our articles on [tracing travel insurance after a death](/blog/tracing-travel-insurance-after-death/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).
+For further guidance, see our articles on [tracing travel insurance after a death](/blog/finding-travel-insurance-after-a-death-abroad/) and [who pays for repatriation when someone dies abroad](/blog/who-pays-for-repatriation-when-someone-dies-abroad/).
